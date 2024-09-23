@@ -1,0 +1,45 @@
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "bg_BG",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Product ID is required.": [ "Изисква се ID на продукта" ],
+			"Parent product ID is required.": [
+				"Изисква се идентификатор на родителски продукт."
+			],
+			"Item index is required.": [ "Изисква се индекс на артикула." ],
+			"There was an error on getting items.": [
+				"Възникна грешка при получаване на елементи."
+			],
+			"Args is required.": [ "Изискват се аргументи." ],
+			"Please Select Your Product": [ "Моля, изберете вашия продукт" ],
+			"Prev": [ "Предишен" ],
+			"Next": [ "Следващ" ],
+			"OUT OF STOCK": [ "ИЗЧЕРПАНО ОТ НАЛИЧНОСТИ" ],
+			"Bundle item image": [ "Изображение на продукт от комплект" ],
+			"Add": [ "Добави" ],
+			"Add%s": [ "Добави%s" ],
+			"Please select a product!": [ "Моля, изберете продукт!" ],
+			"Change": [ "Промени" ],
+			"View": [ "Преглед" ],
+			"Please select your product!": [ "Моля, изберете вашия продукт!" ],
+			"Please select a product for all items.": [
+				"Моля, изберете продукт за всички артикули."
+			],
+			"Save": [ "спестявам" ],
+			"Edit product": [ "Редактирай продукт" ],
+			"Close": [ "Затвори" ],
+			"Back": [ "Назад" ],
+			"More pictures": [ "Още снимки" ],
+			"Product information": [ "Информация за продукта" ],
+			"Add product": [ "ДОБАВИ ПРОДУКТ" ]
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+  "generator": "WP-CLI/2.5.0",
+  "source": "assets/js/admin/review/index.js",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "lang": "pl_PL",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Action is required.": [""],
+      "There was an error on applying review.": [""],
+      "We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+        "Mamy nadzieję, że cieszysz się %1$s! %3$s Czy mogłbyś nam wyświadczyć wielką przysługę i ocenić to %2$s, aby pomóc nam rozpowszechnić tę wiadomość i zwiększyć naszą motywację? %4$s %5$sPodziel się swoimi sugestiami dotyczącymi funkcji%6$s w recenzji. Zawsze je sprawdzamy i staramy się jak najlepiej."
+      ],
+      "OK, you deserve it!": ["OK, zasługujesz na to!"],
+      "I already did": ["Już to zrobiłem"],
+      "Maybe Later": ["Może później"],
+      "I need help": ["Potrzebuję pomocy"],
+      "Never show again": ["Nigdy więcej nie pokazuj"]
+    }
+  }
+}

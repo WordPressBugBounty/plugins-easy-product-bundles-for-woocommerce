@@ -1,0 +1,225 @@
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/admin/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "tr_TR",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Settings": [ "Ayarlar" ],
+			"Go Pro": [ "Pro'ya Git" ],
+			"Action is required.": [ "Aksiyona ihtiyaç var." ],
+			"PRO Version": [ "PRO Version" ],
+			"Bundle position": [ "Paket konumu" ],
+			"Before Add to Cart button": [ "Sepete Ekle düğmesinden önce" ],
+			"After Add to Cart button": [ "Sepete Ekle düğmesinden sonra" ],
+			"Before Add to Cart form": [ "Sepete Ekle formundan önce" ],
+			"After Add to Cart form": [ "Sepete Ekle formundan sonra" ],
+			"Before product excerpt": [ "Ürün alıntısından önce" ],
+			"After product excerpt": [ "Ürün alıntısından sonra" ],
+			"After product meta": [ "Ürün metasından sonra" ],
+			"Before CSS selector": [ "CSS seçicisinden önce" ],
+			"After CSS selector": [ "CSS seçicisinden sonra" ],
+			"product bundle position in product page.": [
+				"ürün sayfasındaki ürün paketi konumu."
+			],
+			"CSS Selector": [ "CSS Seçici" ],
+			"Bundle": [ "Paket" ],
+			"Item View": [ "Ürün Görünümü" ],
+			"Show stock": [ "Stok göster" ],
+			"Show product Stock availability in modal.": [
+				"Ürün Stok durumunu modalde gösterin."
+			],
+			"Show rating": [ "Derecelendirmeyi göster" ],
+			"Show product rating in modal.": [
+				"Ürün derecelendirmesini modalde göster."
+			],
+			"Show description(on hover)": [
+				"Açıklamayı göster (üzerine gelindiğinde)"
+			],
+			"Show product description when mouse hover over it.": [
+				"Fareyle üzerine gelindiğinde ürün açıklamasını gösterin."
+			],
+			"Prepend parent name": [ "Ebeveyn adını ön ekle" ],
+			"Prepend the parent name to the item name in the cart and order.": [
+				"Sepet ve siparişteki ürün adının önüne üst adı ekleyin."
+			],
+			"Hide out of stock": [ "Stokta yok gizle" ],
+			"(Pro)": [ "(Pro)" ],
+			"Hide out of stock products.": [
+				"Stokta olmayan ürünleri gizleyin."
+			],
+			"Show price in cart": [ "Fiyatı sepette göster" ],
+			"Product bundle items price visibility in cart and checkout.": [
+				"Ürün paketi öğeleri fiyatının sepette ve ödeme sayfasında görünürlüğü."
+			],
+			"Show products list": [ "Ürün listesini göster" ],
+			"Show products list below products bundle.": [
+				"Ürün listesini ürün paketinin altında göster."
+			],
+			"Show total price": [ "Toplam fiyatı göster" ],
+			"Show the total price of the selected items below the products list.": [
+				"Seçilen ürünlerin toplam fiyatını ürün listesinin altında gösterin."
+			],
+			"Show saved money": [ "Kaydedilen parayı göster" ],
+			"Show the saved money when calculating the total price.": [
+				"Toplam fiyatı hesaplarken kaydedilen parayı göster."
+			],
+			"Theme": [ "Tema" ],
+			"Grid 1": [ "Izgara 1" ],
+			"Grid 2": [ "Izgara 2" ],
+			"List 1": [ "Liste 1" ],
+			"List 2": [ "Liste 2" ],
+			"Size": [ "Boyut" ],
+			"Small": [ "S" ],
+			"Medium": [ "M" ],
+			"Large": [ "L" ],
+			"Product bundle price on shop page": [
+				"Mağaza sayfasında ürün paketi fiyatı"
+			],
+			"Total price": [ "Toplam fiyat" ],
+			"From total price": [ "Toplam fiyattan" ],
+			"From min price": [ "Minimum fiyattan" ],
+			"Set how to show the product bundle price on the shop page.": [
+				"Mağaza sayfasında ürün paketi fiyatının nasıl gösterileceğini ayarlayın."
+			],
+			"Link to product": [ "Ürün bağlantısı" ],
+			"New tab": [ "Yeni sekme" ],
+			"No link": [ "Bağlantı yok" ],
+			"Show the product change modal": [
+				"Ürün değiştirme modalini göster"
+			],
+			"Coupon apply method": [ "Kupon uygulama yöntemi" ],
+			"Both of bundle and bundle items": [
+				"Hem paket hem de paket öğeleri"
+			],
+			"On bundle": [ "Paket üzerinde" ],
+			"On bundle items": [ "Paket ürünlerde" ],
+			"None of bundle and bundle items": [
+				"Paket ve paket öğelerinin hiçbiri"
+			],
+			"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".": [
+				"Ürün bazlı kupon uygulama yöntemi. \"Paket\", \"paket ürünler\", \"her ikisi\" veya \"hiçbiri\" için uygulanabilir."
+			],
+			"Cart contents count": [ "Sepet içeriği sayısı" ],
+			"Bundle items": [ "Paket öğeleri" ],
+			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
+				"Sepetteki paket ürünler nasıl sayılır? \"Paket ve öğelerinin\" her ikisini de veya \"yalnızca paket\" veya \"yalnızca paket öğelerini\" sayın."
+			],
+			"Change product modal": [ "Ürün modalini değiştir" ],
+			"Number of products per page": [ "Sayfa başına ürün sayısı" ],
+			"Styles": [ "Sitil" ],
+			"Product title color": [ "Ürün başlığı rengi" ],
+			"Back default color": [ "Arka varsayılan renk" ],
+			"Bundle title color": [ "Paket başlık rengi" ],
+			"Product crossed out price color": [
+				"Ürün çarpı işaretli fiyat rengi"
+			],
+			"Product sale price color": [ "Ürün satış fiyatı renk" ],
+			"Empty item title color": [ "Boş öğe başlık rengi" ],
+			"Empty item title hover color": [
+				"Boş öğe başlık üzerine gelinceki rengi"
+			],
+			"Modal header color": [ "Modal başlık rengi" ],
+			"Optional badge color": [ "İsteğe bağlı rozet rengi" ],
+			"Product image object-fit": [ "Ürün görüntüsü object-fit CSS" ],
+			"Cover": [ "" ],
+			"Contain": [ "" ],
+			"Fill": [ "" ],
+			"Inherit": [ "" ],
+			"Initial": [ "" ],
+			"None": [ "" ],
+			"Revert": [ "" ],
+			"Scale-down": [ "" ],
+			"Unset": [ "" ],
+			"Save Changes": [ "Değişiklikleri Kaydet" ],
+			"License Key": [ "Lisans Anahtarı" ],
+			"Enter Your License Key": [ "Lisans Anahtarınızı Girin" ],
+			"Notice": [ "Uyarı" ],
+			"Each website using this plugin needs a legal license (1 license = 1 website).": [
+				"Bu eklentiyi kullanan her web sitesinin yasal bir lisansa ihtiyacı vardır (1 lisans = 1 web sitesi)."
+			],
+			"You can find more information on": [
+				"Daha fazla bilgiyi şurada bulabilirsiniz"
+			],
+			"software license agreement": [ "yazilim li̇sans sözleşmesi̇" ],
+			"If you need to buy a new license of this plugin": [
+				"Bu eklentinin yeni bir lisansını satın almanız gerekiyorsa"
+			],
+			"click here.": [ "buraya tıklayın." ],
+			"Where can I find my license key?": [
+				"Lisans anahtarımı nerede bulabilirim?"
+			],
+			"There was an error on getting settings.": [
+				"Ayarları alırken bir hata oluştu."
+			],
+			"Data is required.": [ "Veri gereklidir." ],
+			"There was an error on saving settings.": [
+				"Ayarları kaydederken bir hata oluştu."
+			],
+			"There was an error on applying review.": [
+				"İnceleme başvurusunda bir hata oluştu."
+			],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				"Umarız %1$s!i beğeniyorsunuzdur! %3$s Lütfen bize BÜYÜK bir iyilik yapıp, kelimeyi yaymamıza ve motivasyonumuzu artırmamıza yardımcı olmak için %2$s verir misiniz?%4$s %5$sÖzellik isteklerinizi%6$s incelemeyle paylaşın, Onları her zaman kontrol ediyoruz ve elimizden gelenin en iyisini yapıyoruz."
+			],
+			"OK, you deserve it!": [ "Tamam, bunu hak ettin!" ],
+			"I already did": [ "Çoktan yaptım." ],
+			"Maybe Later": [ "Belki Sonra" ],
+			"I need help": [ "Yardıma ihtiyacım var." ],
+			"Never show again": [ "Bir daha asla gösterme" ],
+			"Saved Successfully.": [ "Başarıyla kaydedildi." ],
+			"There was an error on saving the settings.": [
+				"Ayarları kaydederken bir hata oluştu."
+			],
+			"Enable Updates": [ "Güncellemeleri Etkinleştir" ],
+			"Show modal quick view": [ "Modal hızlı görünümü göster" ],
+			"Show product quick view icon in modal.": [
+				"Modal içinde ürün hızlı görünüm simgesini göster."
+			],
+			"Show selected product quick view": [
+				"Seçilen ürün hızlı görünümü göster"
+			],
+			"Show product quick view icon in the selected product.": [
+				"Seçilen üründe ürün hızlı görünüm simgesini göster."
+			],
+			"Optional badge title color": [ "İsteğe bağlı rozet başlık rengi" ],
+			"Quick view icon color": [ "Hızlı görünüm simgesi rengi" ],
+			"Images icon color": [ "Görüntü simgesi rengi" ],
+			"Product price selector": [ "Ürün fiyat seçici" ],
+			"Product list price": [ "Ürün listesi fiyatı" ],
+			"Product subtotal": [ "Ürün alt toplamı" ],
+			"Product price": [ "Ürün fiyatı" ],
+			"Set how to show the product price in the product list.": [
+				"Ürün fiyatını ürün listesinde nasıl gösterileceğini ayarla."
+			],
+			"Quantity field on item": [ "Ürün üzerinde miktar alanı" ],
+			"Show quantity field on item.": [
+				"Ürün üzerinde miktar alanını göster"
+			],
+			"Item price": [ "Ürün fiyatı" ],
+			"Set how to show the product price in item.": [
+				"Ürün fiyatını ürün üzerinde nasıl gösterileceğini ayarla"
+			],
+			"Show plus icon": [ "Artı ikonu göster" ],
+			"Quick view button color": [ "Hızlı görünüm düğme rengi" ],
+			"Quick view button text color": [
+				"Hızlı görünüm düğme metin rengi"
+			],
+			"Show plus icon between items.": [
+				"Öğeler arasında artı ikonu göster"
+			],
+			"Plus icon color": [ "Artı ikon rengi" ],
+			"Click on product in pop-up": [ "Açılır pencerede ürüne tıklayın" ],
+			"Product selection": [ "Ürün seçimi" ],
+			"Show product details": [ "Ürün detaylarını göster" ],
+			"Quantity field buttons hover color": [
+				"Miktar alanı düğmelerinin üzerine gelindiğinde renk"
+			]
+		}
+	}
+}

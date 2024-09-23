@@ -1,0 +1,197 @@
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/admin/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "he_IL",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Settings": [ "הגדרות" ],
+			"Go Pro": [ "ללכת PRO" ],
+			"PRO Version": [ "גרסה PRO" ],
+			"Action is required.": [ "" ],
+			"Bundle position": [ "עמדת צרור" ],
+			"Before Add to Cart button": [ "לפני הכפתור 'הוסף לעגלה'" ],
+			"After Add to Cart button": [ "אחרי הכפתור 'הוסף לעגלה'" ],
+			"Before Add to Cart form": [ "לפני טופס 'הוסף לעגלה'" ],
+			"After Add to Cart form": [ "אחרי טופס 'הוסף לעגלה'" ],
+			"Before product excerpt": [ "לפני תקציר המוצר" ],
+			"After product excerpt": [ "אחרי תקציר המוצר" ],
+			"After product meta": [ "אחרי המטה-מוצר" ],
+			"Before CSS selector": [ "לפני בורר CSS" ],
+			"After CSS selector": [ "אחרי בורר CSS" ],
+			"product bundle position in product page.": [
+				"מיקום חבילת המוצר בדף המוצר."
+			],
+			"CSS Selector": [ "בורר CSS" ],
+			"Bundle": [ "ארגז" ],
+			"Item View": [ "תצוגת פריט" ],
+			"Show stock": [ "הצג מלאי" ],
+			"Show product Stock availability in modal.": [
+				"הצג את זמינות המלאי של המוצר בחלון המודל"
+			],
+			"Show rating": [ "הצג דירוג" ],
+			"Show product rating in modal.": [
+				"הצג את דירוג המוצר בחלון המודל"
+			],
+			"Show description(on hover)": [ "הצג תיאור (בעטיפת העכבר)" ],
+			"Show product description when mouse hover over it.": [
+				"הצג את תיאור המוצר כשהעכבר עובר מעליו"
+			],
+			"Show price in cart": [ "הצג מחיר בעגלה" ],
+			"(Pro)": [ "" ],
+			"Product bundle items price visibility in cart and checkout.": [
+				"נראות מחירי פריטי הארגז בעגלה ובתשלום."
+			],
+			"Show products list": [ "הצג רשימת מוצרים" ],
+			"Show products list below products bundle.": [
+				"הצג רשימת מוצרים מתחת לארגז המוצרים."
+			],
+			"Show total price": [ "הצג את המחיר הכולל" ],
+			"Show the total price of the selected items below the products list.": [
+				"הצג את המחיר הכולל של הפריטים שנבחרו מתחת לרשימת המוצרים."
+			],
+			"Show saved money": [ "הצגת הכסף שנשמר" ],
+			"Show the saved money when calculating the total price.": [
+				"הצגת הכסף שנשמר בעת חישוב המחיר הכולל."
+			],
+			"Theme": [ "ערכת נושא" ],
+			"Grid 1": [ "" ],
+			"Grid 2": [ "" ],
+			"List 1": [ "" ],
+			"List 2": [ "" ],
+			"Size": [ "גודל" ],
+			"Small": [ "קטן" ],
+			"Medium": [ "בינוני" ],
+			"Large": [ "גדול" ],
+			"Product bundle price on shop page": [
+				"מחיר חבילת מוצרים בדף החנות"
+			],
+			"Total price": [ "מחיר כולל" ],
+			"From total price": [ "ממחיר כולל" ],
+			"From min price": [ "ממחיר מינימלי" ],
+			"Set how to show the product bundle price on the shop page.": [
+				"קבע כיצד להציג את מחיר הארגז בעמוד החנות."
+			],
+			"Link to product": [ "קישור למוצר" ],
+			"New tab": [ "כרטיסיה חדשה" ],
+			"No link": [ "אין קישור" ],
+			"Show the product change modal": [
+				"הצג את החלון המודל של שינוי המוצר"
+			],
+			"Coupon apply method": [ "שיטת החלת קופון" ],
+			"Both of bundle and bundle items": [ "גם של צרור וגם צרור פריטים" ],
+			"On bundle": [ "על צרור" ],
+			"On bundle items": [ "על פריטי צרור" ],
+			"None of bundle and bundle items": [ "אף אחד מפריטי צרור וצרור" ],
+			"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".": [
+				"שיטת החלת קופונים מבוססי מוצר. יכול להחיל על \"חבילה\", \"חבילה פריטים\", \"שניהם\" או \"אף אחד\"."
+			],
+			"Cart contents count": [ "ספירת תוכן העגלה" ],
+			"Bundle items": [ "פריטי ארגז" ],
+			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
+				"איך סופרים מוצרי צרור בעגלה? ספור את שני ה\"חבילה והפריטים שלו\" או \"רק חבילה\" או \"רק צרור פריטים\"."
+			],
+			"Change product modal": [ "שינוי חלון המוצר" ],
+			"Number of products per page": [ "מספר המוצרים לעמוד" ],
+			"Styles": [ "" ],
+			"Product title color": [ "צבע כותרת המוצר" ],
+			"Bundle title color": [ "צבע כותרת החבילה" ],
+			"Product crossed out price color": [ "צבע מחיר מוצר עם קו חוצה" ],
+			"Product sale price color": [ "צבע מחיר המכירה של המוצר" ],
+			"Empty item title color": [ "צבע כותרת פריט ריק" ],
+			"Empty item title hover color": [ "צבע כותרת פריט ריק במעבר עכבר" ],
+			"Modal header color": [ "צבע כותרת החלון המודל" ],
+			"Product image object-fit": [ "תמונת מוצר object-fit Css" ],
+			"Cover": [ "" ],
+			"Contain": [ "" ],
+			"Fill": [ "" ],
+			"Inherit": [ "" ],
+			"Initial": [ "" ],
+			"None": [ "" ],
+			"Revert": [ "" ],
+			"Scale-down": [ "" ],
+			"Unset": [ "" ],
+			"Save Changes": [ "שמור שינויים" ],
+			"License Key": [ "מפתח הרישיון" ],
+			"Enter Your License Key": [ "הזן את מפתח הרישיון שלך" ],
+			"Notice": [ "הודעה" ],
+			"Each website using this plugin needs a legal license (1 license = 1 website).": [
+				"כל אתר המשתמש בתוסף זה דורש רישיון חוקי (רישיון אחד = אתר אחד)."
+			],
+			"You can find more information on": [ "ניתן למצוא מידע נוסף ב" ],
+			"software license agreement": [ "הסכם רישיון תוכנה" ],
+			"If you need to buy a new license of this plugin": [
+				"אם אתה צריך לרכוש רישיון חדש לתוסף זה"
+			],
+			"click here.": [ "לחץ כאן." ],
+			"Where can I find my license key?": [
+				"איפה אני יכול למצוא את מפתח הרישיון שלי?"
+			],
+			"There was an error on getting settings.": [ "" ],
+			"Data is required.": [ "" ],
+			"There was an error on saving settings.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				""
+			],
+			"OK, you deserve it!": [ "" ],
+			"I already did": [ "" ],
+			"Maybe Later": [ "" ],
+			"I need help": [ "" ],
+			"Never show again": [ "" ],
+			"Saved Successfully.": [ "נשמר בהצלחה." ],
+			"There was an error on saving the settings.": [ "" ],
+			"Enable Updates": [ "הפעל עדכונים" ],
+			"Back default color": [ "חזרה לצבע ברירת המחדל" ],
+			"Optional badge color": [ "צבע תָג האופציונלית" ],
+			"Prepend parent name": [ "הוסף את שם ההורה" ],
+			"Prepend the parent name to the item name in the cart and order.": [
+				"הוסף את שם ההורה לשם הפריט בעגלה ובהזמנה"
+			],
+			"Hide out of stock": [ "הסתר שאזל המלאי" ],
+			"Hide out of stock products.": [ "הסתר מוצרים שאזל המלאי." ],
+			"Show modal quick view": [ "הצג תצוגה מהירה מודלית" ],
+			"Show product quick view icon in modal.": [
+				"הצג סמל תצוגה מהירה של מוצר במודל"
+			],
+			"Show selected product quick view": [
+				"הצג תצוגה מהירה של המוצר הנבחר"
+			],
+			"Show product quick view icon in the selected product.": [
+				"הצג סמל תצוגה מהירה של המוצר הנבחר"
+			],
+			"Optional badge title color": [ "צבע כותרת לתג אופציונלי" ],
+			"Quick view icon color": [ "צבע סמל תצוגה מהירה" ],
+			"Images icon color": [ "צבע סמל התמונות" ],
+			"Product price selector": [ "בחר מחיר מוצר" ],
+			"Product list price": [ "מחיר ברשימת המוצרים" ],
+			"Product subtotal": [ "סכום ביניים של המוצר" ],
+			"Product price": [ "מחיר המוצר" ],
+			"Set how to show the product price in the product list.": [
+				"הגדר איך להציג את מחיר המוצר ברשימת המוצרים."
+			],
+			"Quantity field on item": [ "שדה כמות על הפריט" ],
+			"Show quantity field on item.": [ "הצג שדה כמות על הפריט" ],
+			"Item price": [ "מחיר הפריט" ],
+			"Set how to show the product price in item.": [
+				"הגדר איך להציג את מחיר המוצר בפריט"
+			],
+			"Show plus icon": [ "הצג סמל פלוס" ],
+			"Quick view button color": [ "צבע לחצן תצוגה מהירה" ],
+			"Quick view button text color": [ "צבע טקסט לחצן תצוגה מהירה" ],
+			"Show plus icon between items.": [ "הצג סמל פלוס בין הפריטים" ],
+			"Plus icon color": [ "צבע סמל פלוס" ],
+			"Click on product in pop-up": [ "לחץ על המוצר בחלון קופץ" ],
+			"Product selection": [ "בחירת מוצר" ],
+			"Show product details": [ "הצג פרטי המוצר" ],
+			"Quantity field buttons hover color": [
+				"צבע ריחוף של כפתורי שדה הכמות"
+			]
+		}
+	}
+}

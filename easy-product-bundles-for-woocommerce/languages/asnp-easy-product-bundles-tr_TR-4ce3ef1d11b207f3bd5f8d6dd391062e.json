@@ -1,0 +1,191 @@
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "tr_TR",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Please select a product!": [ "Lütfen Ürün Seçiniz" ],
+			"Type is required.": [ "Tip gerekli" ],
+			"Action is required.": [ "İşlem gerekiyor" ],
+			"PRO Version": [ "Pro Versiyon" ],
+			"Theme": [ "Tema" ],
+			"Grid 1": [ "Izgara 1" ],
+			"Grid 2": [ "Izgara 2" ],
+			"List 1": [ "Liste 1" ],
+			"List 2": [ "Liste 2" ],
+			"Size": [ "Ölçü" ],
+			"Small": [ "S" ],
+			"Medium": [ "M" ],
+			"Large": [ "L" ],
+			"Data is required.": [ "Veri gerekli" ],
+			"There was an error on applying review.": [
+				"İnceleme başvurusunda bir hata oluştu."
+			],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				"Umarız %1$s'i beğeniyorsunuzdur! 3$s Lütfen bize BÜYÜK bir iyilik yapıp, kelimeyi yaymamıza ve motivasyonumuzu artırmamıza yardımcı olmak için %2$s verir misiniz? 4$s %5$s Özellik isteklerinizi%6$s incelemeyle paylaşın, Onları her zaman kontrol ediyoruz ve elimizden gelenin en iyisini yapıyoruz."
+			],
+			"OK, you deserve it!": [ "Tamam, bunu hak ettin!" ],
+			"I already did": [ "Çoktan yaptım." ],
+			"Maybe Later": [ "Belki sonra" ],
+			"I need help": [ "Yardım?" ],
+			"Never show again": [ "Asla gösterme" ],
+			"Items are required.": [ "Ürünler gerekli" ],
+			"There was an error on getting items.": [
+				"Ürünleri alırken bir hata oluştu."
+			],
+			"Search value is required.": [ "Arama değeri gereklidir." ],
+			"There was an error on searching items.": [
+				"Öğeleri ararken bir hata oluştu."
+			],
+			"Optional": [ "Opsiyonel" ],
+			"Check this option to make the bundle item optional to choose by the user": [
+				"Paket öğesinin kullanıcı tarafından seçilmesini isteğe bağlı hale getirmek için bu seçeneği işaretleyin"
+			],
+			"Use default-product": [ "Varsayılan-ürün kullanın" ],
+			"Check this option to add a default product for the bundle item that is shown as a selected product for this bundle item": [
+				"Bu paket öğesi için seçilen ürün olarak gösterilen paket öğesine varsayılan bir ürün eklemek için bu seçeneği işaretleyin"
+			],
+			"Default product": [ "Varsayılan ürün" ],
+			"Set a default product": [ "Varsayılan ürün ayarlama" ],
+			"Products": [ "Ürünler" ],
+			"Add products or Variations": [ "Ürün veya Varyasyon Ekleme" ],
+			"Exclude products": [ "Ürünleri hariç tut" ],
+			"Select a product that you do not want to be displayed": [
+				"Görüntülenmesini istemediğiniz bir ürün seçin"
+			],
+			"Categories": [ "Kategoriler" ],
+			"Select the category product that you want to be displayed in this bundle item": [
+				"Bu paket öğesinde görüntülenmesini istediğiniz kategori ürününü seçin"
+			],
+			"Exclude categories": [ "Kategorileri hariç tut" ],
+			"Select the category product that you do not want to be displayed in this bundle item": [
+				"Bu paket öğesinde görüntülenmesini istemediğiniz kategori ürününü seçin"
+			],
+			"Tags": [ "Etiketler" ],
+			"Select the product with tags to display in this bundle item": [
+				"Bu paket öğesinde görüntülenecek etiketli ürünü seçin"
+			],
+			"Exclude tags": [ "Etiketleri hariç tut" ],
+			"Select the product with tags that you do not want to be displayed in the bundle item": [
+				"Paket öğesinde görüntülenmesini istemediğiniz etiketlere sahip ürünü seçin"
+			],
+			"Categories and Tags relation": [
+				"Kategoriler ve Etiketler ilişkisi"
+			],
+			"Match at least one": [ "En az bir tanesini eşleştirin" ],
+			"Match both": [ "İkisini de eşleştirin" ],
+			"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.": [
+				"En az biriyle eşleştirin: Ürünler kategorilerden veya etiketlerden en az biriyle eşleşmelidir. %s Her ikisiyle de eşleşmelidir: Ürünler hem kategorilerle hem de etiketlerle eşleşmelidir."
+			],
+			"Quantity": [ "Adet" ],
+			"Set the default product quantity": [
+				"Varsayılan ürün miktarını ayarlama"
+			],
+			"Edit quantity by user": [ "Miktarı kullanıcıya göre düzenleme" ],
+			"Check this option to allow the user to change the bundle item quantity": [
+				"Kullanıcının paket öğesi miktarını değiştirmesine izin vermek için bu seçeneği işaretleyin"
+			],
+			"Min quantity": [ "Minumum miktar" ],
+			"Set the minimum quantity of this bundled product": [
+				"Bu paketlenmiş ürünün minimum miktarını ayarlayın"
+			],
+			"Max quantity": [ "Maksimum miktar" ],
+			"Set the maximum quantity of this bundled product": [
+				"Bu paketlenmiş ürünün maksimum miktarını ayarlayın"
+			],
+			"Discount": [ "İndirim" ],
+			"Percentage": [ "Yüzde" ],
+			"Price": [ "Fiyat" ],
+			"Fixed price": [ "Sabit fiyat" ],
+			"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price": [
+				"Birlikte verilen ürünün fiyatına uygulanan indirim. birlikte verilen ürünün satış fiyatı varsa, indirim satış fiyatının üzerine uygulanır"
+			],
+			"Title": [ "Başlık" ],
+			"Overwrite bundle item title": [
+				"Paket öğesi başlığının üzerine yaz"
+			],
+			"Short description": [ "Kısa açıklama" ],
+			"Overwrite bundle item short description.(Show when the mouse hovers over it)": [
+				"Paket öğesi kısa açıklamasının üzerine yaz (Fare üzerine geldiğinde göster)"
+			],
+			"Product selection title": [ "Ürün seçim başlığı" ],
+			"Change the title of the bundle empty item.": [
+				"Paket boş öğesinin başlığını değiştirin."
+			],
+			"Trash": [ "Çöp" ],
+			"General": [ "Genel" ],
+			"Display": [ "Ekran" ],
+			"Individual theme": [ "Bireysel tema" ],
+			"GO PRO": [ "Proya git'" ],
+			"Need help?": [ "Yardım?" ],
+			"If checked, disable auto calculate price and use product price as bundle price.": [
+				"İşaretliyse, otomatik fiyat hesaplamayı devre dışı bırakın ve ürün fiyatını paket fiyatı olarak kullanın."
+			],
+			"Please enable fixed price first.": [
+				"Lütfen önce sabit fiyatı etkinleştirin."
+			],
+			"Click here to set price": [
+				"Fiyat belirlemek için buraya tıklayın"
+			],
+			"Include parent price": [ "Ana fiyatı dahil et" ],
+			"Include the parent product price in the bundle total price. (parent price + selected items price)": [
+				"Ana ürün fiyatını paket toplam fiyatına dahil edin. (ana fiyat + seçilen ürün fiyatı)"
+			],
+			"Shipping fee": [ "Kargo ücreti" ],
+			"Apply to the whole bundle": [ "Tüm pakete uygulayın" ],
+			"Apply to each bundle item": [ "Her bir paket öğesine uygulayın" ],
+			"Custom display price": [ "Özel gösterilecek fiyatı" ],
+			"Product display price in frontend. E.g: From 10$ To 20$": [
+				"Ön uçta ürün görüntüleme fiyatı. Örneğin 10$'dan 20$'a"
+			],
+			"A title for the bundle product that will be shown on top of bundle items.": [
+				"Paket ürün için, paket öğelerinin üstünde gösterilecek bir başlık."
+			],
+			"Add Item": [ "Öğe Ekle" ],
+			"Sort products": [ "Ürünleri Sırala" ],
+			"Menu order": [ "Menü Sırası" ],
+			"Date": [ "Tarih" ],
+			"Rating": [ "Değerlendirme" ],
+			"Popularity": [ "Popülerlik" ],
+			"Ascending": [ "Artan Sıra" ],
+			"Descending": [ "Azalan Sıra" ],
+			"Product list title": [ "Ürün Listesi Başlığı" ],
+			"Change the product list product selection title.": [
+				"Ürün Listesi Ürün Seçimi Başlığını Değiştir"
+			],
+			"Modal header title": [ "Modal Başlık Başlığı" ],
+			"Change the pop-up header title": [
+				"Açılır Pencere Başlığı Başlığı Değiştir"
+			],
+			"Duplicate": [ "Kopyala" ],
+			"Duplicate: Pro version": [ "Kopyala: Pro Sürümü" ],
+			"Set the order of products in the pop-up": [
+				"Ürünlerin açılır penceredeki sırasını ayarla"
+			],
+			"Min items quantity": [ "Minimum ürün miktarı" ],
+			"Set the minimum total quantity of bundled items.": [
+				"Paketlenmiş ürünlerin minimum toplam miktarını ayarla."
+			],
+			"Max items quantity": [ "Maksimum ürün miktarı" ],
+			"Set the maximum total quantity of bundled items.": [
+				"Paketlenmiş ürünlerin maksimum toplam miktarını ayarla."
+			],
+			"Default Image": [ "Varsayılan Görüntü" ],
+			"Upload Image": [ "Resim Yükle" ],
+			"Set an image for empty item.": [
+				"Boş öğe için bir resim ayarlayın"
+			],
+			"No image chosen": [ "Resim seçilmedi" ],
+			"Hide products price": [ "Ürünlerin fiyatını gizle" ],
+			"No": [ "Hayır" ],
+			"Yes": [ "Evet" ],
+			"Only regular price": [ "Sadece normal fiyat" ]
+		}
+	}
+}

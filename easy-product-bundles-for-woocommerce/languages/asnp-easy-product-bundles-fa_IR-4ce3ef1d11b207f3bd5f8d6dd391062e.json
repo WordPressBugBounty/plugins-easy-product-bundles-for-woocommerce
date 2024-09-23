@@ -1,0 +1,183 @@
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "fa_IR",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Type is required.": [ "" ],
+			"PRO Version": [ "" ],
+			"Action is required.": [ "" ],
+			"Theme": [ "تم" ],
+			"Grid 1": [ "" ],
+			"Grid 2": [ "" ],
+			"List 1": [ "" ],
+			"List 2": [ "" ],
+			"Size": [ "اندازه" ],
+			"Small": [ "کوچک" ],
+			"Medium": [ "متوسط" ],
+			"Large": [ "بزرگ" ],
+			"Data is required.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [],
+
+			"OK, you deserve it!": [ "" ],
+
+			"I already did": [ "" ],
+
+			"Maybe Later": [ "" ],
+
+			"I need help": [ "" ],
+			"Never show again": [ "" ],
+			"Items are required.": [ "" ],
+			"There was an error on getting items.": [ "" ],
+			"Search value is required.": [ "" ],
+			"There was an error on searching items.": [ "" ],
+			"Optional": [ "اختیاری" ],
+
+			"Check this option to make the bundle item optional to choose by the user": [
+				"برای اینکه آیتم بسته را برای انتخاب توسط کاربر اختیاری کنید، این گزینه را علامت بزنید"
+			],
+
+			"Use default-product": [ "استفاده از محصول پیش‌فرض" ],
+
+			"Check this option to add a default product for the bundle item that is shown as a selected product for this bundle item": [
+				"برای اضافه کردن یک محصول پیش‌فرض برای بسته که به عنوان محصول انتخاب شده برای این بسته نمایش داده می‌شود، این گزینه را علامت بزنید"
+			],
+			"Default product": [ "محصول پیش فرض" ],
+			"Set a default product": [ "تعیین محصول پیش فرض" ],
+			"Products": [ "محصولات" ],
+			"Add products or Variations": [ "افزودن محصولات" ],
+			"Exclude products": [ "محصولات مستثنی" ],
+			"Select a product that you do not want to be displayed": [
+				" محصولی که نمی‌خواهید نمایش داده شود را انتخاب کنید"
+			],
+			"Categories": [ "دسته بندی ها" ],
+			"Select the category product that you want to be displayed in this bundle item": [
+				"دسته بندی محصولی که می خواهید در این بسته نمایش داده شود را انتخاب کنید"
+			],
+			"Exclude categories": [ "دسته بندی های مستثنی" ],
+			"Select the category product that you do not want to be displayed in this bundle item": [
+				"دسته بندی محصولی را که نمی‌خواهید در این بسته نمایش داده شود را انتخاب کنید"
+			],
+			"Tags": [ "برچسب ها" ],
+			"Select the product with tags to display in this bundle item": [
+				"محصولی با برچسب که می خواهید در این بسته نمایش داده شود را انتخاب کنید"
+			],
+			"Exclude tags": [ "برچسب های مستثنی" ],
+			"Select the product with tags that you do not want to be displayed in the bundle item": [
+				"محصولی با برچسب که نمی‌خواهید در این بسته نمایش داده شود را انتخاب کنید"
+			],
+			"Categories and Tags relation": [
+				"ارتباط دسته بندی ها و برچسب ها"
+			],
+			"Match at least one": [ "حداقل یکی مطابقت داشته باشد" ],
+			"Match both": [ "هر دو مطابقت داشته باشند" ],
+			"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.": [
+				"حداقل یکی: محصولات باید با حداقل یکی از دسته بندی ها یا برچسب ها مطابقت داشته باشند.%sهر دو: محصولات باید با هر دو دسته بندی و برچسب مطابقت داشته باشند."
+			],
+			"Quantity": [ "تعداد" ],
+			"Set the default product quantity": [ "تنظیم تعداد پیشفرض محصول" ],
+			"Edit quantity by user": [ "ویرایش تعداد توسط کاربر" ],
+			"Check this option to allow the user to change the bundle item quantity": [
+				"برای اجازه دادن به کاربر برای تغییر تعداد محصول انتخابی، این گزینه را علامت بزنید"
+			],
+			"Min quantity": [ "حداقل تعداد" ],
+			"Set the minimum quantity of this bundled product": [
+				"تعیین حداقل تعداد برای این محصول بسته‌بندی‌شده"
+			],
+			"Max quantity": [ "حداکثر تعداد" ],
+			"Set the maximum quantity of this bundled product": [
+				"تعیین حداکثر تعداد برای این محصول بسته‌بندی‌شده"
+			],
+			"Discount": [ "تخفیف" ],
+			"Percentage": [ "درصد" ],
+			"Price": [ "قیمت" ],
+			"Fixed price": [ "قیمت ثابت" ],
+			"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price": [
+				"تخفیفی که به قیمت محصول بسته‌بندی‌شده اعمال می‌شود. اگر محصول بسته‌بندی شده به صورت پیشفرض دارای قیمت تخفیف دار باشد، این تخفیف بر روی قیمت تخفیف شده اعمال می‌شود."
+			],
+			"Title": [ "عنوان" ],
+			"Overwrite bundle item title": [
+				"بازنویسی عنوان محصول بسته‌بندی شده"
+			],
+			"Short description": [ "توضیحات کوتاه" ],
+			"Overwrite bundle item short description.(Show when the mouse hovers over it)": [
+				"بازنویسی توضیحات کوتاه محصول بسته‌بندی شده (هنگامی که موس روی آن قرار می‌گیرد نمایش داده می‌شود)"
+			],
+			"General": [ "عمومی" ],
+			"Display": [ "نمایش" ],
+			"Individual theme": [ "تم شخصی" ],
+			"GO PRO": [ "نسخه حرفه‌ای" ],
+			"If checked, disable auto calculate price and use product price as bundle price.": [
+				"اگر انتخاب شود، محاسبه قیمت خودکار غیرفعال شده و قیمت محصول به عنوان قیمت بسته‌بندی استفاده می‌شود."
+			],
+			"Please enable fixed price first.": [
+				"لطفاً ابتدا قیمت ثابت را فعال کنید."
+			],
+			"Click here to set price": [ "برای تنظیم قیمت، اینجا کلیک کنید." ],
+			"Shipping fee": [ "هزینه حمل و نقل" ],
+			"Apply to the whole bundle": [ "برای کل بسته‌بندی اعمال شود" ],
+			"Apply to each bundle item": [ "برای هر مورد بسته‌بندی اعمال شود" ],
+			"Custom display price": [ "قیمت نمایش سفارشی" ],
+			"Product display price in frontend. E.g: From 10$ To 20$": [
+				"قیمت نمایشی محصول در صفحه نمایش. مثلاً: از ۱۰ دلار تا ۲۰ دلار"
+			],
+			"A title for the bundle product that will be shown on top of bundle items.": [
+				"عنوانی برای محصول بسته‌بندی شده که بالای اقلام بسته‌بندی شده نمایش داده می‌شود."
+			],
+			"Add Item": [ "افزودن آیتم" ],
+			"Trash": [ "سطل زباله" ],
+			"Need help?": [ "نیاز به راهنمایی؟" ],
+			"Product selection title": [ "عنوان انتخاب محصول" ],
+			"Change the title of the bundle empty item.": [
+				"عنوان آیتم خالی بسته را تغییر دهید."
+			],
+			"Include parent price": [ "شامل قیمت والد" ],
+			"Include the parent product price in the bundle total price. (parent price + selected items price)": [
+				"قیمت محصول والد را در قیمت کل بسته درنظر بگیرید. (قیمت محصول والد + قیمت اقلام انتخابی)"
+			],
+			"Sort products": [ "مرتب‌ سازی محصولات" ],
+			"Menu order": [ "ترتیب منو" ],
+			"Date": [ "تاریخ" ],
+			"Rating": [ "امتیاز" ],
+			"Popularity": [ "محبوبیت" ],
+			"Ascending": [ "صعودی" ],
+			"Descending": [ "نزولی" ],
+			"Product list title": [ "عنوان لیست محصولات" ],
+			"Change the product list product selection title.": [
+				"تغییر عنوان انتخاب محصول در لیست"
+			],
+			"Modal header title": [ "عنوان هدر پاپ‌آپ" ],
+			"Change the pop-up header title": [ "تغییر عنوان هدر پاپ‌آپ" ],
+			"Duplicate": [ "تکرار" ],
+			"Duplicate: Pro version": [ "تکرار: نسخه حرفه‌ای" ],
+			"Set the order of products in the pop-up": [
+				"تنظیم ترتیب محصولات در پنجره پاپ‌آپ"
+			],
+			"Min items quantity": [ "حداقل تعداد اقلام" ],
+			"Set the minimum total quantity of bundled items.": [
+				"تعیین حداقل مقدار کل اقلام بسته بندی شده."
+			],
+			"Max items quantity": [ "حداکثر تعداد اقلام" ],
+			"Set the maximum total quantity of bundled items.": [
+				"تعیین حداکثر مقدار کل اقلام بسته بندی شده."
+			],
+			"Default Image": [ "عکس پیش‌ فرض" ],
+			"Upload Image": [ "بارگذاری عکس" ],
+			"Set an image for empty item.": [
+				"عکس برای مورد خالی اضافه کنید."
+			],
+			"No image chosen": [ "هیچ عکسی انتخاب نشده است" ],
+			"Hide products price": [ "پنهان کردن قیمت محصولات" ],
+			"No": [ "خیر" ],
+			"Yes": [ "بله" ],
+			"Only regular price": [ "فقط قیمت عادی" ]
+		}
+	}
+}

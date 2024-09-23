@@ -1,0 +1,190 @@
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "it_IT",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Type is required.": [ "" ],
+			"PRO Version": [ "Versione PRO" ],
+			"Action is required.": [ "" ],
+			"Theme": [ "Tema" ],
+			"Grid 1": [ "Griglia 1" ],
+			"Grid 2": [ "Griglia 2" ],
+			"List 1": [ "Lista 1" ],
+			"List 2": [ "Lista 2" ],
+			"Size": [ "Dimensione" ],
+			"Small": [ "Piccolo" ],
+			"Medium": [ "Medio" ],
+			"Large": [ "Grande" ],
+			"Data is required.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				"Speriamo che ti stia divertendo con %1$s! %3$s Potresti per favore fare una GRANDE cortesia e darci un %2$s per aiutarci a diffondere la parola e aumentare la nostra motivazione? %4$s %5$sCondividi le tue richieste di funzionalità%6$s nella recensione, le controlliamo sempre e facciamo del nostro meglio."
+			],
+			"OK, you deserve it!": [ "OK, lo meriti!" ],
+			"I already did": [ "l'ho già fatto" ],
+			"Maybe Later": [ "Forse più tardi" ],
+			"I need help": [ "Ho bisogno di aiuto" ],
+			"Never show again": [ "Non mostrare mai più" ],
+			"Items are required.": [ "" ],
+			"There was an error on getting items.": [ "" ],
+			"Search value is required.": [ "" ],
+			"There was an error on searching items.": [ "" ],
+			"Optional": [ "Opzionale" ],
+			"Check this option to make the bundle item optional to choose by the user": [
+				"Seleziona questa opzione per rendere l'elemento del bundle opzionale per la scelta dell'utente."
+			],
+			"Use default-product": [ "Usa prodotto-predefinito" ],
+			"Check this option to add a default product for the bundle item that is shown as a selected product for this bundle item": [
+				"Seleziona questa opzione per aggiungere un prodotto predefinito per l'elemento del bundle che viene mostrato come prodotto selezionato per questo elemento del bundle."
+			],
+			"Default product": [ "Prodotto predefinito" ],
+			"Set a default product": [ "Imposta un prodotto predefinito" ],
+			"Products": [ "Prodotti" ],
+			"Add products or Variations": [ "Aggiungi prodotti o varianti" ],
+			"Exclude products": [ "Escludi prodotti" ],
+			"Select a product that you do not want to be displayed": [
+				"Seleziona un prodotto che non vuoi che venga visualizzato"
+			],
+			"Categories": [ "Categorie" ],
+			"Select the category product that you want to be displayed in this bundle item": [
+				"Seleziona la categoria di prodotto che desideri che venga visualizzata in questo elemento del bundle."
+			],
+			"Exclude categories": [ "Escludi categorie" ],
+			"Select the category product that you do not want to be displayed in this bundle item": [
+				"Seleziona la categoria di prodotto che non vuoi che venga visualizzata in questo elemento del bundle."
+			],
+			"Tags": [ "" ],
+			"Select the product with tags to display in this bundle item": [
+				"Seleziona il prodotto con i tag da visualizzare in questo elemento del bundle."
+			],
+			"Exclude tags": [ "Escludi tags" ],
+			"Select the product with tags that you do not want to be displayed in the bundle item": [
+				"Seleziona il prodotto con i tag che non vuoi che venga visualizzato nell'articolo del bundle."
+			],
+			"Categories and Tags relation": [ "Relazione tra categorie e tag" ],
+			"Match at least one": [ "Abbinane almeno uno" ],
+			"Match both": [ "Abbina entrambi" ],
+			"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.": [
+				"Corrispondenza di almeno uno: i prodotti devono corrispondere ad almeno una delle categorie o dei tag.%sCorrispondenza di entrambi: i prodotti devono corrispondere sia alle categorie che ai tag."
+			],
+			"Quantity": [ "Quantità" ],
+			"Set the default product quantity": [
+				"Imposta la quantità predefinita del prodotto"
+			],
+			"Edit quantity by user": [
+				"Modifica quantità da parte dell'utente"
+			],
+			"Check this option to allow the user to change the bundle item quantity": [
+				"Seleziona questa opzione per consentire all'utente di modificare la quantità dell'articolo del bundle."
+			],
+			"Min quantity": [ "Quantità min" ],
+			"Set the minimum quantity of this bundled product": [
+				"Imposta la quantità minima di questo prodotto bundle"
+			],
+			"Max quantity": [ "Quantità max" ],
+			"Set the maximum quantity of this bundled product": [
+				"Imposta la quantità massima di questo prodotto bundle"
+			],
+			"Discount": [ "Sconto" ],
+			"Percentage": [ "Percentuale" ],
+			"Price": [ "Prezzo" ],
+			"Fixed price": [ "Prezzo fisso" ],
+			"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price": [
+				"Sconto applicato al prezzo del prodotto del bundle. Se il prodotto del bundle ha un prezzo in vendita, lo sconto verrà applicato in cima al prezzo in vendita."
+			],
+			"Title": [ "Titolo" ],
+			"Overwrite bundle item title": [
+				"Sovrascrivi il titolo dell'articolo del bundle"
+			],
+			"Short description": [ "Descrizione breve" ],
+			"Overwrite bundle item short description.(Show when the mouse hovers over it)": [
+				"Sovrascrivi la descrizione breve del bundle. (Mostra quando il mouse ci passa sopra)"
+			],
+			"General": [ "Generale" ],
+			"Display": [ "Visualizza" ],
+			"Individual theme": [ "Tema individuale" ],
+			"GO PRO": [ "PASSA A PRO" ],
+			"If checked, disable auto calculate price and use product price as bundle price.": [
+				"Se selezionato, disabilita il calcolo automatico del prezzo e utilizza il prezzo del prodotto come prezzo del bundle."
+			],
+			"Please enable fixed price first.": [
+				"Per favore abilita prima il prezzo fisso."
+			],
+			"Click here to set price": [
+				"Fai clic qui per impostare il prezzo"
+			],
+			"Shipping fee": [ "Costi di spedizione" ],
+			"Apply to the whole bundle": [ "Applica a tutto il bundle" ],
+			"Apply to each bundle item": [
+				"Applicare ad ogni articolo del bundle"
+			],
+			"Custom display price": [
+				"Prezzo di visualizzazione personalizzato"
+			],
+			"Product display price in frontend. E.g: From 10$ To 20$": [
+				"Mostra prezzo personalizzato nel frontend. Es.: Da $10 a 20$"
+			],
+			"A title for the bundle product that will be shown on top of bundle items.": [
+				"Un titolo per il bundle che verrà mostrato sopra i prodotti presenti."
+			],
+			"Add Item": [ "Aggiungi articolo" ],
+			"Trash": [ "Spazzatura" ],
+			"Need help?": [ "bisogno aiuto?" ],
+			"Product selection title": [ "Titolo selezione prodotto" ],
+			"Change the title of the bundle empty item.": [
+				"Cambia il titolo dell'articolo vuoto del bundle."
+			],
+			"Include parent price": [
+				"Includi il prezzo del prodotto principale"
+			],
+			"Include the parent product price in the bundle total price. (parent price + selected items price)": [
+				"Includi il prezzo del prodotto principale nel prezzo totale del bundle. (prezzo del prodotto principale + prezzo degli articoli selezionati)"
+			],
+			"Sort products": [ "Ordina prodotti" ],
+			"Menu order": [ "Ordine del menu" ],
+			"Date": [ "Data" ],
+			"Rating": [ "Valutazione" ],
+			"Popularity": [ "Popolarità" ],
+			"Ascending": [ "Ascendente" ],
+			"Descending": [ "Decrescente" ],
+			"Product list title": [ "Titolo dell'elenco dei prodotti" ],
+			"Change the product list product selection title.": [
+				"Modificare il titolo della selezione dei prodotti dell'elenco dei prodotti."
+			],
+			"Modal header title": [ "Titolo del pannello modale" ],
+			"Change the pop-up header title": [
+				"Cambia il titolo del pannello popup"
+			],
+			"Duplicate": [ "Duplicato" ],
+			"Duplicate: Pro version": [ "Duplicato: Versione Pro" ],
+			"Set the order of products in the pop-up": [
+				"Imposta l'ordine dei prodotti nel pop-up"
+			],
+			"Min items quantity": [ "Quantità minima di articoli" ],
+			"Set the minimum total quantity of bundled items.": [
+				"Imposta la quantità minima totale di articoli raggruppati."
+			],
+			"Max items quantity": [ "Quantità massima di articoli" ],
+			"Set the maximum total quantity of bundled items.": [
+				"Imposta la quantità massima totale di articoli raggruppati."
+			],
+			"Default Image": [ "Immagine predefinita" ],
+			"Upload Image": [ "Carica immagine" ],
+			"Set an image for empty item.": [
+				"Imposta un'immagine per l'elemento vuoto."
+			],
+			"No image chosen": [ "Nessuna immagine selezionata" ],
+			"Hide products price": [ "Nascondi il prezzo dei prodotti" ],
+			"No": [ "No" ],
+			"Yes": [ "Sì" ],
+			"Only regular price": [ "Solo prezzo regolare" ]
+		}
+	}
+}

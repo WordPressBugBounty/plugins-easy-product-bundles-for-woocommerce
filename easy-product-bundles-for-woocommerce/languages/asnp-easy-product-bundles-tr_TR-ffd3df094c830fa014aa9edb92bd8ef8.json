@@ -1,0 +1,39 @@
+{
+  "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+  "generator": "WP-CLI\/2.5.0",
+  "source": "assets\/js\/admin\/review\/index.js",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "lang": "tr_TR",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Action is required.": [
+        "İşlem gerekli"
+      ],
+      "There was an error on applying review.": [
+        "İnceleme başvurusunda bir hata oluştu."
+      ],
+      "We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+        "Umarız %1$s!'i beğeniyorsunuzdur! %3$s Lütfen bize BÜYÜK bir iyilik yapıp, kelimeyi yaymamıza ve motivasyonumuzu artırmamıza yardımcı olmak için %2$s verir misiniz?%4$s %5$sÖzellik isteklerinizi%6$s incelemeyle paylaşın, Onları her zaman kontrol ediyoruz ve elimizden gelenin en iyisini yapıyoruz."
+      ],
+      "OK, you deserve it!": [
+        "Tamam, bunu hak ettin!"
+      ],
+      "I already did": [
+        "Çoktan yaptım."
+      ],
+      "Maybe Later": [
+        "Belki sonra"
+      ],
+      "I need help": [
+        "Yardıma ihtiyacım var"
+      ],
+      "Never show again": [
+        "Tekrar gösterme"
+      ]
+    }
+  }
+}

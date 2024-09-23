@@ -1,0 +1,172 @@
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "he_IL",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Type is required.": [ "" ],
+			"PRO Version": [ "גרסה PRO" ],
+			"Action is required.": [ "" ],
+			"Theme": [ "ערכת נושא" ],
+			"Grid 1": [ "" ],
+			"Grid 2": [ "" ],
+			"List 1": [ "" ],
+			"List 2": [ "" ],
+			"Size": [ "גודל" ],
+			"Small": [ "קטן" ],
+			"Medium": [ "בינוני" ],
+			"Large": [ "גדול" ],
+			"Data is required.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				""
+			],
+			"OK, you deserve it!": [ "" ],
+			"I already did": [ "" ],
+			"Maybe Later": [ "" ],
+			"I need help": [ "" ],
+			"Never show again": [ "" ],
+			"Items are required.": [ "" ],
+			"There was an error on getting items.": [ "" ],
+			"Search value is required.": [ "" ],
+			"There was an error on searching items.": [ "" ],
+			"Optional": [ "אופציונלי" ],
+			"Check this option to make the bundle item optional to choose by the user": [
+				"סמן את האפשרות הזו כדי להפוך את הפריט בארגז לאופציונלי לבחירה על ידי המשתמש"
+			],
+			"Use default-product": [ "השתמש במוצר ברירת המחדל" ],
+			"Check this option to add a default product for the bundle item that is shown as a selected product for this bundle item": [
+				"סמן את האפשרות הזו כדי להוסיף מוצר ברירת מחדל עבור הפריט בארגז, שמוצג כמוצר נבחר עבור פריט זה בארגז"
+			],
+			"Default product": [ "מוצר ברירת מחדל" ],
+			"Set a default product": [ "הגדר מוצר ברירת מחדל" ],
+			"Products": [ "מוצרים" ],
+			"Add products or Variations": [ "הוסף מוצרים או וריאציות" ],
+			"Exclude products": [ "אל תכלול מוצרים" ],
+			"Select a product that you do not want to be displayed": [
+				"בחר מוצר שאתה לא רוצה שיוצג"
+			],
+			"Categories": [ "קטגוריות" ],
+			"Select the category product that you want to be displayed in this bundle item": [
+				"בחר את קטגוריית המוצר שאתה רוצה שיתצג בפריט זה בארגז"
+			],
+			"Exclude categories": [ "אל תכלול קטגוריות" ],
+			"Select the category product that you do not want to be displayed in this bundle item": [
+				"בחר את קטגוריית המוצר שאתה לא רוצה שתתצג בפריט זה בארגז"
+			],
+			"Tags": [ "תגים" ],
+			"Select the product with tags to display in this bundle item": [
+				"בחר את המוצר עם התגים שברצונך להציג בפריט הארגז הזה"
+			],
+			"Exclude tags": [ "אל תכלול תגים" ],
+			"Select the product with tags that you do not want to be displayed in the bundle item": [
+				"בחר את המוצר עם התגים שלא ברצונך שיתצג בפריט הארגז"
+			],
+			"Categories and Tags relation": [ "קשר בין קטגוריות ותגים" ],
+			"Match at least one": [ "התאם לפחות אחד" ],
+			"Match both": [ "התאם את שנייהם" ],
+			"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.": [
+				"התאם לפחות אחד: מוצרים צריכים להתאים לפחות לקטגוריה אחת או לתגים.%sהתאם את שנייהם: מוצרים צריכים להתאים לשני הקטגוריות והתגים."
+			],
+			"Quantity": [ "כַּמוּת" ],
+			"Set the default product quantity": [
+				"הגדר את כמות המוצר ברירת המחדל"
+			],
+			"Edit quantity by user": [ "ערוך כמות לפי משתמש" ],
+			"Check this option to allow the user to change the bundle item quantity": [
+				"סמן את האפשרות הזו כדי לאפשר למשתמש לשנות את כמות הפריט בארגז"
+			],
+			"Min quantity": [ "כמות מינ" ],
+			"Set the minimum quantity of this bundled product": [
+				"הגדר את הכמות המינימלית של מוצר זה בארגז"
+			],
+			"Max quantity": [ "כמות מַקְסִ" ],
+			"Set the maximum quantity of this bundled product": [
+				"הגדר את הכמות המרבית של מוצר זה בארגז"
+			],
+			"Discount": [ "הנחה" ],
+			"Percentage": [ "אחוז" ],
+			"Price": [ "מחיר" ],
+			"Fixed price": [ "מחיר קבוע" ],
+			"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price": [
+				"ההנחה מוחלת על מחיר המוצר בארגז. אם למוצר בארגז יש מחיר מבצע, ההנחה מוחלת מעל למחיר המבצע"
+			],
+			"Title": [ "כותרת" ],
+			"Overwrite bundle item title": [ "החלף את כותרת הפריט של החבילה" ],
+			"Short description": [ "תיאור קצר" ],
+			"Overwrite bundle item short description.(Show when the mouse hovers over it)": [
+				"החלף תיאור קצר של פריט חבילה. (הצג כאשר העכבר מרחף מעליו)"
+			],
+			"General": [ "כללי" ],
+			"Display": [ "תצוגה" ],
+			"Individual theme": [ "ערכת נושא אישית" ],
+			"GO PRO": [ "ללכת PRO" ],
+			"If checked, disable auto calculate price and use product price as bundle price.": [
+				"אם מסומן, השבת את החישוב האוטומטי של המחיר והשתמש במחיר המוצר כמחיר החבילה"
+			],
+			"Please enable fixed price first.": [ "נא להפעיל מחיר קבוע תחילה" ],
+			"Click here to set price": [ "לחץ כאן כדי להגדיר מחיר" ],
+			"Shipping fee": [ "דמי משלוח" ],
+			"Apply to the whole bundle": [ "החל על כל הארגז" ],
+			"Apply to each bundle item": [ "החל על כל פריט בארגז" ],
+			"Custom display price": [ "מחיר תצוגה מותאם אישית" ],
+			"Product display price in frontend. E.g: From 10$ To 20$": [
+				"מחיר התצוגה של המוצר בחזית. לדוגמה: מ-10$ ל-20$"
+			],
+			"A title for the bundle product that will be shown on top of bundle items.": [
+				"כותרת למוצר הארגז שתוצג מעל פריטי הארגז"
+			],
+			"Add Item": [ "הוסף פריט" ],
+			"Trash": [ "אשפה" ],
+			"Need help?": [ "צריך עזרה?" ],
+			"Product selection title": [ "כותרת בחירת מוצר" ],
+			"Change the title of the bundle empty item.": [
+				"שנה את כותרת פריט החבילה הריק."
+			],
+			"Include parent price": [ "כלול את מחיר ההורה" ],
+			"Include the parent product price in the bundle total price. (parent price + selected items price)": [
+				"כלול את מחיר המוצר ההורה במחיר הכולל של החבילה. (מחיר ההורה + מחיר הפריטים הנבחרים)"
+			],
+			"Sort products": [ "מיין מוצרים" ],
+			"Menu order": [ "סדר בתפריט" ],
+			"Date": [ "תאריך" ],
+			"Rating": [ "דירוג" ],
+			"Popularity": [ "פופולריות" ],
+			"Ascending": [ "סדר עולה" ],
+			"Descending": [ "סדר יורד" ],
+			"Product list title": [ "כותרת רשימת המוצרים" ],
+			"Change the product list product selection title.": [
+				"שנה את כותרת בחירת המוצר ברשימה"
+			],
+			"Modal header title": [ "כותרת חלון מודל" ],
+			"Change the pop-up header title": [ "שנה את כותרת החלון הקופץ" ],
+			"Duplicate": [ "שכפול" ],
+			"Duplicate: Pro version": [ "שכפול: גרסה Pro" ],
+			"Set the order of products in the pop-up": [
+				"הגדר את סדר המוצרים בחלון המוקפץ"
+			],
+			"Min items quantity": [ "כמות מינימלית של פריטים" ],
+			"Set the minimum total quantity of bundled items.": [
+				"הגדר את כמות הפריטים המינימלית הכוללת של פריטים מצורפים."
+			],
+			"Max items quantity": [ "כמות מרבית של פריטים" ],
+			"Set the maximum total quantity of bundled items.": [
+				"הגדר את הכמות המרבית הכוללת של פריטים מצורפים."
+			],
+			"Default Image": [ "תמונה ברירת מחדל" ],
+			"Upload Image": [ "העלה תמונה" ],
+			"Set an image for empty item.": [ "הגדר תמונה לפריט ריק." ],
+			"No image chosen": [ "לא נבחרה תמונה" ],
+			"Hide products price": [ "הסתרת מחיר המוצרים" ],
+			"No": [ "לא" ],
+			"Yes": [ "כן" ],
+			"Only regular price": [ "רק מחיר רגיל" ]
+		}
+	}
+}

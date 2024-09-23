@@ -1,0 +1,44 @@
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "tr_TR",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Product ID is required.": [ "Ürün kimliği gereklidir." ],
+			"Parent product ID is required.": [
+				"Ana ürün kimliği gereklidir."
+			],
+			"Item index is required.": [ "Ürün dizini gereklidir." ],
+			"There was an error on getting items.": [
+				"Ürünleri alırken bir hata oluştu."
+			],
+			"Change": [ "Değiştir" ],
+			"OUT OF STOCK": [ "Stokta yok" ],
+			"Bundle item image": [ "Paket ürün resmi" ],
+			"View": [ "Göster" ],
+			"Add": [ "Ekle" ],
+			"Add%s": [ "Ekle%s" ],
+			"More pictures": [ "Daha fazla resim" ],
+			"Args is required.": [ "Args gereklidir." ],
+			"Back": [ "Geri" ],
+			"Please Select Your Product": [ "Lütfen Ürün Seçiniz" ],
+			"Close": [ "Kapat" ],
+			"Prev": [ "Önceki" ],
+			"Next": [ "Sonraki" ],
+			"Save": [ "İndirim: " ],
+			"Please select a product for all items.": [
+				"Lütfen set için ürün seçimi yapın."
+			],
+			"Edit product": [ "Ürünleri düzenle" ],
+			"Please select your product!": [ "Lütfen ürün seçin!" ],
+			"Product information": [ "Ürün Bilgileri" ],
+			"Add product": [ "ÜRÜNÜ EKLE" ]
+		}
+	}
+}
