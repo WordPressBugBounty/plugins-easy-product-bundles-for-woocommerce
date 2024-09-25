@@ -233,7 +233,12 @@
 			"Click on product in pop-up": [ "Clicca sul prodotto nel pop-up" ],
 			"Product selection": [ "Selezione prodotto" ],
 			"Show product details": [ "Mostra dettagli prodotto" ],
-			"Quantity field buttons hover color": [ "Colore hover pulsanti campo quantità" ]
+			"Quantity field buttons hover color": [
+				"Colore hover pulsanti campo quantità"
+			],
+			"Add to cart button selector": [
+				"Selettore del pulsante Aggiungi al carrello"
+			]
 		}
 	}
 }

@@ -191,7 +191,8 @@
 			"Show product details": [ "הצג פרטי המוצר" ],
 			"Quantity field buttons hover color": [
 				"צבע ריחוף של כפתורי שדה הכמות"
-			]
+			],
+			"Add to cart button selector": [ "בוחר כפתור הוסף לסל" ]
 		}
 	}
 }

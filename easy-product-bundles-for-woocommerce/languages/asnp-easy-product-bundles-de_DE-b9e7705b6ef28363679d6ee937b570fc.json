@@ -215,6 +215,9 @@
 			"Show product details": [ "Produktdetails anzeigen" ],
 			"Quantity field buttons hover color": [
 				"Hover-Farbe der Mengenfeld-Schaltflächen"
+			],
+			"Add to cart button selector": [
+				"Warenkorb hinzufügen Button-Auswahl"
 			]
 		}
 	}

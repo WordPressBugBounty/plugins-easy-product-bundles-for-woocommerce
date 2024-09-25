@@ -1140,7 +1140,6 @@ class ProductBundleHooks {
 					continue;
 				}
 
-				$item_product->set_price( 0 );
 				if ( ! $is_fixed_price ) {
 					$item_price = get_bundle_item_price(
 						$item_product,
@@ -1150,10 +1149,12 @@ class ProductBundleHooks {
 							'is_fixed_price' => $is_fixed_price,
 						]
 					);
+					$item_price = wc_get_price_to_display( $item_product, [ 'price' => $item_price, 'display_context' => 'cart' ] );
 					$price += $item_price;
 				}
 
 				$order_items[] = [ $item_product, absint( $items[ $i ]['quantity'] ) * $quantity ];
+				$item_product->set_price( 0 );
 			}
 
 			if ( ! $is_fixed_price ) {

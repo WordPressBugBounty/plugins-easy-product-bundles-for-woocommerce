@@ -225,6 +225,9 @@
 			"Show product details": [ "Показване на детайлите за продукта" ],
 			"Quantity field buttons hover color": [
 				"Цвят при задържане на бутони за количество"
+			],
+			"Add to cart button selector": [
+				"Селектор на бутона Добави в количката"
 			]
 		}
 	}

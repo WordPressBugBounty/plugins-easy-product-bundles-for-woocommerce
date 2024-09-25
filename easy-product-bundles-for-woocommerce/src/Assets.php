@@ -77,6 +77,7 @@ class Assets {
 				'product_list_price'               => $settings->get_setting( 'product_list_price', 'product_subtotal' ),
 				'item_price'                       => $settings->get_setting( 'item_price', 'product_price' ),
 				'product_price_selector'           => $settings->get_setting( 'product_price_selector', '.product .summary .price' ),
+				'add_to_cart_button_selector'      => $settings->get_setting( 'add_to_cart_button_selector', 'button[type="submit"][name="add-to-cart"]' ),
 				'quantity_field_on_item'           => $settings->get_setting( 'quantity_field_on_item', 'true' ),
 				'show_plus_icon'                   => $settings->get_setting( 'show_plus_icon', 'true' ),
 				'click_on_popup_product'           => $settings->get_setting( 'click_on_popup_product', 'product_selection' )

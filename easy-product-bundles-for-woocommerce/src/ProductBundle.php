@@ -694,12 +694,6 @@ class ProductBundle extends \WC_Product {
 			return true;
 		}
 
-		global $wpdb;
-
-		// Collect product IDs to check stock status in bulk.
-		$product_ids_to_check = array();
-		$item_quantities      = array();
-
 		foreach ( $items as $item ) {
 			if ( isset( $item['optional'] ) && 'true' === $item['optional'] ) {
 				continue;
@@ -717,76 +711,23 @@ class ProductBundle extends \WC_Product {
 				continue;
 			}
 
-			$default_product_id = ! empty( $item['product'] ) ? (int) $item['product'] : null;
-
-			// Skip checking stock for default product if other products are available.
-			if ( $default_product_id && ! empty( $item['products'] ) && $default_product_id != $item['products'][0] ) {
+			$default_product = ! empty( $item['product'] ) ? wc_get_product( (int) $item['product'] ) : null;
+			// Do not check stock status of default product when more products are available.
+			if (
+				$default_product &&
+				! empty( $item['products'] ) &&
+				$default_product->get_id() != $item['products'][0]
+			) {
 				continue;
 			}
 
-			if ( ! $default_product_id && ! empty( $item['products'] ) && 1 === count( $item['products'] ) ) {
-				$default_product_id = (int) $item['products'][0];
+			// Use the product inside products field as a default product.
+			if ( ! $default_product && ! empty( $item['products'] ) && 1 === count( $item['products'] ) ) {
+				$default_product = wc_get_product( (int) $item['products'][0] );
 			}
 
-			if ( $default_product_id ) {
-				$quantity = ! empty( $item['quantity'] ) && $item['quantity'] > 0 ? absint( $item['quantity'] ) : 1;
-				if ( ! in_array( $default_product_id, $product_ids_to_check ) ) {
-					$product_ids_to_check[] = $default_product_id;
-				}
-				$item_quantities[ $default_product_id ] = isset( $item_quantities[ $default_product_id ] ) ? $item_quantities[ $default_product_id ] + $quantity : $quantity;
-			}
-		}
-
-		if ( empty( $product_ids_to_check ) ) {
-			return true;
-		}
-
-		// Sanitize product IDs.
-		$ids = implode( ',', array_map( 'absint', $product_ids_to_check ) );
-
-		// Use a query to retrieve stock status and stock quantity for all products.
-		if ( get_option( 'woocommerce_product_lookup_table_is_generating' ) ) {
-			$query = "
-				SELECT post_id, meta_key, meta_value
-				FROM {$wpdb->postmeta}
-				WHERE post_id IN ({$ids})
-				AND meta_key IN ('_stock_status', '_stock')
-			";
-		} else {
-			$query = "
-				SELECT product_id, stock_status, stock_quantity
-				FROM {$wpdb->wc_product_meta_lookup}
-				WHERE product_id IN ({$ids})
-			";
-		}
-
-		$results = $wpdb->get_results( $query );
-
-		$stock_statuses   = array();
-		$stock_quantities = array();
-
-		foreach ( $results as $result ) {
-			if ( isset( $result->stock_status ) ) {
-				$stock_statuses[ $result->product_id ] = $result->stock_status;
-				$stock_quantities[ $result->product_id ] = $result->stock_quantity;
-			} elseif ( isset( $result->meta_key ) ) {
-				if ( '_stock_status' === $result->meta_key ) {
-					$stock_statuses[ $result->post_id ] = $result->meta_value;
-				} elseif ( '_stock' === $result->meta_key ) {
-					$stock_quantities[ $result->post_id ] = $result->meta_value;
-				}
-			}
-		}
-
-		foreach ( $product_ids_to_check as $product_id ) {
-			$stock_status      = isset( $stock_statuses[ $product_id ] ) ? $stock_statuses[ $product_id ] : 'outofstock';
-			$stock_quantity    = isset( $stock_quantities[ $product_id ] ) ? $stock_quantities[ $product_id ] : null;
-			$required_quantity = isset( $item_quantities[ $product_id ] ) ? $item_quantities[ $product_id ] : 1;
-
-			if (
-				'outofstock' === $stock_status ||
-				( null !== $stock_quantity && $stock_quantity < $required_quantity )
-			) {
+			$quantity = ! empty( $item['quantity'] ) && 0 < (int) $item['quantity'] ? absint( $item['quantity'] ) : 1;
+			if ( $default_product && ( ! $default_product->is_in_stock() || ! $default_product->has_enough_stock( $quantity ) ) ) {
 				return false;
 			}
 		}

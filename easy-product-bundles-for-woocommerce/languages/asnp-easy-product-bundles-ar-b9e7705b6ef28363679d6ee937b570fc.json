@@ -202,7 +202,8 @@
 			"Show product details": [ "عرض تفاصيل المنتج" ],
 			"Quantity field buttons hover color": [
 				"لون التمرير لأزرار حقل الكمية"
-			]
+			],
+			"Add to cart button selector": [ "محدد زر إضافة إلى السلة" ]
 		}
 	}
 }

@@ -223,7 +223,12 @@
 			],
 			"Product selection": [ "Selección de producto" ],
 			"Show product details": [ "Mostrar detalles del producto" ],
-			"Quantity field buttons hover color": [ "Color de hover de los botones de cantidad" ]
+			"Quantity field buttons hover color": [
+				"Color de hover de los botones de cantidad"
+			],
+			"Add to cart button selector": [
+				"Selector del botón Añadir al carrito"
+			]
 		}
 	}
 }

@@ -221,6 +221,9 @@
 			"Show product details": [ "Afficher les détails du produit" ],
 			"Quantity field buttons hover color": [
 				"Couleur de survol des boutons du champ quantité"
+			],
+			"Add to cart button selector": [
+				"Sélecteur du bouton Ajouter au panie"
 			]
 		}
 	}

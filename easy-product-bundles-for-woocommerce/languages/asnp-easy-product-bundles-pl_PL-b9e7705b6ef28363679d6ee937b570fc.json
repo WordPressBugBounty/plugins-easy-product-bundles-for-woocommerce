@@ -215,7 +215,8 @@
 			"Show product details": [ "Pokaż szczegóły produktu" ],
 			"Quantity field buttons hover color": [
 				"Kolor przycisków pola ilości po najechaniu"
-			]
+			],
+			"Add to cart button selector": [ "Selektor przycisku Dodaj do koszyka" ]
 		}
 	}
 }

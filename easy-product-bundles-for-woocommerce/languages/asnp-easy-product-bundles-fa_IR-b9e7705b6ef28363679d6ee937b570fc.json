@@ -199,7 +199,12 @@
 			"Click on product in pop-up": [ "کلیک روی محصول در صفحه پاپ آپ" ],
 			"Product selection": [ "انتخاب محصول" ],
 			"Show product details": [ "نمایش جزئیات محصول" ],
-			"Quantity field buttons hover color": [ "رنگ هاور دکمه‌های فیلد تعداد" ]
+			"Quantity field buttons hover color": [
+				"رنگ هاور دکمه‌های فیلد تعداد"
+			],
+			"Add to cart button selector": [
+				"انتخابگر دکمه افزودن به سبد خرید"
+			]
 		}
 	}
 }

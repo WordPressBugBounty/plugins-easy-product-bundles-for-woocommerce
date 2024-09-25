@@ -217,6 +217,9 @@
 			"Show product details": [ "Показать детали продукта" ],
 			"Quantity field buttons hover color": [
 				"Цвет кнопок поля количества при наведении"
+			],
+			"Add to cart button selector": [
+				"Селектор кнопки Добавить в корзину"
 			]
 		}
 	}

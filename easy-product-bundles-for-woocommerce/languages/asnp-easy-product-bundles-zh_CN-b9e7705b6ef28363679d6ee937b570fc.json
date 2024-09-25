@@ -184,7 +184,8 @@
 			"Saved Successfully.": [ "保存成功。" ],
 			"There was an error on saving the settings.": [ "" ],
 			"Enable Updates": [ "启用更新" ],
-			"Quantity field buttons hover color": [ "数量字段按钮悬停颜色" ]
+			"Quantity field buttons hover color": [ "数量字段按钮悬停颜色" ],
+			"Add to cart button selector": [ "添加到购物车按钮选择器" ]
 		}
 	}
 }

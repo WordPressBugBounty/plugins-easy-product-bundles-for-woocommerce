@@ -219,7 +219,8 @@
 			"Show product details": [ "Ürün detaylarını göster" ],
 			"Quantity field buttons hover color": [
 				"Miktar alanı düğmelerinin üzerine gelindiğinde renk"
-			]
+			],
+			"Add to cart button selector": [ "Sepete Ekle butonu seçici" ]
 		}
 	}
 }
