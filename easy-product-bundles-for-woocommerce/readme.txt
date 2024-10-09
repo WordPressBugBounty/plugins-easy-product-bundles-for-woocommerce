@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.6
 Requires PHP: 5.6
-Stable tag: 5.1.0
+Stable tag: 5.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -210,14 +210,18 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 5.1.1 =
+* Minor fix.
+* Ensured full compatibility with WooCommerce version 9.3.3
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
+
 = 5.1.0 =
 * Added a customizable selector for the "Add to Cart" button in plugin settings.
 * Fixed issues in is items in stock method.
 * Fixed bundle price in admin manual orders.
 * Disabled the "Add to Cart" button when all items are optional and the bundle has a minimum quantity requirement.
-* Ensured full compatibility with WooCommerce version 9.3.2.
-Note: We kindly request your contribution to our plugin translations. 🙏❤️
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+* Ensured full compatibility with WooCommerce version 9.3.2
 
 = 5.0.0 =
 * You can now customize the hover color for the increase and decrease buttons in the quantity field.
