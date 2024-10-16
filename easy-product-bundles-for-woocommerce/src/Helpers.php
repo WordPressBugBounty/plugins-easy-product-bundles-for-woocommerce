@@ -622,6 +622,8 @@ function get_bundle_item_price( $product, array $args ) {
 		return 0;
 	}
 
+	$args = array_merge( [ 'exchange_price' => true ], $args );
+
 	if (
 		( ! isset( $args['is_fixed_price'] ) || ! $args['is_fixed_price'] ) &&
 		! empty( $args['discount_type'] ) &&
@@ -637,10 +639,12 @@ function get_bundle_item_price( $product, array $args ) {
 			$price = $product->get_regular_price( 'edit' );
 		}
 
-		return $price - DiscountCalculator::calculate( $price, $args['discount'], $args['discount_type'] );
+		$price = $price - DiscountCalculator::calculate( $price, $args['discount'], $args['discount_type'] );
+
+		return $args['exchange_price'] ? maybe_exchange_price( $price ) : $price;
 	}
 
-	return $product->get_price();
+	return $args['exchange_price'] ? $product->get_price() : $product->get_price( 'edit' );
 }
 
 function is_cart_item_bundle( $cart_item ) {
@@ -772,6 +776,22 @@ function added_product_bundle_type() {
 	] );
 
 	return ! empty( $ids );
+}
+
+/**
+ * Maybe exchange price with multicurrency plugins.
+ *
+ * @param mixed  $price
+ * @param string $type
+ *
+ * @return mixed
+ */
+function maybe_exchange_price( $price, $type = 'product' ) {
+	if ( empty( $price ) ) {
+		return $price;
+	}
+
+	return apply_filters( 'asnp_wepb_maybe_exchange_price', $price, $type );
 }
 
 function get_review() {

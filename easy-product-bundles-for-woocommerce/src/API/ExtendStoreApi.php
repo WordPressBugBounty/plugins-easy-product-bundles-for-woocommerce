@@ -159,8 +159,8 @@ class ExtendStoreApi {
 		$prices                = is_array( $prices ) ? (object) $prices : $prices;
 		$cart_contents         = WC()->cart->get_cart();
 		$product_regular_price = Cart\display_prices_including_tax() ?
-			wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_regular_price( 'edit' ) ] ) :
-			wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_regular_price( 'edit' ) ] );
+			wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] ) :
+			wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] );
 
 		if ( isset( $cart_item['asnp_wepb_is_fixed_price'] ) && $cart_item['asnp_wepb_is_fixed_price'] ) {
 			if (
@@ -171,8 +171,8 @@ class ExtendStoreApi {
 			}
 
 			$sale_price    = Cart\display_prices_including_tax() ?
-				wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] ) :
-				wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] );
+				wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] ) :
+				wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] );
 			$regular_price = 0;
 
 			$prices->regular_price               = static::prepare_money_response( $sale_price, $decimals );
@@ -181,8 +181,8 @@ class ExtendStoreApi {
 			if ( 'true' === $cart_item['data']->get_include_parent_price() ) {
 				if ( '' !== $cart_item['data']->get_regular_price( 'edit' ) ) {
 					$regular_price = Cart\display_prices_including_tax() ?
-						wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_regular_price( 'edit' ) ] ) :
-						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_regular_price( 'edit' ) ] );
+						wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] ) :
+						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] );
 				}
 			}
 
@@ -193,8 +193,8 @@ class ExtendStoreApi {
 
 				if ( ! empty( $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ) ) {
 					$regular_price += Cart\display_prices_including_tax() ?
-						wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
-						wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
+						wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
+						wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
 				}
 			}
 
@@ -222,14 +222,14 @@ class ExtendStoreApi {
 		if ( 'true' === $cart_item['data']->get_include_parent_price() ) {
 			if ( '' !== $cart_item['data']->get_price( 'edit' ) ) {
 				$price = Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] ) :
-					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] );
+					wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] ) :
+					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] );
 			}
 
 			if ( $show_regular && '' !== $cart_item['data']->get_regular_price( 'edit' ) ) {
 				$regular_price = Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_regular_price( 'edit' ) ] ) :
-					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_regular_price( 'edit' ) ] );
+					wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] ) :
+					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] );
 			}
 		}
 
@@ -240,14 +240,14 @@ class ExtendStoreApi {
 
 			if ( ! empty( $cart_contents[ $item_key ]['asnp_wepb_price'] ) ) {
 				$price += Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
-					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
+					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
+					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
 			}
 
 			if ( $show_regular && ! empty( $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ) ) {
 				$regular_price += Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
-					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
+					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
+					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
 			}
 		}
 
@@ -272,9 +272,9 @@ class ExtendStoreApi {
 		$prices = is_array( $prices ) ? (object) $prices : $prices;
 
 		if ( Cart\display_prices_including_tax() ) {
-			$price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_price'] ] );
+			$price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( $cart_item['asnp_wepb_price'] ) ] );
 		} else {
-			$price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_price'] ] );
+			$price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( $cart_item['asnp_wepb_price'] ) ] );
 		}
 
 		$prices->price               = $prices->regular_price = $prices->sale_price = static::prepare_money_response( $price, $decimals );
@@ -296,9 +296,9 @@ class ExtendStoreApi {
 			(float) $cart_item['asnp_wepb_reg_price'] > (float) $cart_item['asnp_wepb_price']
 		) {
 			if ( Cart\display_prices_including_tax() ) {
-				$regular_price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_reg_price'] ] );
+				$regular_price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( $cart_item['asnp_wepb_reg_price'] ) ] );
 			} else {
-				$regular_price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_reg_price'] ] );
+				$regular_price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( $cart_item['asnp_wepb_reg_price'] ) ] );
 			}
 			$prices->regular_price               = static::prepare_money_response( $regular_price, $decimals );
 			$prices->raw_prices['regular_price'] = static::prepare_money_response( $regular_price, $raw_decimals );
@@ -325,8 +325,8 @@ class ExtendStoreApi {
 		if ( 'true' === $cart_item['data']->get_include_parent_price() ) {
 			if ( '' !== $cart_item['data']->get_price( 'edit' ) ) {
 				$price = Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] ) :
-					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] );
+					wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] ) :
+					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] );
 			}
 		}
 
@@ -337,8 +337,8 @@ class ExtendStoreApi {
 
 			if ( isset( $cart_contents[ $item_key ]['asnp_wepb_price'] ) ) {
 				$price += Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
-					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
+					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
+					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
 			}
 		}
 
@@ -359,9 +359,9 @@ class ExtendStoreApi {
 		$decimals = isset( $totals->currency_minor_unit ) ? $totals->currency_minor_unit : wc_get_price_decimals();
 
 		if ( Cart\display_prices_including_tax() ) {
-			$price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_price'] ] );
+			$price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( $cart_item['asnp_wepb_price'] ) ] );
 		} else {
-			$price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_price'] ] );
+			$price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( $cart_item['asnp_wepb_price'] ) ] );
 		}
 
 		$totals->line_total        = static::prepare_money_response( $price * $cart_item['quantity'], $decimals );

@@ -214,8 +214,8 @@ class ProductBundle extends \WC_Product {
 			'product'            => [
 				'id'                   => $this->get_id(),
 				'is_fixed_price'       => $this->is_fixed_price(),
-				'regular_price'        => '' !== $this->get_regular_price( 'edit' ) ? wc_get_price_to_display( $this, [ 'price' => $this->get_regular_price( 'edit' ) ] ) : '',
-				'sale_price'           => '' !== $this->get_sale_price( 'edit' ) && $this->is_on_sale( $context ) ? wc_get_price_to_display( $this, [ 'price' => $this->get_sale_price( 'edit' ) ] ) : '',
+				'regular_price'        => '' !== $this->get_regular_price( 'edit' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( $this->get_regular_price( 'edit' ) ) ] ) : '',
+				'sale_price'           => '' !== $this->get_sale_price( 'edit' ) && $this->is_on_sale( $context ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( $this->get_sale_price( 'edit' ) ) ] ) : '',
 				'display_price'        => $this->get_price_html(),
 				'include_parent_price' => $this->get_include_parent_price( $context ),
 			],
@@ -654,6 +654,7 @@ class ProductBundle extends \WC_Product {
 					'discount_type'  => ! empty( $items[ $i ]['discount_type'] ) ? $items[ $i ]['discount_type'] : '',
 					'discount'       => isset( $items[ $i ]['discount'] ) && '' !== $items[ $i ]['discount'] ? (float) $items[ $i ]['discount'] : null,
 					'is_fixed_price' => false,
+					'exchange_price' => false,
 				]
 			);
 
@@ -665,8 +666,8 @@ class ProductBundle extends \WC_Product {
 			$total += (float) $product_price * $quantity;
 			$total_display += (float) $product_price_display * $quantity;
 
-			$regular += (float) $item_product->get_regular_price() * $quantity;
-			$regular_display += wc_get_price_to_display( $item_product, [ 'price' => $item_product->get_regular_price(), 'qty' => $quantity ] );
+			$regular += (float) $item_product->get_regular_price( 'edit' ) * $quantity;
+			$regular_display += wc_get_price_to_display( $item_product, [ 'price' => $item_product->get_regular_price( 'edit' ), 'qty' => $quantity ] );
 		}
 
 		if ( null === $min_price ) {

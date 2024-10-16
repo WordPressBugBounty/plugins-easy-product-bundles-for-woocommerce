@@ -157,6 +157,18 @@ class ProductBundleHooks {
 			return $price;
 		}
 
+		if ( ! empty( $prices['min'] ) ) {
+			$prices['min'] = maybe_exchange_price( $prices['min'] );
+		}
+
+		if ( ! empty( $prices['regular'] ) ) {
+			$prices['regular'] = maybe_exchange_price( $prices['regular'] );
+		}
+
+		if ( ! empty( $prices['total'] ) ) {
+			$prices['total'] = maybe_exchange_price( $prices['total'] );
+		}
+
 		$price_type = get_plugin()->settings->get_setting( 'auto_calculate_price_type', 'total' );
 
 		$show_regular = true;
@@ -588,8 +600,9 @@ class ProductBundleHooks {
 			get_bundle_item_price(
 				$product,
 				[
-					'discount_type' => ! empty( $args['item']['discount_type'] ) ? $args['item']['discount_type'] : '',
-					'discount'      => isset( $args['item']['discount'] ) && '' !== $args['item']['discount'] ? (float) $args['item']['discount'] : null,
+					'discount_type'  => ! empty( $args['item']['discount_type'] ) ? $args['item']['discount_type'] : '',
+					'discount'       => isset( $args['item']['discount'] ) && '' !== $args['item']['discount'] ? (float) $args['item']['discount'] : null,
+					'exchange_price' => false,
 				]
 			),
 			$product, $args
@@ -601,7 +614,7 @@ class ProductBundleHooks {
 			'asnp_wepb_parent_key'            => $args['cart_item_key'],
 			'asnp_wepb_parent_is_fixed_price' => isset( $args['is_fixed_price'] ) ? $args['is_fixed_price'] : false,
 			'asnp_wepb_price'                 => $price,
-			'asnp_wepb_reg_price'             => $product->get_regular_price(),
+			'asnp_wepb_reg_price'             => $product->get_regular_price( 'edit' ),
 			'asnp_wepb_item_quantity'         => $args['item_quantity'],
 			'asnp_wepb_hide_price'            => ! empty( $args['hide_price'] ) ? sanitize_text_field( $args['hide_price'] ) : 'no',
 		], $product, $args );
@@ -747,9 +760,9 @@ class ProductBundleHooks {
 
 		if ( isset( $cart_item['asnp_wepb_price'] ) ) {
 			if ( Cart\display_prices_including_tax() ) {
-				$price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_price'] ] );
+				$price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( $cart_item['asnp_wepb_price'] ) ] );
 			} else {
-				$price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_price'] ] );
+				$price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( $cart_item['asnp_wepb_price'] ) ] );
 			}
 
 			if (
@@ -757,9 +770,9 @@ class ProductBundleHooks {
 				(float) $cart_item['asnp_wepb_reg_price'] > (float) $cart_item['asnp_wepb_price']
 			) {
 				if ( Cart\display_prices_including_tax() ) {
-					$regular_price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_reg_price'] ] );
+					$regular_price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( $cart_item['asnp_wepb_reg_price'] ) ] );
 				} else {
-					$regular_price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_reg_price'] ] );
+					$regular_price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( $cart_item['asnp_wepb_reg_price'] ) ] );
 				}
 
 				return '<del>' . wc_price( $regular_price ) . '</del> <ins>' . wc_price( $price ) . '</ins>';
@@ -786,15 +799,15 @@ class ProductBundleHooks {
 			}
 
 			$sale_price    = Cart\display_prices_including_tax() ?
-				wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] ) :
-				wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] );
+				wc_get_price_including_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] ) :
+				wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] );
 			$regular_price = 0;
 
 			if ( 'true' === $cart_item['data']->get_include_parent_price() ) {
 				if ( '' !== $cart_item['data']->get_regular_price( 'edit' ) ) {
 					$regular_price = Cart\display_prices_including_tax() ?
-						wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_regular_price( 'edit' ) ] ) :
-						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_regular_price( 'edit' ) ] );
+						wc_get_price_including_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] ) :
+						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] );
 				}
 			}
 
@@ -805,8 +818,8 @@ class ProductBundleHooks {
 
 				if ( ! empty( $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ) ) {
 					$regular_price += Cart\display_prices_including_tax() ?
-						wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
-						wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
+						wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
+						wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
 				}
 			}
 
@@ -827,7 +840,7 @@ class ProductBundleHooks {
 			}
 		}
 
-		$bundle_price = $this->calculate_bundle_price( $cart_item );
+		$bundle_price = $this->calculate_bundle_price( $cart_item, true );
 		if ( empty( $bundle_price ) ) {
 			return $price;
 		}
@@ -839,7 +852,7 @@ class ProductBundleHooks {
 		return wc_price( $bundle_price['price'] );
 	}
 
-	protected function calculate_bundle_price( $cart_item ) {
+	protected function calculate_bundle_price( $cart_item, $exchange_price = false ) {
 		$cart_contents = WC()->cart->get_cart();
 		$regular_price = 0;
 		$price         = 0;
@@ -847,14 +860,14 @@ class ProductBundleHooks {
 		if ( 'true' === $cart_item['data']->get_include_parent_price() ) {
 			if ( '' !== $cart_item['data']->get_price( 'edit' ) ) {
 				$price = Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] ) :
-					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] );
+					wc_get_price_including_tax( $cart_item['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) : (float) $cart_item['data']->get_price( 'edit' ) ] ) :
+					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) : (float) $cart_item['data']->get_price( 'edit' ) ] );
 			}
 
 			if ( '' !== $cart_item['data']->get_regular_price( 'edit' ) ) {
 				$regular_price = Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_regular_price( 'edit' ) ] ) :
-					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_regular_price( 'edit' ) ] );
+					wc_get_price_including_tax( $cart_item['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) : (float) $cart_item['data']->get_regular_price( 'edit' ) ] ) :
+					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) : (float) $cart_item['data']->get_regular_price( 'edit' ) ] );
 			}
 		}
 
@@ -865,14 +878,14 @@ class ProductBundleHooks {
 
 			if ( ! empty( $cart_contents[ $item_key ]['asnp_wepb_price'] ) ) {
 				$price += Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
-					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
+					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_price'] ) : (float) $cart_contents[ $item_key ]['asnp_wepb_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
+					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_price'] ) : (float) $cart_contents[ $item_key ]['asnp_wepb_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
 			}
 
 			if ( ! empty( $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ) ) {
 				$regular_price += Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
-					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
+					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ) : (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
+					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'] ) : (float) $cart_contents[ $item_key ]['asnp_wepb_reg_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
 			}
 		}
 
@@ -890,9 +903,9 @@ class ProductBundleHooks {
 
 		if ( isset( $cart_item['asnp_wepb_price'] ) ) {
 			if ( Cart\display_prices_including_tax() ) {
-				$price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_price'] ] );
+				$price = wc_get_price_including_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( $cart_item['asnp_wepb_price'] ) ] );
 			} else {
-				$price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $cart_item['asnp_wepb_price'] ] );
+				$price = wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( $cart_item['asnp_wepb_price'] ) ] );
 			}
 
 			$subtotal = wc_price( $price * $cart_item['quantity'] );
@@ -925,8 +938,8 @@ class ProductBundleHooks {
 		if ( 'true' === $cart_item['data']->get_include_parent_price() ) {
 			if ( '' !== $cart_item['data']->get_price( 'edit' ) ) {
 				$price = Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] ) :
-					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => (float) $cart_item['data']->get_price( 'edit' ) ] );
+					wc_get_price_including_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] ) :
+					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] );
 			}
 		}
 
@@ -937,8 +950,8 @@ class ProductBundleHooks {
 
 			if ( isset( $cart_contents[ $item_key ]['asnp_wepb_price'] ) ) {
 				$price += Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
-					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => (float) $cart_contents[ $item_key ]['asnp_wepb_price'], 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
+					wc_get_price_including_tax( $cart_contents[ $item_key ]['data'], [ 'price' => maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] ) :
+					wc_get_price_excluding_tax( $cart_contents[ $item_key ]['data'], [ 'price' => maybe_exchange_price( (float) $cart_contents[ $item_key ]['asnp_wepb_price'] ), 'qty' => $cart_contents[ $item_key ]['asnp_wepb_item_quantity'] ] );
 			}
 		}
 
@@ -1090,7 +1103,7 @@ class ProductBundleHooks {
 			return $subtotal;
 		}
 
-		return wc_price( $order_item['_asnp_wepb_price'] * $order_item['quantity'] );
+		return wc_price( maybe_exchange_price( $order_item['_asnp_wepb_price'] ) * $order_item['quantity'] );
 	}
 
 	public function ajax_add_order_item_meta( $item_id, $item, $order) {

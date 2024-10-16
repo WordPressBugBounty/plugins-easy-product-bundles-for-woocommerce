@@ -70,7 +70,7 @@ final class Plugin {
         if ( did_action( 'plugins_loaded' ) ) {
 			$this->on_plugins_loaded();
 		} else {
-			add_action( 'plugins_loaded', array( $this, 'on_plugins_loaded' ) );
+			add_action( 'plugins_loaded', array( $this, 'on_plugins_loaded' ), 1000 );
 		}
     }
 
