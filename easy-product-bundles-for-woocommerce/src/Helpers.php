@@ -218,8 +218,19 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 	);
 
 	if ( $product->is_type( 'variation' ) ) {
-		$data['name']        = $product->get_title();
-		$formatted_variation = wc_get_formatted_variation( $product, true );
+		$data['name'] = $product->get_title();
+		if ( ! empty( $extra_data['attributes'] ) ) {
+			$formatted_variation = [];
+			foreach ( $extra_data['attributes'] as $attribute ) {
+				if ( ! empty( $attribute['name'] ) && ! empty( $attribute['label'] ) ) {
+					$formatted_variation[] = $attribute['name'] . ': ' . rawurldecode( $attribute['label'] );
+				}
+			}
+			$formatted_variation = implode( ', ', $formatted_variation );
+		} else {
+			$formatted_variation = wc_get_formatted_variation( $product, true );
+		}
+
 		if ( ! empty( $formatted_variation ) ) {
 			$data['name'] .= ' ' . $formatted_variation;
 		}

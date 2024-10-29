@@ -625,18 +625,24 @@ class ProductBundleHooks {
 	}
 
 	public function get_cart_item_from_session( $cart_item, $session_values ) {
-		if ( ! empty( $session_values[ self::CART_ITEM_ITEMS ] ) ) {
-			$cart_item[ self::CART_ITEM_ITEMS ] = $session_values[ self::CART_ITEM_ITEMS ];
-		}
+		$keys = [
+			static::CART_ITEM_ITEMS,
+			static::CART_ITEM_ITEMS_KEY,
+			'asnp_wepb_is_fixed_price',
+			'asnp_wepb_item_index',
+			'asnp_wepb_parent_id',
+			'asnp_wepb_parent_key',
+			'asnp_wepb_parent_is_fixed_price',
+			'asnp_wepb_price',
+			'asnp_wepb_reg_price',
+			'asnp_wepb_item_quantity',
+			'asnp_wepb_hide_price',
+		];
 
-		if ( ! empty( $session_values['asnp_wepb_parent_id'] ) ) {
-			$cart_item['asnp_wepb_parent_id'] = $session_values['asnp_wepb_parent_id'];
-		}
-		if ( ! empty( $session_values['asnp_wepb_parent_key'] ) ) {
-			$cart_item['asnp_wepb_parent_key'] = $session_values['asnp_wepb_parent_key'];
-		}
-		if ( ! empty( $session_values['asnp_wepb_item_quantity'] ) ) {
-			$cart_item['asnp_wepb_item_quantity'] = $session_values['asnp_wepb_item_quantity'];
+		foreach ( $keys as $key ) {
+			if ( isset( $session_values[ $key ] ) && ! isset( $cart_item[ $key ] ) ) {
+				$cart_item[ $key ] = $session_values[ $key ];
+			}
 		}
 
 		return $cart_item;
@@ -657,8 +663,8 @@ class ProductBundleHooks {
 		// Find updated keys.
 		$old_new_keys = [];
 		foreach ( $cart_contents as $cart_item_key => $cart_item ) {
-			if ( isset( $cart_item['asnp_wepb_key' ] ) ) {
-				$old_new_keys[ $cart_item['key'] ] = $cart_item_key;
+			if ( ! empty( $cart_item['asnp_wepb_key' ] ) ) {
+				$old_new_keys[ $cart_item['asnp_wepb_key' ] ] = $cart_item_key;
 			}
 		}
 
@@ -666,7 +672,11 @@ class ProductBundleHooks {
 			// Bundle item.
 			if ( is_cart_item_bundle_item( $cart_item ) ) {
 				$parent_key = isset( $cart_item['asnp_wepb_parent_key'], $old_new_keys[ $cart_item['asnp_wepb_parent_key'] ] ) ? $old_new_keys[ $cart_item['asnp_wepb_parent_key'] ] : null;
-				if ( ! $parent_key ) {
+
+				if (
+					! $parent_key || ! isset( $cart_contents[ $parent_key ] ) ||
+					( isset( $cart_contents[ $parent_key ][ static::CART_ITEM_ITEMS_KEY ] ) && ! in_array( $cart_item_key, $cart_contents[ $parent_key ][ static::CART_ITEM_ITEMS_KEY ] ) )
+				) {
 					unset( $cart_contents[ $cart_item_key ] );
 					continue;
 				}

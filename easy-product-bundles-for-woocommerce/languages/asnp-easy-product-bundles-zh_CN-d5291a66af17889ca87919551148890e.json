@@ -1,35 +1,37 @@
 {
-  "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
-  "generator": "WP-CLI/2.5.0",
-  "source": "assets/js/shared/index.js",
-  "domain": "messages",
-  "locale_data": {
-    "messages": {
-      "": {
-        "domain": "messages",
-        "lang": "zh_CN",
-        "plural-forms": "nplurals=2; plural=(n != 1);"
-      },
-      "Product ID is required.": [""],
-      "Parent product ID is required.": [""],
-      "Item index is required.": [""],
-      "There was an error on getting items.": [""],
-      "Bundle item image": ["捆绑商品图片"],
-      "Change": ["更改"],
-      "View": ["查看"],
-      "OUT OF STOCK": ["缺货"],
-      "More pictures": ["更多图片"],
-      "Args is required.": [""],
-      "Product information": ["产品信息"],
-      "Back": ["返回"],
-      "Close": ["关闭"],
-      "Prev": ["上一页"],
-      "Next": ["下一页"],
-      "Add": ["添加"],
-      "Add%s": ["添加%s"],
-      "Edit product": ["编辑产品"],
-      "Save": ["省钱"],
-      "Please select a product for all items.": ["请选择所有项目的产品."]
-    }
-  }
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/shared/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "zh_CN",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Product ID is required.": [ "" ],
+			"Parent product ID is required.": [ "" ],
+			"Item index is required.": [ "" ],
+			"There was an error on getting items.": [ "" ],
+			"Bundle item image": [ "捆绑商品图片" ],
+			"Change": [ "更改" ],
+			"View": [ "查看" ],
+			"OUT OF STOCK": [ "缺货" ],
+			"More pictures": [ "更多图片" ],
+			"Args is required.": [ "" ],
+			"Product information": [ "产品信息" ],
+			"Back": [ "返回" ],
+			"Close": [ "关闭" ],
+			"Prev": [ "上一页" ],
+			"Next": [ "下一页" ],
+			"Add": [ "添加" ],
+			"Add%s": [ "添加%s" ],
+			"Edit product": [ "编辑产品" ],
+			"Save": [ "节省" ],
+			"Please select a product for all items.": [
+				"请选择所有项目的产品."
+			]
+		}
+	}
 }

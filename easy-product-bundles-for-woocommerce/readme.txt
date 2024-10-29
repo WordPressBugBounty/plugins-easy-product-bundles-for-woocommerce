@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.6
 Requires PHP: 5.6
-Stable tag: 5.2.0
+Stable tag: 5.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -210,10 +210,17 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 5.2.1 =
+* Resolved issues with variations that have any value attributes.
+* Fixed the restoration of the cart from the session for product bundles.
+* Corrected the association of old and new keys for parent bundle products in the cart.
+* Fixed the issue of showing NaN in the total price when the default product is out of stock.
+* Fixed translation issues based on customer reports.
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 5.2.0 =
 * Added compatibility with the CURCY Multi Currency for WooCommerce plugin.
 * Updated the positioning of the settings save button to be sticky.
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 5.1.1 =
 * Minor fix.

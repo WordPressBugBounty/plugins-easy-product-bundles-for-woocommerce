@@ -2,14 +2,14 @@
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 5.2.0\n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 5.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-10-15T22:52:09+00:00\n"
+"POT-Creation-Date: 2024-10-29T22:58:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: asnp-easy-product-bundles\n"
@@ -230,7 +230,7 @@ msgstr ""
 msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s or greater to be installed and active."
 msgstr ""
 
-#: src/ProductBundle.php:304
+#: src/ProductBundle.php:316
 #: assets/js/shared/index.js:2
 msgid "Item index is required."
 msgstr ""
@@ -326,25 +326,25 @@ msgstr ""
 msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1058
+#: src/ProductBundleHooks.php:1068
 msgid "(Bundled in %s)"
 msgstr ""
 
-#: src/ProductBundleHooks.php:1122
-#: src/ProductBundleHooks.php:1134
+#: src/ProductBundleHooks.php:1132
+#: src/ProductBundleHooks.php:1144
 msgid "Invalid bundle product."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1127
-#: src/ProductBundleHooks.php:1132
+#: src/ProductBundleHooks.php:1137
+#: src/ProductBundleHooks.php:1142
 msgid "Bundle product has not default items to add it to the order."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1179
+#: src/ProductBundleHooks.php:1189
 msgid "Can not add bundle product to the order."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1189
+#: src/ProductBundleHooks.php:1199
 msgid "Can not add bundle item to the order."
 msgstr ""
 

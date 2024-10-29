@@ -289,7 +289,19 @@ class ProductBundle extends \WC_Product {
 		if ( ! empty( $data['product'] ) ) {
 			$product = wc_get_product( $data['product'] );
 			if ( $product && ! $product->is_type( 'variable' ) && $product->is_purchasable() ) {
-				$data['product'] = prepare_product_data( $product, $item );
+				if ( $product->is_type( 'variation' ) ) {
+					// Do not set variation to the default product when it has any value attributes.
+					$variation_attributes = $product->get_variation_attributes( false );
+					$any_attributes       = get_any_value_attributes( $variation_attributes );
+					if ( empty( $any_attributes ) ) {
+						$data['product'] = prepare_product_data( $product, $item );
+					} else {
+						$data['product']            = null;
+						$data['can_change_product'] = 'true';
+					}
+				} else {
+					$data['product'] = prepare_product_data( $product, $item );
+				}
 			} else {
 				$data['product']            = null;
 				$data['can_change_product'] = 'true';
