@@ -23,6 +23,8 @@ class Compatibility {
 		// if ( class_exists( '\WOOCS_STARTER' ) ) {
 		// 	WOOCS::init();
 		// }
+
+		SideCart::init();
 	}
 
 }

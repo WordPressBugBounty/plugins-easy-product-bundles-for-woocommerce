@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.6
 Requires PHP: 5.6
-Stable tag: 5.2.1
+Stable tag: 5.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,6 +124,7 @@ https://youtu.be/fVYBUz7Zqfk
 - **English**
 - **Français** (French)
 - **Deutsch** (German)
+- **Dutch**(Nederlands)
 - **Italiano** (Italian)
 - **Português** (Portuguese)
 - **Polski** (Polish)
@@ -210,13 +211,18 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 5.3.0 =
+* Enhanced compatibility with the "Side Cart Woocommerce By XootiX" plugin.
+* Added support for the Dutch language (Nederlands).
+* Introduced a section for our other free plugins in the settings menu.
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 5.2.1 =
 * Resolved issues with variations that have any value attributes.
 * Fixed the restoration of the cart from the session for product bundles.
 * Corrected the association of old and new keys for parent bundle products in the cart.
 * Fixed the issue of showing NaN in the total price when the default product is out of stock.
 * Fixed translation issues based on customer reports.
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 5.2.0 =
 * Added compatibility with the CURCY Multi Currency for WooCommerce plugin.

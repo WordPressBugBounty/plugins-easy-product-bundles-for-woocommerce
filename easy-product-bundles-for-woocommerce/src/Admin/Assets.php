@@ -79,6 +79,7 @@ class Assets
 				array(
 					'pro_active'  => Plugin::instance()->is_pro_active(),
 					'show_review' => ProductBundles\maybe_show_review(),
+					'plugin_url'  => ASNP_WEPB_PLUGIN_URL,
 				)
 			);
 

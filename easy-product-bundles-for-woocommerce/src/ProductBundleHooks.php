@@ -531,8 +531,9 @@ class ProductBundleHooks {
 		$is_fixed_price = $cart->cart_contents[ $cart_item_key ]['data']->is_fixed_price();
 		$hide_price     = $cart->cart_contents[ $cart_item_key ]['data']->get_hide_items_price();
 
-		$cart->cart_contents[ $cart_item_key ]['asnp_wepb_key']             = $cart_item_key;
-		$cart->cart_contents[ $cart_item_key ]['asnp_wepb_is_fixed_price']  = $is_fixed_price;
+		$cart->cart_contents[ $cart_item_key ]['asnp_wepb_key']            = $cart_item_key;
+		$cart->cart_contents[ $cart_item_key ]['asnp_wepb_is_fixed_price'] = $is_fixed_price;
+		$cart->cart_contents[ $cart_item_key ]['asnp_wepb_hide_price']     = ! empty( $hide_price ) ? sanitize_text_field( $hide_price ) : 'no';
 
 		$cart_keys = [];
 		for ( $i = 0; $i < count( $ids ); $i++ ) {
@@ -1052,6 +1053,9 @@ class ProductBundleHooks {
 			}
 		} elseif ( is_cart_item_bundle( $values ) ) {
 			$order_item->add_meta_data( '_asnp_wepb_items', $values[ self::CART_ITEM_ITEMS ] );
+			if ( isset( $values['asnp_wepb_is_fixed_price'] ) ) {
+				$order_item->add_meta_data( '_asnp_wepb_is_fixed_price', $values['asnp_wepb_is_fixed_price'] );
+			}
 		}
 
 		if ( isset( $values['asnp_wepb_price'] ) ) {
@@ -1078,11 +1082,13 @@ class ProductBundleHooks {
 			'_asnp_wepb_price',
 			'_asnp_wepb_parent_is_fixed_price',
 			'_asnp_wepb_hide_price',
+			'_asnp_wepb_is_fixed_price',
 			'asnp_wepb_items',
 			'asnp_wepb_parent_id',
 			'asnp_wepb_price',
 			'asnp_wepb_parent_is_fixed_price',
 			'asnp_wepb_hide_price',
+			'asnp_wepb_is_fixed_price',
 		] );
 	}
 
@@ -1105,6 +1111,20 @@ class ProductBundleHooks {
 
 				if ( 'false' === get_plugin()->settings->get_setting( 'show_item_price', 'true' ) ) {
 					return '';
+				}
+			}
+		} elseif ( isset( $order_item['_asnp_wepb_items'] ) ) {
+			if (
+				! isset( $order_item['_asnp_wepb_is_fixed_price'] ) ||
+				! wc_string_to_bool( $order_item['_asnp_wepb_is_fixed_price'] )
+			) {
+				if ( is_pro_active() ) {
+					if (
+						isset( $order_item['_asnp_wepb_hide_price'] ) &&
+						'yes' !== $order_item['_asnp_wepb_hide_price']
+					) {
+						return '';
+					}
 				}
 			}
 		}
