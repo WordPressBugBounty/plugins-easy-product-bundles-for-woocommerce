@@ -216,7 +216,13 @@
 			"Quantity field buttons hover color": [
 				"Kolor przycisków pola ilości po najechaniu"
 			],
-			"Add to cart button selector": [ "Selektor przycisku Dodaj do koszyka" ]
+			"Add to cart button selector": [
+				"Selektor przycisku Dodaj do koszyka"
+			],
+			"Alert message color": [ "Kolor wiadomości ostrzegawczej" ],
+			"Alert message background color": [
+				"Kolor tła wiadomości ostrzegawczej"
+			]
 		}
 	}
 }

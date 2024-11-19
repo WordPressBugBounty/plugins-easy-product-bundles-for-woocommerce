@@ -185,7 +185,9 @@
 			"There was an error on saving the settings.": [ "" ],
 			"Enable Updates": [ "启用更新" ],
 			"Quantity field buttons hover color": [ "数量字段按钮悬停颜色" ],
-			"Add to cart button selector": [ "添加到购物车按钮选择器" ]
+			"Add to cart button selector": [ "添加到购物车按钮选择器" ],
+			"Alert message color": [ "警报消息颜色" ],
+			"Alert message background color": [ "警报消息背景颜色" ]
 		}
 	}
 }

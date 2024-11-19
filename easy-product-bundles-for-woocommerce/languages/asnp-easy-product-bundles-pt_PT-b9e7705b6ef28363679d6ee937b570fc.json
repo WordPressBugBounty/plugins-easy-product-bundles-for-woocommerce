@@ -222,7 +222,13 @@
 			"Quantity field buttons hover color": [
 				"Cor de hover dos botões do campo de quantidade"
 			],
-			"Add to cart button selector": [ "Seletor do botão Adicionar ao carrinho" ]
+			"Add to cart button selector": [
+				"Seletor do botão Adicionar ao carrinho"
+			],
+			"Alert message color": [ "Cor da mensagem de alerta" ],
+			"Alert message background color": [
+				"Cor de fundo da mensagem de alerta"
+			]
 		}
 	}
 }

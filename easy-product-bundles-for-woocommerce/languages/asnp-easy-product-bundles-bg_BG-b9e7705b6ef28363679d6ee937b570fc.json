@@ -228,6 +228,10 @@
 			],
 			"Add to cart button selector": [
 				"Селектор на бутона Добави в количката"
+			],
+			"Alert message color": [ "Цвят на съобщението за предупреждение" ],
+			"Alert message background color": [
+				"Цвят на фона на съобщението за предупреждение"
 			]
 		}
 	}

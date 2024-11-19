@@ -224,6 +224,10 @@
 			],
 			"Add to cart button selector": [
 				"Sélecteur du bouton Ajouter au panie"
+			],
+			"Alert message color": [ "Couleur du message d'alerte" ],
+			"Alert message background color": [
+				"Couleur de fond du message d'alerte"
 			]
 		}
 	}

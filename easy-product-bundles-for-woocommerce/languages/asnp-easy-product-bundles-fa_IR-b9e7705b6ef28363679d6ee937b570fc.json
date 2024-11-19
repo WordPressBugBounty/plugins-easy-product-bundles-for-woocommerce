@@ -204,7 +204,9 @@
 			],
 			"Add to cart button selector": [
 				"انتخابگر دکمه افزودن به سبد خرید"
-			]
+			],
+			"Alert message color": [ "رنگ پیام هشدار" ],
+			"Alert message background color": [ "رنگ پس‌زمینه پیام هشدار" ]
 		}
 	}
 }

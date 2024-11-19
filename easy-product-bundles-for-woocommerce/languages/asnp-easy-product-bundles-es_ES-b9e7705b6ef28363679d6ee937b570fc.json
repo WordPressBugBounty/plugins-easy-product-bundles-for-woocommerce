@@ -228,6 +228,10 @@
 			],
 			"Add to cart button selector": [
 				"Selector del botón Añadir al carrito"
+			],
+			"Alert message color": [ "Color del mensaje de alerta" ],
+			"Alert message background color": [
+				"Color de fondo del mensaje de alerta"
 			]
 		}
 	}

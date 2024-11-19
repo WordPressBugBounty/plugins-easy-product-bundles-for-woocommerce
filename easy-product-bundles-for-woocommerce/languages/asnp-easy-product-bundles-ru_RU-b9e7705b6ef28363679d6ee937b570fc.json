@@ -220,6 +220,10 @@
 			],
 			"Add to cart button selector": [
 				"Селектор кнопки Добавить в корзину"
+			],
+			"Alert message color": [ "Цвет сообщения предупреждения" ],
+			"Alert message background color": [
+				"Цвет фона сообщения предупреждения"
 			]
 		}
 	}

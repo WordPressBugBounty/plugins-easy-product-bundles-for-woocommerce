@@ -218,6 +218,10 @@
 			],
 			"Add to cart button selector": [
 				"Warenkorb hinzufügen Button-Auswahl"
+			],
+			"Alert message color": [ "Farbe der Warnnachricht" ],
+			"Alert message background color": [
+				"Hintergrundfarbe der Warnnachricht"
 			]
 		}
 	}

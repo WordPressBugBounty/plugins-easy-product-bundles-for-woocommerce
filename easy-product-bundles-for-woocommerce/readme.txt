@@ -3,9 +3,9 @@ Contributors: asanaplugins
 Donate link: https://www.asanaplugins.com/
 Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce, composite product, wpc product bundles for woocommerce, yith woocommerce product bundles, woocommerce product bundles free, wpc product bundles, yith product bundles, custom product boxes woocommerce, woocommerce bundle plugin, woocommerce composite products, woocommerce, wordpress, ecommerce
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 5.3.0
+Stable tag: 5.4.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -211,11 +211,18 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 5.4.0 =
+* Resolved the bundle price issue in the order form.
+* Added options to customize the text and background color of alert messages.
+* Introduced buttons for Articles, Video Tutorials, and Get Support in the plugin settings.
+* Ensured compatibility with WordPress version 6.7
+* Ensured compatibility with WooCommerce version 9.4.1
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 5.3.0 =
 * Enhanced compatibility with the "Side Cart Woocommerce By XootiX" plugin.
 * Added support for the Dutch language (Nederlands).
 * Introduced a section for our other free plugins in the settings menu.
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 5.2.1 =
 * Resolved issues with variations that have any value attributes.

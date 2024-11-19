@@ -216,7 +216,11 @@
 			"Never show again": [ "" ],
 			"Saved Successfully.": [ "" ],
 			"There was an error on saving the settings.": [ "" ],
-			"Enable Updates": [ "Updates inschakelen" ]
+			"Enable Updates": [ "Updates inschakelen" ],
+			"Alert message color": [ "Kleur van het waarschuwingsbericht" ],
+			"Alert message background color": [
+				"Achtergrondkleur van het waarschuwingsbericht"
+			]
 		}
 	}
 }

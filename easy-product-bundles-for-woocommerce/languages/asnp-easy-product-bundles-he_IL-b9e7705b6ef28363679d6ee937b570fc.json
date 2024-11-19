@@ -192,7 +192,9 @@
 			"Quantity field buttons hover color": [
 				"צבע ריחוף של כפתורי שדה הכמות"
 			],
-			"Add to cart button selector": [ "בוחר כפתור הוסף לסל" ]
+			"Add to cart button selector": [ "בוחר כפתור הוסף לסל" ],
+			"Alert message color": [ "צבע הודעת התראה" ],
+			"Alert message background color": [ "צבע רקע הודעת התראה" ]
 		}
 	}
 }

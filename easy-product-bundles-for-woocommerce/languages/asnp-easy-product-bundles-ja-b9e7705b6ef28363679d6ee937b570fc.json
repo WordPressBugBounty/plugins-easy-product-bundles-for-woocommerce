@@ -200,7 +200,9 @@
 			"Quantity field buttons hover color": [
 				"数量フィールドボタンのホバー時の色"
 			],
-			"Add to cart button selector": [ "カートに追加ボタンのセレクター" ]
+			"Add to cart button selector": [ "カートに追加ボタンのセレクター" ],
+			"Alert message color": [ "アラートメッセージの色" ],
+			"Alert message background color": [ "アラートメッセージの背景色" ]
 		}
 	}
 }
