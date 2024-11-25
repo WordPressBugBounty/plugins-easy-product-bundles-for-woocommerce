@@ -20,9 +20,9 @@ class Compatibility {
 		}
 
 		// FOX - WooCommerce Currency Switcher(WOOCS) compatibility.
-		// if ( class_exists( '\WOOCS_STARTER' ) ) {
-		// 	WOOCS::init();
-		// }
+		if ( class_exists( '\WOOCS_STARTER' ) ) {
+			WOOCS::init();
+		}
 
 		SideCart::init();
 	}

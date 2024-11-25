@@ -173,7 +173,7 @@ class FilterProducts extends BaseController {
 		$attributes = $variable->get_variation_attributes();
 		foreach ( $attributes as $attribute_name => $options ) {
 			$data['attribute_options'][] = [
-				'name'    => apply_filters( 'asnp_wepb_variation_attribute_options_attribute_name', sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), wc_attribute_label( $attribute_name ) ), $attribute_name ),
+				'name'    => apply_filters( 'asnp_wepb_variation_attribute_options_attribute_name', sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), wc_attribute_label( $attribute_name, $variable ) ), $attribute_name ),
 				'id'      => esc_attr( sanitize_title( $attribute_name ) ),
 				'options' => ProductBundles\get_variation_attribute_options(
 					[
@@ -212,7 +212,7 @@ class FilterProducts extends BaseController {
 			}
 
 			$data['attribute_options'][] = [
-				'name'    => apply_filters( 'asnp_wepb_variation_attribute_options_attribute_name', sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), wc_attribute_label( $attribute_name ) ), $attribute_name ),
+				'name'    => apply_filters( 'asnp_wepb_variation_attribute_options_attribute_name', sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), wc_attribute_label( $attribute_name, $variable ) ), $attribute_name ),
 				'id'      => esc_attr( sanitize_title( $attribute_name ) ),
 				'options' => ProductBundles\get_variation_attribute_options(
 					[

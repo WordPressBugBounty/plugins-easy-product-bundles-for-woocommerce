@@ -223,7 +223,7 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 			$formatted_variation = [];
 			foreach ( $extra_data['attributes'] as $attribute ) {
 				if ( ! empty( $attribute['name'] ) && ! empty( $attribute['label'] ) ) {
-					$formatted_variation[] = $attribute['name'] . ': ' . rawurldecode( $attribute['label'] );
+					$formatted_variation[] = wc_attribute_label( $attribute['name'], $product ) . ': ' . rawurldecode( $attribute['label'] );
 				}
 			}
 			$formatted_variation = implode( ', ', $formatted_variation );
@@ -520,20 +520,20 @@ function get_attribute_data( array $args ) {
 		$term = get_term_by( $args['by'], $args['value'], $args['attribute'] );
 		if ( ! is_wp_error( $term ) && is_object( $term ) && $term->term_id ) {
 			return [
-				'name'  => wc_attribute_label( $args['attribute'] ),
-				'id'    => sanitize_title( $args['attribute'] ),
-				'label' => sanitize_text_field( $term->name ),
-				'value' => esc_attr( $term->slug ),
+				'name'  => $args['attribute'],
+				'id'    => $args['attribute'],
+				'label' => $term->name,
+				'value' => $term->slug,
 			];
 		}
 		return [];
 	}
 
 	return [
-		'name'  => wc_attribute_label( $args['attribute'] ),
-		'id'    => sanitize_title( $args['attribute'] ),
-		'label' => sanitize_text_field( $args['value'] ),
-		'value' => esc_attr( $args['value'] ),
+		'name'  => $args['attribute'],
+		'id'    => $args['attribute'],
+		'label' => $args['value'],
+		'value' => $args['value'],
 	];
 }
 

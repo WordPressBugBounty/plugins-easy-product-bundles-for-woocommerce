@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 5.4.0
+Stable tag: 5.5.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -211,13 +211,19 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 5.5.0 =
+* Enhanced compatibility with the "FOX - WooCommerce Currency Switcher" plugin.
+* Resolved CSS issues in the variation product filter section within the pop-up.
+* Fixed product attributes name issue.
+* Ensured compatibility with WooCommerce version 9.4.2
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 5.4.0 =
 * Resolved the bundle price issue in the order form.
 * Added options to customize the text and background color of alert messages.
 * Introduced buttons for Articles, Video Tutorials, and Get Support in the plugin settings.
 * Ensured compatibility with WordPress version 6.7
 * Ensured compatibility with WooCommerce version 9.4.1
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 5.3.0 =
 * Enhanced compatibility with the "Side Cart Woocommerce By XootiX" plugin.

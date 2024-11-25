@@ -2,14 +2,14 @@
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 5.4.0\n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 5.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-11-18T21:55:00+00:00\n"
+"POT-Creation-Date: 2024-11-24T23:05:42+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: asnp-easy-product-bundles\n"
@@ -57,14 +57,6 @@ msgstr ""
 
 #: src/Admin/Admin.php:87
 msgid "Bundle (%d)"
-msgstr ""
-
-#: src/Admin/Admin.php:122
-msgid "<strong>Black Friday Exclusive:</strong> SAVE up to 50% & access to <strong>WooCommerce Product Bundles Pro</strong> features."
-msgstr ""
-
-#: src/Admin/Admin.php:122
-msgid "Grab The Offer"
 msgstr ""
 
 #: src/Admin/Menu.php:28
@@ -830,6 +822,22 @@ msgstr ""
 #: assets/js/admin/product/index.js:2
 #: assets/js/admin/review/index.js:2
 msgid "Never show again"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Apps you might like"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Active Installations"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Free Version"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Buy Pro"
 msgstr ""
 
 #: assets/js/admin/admin/index.js:2
