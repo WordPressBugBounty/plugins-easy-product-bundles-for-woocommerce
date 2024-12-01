@@ -65,7 +65,7 @@ class ProductBundleHooks {
 		add_filter( 'woocommerce_hidden_order_itemmeta', array( $this, 'hidden_order_itemmeta' ), 10, 1 );
 
 		// Calculate totals hooks.
-		add_action( 'woocommerce_before_calculate_totals', array( $this, 'before_calculate_totals' ), 9999 );
+		add_action( 'woocommerce_before_calculate_totals', array( $this, 'before_calculate_totals' ), 99999 );
 		add_action( 'woocommerce_before_mini_cart_contents', array( $this, 'before_mini_cart_contents' ) );
 
 		// Loop add to cart hooks.
@@ -688,8 +688,15 @@ class ProductBundleHooks {
 
 				if ( isset( $cart_contents[ $parent_key ]['asnp_wepb_is_fixed_price'] ) && $cart_contents[ $parent_key ]['asnp_wepb_is_fixed_price'] ) {
 					$cart_item['data']->set_price( 0 );
+					if ( isset( $cart_item['_wccs_discounted_price'] ) ) {
+						WC()->cart->cart_contents[ $cart_item_key ]['asnp_wepb_price'] = $cart_item['_wccs_discounted_price'];
+					}
 				} elseif ( isset( $cart_item['asnp_wepb_price'] ) ) {
-					$cart_item['data']->set_price( (float) $cart_item['asnp_wepb_price'] );
+					if ( isset( $cart_item['_wccs_discounted_price'] ) ) {
+						WC()->cart->cart_contents[ $cart_item_key ]['asnp_wepb_price'] = $cart_item['data']->get_price( 'edit' );
+					} else {
+						$cart_item['data']->set_price( (float) $cart_item['asnp_wepb_price'] );
+					}
 				}
 			} // Bundle product.
 			elseif ( is_cart_item_bundle( $cart_item ) ) {

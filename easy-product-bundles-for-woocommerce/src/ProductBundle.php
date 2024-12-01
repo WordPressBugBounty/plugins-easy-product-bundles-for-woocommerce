@@ -215,7 +215,7 @@ class ProductBundle extends \WC_Product {
 				'id'                   => $this->get_id(),
 				'is_fixed_price'       => $this->is_fixed_price(),
 				'regular_price'        => '' !== $this->get_regular_price( 'edit' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( $this->get_regular_price( 'edit' ) ) ] ) : '',
-				'sale_price'           => '' !== $this->get_sale_price( 'edit' ) && $this->is_on_sale( $context ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( $this->get_sale_price( 'edit' ) ) ] ) : '',
+				'sale_price'           => '' !== maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) && $this->is_on_sale( $context ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) ) ] ) : '',
 				'display_price'        => $this->get_price_html(),
 				'include_parent_price' => $this->get_include_parent_price( $context ),
 			],
