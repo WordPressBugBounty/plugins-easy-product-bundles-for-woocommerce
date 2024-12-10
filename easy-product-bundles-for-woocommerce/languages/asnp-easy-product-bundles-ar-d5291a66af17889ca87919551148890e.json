@@ -15,17 +15,14 @@
 			"Item index is required.": [ "" ],
 			"There was an error on getting items.": [ "" ],
 			"Args is required.": [ "" ],
-			"Please Select Your Product": [ "يرجى اختيار المنتج الخاص بك" ],
 			"Prev": [ "السابق" ],
 			"Next": [ "التالي" ],
 			"OUT OF STOCK": [ "إنتهى من المخزون" ],
 			"Bundle item image": [ "صورة عنصر الحزمة" ],
 			"Add": [ "إضافة" ],
 			"Add%s": [ "إضافة %s" ],
-			"Please select a product!": [ "يرجى اختيار منتج!" ],
 			"Change": [ "تغيير" ],
 			"View": [ "عرض" ],
-			"Please select your product!": [ "يرجى اختيار المنتج الخاص بك!" ],
 			"Please select a product for all items.": [
 				"يرجى اختيار منتج لجميع العناصر."
 			],

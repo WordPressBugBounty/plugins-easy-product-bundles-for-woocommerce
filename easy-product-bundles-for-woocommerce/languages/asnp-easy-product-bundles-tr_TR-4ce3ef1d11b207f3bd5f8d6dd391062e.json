@@ -10,7 +10,6 @@
 				"lang": "tr_TR",
 				"plural-forms": "nplurals=2; plural=(n != 1);"
 			},
-			"Please select a product!": [ "Lütfen Ürün Seçiniz" ],
 			"Type is required.": [ "Tip gerekli" ],
 			"Action is required.": [ "İşlem gerekiyor" ],
 			"PRO Version": [ "Pro Versiyon" ],
@@ -185,7 +184,10 @@
 			"Hide products price": [ "Ürünlerin fiyatını gizle" ],
 			"No": [ "Hayır" ],
 			"Yes": [ "Evet" ],
-			"Only regular price": [ "Sadece normal fiyat" ]
+			"Only regular price": [ "Sadece normal fiyat" ],
+			"Please select a product!": [ "Lütfen bir ürün seçiniz!" ],
+			"Please select your product": [ "Lütfen Ürün Seçiniz" ],
+			"Please select your product!": [ "Lütfen ürün seçin!" ]
 		}
 	}
 }

@@ -184,7 +184,12 @@
 			"Hide products price": [ "Nascondi il prezzo dei prodotti" ],
 			"No": [ "No" ],
 			"Yes": [ "Sì" ],
-			"Only regular price": [ "Solo prezzo regolare" ]
+			"Only regular price": [ "Solo prezzo regolare" ],
+			"Please select a product!": [ "seleziona un prodotto!" ],
+			"Please select your product": [
+				"Si prega Selezionare il prodotto"
+			],
+			"Please select your product!": [ "Selezionare il prodotto!" ]
 		}
 	}
 }

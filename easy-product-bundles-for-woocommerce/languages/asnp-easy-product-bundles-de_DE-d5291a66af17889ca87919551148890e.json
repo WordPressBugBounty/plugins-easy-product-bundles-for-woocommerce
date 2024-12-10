@@ -15,17 +15,14 @@
 			"Item index is required.": [ "" ],
 			"There was an error on getting items.": [ "" ],
 			"Args is required.": [ "" ],
-			"Please Select Your Product": [ "Bitte wählen dein Produkt aus" ],
 			"Prev": [ "Vorheriges" ],
 			"Next": [ "Nächstes" ],
 			"OUT OF STOCK": [ "NICHT AUF LAGER" ],
 			"Bundle item image": [ "Bild des Bundle-Artikels" ],
 			"Add": [ "hier klicken" ],
 			"Add%s": [ "Auswählen" ],
-			"Please select a product!": [ "Wähle ein Produkt." ],
 			"Change": [ "Details" ],
 			"View": [ "Details" ],
-			"Please select your product!": [ "Wähle ein Produkt." ],
 			"Please select a product for all items.": [
 				"Bitte wähle deine Produkte aus."
 			],

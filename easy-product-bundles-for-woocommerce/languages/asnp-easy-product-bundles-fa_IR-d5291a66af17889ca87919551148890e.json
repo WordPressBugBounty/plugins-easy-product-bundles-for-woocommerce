@@ -15,17 +15,14 @@
 			"Item index is required.": [ "" ],
 			"There was an error on getting items.": [ "" ],
 			"Args is required.": [ "" ],
-			"Please Select Your Product": [ "!لطفا محصول خود را انتخاب کنید" ],
 			"Prev": [ "قبلی" ],
 			"Next": [ "بعدی" ],
 			"OUT OF STOCK": [ "اتمام موجودی" ],
 			"Bundle item image": [ "تصویر آیتم بسته" ],
 			"Add": [ "افزودن" ],
 			"Add%s": [ "افزودن%s" ],
-			"Please select a product!": [ "لطفا یک محصول را انتخاب کنید!" ],
 			"Change": [ "تغییر" ],
 			"View": [ "مشاهده" ],
-			"Please select your product!": [ "لطفا محصول خود را انتخاب کنید!" ],
 			"Please select a product for all items.": [
 				"لطفا برای همه آیتم ها، یک محصول را انتخاب کنید."
 			],

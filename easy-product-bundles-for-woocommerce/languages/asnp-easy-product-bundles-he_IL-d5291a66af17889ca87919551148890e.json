@@ -15,17 +15,14 @@
 			"Item index is required.": [ "" ],
 			"There was an error on getting items.": [ "" ],
 			"Args is required.": [ "" ],
-			"Please Select Your Product": [ "בחר את המוצר שלך" ],
 			"Prev": [ "הקודם" ],
 			"Next": [ "הבא" ],
 			"OUT OF STOCK": [ "אזל מהמלאי" ],
 			"Bundle item image": [ "תמונת פריט חבילה" ],
 			"Add": [ "הוסף" ],
 			"Add%s": [ "הוסף %s" ],
-			"Please select a product!": [ "אנא בחר מוצר!" ],
 			"Change": [ "שינוי" ],
 			"View": [ "הצג" ],
-			"Please select your product!": [ "אנא בחר את המוצר שלך!" ],
 			"Please select a product for all items.": [
 				"אנא בחר מוצר עבור כל הפריטים."
 			],

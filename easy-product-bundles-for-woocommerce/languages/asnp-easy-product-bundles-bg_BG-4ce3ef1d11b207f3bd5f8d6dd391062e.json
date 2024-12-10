@@ -184,7 +184,10 @@
 			"Hide products price": [ "Скрий цената на продуктите" ],
 			"No": [ "Не" ],
 			"Yes": [ "Да" ],
-			"Only regular price": [ "Само редовна цена" ]
+			"Only regular price": [ "Само редовна цена" ],
+			"Please select your product!": [ "Моля, изберете вашия продукт!" ],
+			"Please select your product": [ "Моля, изберете вашия продукт" ],
+			"Please select a product!": [ "Моля, изберете продукт!" ]
 		}
 	}
 }

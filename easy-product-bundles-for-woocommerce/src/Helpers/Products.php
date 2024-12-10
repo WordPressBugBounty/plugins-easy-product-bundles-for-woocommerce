@@ -202,5 +202,5 @@ function get_description( $product ) {
 		}
 	}
 
-	return $description;
+	return apply_filters( 'woocommerce_short_description', $description );
 }

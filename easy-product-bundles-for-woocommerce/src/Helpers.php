@@ -238,7 +238,7 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 		$data['name'] = $product->get_title();
 	}
 
-	$data['description'] = wp_kses_post( Products\get_description( $product ) );
+	$data['description'] = Products\get_description( $product );
 
 	if ( 'true' === get_plugin()->settings->get_setting( 'show_stock', 'false' ) ) {
 		$data['stock'] = wc_get_stock_html( $product );

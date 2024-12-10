@@ -166,7 +166,10 @@
 			"Hide products price": [ "הסתרת מחיר המוצרים" ],
 			"No": [ "לא" ],
 			"Yes": [ "כן" ],
-			"Only regular price": [ "רק מחיר רגיל" ]
+			"Only regular price": [ "רק מחיר רגיל" ],
+			"Please select your product!": [ "אנא בחר את המוצר שלך!" ],
+			"Please select your product": [ "בחר את המוצר שלך" ],
+			"Please select a product!": [ "אנא בחר מוצר!" ]
 		}
 	}
 }

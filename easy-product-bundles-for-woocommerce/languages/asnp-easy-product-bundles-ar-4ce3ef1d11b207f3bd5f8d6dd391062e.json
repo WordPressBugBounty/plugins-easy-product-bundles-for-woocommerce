@@ -172,7 +172,10 @@
 			"Hide products price": [ "إخفاء سعر المنتجات" ],
 			"No": [ "لا" ],
 			"Yes": [ "نعم" ],
-			"Only regular price": [ "السعر العادي فقط" ]
+			"Only regular price": [ "السعر العادي فقط" ],
+			"Please select your product!": [ "يرجى اختيار المنتج الخاص بك!" ],
+			"Please select your product": [ "يرجى اختيار المنتج الخاص بك" ],
+			"Please select a product!": [ "يرجى اختيار منتج!" ]
 		}
 	}
 }

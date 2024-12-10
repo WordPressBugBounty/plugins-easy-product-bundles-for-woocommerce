@@ -15,19 +15,14 @@
 			"Item index is required.": [ "" ],
 			"There was an error on getting items.": [ "" ],
 			"Args is required.": [ "" ],
-			"Please Select Your Product": [
-				"Пожалуйста Выберите свой продукт"
-			],
 			"Prev": [ "Пред" ],
 			"Next": [ "След" ],
 			"OUT OF STOCK": [ "НЕТ В НАЛИЧИИ" ],
 			"Bundle item image": [ "комплекте элемент изображение" ],
 			"Add": [ "Добавить" ],
 			"Add%s": [ "Добавить%s" ],
-			"Please select a product!": [ "выберите продукт!" ],
 			"Change": [ "Изменить" ],
 			"View": [ "Просмотр" ],
-			"Please select your product!": [ "Выберите свой продукт!" ],
 			"Please select a product for all items.": [
 				"Пожалуйста выберите продукт для всех товаров."
 			],
