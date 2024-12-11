@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 5.6.1
+Stable tag: 5.6.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -211,11 +211,14 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 5.6.2 =
+* Resolved a critical issue affecting the sale price of product bundles that occurred in the version 5.6.0.
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 5.6.1 =
 * Resolved issue with product description display.
 * Fixed translation problem in backend display tab.
 * Ensured compatibility with WooCommerce version 9.4.3
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 5.6.0 =
 * Enhanced compatibility with the "Discount Rules and Dynamic Pricing for WooCommerce" By Discount Team plugin.

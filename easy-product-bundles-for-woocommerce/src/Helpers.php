@@ -805,7 +805,7 @@ function maybe_exchange_price( $price, $type = 'product' ) {
 	return apply_filters( 'asnp_wepb_maybe_exchange_price', $price, $type );
 }
 
-function maybe_change_price( $product, $price, $price_type = 'price' ) {
+function maybe_change_price( $price, $product, $price_type = 'price' ) {
 	return apply_filters( 'asnp_wepb_maybe_change_price', $price, $product, $price_type );
 }
 
