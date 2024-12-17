@@ -62,6 +62,7 @@ class Assets {
 				'currency'                         => get_woocommerce_currency_symbol(),
 				'price_format'                     => get_woocommerce_price_format(),
 				'number_of_decimals'               => wc_get_price_decimals(),
+				'thousand_separator'               => wc_get_price_thousand_separator(),
 				'bundles'                          => $product->get_initial_data(),
 				'theme'                            => $settings->get_setting( 'theme', 'grid_1' ),
 				'size'                             => $settings->get_setting( 'size', 'medium' ),
