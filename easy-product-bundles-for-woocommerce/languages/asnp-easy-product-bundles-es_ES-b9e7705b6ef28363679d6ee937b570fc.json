@@ -232,6 +232,10 @@
 			"Alert message color": [ "Color del mensaje de alerta" ],
 			"Alert message background color": [
 				"Color de fondo del mensaje de alerta"
+			],
+			"Disable popup": [ "Desactivar ventana emergente" ],
+			"Disable popup for items that have only one product.": [
+				"Desactivar la ventana emergente para artículos que solo tienen un producto."
 			]
 		}
 	}

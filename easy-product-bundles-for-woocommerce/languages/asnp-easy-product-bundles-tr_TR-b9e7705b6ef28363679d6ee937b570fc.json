@@ -222,7 +222,13 @@
 			],
 			"Add to cart button selector": [ "Sepete Ekle butonu seçici" ],
 			"Alert message color": [ "Uyarı mesajı rengi" ],
-			"Alert message background color": [ "Uyarı mesajı arka plan rengi" ]
+			"Alert message background color": [
+				"Uyarı mesajı arka plan rengi"
+			],
+			"Disable popup": [ "Pop-up'ı devre dışı bırak" ],
+			"Disable popup for items that have only one product.": [
+				"Sadece bir ürünü olan öğeler için pop-up'ı devre dışı bırak"
+			]
 		}
 	}
 }

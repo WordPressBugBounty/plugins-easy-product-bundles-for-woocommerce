@@ -202,7 +202,11 @@
 			],
 			"Add to cart button selector": [ "カートに追加ボタンのセレクター" ],
 			"Alert message color": [ "アラートメッセージの色" ],
-			"Alert message background color": [ "アラートメッセージの背景色" ]
+			"Alert message background color": [ "アラートメッセージの背景色" ],
+			"Disable popup": [ "ポップアップを無効にする" ],
+			"Disable popup for items that have only one product.": [
+				"1つの製品のみを持つアイテムのポップアップを無効にする"
+			]
 		}
 	}
 }

@@ -194,7 +194,11 @@
 			],
 			"Add to cart button selector": [ "בוחר כפתור הוסף לסל" ],
 			"Alert message color": [ "צבע הודעת התראה" ],
-			"Alert message background color": [ "צבע רקע הודעת התראה" ]
+			"Alert message background color": [ "צבע רקע הודעת התראה" ],
+			"Disable popup": [ "כבוי פופאפ" ],
+			"Disable popup for items that have only one product.": [
+				"כבוי פופאפ עבור פריטים שיש להם רק מוצר אחד."
+			]
 		}
 	}
 }

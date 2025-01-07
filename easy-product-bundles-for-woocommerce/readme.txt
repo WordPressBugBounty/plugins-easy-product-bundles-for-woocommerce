@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 5.8.0
+Stable tag: 5.9.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -212,11 +212,14 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 5.9.0 =
+* Now, in the settings, you can disable the popup for items that have only one product.
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 5.8.0 =
 * Fixed price formatting issues.
 * Added Indian (Hindi) language support.
 * Ensured compatibility with WooCommerce version 9.5.1
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 5.7.0 =
 * Added thousand separator for price formatting.

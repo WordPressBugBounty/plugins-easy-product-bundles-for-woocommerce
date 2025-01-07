@@ -232,6 +232,10 @@
 			"Alert message color": [ "Цвят на съобщението за предупреждение" ],
 			"Alert message background color": [
 				"Цвят на фона на съобщението за предупреждение"
+			],
+			"Disable popup": [ "Изключване на изскачащия" ],
+			"Disable popup for items that have only one product.": [
+				"Деактивиране на изскачащия прозорец за артикули с само един продукт."
 			]
 		}
 	}

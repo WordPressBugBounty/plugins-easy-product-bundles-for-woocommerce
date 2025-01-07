@@ -187,7 +187,11 @@
 			"Quantity field buttons hover color": [ "数量字段按钮悬停颜色" ],
 			"Add to cart button selector": [ "添加到购物车按钮选择器" ],
 			"Alert message color": [ "警报消息颜色" ],
-			"Alert message background color": [ "警报消息背景颜色" ]
+			"Alert message background color": [ "警报消息背景颜色" ],
+			"Disable popup": [ "禁用弹出窗口" ],
+			"Disable popup for items that have only one product.": [
+				"禁用只有一个产品的项目的弹出窗口"
+			]
 		}
 	}
 }

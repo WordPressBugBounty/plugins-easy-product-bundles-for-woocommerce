@@ -205,7 +205,11 @@
 			],
 			"Add to cart button selector": [ "محدد زر إضافة إلى السلة" ],
 			"Alert message color": [ "لون رسالة التنبيه" ],
-			"Alert message background color": [ "لون خلفية رسالة التنبيه" ]
+			"Alert message background color": [ "لون خلفية رسالة التنبيه" ],
+			"Disable popup": [ "تعطيل النافذة المنبثقة" ],
+			"Disable popup for items that have only one product.": [
+				"تعطيل النافذة المنبثقة للعناصر التي تحتوي على منتج واحد فقط."
+			]
 		}
 	}
 }

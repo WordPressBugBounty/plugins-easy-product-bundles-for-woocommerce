@@ -224,6 +224,10 @@
 			"Alert message color": [ "Цвет сообщения предупреждения" ],
 			"Alert message background color": [
 				"Цвет фона сообщения предупреждения"
+			],
+			"Disable popup": [ "Отключить всплывающее окно" ],
+			"Disable popup for items that have only one product.": [
+				"Отключить всплывающее окно для товаров, у которых есть только один продукт."
 			]
 		}
 	}

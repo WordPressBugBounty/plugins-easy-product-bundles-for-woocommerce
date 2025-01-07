@@ -206,7 +206,10 @@
 				"انتخابگر دکمه افزودن به سبد خرید"
 			],
 			"Alert message color": [ "رنگ پیام هشدار" ],
-			"Alert message background color": [ "رنگ پس‌زمینه پیام هشدار" ]
+			"Alert message background color": [ "رنگ پس‌زمینه پیام هشدار" ],
+			"Disable popup": [ "غیرفعال کردن پنجره بازشو" ],
+"Disable popup for items that have only one product.": [ "غیرفعال کردن پنجره بازشو برای آیتمی هایی که تنها یک محصول دارند." ]
+
 		}
 	}
 }

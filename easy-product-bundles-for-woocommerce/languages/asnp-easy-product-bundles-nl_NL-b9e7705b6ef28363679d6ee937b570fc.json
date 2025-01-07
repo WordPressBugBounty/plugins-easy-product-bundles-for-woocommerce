@@ -220,6 +220,10 @@
 			"Alert message color": [ "Kleur van het waarschuwingsbericht" ],
 			"Alert message background color": [
 				"Achtergrondkleur van het waarschuwingsbericht"
+			],
+			"Disable popup": [ "Popup uitschakelen" ],
+			"Disable popup for items that have only one product.": [
+				"Popup uitschakelen voor items die maar één product hebben."
 			]
 		}
 	}

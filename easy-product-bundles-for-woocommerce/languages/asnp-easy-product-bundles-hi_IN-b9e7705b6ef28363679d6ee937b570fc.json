@@ -210,7 +210,11 @@
 				"मात्रा क्षेत्र बटन होवर रंग"
 			],
 			"Alert message color": [ "अलर्ट संदेश रंग" ],
-			"Alert message background color": [ "अलर्ट संदेश पृष्ठभूमि रंग" ]
+			"Alert message background color": [ "अलर्ट संदेश पृष्ठभूमि रंग" ],
+			"Disable popup": [ "पॉपअप अक्षम करें" ],
+			"Disable popup for items that have only one product.": [
+				"ऐसे आइटम्स के लिए पॉपअप अक्षम करें जिनके पास केवल एक उत्पाद है।"
+			]
 		}
 	}
 }

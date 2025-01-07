@@ -1,15 +1,15 @@
-# Copyright (C) 2024 Product Bundles Team
+# Copyright (C) 2025 Product Bundles Team
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 5.8.0\n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 5.9.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-12-24T22:30:18+00:00\n"
+"POT-Creation-Date: 2025-01-06T21:25:08+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: asnp-easy-product-bundles\n"
@@ -554,6 +554,14 @@ msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show plus icon between items."
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Disable popup"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Disable popup for items that have only one product."
 msgstr ""
 
 #: assets/js/admin/admin/index.js:2

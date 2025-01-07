@@ -222,6 +222,10 @@
 			"Alert message color": [ "Kolor wiadomości ostrzegawczej" ],
 			"Alert message background color": [
 				"Kolor tła wiadomości ostrzegawczej"
+			],
+			"Disable popup": [ "Wyłącz popup" ],
+			"Disable popup for items that have only one product.": [
+				"Wyłącz popup dla przedmiotów, które mają tylko jeden produkt."
 			]
 		}
 	}

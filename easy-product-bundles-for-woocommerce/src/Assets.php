@@ -82,7 +82,8 @@ class Assets {
 				'add_to_cart_button_selector'      => $settings->get_setting( 'add_to_cart_button_selector', 'button[type="submit"][name="add-to-cart"]' ),
 				'quantity_field_on_item'           => $settings->get_setting( 'quantity_field_on_item', 'true' ),
 				'show_plus_icon'                   => $settings->get_setting( 'show_plus_icon', 'true' ),
-				'click_on_popup_product'           => $settings->get_setting( 'click_on_popup_product', 'product_selection' )
+				'click_on_popup_product'           => $settings->get_setting( 'click_on_popup_product', 'product_selection' ),
+				'disable_popup'                    => $settings->get_setting( 'disable_popup', 'false' )
 			) )
 		);
 

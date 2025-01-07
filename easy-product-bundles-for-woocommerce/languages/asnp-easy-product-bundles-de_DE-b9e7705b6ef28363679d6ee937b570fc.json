@@ -222,6 +222,10 @@
 			"Alert message color": [ "Farbe der Warnnachricht" ],
 			"Alert message background color": [
 				"Hintergrundfarbe der Warnnachricht"
+			],
+			"Disable popup": [ "Popup deaktivieren" ],
+			"Disable popup for items that have only one product.": [
+				"Deaktivieren für Artikel, die nur ein Produkt haben."
 			]
 		}
 	}

@@ -228,6 +228,10 @@
 			"Alert message color": [ "Couleur du message d'alerte" ],
 			"Alert message background color": [
 				"Couleur de fond du message d'alerte"
+			],
+			"Disable popup": [ "Désactiver la fenêtre contextuelle" ],
+			"Disable popup for items that have only one product.": [
+				"Désactiver la fenêtre contextuelle pour les articles n'ayant qu'un seul produit."
 			]
 		}
 	}
