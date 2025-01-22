@@ -1115,10 +1115,6 @@ class ProductBundleHooks {
 				) {
 					return '';
 				}
-
-				if ( 'false' === get_plugin()->settings->get_setting( 'show_item_price', 'true' ) ) {
-					return '';
-				}
 			}
 		} elseif ( isset( $order_item['_asnp_wepb_items'] ) ) {
 			if (
