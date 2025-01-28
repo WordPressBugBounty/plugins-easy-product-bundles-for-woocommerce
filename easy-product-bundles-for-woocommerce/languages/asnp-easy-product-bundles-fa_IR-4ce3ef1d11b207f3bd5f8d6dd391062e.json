@@ -180,7 +180,11 @@
 			"Only regular price": [ "فقط قیمت عادی" ],
 			"Please select a product!": [ "لطفا یک محصول را انتخاب کنید!" ],
 			"Please select your product": [ "!لطفا محصول خود را انتخاب کنید" ],
-			"Please select your product!": [ "لطفا محصول خود را انتخاب کنید!" ]
+			"Please select your product!": [ "لطفا محصول خود را انتخاب کنید!" ],
+			"Bundle description": [ "توضیحات بسته" ],
+			"Create a description for product bundle.": [
+				"یک توضیح برای بسته محصول ایجاد کنید."
+			]
 		}
 	}
 }

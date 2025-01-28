@@ -70,6 +70,7 @@ class ProductBundle {
 			'max_items_quantity',
 			'custom_display_price',
 			'bundle_title',
+			'bundle_description',
 			'items',
 			'default_products',
 			'hide_items_price'
@@ -100,6 +101,7 @@ class ProductBundle {
 				'max_items_quantity'       => isset( $_POST['asnp_wepb_max_items_quantity'] ) && 0 < absint( $_POST['asnp_wepb_max_items_quantity'] ) ? absint( $_POST['asnp_wepb_max_items_quantity'] ) : '',
 				'custom_display_price'     => ! empty( $_POST['asnp_wepb_custom_display_price'] ) ? wp_kses_post( $_POST['asnp_wepb_custom_display_price'] ) : '',
 				'bundle_title'             => ! empty( $_POST['asnp_wepb_bundle_title'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_title'] ) ) : '',
+				'bundle_description'       => ! empty( $_POST['asnp_wepb_bundle_description'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_description'] ) ) : '',
 				'hide_items_price'         => isset( $_POST['asnp_wepb_hide_items_price'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_hide_items_price'] ) ) : 'no',
 				'items'                    => $items,
 				'default_products'         => implode( ',', $default_products ),

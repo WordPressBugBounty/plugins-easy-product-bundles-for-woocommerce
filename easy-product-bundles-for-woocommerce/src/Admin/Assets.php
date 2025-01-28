@@ -143,6 +143,7 @@ class Assets
 			'min_items_quantity'       => $product->get_min_items_quantity(),
 			'max_items_quantity'       => $product->get_max_items_quantity(),
 			'bundle_title'             => $product->get_bundle_title(),
+			'bundle_description'       => $product->get_bundle_description(),
 			'hide_items_price'         => $product->get_hide_items_price(),
 			'bundles'                  => ! empty( $items ) ? $items : [],
 		];

@@ -165,7 +165,9 @@
 			"Hide products price": [ "隐藏商品价格" ],
 			"No": [ "否" ],
 			"Yes": [ "是" ],
-			"Only regular price": [ "仅常规价格" ]
+			"Only regular price": [ "仅常规价格" ],
+			"Bundle description": [ "产品包描述" ],
+			"Create a description for product bundle.": [ "为产品包创建描述。" ]
 		}
 	}
 }

@@ -48,19 +48,19 @@
 			"Set a default product": [ "Установить продукт по умолчанию" ],
 			"Products": [ "Товары" ],
 			"Add products or Variations": [ "Добавить продукты или Вариации" ],
-			"Exclude products": [ "Исключить товары" ],
+			"Exclude products": [ "Исключить продукты" ],
 			"Select a product that you do not want to be displayed": [
 				"Выберите продукт, который вы не хотите отображать"
 			],
 			"Categories": [ "Категории" ],
 			"Select the category product that you want to be displayed in this bundle item": [
-				"Выберите категорию продукта, который вы хотите отобразить для этого товара в комплекте"
+				"Выберите категорию продукта, которую вы хотите отобразить в этом товаре комплекта."
 			],
 			"Exclude categories": [ "Исключить категории" ],
 			"Select the category product that you do not want to be displayed in this bundle item": [
 				"Выберите категорию продукта, который вы не хотите отображать для этого товара в комплекте"
 			],
-			"Tags": [ "Метки" ],
+			"Tags": [ "Теги" ],
 			"Select the product with tags to display in this bundle item": [
 				"Выберите продукт с тегами, которые вы хотите отобразить для этого товара в комплекте"
 			],
@@ -183,11 +183,17 @@
 			"No": [ "Нет" ],
 			"Yes": [ "Да" ],
 			"Only regular price": [ "Только обычная цена" ],
-			"Please select a product!": [ "выберите продукт!" ],
-			"Please select your product!": [ "Выберите свой продукт!" ],
-			"Please select your product": [
-				"Пожалуйста Выберите свой продукт"
+			"Please select a product!": [ "Пожалуйста, выберите продукт!" ],
+			"Please select your product!": [
+				"Пожалуйста, выберите ваш продукт!"
 			],
+			"Please select your product": [
+				"Пожалуйста, выберите ваш продукт."
+			],
+			"Bundle description": [ "Описание набора" ],
+			"Create a description for product bundle.": [
+				"Создайте описание для набора продуктов."
+			]
 		}
 	}
 }

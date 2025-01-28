@@ -169,7 +169,11 @@
 			"Only regular price": [ "רק מחיר רגיל" ],
 			"Please select your product!": [ "אנא בחר את המוצר שלך!" ],
 			"Please select your product": [ "בחר את המוצר שלך" ],
-			"Please select a product!": [ "אנא בחר מוצר!" ]
+			"Please select a product!": [ "אנא בחר מוצר!" ],
+			"Bundle description": [ "תיאור החבילה" ],
+			"Create a description for product bundle.": [
+				"צור תיאור עבור חבילת מוצרים."
+			]
 		}
 	}
 }

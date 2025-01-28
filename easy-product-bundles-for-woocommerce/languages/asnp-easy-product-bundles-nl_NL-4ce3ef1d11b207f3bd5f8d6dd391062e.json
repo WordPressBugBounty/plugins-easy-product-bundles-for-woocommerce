@@ -186,7 +186,11 @@
 			"A title for the bundle product that will be shown on top of bundle items.": [
 				"Een titel voor het bundle product dat getoond wordt bovenop de onderdelen van de bundle"
 			],
-			"Add Item": [ "Item toevoegen" ]
+			"Add Item": [ "Item toevoegen" ],
+			"Bundle description": [ "Bundelbeschrijving" ],
+			"Create a description for product bundle.": [
+				"Maak een beschrijving voor het productbundel."
+			]
 		}
 	}
 }

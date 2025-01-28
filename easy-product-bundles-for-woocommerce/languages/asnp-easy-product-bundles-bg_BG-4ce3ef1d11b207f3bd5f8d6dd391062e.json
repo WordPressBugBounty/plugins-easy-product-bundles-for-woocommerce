@@ -187,7 +187,11 @@
 			"Only regular price": [ "Само редовна цена" ],
 			"Please select your product!": [ "Моля, изберете вашия продукт!" ],
 			"Please select your product": [ "Моля, изберете вашия продукт" ],
-			"Please select a product!": [ "Моля, изберете продукт!" ]
+			"Please select a product!": [ "Моля, изберете продукт!" ],
+			"Bundle description": [ "Описание на пакета" ],
+			"Create a description for product bundle.": [
+				"Създайте описание за продуктова пакет."
+			]
 		}
 	}
 }

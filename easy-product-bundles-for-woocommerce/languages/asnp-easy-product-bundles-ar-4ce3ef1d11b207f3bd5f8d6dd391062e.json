@@ -175,7 +175,11 @@
 			"Only regular price": [ "السعر العادي فقط" ],
 			"Please select your product!": [ "يرجى اختيار المنتج الخاص بك!" ],
 			"Please select your product": [ "يرجى اختيار المنتج الخاص بك" ],
-			"Please select a product!": [ "يرجى اختيار منتج!" ]
+			"Please select a product!": [ "يرجى اختيار منتج!" ],
+			"Bundle description": [ "وصف الحزمة" ],
+			"Create a description for product bundle.": [
+				"قم بإنشاء وصف لحزمة المنتج."
+			]
 		}
 	}
 }

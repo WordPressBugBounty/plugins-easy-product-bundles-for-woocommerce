@@ -181,6 +181,10 @@
 			"Please select a product!": [ "selecione um produto!" ],
 			"Please select your product": [
 				"Por favor selecione o seu produto"
+			],
+			"Bundle description": [ "Descrição do pacote" ],
+			"Create a description for product bundle.": [
+				"Crie uma descrição para o pacote de produtos."
 			]
 		}
 	}

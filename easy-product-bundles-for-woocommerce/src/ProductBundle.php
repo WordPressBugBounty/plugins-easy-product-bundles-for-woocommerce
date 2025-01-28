@@ -26,6 +26,7 @@ class ProductBundle extends \WC_Product {
 		'shipping_fee_calculation' => 'per_bundle',
 		'custom_display_price' => '',
 		'bundle_title' => '',
+		'bundle_description' => '',
 		'min_items_quantity' => '',
 		'max_items_quantity' => '',
 		'items_is_in_stock' => 'true',
@@ -164,6 +165,10 @@ class ProductBundle extends \WC_Product {
 		return $this->get_prop( 'bundle_title', $context );
 	}
 
+	public function get_bundle_description( $context = 'view' ) {
+		return $this->get_prop( 'bundle_description', $context );
+	}
+
 	/**
 	 * Get hide items price.
      *
@@ -223,6 +228,7 @@ class ProductBundle extends \WC_Product {
 			'theme'              => $this->get_theme( $context ),
 			'theme_size'         => $this->get_theme_size( $context ),
 			'bundle_title'       => $this->get_bundle_title( $context ),
+			'bundle_description' => $this->get_bundle_description( $context ),
 			'hide_items_price'   => $this->get_hide_items_price( $context ),
 			'min_items_quantity' => $this->get_min_items_quantity(),
 			'max_items_quantity' => $this->get_max_items_quantity(),
@@ -528,6 +534,10 @@ class ProductBundle extends \WC_Product {
 
 	public function set_bundle_title( $bundle_title ) {
 		$this->set_prop( 'bundle_title', $bundle_title );
+	}
+
+	public function set_bundle_description( $bundle_description ) {
+		$this->set_prop( 'bundle_description', $bundle_description );
 	}
 
 	public function set_hide_items_price( $hide_items_price ) {

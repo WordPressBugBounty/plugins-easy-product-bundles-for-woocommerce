@@ -185,7 +185,11 @@
 			"Only regular price": [ "Nur regulärer Preis" ],
 			"Please select your product": [ "Bitte wählen dein Produkt aus" ],
 			"Please select your product!": [ "Wähle ein Produkt!" ],
-			"Please select a product!": [ "Wähle ein Produkt!" ]
+			"Please select a product!": [ "Wähle ein Produkt!" ],
+			"Bundle description": [ "Paketbeschreibung" ],
+			"Create a description for product bundle.": [
+				"Erstellen Sie eine Beschreibung für das Produktpaket."
+			]
 		}
 	}
 }

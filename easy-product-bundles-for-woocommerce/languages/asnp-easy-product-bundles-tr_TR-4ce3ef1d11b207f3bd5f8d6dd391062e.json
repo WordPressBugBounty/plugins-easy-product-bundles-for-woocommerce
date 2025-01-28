@@ -187,7 +187,11 @@
 			"Only regular price": [ "Sadece normal fiyat" ],
 			"Please select a product!": [ "Lütfen bir ürün seçiniz!" ],
 			"Please select your product": [ "Lütfen Ürün Seçiniz" ],
-			"Please select your product!": [ "Lütfen ürün seçin!" ]
+			"Please select your product!": [ "Lütfen ürün seçin!" ],
+			"Bundle description": [ "Ürün paketi açıklaması" ],
+			"Create a description for product bundle.": [
+				"Ürün paketi için bir açıklama oluşturun."
+			]
 		}
 	}
 }
