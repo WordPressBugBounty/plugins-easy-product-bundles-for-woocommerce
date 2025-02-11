@@ -73,7 +73,8 @@ class ProductBundle {
 			'bundle_description',
 			'items',
 			'default_products',
-			'hide_items_price'
+			'hide_items_price',
+			'sync_stock_quantity'
 		);
 		foreach ( $fields as $field ) {
 			delete_post_meta( $post_id, '_' . $field );
@@ -95,6 +96,7 @@ class ProductBundle {
 				'theme_size'               => isset( $_POST['asnp_wepb_theme_size'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_theme_size'] ) ) : '',
 				'fixed_price'              => isset( $_POST['asnp_wepb_fixed_price'] ) && 'true' === $_POST['asnp_wepb_fixed_price'] ? 'true' : 'false',
 				'include_parent_price'     => isset( $_POST['asnp_wepb_include_parent_price'] ) && 'true' === $_POST['asnp_wepb_include_parent_price'] ? 'true' : 'false',
+				'sync_stock_quantity'      => isset( $_POST['asnp_wepb_sync_stock_quantity'] ) && 'true' === $_POST['asnp_wepb_sync_stock_quantity'] ? 'true' : 'false',
 				// 'edit_in_cart'             => isset( $_POST['asnp_wepb_edit_in_cart'] ) && 'true' === $_POST['asnp_wepb_edit_in_cart'] ? 'true' : 'false',
 				'shipping_fee_calculation' => isset( $_POST['asnp_wepb_shipping_fee_calculation'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_shipping_fee_calculation'] ) ) : '',
 				'min_items_quantity'       => isset( $_POST['asnp_wepb_min_items_quantity'] ) && 0 < absint( $_POST['asnp_wepb_min_items_quantity'] ) ? absint( $_POST['asnp_wepb_min_items_quantity'] ) : '',

@@ -2,14 +2,14 @@
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 5.10.0\n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 6.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-27T21:16:17+00:00\n"
+"POT-Creation-Date: 2025-02-10T23:11:46+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: asnp-easy-product-bundles\n"
@@ -65,20 +65,20 @@ msgstr ""
 msgid "Product Bundles"
 msgstr ""
 
-#: src/Admin/ProductBundle.php:180
-#: src/ProductBundle.php:268
+#: src/Admin/ProductBundle.php:182
+#: src/ProductBundle.php:279
 #: assets/js/admin/product/index.js:2
 msgid "Please select a product!"
 msgstr ""
 
-#: src/Admin/ProductBundle.php:181
-#: src/ProductBundle.php:269
+#: src/Admin/ProductBundle.php:183
+#: src/ProductBundle.php:280
 #: assets/js/admin/product/index.js:2
 msgid "Please select your product!"
 msgstr ""
 
-#: src/Admin/ProductBundle.php:182
-#: src/ProductBundle.php:270
+#: src/Admin/ProductBundle.php:184
+#: src/ProductBundle.php:281
 #: assets/js/admin/product/index.js:2
 msgid "Please select your product"
 msgstr ""
@@ -222,7 +222,7 @@ msgstr ""
 msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s or greater to be installed and active."
 msgstr ""
 
-#: src/ProductBundle.php:322
+#: src/ProductBundle.php:333
 #: assets/js/shared/index.js:2
 msgid "Item index is required."
 msgstr ""
@@ -1167,6 +1167,14 @@ msgstr ""
 
 #: assets/js/admin/product/index.js:2
 msgid "Include the parent product price in the bundle total price. (parent price + selected items price)"
+msgstr ""
+
+#: assets/js/admin/product/index.js:2
+msgid "Sync stock quantity"
+msgstr ""
+
+#: assets/js/admin/product/index.js:2
+msgid "Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional."
 msgstr ""
 
 #: assets/js/admin/product/index.js:2

@@ -31,6 +31,7 @@ class ProductBundle extends \WC_Product {
 		'max_items_quantity' => '',
 		'items_is_in_stock' => 'true',
 		'default_products_price' => [],
+		'sync_stock_quantity' => 'false'
 	);
 
 	protected $is_cart_item = false;
@@ -214,6 +215,15 @@ class ProductBundle extends \WC_Product {
 		return isset( $prices['raw'] ) ? $prices['raw'] : [];
 	}
 
+	/**
+	 * Get sync stock quantity.
+	 *
+	 * @return string 'true'|'false'
+	 */
+	public function get_sync_stock_quantity( $context = 'view' ) {
+		return $this->get_prop( 'sync_stock_quantity', $context );
+	}
+
 	public function get_initial_data( $context = 'view' ) {
 		$data = array(
 			'product'            => [
@@ -233,6 +243,7 @@ class ProductBundle extends \WC_Product {
 			'min_items_quantity' => $this->get_min_items_quantity(),
 			'max_items_quantity' => $this->get_max_items_quantity(),
 			'bundles'            => array(),
+			'sync_stock_quantity'=> $this->get_sync_stock_quantity( $context ),
 		);
 
 		$items = $this->get_items();
@@ -508,6 +519,15 @@ class ProductBundle extends \WC_Product {
 	}
 
 	/**
+	 * Set sync stock quantity..
+	 *
+	 * @param string $sync_stock_quantity 'true'|'false'
+	 */
+	public function set_sync_stock_quantity( $sync_stock_quantity ) {
+		$this->set_prop( 'sync_stock_quantity', $sync_stock_quantity );
+	}
+
+	/**
 	 * Set edit in cart.
 	 *
 	 * @param bool $edit_in_cart
@@ -774,6 +794,7 @@ class ProductBundle extends \WC_Product {
 
 		static::sync_prices( $product, $save );
 		static::sync_items_is_in_stock( $product, $save );
+		static::sync_bundle_stock_quantity( $product, $save );
 
 		return $product;
 	}
@@ -810,6 +831,76 @@ class ProductBundle extends \WC_Product {
 		$default_products_price = static::calculate_default_products_price( $product );
 		$product->set_default_products_price( $default_products_price );
 
+		if ( $save ) {
+			$product->save();
+		}
+
+		return $product;
+	}
+
+	public static function sync_bundle_stock_quantity( $product, $save = true ) {
+		// If sync_stock_quantity is disabled, no stock syncing will occur
+		if ( 'true' !== $product->get_sync_stock_quantity() ) {
+			return $product;
+		}
+
+		// Sync stock based on the stock quantity of the bundle's items
+		$items = $product->get_items();
+		if ( empty( $items ) ) {
+			return $product;
+		}
+
+		$min_stock = null;
+
+		foreach ( $items as $item ) {
+			if ( isset( $item['optional'] ) && 'true' === $item['optional'] ) {
+				continue;
+			}
+
+			if ( ! empty( $item['products'] ) && 1 < count( $item['products'] ) ) {
+				continue;
+			}
+
+			if ( ! empty( $item['categories'] ) || ! empty( $item['excluded_categories'] ) ) {
+				continue;
+			}
+
+			if ( ! empty( $item['tags'] ) || ! empty( $item['excluded_tags'] ) ) {
+				continue;
+			}
+
+			$default_product = ! empty( $item['product'] ) ? wc_get_product( (int) $item['product'] ) : null;
+			// Do not check stock status of default product when more products are available.
+			if (
+				$default_product &&
+				! empty( $item['products'] ) &&
+				$default_product->get_id() != $item['products'][0]
+			) {
+				continue;
+			}
+
+			// Use the product inside products field as a default product.
+			if ( ! $default_product && ! empty( $item['products'] ) && 1 === count( $item['products'] ) ) {
+				$default_product = wc_get_product( (int) $item['products'][0] );
+			}
+
+			if ( ! $default_product || ! $default_product->managing_stock() ) {
+				continue;
+			}
+
+			$quantity = ! empty( $item['quantity'] ) && 0 < (int) $item['quantity'] ? absint( $item['quantity'] ) : 1;
+			$stock    = floor( $default_product->get_stock_quantity() / $quantity );
+
+			if ( null === $min_stock || $stock < $min_stock ) {
+				$min_stock = $stock;
+			}
+		}
+
+		if ( null !== $min_stock ) {
+			$product->set_stock_quantity( $min_stock );
+		}
+
+		// Save the product if needed
 		if ( $save ) {
 			$product->save();
 		}

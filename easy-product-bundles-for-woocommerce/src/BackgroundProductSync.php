@@ -99,11 +99,6 @@ class BackgroundProductSync extends \WC_Background_Process {
 			return;
 		}
 
-		$default_products = $product->get_default_products();
-		if ( empty( $default_products ) ) {
-			return false;
-		}
-
 		if ( (int) $item['add_items'] ) {
 			add_simple_bundle_items( $product );
 		}
