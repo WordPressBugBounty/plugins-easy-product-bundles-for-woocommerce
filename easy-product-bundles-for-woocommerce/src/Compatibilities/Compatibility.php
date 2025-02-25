@@ -24,6 +24,10 @@ class Compatibility {
 			WOOCS::init();
 		}
 
+		if ( class_exists( '\WooCommerce_Square_Loader' ) ) {
+			Square::init();
+		}
+
 		SideCart::init();
 	}
 
