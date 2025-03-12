@@ -236,7 +236,10 @@
 			"Disable popup": [ "Изключване на изскачащия" ],
 			"Disable popup for items that have only one product.": [
 				"Деактивиране на изскачащия прозорец за артикули с само един продукт."
-			]
+			],
+			"Optional item mode": [ "Режим на опционален елемент" ],
+			"Checkbox": [ "Квадратче за отметка" ],
+			"Delete button": [ "Бутон за изтриване" ]
 		}
 	}
 }

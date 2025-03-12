@@ -184,6 +184,14 @@
 			"Bundle description": [ "توضیحات بسته" ],
 			"Create a description for product bundle.": [
 				"یک توضیح برای بسته محصول ایجاد کنید."
+			],
+			"Sync stock quantity": [ "همگام‌سازی مقدار موجودی" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"به‌روزرسانی مقدار موجودی بسته بر اساس مقدار موجودی محصولات زیرمجموعه. توجه: این قابلیت فقط در صورتی کار می‌کند که هر مورد دقیقاً شامل یک محصول باشد که به فیلد محصول پیش‌فرض اضافه شده و اختیاری نیست."
+			],
+			"Selected": [ "انتخاب شده" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"این فیلد را فعال کنید تا مورد اختیاری در فرانت  شده باشد."
 			]
 		}
 	}

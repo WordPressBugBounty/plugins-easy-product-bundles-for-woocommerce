@@ -34,9 +34,7 @@
 			"Please select a product for all items.": [
 				"Lütfen set için ürün seçimi yapın."
 			],
-			"Edit product": [ "Ürünleri düzenle" ],
-			"Product information": [ "Ürün Bilgileri" ],
-			"Add product": [ "ÜRÜNÜ EKLE" ]
+			"Edit product": [ "Ürünleri düzenle" ]
 		}
 	}
 }

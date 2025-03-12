@@ -198,7 +198,10 @@
 			"Disable popup": [ "כבוי פופאפ" ],
 			"Disable popup for items that have only one product.": [
 				"כבוי פופאפ עבור פריטים שיש להם רק מוצר אחד."
-			]
+			],
+			"Optional item mode": [ "מצב פריט אופציונלי" ],
+			"Delete button": [ "כפתור מחיקה" ],
+			"Checkbox": [ "תיבת סימון" ]
 		}
 	}
 }

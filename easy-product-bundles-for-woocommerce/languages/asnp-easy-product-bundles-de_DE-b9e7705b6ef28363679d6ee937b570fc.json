@@ -226,7 +226,10 @@
 			"Disable popup": [ "Popup deaktivieren" ],
 			"Disable popup for items that have only one product.": [
 				"Deaktivieren für Artikel, die nur ein Produkt haben."
-			]
+			],
+			"Optional item mode": [ "Optionale Elementmodus" ],
+			"Checkbox": [ "Kontrollkästchen" ],
+			"Delete button": [ "Löschen-Schaltfläche" ]
 		}
 	}
 }

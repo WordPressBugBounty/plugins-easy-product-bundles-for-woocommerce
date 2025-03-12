@@ -228,7 +228,10 @@
 			"Disable popup": [ "Отключить всплывающее окно" ],
 			"Disable popup for items that have only one product.": [
 				"Отключить всплывающее окно для товаров, у которых есть только один продукт."
-			]
+			],
+			"Optional item mode": [ "Режим необязательного элемента" ],
+			"Checkbox": [ "Поле выбора" ],
+			"Delete button": [ "Кнопка удаления" ]
 		}
 	}
 }

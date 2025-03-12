@@ -173,6 +173,14 @@
 			"Bundle description": [ "תיאור החבילה" ],
 			"Create a description for product bundle.": [
 				"צור תיאור עבור חבילת מוצרים."
+			],
+			"Sync stock quantity": [ "סנכרן את כמות המלאי" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"עדכן את כמות המלאי של החבילה על פי כמות המלאי של מוצרים ילדיים. שים לב: תכונה זו פועלת רק כאשר לכל פריט יש בדיוק מוצר אחד, שנוסף לשדה המוצר ברירת המחדל ואינו אופציונלי."
+			],
+			"Selected": [ "נבחר" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"הפעל שדה זה כדי לבחור את הפריט האופציונלי בחזית."
 			]
 		}
 	}

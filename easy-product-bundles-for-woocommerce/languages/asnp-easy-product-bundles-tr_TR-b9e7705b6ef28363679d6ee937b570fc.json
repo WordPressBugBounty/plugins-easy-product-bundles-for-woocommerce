@@ -228,7 +228,10 @@
 			"Disable popup": [ "Pop-up'ı devre dışı bırak" ],
 			"Disable popup for items that have only one product.": [
 				"Sadece bir ürünü olan öğeler için pop-up'ı devre dışı bırak"
-			]
+			],
+			"Optional item mode": [ "Opsiyonel öğe modu" ],
+			"Checkbox": [ "Seçim alanı" ],
+			"Delete button": [ "Silme düğmesi" ]
 		}
 	}
 }

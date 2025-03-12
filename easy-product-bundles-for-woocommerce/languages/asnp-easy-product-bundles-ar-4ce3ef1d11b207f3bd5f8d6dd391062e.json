@@ -179,6 +179,14 @@
 			"Bundle description": [ "وصف الحزمة" ],
 			"Create a description for product bundle.": [
 				"قم بإنشاء وصف لحزمة المنتج."
+			],
+			"Sync stock quantity": [ "مزامنة كمية المخزون" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"تحديث كمية مخزون الحزمة بناءً على كمية مخزون المنتجات الفرعية. ملاحظة: هذه الميزة تعمل فقط عندما يحتوي كل عنصر على منتج واحد فقط، مضاف إلى الحقل الافتراضي للمنتج، وليس اختياريًا."
+			],
+			"Selected": [ "محدد" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"قم بتمكين هذا الحقل لجعل العنصر الاختياري محددًا في الواجهة الأمامية."
 			]
 		}
 	}

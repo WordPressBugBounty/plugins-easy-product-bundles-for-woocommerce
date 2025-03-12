@@ -236,7 +236,10 @@
 			"Disable popup": [ "Desactivar ventana emergente" ],
 			"Disable popup for items that have only one product.": [
 				"Desactivar la ventana emergente para artículos que solo tienen un producto."
-			]
+			],
+			"Optional item mode": [ "Modo de elemento opcional" ],
+			"Checkbox": [ "Casilla de verificación" ],
+			"Delete button": [ "Botón de eliminar" ]
 		}
 	}
 }

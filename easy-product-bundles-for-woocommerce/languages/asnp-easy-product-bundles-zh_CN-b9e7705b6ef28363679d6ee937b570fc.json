@@ -191,7 +191,10 @@
 			"Disable popup": [ "禁用弹出窗口" ],
 			"Disable popup for items that have only one product.": [
 				"禁用只有一个产品的项目的弹出窗口"
-			]
+			],
+			"Optional item mode": [ "可选项目模式" ],
+			"Checkbox": [ "选择框" ],
+			"Delete button": [ "删除按钮" ]
 		}
 	}
 }

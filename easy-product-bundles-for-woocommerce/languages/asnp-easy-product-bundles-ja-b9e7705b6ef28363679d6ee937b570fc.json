@@ -206,7 +206,10 @@
 			"Disable popup": [ "ポップアップを無効にする" ],
 			"Disable popup for items that have only one product.": [
 				"1つの製品のみを持つアイテムのポップアップを無効にする"
-			]
+			],
+			"Optional item mode": [ "オプションアイテムモード" ],
+			"Checkbox": [ "チェックボックス" ],
+			"Delete button": [ "削除ボタン" ]
 		}
 	}
 }

@@ -161,6 +161,7 @@ class ProductBundle {
 		$bundle_item = [];
 		$defaults    = [
 			'optional' => 'false',
+			'selected' => 'false',
 			'products' => [],
 			'excluded_products' => [],
 			'categories' => [],
@@ -219,6 +220,7 @@ class ProductBundle {
 					break;
 
 				case 'optional':
+				case 'selected':
 				case 'edit_quantity':
 					$bundle_item[ $key ] = 'true' === $value ? 'true' : 'false';
 					break;

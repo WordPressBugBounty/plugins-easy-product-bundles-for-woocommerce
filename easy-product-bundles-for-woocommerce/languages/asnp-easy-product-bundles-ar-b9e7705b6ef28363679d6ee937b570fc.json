@@ -209,7 +209,10 @@
 			"Disable popup": [ "تعطيل النافذة المنبثقة" ],
 			"Disable popup for items that have only one product.": [
 				"تعطيل النافذة المنبثقة للعناصر التي تحتوي على منتج واحد فقط."
-			]
+			],
+			"Optional item mode": [ "وضع العنصر الاختياري" ],
+			"Checkbox": [ "حقل اختيار" ],
+			"Delete button": [ "زر الحذف" ]
 		}
 	}
 }

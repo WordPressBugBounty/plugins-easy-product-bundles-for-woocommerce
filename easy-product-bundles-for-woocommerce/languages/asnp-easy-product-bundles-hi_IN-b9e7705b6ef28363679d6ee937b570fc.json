@@ -214,7 +214,10 @@
 			"Disable popup": [ "पॉपअप अक्षम करें" ],
 			"Disable popup for items that have only one product.": [
 				"ऐसे आइटम्स के लिए पॉपअप अक्षम करें जिनके पास केवल एक उत्पाद है।"
-			]
+			],
+			"Optional item mode": [ "वैकल्पिक आइटम मोड" ],
+			"Checkbox": [ "चेकबॉक्स" ],
+			"Delete button": [ "हटाने का बटन" ]
 		}
 	}
 }

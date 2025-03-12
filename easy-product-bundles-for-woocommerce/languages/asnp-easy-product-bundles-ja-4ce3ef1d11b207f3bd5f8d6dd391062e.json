@@ -178,6 +178,14 @@
 			"Bundle description": [ "バンドルの説明" ],
 			"Create a description for product bundle.": [
 				"製品バンドルの説明を作成します。"
+			],
+			"Sync stock quantity": [ "在庫数量を同期する" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"バンドルの在庫数量を子商品の在庫数量に基づいて更新します。注意：この機能は、各アイテムに正確に1つの製品があり、それがデフォルトの製品フィールドに追加され、オプションではない場合にのみ機能します。"
+			],
+			"Selected": [ "選択された" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"このフィールドを有効にして、フロントエンドでオプション項目を選択可能にします。"
 			]
 		}
 	}

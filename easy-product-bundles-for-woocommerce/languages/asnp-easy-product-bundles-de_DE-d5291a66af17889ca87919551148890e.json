@@ -21,8 +21,8 @@
 			"Bundle item image": [ "Bild des Bundle-Artikels" ],
 			"Add": [ "hier klicken" ],
 			"Add%s": [ "Auswählen" ],
-			"Change": [ "Details" ],
-			"View": [ "Details" ],
+			"Change": [ "Ändern" ],
+			"View": [ "Ansehen" ],
 			"Please select a product for all items.": [
 				"Bitte wähle deine Produkte aus."
 			],
@@ -30,9 +30,7 @@
 			"Edit product": [ "Produkt bearbeiten" ],
 			"Close": [ "Schließen" ],
 			"Back": [ "Zurück" ],
-			"More pictures": [ "Weitere Bilder" ],
-			"Product information": [ "Produktinformationen" ],
-			"Add product": [ "PRODUKT HINZUFÜGEN" ]
+			"More pictures": [ "Weitere Bilder" ]
 		}
 	}
 }

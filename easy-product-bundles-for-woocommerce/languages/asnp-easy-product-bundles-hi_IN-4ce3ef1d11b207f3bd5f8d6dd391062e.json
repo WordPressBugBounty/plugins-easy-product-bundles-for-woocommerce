@@ -180,6 +180,14 @@
 			"Bundle description": [ "बंडल विवरण" ],
 			"Create a description for product bundle.": [
 				"उत्पाद बंडल के लिए विवरण बनाएं।"
+			],
+			"Sync stock quantity": [ "स्टॉक मात्रा सिंक करें" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"बंडल स्टॉक मात्रा को चाइल्ड उत्पादों की स्टॉक मात्रा के आधार पर अपडेट करें। नोट: यह सुविधा केवल तब काम करती है जब प्रत्येक आइटम में एक ही उत्पाद हो, जिसे डिफ़ॉल्ट उत्पाद क्षेत्र में जोड़ा गया हो और यह वैकल्पिक न हो।"
+			],
+			"Selected": [ "चयनित" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"इस फ़ील्ड को सक्षम करें ताकि वैकल्पिक आइटम को फ्रंटेंड में चयनित किया जा सके।"
 			]
 		}
 	}

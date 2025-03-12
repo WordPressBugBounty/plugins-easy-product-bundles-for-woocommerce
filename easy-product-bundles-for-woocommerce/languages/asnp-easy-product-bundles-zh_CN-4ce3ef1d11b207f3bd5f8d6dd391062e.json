@@ -167,7 +167,17 @@
 			"Yes": [ "是" ],
 			"Only regular price": [ "仅常规价格" ],
 			"Bundle description": [ "产品包描述" ],
-			"Create a description for product bundle.": [ "为产品包创建描述。" ]
+			"Create a description for product bundle.": [
+				"为产品包创建描述。"
+			],
+			"Sync stock quantity": [ "同步库存数量" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"根据子产品的库存数量更新捆绑包的库存数量。注意：此功能仅在每个项目恰好有一个产品，并且该产品已添加到默认产品字段且不是可选时才有效。"
+			],
+			"Selected": [ "已选择" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"启用此字段以在前端选择可选项目。"
+			]
 		}
 	}
 }

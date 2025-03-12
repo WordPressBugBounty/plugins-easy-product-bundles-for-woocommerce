@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 6.1.0
+Stable tag: 6.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -212,10 +212,15 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.2.0 =
+* New Feature: Added a new mode for optional items, allowing you to choose between a checkbox or a delete button in the plugin settings.
+* Bug Fix: Resolved various CSS issues for improved styling and layout.
+* Ensured compatibility with WooCommerce version 9.7.1
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 6.1.0 =
 * Added compatibility with the WooCommerce Square Payments plugin.
 * Ensured compatibility with WooCommerce version 9.6.2
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 6.0.0 =
 * Added a new feature to automatically update bundle stock based on the stock quantity of child products.

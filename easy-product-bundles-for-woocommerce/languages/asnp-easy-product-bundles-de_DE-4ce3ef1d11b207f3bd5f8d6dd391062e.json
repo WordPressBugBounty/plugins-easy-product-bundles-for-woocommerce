@@ -189,6 +189,14 @@
 			"Bundle description": [ "Paketbeschreibung" ],
 			"Create a description for product bundle.": [
 				"Erstellen Sie eine Beschreibung für das Produktpaket."
+			],
+			"Sync stock quantity": [ "Bestandsmenge synchronisieren" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"Aktualisieren Sie die Existenz des Bundles basierend auf der vorhandenen Menge der Unterprodukte. Hinweis: Diese Funktion funktioniert nur, wenn jedes Element genau ein Produkt enthält, das dem Standard-Produktfeld hinzugefügt wurde und nicht optional ist."
+			],
+			"Selected": [ "Ausgewählt" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"Aktivieren Sie dieses Feld, damit das optionale Element im Frontend ausgewählt wird."
 			]
 		}
 	}

@@ -191,6 +191,14 @@
 			"Bundle description": [ "Описание на пакета" ],
 			"Create a description for product bundle.": [
 				"Създайте описание за продуктова пакет."
+			],
+			"Sync stock quantity": [ "Синхронизиране на наличността" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"Актуализиране на количеството наличност на пакета въз основа на количеството наличност на дъщерните продукти. Забележка: Тази функция работи само когато всеки елемент има точно един продукт, който е добавен в полето за продукт по подразбиране и не е по избор."
+			],
+			"Selected": [ "Избран" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"Активирайте това поле, за да направите избираемия елемент избран в предния край."
 			]
 		}
 	}

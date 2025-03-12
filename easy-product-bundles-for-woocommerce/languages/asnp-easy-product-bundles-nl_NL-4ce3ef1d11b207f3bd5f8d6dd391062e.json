@@ -190,6 +190,14 @@
 			"Bundle description": [ "Bundelbeschrijving" ],
 			"Create a description for product bundle.": [
 				"Maak een beschrijving voor het productbundel."
+			],
+			"Sync stock quantity": [ "Synchroniseer de voorraadhoeveelheid" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"Werk de bundelvoorraadhoeveelheid bij op basis van de voorraadhoeveelheid van de kindproducten. Opmerking: Deze functie werkt alleen wanneer elk item precies één product heeft, dat wordt toegevoegd aan het standaard productveld en niet optioneel is."
+			],
+			"Selected": [ "Geselecteerd" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"Schakel dit veld in om het optionele item in de frontend geselecteerd te maken."
 			]
 		}
 	}

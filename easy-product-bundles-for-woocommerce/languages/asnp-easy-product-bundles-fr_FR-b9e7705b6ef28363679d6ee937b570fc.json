@@ -232,7 +232,10 @@
 			"Disable popup": [ "Désactiver la fenêtre contextuelle" ],
 			"Disable popup for items that have only one product.": [
 				"Désactiver la fenêtre contextuelle pour les articles n'ayant qu'un seul produit."
-			]
+			],
+			"Optional item mode": [ "Mode d'élément optionnel" ],
+			"Checkbox": [ "Case à cocher" ],
+			"Delete button": [ "Bouton de suppression" ]
 		}
 	}
 }
