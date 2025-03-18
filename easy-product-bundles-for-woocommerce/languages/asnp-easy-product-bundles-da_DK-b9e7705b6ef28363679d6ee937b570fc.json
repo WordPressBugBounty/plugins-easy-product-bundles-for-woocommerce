@@ -1,0 +1,198 @@
+{
+  "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+  "generator": "WP-CLI/2.11.0",
+  "source": "assets/js/admin/admin/index.js",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "lang": "da_DK",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Settings": ["Indstillinger"],
+      "Go Pro": ["Bliv Pro"],
+      "Action is required.": [""],
+      "PRO Version": ["PRO Version"],
+      "Bundle position": ["Bundtvareposition"],
+      "Before Add to Cart button": ["Før 'Tilføj til kurv'-knappen"],
+      "After Add to Cart button": ["Efter 'Tilføj til kurv'-knappen"],
+      "Before Add to Cart form": ["Før 'Tilføj til kurv'-formularen"],
+      "After Add to Cart form": ["Efter 'Tilføj til kurv'-formularen"],
+      "Before product excerpt": ["Før produktuddrag"],
+      "After product excerpt": ["Efter produktuddrag"],
+      "After product meta": ["Efter produktmeta"],
+      "None": ["Ingen"],
+      "Before CSS selector": ["Før CSS vælger"],
+      "After CSS selector": ["Efter CSS vælger"],
+      "product bundle position in product page.": [
+        "Produktbundtvareposition på produktsiden."
+      ],
+      "CSS Selector": ["CSS vælger"],
+      "(Pro)": ["(Pro)"],
+      "Back default color": ["Tilbage til standardfarve"],
+      "Product image object-fit": ["Produktbillede objekt-fit Css"],
+      "Cover": [""],
+      "Contain": [""],
+      "Fill": [""],
+      "Inherit": [""],
+      "Initial": [""],
+      "Revert": [""],
+      "Scale-down": [""],
+      "Unset": [""],
+      "Bundle": ["Bundt"],
+      "Item View": ["Elementvisning"],
+      "Show stock": ["Vis lager"],
+      "Show product Stock availability in modal.": [
+        "Vis produktlager tilgængelighed i modal."
+      ],
+      "Show rating": ["Vis vurdering"],
+      "Show product rating in modal.": ["Vis produktvurdering i modal."],
+      "Show description(on hover)": ["Vis beskrivelse (ved hover)"],
+      "Show product description when mouse hover over it.": [
+        "Vis produktbeskrivelse, når musen holdes over det."
+      ],
+      "Prepend parent name": ["Foranstil forældrenavn"],
+      "Prepend the parent name to the item name in the cart and order.": [
+        "Foranstil forældrenavnet til elementnavnet i kurven og ordren."
+      ],
+      "Hide out of stock": ["Skjul udsolgte"],
+      "Hide out of stock products.": ["Skjul udsolgte produkter."],
+      "Show price in cart": ["Vis pris i kurv"],
+      "Product bundle items price visibility in cart and checkout.": [
+        "Produktbundtvare elementer pris synlighed i kurv og kasse."
+      ],
+      "Show products list": ["Vis produktliste"],
+      "Show products list below products bundle.": [
+        "Vis produktliste under produktbundtvare."
+      ],
+      "Show total price": ["Vis totalpris"],
+      "Show the total price of the selected items below the products list.": [
+        "Vis den samlede pris for de valgte varer under produktlisten."
+      ],
+      "Show saved money": ["Vis besparelse"],
+      "Show the saved money when calculating the total price.": [
+        "Vis de sparede penge, når den samlede pris beregnes."
+      ],
+      "Show modal quick view": ["Vis modal hurtigvisning"],
+      "Show product quick view icon in modal.": [
+        "Vis produkt hurtigvisningsikon i modal."
+      ],
+      "Show selected product quick view": [
+        "Vis hurtigvisning af valgt produkt"
+      ],
+      "Show product quick view icon in the selected product.": [
+        "Vis hurtigvisningsikon for produktet i det valgte produkt."
+      ],
+      "Quantity field on item": ["Mængdefelt på element"],
+      "Show quantity field on item.": ["Vis mængdefelt på element."],
+      "Show plus icon": ["Vis plusikon"],
+      "Show plus icon between items.": ["Vis plusikon mellem elementer."],
+      "Disable popup": ["Deaktiver popup"],
+      "Disable popup for items that have only one product.": [
+        "Deaktiver popup for elementer, der kun har ét produkt."
+      ],
+      "Theme": ["Tema"],
+      "Grid 1": [""],
+      "Grid 2": [""],
+      "List 1": [""],
+      "List 2": [""],
+      "Size": ["Størrelse"],
+      "Small": ["Lille"],
+      "Medium": ["Mellem"],
+      "Large": ["Stor"],
+      "Optional item mode": ["Valgfrit elementtilstand"],
+      "Checkbox": ["Afkrydsningsfelt"],
+      "Delete button": ["Slet knap"],
+      "Product bundle price on shop page": [
+        "Produktbundtvarepris på butiksside"
+      ],
+      "Total price": ["Totalpris"],
+      "From total price": ["Fra totalpris"],
+      "From min price": ["Fra minimumspris"],
+      "Set how to show the product bundle price on the shop page.": [
+        "Indstil, hvordan produktbundtvareprisen vises på butikssiden."
+      ],
+      "Item price": ["Elementpris"],
+      "Product price": ["Produktpris"],
+      "Product subtotal": ["Produktsubtotal"],
+      "Set how to show the product price in item.": [
+        "Indstil, hvordan produktprisen vises i elementet."
+      ],
+      "Product list price": ["Produktlistepris"],
+      "Set how to show the product price in product list.": [
+        "Indstil, hvordan produktprisen vises i produktlisten."
+      ],
+      "Link to product": ["Link til produkt"],
+      "New tab": ["Ny fane"],
+      "No link": ["Intet link"],
+      "Show the product change modal": ["Vis produktændringsmodal"],
+      "Click on product in pop-up": ["Klik på produkt i popup"],
+      "Product selection": ["Produktvalg"],
+      "Show product details": ["Vis produktdetaljer"],
+      "Coupon apply method": ["Rabattype"],
+      "Both of bundle and bundle items": [
+        "Både bundtvare og bundtvareelementer"
+      ],
+      "On bundle": ["På bundtvare"],
+      "On bundle items": ["På bundtvareelementer"],
+      "None of bundle and bundle items": [
+        "Ingen af bundtvare og bundtvareelementer"
+      ],
+      "Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".": [
+        "Rabatter baseret på produkter kan anvendes på \"bundtvare\", \"bundtvareelementer\", \"begge\" eller \"ingen\"."
+      ],
+      "Cart contents count": ["Antal indhold i kurv"],
+      "Bundle items": ["Bundtvareelementer"],
+      "How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
+        "Hvordan tælles bundtvareprodukter i kurven? Tæl både \"bundtvare og dens elementer\" eller \"kun bundtvare\" eller \"kun bundtvareelementer\"."
+      ],
+      "Product price selector": ["Produktprisvælger"],
+      "Add to cart button selector": ["Vælg tilføj til kurv-knap"],
+      "Change product modal": ["Skift produktmodal"],
+      "Number of products per page": ["Antal produkter pr. side"],
+      "Styles": ["Stilarter"],
+      "Save Changes": ["Gem ændringer"],
+      "License Key": ["Licensnøgle"],
+      "Enter Your License Key": ["Indtast din licensnøgle"],
+      "Notice": ["Besked"],
+      "Each website using this plugin needs a legal license (1 license = 1 website).": [
+        "Hver hjemmeside, der bruger dette plugin, har brug for en lovlig licens (1 licens = 1 hjemmeside)."
+      ],
+      "You can find more information on": ["Du kan finde mere information på"],
+      "software license agreement": ["softwarelicensaftale"],
+      "If you need to buy a new license of this plugin": [
+        "Hvis du har brug for at købe en ny licens til dette plugin"
+      ],
+      "click here.": ["klik her."],
+      "Where can I find my license key?": [
+        "Hvor kan jeg finde min licensnøgle?"
+      ],
+      "There was an error on getting settings.": [""],
+      "Data is required.": ["Data er påkrævet."],
+      "There was an error on saving settings.": [""],
+      "There was an error on applying review.": [""],
+      "We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+        "Vi håber, at du nyder %1$s! %3$s Kan du venligst gøre os en stor tjeneste og give den en %2$s for at hjælpe os med at sprede ordet og booste vores motivation?%4$s %5$sDel dine funktionsanmodninger%6$s med anmeldelsen, Vi tjekker altid dem og prøver vores bedste."
+      ],
+      "OK, you deserve it!": ["OK, du fortjener det!"],
+      "I already did": ["Jeg har allerede gjort det"],
+      "Maybe Later": ["Måske senere"],
+      "I need help": ["Jeg har brug for hjælp"],
+      "Never show again": ["Vis aldrig igen"],
+      "Apps you might like": ["Apps, du måske vil kunne lide"],
+      "Active Installations": ["Aktive installationer"],
+      "Free Version": ["Gratis version"],
+      "Buy Pro": ["Køb Pro"],
+      "Saved Successfully.": ["Gemmes med succes."],
+      "There was an error on saving the settings.": [
+        "Der opstod en fejl ved gemning af indstillinger."
+      ],
+      "Apps": [""],
+      "Enable Updates": ["Aktiver opdateringer"],
+      "Articles": ["Artikler"],
+      "Video Tutorials": ["Videovejledninger"],
+      "Get Support": ["Få support"]
+    }
+  }
+}

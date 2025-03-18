@@ -10,9 +10,9 @@
 				"lang": "nl_NL",
 				"plural-forms": "nplurals=2; plural=(n != 1);"
 			},
-			"Please select a product!": [ "" ],
-			"Please select your product!": [ "Kies uw product" ],
-			"Please select your product": [ "Kies uw product" ],
+			"Please select a product!": [ "Kies alstublieft een product!" ],
+			"Please select your product!": [ "Kies alstublieft uw product!" ],
+			"Please select your product": [ "Kies alstublieft uw product" ],
 			"Type is required.": [ "Soort is verplicht" ],
 			"Action is required.": [ "Actie is verplicht" ],
 			"PRO Version": [ "PRO versie" ],

@@ -1,0 +1,184 @@
+{
+  "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+  "generator": "WP-CLI/2.11.0",
+  "source": "assets/js/admin/product/index.js",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "lang": "da_DK",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Please select a product!": ["Vælg venligst et produkt!"],
+      "Please select your product!": ["Vælg venligst dit produkt!"],
+      "Please select your product": ["Vælg venligst dit produkt"],
+      "Type is required.": [""],
+      "Action is required.": [""],
+      "PRO Version": ["PRO-version"],
+      "Theme": ["Tema"],
+      "Grid 1": [""],
+      "Grid 2": [""],
+      "List 1": [""],
+      "List 2": [""],
+      "Size": ["Størrelse"],
+      "Small": ["Lille"],
+      "Medium": ["Mellem"],
+      "Large": ["Stor"],
+      "Data is required.": [""],
+      "There was an error on applying review.": [""],
+      "We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+        "Vi håber, du nyder %1$s! %3$s Kunne du gøre os en STOR tjeneste og give det en %2$s for at hjælpe os med at sprede budskabet og øge vores motivation?%4$s %5$sDel dine funktionsønsker%6$s med anmeldelsen, vi tjekker dem altid og gør vores bedste."
+      ],
+      "OK, you deserve it!": ["OK, det fortjener I!"],
+      "I already did": ["Jeg har allerede gjort det"],
+      "Maybe Later": ["Måske senere"],
+      "I need help": ["Jeg har brug for hjælp"],
+      "Never show again": ["Vis aldrig igen"],
+      "Items are required.": ["Elementer er påkrævet."],
+      "There was an error on getting items.": [
+        "Der opstod en fejl under hentning af elementer."
+      ],
+      "Search value is required.": [""],
+      "There was an error on searching items.": [""],
+      "Optional": ["Valgfri"],
+      "Check this option to make the bundle item optional to choose by the user": [
+        "Marker denne mulighed for at gøre bundtvaren valgfri for brugeren at vælge"
+      ],
+      "Selected": ["Valgt"],
+      "Enable this field to make the optional item selected in the frontend.": [
+        "Aktivér dette felt for at gøre den valgfri vare valgt i frontend."
+      ],
+      "Default product": ["Standardprodukt"],
+      "Set a default product": ["Indstil et standardprodukt"],
+      "Products": ["Produkter"],
+      "Add products or Variations": ["Tilføj produkter eller variationer"],
+      "Exclude products": ["Udeluk produkter"],
+      "Select a product that you do not want to be displayed": [
+        "Vælg et produkt, som du ikke ønsker at vise"
+      ],
+      "Categories": ["Kategorier"],
+      "Select the category product that you want to be displayed in this bundle item": [
+        "Vælg kategori produkt, som du ønsker at vise i denne bundtvare"
+      ],
+      "Exclude categories": ["Udeluk kategorier"],
+      "Select the category product that you do not want to be displayed in this bundle item": [
+        "Vælg kategori produkt, som du ikke ønsker at vise i denne bundtvare"
+      ],
+      "Tags": ["Tags"],
+      "Select the product with tags to display in this bundle item": [
+        "Vælg produkt med tags, der skal vises i denne bundtvare"
+      ],
+      "Exclude tags": ["Udeluk tags"],
+      "Select the product with tags that you do not want to be displayed in the bundle item": [
+        "Vælg produkt med tags, som du ikke ønsker at vise i bundtvare"
+      ],
+      "Categories and Tags relation": ["Forhold mellem kategorier og tags"],
+      "Match at least one": ["Match mindst én"],
+      "Match both": ["Match begge"],
+      "Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.": [
+        "Match mindst én: Produkter skal matche mindst én af kategorierne eller tags.%sMatch begge: Produkter skal matche både kategorier og tags."
+      ],
+      "Sort products": ["Sortér produkter"],
+      "ID": ["ID"],
+      "Title": ["Titel"],
+      "Menu order": ["Menu rækkefølge"],
+      "Date": ["Dato"],
+      "Price": ["Pris"],
+      "Popularity": ["Popularitet"],
+      "Rating": ["Vurdering"],
+      "Ascending": ["Stigende"],
+      "Descending": ["Faldende"],
+      "Set the order of products in the pop-up": [
+        "Indstil rækkefølgen af produkter i pop-up'en"
+      ],
+      "Quantity": ["Mængde"],
+      "Set the default product quantity": ["Indstil standard produktmængde"],
+      "Edit quantity by user": ["Rediger mængde af brugeren"],
+      "Check this option to allow the user to change the bundle item quantity": [
+        "Marker denne mulighed for at tillade brugeren at ændre bundtvare mængden"
+      ],
+      "Min quantity": ["Min. mængde"],
+      "Set the minimum quantity of this bundled product": [
+        "Indstil minimum mængde for dette bundtvareprodukt"
+      ],
+      "Max quantity": ["Max. mængde"],
+      "Set the maximum quantity of this bundled product": [
+        "Indstil maksimum mængde for dette bundtvareprodukt"
+      ],
+      "Discount": ["Rabat"],
+      "Percentage": ["Procent"],
+      "Fixed price": ["Fast pris"],
+      "Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price": [
+        "Rabat anvendt på prisen af det bundtvareprodukt. Hvis bundtvareproduktet har en udsalgspris, anvendes rabatten ovenpå udsalgsprisen."
+      ],
+      "Default Image": ["Standardbillede"],
+      "No image chosen": ["Intet billede valgt"],
+      "Upload Image": ["Upload billede"],
+      "Set an image for empty item.": ["Indstil et billede for tomt element."],
+      "Overwrite bundle item title": ["Overskriv bundtvare titel"],
+      "Short description": ["Kort beskrivelse"],
+      "Overwrite bundle item short description.(Show when the mouse hovers over it)": [
+        "Overskriv bundtvare kort beskrivelse. (Vises når musen holdes over det)"
+      ],
+      "Product selection title": ["Produktvalg titel"],
+      "Change the title of the bundle empty item.": [
+        "Ændr titlen på den tomme bundtvare."
+      ],
+      "Product list title": ["Produktliste titel"],
+      "Change the product list product selection title.": [
+        "Ændr produktliste titel for produktvalg."
+      ],
+      "Modal header title": ["Modal header titel"],
+      "Change the pop-up header title": ["Ændr pop-up header titel"],
+      "Duplicate": ["Duplicer"],
+      "Duplicate: Pro version": ["Duplicer: Pro version"],
+      "Trash": ["Skraldespand"],
+      "General": ["Generelt"],
+      "Display": ["Vis"],
+      "Individual theme": ["Individuelt tema"],
+      "GO PRO": ["GÅ PRO"],
+      "Need help?": ["Har du brug for hjælp?"],
+      "If checked, disable auto calculate price and use product price as bundle price.": [
+        "Hvis markeret, deaktiver automatisk beregning af pris og brug produktpris som bundtvarepris."
+      ],
+      "Please enable fixed price first.": ["Aktiver venligst fast pris først."],
+      "Click here to set price": ["Klik her for at indstille pris"],
+      "Include parent price": ["Inkluder forældrepris"],
+      "Include the parent product price in the bundle total price. (parent price + selected items price)": [
+        "Inkluder forældrepris i den samlede bundtvarepris. (forældrepris + valgte varers pris)"
+      ],
+      "Sync stock quantity": ["Synkroniser lagerbeholdning"],
+      "Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+        "Opdater bundtvare lagerbeholdning baseret på lagerbeholdningen af underprodukter. Bemærk: Denne funktion virker kun, når hvert element har præcist ét produkt, som er tilføjet til standardproduktfeltet og ikke er valgfrit."
+      ],
+      "Hide products price": ["Skjul produkternes pris"],
+      "No": ["Nej"],
+      "Yes": ["Ja"],
+      "Only regular price": ["Kun normalpris"],
+      "Shipping fee": ["Fragtgebyr"],
+      "Apply to the whole bundle": ["Anvend på hele bundtvare"],
+      "Apply to each bundle item": ["Anvend på hvert bundtvare element"],
+      "Min items quantity": ["Min. antal elementer"],
+      "Set the minimum total quantity of bundled items.": [
+        "Indstil minimum samlet antal bundtvareelementer."
+      ],
+      "Max items quantity": ["Max. antal elementer"],
+      "Set the maximum total quantity of bundled items.": [
+        "Indstil maksimum samlet antal bundtvareelementer."
+      ],
+      "Custom display price": ["Brugerdefineret visningspris"],
+      "Product display price in frontend. E.g: From 10$ To 20$": [
+        "Produktvisningspris i frontend. F.eks: Fra 10$ Til 20$"
+      ],
+      "A title for the bundle product that will be shown on top of bundle items.": [
+        "En titel for bundtvareproduktet, som vises øverst på bundtvareelementerne."
+      ],
+      "Bundle description": ["Bundtvarebeskrivelse"],
+      "Create a description for product bundle.": [
+        "Opret en beskrivelse for produktbundtvare."
+      ],
+      "Add Item": ["Tilføj element"]
+    }
+  }
+}

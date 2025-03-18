@@ -274,7 +274,7 @@ class ProductBundle extends \WC_Product {
 			'min_quantity'         => ! empty( $item['min_quantity'] ) ? absint( $item['min_quantity'] ) : 1,
 			'max_quantity'         => ! empty( $item['max_quantity'] ) ? absint( $item['max_quantity'] ) : null,
 			'optional'             => isset( $item['optional'] ) && 'true' === $item['optional'] ? 'true' : 'false',
-			'selected'             => isset( $item['selected'] ) && 'true' === $item['selected'] ? 'true' : 'false',
+			'selected'             => isset( $item['selected'] ) && 'false' === $item['selected'] ? 'false' : 'true',
 			'title'                => ! empty( $item['title'] ) ? sanitize_text_field( __( $item['title'], 'asnp-easy-product-bundles' ) ) : '',
 			'description'          => ! empty( $item['description'] ) ? wp_kses_post( $item['description'] ) : '',
 			'select_product_title' => ! empty( $item['select_product_title'] ) ? sanitize_text_field( __( $item['select_product_title'], 'asnp-easy-product-bundles' ) ) : __( 'Please select a product!', 'asnp-easy-product-bundles' ),

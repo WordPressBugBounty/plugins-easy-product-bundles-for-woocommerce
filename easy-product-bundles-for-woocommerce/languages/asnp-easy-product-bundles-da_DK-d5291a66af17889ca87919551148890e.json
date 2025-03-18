@@ -1,0 +1,38 @@
+{
+  "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+  "generator": "WP-CLI/2.11.0",
+  "source": "assets/js/shared/index.js",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "lang": "da_DK",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Product ID is required.": [""],
+      "Parent product ID is required.": [""],
+      "Item index is required.": [""],
+      "There was an error on getting items.": [
+        ""
+      ],
+      "Change": ["Skift"],
+      "View": ["Vis"],
+      "OUT OF STOCK": ["SLUT UDVENDT"],
+      "Bundle item image": ["Billede af bundtprodukt"],
+      "More pictures": ["Flere billeder"],
+      "Args is required.": [""],
+      "Back": ["Tilbage"],
+      "Close": ["Luk"],
+      "Prev": ["Forrige"],
+      "Next": ["Næste"],
+      "Add": ["Tilføj"],
+      "Add%s": ["Tilføj%s"],
+      "Edit product": ["Rediger produkt"],
+      "Save": ["Spar"],
+      "Please select a product for all items.": [
+        "Vælg et produkt for alle varer."
+      ]
+    }
+  }
+}
