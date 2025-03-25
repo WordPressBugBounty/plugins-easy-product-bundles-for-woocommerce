@@ -771,7 +771,11 @@ class ProductBundle extends \WC_Product {
 			}
 
 			$quantity = ! empty( $item['quantity'] ) && 0 < (int) $item['quantity'] ? absint( $item['quantity'] ) : 1;
-			if ( $default_product && ( ! $default_product->is_in_stock() || ! $default_product->has_enough_stock( $quantity ) ) ) {
+			if (
+				$default_product &&
+				( ! $default_product->is_in_stock() || ! $default_product->has_enough_stock( $quantity ) ) &&
+				! $default_product->backorders_allowed()
+			) {
 				return false;
 			}
 		}
