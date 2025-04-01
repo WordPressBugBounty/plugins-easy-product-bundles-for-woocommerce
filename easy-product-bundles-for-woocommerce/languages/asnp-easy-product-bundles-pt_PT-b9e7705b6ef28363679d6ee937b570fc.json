@@ -235,7 +235,19 @@
 			],
 			"Optional item mode": [ "Modo de item opcional" ],
 			"Checkbox": [ "Caixa de seleção" ],
-			"Delete button": [ "Botão de exclusão" ]
+			"Delete button": [ "Botão de exclusão" ],
+			"Total price - sale price color": [
+				"Preço total - cor do preço de venda"
+			],
+			"Total price - crossed out price color": [
+				"Preço total - cor do preço riscado"
+			],
+			"Total price - saved amount color": [
+				"Preço total - cor do valor economizado"
+			],
+			"Total price - saved amount background color": [
+				"Preço total - cor de fundo do valor economizado"
+			]
 		}
 	}
 }

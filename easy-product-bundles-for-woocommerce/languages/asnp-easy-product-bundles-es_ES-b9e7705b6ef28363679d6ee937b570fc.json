@@ -239,7 +239,19 @@
 			],
 			"Optional item mode": [ "Modo de elemento opcional" ],
 			"Checkbox": [ "Casilla de verificación" ],
-			"Delete button": [ "Botón de eliminar" ]
+			"Delete button": [ "Botón de eliminar" ],
+			"Total price - sale price color": [
+				"Precio total - color del precio de venta"
+			],
+			"Total price - crossed out price color": [
+				"Precio total - color del precio tachado"
+			],
+			"Total price - saved amount color": [
+				"Precio total - color del monto ahorrado"
+			],
+			"Total price - saved amount background color": [
+				"Precio total - color de fondo del monto ahorrado"
+			]
 		}
 	}
 }

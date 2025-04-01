@@ -217,7 +217,19 @@
 			],
 			"Optional item mode": [ "वैकल्पिक आइटम मोड" ],
 			"Checkbox": [ "चेकबॉक्स" ],
-			"Delete button": [ "हटाने का बटन" ]
+			"Delete button": [ "हटाने का बटन" ],
+			"Total price - sale price color": [
+				"कुल मूल्य - बिक्री मूल्य का रंग"
+			],
+			"Total price - crossed out price color": [
+				"कुल मूल्य - रद्द किए गए मूल्य का रंग"
+			],
+			"Total price - saved amount color": [
+				"कुल मूल्य - बचत राशि का रंग"
+			],
+			"Total price - saved amount background color": [
+				"कुल मूल्य - बचत राशि का पृष्ठभूमि रंग"
+			]
 		}
 	}
 }

@@ -249,7 +249,19 @@
 			],
 			"Optional item mode": [ "Modalità elemento opzionale" ],
 			"Checkbox": [ "Casella di controllo" ],
-			"Delete button": [ "Pulsante Elimina" ]
+			"Delete button": [ "Pulsante Elimina" ],
+			"Total price - sale price color": [
+				"Prezzo totale - colore del prezzo di vendita"
+			],
+			"Total price - crossed out price color": [
+				"Prezzo totale - colore del prezzo barrato"
+			],
+			"Total price - saved amount color": [
+				"Prezzo totale - colore dell'importo risparmiato"
+			],
+			"Total price - saved amount background color": [
+				"Prezzo totale - colore di sfondo dell'importo risparmiato"
+			]
 		}
 	}
 }

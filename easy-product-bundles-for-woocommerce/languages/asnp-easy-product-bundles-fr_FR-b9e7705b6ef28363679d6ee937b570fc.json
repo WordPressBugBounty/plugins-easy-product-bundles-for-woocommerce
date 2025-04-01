@@ -235,7 +235,19 @@
 			],
 			"Optional item mode": [ "Mode d'élément optionnel" ],
 			"Checkbox": [ "Case à cocher" ],
-			"Delete button": [ "Bouton de suppression" ]
+			"Delete button": [ "Bouton de suppression" ],
+			"Total price - sale price color": [
+				"Prix total - couleur du prix de vente"
+			],
+			"Total price - crossed out price color": [
+				"Prix total - couleur du prix barré"
+			],
+			"Total price - saved amount color": [
+				"Prix total - couleur du montant économisé"
+			],
+			"Total price - saved amount background color": [
+				"Prix total - couleur de fond du montant économisé"
+			]
 		}
 	}
 }

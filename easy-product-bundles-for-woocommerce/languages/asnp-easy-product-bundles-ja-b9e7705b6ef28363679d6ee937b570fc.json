@@ -209,7 +209,15 @@
 			],
 			"Optional item mode": [ "オプションアイテムモード" ],
 			"Checkbox": [ "チェックボックス" ],
-			"Delete button": [ "削除ボタン" ]
+			"Delete button": [ "削除ボタン" ],
+			"Total price - sale price color": [ "総価格 - 販売価格の色" ],
+			"Total price - crossed out price color": [
+				"総価格 - 取り消し線の付いた価格の色"
+			],
+			"Total price - saved amount color": [ "総価格 - 節約額の色" ],
+			"Total price - saved amount background color": [
+				"総価格 - 節約額の背景色"
+			]
 		}
 	}
 }

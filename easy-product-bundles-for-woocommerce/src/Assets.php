@@ -169,6 +169,26 @@ class Assets {
 			$custom_styles .= ' background-color: ' . esc_html( $styles['quantity_buttons_color'] ) . '!important;';
 			$custom_styles .= '}';
 		}
+		if ( ! empty( $styles['total_price_sale_price_color'] ) && '#606060' !== $styles['total_price_sale_price_color'] ) {
+			$custom_styles .= '.asnp-totalPrice-section .woocommerce-Price-amount.amount {';
+			$custom_styles .= ' color: ' . esc_html( $styles['total_price_sale_price_color'] ) . ';';
+			$custom_styles .= '}';
+		}
+		if ( ! empty( $styles['total_price_crossed_out_price_color'] ) && '#ababab' !== $styles['total_price_crossed_out_price_color'] ) {
+			$custom_styles .= '.asnp-totalPrice-section s, .asnp-totalPrice-section s .woocommerce-Price-amount.amount {';
+			$custom_styles .= ' color: ' . esc_html( $styles['total_price_crossed_out_price_color'] ) . ';';
+			$custom_styles .= '}';
+		}
+		if ( ! empty( $styles['total_price_saved_amount_color'] ) && '#ffffff' !== $styles['total_price_saved_amount_color'] ) {
+			$custom_styles .= '.asnp-totalPrice-section .asnp-savedPrice, .asnp-totalPrice-section .asnp-savedPrice .woocommerce-Price-amount.amount {';
+			$custom_styles .= ' color: ' . esc_html( $styles['total_price_saved_amount_color'] ) . ';';
+			$custom_styles .= '}';
+		}
+		if ( ! empty( $styles['total_price_saved_amount_background_color'] ) && '#019267' !== $styles['total_price_saved_amount_background_color'] ) {
+			$custom_styles .= '.asnp-totalPrice-section .asnp-savedPrice {';
+			$custom_styles .= ' background-color: ' . esc_html( $styles['total_price_saved_amount_background_color'] ) . ';';
+			$custom_styles .= '}';
+		}
 
 		$custom_styles = apply_filters( 'asnp_wepb_custom_styles', $custom_styles, $styles );
 

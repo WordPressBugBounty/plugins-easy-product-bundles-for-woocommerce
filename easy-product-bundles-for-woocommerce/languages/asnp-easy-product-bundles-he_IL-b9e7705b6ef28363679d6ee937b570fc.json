@@ -201,7 +201,17 @@
 			],
 			"Optional item mode": [ "מצב פריט אופציונלי" ],
 			"Delete button": [ "כפתור מחיקה" ],
-			"Checkbox": [ "תיבת סימון" ]
+			"Checkbox": [ "תיבת סימון" ],
+			"Total price - sale price color": [ "מחיר כולל - צבע מחיר מכירה" ],
+			"Total price - crossed out price color": [
+				"מחיר כולל - צבע מחיר מנותק"
+			],
+			"Total price - saved amount color": [
+				"מחיר כולל - צבע הסכום החסוך"
+			],
+			"Total price - saved amount background color": [
+				"מחיר כולל - צבע רקע של הסכום החסוך"
+			]
 		}
 	}
 }

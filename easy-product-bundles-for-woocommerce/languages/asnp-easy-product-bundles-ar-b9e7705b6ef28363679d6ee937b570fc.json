@@ -106,12 +106,12 @@
 			"Styles": [ "" ],
 			"Product title color": [ "لون عنوان المنتج" ],
 			"Bundle title color": [ "لون عنوان الحزمة" ],
-			"Product crossed out price color": [ "لون سعر المنتج المشطوب" ],
+			"Product crossed out price color": [ "لون السعر الأساسي للمنتج" ],
 			"Product sale price color": [ "لون سعر بيع المنتج" ],
 			"Empty item title color": [ "لون عنوان العنصر الفارغ" ],
 			"Empty item title hover color": [ "لون تحويم عنوان العنصر الفارغ" ],
 			"Modal header color": [ "لون رأس النافذة" ],
-			"Product image object-fit": [ "صورة المنتج object-fit" ],
+			"Product image object-fit": [ "صورة المنتج object-fit CSS" ],
 			"Cover": [ "" ],
 			"Contain": [ "" ],
 			"Fill": [ "" ],
@@ -212,7 +212,18 @@
 			],
 			"Optional item mode": [ "وضع العنصر الاختياري" ],
 			"Checkbox": [ "حقل اختيار" ],
-			"Delete button": [ "زر الحذف" ]
+			"Total price - sale price color": [
+				"لون السعر الإجمالي - لون سعر البيع"
+			],
+			"Total price - crossed out price color": [
+				"لون السعر الإجمالي - لون السعر الأساسي"
+			],
+			"Total price - saved amount color": [
+				"لون السعر الإجمالي - لون المبلغ الموفر"
+			],
+			"Total price - saved amount background color": [
+				"لون السعر الإجمالي - لون خلفية المبلغ الموفر"
+			]
 		}
 	}
 }

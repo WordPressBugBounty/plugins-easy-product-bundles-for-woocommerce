@@ -231,7 +231,19 @@
 			],
 			"Optional item mode": [ "Режим необязательного элемента" ],
 			"Checkbox": [ "Поле выбора" ],
-			"Delete button": [ "Кнопка удаления" ]
+			"Delete button": [ "Кнопка удаления" ],
+			"Total price - sale price color": [
+				"Общая цена - цвет цены со скидкой"
+			],
+			"Total price - crossed out price color": [
+				"Общая цена - цвет зачеркнутой цены"
+			],
+			"Total price - saved amount color": [
+				"Общая цена - цвет сэкономленной суммы"
+			],
+			"Total price - saved amount background color": [
+				"Общая цена - цвет фона сэкономленной суммы"
+			]
 		}
 	}
 }

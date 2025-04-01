@@ -229,7 +229,19 @@
 			],
 			"Optional item mode": [ "Tryb elementu opcjonalnego" ],
 			"Checkbox": [ "Pole wyboru" ],
-			"Delete button": [ "Przycisk usuń" ]
+			"Delete button": [ "Przycisk usuń" ],
+			"Total price - sale price color": [
+				"Cena całkowita - kolor ceny sprzedaży"
+			],
+			"Total price - crossed out price color": [
+				"Cena całkowita - kolor przekreślonej ceny"
+			],
+			"Total price - saved amount color": [
+				"Cena całkowita - kolor zaoszczędzonej kwoty"
+			],
+			"Total price - saved amount background color": [
+				"Cena całkowita - kolor tła zaoszczędzonej kwoty"
+			]
 		}
 	}
 }

@@ -229,7 +229,19 @@
 			],
 			"Optional item mode": [ "Optionale Elementmodus" ],
 			"Checkbox": [ "Kontrollkästchen" ],
-			"Delete button": [ "Löschen-Schaltfläche" ]
+			"Delete button": [ "Löschen-Schaltfläche" ],
+			"Total price - sale price color": [
+				"Gesamtpreis - Verkaufs­preis­farbe"
+			],
+			"Total price - crossed out price color": [
+				"Gesamtpreis - durchgestrichene Preisfarbe"
+			],
+			"Total price - saved amount color": [
+				"Gesamtpreis - gesparte Betragsfarbe"
+			],
+			"Total price - saved amount background color": [
+				"Gesamtpreis - Hintergrundfarbe des gesparten Betrags"
+			]
 		}
 	}
 }

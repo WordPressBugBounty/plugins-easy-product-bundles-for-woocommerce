@@ -213,7 +213,17 @@
 			],
 			"Optional item mode": [ "حالت آیتم اختیاری" ],
 			"Checkbox": [ "فیلد انتخاب شونده" ],
-			"Delete button": [ "دکمه حذف" ]
+			"Delete button": [ "دکمه حذف" ],
+			"Total price - sale price color": [ "قیمت کل - رنگ قیمت فروش" ],
+			"Total price - crossed out price color": [
+				"قیمت کل - رنگ قیمت خط خورده"
+			],
+			"Total price - saved amount color": [
+				"قیمت کل - رنگ مبلغ سود خرید"
+			],
+			"Total price - saved amount background color": [
+				"قیمت کل - رنگ پس‌زمینه مبلغ سود خرید"
+			]
 		}
 	}
 }

@@ -231,7 +231,19 @@
 			],
 			"Optional item mode": [ "Opsiyonel öğe modu" ],
 			"Checkbox": [ "Seçim alanı" ],
-			"Delete button": [ "Silme düğmesi" ]
+			"Delete button": [ "Silme düğmesi" ],
+			"Total price - sale price color": [
+				"Toplam fiyat - indirimli fiyat rengi"
+			],
+			"Total price - crossed out price color": [
+				"Toplam fiyat - çarpı işaretiyle fiyat rengi"
+			],
+			"Total price - saved amount color": [
+				"Toplam fiyat - biriktirilen miktar rengi"
+			],
+			"Total price - saved amount background color": [
+				"Toplam fiyat - biriktirilen miktarın arka plan rengi"
+			]
 		}
 	}
 }

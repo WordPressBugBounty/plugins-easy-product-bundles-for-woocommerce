@@ -121,7 +121,7 @@
 			],
 			"Modal header color": [ "Цвят на заглавката на модала" ],
 			"Product image object-fit": [
-				"Object-fit на изображението на продукта"
+				"Object-fit CSS на изображението на продукта"
 			],
 			"Cover": [ "" ],
 			"Contain": [ "" ],
@@ -239,7 +239,19 @@
 			],
 			"Optional item mode": [ "Режим на опционален елемент" ],
 			"Checkbox": [ "Квадратче за отметка" ],
-			"Delete button": [ "Бутон за изтриване" ]
+			"Delete button": [ "Бутон за изтриване" ],
+			"Total price - sale price color": [
+				"Цвят на общата цена - цвят на продажната цена"
+			],
+			"Total price - crossed out price color": [
+				"Цвят на общата цена - цвят на основната (задраскана) цена"
+			],
+			"Total price - saved amount color": [
+				"Цвят на общата цена - цвят на спестената сума"
+			],
+			"Total price - saved amount background color": [
+				"Цвят на общата цена - цвят на фона на спестената сума"
+			]
 		}
 	}
 }

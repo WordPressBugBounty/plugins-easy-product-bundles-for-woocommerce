@@ -194,7 +194,13 @@
 			],
 			"Optional item mode": [ "可选项目模式" ],
 			"Checkbox": [ "选择框" ],
-			"Delete button": [ "删除按钮" ]
+			"Delete button": [ "删除按钮" ],
+			"Total price - sale price color": [ "总价 - 销售价格颜色" ],
+			"Total price - crossed out price color": [ "总价 - 划线价格颜色" ],
+			"Total price - saved amount color": [ "总价 - 节省金额颜色" ],
+			"Total price - saved amount background color": [
+				"总价 - 节省金额背景颜色"
+			]
 		}
 	}
 }

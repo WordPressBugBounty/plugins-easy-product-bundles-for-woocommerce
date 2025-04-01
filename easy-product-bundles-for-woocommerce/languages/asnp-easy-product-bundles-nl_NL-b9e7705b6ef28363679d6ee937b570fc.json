@@ -227,7 +227,19 @@
 			],
 			"Optional item mode": [ "Optionele itemmodus" ],
 			"Checkbox": [ "Selectievakje" ],
-			"Delete button": [ "Verwijderknop" ]
+			"Delete button": [ "Verwijderknop" ],
+			"Total price - sale price color": [
+				"Totale prijs - kleur van verkoopprijs"
+			],
+			"Total price - crossed out price color": [
+				"Totale prijs - kleur van doorgehaalde prijs"
+			],
+			"Total price - saved amount color": [
+				"Totale prijs - kleur van bespaard bedrag"
+			],
+			"Total price - saved amount background color": [
+				"Totale prijs - achtergrondkleur van bespaard bedrag"
+			]
 		}
 	}
 }
