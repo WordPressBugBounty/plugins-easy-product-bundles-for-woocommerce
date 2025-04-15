@@ -74,7 +74,7 @@ class SimpleBundleItemsModel extends BaseModel {
 	}
 
 	public function delete_bundle( $bundle_id ) {
-		$bundle_id  = absint( $bundle_id );
+		$bundle_id = absint( $bundle_id );
 		if ( 0 >= $bundle_id ) {
 			return false;
 		}

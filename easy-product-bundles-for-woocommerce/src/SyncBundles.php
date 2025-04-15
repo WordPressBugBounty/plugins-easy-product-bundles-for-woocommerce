@@ -22,6 +22,7 @@ class SyncBundles {
 		add_action( 'woocommerce_settings_save_tax', [ $this, 'tax_settings_updated' ], 5 );
 		add_action( 'wp_ajax_woocommerce_tax_rates_save_changes', [ $this, 'tax_rates_save_changes' ], 9 );
 		add_action( 'shutdown', [ $this, 'maybe_sync_bundles' ] );
+		add_action( 'before_delete_post', [ $this, 'delete_simple_bundle' ] );
 	}
 
 	public function sync_bundle_on_child_update( $product_id, $product ) {
@@ -159,6 +160,16 @@ class SyncBundles {
 		}
 
 		$this->background_sync->save()->dispatch();
+	}
+
+	public function delete_simple_bundle( $product_id ) {
+		$product = wc_get_product( $product_id );
+		if ( ! $product || ! $product->is_type( Plugin::PRODUCT_TYPE ) ) {
+			return;
+		}
+
+		$model = get_plugin()->container()->get( SimpleBundleItemsModel::class );
+		$model->delete_bundle( $product_id );
 	}
 
 }

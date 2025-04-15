@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 6.3.0
+Stable tag: 6.3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -213,10 +213,14 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.3.1 =
+* Bug Fix: Ensure simple bundles are removed from the database when the associated bundle is deleted.
+* Ensured compatibility with WooCommerce version 9.8.1
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 6.3.0 =
 * New Feature: Now you can customize the colours of the total price sections.
 * Bug Fix: Resolved CSS issues.
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 6.2.2 =
 * Bug Fix: Resolved bundle out-of-stock status issue when items backorders are allowed.
