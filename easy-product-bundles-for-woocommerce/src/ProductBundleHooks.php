@@ -102,7 +102,7 @@ class ProductBundleHooks {
 		return $classname;
 	}
 
-	public function display_product_bunlde() {
+	public function display_product_bundle() {
 		global $product;
 		if ( ! $product || ! $product->is_type( Plugin::PRODUCT_TYPE ) ) {
 			return;
@@ -1391,21 +1391,21 @@ class ProductBundleHooks {
 				$add_to_cart_priority = has_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart' );
 				if ( 'before_add_to_cart_button' === $position ) {
 					$add_to_cart_priority ?
-						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bunlde' ), $add_to_cart_priority - 1 ) :
-						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bunlde' ), 29 );
+						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bundle' ), $add_to_cart_priority - 1 ) :
+						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bundle' ), 29 );
 				} elseif ( 'after_add_to_cart_button' === $position ) {
 					$add_to_cart_priority ?
-						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bunlde' ), $add_to_cart_priority + 1 ) :
-						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bunlde' ), 31 );
+						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bundle' ), $add_to_cart_priority + 1 ) :
+						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bundle' ), 31 );
 				}
 				break;
 
 			case 'before_add_to_cart_form':
-				add_action( 'woocommerce_before_add_to_cart_form', array( $this, 'display_product_bunlde' ) );
+				add_action( 'woocommerce_before_add_to_cart_form', array( $this, 'display_product_bundle' ) );
 				break;
 
 			case 'after_add_to_cart_form':
-				add_action( 'woocommerce_after_add_to_cart_form', array( $this, 'display_product_bunlde' ) );
+				add_action( 'woocommerce_after_add_to_cart_form', array( $this, 'display_product_bundle' ) );
 				break;
 
 			case 'before_excerpt' :
@@ -1413,20 +1413,20 @@ class ProductBundleHooks {
 				$excerpt_priority = has_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt' );
 				if ( 'before_excerpt' === $position ) {
 					$excerpt_priority ?
-						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bunlde' ), $excerpt_priority - 1 ) :
-						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bunlde' ), 19 );
+						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bundle' ), $excerpt_priority - 1 ) :
+						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bundle' ), 19 );
 				} elseif ( 'after_excerpt' === $position ) {
 					$excerpt_priority ?
-						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bunlde' ), $excerpt_priority + 1 ) :
-						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bunlde' ), 21 );
+						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bundle' ), $excerpt_priority + 1 ) :
+						add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bundle' ), 21 );
 				}
 				break;
 
 			case 'after_product_meta' :
 				$meta_priority = has_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta' );
 				$meta_priority ?
-					add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bunlde' ), $meta_priority + 1 ) :
-					add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bunlde' ), 41 );
+					add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bundle' ), $meta_priority + 1 ) :
+					add_action( 'woocommerce_single_product_summary', array( $this, 'display_product_bundle' ), 41 );
 				break;
 
 			default :

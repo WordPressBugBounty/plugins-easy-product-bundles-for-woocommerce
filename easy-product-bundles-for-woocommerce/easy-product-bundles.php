@@ -5,7 +5,7 @@
  * Plugin URI: https://www.asanaplugins.com/product/woocommerce-product-bundles/?utm_source=easy-product-bundles-woocommerce-plugin&utm_campaign=easy-product-bundles-woocommerce&utm_medium=link
  * Description: Create product bundles in WooCommerce easily
  * Tags: woocommerce, product bundles, bundled products
- * Version: 6.3.1
+ * Version: 6.3.2
  * Author: Product Bundles Team
  * Author URI: https://www.asanaplugins.com/
  * License: http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,7 +23,7 @@ use AsanaPlugins\WooCommerce\ProductBundles\Plugin;
 
 // Plugin version.
 if ( ! defined( 'ASNP_WEPB_VERSION' ) ) {
-	define( 'ASNP_WEPB_VERSION', '6.3.1' );
+	define( 'ASNP_WEPB_VERSION', '6.3.2' );
 }
 
 /**
