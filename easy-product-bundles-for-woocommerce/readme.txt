@@ -3,9 +3,9 @@ Contributors: asanaplugins
 Donate link: https://www.asanaplugins.com/
 Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce, composite product, wpc product bundles for woocommerce, yith woocommerce product bundles, woocommerce product bundles free, wpc product bundles, yith product bundles, custom product boxes woocommerce, woocommerce bundle plugin, woocommerce composite products, woocommerce, wordpress, ecommerce
 Requires at least: 5.0
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 6.3.2
+Stable tag: 6.3.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -213,10 +213,15 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.3.3 =
+* Bug Fix: Resolved CSS issues.
+* Ensured compatibility with WordPress version 6.8
+* Ensured compatibility with WooCommerce version 9.8.2
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 6.3.2 =
 * Bug Fix: Resolved an issue when using “&” in product attribute names.
 * Bug Fix: Fixed class assignment and checkbox input errors.
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 6.3.1 =
 * Bug Fix: Ensure simple bundles are removed from the database when the associated bundle is deleted.
