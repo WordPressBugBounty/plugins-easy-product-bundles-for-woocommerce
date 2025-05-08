@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 6.3.3
+Stable tag: 6.3.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -213,11 +213,15 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.3.4 =
+* Bug Fix: Resolved reported CSS issue in products with long name.
+* Ensured compatibility with WooCommerce version 9.8.4
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 6.3.3 =
 * Bug Fix: Resolved CSS issues.
 * Ensured compatibility with WordPress version 6.8
 * Ensured compatibility with WooCommerce version 9.8.2
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 6.3.2 =
 * Bug Fix: Resolved an issue when using “&” in product attribute names.
