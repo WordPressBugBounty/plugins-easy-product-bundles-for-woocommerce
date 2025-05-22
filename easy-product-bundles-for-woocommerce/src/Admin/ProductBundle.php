@@ -90,7 +90,7 @@ class ProductBundle {
 		$items = $this->get_items();
 		$default_products = $this->get_default_products( $items );
 		$errors = $product->set_props(
-			array(
+			[
 				'individual_theme'         => isset( $_POST['asnp_wepb_individual_theme'] ) && 'true' === $_POST['asnp_wepb_individual_theme'] ? 'true' : 'false',
 				'theme'                    => isset( $_POST['asnp_wepb_theme'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_theme'] ) ) : '',
 				'theme_size'               => isset( $_POST['asnp_wepb_theme_size'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_theme_size'] ) ) : '',
@@ -106,8 +106,8 @@ class ProductBundle {
 				'bundle_description'       => ! empty( $_POST['asnp_wepb_bundle_description'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_description'] ) ) : '',
 				'hide_items_price'         => isset( $_POST['asnp_wepb_hide_items_price'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_hide_items_price'] ) ) : 'no',
 				'items'                    => $items,
-				'default_products'         => implode( ',', $default_products ),
-			)
+				'default_products'         => ! empty( $default_products ) ? json_encode( $default_products ) : '',
+			]
 		);
 
 		if ( is_wp_error( $errors ) ) {
@@ -118,14 +118,11 @@ class ProductBundle {
 		$model->delete_bundle( $product->get_id() );
 		if ( ! empty( $default_products ) ) {
 			foreach ( $default_products as $default ) {
-				$default = explode( ':', $default );
-				if ( 1 < count( $default ) ) {
-					$model->add( [
-						'bundle_id'  => $product->get_id(),
-						'product_id' => (int) $default[0],
-						'quantity'   => (int) $default[1]
-					] );
-				}
+				$model->add( [
+					'bundle_id'  => $product->get_id(),
+					'product_id' => (int) $default['id'],
+					'quantity'   => (int) $default['qty']
+				] );
 			}
 		}
 
@@ -300,7 +297,10 @@ class ProductBundle {
 				return [];
 			}
 
-			$products[] = $product->get_id() . ':' . absint( $item['quantity'] );
+			$products[] = [
+				'id'  => $product->get_id(),
+				'qty' => absint( $item['quantity'] ),
+			];
 		}
 		return $products;
 	}

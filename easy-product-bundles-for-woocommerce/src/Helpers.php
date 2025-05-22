@@ -567,6 +567,13 @@ function get_product_ids_from_bundle_items( $items ) {
 		return [];
 	}
 
+	if ( is_json( $items ) ) {
+		$items = json_decode( $items, true );
+		return array_map( function( $item ) {
+			return isset( $item['id'] ) ? $item['id'] : 0;
+		}, $items );
+	}
+
 	$items = is_string( $items ) ? explode( ',', $items ) : $items;
 
 	return array_map( function( $item ) {
@@ -583,6 +590,13 @@ function get_quantities_from_bundle_items( $items ) {
 		return [];
 	}
 
+	if ( is_json( $items ) ) {
+		$items = json_decode( $items, true );
+		return array_map( function( $item ) {
+			return isset( $item['qty'] ) ? absint( $item['qty'] ) : 0;
+		}, $items );
+	}
+
 	$items = is_string( $items ) ? explode( ',', $items ) : $items;
 
 	return array_map( function( $item ) {
@@ -597,6 +611,19 @@ function get_quantities_from_bundle_items( $items ) {
 function get_attributes_from_bundle_items( $items ) {
 	if ( empty( $items ) ) {
 		return [];
+	}
+
+	if ( is_json( $items ) ) {
+		$items = json_decode( $items, true );
+		return array_map( function( $item ) {
+			$attributes = [];
+			if ( ! empty( $item['attributes'] ) ) {
+				foreach ( $item['attributes'] as $key => $value ) {
+					$attributes[ 'attribute_' . sanitize_title( $key ) ] = $value;
+				}
+			}
+			return $attributes;
+		}, $items );
 	}
 
 	$items = is_string( $items ) ? explode( ',', $items ) : $items;
@@ -840,4 +867,59 @@ function maybe_show_review() {
 	}
 
 	return true;
+}
+
+function is_json( $string ) {
+	// Check if the string is empty or not a string
+    if ( ! is_string( $string ) || empty( trim( $string ) ) ) {
+        return false;
+    }
+
+    // Check if string starts with either { or [
+    if ( ! in_array( $string[0], [ '{', '[' ] ) ) {
+        return false;
+    }
+
+    // Attempt to decode
+    json_decode( $string );
+
+    return ( json_last_error() === JSON_ERROR_NONE );
+}
+
+function maybe_convert_items_to_json( $items ) {
+	if ( empty( $items ) || ! is_string( $items ) ) {
+		return $items;
+	}
+
+	$items = sanitize_text_field( wp_unslash( $items ) );
+	if ( is_json( $items ) ) {
+		return $items;
+	}
+
+	$items = explode( ',', $items );
+	$items = array_map( function( $item ) {
+		$item = explode( ':', $item );
+		if ( 3 === count( $item ) ) {
+			$attributes = explode( '&', $item[2] );
+			$attributes = array_reduce( $attributes, function( $carry, $attribute ) {
+				$attribute = explode( '=', $attribute );
+				$carry[ $attribute[0] ] = $attribute[1];
+				return $carry;
+			}, [] );
+
+			return [
+				'id'         => absint( $item[0] ),
+				'qty'        => ! empty( $item[1] ) ? absint( $item[1] ) : 0,
+				'attributes' => $attributes,
+			];
+		}
+		return [
+			'id'  => absint( $item[0] ),
+			'qty' => ! empty( $item[1] ) ? absint( $item[1] ) : 0,
+		];
+	}, $items );
+
+	$items = wp_json_encode( $items );
+
+	return false !== $items ? $items : '';
 }

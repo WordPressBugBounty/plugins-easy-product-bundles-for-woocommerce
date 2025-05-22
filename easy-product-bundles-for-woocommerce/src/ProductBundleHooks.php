@@ -135,7 +135,7 @@ class ProductBundleHooks {
 			}
 		}
 
-		echo '<input type="hidden" id="asnp_wepb_items" name="asnp_wepb_items" value="' . esc_attr( $value ) . '" />';
+		echo '<input type="hidden" id="asnp_wepb_items" name="asnp_wepb_items" value="' . esc_attr( maybe_convert_items_to_json( $value ) ) . '" />';
 	}
 
 	public function get_price_html( $price, $product ) {
@@ -214,9 +214,9 @@ class ProductBundleHooks {
 		}
 
 		try {
-			$req_items = ! empty( $_REQUEST['asnp_wepb_items'] ) ? explode( ',', sanitize_text_field( $_REQUEST['asnp_wepb_items'] ) ) : '';
-			if ( empty( $req_items ) && ! empty( $cart_item_data[ self::CART_ITEM_ITEMS ] ) ) {
-				$req_items = explode( ',', sanitize_text_field( $cart_item_data[ self::CART_ITEM_ITEMS ] ) );
+			$req_items = ! empty( $_REQUEST['asnp_wepb_items'] ) ? maybe_convert_items_to_json( $_REQUEST['asnp_wepb_items'] ) : '';
+			if ( empty( $req_items ) && ! empty( $cart_item_data[ static::CART_ITEM_ITEMS ] ) ) {
+				$req_items = maybe_convert_items_to_json( $cart_item_data[ static::CART_ITEM_ITEMS ] );
 			}
 
 			$ids        = ! empty( $req_items ) ? get_product_ids_from_bundle_items( $req_items ) : get_product_ids_from_bundle_items( $product->get_default_products() );
@@ -400,7 +400,7 @@ class ProductBundleHooks {
 	}
 
 	protected function update_cart_validation_bundle( $passed, $cart_item, $quantity ) {
-		$items = isset( $cart_item['asnp_wepb_items'] ) ? $cart_item['asnp_wepb_items'] : '';
+		$items = isset( $cart_item['asnp_wepb_items'] ) ? maybe_convert_items_to_json( $cart_item['asnp_wepb_items'] ) : '';
 		if ( empty( $items ) ) {
 			return $passed;
 		}
@@ -475,16 +475,16 @@ class ProductBundleHooks {
 		}
 
 		$items     = $product->get_items();
-		$req_items = ! empty( $_REQUEST['asnp_wepb_items'] ) ? explode( ',', sanitize_text_field( $_REQUEST['asnp_wepb_items'] ) ) : '';
+		$req_items = ! empty( $_REQUEST['asnp_wepb_items'] ) ? maybe_convert_items_to_json( $_REQUEST['asnp_wepb_items'] ) : '';
 		$ids       = ! empty( $req_items ) ? get_product_ids_from_bundle_items( $req_items ) : get_product_ids_from_bundle_items( $product->get_default_products() );
 		if ( empty( $ids ) || count( $ids ) !== count( $items ) ) {
 			return $cart_item_data;
 		}
 
 		if ( ! empty( $_REQUEST['asnp_wepb_items'] ) ) {
-			$cart_item_data[ self::CART_ITEM_ITEMS ] = sanitize_text_field( $_REQUEST['asnp_wepb_items'] );
+			$cart_item_data[ self::CART_ITEM_ITEMS ] = maybe_convert_items_to_json( $_REQUEST['asnp_wepb_items'] );
 		} else {
-			$cart_item_data[ self::CART_ITEM_ITEMS ] = $product->get_default_products();
+			$cart_item_data[ self::CART_ITEM_ITEMS ] = maybe_convert_items_to_json( $product->get_default_products() );
 		}
 
 		return $cart_item_data;
@@ -507,11 +507,11 @@ class ProductBundleHooks {
 			return false;
 		}
 
-		$cart       = $cart && is_a( $cart, 'WC_Cart' ) ? $cart : WC()->cart;
-		$items      = explode( ',', $bundle_items );
-		$ids        = ! empty( $items ) ? get_product_ids_from_bundle_items( $items ) : [];
-		$quantities = ! empty( $items ) ? get_quantities_from_bundle_items( $items ) : [];
-		$attributes = ! empty( $items ) ? get_attributes_from_bundle_items( $items ) : [];
+		$cart         = $cart && is_a( $cart, 'WC_Cart' ) ? $cart : WC()->cart;
+		$bundle_items = maybe_convert_items_to_json( $bundle_items );
+		$ids          = ! empty( $bundle_items ) ? get_product_ids_from_bundle_items( $bundle_items ) : [];
+		$quantities   = ! empty( $bundle_items ) ? get_quantities_from_bundle_items( $bundle_items ) : [];
+		$attributes   = ! empty( $bundle_items ) ? get_attributes_from_bundle_items( $bundle_items ) : [];
 		if ( empty( $ids ) || empty( $quantities ) || count( $ids ) !== count( $quantities ) ) {
 			$this->remove_bundle_from_cart( $cart_item_key, $cart );
 			return false;
@@ -1155,7 +1155,7 @@ class ProductBundleHooks {
 				throw new \Exception( __( 'Invalid bundle product.', 'asnp-easy-product-bundles' ) );
 			}
 
-			$default_products = $product->get_default_products();
+			$default_products = maybe_convert_items_to_json( $product->get_default_products() );
 			if ( empty( $default_products ) ) {
 				throw new \Exception( __( 'Bundle product has not default items to add it to the order.', 'asnp-easy-product-bundles' ) );
 			}
