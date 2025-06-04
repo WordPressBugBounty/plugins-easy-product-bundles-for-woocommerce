@@ -37,6 +37,11 @@ class FilterProducts extends BaseController {
 			return new \WP_Error( 'asnp_easy_product_bundles_filter_required', __( 'Filter is required.', 'asnp-easy-product-bundles' ), array( 'status' => 400 ) );
 		}
 
+		if ( ! headers_sent() ) {
+			nocache_headers();
+			header( 'Pragma: no-cache' );
+		}
+
 		// Required to get products price with a tax.
 		if ( ! WC()->customer ) {
 			wc_load_cart();
