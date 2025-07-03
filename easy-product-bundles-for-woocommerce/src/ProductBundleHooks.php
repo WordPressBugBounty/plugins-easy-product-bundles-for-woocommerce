@@ -1195,15 +1195,27 @@ class ProductBundleHooks {
 							'is_fixed_price' => $is_fixed_price,
 						]
 					);
-					$item_price = wc_get_price_to_display( $item_product, [ 'price' => $item_price, 'display_context' => 'cart' ] );
-					$price += $item_price;
+					$item_price = wc_get_price_to_display(
+						$item_product,
+						[
+							'price'           => $item_price,
+							'display_context' => 'cart'
+						]
+					);
+
+					$item_product->set_price( $item_price );
+				} else {
+					$item_product->set_price( 0 );
 				}
 
 				$order_items[] = [ $item_product, absint( $items[ $i ]['quantity'] ) * $quantity ];
-				$item_product->set_price( 0 );
 			}
 
 			if ( ! $is_fixed_price ) {
+				// set_is_cart_item required for the set_price works properly.
+				if ( 'true' === $product->get_include_parent_price() ) {
+					$product->set_is_cart_item( true );
+				}
 				$product->set_price( $price );
 			}
 

@@ -2,14 +2,14 @@
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 6.4.2\n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 6.4.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-06-25T21:18:06+00:00\n"
+"POT-Creation-Date: 2025-07-02T20:57:37+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: asnp-easy-product-bundles\n"
@@ -332,11 +332,11 @@ msgstr ""
 msgid "Bundle product has not default items to add it to the order."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1212
+#: src/ProductBundleHooks.php:1224
 msgid "Can not add bundle product to the order."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1222
+#: src/ProductBundleHooks.php:1234
 msgid "Can not add bundle item to the order."
 msgstr ""
 

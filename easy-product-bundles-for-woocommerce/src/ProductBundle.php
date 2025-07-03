@@ -662,6 +662,7 @@ class ProductBundle extends \WC_Product {
 			return [];
 		}
 
+		$optional_mode     = get_plugin()->settings->get_setting( 'optional_item_mode', 'check_box' );
 		$min_price         = null;
 		$min_price_display = null;
 		$total             = 0;
@@ -671,8 +672,8 @@ class ProductBundle extends \WC_Product {
 
 		if ( 'true' === $product->get_include_parent_price() ) {
 			if ( '' !== $product->get_price( 'edit' ) ) {
-				$total = (float) $product->get_price( 'edit' );
-				$total_display = wc_get_price_to_display( $product, [ 'price' => $product->get_price( 'edit' ) ] );
+				$total = $min_price = (float) $product->get_price( 'edit' );
+				$total_display = $min_price_display = wc_get_price_to_display( $product, [ 'price' => $product->get_price( 'edit' ) ] );
 			}
 
 			if ( '' !== $product->get_regular_price( 'edit' ) ) {
@@ -683,6 +684,14 @@ class ProductBundle extends \WC_Product {
 
 		for ( $i = 0; $i < count( $default_products ); $i++ ) {
 			if ( 0 >= (int) $default_products[ $i ] ) {
+				continue;
+			}
+
+			$optional     = isset( $items[ $i ]['optional'] ) && 'true' === $items[ $i ]['optional'];
+			$not_selected = isset( $items[ $i ]['selected'] ) && 'false' === $items[ $i ]['selected'];
+
+			// Ignore optional items.
+			if ( $optional && $not_selected && 'check_box' === $optional_mode ) {
 				continue;
 			}
 
