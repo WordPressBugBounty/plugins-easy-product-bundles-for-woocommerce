@@ -239,6 +239,9 @@ class ProductBundleHooks {
 				throw new \Exception( __( 'Please select a product for each of the required bundle items.', 'asnp-easy-product-bundles' ) );
 			}
 
+			// An array to hold whole quantities of a product in the bundle.
+			$product_quantities = [];
+
 			for ( $i = 0; $i < count( $ids ); $i++ ) {
 				$id   = (int) $ids[ $i ];
 				$item = $items[ $i ];
@@ -273,6 +276,60 @@ class ProductBundleHooks {
 				}
 
 				$quantity = $item_quantity * $product_quantity;
+
+				if ( isset( $product_quantities[ $item_product->get_id() ] ) ) {
+					$product_quantities[ $item_product->get_id() ] += $quantity;
+
+					if ( ! $item_product->has_enough_stock( $product_quantities[ $item_product->get_id() ] ) ) {
+						$stock_quantity = $item_product->get_stock_quantity();
+
+						/* translators: 1: product name 2: quantity in stock */
+						$message = sprintf( __( 'You cannot add that amount of &quot;%1$s&quot; to the cart because there is not enough stock (%2$s remaining).', 'asnp-easy-product-bundles' ), $item_product->get_name(), wc_format_stock_quantity_for_display( $stock_quantity, $item_product ) );
+
+						/**
+						 * Filters message about product not having enough stock.
+						 *
+						 * @since 4.5.0
+						 * @param string     $message Message.
+						 * @param WC_Product $item_product Product data.
+						 * @param int        $stock_quantity Quantity remaining.
+						 */
+						$message = apply_filters( 'asnp_wepb_cart_product_not_enough_stock_message', $message, $item_product, $stock_quantity );
+
+						throw new \Exception( $message );
+					}
+
+					if ( $item_product->managing_stock() ) {
+						$products_qty_in_cart = WC()->cart->get_cart_item_quantities();
+
+						if ( isset( $products_qty_in_cart[ $item_product->get_stock_managed_by_id() ] ) && ! $item_product->has_enough_stock( $products_qty_in_cart[ $item_product->get_stock_managed_by_id() ] + $product_quantities[ $item_product->get_id() ] ) ) {
+							$stock_quantity         = $item_product->get_stock_quantity();
+							$stock_quantity_in_cart = $products_qty_in_cart[ $item_product->get_stock_managed_by_id() ];
+
+							$message = sprintf(
+								'<a href="%s" class="button wc-forward">%s</a> %s',
+								wc_get_cart_url(),
+								__( 'View cart', 'asnp-easy-product-bundles' ),
+								/* translators: 1: quantity in stock 2: current quantity */
+								sprintf( __( 'You cannot add that amount of &quot;%1$s&quot; to the cart &mdash; we have %2$s in stock and you already have %3$s in your cart.', 'asnp-easy-product-bundles' ), $item_product->get_name(), wc_format_stock_quantity_for_display( $stock_quantity, $item_product ), wc_format_stock_quantity_for_display( $stock_quantity_in_cart, $item_product ) )
+							);
+
+							/**
+							 * Filters message about product not having enough stock accounting for what's already in the cart.
+							 *
+							 * @param string $message Message.
+							 * @param WC_Product $item_product Product data.
+							 * @param int $stock_quantity Quantity remaining.
+							 * @param int $stock_quantity_in_cart
+							 */
+							$message = apply_filters( 'asnp_wepb_cart_product_not_enough_stock_already_in_cart_message', $message, $item_product, $stock_quantity, $stock_quantity_in_cart );
+
+							throw new \Exception( $message );
+						}
+					}
+				} else {
+					$product_quantities[ $item_product->get_id() ] = $quantity;
+				}
 
 				// Force quantity to 1 if sold individually and check for existing item in cart.
 				if ( $item_product->is_sold_individually() ) {

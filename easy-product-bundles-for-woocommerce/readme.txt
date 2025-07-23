@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 6.4.3
+Stable tag: 6.4.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -213,13 +213,17 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.4.4 =
+* Bug Fix: Fixed the validation of total product quantities within the bundle.
+* Ensured compatibility with WooCommerce version 10.0.3
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 6.4.3 =
 * Bug Fix: Resolved an issue with dynamic bundle pricing in manual admin orders.
 * Bug Fix: Corrected item pricing with quantity in backend manual orders.
 * Bug Fix: Fixed a pricing calculation issue for products with optional items.
 * Bug Fix: Addressed a CSS issue affecting optional checkboxes in certain themes.
 * Ensured compatibility with WooCommerce version 9.9.5
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 6.4.2 =
 * Bug Fix: Resolved Add to cart issue.
