@@ -1,1 +1,245 @@
-{"translation-revision-date":"2025-07-22 17:36+0330","generator":"WP-CLI\/2.11.0","source":"assets\/js\/admin\/admin\/index.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"nl_NL","plural-forms":"nplurals=2; plural=(n != 1);"},"Settings":[""],"Go Pro":[""],"Action is required.":[""],"PRO Version":[""],"Bundle position":[""],"Before Add to Cart button":[""],"After Add to Cart button":[""],"Before Add to Cart form":[""],"After Add to Cart form":[""],"Before product excerpt":[""],"After product excerpt":[""],"After product meta":[""],"None":[""],"Before CSS selector":[""],"After CSS selector":[""],"product bundle position in product page.":[""],"CSS Selector":[""],"(Pro)":[""],"Back default color":[""],"Product image object-fit":[""],"Cover":[""],"Contain":[""],"Fill":[""],"Inherit":[""],"Initial":[""],"Revert":[""],"Scale-down":[""],"Unset":[""],"Bundle":[""],"Item View":[""],"Show stock":[""],"Show product Stock availability in modal.":[""],"Show rating":[""],"Show product rating in modal.":[""],"Show description(on hover)":[""],"Show product description when mouse hover over it.":[""],"Prepend parent name":[""],"Prepend the parent name to the item name in the cart and order.":[""],"Hide out of stock":[""],"Hide out of stock products.":[""],"Show price in cart":[""],"Product bundle items price visibility in cart and checkout.":[""],"Show products list":[""],"Show products list below products bundle.":[""],"Show total price":[""],"Show the total price of the selected items below the products list.":[""],"Show saved money":[""],"Show the saved money when calculating the total price.":[""],"Show modal quick view":[""],"Show product quick view icon in modal.":[""],"Show selected product quick view":[""],"Show product quick view icon in the selected product.":[""],"Quantity field on item":[""],"Show quantity field on item.":[""],"Show plus icon":[""],"Show plus icon between items.":[""],"Disable popup":[""],"Disable popup for items that have only one product.":[""],"Theme":[""],"Grid 1":[""],"Grid 2":[""],"List 1":[""],"List 2":[""],"Size":[""],"Small":[""],"Medium":[""],"Large":[""],"Optional item mode":[""],"Checkbox":[""],"Delete button":[""],"Product bundle price on shop page":[""],"Total price":[""],"From total price":[""],"From min price":[""],"Set how to show the product bundle price on the shop page.":[""],"Item price":[""],"Product price":[""],"Product subtotal":[""],"Set how to show the product price in item.":[""],"Product list price":[""],"Set how to show the product price in product list.":[""],"Link to product":[""],"New tab":[""],"No link":[""],"Show the product change modal":[""],"Click on product in pop-up":[""],"Product selection":[""],"Show product details":[""],"Coupon apply method":[""],"Both of bundle and bundle items":[""],"On bundle":[""],"On bundle items":[""],"None of bundle and bundle items":[""],"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".":[""],"Cart contents count":[""],"Bundle items":[""],"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".":[""],"Product price selector":[""],"Add to cart button selector":[""],"Change product modal":[""],"Number of products per page":[""],"Styles":[""],"Save Changes":[""],"License Key":[""],"Enter Your License Key":[""],"Notice":[""],"Each website using this plugin needs a legal license (1 license = 1 website).":[""],"You can find more information on":[""],"software license agreement":[""],"If you need to buy a new license of this plugin":[""],"click here.":[""],"Where can I find my license key?":[""],"There was an error on getting settings.":[""],"Data is required.":[""],"There was an error on saving settings.":[""],"There was an error on applying review.":[""],"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.":[""],"OK, you deserve it!":[""],"I already did":[""],"Maybe Later":[""],"I need help":[""],"Never show again":[""],"Apps you might like":[""],"Active Installations":[""],"Free Version":[""],"Buy Pro":[""],"Saved Successfully.":[""],"There was an error on saving the settings.":[""],"Apps":[""],"Enable Updates":[""],"Articles":[""],"Video Tutorials":[""],"Get Support":[""]}}}
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.11.0",
+	"source": "assets/js/admin/admin/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "nl_NL",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Settings": [ "Instellingen" ],
+			"Go Pro": [ "Ga Pro" ],
+			"Action is required.": [ "" ],
+			"PRO Version": [ "PRO-versie" ],
+			"Bundle position": [ "Bundelpositie" ],
+			"Before Add to Cart button": [
+				"Voor de knop Toevoegen aan winkelwagen"
+			],
+			"After Add to Cart button": [
+				"Na de knop Toevoegen aan winkelwagen"
+			],
+			"Before Add to Cart form": [
+				"Voor het formulier Toevoegen aan winkelwagen"
+			],
+			"After Add to Cart form": [
+				"Na het formulier Toevoegen aan winkelwagen"
+			],
+			"Before product excerpt": [ "Voor het productfragment" ],
+			"After product excerpt": [ "Na het productfragment" ],
+			"After product meta": [ "Na de productmeta" ],
+			"None": [ "Geen" ],
+			"Before CSS selector": [ "Voor de CSS-selector" ],
+			"After CSS selector": [ "Na de CSS-selector" ],
+			"product bundle position in product page.": [
+				"Positie van de productbundel op de productpagina."
+			],
+			"CSS Selector": [ "CSS-selector" ],
+			"Bundle": [ "Bundel" ],
+			"Item View": [ "Itemweergave" ],
+			"Show stock": [ "Toon voorraad" ],
+			"Show product Stock availability in modal.": [
+				"Toon beschikbaarheid van de productvoorraad in de modal."
+			],
+			"Show rating": [ "Toon beoordeling" ],
+			"Show product rating in modal.": [
+				"Toon productbeoordeling in de modal."
+			],
+			"Show description(on hover)": [ "Toon beschrijving (bij zweven)" ],
+			"Show product description when mouse hover over it.": [
+				"Toon productbeschrijving wanneer de muis erover zweeft."
+			],
+			"Prepend parent name": [ "Oudernaam toevoegen aan het begin" ],
+			"Prepend the parent name to the item name in the cart and order.": [
+				"Voeg de oudernaam toe aan de artikelnaam in de winkelwagen en bestelling."
+			],
+			"Hide out of stock": [ "Niet op voorraad verbergen" ],
+			"(Pro)": [ "" ],
+			"Hide out of stock products.": [
+				"Verberg producten die niet op voorraad zijn."
+			],
+			"Show price in cart": [ "Toon prijs in winkelwagen" ],
+			"Product bundle items price visibility in cart and checkout.": [
+				"Zichtbaarheid van de prijs van bundelartikelen in winkelwagen en afrekenen."
+			],
+			"Show products list": [ "Toon productlijst" ],
+			"Show products list below products bundle.": [
+				"Toon productlijst onder de productbundel."
+			],
+			"Show total price": [ "Toon totale prijs" ],
+			"Show the total price of the selected items below the products list.": [
+				"Toon de totale prijs van de geselecteerde artikelen onder de productlijst."
+			],
+			"Show saved money": [ "Toon bespaard bedrag" ],
+			"Show the saved money when calculating the total price.": [
+				"Toon het bespaarde bedrag bij het berekenen van de totale prijs."
+			],
+			"Show modal quick view": [ "Toon snelle weergave in modal" ],
+			"Show product quick view icon in modal.": [
+				"Toon snelle weergave-icoon in modal."
+			],
+			"Show selected product quick view": [
+				"Toon snelle weergave van geselecteerd product"
+			],
+			"Show product quick view icon in the selected product.": [
+				"Toon snelle weergave-icoon bij het geselecteerde product."
+			],
+			"Quantity field on item": [ "Aantalveld bij artikel" ],
+			"Show quantity field on item.": [ "Toon aantalveld bij artikel." ],
+			"Show plus icon": [ "Toon plus-icoon" ],
+			"Show plus icon between items.": [
+				"Toon plus-icoon tussen artikelen."
+			],
+			"Theme": [ "Thema" ],
+			"Grid 1": [ "" ],
+			"Grid 2": [ "" ],
+			"List 1": [ "" ],
+			"List 2": [ "" ],
+			"Size": [ "Grootte" ],
+			"Small": [ "Klein" ],
+			"Medium": [ "Medium" ],
+			"Large": [ "Groot" ],
+			"Product bundle price on shop page": [
+				"Prijs van productbundel op winkelpagina"
+			],
+			"Total price": [ "Totale prijs" ],
+			"From total price": [ "Vanaf totale prijs" ],
+			"From min price": [ "Vanaf minimale prijs" ],
+			"Set how to show the product bundle price on the shop page.": [
+				"Instellen hoe de prijs van de productbundel op de winkelpagina wordt weergegeven."
+			],
+			"Item price": [ "Artikelprijs" ],
+			"Product price": [ "Productprijs" ],
+			"Product subtotal": [ "Productsubtotaal" ],
+			"Set how to show the product price in item.": [
+				"Instellen hoe de productprijs in het artikel wordt weergegeven."
+			],
+			"Product list price": [ "Productlijstprijs" ],
+			"Set how to show the product price in product list.": [
+				"Instellen hoe de productprijs in de productlijst wordt weergegeven."
+			],
+			"Link to product": [ "Link naar product" ],
+			"New tab": [ "Nieuw tabblad" ],
+			"No link": [ "Geen link" ],
+			"Show the product change modal": [ "Toon productwijzigingsmodal" ],
+			"Click on product in pop-up": [ "Klik op product in pop-up" ],
+			"Product selection": [ "Productselectie" ],
+			"Show product details": [ "Toon productdetails" ],
+			"Coupon apply method": [ "kortingsbonmethode" ],
+			"Both of bundle and bundle items": [
+				"Zowel bundel als bundelartikelen"
+			],
+			"On bundle": [ "Op bundel" ],
+			"On bundle items": [ "Op bundelartikelen" ],
+			"None of bundle and bundle items": [
+				"Geen van bundel en bundelartikelen"
+			],
+			"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".": [
+				"Op product gebaseerde kortingsbonmethode toepassen. Kan worden toegepast op 'bundel', 'bundelartikelen', 'beide' of 'geen'."
+			],
+			"Cart contents count": [ "Aantal winkelwageninhoud" ],
+			"Bundle items": [ "Bundelartikelen" ],
+			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
+				"Hoe moeten bundelproducten in de winkelwagen worden geteld? Tel zowel 'bundel en zijn artikelen' of 'alleen bundel' of 'alleen bundelartikelen'."
+			],
+			"Product price selector": [ "Productprijskiezer" ],
+			"Add to cart button selector": [
+				"Toevoegen aan winkelwagen-knopkiezer"
+			],
+			"Change product modal": [ "Wijzig productmodal" ],
+			"Number of products per page": [ "Aantal producten per pagina" ],
+			"Styles": [ "Styles" ],
+			"Product title color": [ "Producttitelkleur" ],
+			"Back default color": [ "Terug naar de standaardkleur" ],
+			"Bundle title color": [ "Bundeltitelkleur" ],
+			"Product crossed out price color": [
+				"Product doorgestreepte prijs kleur"
+			],
+			"Product sale price color": [ "Productaanbiedingsprijs kleur" ],
+			"Empty item title color": [ "Kleur lege artikeltitel" ],
+			"Empty item title hover color": [
+				"Hoverkleur van lege artikeltitel"
+			],
+			"Modal header color": [ "Kleur van modal-header" ],
+			"Quantity field buttons hover color": [
+				"Hoverkleur van de knoppen in het aantalveld"
+			],
+			"Optional badge color": [ "Optionele badgekleur" ],
+			"Optional badge title color": [ "Kleur van optionele badge titel" ],
+			"Quick view icon color": [ "Kleur van snelle weergave-icoon" ],
+			"Images icon color": [ "Kleur van afbeeldingsicoon" ],
+			"Plus icon color": [ "Plus-icoonkleur" ],
+			"Quick view button color": [ "Kleur snelle weergave-knop" ],
+			"Quick view button text color": [
+				"Tekstkleur snelle weergave-knop"
+			],
+			"Product image object-fit": [ "Object-fit productafbeelding" ],
+			"Cover": [ "" ],
+			"Contain": [ "" ],
+			"Fill": [ "" ],
+			"Inherit": [ "" ],
+			"Initial": [ "" ],
+			"Revert": [ "" ],
+			"Scale-down": [ "" ],
+			"Unset": [ "" ],
+			"Save Changes": [ "Wijzigingen opslaan" ],
+			"License Key": [ "Licentiesleutel" ],
+			"Enter Your License Key": [ "Voer uw licentiesleutel in" ],
+			"Notice": [ "Opmerking" ],
+			"Each website using this plugin needs a legal license (1 license = 1 website).": [
+				"Elke website die deze plug-in gebruikt, heeft een geldige licentie nodig (1 licentie = 1 website)."
+			],
+			"You can find more information on": [
+				"U kunt meer informatie vinden op"
+			],
+			"software license agreement": [ "softwarelicentieovereenkomst" ],
+			"If you need to buy a new license of this plugin": [
+				"Als u een nieuwe licentie voor deze plug-in wilt kopen"
+			],
+			"click here.": [ "klik hier." ],
+			"Where can I find my license key?": [
+				"Waar kan ik mijn licentiesleutel vinden?"
+			],
+			"There was an error on getting settings.": [ "" ],
+			"Data is required.": [ "" ],
+			"There was an error on saving settings.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation? %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				""
+			],
+			"OK, you deserve it!": [ "" ],
+			"I already did": [ "" ],
+			"Maybe Later": [ "" ],
+			"I need help": [ "" ],
+			"Never show again": [ "" ],
+			"Saved Successfully.": [ "" ],
+			"There was an error on saving the settings.": [ "" ],
+			"Enable Updates": [ "Updates inschakelen" ],
+			"Alert message color": [ "Kleur van het waarschuwingsbericht" ],
+			"Alert message background color": [
+				"Achtergrondkleur van het waarschuwingsbericht"
+			],
+			"Disable popup": [ "Popup uitschakelen" ],
+			"Disable popup for items that have only one product.": [
+				"Popup uitschakelen voor items die maar één product hebben."
+			],
+			"Optional item mode": [ "Optionele itemmodus" ],
+			"Checkbox": [ "Selectievakje" ],
+			"Delete button": [ "Verwijderknop" ],
+			"Total price - sale price color": [
+				"Totale prijs - kleur van verkoopprijs"
+			],
+			"Total price - crossed out price color": [
+				"Totale prijs - kleur van doorgehaalde prijs"
+			],
+			"Total price - saved amount color": [
+				"Totale prijs - kleur van bespaard bedrag"
+			],
+			"Total price - saved amount background color": [
+				"Totale prijs - achtergrondkleur van bespaard bedrag"
+			]
+		}
+	}
+}

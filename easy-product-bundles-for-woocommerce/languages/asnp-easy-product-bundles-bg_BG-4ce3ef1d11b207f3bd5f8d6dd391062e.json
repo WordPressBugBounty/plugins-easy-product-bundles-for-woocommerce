@@ -1,1 +1,205 @@
-{"translation-revision-date":"2025-07-22 16:46+0330","generator":"WP-CLI\/2.11.0","source":"assets\/js\/admin\/product\/index.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"bg","plural-forms":"nplurals=2; plural=(n != 1);"},"Please select a product!":[""],"Please select your product!":[""],"Please select your product":[""],"Type is required.":[""],"Action is required.":[""],"PRO Version":[""],"Theme":[""],"Grid 1":[""],"Grid 2":[""],"List 1":[""],"List 2":[""],"Size":[""],"Small":[""],"Medium":[""],"Large":[""],"Data is required.":[""],"There was an error on applying review.":[""],"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.":[""],"OK, you deserve it!":[""],"I already did":[""],"Maybe Later":[""],"I need help":[""],"Never show again":[""],"Items are required.":[""],"There was an error on getting items.":[""],"Search value is required.":[""],"There was an error on searching items.":[""],"Optional":[""],"Check this option to make the bundle item optional to choose by the user":[""],"Selected":[""],"Enable this field to make the optional item selected in the frontend.":[""],"Default product":[""],"Set a default product":[""],"Products":[""],"Add products or Variations":[""],"Exclude products":[""],"Select a product that you do not want to be displayed":[""],"Categories":[""],"Select the category product that you want to be displayed in this bundle item":[""],"Exclude categories":[""],"Select the category product that you do not want to be displayed in this bundle item":[""],"Tags":[""],"Select the product with tags to display in this bundle item":[""],"Exclude tags":[""],"Select the product with tags that you do not want to be displayed in the bundle item":[""],"Categories and Tags relation":[""],"Match at least one":[""],"Match both":[""],"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.":[""],"Sort products":[""],"ID":[""],"Title":[""],"Menu order":[""],"Date":[""],"Price":[""],"Popularity":[""],"Rating":[""],"Ascending":[""],"Descending":[""],"Set the order of products in the pop-up":[""],"Quantity":[""],"Set the default product quantity":[""],"Edit quantity by user":[""],"Check this option to allow the user to change the bundle item quantity":[""],"Min quantity":[""],"Set the minimum quantity of this bundled product":[""],"Max quantity":[""],"Set the maximum quantity of this bundled product":[""],"Discount":[""],"Percentage":[""],"Fixed price":[""],"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price":[""],"Default Image":[""],"No image chosen":[""],"Upload Image":[""],"Set an image for empty item.":[""],"Overwrite bundle item title":[""],"Short description":[""],"Overwrite bundle item short description.(Show when the mouse hovers over it)":[""],"Product selection title":[""],"Change the title of the bundle empty item.":[""],"Product list title":[""],"Change the product list product selection title.":[""],"Modal header title":[""],"Change the pop-up header title":[""],"Duplicate":[""],"Duplicate: Pro version":[""],"Trash":[""],"General":[""],"Display":[""],"Individual theme":[""],"GO PRO":[""],"Need help?":[""],"If checked, disable auto calculate price and use product price as bundle price.":[""],"Please enable fixed price first.":[""],"Click here to set price":[""],"Include parent price":[""],"Include the parent product price in the bundle total price. (parent price + selected items price)":[""],"Sync stock quantity":[""],"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.":[""],"Hide products price":[""],"No":[""],"Yes":[""],"Only regular price":[""],"Shipping fee":[""],"Apply to the whole bundle":[""],"Apply to each bundle item":[""],"Min items quantity":[""],"Set the minimum total quantity of bundled items.":[""],"Max items quantity":[""],"Set the maximum total quantity of bundled items.":[""],"Custom display price":[""],"Product display price in frontend. E.g: From 10$ To 20$":[""],"A title for the bundle product that will be shown on top of bundle items.":[""],"Bundle description":[""],"Create a description for product bundle.":[""],"Add Item":[""]}}}
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "bg_BG",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Type is required.": [ "Изисква се" ],
+			"PRO Version": [ "PRO Версия" ],
+			"Action is required.": [ "Необходимо е действие" ],
+			"Theme": [ "Тема" ],
+			"Grid 1": [ "Решетка 1" ],
+			"Grid 2": [ "Решетка 2" ],
+			"List 1": [ "Списък 1" ],
+			"List 2": [ "Списък 2" ],
+			"Size": [ "Размер" ],
+			"Small": [ "Малък" ],
+			"Medium": [ "Среден" ],
+			"Large": [ "Голям" ],
+			"Data is required.": [ "Необходими са данни" ],
+			"Възникна грешка при прилагането на прегледа.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				"Надяваме се, че Ви харесва. Бихте ли могли да ни направите ГОЛЯМА услуга, като ни помогнете да разпространим информацията за нашият продукт и засилите мотивацията ни. Споделете и на други за нас и ни оценете!."
+			],
+			"OK, you deserve it!": [ "Добре, заслужаваш го!" ],
+			"I already did": [ "Вече го направих" ],
+			"Maybe Later": [ "Може би по-късно" ],
+			"I need help": [ "Нуждая се от помощ" ],
+			"Never show again": [ "Никога не показвай отново" ],
+			"Items are required.": [ "Елементите са задължителни" ],
+			"There was an error on getting items.": [
+				"Възникна грешка при получаването на елементи."
+			],
+			"Search value is required.": [ "Изисква се стойност за търсене." ],
+			"There was an error on searching items.": [
+				"Възникна грешка при търсенето на елементи."
+			],
+			"Optional": [ "по избор" ],
+			"Check this option to make the bundle item optional to choose by the user": [
+				"Поставете отметка в тази опция, за да направите елемента от комплекта незадължителен за избор от потребителя"
+			],
+			"Use default-product": [ "Използвай продукт по подразбиране" ],
+			"Check this option to add a default product for the bundle item that is shown as a selected product for this bundle item": [
+				"Маркирайте тази опция, за да добавите продукт по подразбиране за артикула от комплекта, който се показва като избран продукт за този артикул от комплекта"
+			],
+			"Default product": [ "Продукт по подразбиране" ],
+			"Set a default product": [ "Задайте продукт по подразбиране" ],
+			"Products": [ "Продукти" ],
+			"Add products or Variations": [ "Добави продукти или Вариации" ],
+			"Exclude products": [ "Изключи продукти" ],
+			"Select a product that you do not want to be displayed": [
+				"Изберете продукт, който не желаете да бъде показван."
+			],
+			"Categories": [ "Категории" ],
+			"Select the category product that you want to be displayed in this bundle item": [
+				"Изберете продукта от категорията, който искате да бъде показан в този елемент от комплекта."
+			],
+			"Exclude categories": [ "Изключи категории" ],
+			"Select the category product that you do not want to be displayed in this bundle item": [
+				"Изберете продукта от категорията, който не искате да се показва в този елемент от комплекта."
+			],
+			"Tags": [ "Етикети" ],
+			"Select the product with tags to display in this bundle item": [
+				"Изберете продукта с етикети, които да се показват в този елемент от комплекта."
+			],
+			"Exclude tags": [ "Изключи етикети" ],
+			"Select the product with tags that you do not want to be displayed in the bundle item": [
+				"Изберете продукта с етикети, които не искате да се показват в артикула от Комплекта."
+			],
+			"Categories and Tags relation": [
+				"Връзка между категории и етикети"
+			],
+			"Match at least one": [ "Съвпадение с поне един" ],
+			"Match both": [ "Съвпадение и с двете" ],
+			"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.": [
+				"Съвпадение на поне едно: Продуктите трябва да съответстват на поне една от категориите или етикетите.%sСъвпадение на двете: Продуктите трябва да съответстват и на двете категории и етикети."
+			],
+			"Quantity": [ "Количество" ],
+			"Set the default product quantity": [
+				"Задайте количеството на продукта по подразбиране"
+			],
+			"Edit quantity by user": [
+				"Редактиране на количеството по потребител"
+			],
+			"Check this option to allow the user to change the bundle item quantity": [
+				"Поставете отметка в тази опция, за да позволите на потребителя да промени количеството на артикула в комплекта"
+			],
+			"Min quantity": [ "Минимално количество" ],
+			"Set the minimum quantity of this bundled product": [
+				"Задайте минималното количество от този продукт в пакета"
+			],
+			"Max quantity": [ "Максимално количество" ],
+			"Set the maximum quantity of this bundled product": [
+				"Задайте максималното количество от този продукт в пакета"
+			],
+			"Discount": [ "Отстъпка" ],
+			"Percentage": [ "Процент" ],
+			"Price": [ "Цена" ],
+			"Fixed price": [ "Фиксирана цена" ],
+			"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price": [
+				"Отстъпката се прилага към цената на пакетния продукт. Ако продуктът в комплекта има продажна цена (разпродажба), отстъпката се прилага върху продажната цена."
+			],
+			"Title": [ "Заглавие" ],
+			"Overwrite bundle item title": [
+				"Презаписване на заглавието на елемент от комплекта"
+			],
+			"Short description": [ "Кратко описание" ],
+			"Overwrite bundle item short description.(Show when the mouse hovers over it)": [
+				"Презаписване на кратко описание на артикул от комплект. (Показва се, когато мишката се задържи над него)"
+			],
+			"General": [ "Общ" ],
+			"Display": [ "Показва" ],
+			"Individual theme": [ "Индивидуална тема" ],
+			"GO PRO": [ "Премнете към PRO" ],
+			"If checked, disable auto calculate price and use product price as bundle price.": [
+				"Ако е отметнато, деактивирайте автоматичното изчисляване на цената и използвайте цената на продукта като цена на комплекта."
+			],
+			"Please enable fixed price first.": [
+				"Моля, първо активирайте фиксираната цена."
+			],
+			"Click here to set price": [ "Щракнете тук, за да зададете цена" ],
+			"Shipping fee": [ "Такса за доставка" ],
+			"Apply to the whole bundle": [ "Приложи върху целия пакет" ],
+			"Apply to each bundle item": [
+				"Приложи към всеки елемент от комплекта"
+			],
+			"Custom display price": [ "Покажи персонализирана цена" ],
+			"Product display price in frontend. E.g: From 10$ To 20$": [
+				"Показване на цената на продукта във фронтенда. Например: от 10$ до 20$"
+			],
+			"A title for the bundle product that will be shown on top of bundle items.": [
+				"Заглавие за продукта от комплекта, което ще се показва върху елементите от пакета."
+			],
+			"Add Item": [ "Добавяне на елемент" ],
+			"Trash": [ "Кошче" ],
+			"Need help?": [ "Нуждаете се от помощ?" ],
+			"Product selection title": [ "Заглавие на избраният продукт" ],
+			"Change the title of the bundle empty item.": [
+				"Променете заглавието на празния елемент в комплекта."
+			],
+			"Включете основната цена": [ "Elternpreis einschließen" ],
+			"Include the parent product price in the bundle total price. (parent price + selected items price)": [
+				"Включете цената на основния продукт в общата цена на пакета. (основна цена + цена на избрани артикули)"
+			],
+			"Sort products": [ "Сортирай продукти" ],
+			"Menu order": [ "Подредба на менюто" ],
+			"Date": [ "Дата" ],
+			"Rating": [ "Оценка" ],
+			"Popularity": [ "Популярност" ],
+			"Ascending": [ "Възходящ" ],
+			"Descending": [ "Низходящ" ],
+			"Product list title": [ "Заглавие на продуктовия списък" ],
+			"Change the product list product selection title.": [
+				"Променете заглавието за избор на продукт в списъка с продукти."
+			],
+			"Modal header title": [ "Модално заглавие" ],
+			"Change the pop-up header title": [
+				"Променете заглавието на изскачащия прозорец"
+			],
+			"Duplicate": [ "Дубликат" ],
+			"Duplicate: Pro version": [ "Дубликат: Про версия" ],
+			"Set the order of products in the pop-up": [
+				"Задайте реда на продуктите в изскачащия прозорец"
+			],
+			"Min items quantity": [ "Минимално количество артикули" ],
+			"Set the minimum total quantity of bundled items.": [
+				"Задайте минималното общо количество на опаковани артикули."
+			],
+			"Max items quantity": [ "Максимално количество артикули" ],
+			"Set the maximum total quantity of bundled items.": [
+				"Задайте максималното общо количество на опаковани артикули."
+			],
+			"Default Image": [ "Изображение по подразбиране" ],
+			"Upload Image": [ "Качи изображение" ],
+			"Set an image for empty item.": [
+				"Задайте изображение за празен елемент."
+			],
+			"No image chosen": [ "Няма избрано изображение" ],
+			"Hide products price": [ "Скрий цената на продуктите" ],
+			"No": [ "Не" ],
+			"Yes": [ "Да" ],
+			"Only regular price": [ "Само редовна цена" ],
+			"Please select your product!": [ "Моля, изберете вашия продукт!" ],
+			"Please select your product": [ "Моля, изберете вашия продукт" ],
+			"Please select a product!": [ "Моля, изберете продукт!" ],
+			"Bundle description": [ "Описание на пакета" ],
+			"Create a description for product bundle.": [
+				"Създайте описание за продуктова пакет."
+			],
+			"Sync stock quantity": [ "Синхронизиране на наличността" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"Актуализиране на количеството наличност на пакета въз основа на количеството наличност на дъщерните продукти. Забележка: Тази функция работи само когато всеки елемент има точно един продукт, който е добавен в полето за продукт по подразбиране и не е по избор."
+			],
+			"Selected": [ "Избран" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"Активирайте това поле, за да направите избираемия елемент избран в предния край."
+			]
+		}
+	}
+}

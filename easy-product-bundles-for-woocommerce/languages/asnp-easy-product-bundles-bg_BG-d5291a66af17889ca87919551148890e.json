@@ -1,1 +1,40 @@
-{"translation-revision-date":"2025-07-22 16:46+0330","generator":"WP-CLI\/2.11.0","source":"assets\/js\/shared\/index.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"bg","plural-forms":"nplurals=2; plural=(n != 1);"},"Product ID is required.":[""],"Parent product ID is required.":[""],"Item index is required.":[""],"There was an error on getting items.":[""],"Change":[""],"View":[""],"OUT OF STOCK":[""],"Bundle item image":[""],"More pictures":[""],"Args is required.":[""],"Back":[""],"Close":[""],"Prev":[""],"Next":[""],"Add":[""],"Add%s":[""],"Edit product":[""],"Save":[""],"Please select a product for all items.":[""]}}}
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "bg_BG",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Product ID is required.": [ "Изисква се ID на продукта" ],
+			"Parent product ID is required.": [
+				"Изисква се идентификатор на родителски продукт."
+			],
+			"Item index is required.": [ "Изисква се индекс на артикула." ],
+			"There was an error on getting items.": [
+				"Възникна грешка при получаване на елементи."
+			],
+			"Args is required.": [ "Изискват се аргументи." ],
+			"Prev": [ "Предишен" ],
+			"Next": [ "Следващ" ],
+			"OUT OF STOCK": [ "ИЗЧЕРПАНО ОТ НАЛИЧНОСТИ" ],
+			"Bundle item image": [ "Изображение на продукт от комплект" ],
+			"Add": [ "Добави" ],
+			"Add%s": [ "Добави%s" ],
+			"Change": [ "Промени" ],
+			"View": [ "Преглед" ],
+			"Please select a product for all items.": [
+				"Моля, изберете продукт за всички артикули."
+			],
+			"Save": [ "Спести" ],
+			"Edit product": [ "Редактирай продукт" ],
+			"Close": [ "Затвори" ],
+			"Back": [ "Назад" ],
+			"More pictures": [ "Още снимки" ]
+		}
+	}
+}

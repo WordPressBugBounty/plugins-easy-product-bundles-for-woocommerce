@@ -1,1 +1,183 @@
-{"translation-revision-date":"2025-07-22 17:50+0330","generator":"WP-CLI\/2.11.0","source":"assets\/js\/admin\/product\/index.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"zh_CN","plural-forms":"nplurals=1; plural=0;"},"Please select a product!":[""],"Please select your product!":[""],"Please select your product":[""],"Type is required.":[""],"Action is required.":[""],"PRO Version":[""],"Theme":[""],"Grid 1":[""],"Grid 2":[""],"List 1":[""],"List 2":[""],"Size":[""],"Small":[""],"Medium":[""],"Large":[""],"Data is required.":[""],"There was an error on applying review.":[""],"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.":[""],"OK, you deserve it!":[""],"I already did":[""],"Maybe Later":[""],"I need help":[""],"Never show again":[""],"Items are required.":[""],"There was an error on getting items.":[""],"Search value is required.":[""],"There was an error on searching items.":[""],"Optional":[""],"Check this option to make the bundle item optional to choose by the user":[""],"Selected":[""],"Enable this field to make the optional item selected in the frontend.":[""],"Default product":[""],"Set a default product":[""],"Products":[""],"Add products or Variations":[""],"Exclude products":[""],"Select a product that you do not want to be displayed":[""],"Categories":[""],"Select the category product that you want to be displayed in this bundle item":[""],"Exclude categories":[""],"Select the category product that you do not want to be displayed in this bundle item":[""],"Tags":[""],"Select the product with tags to display in this bundle item":[""],"Exclude tags":[""],"Select the product with tags that you do not want to be displayed in the bundle item":[""],"Categories and Tags relation":[""],"Match at least one":[""],"Match both":[""],"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.":[""],"Sort products":[""],"ID":[""],"Title":[""],"Menu order":[""],"Date":[""],"Price":[""],"Popularity":[""],"Rating":[""],"Ascending":[""],"Descending":[""],"Set the order of products in the pop-up":[""],"Quantity":[""],"Set the default product quantity":[""],"Edit quantity by user":[""],"Check this option to allow the user to change the bundle item quantity":[""],"Min quantity":[""],"Set the minimum quantity of this bundled product":[""],"Max quantity":[""],"Set the maximum quantity of this bundled product":[""],"Discount":[""],"Percentage":[""],"Fixed price":[""],"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price":[""],"Default Image":[""],"No image chosen":[""],"Upload Image":[""],"Set an image for empty item.":[""],"Overwrite bundle item title":[""],"Short description":[""],"Overwrite bundle item short description.(Show when the mouse hovers over it)":[""],"Product selection title":[""],"Change the title of the bundle empty item.":[""],"Product list title":[""],"Change the product list product selection title.":[""],"Modal header title":[""],"Change the pop-up header title":[""],"Duplicate":[""],"Duplicate: Pro version":[""],"Trash":[""],"General":[""],"Display":[""],"Individual theme":[""],"GO PRO":[""],"Need help?":[""],"If checked, disable auto calculate price and use product price as bundle price.":[""],"Please enable fixed price first.":[""],"Click here to set price":[""],"Include parent price":[""],"Include the parent product price in the bundle total price. (parent price + selected items price)":[""],"Sync stock quantity":[""],"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.":[""],"Hide products price":[""],"No":[""],"Yes":[""],"Only regular price":[""],"Shipping fee":[""],"Apply to the whole bundle":[""],"Apply to each bundle item":[""],"Min items quantity":[""],"Set the minimum total quantity of bundled items.":[""],"Max items quantity":[""],"Set the maximum total quantity of bundled items.":[""],"Custom display price":[""],"Product display price in frontend. E.g: From 10$ To 20$":[""],"A title for the bundle product that will be shown on top of bundle items.":[""],"Bundle description":[""],"Create a description for product bundle.":[""],"Add Item":[""]}}}
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "zh_CN",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Please select a product!": [ "请选择产品！" ],
+			"Please select your product!": [ "请选择您的产品！" ],
+			"Please select your product": [ "请选择您的产品" ],
+			"Action is required.": [ "" ],
+			"Type is required.": [ "" ],
+			"PRO Version": [ "专业版" ],
+			"Theme": [ "主题" ],
+			"Grid 1": [ "网格 1" ],
+			"Grid 2": [ "网格 2" ],
+			"List 1": [ "列表 1" ],
+			"List 2": [ "列表 2" ],
+			"Size": [ "尺寸" ],
+			"Small": [ "小" ],
+			"Medium": [ "中" ],
+			"Large": [ "大" ],
+			"Data is required.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				""
+			],
+			"OK, you deserve it!": [ "" ],
+			"I already did": [ "" ],
+			"Maybe Later": [ "" ],
+			"I need help": [ "" ],
+			"Never show again": [ "" ],
+			"Items are required.": [ "" ],
+			"There was an error on getting items.": [ "" ],
+			"Search value is required.": [ "" ],
+			"There was an error on searching items.": [ "" ],
+			"Optional": [ "可选" ],
+			"Check this option to make the bundle item optional to choose by the user": [
+				"选中此选项，使捆绑商品成为用户可选择的项"
+			],
+			"Default product": [ "默认产品" ],
+			"Set a default product": [ "设置默认产品" ],
+			"Products": [ "商品" ],
+			"Add products or Variations": [ "添加商品或变体" ],
+			"Exclude products": [ "排除商品" ],
+			"Select a product that you do not want to be displayed": [
+				"选择您不希望显示的商品"
+			],
+			"Categories": [ "类别" ],
+			"Select the category product that you want to be displayed in this bundle item": [
+				"选择您希望在此捆绑商品中显示的类别商品"
+			],
+			"Exclude categories": [ "排除类别" ],
+			"Select the category product that you do not want to be displayed in this bundle item": [
+				"选择您不希望在此捆绑商品中显示的类别商品"
+			],
+			"Tags": [ "标签" ],
+			"Select the product with tags to display in this bundle item": [
+				"选择带有标签的商品以显示在此捆绑商品中"
+			],
+			"Exclude tags": [ "排除标签" ],
+			"Select the product with tags that you do not want to be displayed in the bundle item": [
+				"选择您不希望在此捆绑商品中显示的带标签的商品"
+			],
+			"Categories and Tags relation": [ "类别和标签关系" ],
+			"Match at least one": [ "匹配至少一个" ],
+			"Match both": [ "匹配两个" ],
+			"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.": [
+				"匹配至少一个：商品应至少匹配一个类别或标签。%s匹配两个：商品应匹配两个类别和标签。"
+			],
+			"Sort products": [ "排序商品" ],
+			"ID": [ "ID" ],
+			"Title": [ "标题" ],
+			"Menu order": [ "菜单顺序" ],
+			"Date": [ "日期" ],
+			"Price": [ "价格" ],
+			"Popularity": [ "人气" ],
+			"Rating": [ "评分" ],
+			"Ascending": [ "升序" ],
+			"Descending": [ "降序" ],
+			"Set the order of products in the pop-up": [
+				"设置弹出窗口中商品的顺序"
+			],
+			"Quantity": [ "数量" ],
+			"Set the default product quantity": [ "设置默认商品数量" ],
+			"Edit quantity by user": [ "用户可编辑数量" ],
+			"Check this option to allow the user to change the bundle item quantity": [
+				"选中此选项，允许用户更改捆绑商品的数量"
+			],
+			"Min quantity": [ "最小数量" ],
+			"Set the minimum quantity of this bundled product": [
+				"设置此捆绑商品的最小数量"
+			],
+			"Max quantity": [ "最大数量" ],
+			"Set the maximum quantity of this bundled product": [
+				"设置此捆绑商品的最大数量"
+			],
+			"Discount": [ "折扣" ],
+			"Percentage": [ "百分比" ],
+			"Fixed price": [ "固定价格" ],
+			"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price": [
+				"折扣应用于捆绑商品的价格。如果捆绑商品有销售价格，则折扣在销售价格基础上再应用"
+			],
+			"Default Image": [ "默认图片" ],
+			"Bundle item image": [ "捆绑商品图片" ],
+			"No image chosen": [ "未选择图片" ],
+			"Upload Image": [ "上传图片" ],
+			"Set an image for empty item.": [ "为空项目设置图片" ],
+			"Overwrite bundle item title": [ "覆盖捆绑商品标题" ],
+			"Short description": [ "简短描述" ],
+			"Overwrite bundle item short description.(Show when the mouse hovers over it)": [
+				"覆盖捆绑商品简短描述（鼠标悬停时显示）"
+			],
+			"Product selection title": [ "商品选择标题" ],
+			"Change the title of the bundle empty item.": [
+				"更改捆绑空项目的标题"
+			],
+			"Product list title": [ "产品列表标题" ],
+			"Change the product list product selection title.": [
+				"更改产品列表的商品选择标题"
+			],
+			"Modal header title": [ "弹窗头部标题" ],
+			"Change the pop-up header title": [ "更改弹窗的头部标题" ],
+			"Duplicate": [ "复制" ],
+			"Duplicate: Pro version": [ "复制：专业版" ],
+			"Trash": [ "垃圾桶" ],
+			"General": [ "常规" ],
+			"Display": [ "显示" ],
+			"Individual theme": [ "独立主题" ],
+			"GO PRO": [ "升级到专业版" ],
+			"Need help?": [ "需要帮助吗？" ],
+			"If checked, disable auto calculate price and use product price as bundle price.": [
+				"如果勾选，禁用自动计算价格，使用商品价格作为捆绑价格。"
+			],
+			"Please enable fixed price first.": [ "请先启用固定价格。" ],
+			"Click here to set price": [ "点击此处设置价格" ],
+			"Include parent price": [ "包含父级价格" ],
+			"Include the parent product price in the bundle total price. (parent price + selected items price)": [
+				"将父级产品价格包含在捆绑总价格中。（父级价格 + 选择的商品价格）"
+			],
+			"Shipping fee": [ "运费" ],
+			"Apply to the whole bundle": [ "应用于整个捆绑包" ],
+			"Apply to each bundle item": [ "应用于每个捆绑商品" ],
+			"Min items quantity": [ "最小商品数量" ],
+			"Set the minimum total quantity of bundled items.": [
+				"设置捆绑商品的最小总数量。"
+			],
+			"Max items quantity": [ "最大商品数量" ],
+			"Set the maximum total quantity of bundled items.": [
+				"设置捆绑商品的最大总数量。"
+			],
+			"Custom display price": [ "自定义显示价格" ],
+			"Product display price in frontend. E.g: From 10$ To 20$": [
+				"前端显示的商品价格。例如：从10美元到20美元"
+			],
+			"A title for the bundle product that will be shown on top of bundle items.": [
+				"捆绑商品的标题，将显示在捆绑商品的顶部。"
+			],
+			"Add Item": [ "添加项目" ],
+			"Hide products price": [ "隐藏商品价格" ],
+			"No": [ "否" ],
+			"Yes": [ "是" ],
+			"Only regular price": [ "仅常规价格" ],
+			"Bundle description": [ "产品包描述" ],
+			"Create a description for product bundle.": [
+				"为产品包创建描述。"
+			],
+			"Sync stock quantity": [ "同步库存数量" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"根据子产品的库存数量更新捆绑包的库存数量。注意：此功能仅在每个项目恰好有一个产品，并且该产品已添加到默认产品字段且不是可选时才有效。"
+			],
+			"Selected": [ "已选择" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"启用此字段以在前端选择可选项目。"
+			]
+		}
+	}
+}

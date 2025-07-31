@@ -1,1 +1,249 @@
-{"translation-revision-date":"2025-07-22 17:44+0330","generator":"WP-CLI\/2.11.0","source":"assets\/js\/admin\/admin\/index.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"ru_RU","plural-forms":"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);"},"Settings":[""],"Go Pro":[""],"Action is required.":[""],"PRO Version":[""],"Bundle position":[""],"Before Add to Cart button":[""],"After Add to Cart button":[""],"Before Add to Cart form":[""],"After Add to Cart form":[""],"Before product excerpt":[""],"After product excerpt":[""],"After product meta":[""],"None":[""],"Before CSS selector":[""],"After CSS selector":[""],"product bundle position in product page.":[""],"CSS Selector":[""],"(Pro)":[""],"Back default color":[""],"Product image object-fit":[""],"Cover":[""],"Contain":[""],"Fill":[""],"Inherit":[""],"Initial":[""],"Revert":[""],"Scale-down":[""],"Unset":[""],"Bundle":[""],"Item View":[""],"Show stock":[""],"Show product Stock availability in modal.":[""],"Show rating":[""],"Show product rating in modal.":[""],"Show description(on hover)":[""],"Show product description when mouse hover over it.":[""],"Prepend parent name":[""],"Prepend the parent name to the item name in the cart and order.":[""],"Hide out of stock":[""],"Hide out of stock products.":[""],"Show price in cart":[""],"Product bundle items price visibility in cart and checkout.":[""],"Show products list":[""],"Show products list below products bundle.":[""],"Show total price":[""],"Show the total price of the selected items below the products list.":[""],"Show saved money":[""],"Show the saved money when calculating the total price.":[""],"Show modal quick view":[""],"Show product quick view icon in modal.":[""],"Show selected product quick view":[""],"Show product quick view icon in the selected product.":[""],"Quantity field on item":[""],"Show quantity field on item.":[""],"Show plus icon":[""],"Show plus icon between items.":[""],"Disable popup":[""],"Disable popup for items that have only one product.":[""],"Theme":[""],"Grid 1":[""],"Grid 2":[""],"List 1":[""],"List 2":[""],"Size":[""],"Small":[""],"Medium":[""],"Large":[""],"Optional item mode":[""],"Checkbox":[""],"Delete button":[""],"Product bundle price on shop page":[""],"Total price":[""],"From total price":[""],"From min price":[""],"Set how to show the product bundle price on the shop page.":[""],"Item price":[""],"Product price":[""],"Product subtotal":[""],"Set how to show the product price in item.":[""],"Product list price":[""],"Set how to show the product price in product list.":[""],"Link to product":[""],"New tab":[""],"No link":[""],"Show the product change modal":[""],"Click on product in pop-up":[""],"Product selection":[""],"Show product details":[""],"Coupon apply method":[""],"Both of bundle and bundle items":[""],"On bundle":[""],"On bundle items":[""],"None of bundle and bundle items":[""],"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".":[""],"Cart contents count":[""],"Bundle items":[""],"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".":[""],"Product price selector":[""],"Add to cart button selector":[""],"Change product modal":[""],"Number of products per page":[""],"Styles":[""],"Save Changes":[""],"License Key":[""],"Enter Your License Key":[""],"Notice":[""],"Each website using this plugin needs a legal license (1 license = 1 website).":[""],"You can find more information on":[""],"software license agreement":[""],"If you need to buy a new license of this plugin":[""],"click here.":[""],"Where can I find my license key?":[""],"There was an error on getting settings.":[""],"Data is required.":[""],"There was an error on saving settings.":[""],"There was an error on applying review.":[""],"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.":[""],"OK, you deserve it!":[""],"I already did":[""],"Maybe Later":[""],"I need help":[""],"Never show again":[""],"Apps you might like":[""],"Active Installations":[""],"Free Version":[""],"Buy Pro":[""],"Saved Successfully.":[""],"There was an error on saving the settings.":[""],"Apps":[""],"Enable Updates":[""],"Articles":[""],"Video Tutorials":[""],"Get Support":[""]}}}
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/admin/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "ru_RU",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Settings": [ "Настройки" ],
+			"Go Pro": [ "Перейти на PRO версию" ],
+			"PRO Version": [ "PRO версия" ],
+			"Action is required.": [ "" ],
+			"Bundle position": [ "Позиция пакета" ],
+			"Before Add to Cart button": [ "Перед кнопкой Добавить в корзину" ],
+			"After Add to Cart button": [ "После кнопки Добавить в корзину" ],
+			"Before Add to Cart form": [ "Перед формой добавления в корзину" ],
+			"After Add to Cart form": [ "После формы добавления в корзину" ],
+			"Before product excerpt": [ "перед продуктом Выдержка" ],
+			"After product excerpt": [ "После продуктом Выдержка" ],
+			"After product meta": [ "После мета товара" ],
+			"Before CSS selector": [ "Перед селектором CSS" ],
+			"After CSS selector": [ "После селектора CSS" ],
+			"product bundle position in product page.": [
+				"Позиция пакета товара на странице товара."
+			],
+			"CSS Selector": [ "Селектор CSS" ],
+			"Bundle": [ "Пакет" ],
+			"Item View": [ "Просмотр элемента" ],
+			"Show stock": [ "Показать наличие" ],
+			"Show product Stock availability in modal.": [
+				"Показать наличие товара в модальном окне."
+			],
+			"Show rating": [ "Показать рейтинг" ],
+			"Show product rating in modal.": [
+				"Показывать рейтинг товара в модальном окне."
+			],
+			"Show description(on hover)": [
+				"Показывать описание (при наведении)"
+			],
+			"Show product description when mouse hover over it.": [
+				"Показывать описание товара при наведении мыши."
+			],
+			"Show price in cart": [ "Показывать цену в корзине." ],
+			"(Pro)": [ "" ],
+			"Product bundle items price visibility in cart and checkout.": [
+				"Видимость цены товаров в пакете в корзине и на странице оформления заказа."
+			],
+			"Show products list": [ "Показать список товаров" ],
+			"Show products list below products bundle.": [
+				"Показывать список товаров под пакетом товаров."
+			],
+			"Show total price": [ "Показать общую стоимость" ],
+			"Show the total price of the selected items below the products list.": [
+				"Показывать общую стоимость выбранных товаров под списком товаров."
+			],
+			"Show saved money": [ "Показать сохраненные деньги" ],
+			"Show the saved money when calculating the total price.": [
+				"Показать сохраненные деньги при расчете общей стоимости."
+			],
+			"Theme": [ "Тема" ],
+			"Grid 1": [ "Сетка 1" ],
+			"Grid 2": [ "Сетка 2" ],
+			"List 1": [ "Список 1" ],
+			"List 2": [ "Список 2" ],
+			"Size": [ "Размер" ],
+			"Small": [ "Маленький" ],
+			"Medium": [ "Средний" ],
+			"Large": [ "Большой" ],
+			"Product bundle price on shop page": [
+				"Цена комплекта товара на странице магазина"
+			],
+			"Total price": [ "Итоговая цена" ],
+			"From total price": [ "От общей стоимости" ],
+			"From min price": [ "От мин. цены" ],
+			"Set how to show the product bundle price on the shop page.": [
+				"Настройте способ отображения цены набора товаров на странице магазина."
+			],
+			"Link to product": [ "Ссылка на товар" ],
+			"New tab": [ "Новая вкладка" ],
+			"No link": [ "Без ссылки" ],
+			"Show the product change modal": [
+				"Показать модальное окно изменения продукта"
+			],
+			"Coupon apply method": [ "Метод применения купона" ],
+			"Both of bundle and bundle items": [
+				"Оба: связки и товары в связке"
+			],
+			"On bundle": [ "На связке" ],
+			"On bundle items": [ "На товарах в связке" ],
+			"None of bundle and bundle items": [
+				"Ни связки, ни товары в связке"
+			],
+			"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".": [
+				"Метод применения купонов на основе продуктов. Можно применять на \"связке\", \"товарах в связке\", \"обоих\" или \"ни на чем\"."
+			],
+			"Cart contents count": [ "Количество товаров в корзине" ],
+			"Bundle items": [ "Товары в связке" ],
+			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
+				"Как считать товары в связке в корзине? Считать как \"связку и ее товары\", \"только связку\" или \"только товары в связке\"."
+			],
+			"Change product modal": [ "Изменить модальное окно продукта" ],
+			"Number of products per page": [ "Количество товаров на странице" ],
+			"Styles": [ "Стили" ],
+			"Product title color": [ "Цвет названия продукта" ],
+			"Bundle title color": [ "Цвет заголовка связки" ],
+			"Product crossed out price color": [
+				"Товар перечеркнут цвет цены"
+			],
+			"Product sale price color": [ "Цвет цены продажи продукта" ],
+			"Empty item title color": [ "Цвет заголовка пустого элемента" ],
+			"Empty item title hover color": [
+				"Цвет заголовка пустого элемента при наведении"
+			],
+			"Modal header color": [ "Цвет заголовка модального окна" ],
+			"Product image object-fit": [ "Изображение продукта object-fit" ],
+			"Cover": [ "" ],
+			"Contain": [ "" ],
+			"Fill": [ "" ],
+			"Inherit": [ "" ],
+			"Initial": [ "" ],
+			"None": [ "" ],
+			"Revert": [ "" ],
+			"Scale-down": [ "" ],
+			"Unset": [ "" ],
+			"Save Changes": [ "Сохранить изменения" ],
+			"License Key": [ "Лицензионный ключ" ],
+			"Enter Your License Key": [ "Введите ваш лицензионный ключ" ],
+			"Notice": [ "Примечание" ],
+			"Each website using this plugin needs a legal license (1 license = 1 website).": [
+				"Каждый сайт, использующий данный плагин, требует легальной лицензии (1 лицензия = 1 сайт)."
+			],
+			"You can find more information on": [
+				"Вы можете найти более подробную информацию на"
+			],
+			"software license agreement": [
+				"лицензионном соглашении на программное обеспечение"
+			],
+			"If you need to buy a new license of this plugin": [
+				"Если вам нужно купить новую лицензию на этот плагин"
+			],
+			"click here.": [ "нажмите здесь." ],
+			"Where can I find my license key?": [
+				"Где я могу найти мой лицензионный ключ?"
+			],
+			"There was an error on getting settings.": [ "" ],
+			"Data is required.": [ "" ],
+			"There was an error on saving settings.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				"Мы надеемся, что вам нравится %1$s! %3$s Не могли бы вы оказать нам большую услугу и оценить нас на %2$s, чтобы помочь нам распространить слово и усилить нашу мотивацию?%4$s %5$sПоделитесь своими запросами функций%6$s с помощью обзора. Мы всегда их проверяем и стараемся сделать все возможное."
+			],
+			"OK, you deserve it!": [ "ОК, вы этого заслуживаете!" ],
+			"I already did": [ "Я уже оценил" ],
+			"Maybe Later": [ "Возможно позже" ],
+			"I need help": [ "Мне нужна помощь" ],
+			"Never show again": [ "Больше не показывать" ],
+			"Saved Successfully.": [ "Успешно сохранено." ],
+			"There was an error on saving the settings.": [ "" ],
+			"Enable Updates": [ "Включить обновления" ],
+			"Back default color": [ "Вернуть цвет по умолчанию" ],
+			"Optional badge color": [ "Цвет необязательным значка" ],
+			"Prepend parent name": [ "Добавить имя родителя" ],
+			"Prepend the parent name to the item name in the cart and order.": [
+				"Добавить родительское имя в начало имени элемента в корзине и заказе."
+			],
+			"Hide out of stock": [ "Скрыть нет в наличии" ],
+			"Hide out of stock products.": [
+				"Скрыть товары, которых нет в наличии."
+			],
+			"Show modal quick view": [ "Показать модальный быстрый просмотр" ],
+			"Show product quick view icon in modal.": [
+				"Показать иконку быстрого просмотра товара в модальном окне."
+			],
+			"Show selected product quick view": [
+				"Показать быстрый просмотр выбранного товара"
+			],
+			"Show product quick view icon in the selected product.": [
+				"Показать иконку быстрого просмотра товара в выбранном товаре."
+			],
+			"Optional badge title color": [
+				"Цвет названия необязательной метки"
+			],
+			"Quick view icon color": [ "Цвет иконки быстрого просмотра" ],
+			"Images icon color": [ "Цвет иконки изображений" ],
+			"Product price selector": [ "Селектор цены продукта" ],
+			"Product list price": [ "Цена в списке продуктов" ],
+			"Product subtotal": [ "Промежуточная сумма продукта" ],
+			"Product price": [ "Цена продукта" ],
+			"Set how to show the product price in the product list.": [
+				"Установите, как показывать цену продукта в списке продуктов."
+			],
+			"Quantity field on item": [ "Поле количества на товаре" ],
+			"Show quantity field on item.": [
+				"Показать поле количества на товаре"
+			],
+			"Item price": [ "Цена товара" ],
+			"Set how to show the product price in item.": [
+				"Установить, как показывать цену товара на товаре"
+			],
+			"Show plus icon": [ "Показать значок плюс" ],
+			"Quick view button color": [ "Цвет кнопки быстрого просмотра" ],
+			"Quick view button text color": [
+				"Цвет текста кнопки быстрого просмотра"
+			],
+			"Show plus icon between items.": [
+				"Показать значок плюс между элементами"
+			],
+			"Plus icon color": [ "Цвет значка плюс" ],
+			"Click on product in pop-up": [
+				"Нажмите на продукт во всплывающем окне"
+			],
+			"Product selection": [ "Выбор продукта" ],
+			"Show product details": [ "Показать детали продукта" ],
+			"Quantity field buttons hover color": [
+				"Цвет кнопок поля количества при наведении"
+			],
+			"Add to cart button selector": [
+				"Селектор кнопки Добавить в корзину"
+			],
+			"Alert message color": [ "Цвет сообщения предупреждения" ],
+			"Alert message background color": [
+				"Цвет фона сообщения предупреждения"
+			],
+			"Disable popup": [ "Отключить всплывающее окно" ],
+			"Disable popup for items that have only one product.": [
+				"Отключить всплывающее окно для товаров, у которых есть только один продукт."
+			],
+			"Optional item mode": [ "Режим необязательного элемента" ],
+			"Checkbox": [ "Поле выбора" ],
+			"Delete button": [ "Кнопка удаления" ],
+			"Total price - sale price color": [
+				"Общая цена - цвет цены со скидкой"
+			],
+			"Total price - crossed out price color": [
+				"Общая цена - цвет зачеркнутой цены"
+			],
+			"Total price - saved amount color": [
+				"Общая цена - цвет сэкономленной суммы"
+			],
+			"Total price - saved amount background color": [
+				"Общая цена - цвет фона сэкономленной суммы"
+			]
+		}
+	}
+}

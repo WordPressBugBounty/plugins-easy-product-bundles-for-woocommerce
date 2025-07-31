@@ -1,1 +1,194 @@
-{"translation-revision-date":"2025-07-22 17:22+0330","generator":"WP-CLI\/2.11.0","source":"assets\/js\/admin\/product\/index.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"hi","plural-forms":"nplurals=2; plural=(n==0 || n==1);"},"Please select a product!":[""],"Please select your product!":[""],"Please select your product":[""],"Type is required.":[""],"Action is required.":[""],"PRO Version":[""],"Theme":[""],"Grid 1":[""],"Grid 2":[""],"List 1":[""],"List 2":[""],"Size":[""],"Small":[""],"Medium":[""],"Large":[""],"Data is required.":[""],"There was an error on applying review.":[""],"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.":[""],"OK, you deserve it!":[""],"I already did":[""],"Maybe Later":[""],"I need help":[""],"Never show again":[""],"Items are required.":[""],"There was an error on getting items.":[""],"Search value is required.":[""],"There was an error on searching items.":[""],"Optional":[""],"Check this option to make the bundle item optional to choose by the user":[""],"Selected":[""],"Enable this field to make the optional item selected in the frontend.":[""],"Default product":[""],"Set a default product":[""],"Products":[""],"Add products or Variations":[""],"Exclude products":[""],"Select a product that you do not want to be displayed":[""],"Categories":[""],"Select the category product that you want to be displayed in this bundle item":[""],"Exclude categories":[""],"Select the category product that you do not want to be displayed in this bundle item":[""],"Tags":[""],"Select the product with tags to display in this bundle item":[""],"Exclude tags":[""],"Select the product with tags that you do not want to be displayed in the bundle item":[""],"Categories and Tags relation":[""],"Match at least one":[""],"Match both":[""],"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.":[""],"Sort products":[""],"ID":[""],"Title":[""],"Menu order":[""],"Date":[""],"Price":[""],"Popularity":[""],"Rating":[""],"Ascending":[""],"Descending":[""],"Set the order of products in the pop-up":[""],"Quantity":[""],"Set the default product quantity":[""],"Edit quantity by user":[""],"Check this option to allow the user to change the bundle item quantity":[""],"Min quantity":[""],"Set the minimum quantity of this bundled product":[""],"Max quantity":[""],"Set the maximum quantity of this bundled product":[""],"Discount":[""],"Percentage":[""],"Fixed price":[""],"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price":[""],"Default Image":[""],"No image chosen":[""],"Upload Image":[""],"Set an image for empty item.":[""],"Overwrite bundle item title":[""],"Short description":[""],"Overwrite bundle item short description.(Show when the mouse hovers over it)":[""],"Product selection title":[""],"Change the title of the bundle empty item.":[""],"Product list title":[""],"Change the product list product selection title.":[""],"Modal header title":[""],"Change the pop-up header title":[""],"Duplicate":[""],"Duplicate: Pro version":[""],"Trash":[""],"General":[""],"Display":[""],"Individual theme":[""],"GO PRO":[""],"Need help?":[""],"If checked, disable auto calculate price and use product price as bundle price.":[""],"Please enable fixed price first.":[""],"Click here to set price":[""],"Include parent price":[""],"Include the parent product price in the bundle total price. (parent price + selected items price)":[""],"Sync stock quantity":[""],"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.":[""],"Hide products price":[""],"No":[""],"Yes":[""],"Only regular price":[""],"Shipping fee":[""],"Apply to the whole bundle":[""],"Apply to each bundle item":[""],"Min items quantity":[""],"Set the minimum total quantity of bundled items.":[""],"Max items quantity":[""],"Set the maximum total quantity of bundled items.":[""],"Custom display price":[""],"Product display price in frontend. E.g: From 10$ To 20$":[""],"A title for the bundle product that will be shown on top of bundle items.":[""],"Bundle description":[""],"Create a description for product bundle.":[""],"Add Item":[""]}}}
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.11.0",
+	"source": "assets/js/admin/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "hi_IN",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Please select a product!": [ "कृपया एक उत्पाद चुनें!" ],
+			"Please select your product!": [ "कृपया अपना उत्पाद चुनें!" ],
+			"Please select your product": [ "कृपया अपना उत्पाद चुनें" ],
+			"Type is required.": [ "" ],
+			"Action is required.": [ "" ],
+			"PRO Version": [ "प्रो संस्करण" ],
+			"Theme": [ "थीम" ],
+			"Grid 1": [ "ग्रिड 1" ],
+			"Grid 2": [ "ग्रिड 2" ],
+			"List 1": [ "सूची 1" ],
+			"List 2": [ "सूची 2" ],
+			"Size": [ "आकार" ],
+			"Small": [ "छोटा" ],
+			"Medium": [ "मध्यम" ],
+			"Large": [ "बड़ा" ],
+			"Data is required.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				""
+			],
+			"OK, you deserve it!": [ "" ],
+			"I already did": [ "" ],
+			"Maybe Later": [ "" ],
+			"I need help": [ "" ],
+			"Never show again": [ "" ],
+			"Items are required.": [ "" ],
+			"There was an error on getting items.": [ "" ],
+			"Search value is required.": [ "" ],
+			"There was an error on searching items.": [ "" ],
+			"Optional": [ "वैकल्पिक" ],
+			"Check this option to make the bundle item optional to choose by the user": [
+				"इस विकल्प को चेक करें ताकि उपयोगकर्ता द्वारा बंडल आइटम को वैकल्पिक रूप से चुना जा सके।"
+			],
+			"Default product": [ "डिफ़ॉल्ट उत्पाद" ],
+			"Set a default product": [ "एक डिफ़ॉल्ट उत्पाद सेट करें" ],
+			"Products": [ "उत्पाद" ],
+			"Add products or Variations": [ "उत्पाद या विविधताएँ जोड़ें" ],
+			"Exclude products": [ "उत्पाद बाहर करें" ],
+			"Select a product that you do not want to be displayed": [
+				"ऐसा उत्पाद चुनें जिसे आप प्रदर्शित नहीं करना चाहते।"
+			],
+			"Categories": [ "श्रेणियाँ" ],
+			"Select the category product that you want to be displayed in this bundle item": [
+				"उस श्रेणी के उत्पाद का चयन करें जिसे आप इस बंडल आइटम में प्रदर्शित करना चाहते हैं।"
+			],
+			"Exclude categories": [ "श्रेणियाँ बाहर करें" ],
+			"Select the category product that you do not want to be displayed in this bundle item": [
+				"उस श्रेणी के उत्पाद का चयन करें जिसे आप इस बंडल आइटम में प्रदर्शित नहीं करना चाहते।"
+			],
+			"Tags": [ "टैग्स" ],
+			"Select the product with tags to display in this bundle item": [
+				"इस बंडल आइटम में प्रदर्शित करने के लिए टैग्स के साथ उत्पाद चुनें।"
+			],
+			"Exclude tags": [ "टैग्स बाहर करें" ],
+			"Select the product with tags that you do not want to be displayed in the bundle item": [
+				"ऐसे टैग्स वाले उत्पाद का चयन करें जिसे आप बंडल आइटम में प्रदर्शित नहीं करना चाहते।"
+			],
+			"Categories and Tags relation": [ "श्रेणियाँ और टैग्स का संबंध" ],
+			"Match at least one": [ "कम से कम एक से मेल खाएं" ],
+			"Match both": [ "दोनों से मेल खाएं" ],
+			"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.": [
+				"कम से कम एक से मेल खाएं: उत्पादों को श्रेणियों या टैग्स में से कम से कम एक से मेल खाना चाहिए।%sदोनों से मेल खाएं: उत्पादों को श्रेणियों और टैग्स दोनों से मेल खाना चाहिए।"
+			],
+			"Sort products": [ "उत्पाद क्रमबद्ध करें" ],
+			"ID": [ "आईडी" ],
+			"Title": [ "शीर्षक" ],
+			"Menu order": [ "मेनू क्रम" ],
+			"Date": [ "तारीख" ],
+			"Price": [ "मूल्य" ],
+			"Popularity": [ "लोकप्रियता" ],
+			"Rating": [ "रेटिंग" ],
+			"Ascending": [ "आरोही" ],
+			"Descending": [ "अवरोही" ],
+			"Set the order of products in the pop-up": [
+				"पॉप-अप में उत्पादों का क्रम सेट करें"
+			],
+			"Quantity": [ "मात्रा" ],
+			"Set the default product quantity": [
+				"डिफ़ॉल्ट उत्पाद मात्रा सेट करें"
+			],
+			"Edit quantity by user": [
+				"उपयोगकर्ता द्वारा मात्रा संपादित करें"
+			],
+			"Check this option to allow the user to change the bundle item quantity": [
+				"उपयोगकर्ता को बंडल आइटम की मात्रा बदलने की अनुमति देने के लिए इस विकल्प को चेक करें।"
+			],
+			"Min quantity": [ "न्यूनतम मात्रा" ],
+			"Set the minimum quantity of this bundled product": [
+				"इस बंडल उत्पाद की न्यूनतम मात्रा सेट करें"
+			],
+			"Max quantity": [ "अधिकतम मात्रा" ],
+			"Set the maximum quantity of this bundled product": [
+				"इस बंडल उत्पाद की अधिकतम मात्रा सेट करें"
+			],
+			"Discount": [ "छूट" ],
+			"Percentage": [ "प्रतिशत" ],
+			"Fixed price": [ "नियत मूल्य" ],
+			"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price": [
+				"बंडल उत्पाद की कीमत पर छूट लागू की जाती है। यदि बंडल उत्पाद का बिक्री मूल्य है, तो छूट बिक्री मूल्य के ऊपर लागू की जाती है।"
+			],
+			"Default Image": [ "डिफ़ॉल्ट चित्र" ],
+			"No image chosen": [ "कोई चित्र नहीं चुना गया" ],
+			"Upload Image": [ "चित्र अपलोड करें" ],
+			"Set an image for empty item.": [
+				"खाली आइटम के लिए एक चित्र सेट करें।"
+			],
+			"Overwrite bundle item title": [
+				"बंडल आइटम का शीर्षक ओवरराइट करें"
+			],
+			"Short description": [ "संक्षिप्त विवरण" ],
+			"Overwrite bundle item short description.(Show when the mouse hovers over it)": [
+				"बंडल आइटम का संक्षिप्त विवरण ओवरराइट करें। (जब माउस इसे होवर करता है तो दिखाएं)"
+			],
+			"Product selection title": [ "उत्पाद चयन शीर्षक" ],
+			"Change the title of the bundle empty item.": [
+				"बंडल खाली आइटम का शीर्षक बदलें।"
+			],
+			"Product list title": [ "उत्पाद सूची शीर्षक" ],
+			"Change the product list product selection title.": [
+				"उत्पाद सूची के चयन शीर्षक को बदलें।"
+			],
+			"Modal header title": [ "पॉपअप हेडर शीर्षक" ],
+			"Change the pop-up header title": [ "पॉप-अप हेडर शीर्षक बदलें" ],
+			"Duplicate": [ "नकल करें" ],
+			"Duplicate: Pro version": [ "नकल करें: प्रो संस्करण" ],
+			"Trash": [ "कचरा" ],
+			"General": [ "सामान्य" ],
+			"Display": [ "प्रदर्शन" ],
+			"Individual theme": [ "व्यक्तिगत थीम" ],
+			"GO PRO": [ "प्रो में जाएं" ],
+			"Need help?": [ "मदद चाहिए?" ],
+			"If checked, disable auto calculate price and use product price as bundle price.": [
+				"यदि चेक किया गया, तो स्वचालित मूल्य गणना को अक्षम करें और बंडल मूल्य के रूप में उत्पाद मूल्य का उपयोग करें।"
+			],
+			"Please enable fixed price first.": [
+				"कृपया पहले नियत मूल्य सक्षम करें।"
+			],
+			"Click here to set price": [
+				"मूल्य सेट करने के लिए यहां क्लिक करें"
+			],
+			"Include parent price": [ "मूल उत्पाद की कीमत शामिल करें" ],
+			"Include the parent product price in the bundle total price. (parent price + selected items price)": [
+				"बंडल कुल मूल्य में मूल उत्पाद मूल्य शामिल करें। (मूल मूल्य + चयनित आइटम का मूल्य)"
+			],
+			"Hide products price": [ "उत्पाद मूल्य छिपाएं" ],
+			"No": [ "नहीं" ],
+			"Yes": [ "हां" ],
+			"Only regular price": [ "केवल नियमित मूल्य" ],
+			"Shipping fee": [ "शिपिंग शुल्क" ],
+			"Apply to the whole bundle": [ "पूरे बंडल पर लागू करें" ],
+			"Apply to each bundle item": [ "प्रत्येक बंडल आइटम पर लागू करें" ],
+			"Min items quantity": [ "न्यूनतम आइटम मात्रा" ],
+			"Set the minimum total quantity of bundled items.": [
+				"बंडल किए गए आइटम की न्यूनतम कुल मात्रा सेट करें।"
+			],
+			"Max items quantity": [ "अधिकतम आइटम मात्रा" ],
+			"Set the maximum total quantity of bundled items.": [
+				"बंडल किए गए आइटम की अधिकतम कुल मात्रा सेट करें।"
+			],
+			"Custom display price": [ "कस्टम डिस्प्ले मूल्य" ],
+			"Product display price in frontend. E.g: From 10$ To 20$": [
+				"फ्रंटेंड में उत्पाद का डिस्प्ले मूल्य। उदाहरण: 10$ से 20$ तक"
+			],
+			"A title for the bundle product that will be shown on top of bundle items.": [
+				"बंडल उत्पाद के लिए एक शीर्षक जो बंडल आइटम्स के ऊपर दिखाई देगा।"
+			],
+			"Add Item": [ "आइटम जोड़ें" ],
+			"Bundle description": [ "बंडल विवरण" ],
+			"Create a description for product bundle.": [
+				"उत्पाद बंडल के लिए विवरण बनाएं।"
+			],
+			"Sync stock quantity": [ "स्टॉक मात्रा सिंक करें" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"बंडल स्टॉक मात्रा को चाइल्ड उत्पादों की स्टॉक मात्रा के आधार पर अपडेट करें। नोट: यह सुविधा केवल तब काम करती है जब प्रत्येक आइटम में एक ही उत्पाद हो, जिसे डिफ़ॉल्ट उत्पाद क्षेत्र में जोड़ा गया हो और यह वैकल्पिक न हो।"
+			],
+			"Selected": [ "चयनित" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"इस फ़ील्ड को सक्षम करें ताकि वैकल्पिक आइटम को फ्रंटेंड में चयनित किया जा सके।"
+			]
+		}
+	}
+}

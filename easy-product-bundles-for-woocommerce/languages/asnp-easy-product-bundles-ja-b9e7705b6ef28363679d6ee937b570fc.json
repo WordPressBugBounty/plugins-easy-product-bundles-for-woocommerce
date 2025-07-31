@@ -1,1 +1,223 @@
-{"translation-revision-date":"2025-07-22 17:33+0330","generator":"WP-CLI\/2.11.0","source":"assets\/js\/admin\/admin\/index.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"ja","plural-forms":"nplurals=1; plural=0;"},"Settings":[""],"Go Pro":[""],"Action is required.":[""],"PRO Version":[""],"Bundle position":[""],"Before Add to Cart button":[""],"After Add to Cart button":[""],"Before Add to Cart form":[""],"After Add to Cart form":[""],"Before product excerpt":[""],"After product excerpt":[""],"After product meta":[""],"None":[""],"Before CSS selector":[""],"After CSS selector":[""],"product bundle position in product page.":[""],"CSS Selector":[""],"(Pro)":[""],"Back default color":[""],"Product image object-fit":[""],"Cover":[""],"Contain":[""],"Fill":[""],"Inherit":[""],"Initial":[""],"Revert":[""],"Scale-down":[""],"Unset":[""],"Bundle":[""],"Item View":[""],"Show stock":[""],"Show product Stock availability in modal.":[""],"Show rating":[""],"Show product rating in modal.":[""],"Show description(on hover)":[""],"Show product description when mouse hover over it.":[""],"Prepend parent name":[""],"Prepend the parent name to the item name in the cart and order.":[""],"Hide out of stock":[""],"Hide out of stock products.":[""],"Show price in cart":[""],"Product bundle items price visibility in cart and checkout.":[""],"Show products list":[""],"Show products list below products bundle.":[""],"Show total price":[""],"Show the total price of the selected items below the products list.":[""],"Show saved money":[""],"Show the saved money when calculating the total price.":[""],"Show modal quick view":[""],"Show product quick view icon in modal.":[""],"Show selected product quick view":[""],"Show product quick view icon in the selected product.":[""],"Quantity field on item":[""],"Show quantity field on item.":[""],"Show plus icon":[""],"Show plus icon between items.":[""],"Disable popup":[""],"Disable popup for items that have only one product.":[""],"Theme":[""],"Grid 1":[""],"Grid 2":[""],"List 1":[""],"List 2":[""],"Size":[""],"Small":[""],"Medium":[""],"Large":[""],"Optional item mode":[""],"Checkbox":[""],"Delete button":[""],"Product bundle price on shop page":[""],"Total price":[""],"From total price":[""],"From min price":[""],"Set how to show the product bundle price on the shop page.":[""],"Item price":[""],"Product price":[""],"Product subtotal":[""],"Set how to show the product price in item.":[""],"Product list price":[""],"Set how to show the product price in product list.":[""],"Link to product":[""],"New tab":[""],"No link":[""],"Show the product change modal":[""],"Click on product in pop-up":[""],"Product selection":[""],"Show product details":[""],"Coupon apply method":[""],"Both of bundle and bundle items":[""],"On bundle":[""],"On bundle items":[""],"None of bundle and bundle items":[""],"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".":[""],"Cart contents count":[""],"Bundle items":[""],"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".":[""],"Product price selector":[""],"Add to cart button selector":[""],"Change product modal":[""],"Number of products per page":[""],"Styles":[""],"Save Changes":[""],"License Key":[""],"Enter Your License Key":[""],"Notice":[""],"Each website using this plugin needs a legal license (1 license = 1 website).":[""],"You can find more information on":[""],"software license agreement":[""],"If you need to buy a new license of this plugin":[""],"click here.":[""],"Where can I find my license key?":[""],"There was an error on getting settings.":[""],"Data is required.":[""],"There was an error on saving settings.":[""],"There was an error on applying review.":[""],"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.":[""],"OK, you deserve it!":[""],"I already did":[""],"Maybe Later":[""],"I need help":[""],"Never show again":[""],"Apps you might like":[""],"Active Installations":[""],"Free Version":[""],"Buy Pro":[""],"Saved Successfully.":[""],"There was an error on saving the settings.":[""],"Apps":[""],"Enable Updates":[""],"Articles":[""],"Video Tutorials":[""],"Get Support":[""]}}}
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/admin/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "ja",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Settings": [ "設定" ],
+			"Go Pro": [ "プロ版に移行" ],
+			"Action is required.": [ "" ],
+			"PRO Version": [ "プロバージョン" ],
+			"Bundle position": [ "バンドルの位置" ],
+			"Before Add to Cart button": [ "カートに追加ボタンの前" ],
+			"After Add to Cart button": [ "カートに追加ボタンの後" ],
+			"Before Add to Cart form": [ "カートに追加フォームの前" ],
+			"After Add to Cart form": [ "カートに追加フォームの後" ],
+			"Before product excerpt": [ "製品の抜粋の前" ],
+			"After product excerpt": [ "製品の抜粋の後" ],
+			"After product meta": [ "製品メタの後" ],
+			"None": [ "なし" ],
+			"Before CSS selector": [ "CSSセレクターの前" ],
+			"After CSS selector": [ "CSSセレクターの後" ],
+			"product bundle position in product page.": [
+				"製品ページ内のバンドルの位置。"
+			],
+			"CSS Selector": [ "CSSセレクター" ],
+			"Bundle": [ "バンドル" ],
+			"Item View": [ "アイテムビュー" ],
+			"Show stock": [ "在庫を表示" ],
+			"Show product Stock availability in modal.": [
+				"モーダルで製品の在庫状況を表示。"
+			],
+			"Show rating": [ "評価を表示" ],
+			"Show product rating in modal.": [ "モーダルで製品の評価を表示。" ],
+			"Show description(on hover)": [ "説明を表示（ホバー時）" ],
+			"Show product description when mouse hover over it.": [
+				"マウスがホバーすると製品の説明を表示。"
+			],
+			"Prepend parent name": [ "親の名前を前に追加" ],
+			"Prepend the parent name to the item name in the cart and order.": [
+				"カートと注文でアイテム名の前に親の名前を追加。"
+			],
+			"Hide out of stock": [ "在庫切れを非表示" ],
+			"(Pro)": [ "（プロ版）" ],
+			"Hide out of stock products.": [ "在庫切れ製品を非表示。" ],
+			"Show price in cart": [ "カートに価格を表示" ],
+			"Product bundle items price visibility in cart and checkout.": [
+				"カートとチェックアウトでバンドルアイテムの価格表示。"
+			],
+			"Show products list": [ "製品リストを表示" ],
+			"Show products list below products bundle.": [
+				"バンドル製品の下に製品リストを表示。"
+			],
+			"Show total price": [ "合計価格を表示" ],
+			"Show the total price of the selected items below the products list.": [
+				"製品リストの下に選択したアイテムの合計価格を表示。"
+			],
+			"Show saved money": [ "節約した金額を表示" ],
+			"Show the saved money when calculating the total price.": [
+				"合計価格を計算する際に節約した金額を表示。"
+			],
+			"Show modal quick view": [ "モーダルのクイックビューを表示" ],
+			"Show product quick view icon in modal.": [
+				"モーダルで製品のクイックビューアイコンを表示。"
+			],
+			"Show selected product quick view": [
+				"選択した製品のクイックビューを表示"
+			],
+			"Show product quick view icon in the selected product.": [
+				"選択した製品にクイックビューアイコンを表示。"
+			],
+			"Quantity field on item": [ "アイテムの数量フィールド" ],
+			"Show quantity field on item.": [
+				"アイテムに数量フィールドを表示。"
+			],
+			"Show plus icon": [ "プラスアイコンを表示" ],
+			"Show plus icon between items.": [
+				"アイテム間にプラスアイコンを表示。"
+			],
+			"Theme": [ "テーマ" ],
+			"Grid 1": [ "グリッド 1" ],
+			"Grid 2": [ "グリッド 2" ],
+			"List 1": [ "リスト 1" ],
+			"List 2": [ "リスト 2" ],
+			"Size": [ "サイズ" ],
+			"Small": [ "小" ],
+			"Medium": [ "中" ],
+			"Large": [ "大" ],
+			"Product bundle price on shop page": [
+				"ショップページでのバンドル価格"
+			],
+			"Total price": [ "合計価格" ],
+			"From total price": [ "合計価格から" ],
+			"From min price": [ "最小価格から" ],
+			"Set how to show the product bundle price on the shop page.": [
+				"ショップページでバンドル価格を表示する方法を設定。"
+			],
+			"Item price": [ "アイテム価格" ],
+			"Product price": [ "製品価格" ],
+			"Product subtotal": [ "製品小計" ],
+			"Set how to show the product price in item.": [
+				"アイテム内の製品価格の表示方法を設定。"
+			],
+			"Product list price": [ "製品リスト価格" ],
+			"Set how to show the product price in product list.": [
+				"製品リスト内の製品価格の表示方法を設定。"
+			],
+			"Link to product": [ "製品へのリンク" ],
+			"New tab": [ "新しいタブ" ],
+			"No link": [ "リンクなし" ],
+			"Show the product change modal": [ "製品変更モーダルを表示" ],
+			"Click on product in pop-up": [ "ポップアップ内の製品をクリック" ],
+			"Product selection": [ "製品選択" ],
+			"Show product details": [ "製品の詳細を表示" ],
+			"Coupon apply method": [ "クーポン適用方法" ],
+			"Both of bundle and bundle items": [
+				"バンドルとバンドルアイテムの両方"
+			],
+			"On bundle": [ "バンドルに" ],
+			"On bundle items": [ "バンドルアイテムに" ],
+			"None of bundle and bundle items": [
+				"バンドルとバンドルアイテムのいずれでもない"
+			],
+			"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".": [
+				"製品ベースのクーポン適用方法。「バンドル」、「バンドルアイテム」、「両方」、または「なし」に適用できます。"
+			],
+			"Cart contents count": [ "カート内容のカウント" ],
+			"Bundle items": [ "バンドルアイテム" ],
+			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
+				"カート内のバンドル製品をどのようにカウントしますか？「バンドルとそのアイテムの両方」または「バンドルのみ」または「バンドルアイテムのみ」をカウントします。"
+			],
+			"Product price selector": [ "製品価格セレクター" ],
+			"Change product modal": [ "製品変更モーダル" ],
+			"Number of products per page": [ "1ページあたりの製品数" ],
+			"Styles": [ "スタイル" ],
+			"Product title color": [ "製品タイトルの色" ],
+			"Back default color": [ "デフォルトの色に戻す" ],
+			"Bundle title color": [ "バンドルタイトルの色" ],
+			"Product crossed out price color": [ "製品の取り消し線価格の色" ],
+			"Product sale price color": [ "製品のセール価格の色" ],
+			"Empty item title color": [ "空のアイテムのタイトルの色" ],
+			"Empty item title hover color": [
+				"空のアイテムのタイトルのホバー色"
+			],
+			"Modal header color": [ "モーダルヘッダーの色" ],
+			"Optional badge color": [ "オプションバッジの色" ],
+			"Optional badge title color": [ "オプションバッジのタイトルの色" ],
+			"Quick view icon color": [ "クイックビューアイコンの色" ],
+			"Images icon color": [ "画像アイコンの色" ],
+			"Plus icon color": [ "プラスアイコンの色" ],
+			"Quick view button color": [ "クイックビューボタンの色" ],
+			"Quick view button text color": [
+				"クイックビューボタンのテキストの色"
+			],
+			"Product image object-fit": [ "製品画像のobject-fit" ],
+			"Cover": [ "" ],
+			"Contain": [ "" ],
+			"Fill": [ "" ],
+			"Inherit": [ "" ],
+			"Initial": [ "" ],
+			"Revert": [ "" ],
+			"Scale-down": [ "" ],
+			"Unset": [ "" ],
+			"Save Changes": [ "変更を保存" ],
+			"License Key": [ "ライセンスキー" ],
+			"Enter Your License Key": [ "ライセンスキーを入力" ],
+			"Notice": [ "注意" ],
+			"Each website using this plugin needs a legal license (1 license = 1 website).": [
+				"このプラグインを使用する各ウェブサイトには、法的なライセンスが必要です（1ライセンス＝1ウェブサイト）。"
+			],
+			"You can find more information on": [ "詳細情報はこちら" ],
+			"software license agreement": [ "ソフトウェアライセンス契約" ],
+			"If you need to buy a new license of this plugin": [
+				"このプラグインの新しいライセンスを購入する必要がある場合"
+			],
+			"click here.": [ "ここをクリック。" ],
+			"Where can I find my license key?": [
+				"ライセンスキーはどこにありますか？"
+			],
+			"There was an error on getting settings.": [ "" ],
+			"Data is required.": [ "" ],
+			"There was an error on saving settings.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				""
+			],
+			"OK, you deserve it!": [ "" ],
+			"I already did": [ "" ],
+			"Maybe Later": [ "" ],
+			"I need help": [ "" ],
+			"Never show again": [ "" ],
+			"Saved Successfully.": [ "" ],
+			"There was an error on saving the settings.": [ "" ],
+			"Enable Updates": [ "" ],
+			"Quantity field buttons hover color": [
+				"数量フィールドボタンのホバー時の色"
+			],
+			"Add to cart button selector": [ "カートに追加ボタンのセレクター" ],
+			"Alert message color": [ "アラートメッセージの色" ],
+			"Alert message background color": [ "アラートメッセージの背景色" ],
+			"Disable popup": [ "ポップアップを無効にする" ],
+			"Disable popup for items that have only one product.": [
+				"1つの製品のみを持つアイテムのポップアップを無効にする"
+			],
+			"Optional item mode": [ "オプションアイテムモード" ],
+			"Checkbox": [ "チェックボックス" ],
+			"Delete button": [ "削除ボタン" ],
+			"Total price - sale price color": [ "総価格 - 販売価格の色" ],
+			"Total price - crossed out price color": [
+				"総価格 - 取り消し線の付いた価格の色"
+			],
+			"Total price - saved amount color": [ "総価格 - 節約額の色" ],
+			"Total price - saved amount background color": [
+				"総価格 - 節約額の背景色"
+			]
+		}
+	}
+}

@@ -35,10 +35,17 @@ class ProductBundleHooks {
 		// Mini Cart hooks.
 		add_filter( 'woocommerce_mini_cart_item_class', array( $this, 'cart_item_class' ), 10, 2 );
 
-		// Cart item hooks.
 		if ( 'true' === get_plugin()->settings->get_setting( 'show_parent_name', 'false' ) ) {
 			add_filter( 'woocommerce_cart_item_name', array( $this, 'cart_item_name' ), 10, 2 );
+			add_filter( 'woocommerce_order_item_name', array( $this, 'cart_item_name' ), 10, 2 );
 		}
+
+		if ( 'true' === get_plugin()->settings->get_setting( 'show_bundled_in', 'true' ) ) {
+			add_action( 'woocommerce_order_item_meta_start', array( $this, 'before_order_item_meta' ), 10, 2 );
+			add_action( 'woocommerce_before_order_itemmeta', array( $this, 'before_order_item_meta' ), 10, 2 );
+		}
+
+		// Cart item hooks.
 		add_filter( 'woocommerce_cart_item_remove_link', array( $this, 'cart_item_remove_link' ), 10, 2 );
 		add_filter( 'woocommerce_cart_item_quantity', array( $this, 'cart_item_quantity' ), 10, 3 );
 		add_filter( 'woocommerce_cart_item_price', array( $this, 'cart_item_price' ), 10, 2 );
@@ -51,17 +58,12 @@ class ProductBundleHooks {
 		add_action( 'woocommerce_checkout_create_order_line_item', array( $this, 'checkout_create_order_line_item' ), 10, 3 );
 
 		// Order hooks.
-		if ( 'true' === get_plugin()->settings->get_setting( 'show_parent_name', 'false' ) ) {
-			add_filter( 'woocommerce_order_item_name', array( $this, 'cart_item_name' ), 10, 2 );
-		}
 		add_filter( 'woocommerce_get_item_count', array( $this, 'get_item_count' ), 10, 3 );
 		add_filter( 'woocommerce_order_item_class', array( $this, 'cart_item_class' ), 10, 2 );
 		add_filter( 'woocommerce_order_formatted_line_subtotal', array( $this, 'formatted_line_subtotal' ), 10, 2 );
-		add_action( 'woocommerce_order_item_meta_start', array( $this, 'before_order_item_meta' ), 10, 2 );
 
 		// Admin order hooks.
 		add_action( 'woocommerce_ajax_add_order_item_meta', array( $this, 'ajax_add_order_item_meta' ), 10, 3 );
-		add_action( 'woocommerce_before_order_itemmeta', array( $this, 'before_order_item_meta' ), 10, 2 );
 		add_filter( 'woocommerce_hidden_order_itemmeta', array( $this, 'hidden_order_itemmeta' ), 10, 1 );
 
 		// Calculate totals hooks.

@@ -1,1 +1,235 @@
-{"translation-revision-date":"2025-07-22 17:22+0330","generator":"WP-CLI\/2.11.0","source":"assets\/js\/admin\/admin\/index.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"hi","plural-forms":"nplurals=2; plural=(n==0 || n==1);"},"Settings":[""],"Go Pro":[""],"Action is required.":[""],"PRO Version":[""],"Bundle position":[""],"Before Add to Cart button":[""],"After Add to Cart button":[""],"Before Add to Cart form":[""],"After Add to Cart form":[""],"Before product excerpt":[""],"After product excerpt":[""],"After product meta":[""],"None":[""],"Before CSS selector":[""],"After CSS selector":[""],"product bundle position in product page.":[""],"CSS Selector":[""],"(Pro)":[""],"Back default color":[""],"Product image object-fit":[""],"Cover":[""],"Contain":[""],"Fill":[""],"Inherit":[""],"Initial":[""],"Revert":[""],"Scale-down":[""],"Unset":[""],"Bundle":[""],"Item View":[""],"Show stock":[""],"Show product Stock availability in modal.":[""],"Show rating":[""],"Show product rating in modal.":[""],"Show description(on hover)":[""],"Show product description when mouse hover over it.":[""],"Prepend parent name":[""],"Prepend the parent name to the item name in the cart and order.":[""],"Hide out of stock":[""],"Hide out of stock products.":[""],"Show price in cart":[""],"Product bundle items price visibility in cart and checkout.":[""],"Show products list":[""],"Show products list below products bundle.":[""],"Show total price":[""],"Show the total price of the selected items below the products list.":[""],"Show saved money":[""],"Show the saved money when calculating the total price.":[""],"Show modal quick view":[""],"Show product quick view icon in modal.":[""],"Show selected product quick view":[""],"Show product quick view icon in the selected product.":[""],"Quantity field on item":[""],"Show quantity field on item.":[""],"Show plus icon":[""],"Show plus icon between items.":[""],"Disable popup":[""],"Disable popup for items that have only one product.":[""],"Theme":[""],"Grid 1":[""],"Grid 2":[""],"List 1":[""],"List 2":[""],"Size":[""],"Small":[""],"Medium":[""],"Large":[""],"Optional item mode":[""],"Checkbox":[""],"Delete button":[""],"Product bundle price on shop page":[""],"Total price":[""],"From total price":[""],"From min price":[""],"Set how to show the product bundle price on the shop page.":[""],"Item price":[""],"Product price":[""],"Product subtotal":[""],"Set how to show the product price in item.":[""],"Product list price":[""],"Set how to show the product price in product list.":[""],"Link to product":[""],"New tab":[""],"No link":[""],"Show the product change modal":[""],"Click on product in pop-up":[""],"Product selection":[""],"Show product details":[""],"Coupon apply method":[""],"Both of bundle and bundle items":[""],"On bundle":[""],"On bundle items":[""],"None of bundle and bundle items":[""],"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".":[""],"Cart contents count":[""],"Bundle items":[""],"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".":[""],"Product price selector":[""],"Add to cart button selector":[""],"Change product modal":[""],"Number of products per page":[""],"Styles":[""],"Save Changes":[""],"License Key":[""],"Enter Your License Key":[""],"Notice":[""],"Each website using this plugin needs a legal license (1 license = 1 website).":[""],"You can find more information on":[""],"software license agreement":[""],"If you need to buy a new license of this plugin":[""],"click here.":[""],"Where can I find my license key?":[""],"There was an error on getting settings.":[""],"Data is required.":[""],"There was an error on saving settings.":[""],"There was an error on applying review.":[""],"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.":[""],"OK, you deserve it!":[""],"I already did":[""],"Maybe Later":[""],"I need help":[""],"Never show again":[""],"Apps you might like":[""],"Active Installations":[""],"Free Version":[""],"Buy Pro":[""],"Saved Successfully.":[""],"There was an error on saving the settings.":[""],"Apps":[""],"Enable Updates":[""],"Articles":[""],"Video Tutorials":[""],"Get Support":[""]}}}
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.11.0",
+	"source": "assets/js/admin/admin/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "hi_IN",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Settings": [ "सेटिंग्स" ],
+			"Go Pro": [ "प्रो में जाएं" ],
+			"Action is required.": [ "" ],
+			"PRO Version": [ "प्रो संस्करण" ],
+			"Bundle position": [ "बंडल स्थिति" ],
+			"Before Add to Cart button": [ "कार्ट में जोड़ें बटन से पहले" ],
+			"After Add to Cart button": [ "कार्ट में जोड़ें बटन के बाद" ],
+			"Before Add to Cart form": [ "कार्ट में जोड़ें फॉर्म से पहले" ],
+			"After Add to Cart form": [ "कार्ट में जोड़ें फॉर्म के बाद" ],
+			"Before product excerpt": [ "उत्पाद परिचय से पहले" ],
+			"After product excerpt": [ "उत्पाद परिचय के बाद" ],
+			"After product meta": [ "उत्पाद मेटा के बाद" ],
+			"None": [ "कोई नहीं" ],
+			"Before CSS selector": [ "CSS चयनकर्ता से पहले" ],
+			"After CSS selector": [ "CSS चयनकर्ता के बाद" ],
+			"product bundle position in product page.": [
+				"उत्पाद पृष्ठ में उत्पाद बंडल की स्थिति।"
+			],
+			"CSS Selector": [ "CSS चयनकर्ता" ],
+			"(Pro)": [ "(प्रो)" ],
+			"Back default color": [ "डिफ़ॉल्ट रंग वापस करें" ],
+			"Product image object-fit": [ "उत्पाद चित्र object-fit Css" ],
+			"Cover": [ "" ],
+			"Contain": [ "" ],
+			"Fill": [ "" ],
+			"Inherit": [ "" ],
+			"Initial": [ "" ],
+			"Revert": [ "" ],
+			"Scale-down": [ "" ],
+			"Unset": [ "" ],
+			"Bundle": [ "बंडल" ],
+			"Item View": [ "आइटम दृश्य" ],
+			"Show stock": [ "स्टॉक दिखाएं" ],
+			"Show product Stock availability in modal.": [
+				"मोडल में उत्पाद स्टॉक की उपलब्धता दिखाएं।"
+			],
+			"Show rating": [ "रेटिंग दिखाएं" ],
+			"Show product rating in modal.": [
+				"मोडल में उत्पाद रेटिंग दिखाएं।"
+			],
+			"Show description(on hover)": [ "विवरण दिखाएं (होवर पर)" ],
+			"Show product description when mouse hover over it.": [
+				"जब माउस इसके ऊपर होवर करता है तो उत्पाद का विवरण दिखाएं।"
+			],
+			"Prepend parent name": [ "मूल नाम पहले लगाएं" ],
+			"Prepend the parent name to the item name in the cart and order.": [
+				"कार्ट और ऑर्डर में आइटम के नाम से पहले मूल नाम लगाएं।"
+			],
+			"Hide out of stock": [ "स्टॉक समाप्त उत्पाद छिपाएं" ],
+			"Hide out of stock products.": [
+				"स्टॉक समाप्त उत्पादों को छिपाएं।"
+			],
+			"Show price in cart": [ "कार्ट में मूल्य दिखाएं" ],
+			"Product bundle items price visibility in cart and checkout.": [
+				"कार्ट और चेकआउट में उत्पाद बंडल आइटम की मूल्य दृश्यता।"
+			],
+			"Show products list": [ "उत्पाद सूची दिखाएं" ],
+			"Show products list below products bundle.": [
+				"उत्पाद बंडल के नीचे उत्पाद सूची दिखाएं।"
+			],
+			"Show total price": [ "कुल मूल्य दिखाएं" ],
+			"Show the total price of the selected items below the products list.": [
+				"चयनित आइटम का कुल मूल्य उत्पाद सूची के नीचे दिखाएं।"
+			],
+			"Show saved money": [ "बचाई गई राशि दिखाएं" ],
+			"Show the saved money when calculating the total price.": [
+				"कुल मूल्य की गणना करते समय बचाई गई राशि दिखाएं।"
+			],
+			"Show modal quick view": [ "मोडल क्विक व्यू दिखाएं" ],
+			"Show product quick view icon in modal.": [
+				"मोडल में उत्पाद क्विक व्यू आइकन दिखाएं।"
+			],
+			"Show selected product quick view": [
+				"चयनित उत्पाद का क्विक व्यू दिखाएं"
+			],
+			"Show product quick view icon in the selected product.": [
+				"चयनित उत्पाद में क्विक व्यू आइकन दिखाएं।"
+			],
+			"Quantity field on item": [ "आइटम पर मात्रा फ़ील्ड" ],
+			"Show quantity field on item.": [ "आइटम पर मात्रा फ़ील्ड दिखाएं।" ],
+			"Show plus icon": [ "प्लस आइकन दिखाएं" ],
+			"Show plus icon between items.": [
+				"आइटम्स के बीच प्लस आइकन दिखाएं।"
+			],
+			"Theme": [ "थीम" ],
+			"Grid 1": [ "ग्रिड 1" ],
+			"Grid 2": [ "ग्रिड 2" ],
+			"List 1": [ "सूची 1" ],
+			"List 2": [ "सूची 2" ],
+			"Size": [ "आकार" ],
+			"Small": [ "छोटा" ],
+			"Medium": [ "मध्यम" ],
+			"Large": [ "बड़ा" ],
+			"Product bundle price on shop page": [
+				"दुकान पृष्ठ पर उत्पाद बंडल मूल्य"
+			],
+			"Total price": [ "कुल मूल्य" ],
+			"From total price": [ "कुल मूल्य से" ],
+			"From min price": [ "न्यूनतम मूल्य से" ],
+			"Set how to show the product bundle price on the shop page.": [
+				"दुकान पृष्ठ पर उत्पाद बंडल मूल्य दिखाने का तरीका सेट करें।"
+			],
+			"Item price": [ "आइटम मूल्य" ],
+			"Product price": [ "उत्पाद मूल्य" ],
+			"Product subtotal": [ "उत्पाद उप-मूल्य" ],
+			"Set how to show the product price in item.": [
+				"आइटम में उत्पाद मूल्य दिखाने का तरीका सेट करें।"
+			],
+			"Product list price": [ "उत्पाद सूची मूल्य" ],
+			"Set how to show the product price in product list.": [
+				"उत्पाद सूची में उत्पाद मूल्य दिखाने का तरीका सेट करें।"
+			],
+			"Link to product": [ "उत्पाद से लिंक" ],
+			"New tab": [ "नया टैब" ],
+			"No link": [ "कोई लिंक नहीं" ],
+			"Show the product change modal": [ "उत्पाद परिवर्तन मोडल दिखाएं" ],
+			"Click on product in pop-up": [ "पॉप-अप में उत्पाद पर क्लिक करें" ],
+			"Product selection": [ "उत्पाद चयन" ],
+			"Show product details": [ "उत्पाद विवरण दिखाएं" ],
+			"Coupon apply method": [ "कूपन लागू करने की विधि" ],
+			"Both of bundle and bundle items": [ "बंडल और बंडल आइटम दोनों" ],
+			"On bundle": [ "केवल बंडल पर" ],
+			"On bundle items": [ "केवल बंडल आइटम पर" ],
+			"None of bundle and bundle items": [
+				"न तो बंडल और न ही बंडल आइटम"
+			],
+			"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".": [
+				"उत्पाद आधारित कूपन लागू करने की विधि। इसे \"बंडल\", \"बंडल आइटम\", \"दोनों\" या \"कोई नहीं\" पर लागू किया जा सकता है।"
+			],
+			"Cart contents count": [ "कार्ट सामग्री की गिनती" ],
+			"Bundle items": [ "बंडल आइटम" ],
+			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
+				"कार्ट में बंडल उत्पादों की गिनती कैसे करें? \"बंडल और इसके आइटम\" दोनों की गिनती करें या \"केवल बंडल\" या \"केवल बंडल आइटम\" की गिनती करें।"
+			],
+			"Product price selector": [ "उत्पाद मूल्य चयनकर्ता" ],
+			"Add to cart button selector": [ "कार्ट में जोड़ें बटन चयनकर्ता" ],
+			"Change product modal": [ "उत्पाद परिवर्तन मोडल" ],
+			"Number of products per page": [ "प्रति पृष्ठ उत्पादों की संख्या" ],
+			"Styles": [ "शैलियां" ],
+			"Save Changes": [ "परिवर्तन सहेजें" ],
+			"License Key": [ "लाइसेंस कुंजी" ],
+			"Enter Your License Key": [ "अपनी लाइसेंस कुंजी दर्ज करें" ],
+			"Notice": [ "सूचना" ],
+			"Each website using this plugin needs a legal license (1 license = 1 website).": [
+				"इस प्लगइन का उपयोग करने वाली प्रत्येक वेबसाइट को एक वैध लाइसेंस की आवश्यकता है (1 लाइसेंस = 1 वेबसाइट)।"
+			],
+			"You can find more information on": [
+				"आप अधिक जानकारी प्राप्त कर सकते हैं"
+			],
+			"software license agreement": [ "सॉफ़्टवेयर लाइसेंस समझौता" ],
+			"If you need to buy a new license of this plugin": [
+				"यदि आपको इस प्लगइन का नया लाइसेंस खरीदने की आवश्यकता है"
+			],
+			"click here.": [ "यहां क्लिक करें।" ],
+			"Where can I find my license key?": [
+				"मैं अपनी लाइसेंस कुंजी कहां पा सकता हूं?"
+			],
+			"There was an error on getting settings.": [ "" ],
+			"Data is required.": [ "" ],
+			"There was an error on saving settings.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				""
+			],
+			"OK, you deserve it!": [ "" ],
+			"I already did": [ "" ],
+			"Maybe Later": [ "" ],
+			"I need help": [ "" ],
+			"Never show again": [ "" ],
+			"Apps you might like": [ "ऐप्स जो आपको पसंद आ सकते हैं" ],
+			"Active Installations": [ "सक्रिय इंस्टॉलेशन" ],
+			"Free Version": [ "निःशुल्क संस्करण" ],
+			"Buy Pro": [ "प्रो खरीदें" ],
+			"Saved Successfully.": [ "सफलतापूर्वक सहेजा गया।" ],
+			"There was an error on saving the settings.": [ "" ],
+			"Apps": [ "ऐप्स" ],
+			"Enable Updates": [ "अपडेट सक्षम करें" ],
+			"Articles": [ "लेख" ],
+			"Video Tutorials": [ "वीडियो ट्यूटोरियल" ],
+			"Get Support": [ "सहायता प्राप्त करें" ],
+			"Product title color": [ "उत्पाद शीर्षक रंग" ],
+			"Bundle title color": [ "बंडल शीर्षक रंग" ],
+			"Product crossed out price color": [
+				"उत्पाद की रेखांकित मूल्य रंग"
+			],
+			"Product sale price color": [ "उत्पाद की बिक्री मूल्य रंग" ],
+			"Empty item title color": [ "खाली आइटम शीर्षक रंग" ],
+			"Empty item title hover color": [ "खाली आइटम शीर्षक होवर रंग" ],
+			"Modal header color": [ "मोडल हेडर रंग" ],
+			"Optional badge color": [ "वैकल्पिक बैज रंग" ],
+			"Optional badge title color": [ "वैकल्पिक बैज शीर्षक रंग" ],
+			"Quick view icon color": [ "त्वरित दृश्य आइकन रंग" ],
+			"Images icon color": [ "छवियों का आइकन रंग" ],
+			"Quick view button color": [ "त्वरित दृश्य बटन रंग" ],
+			"Quick view button text color": [ "त्वरित दृश्य बटन पाठ रंग" ],
+			"Plus icon color": [ "प्लस आइकन रंग" ],
+			"Quantity field buttons hover color": [
+				"मात्रा क्षेत्र बटन होवर रंग"
+			],
+			"Alert message color": [ "अलर्ट संदेश रंग" ],
+			"Alert message background color": [ "अलर्ट संदेश पृष्ठभूमि रंग" ],
+			"Disable popup": [ "पॉपअप अक्षम करें" ],
+			"Disable popup for items that have only one product.": [
+				"ऐसे आइटम्स के लिए पॉपअप अक्षम करें जिनके पास केवल एक उत्पाद है।"
+			],
+			"Optional item mode": [ "वैकल्पिक आइटम मोड" ],
+			"Checkbox": [ "चेकबॉक्स" ],
+			"Delete button": [ "हटाने का बटन" ],
+			"Total price - sale price color": [
+				"कुल मूल्य - बिक्री मूल्य का रंग"
+			],
+			"Total price - crossed out price color": [
+				"कुल मूल्य - रद्द किए गए मूल्य का रंग"
+			],
+			"Total price - saved amount color": [
+				"कुल मूल्य - बचत राशि का रंग"
+			],
+			"Total price - saved amount background color": [
+				"कुल मूल्य - बचत राशि का पृष्ठभूमि रंग"
+			]
+		}
+	}
+}

@@ -1,1 +1,193 @@
-{"translation-revision-date":"2025-07-22 16:23+0330","generator":"WP-CLI\/2.11.0","source":"assets\/js\/admin\/product\/index.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"ar","plural-forms":"nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);"},"Please select a product!":[""],"Please select your product!":[""],"Please select your product":[""],"Type is required.":[""],"Action is required.":[""],"PRO Version":[""],"Theme":[""],"Grid 1":[""],"Grid 2":[""],"List 1":[""],"List 2":[""],"Size":[""],"Small":[""],"Medium":[""],"Large":[""],"Data is required.":[""],"There was an error on applying review.":[""],"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.":[""],"OK, you deserve it!":[""],"I already did":[""],"Maybe Later":[""],"I need help":[""],"Never show again":[""],"Items are required.":[""],"There was an error on getting items.":[""],"Search value is required.":[""],"There was an error on searching items.":[""],"Optional":[""],"Check this option to make the bundle item optional to choose by the user":[""],"Selected":[""],"Enable this field to make the optional item selected in the frontend.":[""],"Default product":[""],"Set a default product":[""],"Products":[""],"Add products or Variations":[""],"Exclude products":[""],"Select a product that you do not want to be displayed":[""],"Categories":[""],"Select the category product that you want to be displayed in this bundle item":[""],"Exclude categories":[""],"Select the category product that you do not want to be displayed in this bundle item":[""],"Tags":[""],"Select the product with tags to display in this bundle item":[""],"Exclude tags":[""],"Select the product with tags that you do not want to be displayed in the bundle item":[""],"Categories and Tags relation":[""],"Match at least one":[""],"Match both":[""],"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.":[""],"Sort products":[""],"ID":[""],"Title":[""],"Menu order":[""],"Date":[""],"Price":[""],"Popularity":[""],"Rating":[""],"Ascending":[""],"Descending":[""],"Set the order of products in the pop-up":[""],"Quantity":[""],"Set the default product quantity":[""],"Edit quantity by user":[""],"Check this option to allow the user to change the bundle item quantity":[""],"Min quantity":[""],"Set the minimum quantity of this bundled product":[""],"Max quantity":[""],"Set the maximum quantity of this bundled product":[""],"Discount":[""],"Percentage":[""],"Fixed price":[""],"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price":[""],"Default Image":[""],"No image chosen":[""],"Upload Image":[""],"Set an image for empty item.":[""],"Overwrite bundle item title":[""],"Short description":[""],"Overwrite bundle item short description.(Show when the mouse hovers over it)":[""],"Product selection title":[""],"Change the title of the bundle empty item.":[""],"Product list title":[""],"Change the product list product selection title.":[""],"Modal header title":[""],"Change the pop-up header title":[""],"Duplicate":[""],"Duplicate: Pro version":[""],"Trash":[""],"General":[""],"Display":[""],"Individual theme":[""],"GO PRO":[""],"Need help?":[""],"If checked, disable auto calculate price and use product price as bundle price.":[""],"Please enable fixed price first.":[""],"Click here to set price":[""],"Include parent price":[""],"Include the parent product price in the bundle total price. (parent price + selected items price)":[""],"Sync stock quantity":[""],"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.":[""],"Hide products price":[""],"No":[""],"Yes":[""],"Only regular price":[""],"Shipping fee":[""],"Apply to the whole bundle":[""],"Apply to each bundle item":[""],"Min items quantity":[""],"Set the minimum total quantity of bundled items.":[""],"Max items quantity":[""],"Set the maximum total quantity of bundled items.":[""],"Custom display price":[""],"Product display price in frontend. E.g: From 10$ To 20$":[""],"A title for the bundle product that will be shown on top of bundle items.":[""],"Bundle description":[""],"Create a description for product bundle.":[""],"Add Item":[""]}}}
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/product/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "ar",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Type is required.": [ "" ],
+			"PRO Version": [ "نسخةالمحترفة" ],
+			"Action is required.": [ "" ],
+			"Theme": [ "الثيم" ],
+			"Grid 1": [ "" ],
+			"Grid 2": [ "" ],
+			"List 1": [ "" ],
+			"List 2": [ "" ],
+			"Size": [ "الحجم" ],
+			"Small": [ "صغير" ],
+			"Medium": [ "متوسط" ],
+			"Large": [ "كبير" ],
+			"Data is required.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				""
+			],
+			"OK, you deserve it!": [ "" ],
+			"I already did": [ "" ],
+			"Maybe Later": [ "" ],
+			"I need help": [ "" ],
+			"Never show again": [ "" ],
+			"Items are required.": [ "" ],
+			"There was an error on getting items.": [ "" ],
+			"Search value is required.": [ "" ],
+			"There was an error on searching items.": [ "" ],
+			"Optional": [ "اختياري" ],
+			"Check this option to make the bundle item optional to choose by the user": [
+				"حدد هذا الخيار لجعل عنصر الحزمة اختياريًا للمستخدم"
+			],
+			"Use default-product": [ "استخدم المنتج الافتراضي" ],
+			"Check this option to add a default product for the bundle item that is shown as a selected product for this bundle item": [
+				"حدد هذا الخيار لإضافة منتج افتراضي لعنصر الحزمة الذي يظهر كمنتج محدد لهذا العنصر"
+			],
+			"Default product": [ "المنتج الافتراضي" ],
+			"Set a default product": [ "تعيين منتج افتراضي" ],
+			"Products": [ "المنتجات" ],
+			"Add products or Variations": [ "أضف المنتجات أو الاختلافات" ],
+			"Exclude products": [ "استبعاد المنتجات" ],
+			"Select a product that you do not want to be displayed": [
+				"حدد المنتج الذي لا تريد عرضه"
+			],
+			"Categories": [ "الفئات" ],
+			"Select the category product that you want to be displayed in this bundle item": [
+				"حدد فئة المنتج الذي تريد عرضه في هذا العنصر من الحزمة"
+			],
+			"Exclude categories": [ "استبعاد الفئات" ],
+			"Select the category product that you do not want to be displayed in this bundle item": [
+				"حدد فئة المنتج التي لا تريد عرضها في هذا العنصر من الحزمة"
+			],
+			"Tags": [ "العلامات" ],
+			"Select the product with tags to display in this bundle item": [
+				"حدد المنتجات التي تحتوي على العلامات التي تريد عرضها في هذا العنصر من الحزمة"
+			],
+			"Exclude tags": [ "استبعاد العلامات" ],
+			"Select the product with tags that you do not want to be displayed in the bundle item": [
+				"حدد المنتجات التي تحتوي على العلامات التي لا تريد عرضها في هذا العنصر من الحزمة"
+			],
+			"Categories and Tags relation": [ "علاقة الفئات والعلامات" ],
+			"Match at least one": [ "تطابق واحد على الأقل" ],
+			"Match both": [ "تطابق كليهما" ],
+			"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags.": [
+				".تطابق واحد على الأقل: يجب أن تتطابق المنتجات على الأقل مع واحدة من الفئات أو العلامات%s. تطابق كليهما: يجب أن تتطابق المنتجات مع كل من الفئات والعلامات"
+			],
+			"Quantity": [ "الكمية" ],
+			"Set the default product quantity": [
+				"تعيين كمية المنتج الافتراضية"
+			],
+			"Edit quantity by user": [ "تحرير الكمية بواسطة المستخدم" ],
+			"Check this option to allow the user to change the bundle item quantity": [
+				"حدد هذا الخيار للسماح للمستخدم بتغيير كمية عنصر الحزمة"
+			],
+			"Min quantity": [ "الأدنى للكمية" ],
+			"Set the minimum quantity of this bundled product": [
+				"قم بتعيين الحد الأدنى لكمية منتج الحزمة هذا"
+			],
+			"Max quantity": [ "الأقصى للكمية" ],
+			"Set the maximum quantity of this bundled product": [
+				"قم بتعيين الحد الأقصى لكمية منتج الحزمة هذا"
+			],
+			"Discount": [ "الخصم" ],
+			"Percentage": [ "نسبة مئوية" ],
+			"Price": [ "السعر" ],
+			"Fixed price": [ "سعر ثابت" ],
+			"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price": [
+				"الخصم المطبق على سعر المنتج المجمع. إذا كان المنتج المجمع لديه سعر تخفيض الخصم يتم تطبيقه فوق سعر التخفيض"
+			],
+			"Title": [ "عنوان" ],
+			"Overwrite bundle item title": [ "الكتابة فوق عنوان عنصر الحزمة" ],
+			"Short description": [ "الوصف المختصر" ],
+			"Overwrite bundle item short description.(Show when the mouse hovers over it)": [
+				"الكتابة فوق وصف عنصر الحزمة المختصر. (يظهر عند تحويم الماوس عليه)"
+			],
+			"General": [ "عام" ],
+			"Display": [ "عرض" ],
+			"Individual theme": [ "الثيم فردية" ],
+			"GO PRO": [ "" ],
+			"If checked, disable auto calculate price and use product price as bundle price.": [
+				".إذا تم التحقق منه، تعطيل حساب السعر التلقائي واستخدام سعر المنتج كسعر للحزمة"
+			],
+			"Please enable fixed price first.": [
+				"يرجى تمكين السعر الثابت أولاً."
+			],
+			"Click here to set price": [ "انقر هنا لتعيين السعر" ],
+			"Shipping fee": [ "رسوم الشحن" ],
+			"Apply to the whole bundle": [ "تطبيق على كامل الحزمة" ],
+			"Apply to each bundle item": [
+				"تطبيق على كل عنصر من عناصر الحزمة"
+			],
+			"Custom display price": [ "عرض السعر المخصص" ],
+			"Product display price in frontend. E.g: From 10$ To 20$": [
+				"$عرض سعر المنتج في الواجهة الأمامية. مثال: من 10$ إلى 20"
+			],
+			"A title for the bundle product that will be shown on top of bundle items.": [
+				".عنوان للمنتج المجمع الذي سيتم عرضه أعلى عناصر الحزمة"
+			],
+			"Add Item": [ "إضافة عنصر" ],
+			"Trash": [ "سلة المهملات" ],
+			"Need help?": [ "تحتاج للمساعدة؟" ],
+			"Product selection title": [ "عنوان اختيار المنتج" ],
+			"Change the title of the bundle empty item.": [
+				"تغيير عنوان عنصر الحزمة الفارغة."
+			],
+			"Include parent price": [ "تضمين سعر المنتج الأصلي" ],
+			"Include the parent product price in the bundle total price. (parent price + selected items price)": [
+				"تضمين سعر المنتج الأصلي في السعر الإجمالي للحزمة. (سعر المنتج الأصلي + سعر العناصر المحددة)"
+			],
+			"Sort products": [ "ترتيب المنتجات" ],
+			"Menu order": [ "ترتيب القائمة" ],
+			"Date": [ "تاريخ" ],
+			"Rating": [ "تقييم" ],
+			"Popularity": [ "شعبية" ],
+			"Ascending": [ "تصاعدي" ],
+			"Descending": [ "تنازلي" ],
+			"Product list title": [ "عنوان قائمة المنتجات" ],
+			"Change the product list product selection title.": [
+				"تغيير عنوان اختيار منتج قائمة المنتجات."
+			],
+			"Modal header title": [ "عنوان الرأس المنبثق" ],
+			"Change the pop-up header title": [
+				"قم بتغيير عنوان رأس النافذة المنبثقة"
+			],
+			"Duplicate": [ "تكرار" ],
+			"Duplicate: Pro version": [ "تكرار: النسخة المحترفة" ],
+			"Set the order of products in the pop-up": [
+				"تعيين ترتيب المنتجات في النافذة المنبثقة"
+			],
+			"Min items quantity": [ "الحد الأدنى لكمية العناصر" ],
+			"Set the minimum total quantity of bundled items.": [
+				"تعيين الحد الأدنى لإجمالي كمية العناصر المجمعة."
+			],
+			"Max items quantity": [ "الحد الأقصى لكمية العناصر" ],
+			"Set the maximum total quantity of bundled items.": [
+				"تعيين الحد الأقصى لإجمالي كمية العناصر المجمعة."
+			],
+			"Default Image": [ "لصورة الافتراضية" ],
+			"Upload Image": [ "تحميل صورة" ],
+			"Set an image for empty item.": [ "تعيين صورة للعنصر الفارغ." ],
+			"No image chosen": [ "لم يتم اختيار صورة" ],
+			"Hide products price": [ "إخفاء سعر المنتجات" ],
+			"No": [ "لا" ],
+			"Yes": [ "نعم" ],
+			"Only regular price": [ "السعر العادي فقط" ],
+			"Please select your product!": [ "يرجى اختيار المنتج الخاص بك!" ],
+			"Please select your product": [ "يرجى اختيار المنتج الخاص بك" ],
+			"Please select a product!": [ "يرجى اختيار منتج!" ],
+			"Bundle description": [ "وصف الحزمة" ],
+			"Create a description for product bundle.": [
+				"قم بإنشاء وصف لحزمة المنتج."
+			],
+			"Sync stock quantity": [ "مزامنة كمية المخزون" ],
+			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
+				"تحديث كمية مخزون الحزمة بناءً على كمية مخزون المنتجات الفرعية. ملاحظة: هذه الميزة تعمل فقط عندما يحتوي كل عنصر على منتج واحد فقط، مضاف إلى الحقل الافتراضي للمنتج، وليس اختياريًا."
+			],
+			"Selected": [ "محدد" ],
+			"Enable this field to make the optional item selected in the frontend.": [
+				"قم بتمكين هذا الحقل لجعل العنصر الاختياري محددًا في الواجهة الأمامية."
+			]
+		}
+	}
+}

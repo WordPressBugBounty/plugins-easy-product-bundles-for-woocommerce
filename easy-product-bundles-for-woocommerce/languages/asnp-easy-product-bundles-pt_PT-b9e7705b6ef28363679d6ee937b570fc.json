@@ -1,1 +1,253 @@
-{"translation-revision-date":"2025-07-22 17:42+0330","generator":"WP-CLI\/2.11.0","source":"assets\/js\/admin\/admin\/index.js","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","lang":"pt_PT","plural-forms":"nplurals=2; plural=(n != 1);"},"Settings":[""],"Go Pro":[""],"Action is required.":[""],"PRO Version":[""],"Bundle position":[""],"Before Add to Cart button":[""],"After Add to Cart button":[""],"Before Add to Cart form":[""],"After Add to Cart form":[""],"Before product excerpt":[""],"After product excerpt":[""],"After product meta":[""],"None":[""],"Before CSS selector":[""],"After CSS selector":[""],"product bundle position in product page.":[""],"CSS Selector":[""],"(Pro)":[""],"Back default color":[""],"Product image object-fit":[""],"Cover":[""],"Contain":[""],"Fill":[""],"Inherit":[""],"Initial":[""],"Revert":[""],"Scale-down":[""],"Unset":[""],"Bundle":[""],"Item View":[""],"Show stock":[""],"Show product Stock availability in modal.":[""],"Show rating":[""],"Show product rating in modal.":[""],"Show description(on hover)":[""],"Show product description when mouse hover over it.":[""],"Prepend parent name":[""],"Prepend the parent name to the item name in the cart and order.":[""],"Hide out of stock":[""],"Hide out of stock products.":[""],"Show price in cart":[""],"Product bundle items price visibility in cart and checkout.":[""],"Show products list":[""],"Show products list below products bundle.":[""],"Show total price":[""],"Show the total price of the selected items below the products list.":[""],"Show saved money":[""],"Show the saved money when calculating the total price.":[""],"Show modal quick view":[""],"Show product quick view icon in modal.":[""],"Show selected product quick view":[""],"Show product quick view icon in the selected product.":[""],"Quantity field on item":[""],"Show quantity field on item.":[""],"Show plus icon":[""],"Show plus icon between items.":[""],"Disable popup":[""],"Disable popup for items that have only one product.":[""],"Theme":[""],"Grid 1":[""],"Grid 2":[""],"List 1":[""],"List 2":[""],"Size":[""],"Small":[""],"Medium":[""],"Large":[""],"Optional item mode":[""],"Checkbox":[""],"Delete button":[""],"Product bundle price on shop page":[""],"Total price":[""],"From total price":[""],"From min price":[""],"Set how to show the product bundle price on the shop page.":[""],"Item price":[""],"Product price":[""],"Product subtotal":[""],"Set how to show the product price in item.":[""],"Product list price":[""],"Set how to show the product price in product list.":[""],"Link to product":[""],"New tab":[""],"No link":[""],"Show the product change modal":[""],"Click on product in pop-up":[""],"Product selection":[""],"Show product details":[""],"Coupon apply method":[""],"Both of bundle and bundle items":[""],"On bundle":[""],"On bundle items":[""],"None of bundle and bundle items":[""],"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".":[""],"Cart contents count":[""],"Bundle items":[""],"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".":[""],"Product price selector":[""],"Add to cart button selector":[""],"Change product modal":[""],"Number of products per page":[""],"Styles":[""],"Save Changes":[""],"License Key":[""],"Enter Your License Key":[""],"Notice":[""],"Each website using this plugin needs a legal license (1 license = 1 website).":[""],"You can find more information on":[""],"software license agreement":[""],"If you need to buy a new license of this plugin":[""],"click here.":[""],"Where can I find my license key?":[""],"There was an error on getting settings.":[""],"Data is required.":[""],"There was an error on saving settings.":[""],"There was an error on applying review.":[""],"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.":[""],"OK, you deserve it!":[""],"I already did":[""],"Maybe Later":[""],"I need help":[""],"Never show again":[""],"Apps you might like":[""],"Active Installations":[""],"Free Version":[""],"Buy Pro":[""],"Saved Successfully.":[""],"There was an error on saving the settings.":[""],"Apps":[""],"Enable Updates":[""],"Articles":[""],"Video Tutorials":[""],"Get Support":[""]}}}
+{
+	"translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+	"generator": "WP-CLI/2.5.0",
+	"source": "assets/js/admin/admin/index.js",
+	"domain": "messages",
+	"locale_data": {
+		"messages": {
+			"": {
+				"domain": "messages",
+				"lang": "pt_PT",
+				"plural-forms": "nplurals=2; plural=(n != 1);"
+			},
+			"Settings": [ "Configurações" ],
+			"Go Pro": [ "Ir Pro" ],
+			"PRO Version": [ "Versão PRO" ],
+			"Action is required.": [ "" ],
+			"Bundle position": [ "Posição do pacote" ],
+			"Before Add to Cart button": [
+				"Antes do botão Adicionar ao carrinho"
+			],
+			"After Add to Cart button": [
+				"Depois do botão Adicionar ao carrinho"
+			],
+			"Before Add to Cart form": [
+				"Antes do formulário Adicionar ao carrinho"
+			],
+			"After Add to Cart form": [
+				"Depois do formulário Adicionar ao carrinho"
+			],
+			"Before product excerpt": [ "Antes do excerto do produto" ],
+			"After product excerpt": [ "Depois do excerto do produto" ],
+			"After product meta": [ "Depois da meta do produto" ],
+			"Before CSS selector": [ "Antes do seletor CSS" ],
+			"After CSS selector": [ "Depois do seletor CSS" ],
+			"product bundle position in product page.": [
+				"Posição do pacote de produtos na página do produto."
+			],
+			"CSS Selector": [ "Seletor CSS" ],
+			"Bundle": [ "Pacote" ],
+			"Item View": [ "Visualização do item" ],
+			"Show stock": [ "Mostrar estoque" ],
+			"Show product Stock availability in modal.": [
+				"Mostrar disponibilidade de estoque do produto no modal."
+			],
+			"Show rating": [ "Mostrar avaliação" ],
+			"Show product rating in modal.": [
+				"Mostrar a avaliação do produto no modal."
+			],
+			"Show description(on hover)": [ "Mostrar descrição (ao pairar)" ],
+			"Show product description when mouse hover over it.": [
+				"Mostrar a descrição do produto quando o mouse pairar sobre ele."
+			],
+			"Show price in cart": [ "Mostrar preço no carrinho" ],
+			"(Pro)": [ "" ],
+			"Product bundle items price visibility in cart and checkout.": [
+				"Visibilidade do preço dos itens do pacote de produtos no carrinho e no checkout."
+			],
+			"Show products list": [ "Mostrar lista de produtos" ],
+			"Show products list below products bundle.": [
+				"Mostrar a lista de produtos abaixo do pacote de produtos."
+			],
+			"Show total price": [ "Mostrar preço total" ],
+			"Show the total price of the selected items below the products list.": [
+				"Mostrar o preço total dos itens selecionados abaixo da lista de produtos."
+			],
+			"Show saved money": [ "Mostrar dinheiro economizado" ],
+			"Show the saved money when calculating the total price.": [
+				"Mostrar o dinheiro economizado ao calcular o preço total."
+			],
+			"Theme": [ "Tema" ],
+			"Grid 1": [ "Grade 1" ],
+			"Grid 2": [ "Grade 2" ],
+			"List 1": [ "Lista 1" ],
+			"List 2": [ "Lista 2" ],
+			"Size": [ "Tamanho" ],
+			"Small": [ "Pequeno" ],
+			"Medium": [ "Médio" ],
+			"Large": [ "Grande" ],
+			"Product bundle price on shop page": [
+				"Preço do pacote de produtos na página da loja"
+			],
+			"Total price": [ "Preço total" ],
+			"From total price": [ "A partir do preço total" ],
+			"From min price": [ "A partir do preço mín" ],
+			"Set how to show the product bundle price on the shop page.": [
+				"Defina como mostrar o preço do pacote de produtos na página da loja."
+			],
+			"Link to product": [ "Link para o produto" ],
+			"New tab": [ "Nova aba" ],
+			"No link": [ "Sem link" ],
+			"Show the product change modal": [
+				"Mostrar modal de mudança de produto"
+			],
+			"Coupon apply method": [ "Método de aplicação do cupom" ],
+			"Both of bundle and bundle items": [
+				"Ambos do pacote e dos itens do pacote"
+			],
+			"On bundle": [ "No pacote" ],
+			"On bundle items": [ "Nos itens do pacote" ],
+			"None of bundle and bundle items": [
+				"Nenhum do pacote e dos itens do pacote"
+			],
+			"Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\".": [
+				"Método de aplicação de cupons baseados em produtos. Pode ser aplicado no \"pacote\", \"itens do pacote\", \"ambos\" ou \"nenhum\"."
+			],
+			"Cart contents count": [ "Contagem do conteúdo do carrinho" ],
+			"Bundle items": [ "Itens do pacote" ],
+			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
+				"Como contar produtos em pacote no carrinho? Contar \"pacote e seus itens\" ou \"somente o pacote\" ou \"somente os itens do pacote\"?"
+			],
+			"Change product modal": [ "Modal de mudança de produto" ],
+			"Number of products per page": [ "Número de produtos por página" ],
+			"Styles": [ "Estilos" ],
+			"Product title color": [ "Cor do título do produto" ],
+			"Bundle title color": [ "Cor do título do pacote" ],
+			"Product crossed out price color": [
+				"Cor do preço riscado do produto"
+			],
+			"Product sale price color": [ "Cor do preço de venda do produto" ],
+			"Empty item title color": [ "Cor do título do item vazio" ],
+			"Empty item title hover color": [
+				"Cor do título do item vazio ao passar o mouse"
+			],
+			"Modal header color": [ "Cor do cabeçalho do modal" ],
+			"Product image object-fit": [ "Imagem do Produto object-fit" ],
+			"Cover": [ "" ],
+			"Contain": [ "" ],
+			"Fill": [ "" ],
+			"Inherit": [ "" ],
+			"Initial": [ "" ],
+			"None": [ "" ],
+			"Revert": [ "" ],
+			"Scale-down": [ "" ],
+			"Unset": [ "" ],
+			"Save Changes": [ "Salvar alterações" ],
+			"License Key": [ "Chave de licença" ],
+			"Enter Your License Key": [ "Digite a sua chave de licença" ],
+			"Notice": [ "Aviso" ],
+			"Each website using this plugin needs a legal license (1 license = 1 website).": [
+				"Cada site que usa este plugin precisa de uma licença legal (1 licença = 1 site)."
+			],
+			"You can find more information on": [
+				"Você pode encontrar mais informações sobre"
+			],
+			"software license agreement": [ "contrato de licença de software" ],
+			"If you need to buy a new license of this plugin": [
+				"Se você precisar comprar uma nova licença deste plugin"
+			],
+			"click here.": [ "clique aqui." ],
+			"Where can I find my license key?": [
+				"Onde posso encontrar minha chave de licença?"
+			],
+			"There was an error on getting settings.": [ "" ],
+			"Data is required.": [ "" ],
+			"There was an error on saving settings.": [ "" ],
+			"There was an error on applying review.": [ "" ],
+			"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best.": [
+				"Esperamos que esteja desfrutando %1$s! %3$s Você poderia nos fazer um GRANDE favor e dar uma nota de %2$s para nos ajudar a divulgar o aplicativo e aumentar nossa motivação? %4$s %5$sCompartilhe suas solicitações de recursos%6$s em sua revisão, sempre verificamos e fazemos o nosso melhor."
+			],
+			"OK, you deserve it!": [ "OK, você merece!" ],
+			"I already did": [ "Eu já fiz" ],
+			"Maybe Later": [ "Talvez mais tarde" ],
+			"I need help": [ "Eu preciso de ajuda" ],
+			"Never show again": [ "Não mostrar novamente" ],
+			"Saved Successfully.": [ "Salvo com sucesso." ],
+			"There was an error on saving the settings.": [ "" ],
+			"Enable Updates": [ "Habilitar atualizações" ],
+			"Back default color": [ "Voltar à cor padrão" ],
+			"Optional badge color": [ "Cor do distintivo opcional" ],
+			"Prepend parent name": [ "Anexar o nome do pai" ],
+			"Prepend the parent name to the item name in the cart and order.": [
+				"Anexe o nome do pai ao nome do item no carrinho e no pedido."
+			],
+			"Hide out of stock": [ "Ocultar fora de estoque" ],
+			"Hide out of stock products.": [
+				"Ocultar produtos fora de estoque."
+			],
+			"Show modal quick view": [ "Mostrar visualização rápida do modal" ],
+			"Show product quick view icon in modal.": [
+				"Mostrar ícone de visualização rápida do produto no modal."
+			],
+			"Show selected product quick view": [
+				"Mostrar visualização rápida do produto selecionado"
+			],
+			"Show product quick view icon in the selected product.": [
+				"Mostrar ícone de visualização rápida do produto no produto selecionado."
+			],
+			"Optional badge title color": [
+				"Cor opcional do título do distintivo"
+			],
+			"Quick view icon color": [ "Cor do ícone de visualização rápida" ],
+			"Images icon color": [ "Cor do ícone de imagens" ],
+			"Product price selector": [ "Seletor de preço do produto" ],
+			"Product list price": [ "Preço na lista de produtos" ],
+			"Product subtotal": [ "Subtotal do produto" ],
+			"Product price": [ "Preço do produto" ],
+			"Set how to show the product price in the product list.": [
+				"Defina como mostrar o preço do produto na lista de produtos."
+			],
+			"Quantity field on item": [ "Campo de quantidade no item" ],
+			"Show quantity field on item.": [
+				"Mostrar campo de quantidade no item"
+			],
+			"Item price": [ "Preço do item" ],
+			"Set how to show the product price in item.": [
+				"Definir como mostrar o preço do produto no item"
+			],
+			"Show plus icon": [ "Mostrar ícone de adição" ],
+			"Quick view button color": [
+				"Cor do botão de visualização rápida"
+			],
+			"Quick view button text color": [
+				"Cor do texto do botão de visualização rápida"
+			],
+			"Show plus icon between items.": [
+				"Mostrar ícone de adição entre os itens"
+			],
+			"Plus icon color": [ "Cor do ícone de adição" ],
+			"Click on product in pop-up": [ "Clique no produto no pop-up" ],
+			"Product selection": [ "Seleção de produto" ],
+			"Show product details": [ "Mostrar detalhes do produto" ],
+			"Quantity field buttons hover color": [
+				"Cor de hover dos botões do campo de quantidade"
+			],
+			"Add to cart button selector": [
+				"Seletor do botão Adicionar ao carrinho"
+			],
+			"Alert message color": [ "Cor da mensagem de alerta" ],
+			"Alert message background color": [
+				"Cor de fundo da mensagem de alerta"
+			],
+			"Disable popup": [ "Desativar popup" ],
+			"Disable popup for items that have only one product.": [
+				"Desativar popup para itens que têm apenas um produto."
+			],
+			"Optional item mode": [ "Modo de item opcional" ],
+			"Checkbox": [ "Caixa de seleção" ],
+			"Delete button": [ "Botão de exclusão" ],
+			"Total price - sale price color": [
+				"Preço total - cor do preço de venda"
+			],
+			"Total price - crossed out price color": [
+				"Preço total - cor do preço riscado"
+			],
+			"Total price - saved amount color": [
+				"Preço total - cor do valor economizado"
+			],
+			"Total price - saved amount background color": [
+				"Preço total - cor de fundo do valor economizado"
+			]
+		}
+	}
+}
