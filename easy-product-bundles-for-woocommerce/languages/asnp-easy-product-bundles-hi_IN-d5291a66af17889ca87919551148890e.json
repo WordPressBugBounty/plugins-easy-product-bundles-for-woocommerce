@@ -29,6 +29,9 @@
 			"Save": [ "पैसा बचाएं" ],
 			"Please select a product for all items.": [
 				"कृपया सभी आइटम्स के लिए एक उत्पाद चुनें।"
+			],
+			"Please select a purchasable variation for %s before adding bundle to the cart.":[
+				"कृपया %s के लिए एक खरीदी योग्य विकल्प चुनें, इससे पहले कि आप बंडल को कार्ट में जोड़ें।"
 			]
 		}
 	}

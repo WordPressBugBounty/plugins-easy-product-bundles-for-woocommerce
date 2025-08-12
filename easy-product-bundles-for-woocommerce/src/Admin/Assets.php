@@ -123,7 +123,7 @@ class Assets
 				}
 
 				if ( ! empty( $item['product'] ) ) {
-					$item['product'] = ItemsModel::get_products( array( 'type' => array( 'simple', 'variation' ), 'include' => array( absint( $item['product'] ) ) ) );
+					$item['product'] = ItemsModel::get_products( array( 'type' => array( 'simple', 'variation', 'variable' ), 'include' => array( absint( $item['product'] ) ) ) );
 					$item['product'] = ! empty( $item['product'] ) ? $item['product'][0] : '';
 				}
 

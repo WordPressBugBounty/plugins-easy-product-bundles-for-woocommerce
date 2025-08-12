@@ -239,6 +239,12 @@
 			],
 			"Total price - saved amount background color": [
 				"Totale prijs - achtergrondkleur van bespaard bedrag"
+			],
+			"Show “bundled” in suffix": [
+				"Toon ‘gebundeld’ als achtervoegsel"
+			],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"Toon de tekst ‘Gebundeld in [Hoofdproduct]’ na de naam van elk gebundeld item in het bestellingsdetailsgedeelte."
 			]
 		}
 	}

@@ -84,7 +84,7 @@ class Assets {
 				'show_plus_icon'                   => $settings->get_setting( 'show_plus_icon', 'true' ),
 				'click_on_popup_product'           => $settings->get_setting( 'click_on_popup_product', 'product_selection' ),
 				'disable_popup'                    => $settings->get_setting( 'disable_popup', 'false' ),
-				'optional_item_mode'               => $settings->get_setting( 'optional_item_mode', 'check_box' )
+				'optional_item_mode'               => $settings->get_setting( 'optional_item_mode', 'check_box' ),
 			) )
 		);
 

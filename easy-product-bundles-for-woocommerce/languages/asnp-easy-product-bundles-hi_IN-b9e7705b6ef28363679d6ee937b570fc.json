@@ -229,6 +229,10 @@
 			],
 			"Total price - saved amount background color": [
 				"कुल मूल्य - बचत राशि का पृष्ठभूमि रंग"
+			],
+			"Show “bundled” in suffix": [ "सफ़िक्स में “बंडल्ड” दिखाएँ" ],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"ऑर्डर विवरण सेक्शन में प्रत्येक बंडल्ड आइटम के नाम के बाद “[मुख्य उत्पाद] में बंडल्ड” टेक्स्ट दिखाएँ।"
 			]
 		}
 	}

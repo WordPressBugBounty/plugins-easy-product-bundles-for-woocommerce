@@ -30,6 +30,9 @@
 			"Save": [ "節約する" ],
 			"Please select a product for all items.": [
 				"すべてのアイテムの製品を選択してください。"
+			],
+			"Please select a purchasable variation for %s before adding bundle to the cart.": [
+				"バンドルをカートに追加する前に、%s の購入可能なバリエーションを選択してください。"
 			]
 		}
 	}

@@ -30,6 +30,9 @@
 			"Save": [ "节省" ],
 			"Please select a product for all items.": [
 				"请选择所有项目的产品."
+			],
+			"Please select a purchasable variation for %s before adding bundle to the cart.": [
+				"请在将组合商品添加到购物车之前，选择一个可购买的 %s 变体。"
 			]
 		}
 	}

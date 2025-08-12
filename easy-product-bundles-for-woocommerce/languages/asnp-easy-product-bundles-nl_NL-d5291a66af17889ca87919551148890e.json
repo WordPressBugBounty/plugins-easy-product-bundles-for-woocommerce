@@ -30,6 +30,9 @@
 			"Save": [ "Besparen" ],
 			"Please select a product for all items.": [
 				"Selecteer een product voor alle items."
+			],
+			"Please select a purchasable variation for %s before adding bundle to the cart.": [
+				"Selecteer een koopbare variant van %s voordat je de bundel aan de winkelwagen toevoegt."
 			]
 		}
 	}

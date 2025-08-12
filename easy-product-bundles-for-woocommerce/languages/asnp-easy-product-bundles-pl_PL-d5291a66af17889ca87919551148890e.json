@@ -30,7 +30,10 @@
 			"Edit product": [ "Edytuj produkt" ],
 			"Close": [ "Zamknij" ],
 			"Back": [ "Wstecz" ],
-			"More pictures": [ "Więcej zdjęć" ]
+			"More pictures": [ "Więcej zdjęć" ],
+			"Please select a purchasable variation for %s before adding bundle to the cart.": [
+				"Proszę wybrać dostępną do zakupu wariantę %s przed dodaniem pakietu do koszyka."
+			]
 		}
 	}
 }

@@ -247,6 +247,10 @@
 			],
 			"Total price - saved amount background color": [
 				"Preço total - cor de fundo do valor economizado"
+			],
+			"Show “bundled” in suffix": [ "Mostrar ‘agrupado’ no sufixo" ],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"Mostrar o texto ‘Agrupado em [Produto principal]’ após o nome de cada item agrupado na seção de detalhes do pedido."
 			]
 		}
 	}

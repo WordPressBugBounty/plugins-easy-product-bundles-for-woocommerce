@@ -34,7 +34,10 @@
 			"Please select a product for all items.": [
 				"Lütfen set için ürün seçimi yapın."
 			],
-			"Edit product": [ "Ürünleri düzenle" ]
+			"Edit product": [ "Ürünleri düzenle" ],
+			"Please select a purchasable variation for %s before adding bundle to the cart.": [
+				"Lütfen paketi sepete eklemeden önce %s için satın alınabilir bir varyasyon seçin."
+			]
 		}
 	}
 }

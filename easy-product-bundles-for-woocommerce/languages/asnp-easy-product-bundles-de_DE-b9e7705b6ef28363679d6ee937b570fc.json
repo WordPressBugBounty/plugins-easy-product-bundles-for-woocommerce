@@ -241,6 +241,10 @@
 			],
 			"Total price - saved amount background color": [
 				"Gesamtpreis - Hintergrundfarbe des gesparten Betrags"
+			],
+			"Show “bundled” in suffix": [ "„Gebündelt“ im Suffix anzeigen" ],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"Zeige den Text „Gebündelt in [Hauptprodukt]“ nach dem Namen jedes gebündelten Artikels im Bestelldetailbereich an."
 			]
 		}
 	}

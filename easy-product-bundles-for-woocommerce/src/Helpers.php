@@ -215,6 +215,8 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 		'is_variable' => $product->is_type( 'variable' ) ? 'true' : 'false',
 		'is_in_stock' => $product->is_in_stock() ? 'true' : 'false',
 		'link'        => $product->get_permalink(),
+		'max_qty'     => 0 < $product->get_max_purchase_quantity() ? $product->get_max_purchase_quantity() : '',
+		'min_qty'     => $product->get_min_purchase_quantity(),
 	);
 
 	if ( $product->is_type( 'variation' ) ) {

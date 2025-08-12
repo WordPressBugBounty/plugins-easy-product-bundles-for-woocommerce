@@ -88,7 +88,8 @@ class ProductBundle {
 		}
 
 		$items = $this->get_items();
-		$default_products = $this->get_default_products( $items );
+		$config = $this->get_default_products( $items );
+		$default_products = ! empty( $config['products'] ) ? $config['products'] : [];
 		$errors = $product->set_props(
 			[
 				'individual_theme'         => isset( $_POST['asnp_wepb_individual_theme'] ) && 'true' === $_POST['asnp_wepb_individual_theme'] ? 'true' : 'false',
@@ -107,6 +108,7 @@ class ProductBundle {
 				'hide_items_price'         => isset( $_POST['asnp_wepb_hide_items_price'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_hide_items_price'] ) ) : 'no',
 				'items'                    => $items,
 				'default_products'         => ! empty( $default_products ) ? json_encode( $default_products ) : '',
+				'loop_add_to_cart'         => ! empty( $config['loop_add_to_cart'] ) ? 'true' : 'false',
 			]
 		);
 
@@ -201,16 +203,18 @@ class ProductBundle {
 				case 'product':
 					if ( ! empty( $value ) ) {
 						$product = wc_get_product( absint( $value ) );
-						if ( ! $product || $product->is_type( 'variable' ) ) {
-							$bundle_item[ $key ] = $defaults[ $key ];
-						} elseif ( $product->is_type( 'variation' ) ) {
-							// Do not set variation to the default product when it has any value attributes.
-							$variation_attributes = $product->get_variation_attributes( false );
-							$any_attributes       = ProductBundles\get_any_value_attributes( $variation_attributes );
-							$bundle_item[ $key ]  = empty( $any_attributes ) ? absint( $value ) : $defaults[ $key ];
-						} else {
-							$bundle_item[ $key ] = absint( $value );
-						}
+						$bundle_item[ $key ] = $product ? $product->get_id() : $defaults[ $key ];
+
+						// if ( ! $product ) {
+						// 	$bundle_item[ $key ] = $defaults[ $key ];
+						// } elseif ( $product->is_type( 'variation' ) ) {
+						// 	// Do not set variation to the default product when it has any value attributes.
+						// 	$variation_attributes = $product->get_variation_attributes( false );
+						// 	$any_attributes       = ProductBundles\get_any_value_attributes( $variation_attributes );
+						// 	$bundle_item[ $key ]  = empty( $any_attributes ) ? absint( $value ) : $defaults[ $key ];
+						// } else {
+						// 	$bundle_item[ $key ] = absint( $value );
+						// }
 					} elseif ( isset( $defaults[ $key ] ) ) {
 						$bundle_item[ $key ] = $defaults[ $key ];
 					}
@@ -287,6 +291,7 @@ class ProductBundle {
 		}
 
 		$products = [];
+		$loop_add_to_cart = true;
 		foreach ( $items as $item ) {
 			if ( empty( $item['quantity'] ) || 0 >= absint( $item['quantity'] ) ) {
 				return [];
@@ -297,28 +302,43 @@ class ProductBundle {
 				return [];
 			}
 
+			// Disable loop add to cart logic.
+			if ( $product->is_type( 'variable' ) ) {
+				$loop_add_to_cart = false;
+			} elseif ( $loop_add_to_cart && $product->is_type( 'variation' ) ) {
+				$variation_attributes = $product->get_variation_attributes( false );
+				$any_attributes       = ProductBundles\get_any_value_attributes( $variation_attributes );
+				if ( ! empty( $any_attributes ) ) {
+					$loop_add_to_cart = false;
+				}
+			}
+
 			$products[] = [
 				'id'  => $product->get_id(),
 				'qty' => absint( $item['quantity'] ),
 			];
 		}
-		return $products;
+
+		return [
+			'products'         => $products,
+			'loop_add_to_cart' => $loop_add_to_cart,
+		];
 	}
 
 	protected function get_item_default_product( $item ) {
 		if ( ! empty( $item['product'] ) ) {
 			$product = wc_get_product( absint( $item['product'] ) );
-			if ( ! $product || ! $product->is_purchasable() || $product->is_type( 'variable' ) ) {
+			if ( ! $product || ! $product->is_purchasable() ) {
 				return false;
 			}
 
-			if ( $product->is_type( 'variation' ) ) {
+			/* if ( $product->is_type( 'variation' ) ) {
 				$variation_attributes = $product->get_variation_attributes( false );
 				$any_attributes       = ProductBundles\get_any_value_attributes( $variation_attributes );
 				if ( ! empty( $any_attributes ) ) {
 					return false;
 				}
-			}
+			} */
 
 			return $product;
 		}

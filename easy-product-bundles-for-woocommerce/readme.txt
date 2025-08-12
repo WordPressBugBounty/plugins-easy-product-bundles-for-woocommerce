@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 6.5.0
+Stable tag: 6.6.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -213,10 +213,13 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.6.0 =
+* New Feature: Ability to select variations of variable products directly within items using a drop-down menu.
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 6.5.0 =
 * New Feature: Added a new setting to control the display of the "(Bundled in ...)" suffix in order details for bundled items.
 * Ensured compatibility with WooCommerce version 10.0.4
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 6.4.4 =
 * Bug Fix: Fixed the validation of total product quantities within the bundle.

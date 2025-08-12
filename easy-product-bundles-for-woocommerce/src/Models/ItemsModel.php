@@ -9,6 +9,13 @@ use AsanaPlugins\WooCommerce\ProductBundles;
 class ItemsModel {
 
 	public static function search_products( array $args = array() ) {
+		$args = array_merge(
+			[
+				'type'  => [],
+				'field' => 'products',
+			],
+			$args
+		);
 		if ( empty( $args['search'] ) ) {
 			throw new \Exception( 'Search term is required to search products.' );
 		}
@@ -21,7 +28,7 @@ class ItemsModel {
 			$products = $data_store->search_products( wc_clean( wp_unslash( $args['search'] ) ), '', true, true );
 		}
 
-		return ! empty( $products ) ? self::prepare_product_items( $products, ! empty( $args['type'] ) ? $args['type'] : array() ) : array();
+		return ! empty( $products ) ? self::prepare_product_items( $products, $args['type'], $args['field'] ) : array();
 	}
 
 	public static function get_products( array $args = array() ) {
@@ -40,7 +47,7 @@ class ItemsModel {
 		return ! empty( $products ) ? self::prepare_product_items( $products, $args['type'] ) : array();
 	}
 
-	protected static function prepare_product_items( array $products, $allowed_types = array( 'simple', 'variation' ) ) {
+	protected static function prepare_product_items( array $products, $allowed_types = array( 'simple', 'variation', 'variable' ), $field = 'products' ) {
 		if ( empty( $products ) ) {
 			return array();
 		}
@@ -74,7 +81,9 @@ class ItemsModel {
 				$text .= $disabled ? ' - ' . __( 'PRO Version', 'asnp-easy-product-bundles' ) : '';
 			} else {
 				$text = sprintf( '%2$s (%1$s)', $identifier, $product->get_title() );
-				$disabled = ! $pro_active && ! $product->is_type( 'simple' ) && ! $product->is_type( 'variable' );
+				if ( ! $pro_active ) {
+					$disabled = ( 'default_product' === $field && ! $product->is_type( 'simple' ) ) || ( ! $product->is_type( 'simple' ) && ! $product->is_type( 'variable' ) );
+				}
 				$text .= $disabled ? ' - ' . __( 'PRO Version', 'asnp-easy-product-bundles' ) : '';
 			}
 

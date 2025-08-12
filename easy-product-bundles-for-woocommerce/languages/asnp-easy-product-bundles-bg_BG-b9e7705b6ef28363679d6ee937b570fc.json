@@ -251,6 +251,12 @@
 			],
 			"Total price - saved amount background color": [
 				"Цвят на общата цена - цвят на фона на спестената сума"
+			],
+			"Show “bundled” in suffix": [
+				"Показване на „пакетиран“ в наставката"
+			],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"Показване на текста „Част от пакет [основен продукт]“ след името на всеки включен в пакета артикул в раздела с детайли на поръчката."
 			]
 		}
 	}

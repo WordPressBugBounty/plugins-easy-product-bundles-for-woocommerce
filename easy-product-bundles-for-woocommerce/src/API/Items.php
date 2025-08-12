@@ -51,27 +51,21 @@ class Items extends BaseController {
 			return new \WP_Error( 'asnp_easy_product_bundles_search_term_required', __( 'Search term is required.', 'asnp-easy-product-bundles' ), array( 'status' => 400 ) );
 		}
 
-		$items = [];
+		try {
+			$items = [];
 
-		if ( 'products' === $request['type'] ) {
-			try {
+			if ( 'products' === $request['type'] ) {
 				$items = ItemsModel::search_products( array( 'search' => $search, 'type' => ProductBundles\get_product_types_for_bundle() ) );
-			} catch ( \Exception $e ) {
-				return new \WP_Error( 'asnp_easy_product_bundles_error_in_searching_items', $e->getMessage(), array( 'status' => 400 ) );
+			} elseif ( 'default_product' === $request['type'] ) {
+				$items = ItemsModel::search_products( array( 'search' => $search, 'type' => ProductBundles\get_product_types_for_bundle(), 'field' => 'default_product' ) );
+			} else {
+				$items = apply_filters( 'asnp_wepb_items_api_search_items', $items, $search, $request );
 			}
-		} elseif ( 'default_product' === $request['type'] ) {
-			try {
-				$items = ItemsModel::search_products( array( 'search' => $search, 'type' => ProductBundles\get_product_types_for_bundle( ['variable'] ) ) );
-			} catch ( \Exception $e ) {
-				return new \WP_Error( 'asnp_easy_product_bundles_error_in_searching_items', $e->getMessage(), array( 'status' => 400 ) );
-			}
-		} else {
-			$items = apply_filters( 'asnp_wepb_items_api_search_items', $items, $search, $request );
-		}
 
-		return new \WP_REST_Response( array(
-            'items' => $items,
-        ) );
+			return new \WP_REST_Response( [ 'items' => $items ] );
+		} catch ( \Exception $e ) {
+			return new \WP_Error( 'asnp_easy_product_bundles_error_in_searching_items', $e->getMessage(), array( 'status' => 400 ) );
+		}
 	}
 
 	/**
@@ -89,33 +83,27 @@ class Items extends BaseController {
 			return new \WP_Error( 'asnp_easy_product_bundles_type_required', __( 'Type is required.', 'asnp-easy-product-bundles' ), array( 'status' => 400 ) );
 		}
 
-		$items = $request['items'];
-		if ( ! is_array( $items ) ) {
-			$items = explode( ',', $items );
-		}
-		if ( ! empty( $items ) ) {
-			$items = array_filter( array_map( 'absint', $items ) );
-		}
+		try {
+			$items = $request['items'];
+			if ( ! is_array( $items ) ) {
+				$items = explode( ',', $items );
+			}
+			if ( ! empty( $items ) ) {
+				$items = array_filter( array_map( 'absint', $items ) );
+			}
 
-		if ( 'products' === $request['type'] ) {
-			try {
+			if ( 'products' === $request['type'] ) {
 				$items = ItemsModel::get_products( array( 'include' => $items, 'type' => ProductBundles\get_product_types_for_bundle() ) );
-			} catch ( \Exception $e ) {
-				return new \WP_Error( 'asnp_easy_product_bundles_error_in_getting_items', $e->getMessage(), array( 'status' => 400 ) );
+			} elseif ( 'default_product' === $request['type'] ) {
+				$items = ItemsModel::get_products( array( 'include' => $items, 'type' => ProductBundles\get_product_types_for_bundle(), 'field' => 'default_product' ) );
+			} else {
+				$items = apply_filters( 'asnp_wepb_items_api_get_items', [], $items, $request );
 			}
-		} elseif ( 'default_product' === $request['type'] ) {
-			try {
-				$items = ItemsModel::get_products( array( 'include' => $items, 'type' => ProductBundles\get_product_types_for_bundle( ['variable'] ) ) );
-			} catch ( \Exception $e ) {
-				return new \WP_Error( 'asnp_easy_product_bundles_error_in_getting_items', $e->getMessage(), array( 'status' => 400 ) );
-			}
-		} else {
-			$items = apply_filters( 'asnp_wepb_items_api_get_items', [], $items, $request );
-		}
 
-		return new \WP_REST_Response( array(
-            'items' => $items,
-        ) );
+			return new \WP_REST_Response( [ 'items' => $items ] );
+		} catch ( \Exception $e ) {
+			return new \WP_Error( 'asnp_easy_product_bundles_error_in_getting_items', $e->getMessage(), array( 'status' => 400 ) );
+		}
 	}
 
 }

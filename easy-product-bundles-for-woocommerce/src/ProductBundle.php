@@ -31,7 +31,8 @@ class ProductBundle extends \WC_Product {
 		'max_items_quantity' => '',
 		'items_is_in_stock' => 'true',
 		'default_products_price' => [],
-		'sync_stock_quantity' => 'false'
+		'sync_stock_quantity' => 'false',
+		'loop_add_to_cart' => '',
 	);
 
 	protected $is_cart_item = false;
@@ -224,6 +225,15 @@ class ProductBundle extends \WC_Product {
 		return $this->get_prop( 'sync_stock_quantity', $context );
 	}
 
+	/**
+	 * Get loop add to cart.
+	 *
+	 * @return string 'true'|'false'|''
+	 */
+	public function get_loop_add_to_cart( $context = 'view' ) {
+		return $this->get_prop( 'loop_add_to_cart', $context );
+	}
+
 	public function get_initial_data( $context = 'view' ) {
 		$data = array(
 			'product'            => [
@@ -272,7 +282,7 @@ class ProductBundle extends \WC_Product {
 			'edit_quantity'        => isset( $item['edit_quantity'] ) && 'true' === $item['edit_quantity'] ? 'true' : 'false',
 			'quantity'             => ! empty( $item['quantity'] ) ? absint( $item['quantity'] ) : 1,
 			'min_quantity'         => ! empty( $item['min_quantity'] ) ? absint( $item['min_quantity'] ) : 1,
-			'max_quantity'         => ! empty( $item['max_quantity'] ) ? absint( $item['max_quantity'] ) : null,
+			'max_quantity'         => ! empty( $item['max_quantity'] ) ? absint( $item['max_quantity'] ) : '',
 			'optional'             => isset( $item['optional'] ) && 'true' === $item['optional'] ? 'true' : 'false',
 			'selected'             => isset( $item['selected'] ) && 'false' === $item['selected'] ? 'false' : 'true',
 			'title'                => ! empty( $item['title'] ) ? sanitize_text_field( __( $item['title'], 'asnp-easy-product-bundles' ) ) : '',
@@ -306,24 +316,31 @@ class ProductBundle extends \WC_Product {
 
 		if ( ! empty( $data['product'] ) ) {
 			$product = wc_get_product( $data['product'] );
-			if ( $product && ! $product->is_type( 'variable' ) && $product->is_purchasable() ) {
-				if ( $product->is_type( 'variation' ) ) {
-					// Do not set variation to the default product when it has any value attributes.
-					$variation_attributes = $product->get_variation_attributes( false );
-					$any_attributes       = get_any_value_attributes( $variation_attributes );
-					if ( empty( $any_attributes ) ) {
-						$data['product'] = prepare_product_data( $product, $item );
-					} else {
-						$data['product']            = null;
-						$data['can_change_product'] = 'true';
-					}
-				} else {
-					$data['product'] = prepare_product_data( $product, $item );
-				}
+			if ( $product && $product->is_purchasable() ) {
+				$data['product'] = prepare_product_data( $product, $item );
 			} else {
 				$data['product']            = null;
 				$data['can_change_product'] = 'true';
 			}
+
+			// if ( $product && ! $product->is_type( 'variable' ) && $product->is_purchasable() ) {
+			// 	if ( $product->is_type( 'variation' ) ) {
+			// 		// Do not set variation to the default product when it has any value attributes.
+			// 		$variation_attributes = $product->get_variation_attributes( false );
+			// 		$any_attributes       = get_any_value_attributes( $variation_attributes );
+			// 		if ( empty( $any_attributes ) ) {
+			// 			$data['product'] = prepare_product_data( $product, $item );
+			// 		} else {
+			// 			$data['product']            = null;
+			// 			$data['can_change_product'] = 'true';
+			// 		}
+			// 	} else {
+			// 		$data['product'] = prepare_product_data( $product, $item );
+			// 	}
+			// } else {
+			// 	$data['product']            = null;
+			// 	$data['can_change_product'] = 'true';
+			// }
 		}
 
 		return $data;
@@ -520,7 +537,7 @@ class ProductBundle extends \WC_Product {
 	}
 
 	/**
-	 * Set sync stock quantity..
+	 * Set sync stock quantity.
 	 *
 	 * @param string $sync_stock_quantity 'true'|'false'
 	 */
@@ -578,6 +595,15 @@ class ProductBundle extends \WC_Product {
 	}
 
 	/**
+	 * Set loop add to cart.
+	 *
+	 * @param string $loop_add_to_cart 'true'|'false'
+	 */
+	public function set_loop_add_to_cart( $loop_add_to_cart ) {
+		$this->set_prop( 'loop_add_to_cart', $loop_add_to_cart );
+	}
+
+	/**
 	 * Returns false if the product cannot be bought.
 	 *
 	 * @return bool
@@ -617,7 +643,8 @@ class ProductBundle extends \WC_Product {
 	 * @return string
 	 */
 	public function add_to_cart_url() {
-		$url = $this->is_purchasable() && $this->is_in_stock() && ! empty( $this->get_default_products() ) ? remove_query_arg(
+		$condition = 'true' === $this->get_loop_add_to_cart() || ( '' === $this->get_loop_add_to_cart() && ! empty( $this->get_default_products() ) );
+		$url = $condition && $this->is_purchasable() && $this->is_in_stock() ? remove_query_arg(
 			'added-to-cart',
 			add_query_arg(
 				array(
@@ -635,14 +662,14 @@ class ProductBundle extends \WC_Product {
 	 * @return string
 	 */
 	public function add_to_cart_text() {
-		$text = $this->is_purchasable() && $this->is_in_stock() && ! empty( $this->get_default_products() ) ? __( 'Add to cart', 'woocommerce' ) : __( 'Read more', 'woocommerce' );
+		$condition = 'true' === $this->get_loop_add_to_cart() || ( '' === $this->get_loop_add_to_cart() && ! empty( $this->get_default_products() ) );
+		$text = $condition && $this->is_purchasable() && $this->is_in_stock() ? __( 'Add to cart', 'woocommerce' ) : __( 'Configure bundle', 'asnp-easy-product-bundles' );
 
 		return apply_filters( 'woocommerce_product_add_to_cart_text', $text, $this );
 	}
 
 	public function supports_ajax_add_to_cart() {
-		$default_products = $this->get_default_products();
-		return ! empty( $default_products );
+		return 'true' === $this->get_loop_add_to_cart() || ( '' === $this->get_loop_add_to_cart() && ! empty( $this->get_default_products() ) );
 	}
 
 	public static function calculate_default_products_price( $product ) {
@@ -682,6 +709,7 @@ class ProductBundle extends \WC_Product {
 			}
 		}
 
+		$from = false;
 		for ( $i = 0; $i < count( $default_products ); $i++ ) {
 			if ( 0 >= (int) $default_products[ $i ] ) {
 				continue;
@@ -699,6 +727,8 @@ class ProductBundle extends \WC_Product {
 			if ( ! $item_product || ! $item_product->is_purchasable() ) {
 				continue;
 			}
+
+			$from = $from ? $from : $item_product->is_type( 'variable' );
 
 			$product_price = get_bundle_item_price(
 				$item_product,
@@ -731,11 +761,13 @@ class ProductBundle extends \WC_Product {
 				'min'     => $min_price_display,
 				'total'   => $total_display,
 				'regular' => $regular_display,
+				'from'    => $from,
 			],
 			'raw'     => [
 				'min'     => $min_price,
 				'total'   => $total,
 				'regular' => $regular,
+				'from'    => $from,
 			],
 		];
 	}

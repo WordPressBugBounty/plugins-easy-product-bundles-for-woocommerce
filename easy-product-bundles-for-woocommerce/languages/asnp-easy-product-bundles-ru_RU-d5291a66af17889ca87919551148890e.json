@@ -30,7 +30,10 @@
 			"Edit product": [ "Редактировать продукт" ],
 			"Close": [ "Закрыть" ],
 			"Back": [ "Назад" ],
-			"More pictures": [ "Больше картинок" ]
+			"More pictures": [ "Больше картинок" ],
+			"Please select a purchasable variation for %s before adding bundle to the cart.": [
+				"Пожалуйста, выберите доступную для покупки вариацию %s перед добавлением набора в корзину."
+			]
 		}
 	}
 }

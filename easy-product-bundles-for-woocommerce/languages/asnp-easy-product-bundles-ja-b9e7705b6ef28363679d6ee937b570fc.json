@@ -217,6 +217,10 @@
 			"Total price - saved amount color": [ "総価格 - 節約額の色" ],
 			"Total price - saved amount background color": [
 				"総価格 - 節約額の背景色"
+			],
+			"Show “bundled” in suffix": [ "接尾辞に「バンドル済み」を表示" ],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"注文詳細セクションで、各バンドル商品名の後に「[親商品]に含まれる」というテキストを表示する。"
 			]
 		}
 	}

@@ -243,6 +243,10 @@
 			],
 			"Total price - saved amount background color": [
 				"Общая цена - цвет фона сэкономленной суммы"
+			],
+			"Show “bundled” in suffix": [ "Показать «в комплекте» в суффиксе" ],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"Показать текст «В комплекте с [родительским продуктом]» после названия каждого товара в комплекте в разделе деталей заказа."
 			]
 		}
 	}

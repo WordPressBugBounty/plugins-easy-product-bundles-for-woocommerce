@@ -30,7 +30,10 @@
 			"Edit product": [ "Produkt bearbeiten" ],
 			"Close": [ "Schließen" ],
 			"Back": [ "Zurück" ],
-			"More pictures": [ "Weitere Bilder" ]
+			"More pictures": [ "Weitere Bilder" ],
+			"Please select a purchasable variation for %s before adding bundle to the cart.": [
+				"Bitte wählen Sie eine kaufbare Variante von %s, bevor Sie das Bundle in den Warenkorb legen."
+			]
 		}
 	}
 }

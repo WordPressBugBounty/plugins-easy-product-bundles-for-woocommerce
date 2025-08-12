@@ -211,6 +211,10 @@
 			],
 			"Total price - saved amount background color": [
 				"מחיר כולל - צבע רקע של הסכום החסוך"
+			],
+			"Show “bundled” in suffix": [ "הצג 'כלול בחבילה' בסיומת" ],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"הצג את הטקסט 'כלול ב-[המוצר הראשי]' לאחר שם כל פריט כלול בחבילה בסעיף פרטי ההזמנה."
 			]
 		}
 	}

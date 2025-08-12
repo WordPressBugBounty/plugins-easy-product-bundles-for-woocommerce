@@ -200,6 +200,10 @@
 			"Total price - saved amount color": [ "总价 - 节省金额颜色" ],
 			"Total price - saved amount background color": [
 				"总价 - 节省金额背景颜色"
+			],
+			"Show “bundled” in suffix": [ "在后缀显示“捆绑”" ],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"在订单详情部分每个捆绑商品名称后显示“捆绑于 [主产品]”文本。"
 			]
 		}
 	}

@@ -223,6 +223,10 @@
 			],
 			"Total price - saved amount background color": [
 				"لون السعر الإجمالي - لون خلفية المبلغ الموفر"
+			],
+			"Show “bundled” in suffix": [ "عرض «الحزمة» في اللاحقة" ],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"عرض النص «مدرج في حزمة [المنتج الرئيسي]» بعد اسم كل عنصر مجمّع في قسم تفاصيل الطلب."
 			]
 		}
 	}

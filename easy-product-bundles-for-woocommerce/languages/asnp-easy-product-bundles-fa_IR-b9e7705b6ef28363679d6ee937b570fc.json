@@ -223,6 +223,10 @@
 			],
 			"Total price - saved amount background color": [
 				"قیمت کل - رنگ پس‌زمینه مبلغ سود خرید"
+			],
+			"Show “bundled” in suffix": [ "نمایش «بسته‌بندی شده» در پسوند" ],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"نمایش متن «بسته‌بندی شده در [محصول اصلی]» بعد از نام هر آیتم بسته‌بندی شده در بخش جزئیات سفارش."
 			]
 		}
 	}

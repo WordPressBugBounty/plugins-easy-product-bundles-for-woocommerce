@@ -130,7 +130,7 @@ class ProductBundleHooks {
 			foreach ( $default_products as $default_product ) {
 				$default_product = wc_get_product( $default_product );
 				// If one of items is not a product or not purchasable then the value should be empty.
-				if ( ! $default_product || ! $default_product->is_purchasable() ) {
+				if ( ! $default_product || ! $default_product->is_purchasable() || $default_product->is_type( 'variable' ) ) {
 					$value = '';
 					break;
 				}
@@ -192,10 +192,11 @@ class ProductBundleHooks {
 				$content = __( 'From', 'asnp-easy-product-bundles' ) . ' ' . wc_price( $prices['total'] ) . $product->get_price_suffix();
 			}
 		} else {
+			$from = ! empty( $prices['from'] ) && ! is_product_page() ? __( 'From', 'asnp-easy-product-bundles' ) . ' ' : '';
 			if ( $show_regular && $prices['regular'] > $prices['total'] ) {
-				$content = wc_format_sale_price( $prices['regular'], $prices['total'] ) . $product->get_price_suffix();
+				$content = $from . wc_format_sale_price( $prices['regular'], $prices['total'] ) . $product->get_price_suffix();
 			} else {
-				$content = wc_price( $prices['total'] ) . $product->get_price_suffix();
+				$content = $from . wc_price( $prices['total'] ) . $product->get_price_suffix();
 			}
 		}
 
@@ -262,6 +263,10 @@ class ProductBundleHooks {
 				$item_product = wc_get_product( $id );
 				if ( ! $item_product ) {
 					throw new \Exception( sprintf( __( 'Selected product for the bundle item %d is invalid.', 'asnp-easy-product-bundles' ), $i + 1 ) );
+				}
+
+				if ( $item_product->is_type( 'variable' ) ) {
+					throw new \Exception( sprintf( __( 'Please select a variation for the bundle item &quot;%s&quot;.', 'asnp-easy-product-bundles' ), $item_product->get_name() ) );
 				}
 
 				if ( post_password_required( $id ) ) {
@@ -1396,10 +1401,16 @@ class ProductBundleHooks {
 	}
 
 	public function loop_add_to_cart_link( $link, $product ) {
-		if (
-			! $product->is_type( Plugin::PRODUCT_TYPE ) ||
-			! empty( $product->get_default_products() )
-		) {
+		if ( ! $product->is_type( Plugin::PRODUCT_TYPE ) ) {
+			return $link;
+		}
+
+		if ( 'true' === $product->get_loop_add_to_cart() ) {
+			return $link;
+		}
+
+		// Backward compatibility when loop add to cart doesn't set.
+		if ( '' === $product->get_loop_add_to_cart() && ! empty( $product->get_default_products() ) ) {
 			return $link;
 		}
 

@@ -208,6 +208,10 @@
 			],
 			"Total price - saved amount background color": [
 				"Totalpris - baggrundsfarve for sparet beløb"
+			],
+			"Show “bundled” in suffix": [ "Vis 'bundlet' i endelsen" ],
+			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
+				"Vis teksten 'Indgår i [Hovedprodukt]' efter navnet på hver pakkede vare i ordredetaljerne."
 			]
 		}
 	}

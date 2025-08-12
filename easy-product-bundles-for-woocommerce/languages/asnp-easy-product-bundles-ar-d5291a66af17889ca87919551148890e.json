@@ -30,7 +30,10 @@
 			"Edit product": [ "تعديل المنتج" ],
 			"Close": [ "إغلاق" ],
 			"Back": [ "العودة" ],
-			"More pictures": [ "المزيد من الصور" ]
+			"More pictures": [ "المزيد من الصور" ],
+			"Please select a purchasable variation for %s before adding bundle to the cart.": [
+				"يرجى اختيار نسخة قابلة للشراء من %s قبل إضافة الحزمة إلى السلة."
+			]
 		}
 	}
 }
