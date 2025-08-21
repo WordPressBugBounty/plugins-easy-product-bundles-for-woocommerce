@@ -221,7 +221,15 @@
 			"Show “bundled” in suffix": [ "接尾辞に「バンドル済み」を表示" ],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"注文詳細セクションで、各バンドル商品名の後に「[親商品]に含まれる」というテキストを表示する。"
-			]
+			],
+			"Apps you might like": [ "おすすめのアプリ" ],
+			"Active Installations": [ "アクティブインストール数" ],
+			"Free Version": [ "無料版" ],
+			"Buy Pro": [ "Pro版を購入" ],
+			"Apps": [ "アプリ" ],
+			"Articles": [ "記事" ],
+			"Video Tutorials": [ "動画チュートリアル" ],
+			"Get Support": [ "サポートを受ける" ]
 		}
 	}
 }

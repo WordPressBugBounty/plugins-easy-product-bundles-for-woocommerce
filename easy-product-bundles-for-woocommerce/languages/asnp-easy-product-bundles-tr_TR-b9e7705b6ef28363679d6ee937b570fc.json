@@ -249,7 +249,15 @@
 			],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"Sipariş detayları bölümünde, her paketlenmiş ürünün adından sonra “[Ana Ürün] içinde paketlenmiş” metnini göster."
-			]
+			],
+			"Apps you might like": [ "Beğenebileceğiniz uygulamalar" ],
+			"Active Installations": [ "Aktif kurulumlar" ],
+			"Free Version": [ "Ücretsiz sürüm" ],
+			"Buy Pro": [ "Pro sürümü satın al" ],
+			"Apps": [ "Uygulamalar" ],
+			"Articles": [ "Makaleler" ],
+			"Video Tutorials": [ "Video eğitimleri" ],
+			"Get Support": [ "Destek al" ]
 		}
 	}
 }

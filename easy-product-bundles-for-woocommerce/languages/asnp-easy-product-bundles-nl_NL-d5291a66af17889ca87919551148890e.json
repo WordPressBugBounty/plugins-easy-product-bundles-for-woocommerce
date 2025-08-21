@@ -33,7 +33,11 @@
 			],
 			"Please select a purchasable variation for %s before adding bundle to the cart.": [
 				"Selecteer een koopbare variant van %s voordat je de bundel aan de winkelwagen toevoegt."
-			]
+			],
+			"Please select a purchasable product for %s before adding bundle to the cart.": [
+				"Selecteer een aankoopbaar product voor %s voordat je het bundelpakket aan de winkelwagen toevoegt."
+			],
+			"Empty bundle!": [ "Leeg bundelpakket!" ]
 		}
 	}
 }

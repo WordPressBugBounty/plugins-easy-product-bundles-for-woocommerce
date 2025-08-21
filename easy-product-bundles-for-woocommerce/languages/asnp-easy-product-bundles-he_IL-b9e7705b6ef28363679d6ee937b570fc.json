@@ -215,7 +215,15 @@
 			"Show “bundled” in suffix": [ "הצג 'כלול בחבילה' בסיומת" ],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"הצג את הטקסט 'כלול ב-[המוצר הראשי]' לאחר שם כל פריט כלול בחבילה בסעיף פרטי ההזמנה."
-			]
+			],
+			"Apps you might like": [ "אפליקציות שאולי תאהב" ],
+			"Active Installations": [ "התקנות פעילות" ],
+			"Free Version": [ "גרסה חינמית" ],
+			"Buy Pro": [ "קנה גרסת Pro" ],
+			"Apps": [ "אפליקציות" ],
+			"Articles": [ "מאמרים" ],
+			"Video Tutorials": [ "מדריכי וידאו" ],
+			"Get Support": [ "קבל תמיכה" ]
 		}
 	}
 }

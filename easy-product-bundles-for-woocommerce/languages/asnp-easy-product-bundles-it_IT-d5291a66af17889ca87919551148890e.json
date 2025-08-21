@@ -31,9 +31,13 @@
 			"Close": [ "Chiudi" ],
 			"Back": [ "Indietro" ],
 			"More pictures": [ "Altre immagini" ],
-			"Please select a purchasable variation for %s before adding bundle to the cart.":[
+			"Please select a purchasable variation for %s before adding bundle to the cart.": [
 				"Seleziona una variante acquistabile per %s prima di aggiungere il bundle al carrello."
-			]
+			],
+			"Please select a purchasable product for %s before adding bundle to the cart.": [
+				"Seleziona un prodotto acquistabile per %s prima di aggiungere il pacchetto al carrello."
+			],
+			"Empty bundle!": [ "Pacchetto vuoto!" ]
 		}
 	}
 }

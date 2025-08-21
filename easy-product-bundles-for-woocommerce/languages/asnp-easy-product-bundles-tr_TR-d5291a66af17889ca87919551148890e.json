@@ -37,7 +37,11 @@
 			"Edit product": [ "Ürünleri düzenle" ],
 			"Please select a purchasable variation for %s before adding bundle to the cart.": [
 				"Lütfen paketi sepete eklemeden önce %s için satın alınabilir bir varyasyon seçin."
-			]
+			],
+			"Please select a purchasable product for %s before adding bundle to the cart.": [
+				"%s için paketi sepete eklemeden önce satın alınabilir bir ürün seçin."
+			],
+			"Empty bundle!": [ "Boş paket!" ]
 		}
 	}
 }

@@ -3,7 +3,7 @@
         'name' => 'asanaplugins/easy-product-bundles-woocommerce',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'a2d77bca21e9c48c41ae9f450036a38e7cc032c3',
+        'reference' => '1d9e40ef3e171012efaab8d09073fcf838a2b9b9',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'asanaplugins/easy-product-bundles-woocommerce' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'a2d77bca21e9c48c41ae9f450036a38e7cc032c3',
+            'reference' => '1d9e40ef3e171012efaab8d09073fcf838a2b9b9',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

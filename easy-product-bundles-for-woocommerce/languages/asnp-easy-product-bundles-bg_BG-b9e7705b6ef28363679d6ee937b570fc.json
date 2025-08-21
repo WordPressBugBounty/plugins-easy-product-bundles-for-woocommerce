@@ -257,7 +257,15 @@
 			],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"Показване на текста „Част от пакет [основен продукт]“ след името на всеки включен в пакета артикул в раздела с детайли на поръчката."
-			]
+			],
+			"Apps you might like": [ "Приложения, които може да харесате" ],
+			"Active Installations": [ "Активни инсталации" ],
+			"Free Version": [ "Безплатна версия" ],
+			"Buy Pro": [ "Купете Pro версията" ],
+			"Apps": [ "Приложения" ],
+			"Articles": [ "Статии" ],
+			"Video Tutorials": [ "Видео уроци" ],
+			"Get Support": [ "Получаване на поддръжка" ]
 		}
 	}
 }

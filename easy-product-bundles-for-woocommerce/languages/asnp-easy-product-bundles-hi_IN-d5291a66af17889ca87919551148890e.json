@@ -30,9 +30,13 @@
 			"Please select a product for all items.": [
 				"कृपया सभी आइटम्स के लिए एक उत्पाद चुनें।"
 			],
-			"Please select a purchasable variation for %s before adding bundle to the cart.":[
+			"Please select a purchasable variation for %s before adding bundle to the cart.": [
 				"कृपया %s के लिए एक खरीदी योग्य विकल्प चुनें, इससे पहले कि आप बंडल को कार्ट में जोड़ें।"
-			]
+			],
+			"Please select a purchasable product for %s before adding bundle to the cart.": [
+				"कृपया %s के लिए जोड़ने से पहले एक खरीदने योग्य उत्पाद चुनें।"
+			],
+			"Empty bundle!": [ "खाली बंडल!" ]
 		}
 	}
 }

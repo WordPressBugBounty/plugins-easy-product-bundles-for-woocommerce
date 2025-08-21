@@ -181,7 +181,8 @@
 			"Selected": [ "נבחר" ],
 			"Enable this field to make the optional item selected in the frontend.": [
 				"הפעל שדה זה כדי לבחור את הפריט האופציונלי בחזית."
-			]
+			],
+			"ID": [ "מזהה" ]
 		}
 	}
 }

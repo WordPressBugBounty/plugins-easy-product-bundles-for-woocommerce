@@ -199,7 +199,8 @@
 			"Selected": [ "Избран" ],
 			"Enable this field to make the optional item selected in the frontend.": [
 				"Активирайте това поле, за да направите избираемия елемент избран в предния край."
-			]
+			],
+			"ID": [ "ИД" ]
 		}
 	}
 }

@@ -227,7 +227,15 @@
 			"Show “bundled” in suffix": [ "عرض «الحزمة» في اللاحقة" ],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"عرض النص «مدرج في حزمة [المنتج الرئيسي]» بعد اسم كل عنصر مجمّع في قسم تفاصيل الطلب."
-			]
+			],
+			"Apps you might like": [ "تطبيقات قد تعجبك" ],
+			"Active Installations": [ "عمليات التثبيت النشطة" ],
+			"Free Version": [ "النسخة المجانية" ],
+			"Buy Pro": [ "شراء النسخة الاحترافية" ],
+			"Apps": [ "تطبيقات" ],
+			"Articles": [ "مقالات" ],
+			"Video Tutorials": [ "شروحات فيديو" ],
+			"Get Support": [ "الحصول على الدعم" ]
 		}
 	}
 }

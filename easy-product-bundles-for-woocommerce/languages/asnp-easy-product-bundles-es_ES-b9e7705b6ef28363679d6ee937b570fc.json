@@ -255,7 +255,15 @@
 			"Show “bundled” in suffix": [ "Mostrar “agrupado” en sufijo" ],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"Mostrar el texto “Agrupado en [Producto principal]” después del nombre de cada artículo agrupado en la sección de detalles del pedido."
-			]
+			],
+			"Apps you might like": [ "Aplicaciones que podrían gustarte" ],
+			"Active Installations": [ "Instalaciones activas" ],
+			"Free Version": [ "Versión gratuita" ],
+			"Buy Pro": [ "Comprar Pro" ],
+			"Apps": [ "Aplicaciones" ],
+			"Articles": [ "Artículos" ],
+			"Video Tutorials": [ "Tutoriales en vídeo" ],
+			"Get Support": [ "Obtener soporte" ]
 		}
 	}
 }

@@ -187,7 +187,8 @@
 			"Selected": [ "محدد" ],
 			"Enable this field to make the optional item selected in the frontend.": [
 				"قم بتمكين هذا الحقل لجعل العنصر الاختياري محددًا في الواجهة الأمامية."
-			]
+			],
+			"ID": [ "المعرف" ]
 		}
 	}
 }

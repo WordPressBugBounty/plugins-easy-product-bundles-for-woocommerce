@@ -247,7 +247,15 @@
 			],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"Toon de tekst ‘Gebundeld in [Hoofdproduct]’ na de naam van elk gebundeld item in het bestellingsdetailsgedeelte."
-			]
+			],
+			"Apps you might like": [ "Aplikacje, które mogą Ci się spodobać" ],
+			"Active Installations": [ "Aktywne instalacje" ],
+			"Free Version": [ "Wersja bezpłatna" ],
+			"Buy Pro": [ "Kup wersję Pro" ],
+			"Apps": [ "Aplikacje" ],
+			"Articles": [ "Artykuły" ],
+			"Video Tutorials": [ "Samouczki wideo" ],
+			"Get Support": [ "Uzyskaj wsparcie" ]
 		}
 	}
 }

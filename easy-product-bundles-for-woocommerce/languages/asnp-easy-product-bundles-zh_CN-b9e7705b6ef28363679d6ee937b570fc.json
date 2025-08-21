@@ -204,7 +204,15 @@
 			"Show “bundled” in suffix": [ "在后缀显示“捆绑”" ],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"在订单详情部分每个捆绑商品名称后显示“捆绑于 [主产品]”文本。"
-			]
+			],
+			"Apps you might like": [ "您可能喜欢的应用" ],
+			"Active Installations": [ "活跃安装数" ],
+			"Free Version": [ "免费版本" ],
+			"Buy Pro": [ "购买专业版" ],
+			"Apps": [ "应用" ],
+			"Articles": [ "文章" ],
+			"Video Tutorials": [ "视频教程" ],
+			"Get Support": [ "获取支持" ]
 		}
 	}
 }

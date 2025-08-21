@@ -249,15 +249,11 @@ class ProductBundleHooks {
 				$id   = (int) $ids[ $i ];
 				$item = $items[ $i ];
 
-				try {
-					$item_is_valid = apply_filters( 'asnp_wepb_add_to_cart_validation_item_is_valid', true, $item, $id );
-					if ( 'continue' === $item_is_valid ) {
-						continue;
-					} elseif ( ! $item_is_valid ) {
-						return false;
-					}
-				} catch ( \Exception $e ) {
-					throw $e;
+				$item_is_valid = apply_filters( 'asnp_wepb_add_to_cart_validation_item_is_valid', true, $item, $id );
+				if ( 'continue' === $item_is_valid ) {
+					continue;
+				} elseif ( ! $item_is_valid ) {
+					return false;
 				}
 
 				$item_product = wc_get_product( $id );

@@ -33,7 +33,11 @@
 			"More pictures": [ "Weitere Bilder" ],
 			"Please select a purchasable variation for %s before adding bundle to the cart.": [
 				"Bitte wählen Sie eine kaufbare Variante von %s, bevor Sie das Bundle in den Warenkorb legen."
-			]
+			],
+			"Please select a purchasable product for %s before adding bundle to the cart.": [
+				"Bitte wählen Sie ein kaufbares Produkt für %s, bevor Sie das Bundle in den Warenkorb legen."
+			],
+			"Empty bundle!": [ "Leeres Bundle!" ]
 		}
 	}
 }

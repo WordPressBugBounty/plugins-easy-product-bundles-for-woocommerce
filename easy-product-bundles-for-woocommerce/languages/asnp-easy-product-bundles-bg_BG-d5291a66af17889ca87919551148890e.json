@@ -37,7 +37,11 @@
 			"More pictures": [ "Още снимки" ],
 			"Please select a purchasable variation for %s before adding bundle to the cart.": [
 				"Моля, изберете вариант за покупка на %s, преди да добавите пакета в количката."
-			]
+			],
+			"Please select a purchasable product for %s before adding bundle to the cart.": [
+				"Моля, изберете продукт, който може да се закупи за %s, преди да добавите комплекта в кошницата."
+			],
+			"Empty bundle!": [ "Празен комплект!" ]
 		}
 	}
 }

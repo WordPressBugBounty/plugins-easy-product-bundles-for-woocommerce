@@ -33,7 +33,11 @@
 			],
 			"Please select a purchasable variation for %s before adding bundle to the cart.": [
 				"请在将组合商品添加到购物车之前，选择一个可购买的 %s 变体。"
-			]
+			],
+			"Please select a purchasable product for %s before adding bundle to the cart.": [
+				"请在将捆绑包加入购物车前，为 %s 选择一个可购买的产品。"
+			],
+			"Empty bundle!": [ "空捆绑包！" ]
 		}
 	}
 }

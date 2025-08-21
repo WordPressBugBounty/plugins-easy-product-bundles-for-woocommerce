@@ -247,7 +247,17 @@
 			"Show “bundled” in suffix": [ "Показать «в комплекте» в суффиксе" ],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"Показать текст «В комплекте с [родительским продуктом]» после названия каждого товара в комплекте в разделе деталей заказа."
-			]
+			],
+			"Apps you might like": [
+				"Приложения, которые вам могут понравиться"
+			],
+			"Active Installations": [ "Активные установки" ],
+			"Free Version": [ "Бесплатная версия" ],
+			"Buy Pro": [ "Купить Pro-версию" ],
+			"Apps": [ "Приложения" ],
+			"Articles": [ "Статьи" ],
+			"Video Tutorials": [ "Видеоуроки" ],
+			"Get Support": [ "Получить поддержку" ]
 		}
 	}
 }

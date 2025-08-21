@@ -33,7 +33,11 @@
 			"More pictures": [ "المزيد من الصور" ],
 			"Please select a purchasable variation for %s before adding bundle to the cart.": [
 				"يرجى اختيار نسخة قابلة للشراء من %s قبل إضافة الحزمة إلى السلة."
-			]
+			],
+			"Please select a purchasable product for %s before adding bundle to the cart.": [
+				"يرجى اختيار منتج قابل للشراء لـ %s قبل إضافة الحزمة إلى السلة."
+			],
+			"Empty bundle!": [ "حزمة فارغة!" ]
 		}
 	}
 }

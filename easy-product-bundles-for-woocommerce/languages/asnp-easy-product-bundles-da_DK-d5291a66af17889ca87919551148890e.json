@@ -33,7 +33,11 @@
 			],
 			"Please select a purchasable variation for %s before adding bundle to the cart.": [
 				"Vælg venligst en købbar variant af %s, før du tilføjer pakken til kurven."
-			]
+			],
+			"Please select a purchasable product for %s before adding bundle to the cart.": [
+				"Vælg et købsværdigt produkt for %s, før du tilføjer bundtet til kurven."
+			],
+			"Empty bundle!": [ "Tomt bundt!" ]
 		}
 	}
 }

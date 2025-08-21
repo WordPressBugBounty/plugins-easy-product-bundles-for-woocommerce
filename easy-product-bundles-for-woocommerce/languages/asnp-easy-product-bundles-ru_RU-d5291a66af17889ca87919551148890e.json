@@ -33,7 +33,11 @@
 			"More pictures": [ "Больше картинок" ],
 			"Please select a purchasable variation for %s before adding bundle to the cart.": [
 				"Пожалуйста, выберите доступную для покупки вариацию %s перед добавлением набора в корзину."
-			]
+			],
+			"Please select a purchasable product for %s before adding bundle to the cart.": [
+				"Пожалуйста, выберите покупаемый продукт для %s перед добавлением набора в корзину."
+			],
+			"Empty bundle!": [ "Пустой набор!" ]
 		}
 	}
 }
