@@ -257,7 +257,13 @@
 			"Apps": [ "Uygulamalar" ],
 			"Articles": [ "Makaleler" ],
 			"Video Tutorials": [ "Video eğitimleri" ],
-			"Get Support": [ "Destek al" ]
+			"Get Support": [ "Destek al" ],
+			"Show Variable Dropdown in Popup": [
+				"Popup'ta değişken ürünler açılır menüsünü göster"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"Bu seçeneği etkinleştirerek popup'ta değişken ürünler açılır menüsünü görüntüleyin."
+			]
 		}
 	}
 }

@@ -37,7 +37,8 @@
 			"Please select a purchasable product for %s before adding bundle to the cart.": [
 				"يرجى اختيار منتج قابل للشراء لـ %s قبل إضافة الحزمة إلى السلة."
 			],
-			"Empty bundle!": [ "حزمة فارغة!" ]
+			"Empty bundle!": [ "حزمة فارغة!" ],
+			"Show Options": [ "عرض الخيارات" ]
 		}
 	}
 }

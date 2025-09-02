@@ -44,7 +44,7 @@ class Assets
 				'easyProductBundlesData',
 				array(
 					'bundle'      => $this->get_bundle(),
-					'pro_active'  => Plugin::instance()->is_pro_active(),
+					'pro_active'  => ProductBundles\is_pro_active(),
 					'show_review' => ProductBundles\maybe_show_review(),
 					'plugin_url'  => ASNP_WEPB_PLUGIN_URL,
 				)
@@ -77,7 +77,7 @@ class Assets
 				'asnp-easy-product-bundles-admin',
 				'easyProductBundlesData',
 				array(
-					'pro_active'  => Plugin::instance()->is_pro_active(),
+					'pro_active'  => ProductBundles\is_pro_active(),
 					'show_review' => ProductBundles\maybe_show_review(),
 					'plugin_url'  => ASNP_WEPB_PLUGIN_URL,
 				)

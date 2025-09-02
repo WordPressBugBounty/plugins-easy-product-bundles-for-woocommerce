@@ -36,7 +36,8 @@
 			"Please select a purchasable product for %s before adding bundle to the cart.": [
 				"कृपया %s के लिए जोड़ने से पहले एक खरीदने योग्य उत्पाद चुनें।"
 			],
-			"Empty bundle!": [ "खाली बंडल!" ]
+			"Empty bundle!": [ "खाली बंडल!" ],
+			"Show Options": [ "विकल्प दिखाएँ" ]
 		}
 	}
 }

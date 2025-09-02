@@ -212,7 +212,13 @@
 			"Apps": [ "应用" ],
 			"Articles": [ "文章" ],
 			"Video Tutorials": [ "视频教程" ],
-			"Get Support": [ "获取支持" ]
+			"Get Support": [ "获取支持" ],
+			"Show Variable Dropdown in Popup": [
+				"在弹出窗口显示可变产品下拉菜单"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"启用此选项以在弹出窗口中显示可变产品下拉菜单。"
+			]
 		}
 	}
 }

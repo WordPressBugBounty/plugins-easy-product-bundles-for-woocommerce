@@ -257,7 +257,13 @@
 			"Apps": [ "Приложения" ],
 			"Articles": [ "Статьи" ],
 			"Video Tutorials": [ "Видеоуроки" ],
-			"Get Support": [ "Получить поддержку" ]
+			"Get Support": [ "Получить поддержку" ],
+			"Show Variable Dropdown in Popup": [
+				"Выпадающее меню вариативных товаров в попапе"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"Включите эту опцию, чтобы отображать выпадающее меню вариативных товаров во всплывающем окне."
+			]
 		}
 	}
 }

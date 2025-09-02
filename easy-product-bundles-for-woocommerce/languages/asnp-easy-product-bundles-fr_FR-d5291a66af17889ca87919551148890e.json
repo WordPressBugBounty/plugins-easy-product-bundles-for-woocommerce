@@ -40,7 +40,8 @@
 			"Please select a purchasable product for %s before adding bundle to the cart.": [
 				"Veuillez sélectionner un produit achetable pour %s avant d'ajouter le lot au panier."
 			],
-			"Empty bundle!": [ "Lot vide !" ]
+			"Empty bundle!": [ "Lot vide !" ],
+			"Show Options": [ "Afficher les options" ]
 		}
 	}
 }

@@ -37,7 +37,8 @@
 			"Please select a purchasable product for %s before adding bundle to the cart.": [
 				"バンドルをカートに追加する前に、%s の購入可能な商品を選択してください。"
 			],
-			"Empty bundle!": [ "空のバンドルです！" ]
+			"Empty bundle!": [ "空のバンドルです！" ],
+			"Show Options": [ "オプションを表示" ]
 		}
 	}
 }

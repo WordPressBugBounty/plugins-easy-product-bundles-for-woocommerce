@@ -37,7 +37,8 @@
 			"Please select a purchasable product for %s before adding bundle to the cart.": [
 				"Proszę wybrać produkt możliwy do zakupu dla %s przed dodaniem pakietu do koszyka."
 			],
-			"Empty bundle!": [ "Pusty pakiet!" ]
+			"Empty bundle!": [ "Pusty pakiet!" ],
+			"Show Options": [ "Pokaż opcje" ]
 		}
 	}
 }

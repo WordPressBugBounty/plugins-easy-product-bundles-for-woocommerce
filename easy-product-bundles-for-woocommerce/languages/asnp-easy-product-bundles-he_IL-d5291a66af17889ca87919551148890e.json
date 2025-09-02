@@ -37,7 +37,8 @@
 			"Please select a purchasable product for %s before adding bundle to the cart.": [
 				"אנא בחר מוצר שניתן לרכוש עבור %s לפני הוספת החבילה לעגלה."
 			],
-			"Empty bundle!": [ "חבילה ריקה!" ]
+			"Empty bundle!": [ "חבילה ריקה!" ],
+			"Show Options": [ "הצג אפשרויות" ]
 		}
 	}
 }

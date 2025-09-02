@@ -37,7 +37,8 @@
 			"Please select a purchasable product for %s before adding bundle to the cart.": [
 				"Пожалуйста, выберите покупаемый продукт для %s перед добавлением набора в корзину."
 			],
-			"Empty bundle!": [ "Пустой набор!" ]
+			"Empty bundle!": [ "Пустой набор!" ],
+			"Show Options": [ "Показать параметры" ]
 		}
 	}
 }

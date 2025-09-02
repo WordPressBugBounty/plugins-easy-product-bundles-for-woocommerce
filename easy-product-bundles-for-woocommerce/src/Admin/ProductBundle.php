@@ -313,6 +313,13 @@ class ProductBundle {
 				}
 			}
 
+			// Disable loop add to cart for not selected optional item.
+			if ( $loop_add_to_cart && isset( $item['optional'] ) && 'true' === $item['optional'] ) {
+				if ( ! isset( $item['selected'] ) || 'true' !== $item['selected'] ) {
+					$loop_add_to_cart = false;
+				}
+			}
+
 			$products[] = [
 				'id'  => $product->get_id(),
 				'qty' => absint( $item['quantity'] ),

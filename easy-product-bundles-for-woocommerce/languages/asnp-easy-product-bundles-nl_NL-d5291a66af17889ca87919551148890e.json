@@ -37,7 +37,8 @@
 			"Please select a purchasable product for %s before adding bundle to the cart.": [
 				"Selecteer een aankoopbaar product voor %s voordat je het bundelpakket aan de winkelwagen toevoegt."
 			],
-			"Empty bundle!": [ "Leeg bundelpakket!" ]
+			"Empty bundle!": [ "Leeg bundelpakket!" ],
+			"Show Options": [ "Opties tonen" ]
 		}
 	}
 }

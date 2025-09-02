@@ -129,7 +129,7 @@ class SyncBundles {
 			'woocommerce_tax_round_at_subtotal',
 		];
 
-		$chnaged = false;
+		$changed = false;
 		foreach ( $settings as $option_name ) {
 			if ( 'woocommerce_tax_round_at_subtotal' === $option_name ) {
 				$new_value = isset( $_POST[ $option_name ] ) ? 'yes' : 'no';
@@ -140,12 +140,12 @@ class SyncBundles {
             $saved_value = get_option( $option_name );
 
             if ( $new_value !== $saved_value ) {
-                $chnaged = true;
+                $changed = true;
                 break;
             }
         }
 
-		if ( $chnaged ) {
+		if ( $changed ) {
 			add_action( 'shutdown', [ $this, 'maybe_sync_all_bundles' ], 999 );
 		}
 	}

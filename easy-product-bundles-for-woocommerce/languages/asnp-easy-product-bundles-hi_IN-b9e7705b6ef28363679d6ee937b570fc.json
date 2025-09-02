@@ -233,6 +233,12 @@
 			"Show “bundled” in suffix": [ "सफ़िक्स में “बंडल्ड” दिखाएँ" ],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"ऑर्डर विवरण सेक्शन में प्रत्येक बंडल्ड आइटम के नाम के बाद “[मुख्य उत्पाद] में बंडल्ड” टेक्स्ट दिखाएँ।"
+			],
+			"Show Variable Dropdown in Popup": [
+				"पॉपअप में वेरिएबल ड्रॉपडाउन मेनू दिखाएँ"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"इस विकल्प को सक्षम करें ताकि पॉपअप में वेरिएबल उत्पादों का ड्रॉपडाउन मेनू दिखे।"
 			]
 		}
 	}

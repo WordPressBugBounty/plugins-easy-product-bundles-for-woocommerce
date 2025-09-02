@@ -235,7 +235,13 @@
 			"Apps": [ "اپلیکیشن‌ها" ],
 			"Articles": [ "مقالات" ],
 			"Video Tutorials": [ "آموزش‌های ویدیویی" ],
-			"Get Support": [ "دریافت پشتیبانی" ]
+			"Get Support": [ "دریافت پشتیبانی" ],
+			"Show Variable Dropdown in Popup": [
+				"نمایش منوی کشویی محصولات متغیر در پاپ‌آپ"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"این گزینه را فعال کنید تا منوی کشویی محصولات متغیر در پاپ‌آپ نمایش داده شود."
+			]
 		}
 	}
 }

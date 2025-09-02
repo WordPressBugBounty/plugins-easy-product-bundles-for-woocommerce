@@ -253,7 +253,13 @@
 			"Apps": [ "Apps" ],
 			"Articles": [ "Artikelen" ],
 			"Video Tutorials": [ "Videotutorials" ],
-			"Get Support": [ "Ondersteuning krijgen" ]
+			"Get Support": [ "Ondersteuning krijgen" ],
+			"Show Variable Dropdown in Popup": [
+				"Dropdown-menu voor variabele in popup weergeven"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"Schakel deze optie in om het dropdown-menu voor variabele producten in de popup weer te geven."
+			]
 		}
 	}
 }

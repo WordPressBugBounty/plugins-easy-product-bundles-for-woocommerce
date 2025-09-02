@@ -229,7 +229,13 @@
 			"Apps": [ "アプリ" ],
 			"Articles": [ "記事" ],
 			"Video Tutorials": [ "動画チュートリアル" ],
-			"Get Support": [ "サポートを受ける" ]
+			"Get Support": [ "サポートを受ける" ],
+			"Show Variable Dropdown in Popup": [
+				"ポップアップで変動商品のドロップダウンを表示"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"このオプションを有効にすると、ポップアップで変動商品のドロップダウンメニューが表示されます。"
+			]
 		}
 	}
 }

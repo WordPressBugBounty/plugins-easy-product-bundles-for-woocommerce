@@ -223,7 +223,13 @@
 			"Apps": [ "אפליקציות" ],
 			"Articles": [ "מאמרים" ],
 			"Video Tutorials": [ "מדריכי וידאו" ],
-			"Get Support": [ "קבל תמיכה" ]
+			"Get Support": [ "קבל תמיכה" ],
+			"Show Variable Dropdown in Popup": [
+				"תפריט נפתח של מוצרים משתנים בחלון הקופץ"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"הפעל אפשרות זו כדי להציג את התפריט הנפתח של המוצרים המשתנים בחלון הקופץ."
+			]
 		}
 	}
 }

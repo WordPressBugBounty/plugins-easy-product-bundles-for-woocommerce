@@ -265,7 +265,13 @@
 			"Apps": [ "Приложения" ],
 			"Articles": [ "Статии" ],
 			"Video Tutorials": [ "Видео уроци" ],
-			"Get Support": [ "Получаване на поддръжка" ]
+			"Get Support": [ "Получаване на поддръжка" ],
+			"Show Variable Dropdown in Popup": [
+				"Падащо меню за вариации в изскачащ прозорец"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"Активирайте тази опция, за да се показва падащото меню за вариации в изскачащия прозорец."
+			]
 		}
 	}
 }

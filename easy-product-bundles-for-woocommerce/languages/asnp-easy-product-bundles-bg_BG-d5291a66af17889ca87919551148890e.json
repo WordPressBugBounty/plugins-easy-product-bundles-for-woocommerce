@@ -41,7 +41,8 @@
 			"Please select a purchasable product for %s before adding bundle to the cart.": [
 				"Моля, изберете продукт, който може да се закупи за %s, преди да добавите комплекта в кошницата."
 			],
-			"Empty bundle!": [ "Празен комплект!" ]
+			"Empty bundle!": [ "Празен комплект!" ],
+			"Show Options": [ "Показване на опциите" ]
 		}
 	}
 }

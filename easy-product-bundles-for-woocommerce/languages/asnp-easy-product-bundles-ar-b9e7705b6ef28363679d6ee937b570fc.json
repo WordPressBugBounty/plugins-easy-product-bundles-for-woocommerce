@@ -235,7 +235,13 @@
 			"Apps": [ "تطبيقات" ],
 			"Articles": [ "مقالات" ],
 			"Video Tutorials": [ "شروحات فيديو" ],
-			"Get Support": [ "الحصول على الدعم" ]
+			"Get Support": [ "الحصول على الدعم" ],
+			"Show Variable Dropdown in Popup": [
+				"عرض القائمة المنسدلة للمنتجات المتغيرة في النافذة المنبثقة"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"فعّل هذا الخيار لعرض القائمة المنسدلة للمنتجات المتغيرة في النافذة المنبثقة."
+			]
 		}
 	}
 }

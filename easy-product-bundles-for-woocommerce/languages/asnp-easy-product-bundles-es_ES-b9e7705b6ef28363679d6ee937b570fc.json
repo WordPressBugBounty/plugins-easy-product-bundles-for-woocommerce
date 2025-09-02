@@ -263,7 +263,13 @@
 			"Apps": [ "Aplicaciones" ],
 			"Articles": [ "Artículos" ],
 			"Video Tutorials": [ "Tutoriales en vídeo" ],
-			"Get Support": [ "Obtener soporte" ]
+			"Get Support": [ "Obtener soporte" ],
+			"Show Variable Dropdown in Popup": [
+				"Menú desplegable variable en el popup"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"Active esta opción para mostrar el menú desplegable de productos variables en el popup."
+			]
 		}
 	}
 }

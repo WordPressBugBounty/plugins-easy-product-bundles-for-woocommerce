@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 6.6.1
+Stable tag: 6.7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -115,7 +115,7 @@ https://youtu.be/fVYBUz7Zqfk
 
 - **Product Quick View** View the product quick view in a popup.
 
-- **Total quantity** Set min or max total quantity of bundled items.**(new)**
+- **Total quantity** Set min or max total quantity of bundled items.
 
 **[BUY PRO WITH UP TO 75% DISCOUNT](https://www.asanaplugins.com/product/woocommerce-product-bundles/?utm_source=wp-org&utm_campaign=easy-product-bundles-free&utm_medium=link)**
 
@@ -213,12 +213,18 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.7.0 =
+* New: Added two ways to select variations – from a dropdown menu or by clicking on variation products in the popup.
+* New: Option to show or hide the variable product dropdown menu in the popup through plugin settings.
+* Fix: Resolved issues with optional variable products.
+* Ensured compatibility with WooCommerce version 10.1.2
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 6.6.1 =
 * Fix: Fix select attributes names in the variable and variation products. 
 * Fix: Addressed reported translation issues
 * Fix: CSS styling issues.
 * Ensured compatibility with WooCommerce version 10.1.0
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 6.6.0 =
 * New Feature: Ability to select variations of variable products directly within items using a drop-down menu.

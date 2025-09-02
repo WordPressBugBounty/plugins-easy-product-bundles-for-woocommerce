@@ -41,7 +41,8 @@
 			"Please select a purchasable product for %s before adding bundle to the cart.": [
 				"%s için paketi sepete eklemeden önce satın alınabilir bir ürün seçin."
 			],
-			"Empty bundle!": [ "Boş paket!" ]
+			"Empty bundle!": [ "Boş paket!" ],
+			"Show Options": [ "Seçenekleri göster" ]
 		}
 	}
 }

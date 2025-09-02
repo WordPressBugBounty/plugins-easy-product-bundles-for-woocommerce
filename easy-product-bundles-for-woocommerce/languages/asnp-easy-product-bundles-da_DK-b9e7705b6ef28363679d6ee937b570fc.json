@@ -212,6 +212,12 @@
 			"Show “bundled” in suffix": [ "Vis 'bundlet' i endelsen" ],
 			"Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section.": [
 				"Vis teksten 'Indgår i [Hovedprodukt]' efter navnet på hver pakkede vare i ordredetaljerne."
+			],
+			"Show Variable Dropdown in Popup": [
+				"Vis dropdown-menu for variable produkter i popup"
+			],
+			"Enable this option to display the dropdown menu for variable products in the popup.": [
+				"Aktivér denne mulighed for at vise dropdown-menuen for variable produkter i popup."
 			]
 		}
 	}
