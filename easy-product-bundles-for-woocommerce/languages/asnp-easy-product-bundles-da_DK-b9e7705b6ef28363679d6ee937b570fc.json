@@ -214,10 +214,19 @@
 				"Vis teksten 'Indgår i [Hovedprodukt]' efter navnet på hver pakkede vare i ordredetaljerne."
 			],
 			"Show Variable Dropdown in Popup": [
-				"Vis dropdown-menu for variable produkter i popup"
+				"Vis dropdown-menu for variable i popup"
 			],
 			"Enable this option to display the dropdown menu for variable products in the popup.": [
 				"Aktivér denne mulighed for at vise dropdown-menuen for variable produkter i popup."
+			],
+			"Popup Variable “Show Options” Button Text Color": [
+				"Tekstfarve på knappen 'Vis muligheder' i popup-vinduet for variable produkter"
+			],
+			"Popup Variable ‘Show Options’ Button": [
+				"Knappen 'Vis muligheder' i popup-vinduet for variable produkter"
+			],
+			"Show or hide the “Show Options” button for variable products inside the popup.": [
+				"Vis eller skjul knappen 'Vis muligheder' for variable produkter i popup-vinduet"
 			]
 		}
 	}

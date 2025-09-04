@@ -259,6 +259,15 @@
 			],
 			"Enable this option to display the dropdown menu for variable products in the popup.": [
 				"Aktivieren Sie diese Option, um die Dropdown-Liste für variable Produkte im Popup anzuzeigen."
+			],
+			"Popup Variable “Show Options” Button Text Color": [
+				"Textfarbe der Schaltfläche „Optionen anzeigen“ im Popup-Fenster für variable Produkte"
+			],
+			"Popup Variable ‘Show Options’ Button": [
+				"Schaltfläche „Optionen anzeigen“ im Popup-Fenster für variable Produkte"
+			],
+			"Show or hide the “Show Options” button for variable products inside the popup.": [
+				"Schaltfläche „Optionen anzeigen“ für variable Produkte im Popup-Fenster ein- oder ausblenden"
 			]
 		}
 	}

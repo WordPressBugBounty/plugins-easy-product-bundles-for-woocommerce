@@ -241,6 +241,15 @@
 			],
 			"Enable this option to display the dropdown menu for variable products in the popup.": [
 				"این گزینه را فعال کنید تا منوی کشویی محصولات متغیر در پاپ‌آپ نمایش داده شود."
+			],
+			"Popup Variable “Show Options” Button Text Color": [
+				"رنگ متن دکمه «نمایش گزینه‌ها» در پاپ‌آپ محصولات متغیر"
+			],
+			"Popup Variable ‘Show Options’ Button": [
+				"دکمه «نمایش گزینه‌ها» در پاپ‌آپ برای محصولات متغیر"
+			],
+			"Show or hide the “Show Options” button for variable products inside the popup.": [
+				"نمایش یا مخفی کردن دکمه «نمایش گزینه‌ها» برای محصولات متغیر در پاپ‌آپ."
 			]
 		}
 	}

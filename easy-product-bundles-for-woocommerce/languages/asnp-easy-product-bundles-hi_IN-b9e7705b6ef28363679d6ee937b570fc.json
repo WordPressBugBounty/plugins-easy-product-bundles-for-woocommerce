@@ -239,6 +239,15 @@
 			],
 			"Enable this option to display the dropdown menu for variable products in the popup.": [
 				"इस विकल्प को सक्षम करें ताकि पॉपअप में वेरिएबल उत्पादों का ड्रॉपडाउन मेनू दिखे।"
+			],
+			"Popup Variable “Show Options” Button Text Color": [
+				"पॉपअप में वेरिएबल उत्पादों के लिए 'शो विकल्प' बटन का टेक्स्ट रंग"
+			],
+			"Popup Variable ‘Show Options’ Button": [
+				"पॉपअप में 'शो विकल्प' बटन वेरिएबल उत्पादों के लिए"
+			],
+			"Show or hide the “Show Options” button for variable products inside the popup.": [
+				"पॉपअप के भीतर वेरिएबल उत्पादों के लिए 'शो विकल्प' बटन दिखाएँ या छुपाएँ"
 			]
 		}
 	}

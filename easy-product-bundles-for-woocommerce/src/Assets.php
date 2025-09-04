@@ -90,7 +90,8 @@ class Assets
 				'click_on_popup_product'           => $settings->get_setting('click_on_popup_product', 'product_selection'),
 				'disable_popup'                    => $settings->get_setting('disable_popup', 'false'),
 				'optional_item_mode'               => $settings->get_setting('optional_item_mode', 'check_box'),
-				'popup_variable_dropdown'   	   => $settings->get_setting('popup_variable_dropdown', 'false'),
+				'popup_variable_dropdown'   	   => $settings->get_setting('popup_variable_dropdown', 'true'),
+				'popup_show_option_button'   	   => $settings->get_setting('popup_show_option_button', 'true'),
 			))
 		);
 

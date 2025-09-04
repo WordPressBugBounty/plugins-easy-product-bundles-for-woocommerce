@@ -218,6 +218,15 @@
 			],
 			"Enable this option to display the dropdown menu for variable products in the popup.": [
 				"启用此选项以在弹出窗口中显示可变产品下拉菜单。"
+			],
+			"Popup Variable “Show Options” Button Text Color": [
+				"弹出窗口中可变产品“显示选项”按钮的文字颜色"
+			],
+			"Popup Variable ‘Show Options’ Button": [
+				"弹出窗口中的“显示选项”按钮（可变产品）"
+			],
+			"Show or hide the “Show Options” button for variable products inside the popup.": [
+				"在弹出窗口中显示或隐藏可变产品的“显示选项”按钮"
 			]
 		}
 	}

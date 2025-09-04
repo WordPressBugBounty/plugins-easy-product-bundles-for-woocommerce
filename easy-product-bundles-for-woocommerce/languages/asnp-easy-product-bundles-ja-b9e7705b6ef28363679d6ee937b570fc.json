@@ -235,6 +235,15 @@
 			],
 			"Enable this option to display the dropdown menu for variable products in the popup.": [
 				"このオプションを有効にすると、ポップアップで変動商品のドロップダウンメニューが表示されます。"
+			],
+			"Popup Variable “Show Options” Button Text Color": [
+				"ポップアップ内の可変商品用「オプションを表示」ボタンのテキスト色"
+			],
+			"Popup Variable ‘Show Options’ Button": [
+				"ポップアップ内の「オプションを表示」ボタン（可変商品用）"
+			],
+			"Show or hide the “Show Options” button for variable products inside the popup.": [
+				"ポップアップ内の可変商品用「オプションを表示」ボタンを表示または非表示にする"
 			]
 		}
 	}

@@ -310,13 +310,19 @@ class ProductBundle extends \WC_Product {
 			$data['product'] = (int) $query->products[0];
 		}
 
-		if ( 1 < $query->total || ( 1 == $query->total && 'true' === $data['optional'] ) ) {
+		if ( 
+			1 < $query->total || 
+			( 1 == $query->total && 'true' === $data['optional'] && 'check_box' !== get_plugin()->settings->get_setting( 'optional_item_mode', 'check_box' ) ) 
+		) {
 			$data['can_change_product'] = 'true';
 		}
 
 		if ( ! empty( $data['product'] ) ) {
 			$product = wc_get_product( $data['product'] );
-			if ( $product && $product->is_purchasable() ) {
+			if ( 
+				$product && $product->is_purchasable() &&
+				( ! $product->is_type( 'variable' ) || is_pro_active() )
+			) {
 				$data['product'] = prepare_product_data( $product, $item );
 			} else {
 				$data['product']            = null;

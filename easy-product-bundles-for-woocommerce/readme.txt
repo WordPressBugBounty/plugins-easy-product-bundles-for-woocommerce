@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 6.7.0
+Stable tag: 6.8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -213,12 +213,19 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.8.0 =
+* New: Added an option in plugin settings to show or hide the “Show Options” button for variable products in the popup.
+* New: Added the ability to change the text color of the “Show Options” button for variable products in the popup via plugin settings.
+* Fix: Resolved an issue with optional products (checkbox mode) when the popup display is disabled in plugin settings.
+* Fix: Fixed the alert message being incorrectly shown for optional product selection.
+* Fix: Corrected the display of variable products as default products in free version of plugin.
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 6.7.0 =
 * New: Added two ways to select variations – from a dropdown menu or by clicking on variation products in the popup.
 * New: Option to show or hide the variable product dropdown menu in the popup through plugin settings.
 * Fix: Resolved issues with optional variable products.
 * Ensured compatibility with WooCommerce version 10.1.2
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 6.6.1 =
 * Fix: Fix select attributes names in the variable and variation products. 

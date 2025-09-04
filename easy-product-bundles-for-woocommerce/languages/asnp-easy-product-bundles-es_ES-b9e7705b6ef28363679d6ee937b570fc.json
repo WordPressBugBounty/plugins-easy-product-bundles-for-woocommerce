@@ -269,6 +269,15 @@
 			],
 			"Enable this option to display the dropdown menu for variable products in the popup.": [
 				"Active esta opción para mostrar el menú desplegable de productos variables en el popup."
+			],
+			"Popup Variable “Show Options” Button Text Color": [
+				"Color del texto del botón 'Mostrar opciones' en la ventana emergente para productos variables"
+			],
+			"Popup Variable ‘Show Options’ Button": [
+				"Botón 'Mostrar opciones' en la ventana emergente para productos variables"
+			],
+			"Show or hide the “Show Options” button for variable products inside the popup.": [
+				"Mostrar u ocultar el botón 'Mostrar opciones' para productos variables dentro de la ventana emergente"
 			]
 		}
 	}

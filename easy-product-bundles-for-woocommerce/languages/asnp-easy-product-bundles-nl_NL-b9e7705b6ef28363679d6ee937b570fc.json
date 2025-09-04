@@ -259,6 +259,15 @@
 			],
 			"Enable this option to display the dropdown menu for variable products in the popup.": [
 				"Schakel deze optie in om het dropdown-menu voor variabele producten in de popup weer te geven."
+			],
+			"Popup Variable “Show Options” Button Text Color": [
+				"Tekstkleur van de knop 'Opties tonen' in de popup voor variabele producten"
+			],
+			"Popup Variable ‘Show Options’ Button": [
+				"Knop 'Opties tonen' in de popup voor variabele producten"
+			],
+			"Show or hide the “Show Options” button for variable products inside the popup.": [
+				"Toon of verberg de knop 'Opties tonen' voor variabele producten in de popup"
 			]
 		}
 	}

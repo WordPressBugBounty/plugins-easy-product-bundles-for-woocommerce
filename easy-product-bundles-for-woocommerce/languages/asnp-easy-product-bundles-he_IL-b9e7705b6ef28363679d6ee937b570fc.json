@@ -229,6 +229,15 @@
 			],
 			"Enable this option to display the dropdown menu for variable products in the popup.": [
 				"הפעל אפשרות זו כדי להציג את התפריט הנפתח של המוצרים המשתנים בחלון הקופץ."
+			],
+			"Popup Variable “Show Options” Button Text Color": [
+				"צבע טקסט הכפתור 'הצג אפשרויות' בחלון הקופץ עבור מוצרים משתנים"
+			],
+			"Popup Variable ‘Show Options’ Button": [
+				"כפתור 'הצג אפשרויות' בחלון הקופץ עבור מוצרים משתנים"
+			],
+			"Show or hide the “Show Options” button for variable products inside the popup.": [
+				"הצג או הסתר את כפתור 'הצג אפשרויות' עבור מוצרים משתנים בחלון הקופץ"
 			]
 		}
 	}

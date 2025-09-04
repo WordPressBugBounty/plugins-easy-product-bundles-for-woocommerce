@@ -241,6 +241,15 @@
 			],
 			"Enable this option to display the dropdown menu for variable products in the popup.": [
 				"فعّل هذا الخيار لعرض القائمة المنسدلة للمنتجات المتغيرة في النافذة المنبثقة."
+			],
+			"Popup Variable “Show Options” Button Text Color": [
+				"لون نص زر «عرض الخيارات» في النافذة المنبثقة للمنتجات المتغيرة"
+			],
+			"Popup Variable ‘Show Options’ Button": [
+				"زر «عرض الخيارات» في النافذة المنبثقة للمنتجات المتغيرة"
+			],
+			"Show or hide the “Show Options” button for variable products inside the popup.": [
+				"إظهار أو إخفاء زر «عرض الخيارات» للمنتجات المتغيرة داخل النافذة المنبثقة"
 			]
 		}
 	}
