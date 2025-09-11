@@ -39,7 +39,8 @@
 				"Por favor, selecione um produto disponível para %s antes de adicionar o pacote ao carrinho."
 			],
 			"Empty bundle!": [ "Pacote vazio!" ],
-			"Show Options": [ "Mostrar opções" ]
+			"Show Options": [ "Mostrar opções" ],
+			"Please select a product!": [ "selecione um produto!" ]
 		}
 	}
 }

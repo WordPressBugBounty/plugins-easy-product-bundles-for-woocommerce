@@ -38,7 +38,8 @@
 				"Selecteer een aankoopbaar product voor %s voordat je het bundelpakket aan de winkelwagen toevoegt."
 			],
 			"Empty bundle!": [ "Leeg bundelpakket!" ],
-			"Show Options": [ "Opties tonen" ]
+			"Show Options": [ "Opties tonen" ],
+			"Please select a product!": [ "Kies alstublieft een product!" ]
 		}
 	}
 }

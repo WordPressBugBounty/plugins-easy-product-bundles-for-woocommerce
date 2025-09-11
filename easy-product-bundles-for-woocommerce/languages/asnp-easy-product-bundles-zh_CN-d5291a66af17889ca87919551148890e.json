@@ -38,7 +38,8 @@
 				"请在将捆绑包加入购物车前，为 %s 选择一个可购买的产品。"
 			],
 			"Empty bundle!": [ "空捆绑包！" ],
-			"Show Options": [ "显示选项" ]
+			"Show Options": [ "显示选项" ],
+			"Please select a product!": [ "请选择产品！" ]
 		}
 	}
 }

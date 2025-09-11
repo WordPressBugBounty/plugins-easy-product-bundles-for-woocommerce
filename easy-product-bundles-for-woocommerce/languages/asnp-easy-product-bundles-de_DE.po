@@ -2,20 +2,18 @@
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 6.4.3\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-"
-"bundles-for-woocommerce\n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 6.8.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
+"POT-Creation-Date: 2025-09-09T20:02:22+00:00\n"
+"PO-Revision-Date: 2025-09-10 18:49+0330\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-07-02T20:57:37+00:00\n"
-"PO-Revision-Date: 2025-07-22 16:59+0330\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 3.7\n"
 "X-Domain: asnp-easy-product-bundles\n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: de\n"
 
 #. Plugin Name of the plugin
 #: easy-product-bundles.php
@@ -25,9 +23,8 @@ msgstr ""
 #. Plugin URI of the plugin
 #: easy-product-bundles.php
 msgid ""
-"https://www.asanaplugins.com/product/woocommerce-product-bundles/?"
-"utm_source=easy-product-bundles-woocommerce-plugin&utm_campaign=easy-product-"
-"bundles-woocommerce&utm_medium=link"
+"https://www.asanaplugins.com/product/woocommerce-product-bundles/?utm_source=easy-product-bundles-woocommerce-plugin&utm_campaign=easy-"
+"product-bundles-woocommerce&utm_medium=link"
 msgstr ""
 
 #. Description of the plugin
@@ -46,19 +43,17 @@ msgid "https://www.asanaplugins.com/"
 msgstr ""
 
 #. translators: 1: composer command. 2: plugin directory
-#: easy-product-bundles.php:43 easy-product-bundles.php:61
-msgid ""
-"Your installation of the Easy Product Bundles plugin is incomplete. Please "
-"run %1$s within the %2$s directory."
-msgstr ""
+#: easy-product-bundles.php:44 easy-product-bundles.php:62
+msgid "Your installation of the Easy Product Bundles plugin is incomplete. Please run %1$s within the %2$s directory."
+msgstr "Ihre Installation des Easy Product Bundles-Plugins ist unvollständig. Bitte führen Sie %1$s im Verzeichnis %2$s aus."
 
 #: src/Admin/Admin.php:67 assets/js/admin/admin/index.js:2
 msgid "Settings"
-msgstr ""
+msgstr "Settings"
 
 #: src/Admin/Admin.php:70 assets/js/admin/admin/index.js:2
 msgid "Go Pro"
-msgstr ""
+msgstr "Gehe Pro"
 
 #: src/Admin/Admin.php:87
 msgid "Bundle (%d)"
@@ -68,48 +63,53 @@ msgstr ""
 msgid "Product Bundles"
 msgstr ""
 
-#: src/Admin/ProductBundle.php:180 src/ProductBundle.php:280
+#: src/Admin/ProductBundle.php:182
+#: src/ProductBundle.php:290
 #: assets/js/admin/product/index.js:2
+#: assets/js/shared/index.js:2
+#: assets/js/admin/product/index.js:3336
+#: assets/js/admin/product/index.js:3441
+#: assets/js/shared/index.js:4550
 msgid "Please select a product!"
-msgstr ""
+msgstr "Wähle ein Produkt!"
 
-#: src/Admin/ProductBundle.php:181 src/ProductBundle.php:281
-#: assets/js/admin/product/index.js:2
+
+
+#: src/Admin/ProductBundle.php:183 src/ProductBundle.php:291 assets/js/admin/product/index.js:2
 msgid "Please select your product!"
-msgstr ""
+msgstr "Bitte wählen Sie Ihr Produkt!"
 
-#: src/Admin/ProductBundle.php:182 src/ProductBundle.php:282
-#: assets/js/admin/product/index.js:2
+#: src/Admin/ProductBundle.php:184 src/ProductBundle.php:292 assets/js/admin/product/index.js:2
 msgid "Please select your product"
-msgstr ""
+msgstr "Bitte wählen dein Produkt aus"
 
 #: src/API/BaseController.php:31
 msgid "Sorry, you cannot list resources."
-msgstr ""
+msgstr "Entschuldigung, Sie können keine Ressourcen auflisten."
 
 #: src/API/BaseController.php:47
 msgid "Sorry, you cannot view this resource."
-msgstr ""
+msgstr "\"Entschuldigung, Sie können diese Ressource nicht anzeigen."
 
 #: src/API/BaseController.php:61
 msgid "Sorry, you cannot create an item."
-msgstr ""
+msgstr "Entschuldigung, Sie können kein Element erstellen."
 
 #: src/API/BaseController.php:75
 msgid "Sorry, you cannot update the item."
-msgstr ""
+msgstr "Entschuldigung, Sie können das Element nicht aktualisieren."
 
 #: src/API/BaseController.php:89
 msgid "Sorry, you are not allowed to delete this resource."
-msgstr ""
+msgstr "Entschuldigung, Sie dürfen diese Ressource nicht löschen."
 
 #: src/API/BaseController.php:103
 msgid "Sorry, you are not allowed to duplicate this resource."
-msgstr ""
+msgstr "Entschuldigung, Sie dürfen diese Ressource nicht duplizieren."
 
 #: src/API/BaseController.php:117
 msgid "Sorry, you are not allowed to reorder items."
-msgstr ""
+msgstr "Entschuldigung, Sie dürfen die Elemente nicht neu anordnen."
 
 #: src/API/ExtendStoreApi.php:105
 msgid "Bundle data"
@@ -117,289 +117,355 @@ msgstr ""
 
 #: src/API/FilterProducts.php:37
 msgid "Filter is required."
-msgstr ""
+msgstr "Filter ist erforderlich."
 
 #: src/API/FilterProducts.php:56
 msgid "Filter is invalid."
-msgstr ""
+msgstr "Filter ist ungültig."
 
-#: src/API/FilterProducts.php:62 src/API/FilterProducts.php:98
-#: assets/js/shared/index.js:2
+#: src/API/FilterProducts.php:62 src/API/FilterProducts.php:98 assets/js/shared/index.js:2
 msgid "Product ID is required."
-msgstr ""
+msgstr "Produkt-ID ist erforderlich."
 
-#: src/API/FilterProducts.php:67 src/API/FilterProducts.php:103
-#: src/API/FilterProducts.php:108
+#: src/API/FilterProducts.php:67 src/API/FilterProducts.php:103 src/API/FilterProducts.php:108
 msgid "Product is invalid."
-msgstr ""
+msgstr "Produkt ist ungültig."
 
 #: src/API/FilterProducts.php:72 src/API/FilterProducts.php:93
 msgid "Index is required."
-msgstr ""
+msgstr "Index ist erforderlich."
 
 #: src/API/FilterProducts.php:114 assets/js/shared/index.js:2
 msgid "Parent product ID is required."
-msgstr ""
+msgstr "Elternprodukt-ID ist erforderlich."
 
 #: src/API/FilterProducts.php:119
 msgid "Parent product is invalid."
-msgstr ""
+msgstr "Elternprodukt ist ungültig."
 
 #: src/API/FilterProducts.php:133
 msgid "Parent product is not a valid type."
-msgstr ""
+msgstr "Elternprodukt ist kein gültiger Typ."
 
 #: src/API/FilterProducts.php:144
 msgid "Variable is required."
-msgstr ""
+msgstr "Variable ist erforderlich."
 
 #: src/API/FilterProducts.php:181 src/API/FilterProducts.php:220
 msgid "Filter by %s"
-msgstr ""
+msgstr "Filtern nach %s"
 
 #: src/API/FilterProducts.php:198
 msgid "Variation is required."
-msgstr ""
+msgstr "Variation ist erforderlich."
 
 #: src/API/FilterProducts.php:246
 msgid "Filter variable product variations or all products."
-msgstr ""
+msgstr "Variable Produktvariationen oder alle Produkte filtern."
 
 #: src/API/Items.php:42 src/API/Items.php:51
 msgid "Search term is required."
-msgstr ""
+msgstr "Suchbegriff ist erforderlich."
 
-#: src/API/Items.php:46 src/API/Items.php:89 assets/js/admin/product/index.js:2
+#: src/API/Items.php:46 src/API/Items.php:83 assets/js/admin/product/index.js:2
 msgid "Type is required."
-msgstr ""
+msgstr "Typ ist erforderlich."
 
-#: src/API/Items.php:85
+#: src/API/Items.php:79
 msgid "Items is required."
-msgstr ""
+msgstr "Elemente sind erforderlich."
 
-#: src/API/Review.php:30 assets/js/admin/admin/index.js:2
-#: assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
+#: src/API/Review.php:30 assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
 msgid "Action is required."
-msgstr ""
+msgstr "Aktion ist erforderlich."
 
 #: src/API/Review.php:43
 msgid "Action not found."
-msgstr ""
+msgstr "Aktion nicht gefunden."
 
 #: src/API/Settings.php:52 src/API/Settings.php:72
 msgid "Settings data is required."
-msgstr ""
+msgstr "Einstellungsdaten sind erforderlich."
 
 #: src/Helpers.php:71
 msgid "Invalid product type."
-msgstr ""
+msgstr "Ungültiger Produkttyp."
 
-#: src/Models/ItemsModel.php:74 src/Models/ItemsModel.php:78
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
+#: src/Models/ItemsModel.php:81 src/Models/ItemsModel.php:87 assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "PRO Version"
-msgstr ""
+msgstr "PRO-Version"
 
 #. translators: 1: URL of WooCommerce plugin, 2: The minimum WooCommerce version number
 #: src/Plugin.php:220
-msgid ""
-"The Easy Product Bundles plugin requires <a href=\"%1$s\">WooCommerce</a> "
-"%2$s or greater to be installed and active."
-msgstr ""
+msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WooCommerce</a> %2$s or greater to be installed and active."
+msgstr "Das Easy Product Bundles-Plugin erfordert, dass <a href=\"%1$s\">WooCommerce</a> %2$s oder höher installiert und aktiv ist."
 
 #. translators: 1: URL of WordPress.org, 2: The minimum WordPress version number
 #: src/Plugin.php:229
-msgid ""
-"The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s "
-"or greater to be installed and active."
-msgstr ""
+msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s or greater to be installed and active."
+msgstr "Das Easy Product Bundles-Plugin erfordert, dass <a href=\"%1$s\">WordPress</a> %2$s oder höher installiert und aktiv ist."
 
-#: src/ProductBundle.php:334 assets/js/shared/index.js:2
+#: src/ProductBundle.php:357 assets/js/shared/index.js:2
 msgid "Item index is required."
-msgstr ""
+msgstr "Elementindex ist erforderlich."
 
-#: src/ProductBundleHooks.php:94
+#: src/ProductBundle.php:672
+msgid "Configure bundle"
+msgstr "Bündel konfigurieren"
+
+#: src/ProductBundleHooks.php:96
 msgid "Product bundle"
 msgstr ""
 
-#: src/ProductBundleHooks.php:185 src/ProductBundleHooks.php:188
-#: src/ProductBundleHooks.php:190
+#: src/ProductBundleHooks.php:194 src/ProductBundleHooks.php:197 src/ProductBundleHooks.php:199 src/ProductBundleHooks.php:202
 msgid "From"
-msgstr ""
+msgstr "Von"
 
-#: src/ProductBundleHooks.php:226 src/ProductBundleHooks.php:239
+#: src/ProductBundleHooks.php:236 src/ProductBundleHooks.php:249
 msgid "Please select a product for each of the required bundle items."
-msgstr ""
+msgstr "Bitte wählen Sie ein Produkt für jedes erforderliche Bündel-Element aus."
 
-#: src/ProductBundleHooks.php:230
+#: src/ProductBundleHooks.php:240
 msgid "Invalid product bundle."
-msgstr ""
+msgstr "Ungültiges Produktbündel."
 
-#: src/ProductBundleHooks.php:235
+#: src/ProductBundleHooks.php:245
 msgid "Bundle product is unavailable."
-msgstr ""
+msgstr "Bündelprodukt ist nicht verfügbar."
 
-#: src/ProductBundleHooks.php:259
+#: src/ProductBundleHooks.php:268
 msgid "Selected product for the bundle item %d is invalid."
-msgstr ""
+msgstr "Ausgewähltes Produkt für das Bündel-Element %d ist ungültig."
 
-#: src/ProductBundleHooks.php:263
+#: src/ProductBundleHooks.php:272
+msgid "Please select a variation for the bundle item &quot;%s&quot;."
+msgstr "Bitte wählen Sie eine Variation für das Bündel-Element „%s“ aus."
+
+#: src/ProductBundleHooks.php:276
 msgid "This product is protected and cannot be purchased."
-msgstr ""
+msgstr "Dieses Produkt ist geschützt und kann nicht gekauft werden."
 
-#: src/ProductBundleHooks.php:267
+#: src/ProductBundleHooks.php:280
 msgid "Product &quot;%s&quot; is not purchasable."
-msgstr ""
+msgstr "Produkt „%s“ kann nicht gekauft werden."
 
-#: src/ProductBundleHooks.php:272 src/ProductBundleHooks.php:299
-#: src/ProductBundleHooks.php:302 src/ProductBundleHooks.php:305
-#: src/ProductBundleHooks.php:308
+#: src/ProductBundleHooks.php:285 src/ProductBundleHooks.php:366 src/ProductBundleHooks.php:369 src/ProductBundleHooks.php:372
+#: src/ProductBundleHooks.php:375
 msgid "Please select a valid quantity for the bundle item &quot;%s&quot;."
-msgstr ""
-
-#. translators: %s: product name
-#: src/ProductBundleHooks.php:284
-msgid "You cannot add another \"%s\" to your cart."
-msgstr ""
-
-#: src/ProductBundleHooks.php:294 src/ProductBundleHooks.php:357
-msgid "View cart"
-msgstr ""
-
-#. translators: %s: product name
-#: src/ProductBundleHooks.php:315
-msgid ""
-"You cannot add &quot;%s&quot; to the bundle item because the product is out "
-"of stock."
-msgstr ""
-"Sie können \"%s\" nicht zum Bundle-Artikel hinzufügen, da das Produkt nicht "
-"auf Lager ist."
+msgstr "Bitte wählen Sie eine gültige Menge für das Bündel-Element „%s“ aus."
 
 #. translators: 1: product name 2: quantity in stock
-#: src/ProductBundleHooks.php:332 src/ProductBundleHooks.php:461
-msgid ""
-"You cannot add that amount of &quot;%1$s&quot; to the cart because there is "
-"not enough stock (%2$s remaining)."
-msgstr ""
-"Sie können nicht so viele \"%1$s\" in den Warenkorb legen, da nicht genug "
-"Lagerbestand vorhanden ist (noch %2$s verfügbar)."
+#: src/ProductBundleHooks.php:297 src/ProductBundleHooks.php:399 src/ProductBundleHooks.php:528
+msgid "You cannot add that amount of &quot;%1$s&quot; to the cart because there is not enough stock (%2$s remaining)."
+msgstr "Sie können diese Menge von „%1$s“ nicht in den Warenkorb legen, da nicht genügend Lagerbestand vorhanden ist (%2$s übrig)."
+
+#: src/ProductBundleHooks.php:322 src/ProductBundleHooks.php:361 src/ProductBundleHooks.php:424
+msgid "View cart"
+msgstr "Warenkorb ansehen"
 
 #. translators: 1: quantity in stock 2: current quantity
-#: src/ProductBundleHooks.php:359
-msgid ""
-"You cannot add that amount of &quot;%1$s&quot; to the cart &mdash; we have "
-"%2$s in stock and you already have %3$s in your cart."
-msgstr ""
-"Sie können nicht so viele \"%1$s\" in den Warenkorb legen — wir haben %2$s "
-"auf Lager und Sie haben bereits %3$s in Ihrem Warenkorb."
+#: src/ProductBundleHooks.php:324 src/ProductBundleHooks.php:426
+msgid "You cannot add that amount of &quot;%1$s&quot; to the cart &mdash; we have %2$s in stock and you already have %3$s in your cart."
+msgstr "Sie können diese Menge von „%1$s“ nicht in den Warenkorb legen — es sind %2$s auf Lager und Sie haben bereits %3$s im Warenkorb."
 
-#: src/ProductBundleHooks.php:377
-msgid ""
-"You cannot add &quot;%s&quot; to the bundle item because it is an invalid "
-"product."
-msgstr ""
-"Sie können \"%s\" nicht zum Bundle-Artikel hinzufügen, da es sich um ein "
-"ungültiges Produkt handelt."
+#. translators: %s: product name
+#: src/ProductBundleHooks.php:351
+msgid "You cannot add another \"%s\" to your cart."
+msgstr "Sie können kein weiteres „%s“ in den Warenkorb legen."
+
+#. translators: %s: product name
+#: src/ProductBundleHooks.php:382
+msgid "You cannot add &quot;%s&quot; to the bundle item because the product is out of stock."
+msgstr "Sie können „%s“ nicht zum Bündel-Element hinzufügen, da das Produkt nicht auf Lager ist."
+
+#: src/ProductBundleHooks.php:444
+msgid "You cannot add &quot;%s&quot; to the bundle item because it is an invalid product."
+msgstr "Sie können „%s“ nicht zum Bündel-Element hinzufügen, da es ein ungültiges Produkt ist."
 
 #. Translators: %s Product title.
-#: src/ProductBundleHooks.php:433
+#: src/ProductBundleHooks.php:500
 msgid "You can only have 1 %s in your cart."
 msgstr "Sie können nur 1 %s in Ihrem Warenkorb haben."
 
-#: src/ProductBundleHooks.php:441
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; must be at least %2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:508
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be at least %2$d."
+msgstr "Warenkorbaktualisierung fehlgeschlagen. Die Menge von „%1$s“ muss mindestens %2$d betragen."
 
-#: src/ProductBundleHooks.php:445
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; cannot be higher than "
-"%2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:512
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; cannot be higher than %2$d."
+msgstr "Warenkorbaktualisierung fehlgeschlagen. Die Menge von „%1$s“ darf %2$d nicht überschreiten."
 
-#: src/ProductBundleHooks.php:449 src/ProductBundleHooks.php:453
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:516 src/ProductBundleHooks.php:520
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
+msgstr "Warenkorbaktualisierung fehlgeschlagen. Die Menge von „%1$s“ muss %2$d entsprechen."
 
-#: src/ProductBundleHooks.php:1079
+#: src/ProductBundleHooks.php:1146
 msgid "(Bundled in %s)"
-msgstr ""
+msgstr "(Gebündelt in %s)"
 
-#: src/ProductBundleHooks.php:1155 src/ProductBundleHooks.php:1167
+#: src/ProductBundleHooks.php:1222 src/ProductBundleHooks.php:1234
 msgid "Invalid bundle product."
-msgstr ""
+msgstr "Ungültiges Bündelprodukt."
 
-#: src/ProductBundleHooks.php:1160 src/ProductBundleHooks.php:1165
+#: src/ProductBundleHooks.php:1227 src/ProductBundleHooks.php:1232
 msgid "Bundle product has not default items to add it to the order."
-msgstr ""
+msgstr "Bündelprodukt hat keine Standard-Elemente, um es der Bestellung hinzuzufügen."
 
-#: src/ProductBundleHooks.php:1224
+#: src/ProductBundleHooks.php:1291
 msgid "Can not add bundle product to the order."
-msgstr ""
+msgstr "Bündelprodukt kann nicht zur Bestellung hinzugefügt werden."
 
-#: src/ProductBundleHooks.php:1234
+#: src/ProductBundleHooks.php:1301
 msgid "Can not add bundle item to the order."
-msgstr ""
+msgstr "Bündel-Element kann nicht zur Bestellung hinzugefügt werden."
 
 #: src/ProductSelector.php:14
 msgid "Product selector item is empty."
-msgstr ""
+msgstr "Produktselektor-Element ist leer."
 
 #: src/ProductSelector.php:43
 msgid "Query args is required."
-msgstr ""
+msgstr "Abfrageparameter sind erforderlich."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Bundle position"
-msgstr ""
+msgstr "Paketposition"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Before Add to Cart button"
-msgstr ""
+msgstr "Vor dem In den Warenkorb Button"
 
 #: assets/js/admin/admin/index.js:2
 msgid "After Add to Cart button"
-msgstr ""
+msgstr "Nach dem In den Warenkorb Button"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Before Add to Cart form"
-msgstr ""
+msgstr "Vor dem In den Warenkorb Formular"
 
 #: assets/js/admin/admin/index.js:2
 msgid "After Add to Cart form"
-msgstr ""
+msgstr "Nach dem In den Warenkorb Formular"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Before product excerpt"
-msgstr ""
+msgstr "Vor dem Produkt Auszug"
 
 #: assets/js/admin/admin/index.js:2
 msgid "After product excerpt"
-msgstr ""
+msgstr "Nach dem Produkt Auszug"
 
 #: assets/js/admin/admin/index.js:2
 msgid "After product meta"
-msgstr ""
+msgstr "Nach den Produkt Meta"
 
 #: assets/js/admin/admin/index.js:2
 msgid "None"
-msgstr ""
+msgstr "Keine"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Before CSS selector"
-msgstr ""
+msgstr "Vor dem CSS Selektor"
 
 #: assets/js/admin/admin/index.js:2
 msgid "After CSS selector"
-msgstr ""
+msgstr "Nach dem CSS Selektor"
 
 #: assets/js/admin/admin/index.js:2
 msgid "product bundle position in product page."
-msgstr ""
+msgstr "Position des Produktbundles auf der Produktseite."
 
 #: assets/js/admin/admin/index.js:2
 msgid "CSS Selector"
-msgstr ""
+msgstr "CSS-Selektor"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Bundle title color"
+msgstr "Farbe des Bundle-Titels"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Empty item title color"
+msgstr "Farbe des leeren Artikeltitels"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Empty item title hover color"
+msgstr "Farbe des leeren Artikeltitels beim Hover"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Product title color"
+msgstr "Farbe des Produkttitels"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Product crossed out price color"
+msgstr "Produktpreisfarbe durchgestrichen"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Product sale price color"
+msgstr "Farbe des Produktverkaufspreises"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Modal header color"
+msgstr "Modale Kopfzeilenfarbe"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Quantity field buttons hover color"
+msgstr "Hover-Farbe der Mengenfeld-Schaltflächen"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Alert message color"
+msgstr "Farbe der Warnnachricht"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Alert message background color"
+msgstr "Hintergrundfarbe der Warnnachricht"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Optional badge color"
+msgstr "Optionale Abzeichenfarbe"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Optional badge title color"
+msgstr "Optionale Abzeichen-Titel-Farbe"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Quick view icon color"
+msgstr "Farbe des Schnellansicht-Symbols"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Plus icon color"
+msgstr "Farbe des Plus-Symbols"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Quick view button color"
+msgstr "Farbe des Schnellansicht-Buttons"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Quick view button text color"
+msgstr "Farbe des Texts des Schnellansicht-Buttons"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Popup Variable “Show Options” Button Text Color"
+msgstr "Textfarbe der Schaltfläche „Optionen anzeigen“ im Popup-Fenster für variable Produkte"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Images icon color"
+msgstr "Farbe des Bilder-Symbols"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Total price - sale price color"
+msgstr "Gesamtpreis - Verkaufs­preis­farbe"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Total price - crossed out price color"
+msgstr "Gesamtpreis - durchgestrichene Preisfarbe"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Total price - saved amount color"
+msgstr "Gesamtpreis - gesparte Betragsfarbe"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Total price - saved amount background color"
+msgstr "Gesamtpreis - Hintergrundfarbe des gesparten Betrags"
 
 #: assets/js/admin/admin/index.js:2
 msgid "(Pro)"
@@ -407,11 +473,11 @@ msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Back default color"
-msgstr ""
+msgstr "Zurück zur Standardfarbe"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Product image object-fit"
-msgstr ""
+msgstr "Produktbild object-fit"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Cover"
@@ -447,419 +513,447 @@ msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Bundle"
-msgstr ""
+msgstr "Bündel"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Item View"
-msgstr ""
+msgstr "Artikelansicht"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show stock"
-msgstr ""
+msgstr "Bestand anzeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show product Stock availability in modal."
-msgstr ""
+msgstr "Produktbestandsverfügbarkeit im Modal anzeigen."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show rating"
-msgstr ""
+msgstr "Bewertung anzeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show product rating in modal."
-msgstr ""
+msgstr "Produktbewertung im Modal anzeigen."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show description(on hover)"
-msgstr ""
+msgstr "Beschreibung anzeigen (beim Schweben)"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show product description when mouse hover over it."
-msgstr ""
+msgstr "Zeigen Sie die Produktbeschreibung an, wenn Sie mit der Maus darüber fahren."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Prepend parent name"
-msgstr ""
+msgstr "Elternname voranstellen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Prepend the parent name to the item name in the cart and order."
-msgstr ""
+msgstr "Fügen Sie den Elternnamen dem Artikelnamen im Warenkorb und in der Bestellung hinzu."
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show “bundled” in suffix"
+msgstr "„Gebündelt“ im Suffix anzeigen"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section."
+msgstr "Zeige den Text „Gebündelt in [Hauptprodukt]“ nach dem Namen jedes gebündelten Artikels im Bestelldetailbereich an."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Hide out of stock"
-msgstr ""
+msgstr "Ausverkauft verbergen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Hide out of stock products."
-msgstr ""
+msgstr "Ausverkaufte Produkte verbergen."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show price in cart"
-msgstr ""
+msgstr "Preis im Warenkorb anzeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Product bundle items price visibility in cart and checkout."
-msgstr ""
+msgstr "Sichtbarkeit der Preise für Produktbündelartikel im Warenkorb und an der Kasse."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show products list"
-msgstr ""
+msgstr "Produktliste anzeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show products list below products bundle."
-msgstr ""
+msgstr "Produktliste unter dem Produktbundle anzeigen."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show total price"
-msgstr ""
+msgstr "Gesamtpreis anzeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show the total price of the selected items below the products list."
-msgstr ""
+msgstr "Zeigen Sie den Gesamtpreis der ausgewählten Artikel unterhalb der Produktliste an."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show saved money"
-msgstr ""
+msgstr "Gespeicherten Preis anzeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show the saved money when calculating the total price."
-msgstr ""
+msgstr "Bei der Berechnung des Gesamtpreises den gespeicherten Preis anzeigen."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show modal quick view"
-msgstr ""
+msgstr "Modales Schnellansicht anzeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show product quick view icon in modal."
-msgstr ""
+msgstr "Produkt-Schnellansichtssymbol im Modal anzeigen."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show selected product quick view"
-msgstr ""
+msgstr "Ausgewählte Produkt-Schnellansicht anzeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show product quick view icon in the selected product."
-msgstr ""
+msgstr "Schnellansichtssymbol des Produkts im ausgewählten Produkt anzeigen."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Quantity field on item"
-msgstr ""
+msgstr "Mengenfeld für Artikel"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show quantity field on item."
-msgstr ""
+msgstr "Mengenfeld auf Artikel anzeigen."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show plus icon"
-msgstr ""
+msgstr "Plus-Symbol anzeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show plus icon between items."
-msgstr ""
+msgstr "Plus-Symbol zwischen Elementen anzeigen."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Disable popup"
-msgstr ""
+msgstr "Popup deaktivieren"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Disable popup for items that have only one product."
+msgstr "Deaktivieren für Artikel, die nur ein Produkt haben."
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show Variable Dropdown in Popup"
+msgstr "Variable Dropdown-Liste im Popup anzeigen"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Enable this option to display the dropdown menu for variable products in the popup."
+msgstr "Aktivieren Sie diese Option, um die Dropdown-Liste für variable Produkte im Popup anzuzeigen."
+
+#: assets/js/admin/admin/index.js:2
+msgid "Popup Variable ‘Show Options’ Button"
+msgstr "Schaltfläche „Optionen anzeigen“ im Popup-Fenster für variable Produkte"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show or hide the “Show Options” button for variable products inside the popup."
+msgstr "Schaltfläche „Optionen anzeigen“ für variable Produkte im Popup-Fenster ein- oder ausblenden."
+
+#: assets/js/admin/admin/index.js:2
+msgid "Calculate bundle price in frontend"
+msgstr "Paketpreis im Frontend berechnen"
+
+#: assets/js/admin/admin/index.js:2
+msgid ""
+"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for "
+"dynamic price bundles. Only enable it if necessary."
 msgstr ""
+"Dies kann die Kompatibilität mit Rabatt-Plugins verbessern, kann jedoch zu Speicherproblemen führen, wenn das Paket viele Artikel "
+"enthält. Es ist nützlich für dynamische Preispakete. Aktivieren Sie es nur, wenn es notwendig ist."
 
 #: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "Theme"
-msgstr ""
+msgstr "Thema"
 
 #: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "Grid 1"
-msgstr ""
+msgstr "Gitter 1"
 
 #: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "Grid 2"
-msgstr ""
+msgstr "Gitter 2"
 
 #: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "List 1"
-msgstr ""
+msgstr "Liste 1"
 
 #: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "List 2"
-msgstr ""
+msgstr "Liste 2"
 
 #: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "Size"
-msgstr ""
+msgstr "Größe"
 
 #: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "Small"
-msgstr ""
+msgstr "Klein"
 
 #: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "Medium"
-msgstr ""
+msgstr "Mittelgroß"
 
 #: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "Large"
-msgstr ""
+msgstr "Groß"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Optional item mode"
-msgstr ""
+msgstr "Optionale Elementmodus"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Checkbox"
-msgstr ""
+msgstr "Kontrollkästchen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Delete button"
-msgstr ""
+msgstr "Löschen-Schaltfläche"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Product bundle price on shop page"
-msgstr ""
+msgstr "Produktpaketpreis auf Shop-Seite"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Total price"
-msgstr ""
+msgstr "Gesamtpreis"
 
 #: assets/js/admin/admin/index.js:2
 msgid "From total price"
-msgstr ""
+msgstr "Vom Gesamtpreis"
 
 #: assets/js/admin/admin/index.js:2
 msgid "From min price"
-msgstr ""
+msgstr "Vom Mindestpreis"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Set how to show the product bundle price on the shop page."
-msgstr ""
+msgstr "Legen Sie fest, wie der Produktpaketpreis auf der Shop-Seite angezeigt werden soll."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Item price"
-msgstr ""
+msgstr "Artikelpreis"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Product price"
-msgstr ""
+msgstr "Produktpreis"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Product subtotal"
-msgstr ""
+msgstr "Produkt-Zwischensumme"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Set how to show the product price in item."
-msgstr ""
+msgstr "Festlegen, wie der Produktpreis im Artikel angezeigt wird."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Product list price"
-msgstr ""
+msgstr "Preis in Produktliste"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Set how to show the product price in product list."
-msgstr ""
+msgstr "Festlegen, wie der Produktpreis in der Produktliste angezeigt wird."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Link to product"
-msgstr ""
+msgstr "Link zum Produkt"
 
 #: assets/js/admin/admin/index.js:2
 msgid "New tab"
-msgstr ""
+msgstr "Neue Registerkarte"
 
 #: assets/js/admin/admin/index.js:2
 msgid "No link"
-msgstr ""
+msgstr "Kein Link"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show the product change modal"
-msgstr ""
+msgstr "Zeigen Sie das Modal zur Produktänderung"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Click on product in pop-up"
-msgstr ""
+msgstr "Klicke auf das Produkt im Pop-up"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Product selection"
-msgstr ""
+msgstr "Produktauswahl"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show product details"
-msgstr ""
+msgstr "Produktdetails anzeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Coupon apply method"
-msgstr ""
+msgstr "Gutschein anwenden Methode"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Both of bundle and bundle items"
-msgstr ""
+msgstr "Sowohl Bündel als auch Bündelartikel"
 
 #: assets/js/admin/admin/index.js:2
 msgid "On bundle"
-msgstr ""
+msgstr "Im Bündel"
 
 #: assets/js/admin/admin/index.js:2
 msgid "On bundle items"
-msgstr ""
+msgstr "Im Bündelartikeln"
 
 #: assets/js/admin/admin/index.js:2
 msgid "None of bundle and bundle items"
-msgstr ""
+msgstr "Keiner von Bundle- und Bundle-Artikeln"
 
 #: assets/js/admin/admin/index.js:2
-msgid ""
-"Product based coupons apply method. Can apply on \"bundle\", \"bundle items"
-"\", \"both\" or \"none\"."
+msgid "Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\"."
 msgstr ""
+"Gutschein-Anwendungsmethode basierend auf dem Produkt. Kann auf „Bündel“, „Bündelartikel“, „Beides“ oder „Nichts“ angewendet werden."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Cart contents count"
-msgstr ""
+msgstr "Anzahl der Warenkorb-Inhalte"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Bundle items"
-msgstr ""
+msgstr "Bündelartikel"
 
 #: assets/js/admin/admin/index.js:2
-msgid ""
-"How to count bundle products in the cart? Count both of \"bundle and its "
-"items\" or \"only bundle\" or \"only bundle items\"."
+msgid "How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\"."
 msgstr ""
+"Wie sollen Bündelprodukte im Warenkorb gezählt werden. Sowohl das Bündel als auch seine Elemente, nur das Bündel oder nur die Bündel-"
+"Elemente."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Product price selector"
-msgstr ""
+msgstr "Produktpreisauswahl"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Add to cart button selector"
-msgstr ""
+msgstr "Warenkorb hinzufügen Button-Auswahl"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Change product modal"
-msgstr ""
+msgstr "Change product modal"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Number of products per page"
-msgstr ""
+msgstr "Anzahl der Produkte pro Seite"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Styles"
-msgstr ""
+msgstr "Stil"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Save Changes"
-msgstr ""
+msgstr "Änderungen speichern"
 
 #: assets/js/admin/admin/index.js:2
 msgid "License Key"
-msgstr ""
+msgstr "Lizenzschlüssel"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Enter Your License Key"
-msgstr ""
+msgstr "Geben Sie Ihren Lizenzschlüssel ein"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Notice"
-msgstr ""
+msgstr "Hinweis"
 
 #: assets/js/admin/admin/index.js:2
-msgid ""
-"Each website using this plugin needs a legal license (1 license = 1 website)."
-msgstr ""
+msgid "Each website using this plugin needs a legal license (1 license = 1 website)."
+msgstr "Jede Website, die dieses Plugin verwendet, benötigt eine legale Lizenz (1 Lizenz = 1 Website)."
 
 #: assets/js/admin/admin/index.js:2
 msgid "You can find more information on"
-msgstr ""
+msgstr "Weitere Informationen finden Sie unter"
 
 #: assets/js/admin/admin/index.js:2
 msgid "software license agreement"
-msgstr ""
+msgstr "Software-Lizenzvereinbarung"
 
 #: assets/js/admin/admin/index.js:2
 msgid "If you need to buy a new license of this plugin"
-msgstr ""
+msgstr "Falls Sie eine neue Lizenz für dieses Plugin kaufen müssen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "click here."
-msgstr ""
+msgstr "Klicken Sie hier."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Where can I find my license key?"
-msgstr ""
+msgstr "Wo kann ich meinen Lizenzschlüssel finden?"
 
 #: assets/js/admin/admin/index.js:2
 msgid "There was an error on getting settings."
-msgstr ""
+msgstr "Beim Abrufen der Einstellungen ist ein Fehler aufgetreten."
 
 #: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "Data is required."
-msgstr ""
+msgstr "Daten sind erforderlich."
 
 #: assets/js/admin/admin/index.js:2
 msgid "There was an error on saving settings."
-msgstr ""
+msgstr "Beim Speichern der Einstellungen ist ein Fehler aufgetreten."
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
+#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
 msgid "There was an error on applying review."
-msgstr ""
+msgstr "Beim Anwenden der Überprüfung ist ein Fehler aufgetreten."
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
+#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
 msgid ""
-"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and "
-"give it a %2$s to help us spread the word and boost our motivation?%4$s "
-"%5$sShare your feature requests%6$s with the review, We always check them "
-"and try our best."
+"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our "
+"motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best."
 msgstr ""
+"Wir hoffen, dass Ihnen %1$s gefällt! %3$s Könnten Sie uns einen GROSSEN Gefallen tun und uns eine %2$s geben, um uns zu helfen, das "
+"Wort zu verbreiten und unsere Motivation zu steigern?%4$s %5$sTeilen Sie Ihre Funktionsanforderungen%6$s mit der Bewertung mit, wir "
+"prüfen sie immer und geben unser Bestes."
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
+#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
 msgid "OK, you deserve it!"
-msgstr ""
+msgstr "Okay, du hast es verdient!"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
+#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
 msgid "I already did"
-msgstr ""
+msgstr "Ich habe es bereits getan"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
+#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
 msgid "Maybe Later"
-msgstr ""
+msgstr "Vielleicht später"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
+#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
 msgid "I need help"
-msgstr ""
+msgstr "Ich brauche Hilfe"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
+#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
 msgid "Never show again"
-msgstr ""
+msgstr "Nie wieder zeigen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Apps you might like"
-msgstr ""
+msgstr "Apps, die Ihnen gefallen könnten"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Active Installations"
-msgstr ""
+msgstr "Aktive Installationen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Free Version"
-msgstr ""
+msgstr "Kostenlose Version"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Buy Pro"
-msgstr ""
+msgstr "Pro-Version kaufen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Saved Successfully."
-msgstr ""
+msgstr "Erfolgreich gespeichert."
 
 #: assets/js/admin/admin/index.js:2
 msgid "There was an error on saving the settings."
-msgstr ""
+msgstr "Beim Speichern der Einstellungen ist ein Fehler aufgetreten."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Apps"
@@ -867,95 +961,91 @@ msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Enable Updates"
-msgstr ""
+msgstr "Updates aktivieren"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Articles"
-msgstr ""
+msgstr "Artikel"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Video Tutorials"
-msgstr ""
+msgstr "Videoanleitungen"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Get Support"
-msgstr ""
+msgstr "Support erhalten"
 
 #: assets/js/admin/product/index.js:2
 msgid "Items are required."
-msgstr ""
+msgstr "Artikel sind erforderlich."
 
 #: assets/js/admin/product/index.js:2 assets/js/shared/index.js:2
 msgid "There was an error on getting items."
-msgstr ""
+msgstr "Beim Abrufen der Artikel ist ein Fehler aufgetreten."
 
 #: assets/js/admin/product/index.js:2
 msgid "Search value is required."
-msgstr ""
+msgstr "Bitte einen Suchbegriff eingeben."
 
 #: assets/js/admin/product/index.js:2
 msgid "There was an error on searching items."
-msgstr ""
+msgstr "Beim Suchen der Artikel ist ein Fehler aufgetreten."
 
 #: assets/js/admin/product/index.js:2
 msgid "Optional"
 msgstr ""
 
 #: assets/js/admin/product/index.js:2
-msgid ""
-"Check this option to make the bundle item optional to choose by the user"
-msgstr ""
+msgid "Check this option to make the bundle item optional to choose by the user"
+msgstr "Aktivieren Sie diese Option, um die Auswahl des Bundle-Artikel durch den Benutzer optional zu machen"
 
 #: assets/js/admin/product/index.js:2
 msgid "Selected"
-msgstr ""
+msgstr "Ausgewählt"
 
 #: assets/js/admin/product/index.js:2
 msgid "Enable this field to make the optional item selected in the frontend."
-msgstr ""
+msgstr "Aktivieren Sie dieses Feld, damit das optionale Element im Frontend ausgewählt wird."
 
 #: assets/js/admin/product/index.js:2
 msgid "Default product"
-msgstr ""
+msgstr "Standardprodukt"
 
 #: assets/js/admin/product/index.js:2
 msgid "Set a default product"
-msgstr ""
+msgstr "Ein Standardprodukt festlegen"
 
 #: assets/js/admin/product/index.js:2
 msgid "Products"
-msgstr ""
+msgstr "Produkte"
 
 #: assets/js/admin/product/index.js:2
 msgid "Add products or Variations"
-msgstr ""
+msgstr "Produkte oder Varianten hinzufügen"
 
 #: assets/js/admin/product/index.js:2
 msgid "Exclude products"
-msgstr ""
+msgstr "Produkte ausschließen"
 
 #: assets/js/admin/product/index.js:2
 msgid "Select a product that you do not want to be displayed"
-msgstr ""
+msgstr "Wählen Sie ein Produkt aus, das nicht angezeigt werden soll"
 
 #: assets/js/admin/product/index.js:2
 msgid "Categories"
-msgstr ""
+msgstr "Kategorien"
 
 #: assets/js/admin/product/index.js:2
-msgid ""
-"Select the category product that you want to be displayed in this bundle item"
-msgstr ""
+msgid "Select the category product that you want to be displayed in this bundle item"
+msgstr "Wählen Sie die Produktkategorie aus, die in diesem Bundle-Artikel angezeigt werden soll"
 
 #: assets/js/admin/product/index.js:2
 msgid "Exclude categories"
-msgstr ""
+msgstr "Kategorien ausschließen"
 
 #: assets/js/admin/product/index.js:2
-msgid ""
-"Select the category product that you do not want to be displayed in this "
-"bundle item"
-msgstr ""
+msgid "Select the category product that you do not want to be displayed in this bundle item"
+msgstr "Wählen Sie die Produktkategorie aus, die in diesem Bundle-Artikel nicht angezeigt werden soll"
 
 #: assets/js/admin/product/index.js:2
 msgid "Tags"
@@ -963,39 +1053,39 @@ msgstr ""
 
 #: assets/js/admin/product/index.js:2
 msgid "Select the product with tags to display in this bundle item"
-msgstr ""
+msgstr "Wählen Sie das Produkt mit den Tags aus, das in diesem Bundle-Artikel angezeigt werden soll"
 
 #: assets/js/admin/product/index.js:2
 msgid "Exclude tags"
-msgstr ""
+msgstr "Tags ausschließen"
 
 #: assets/js/admin/product/index.js:2
-msgid ""
-"Select the product with tags that you do not want to be displayed in the "
-"bundle item"
-msgstr ""
+msgid "Select the product with tags that you do not want to be displayed in the bundle item"
+msgstr "Wählen Sie das Produkt mit den Tags aus, das in diesem Bundle-Artikel nicht angezeigt werden soll"
 
 #: assets/js/admin/product/index.js:2
 msgid "Categories and Tags relation"
-msgstr ""
+msgstr "Beziehung zwischen Kategorien und Tags"
 
 #: assets/js/admin/product/index.js:2
 msgid "Match at least one"
-msgstr ""
+msgstr "Passen Sie mindestens eine an"
 
 #: assets/js/admin/product/index.js:2
 msgid "Match both"
-msgstr ""
+msgstr "Passen Sie beide an"
 
 #: assets/js/admin/product/index.js:2
 msgid ""
-"Match at least one: Products should match at least one of categories or tags."
-"%sMatch both: Products should match both categories and tags."
+"Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and "
+"tags."
 msgstr ""
+"Passen Sie mindestens eine an: Produkte sollten mindestens einer Kategorie oder einem Tag entsprechen. %s Passen Sie beide an: "
+"Produkte sollten sowohl Kategorien als auch Tags entsprechen."
 
 #: assets/js/admin/product/index.js:2
 msgid "Sort products"
-msgstr ""
+msgstr "Produkte sortieren"
 
 #: assets/js/admin/product/index.js:2
 msgid "ID"
@@ -1003,298 +1093,303 @@ msgstr ""
 
 #: assets/js/admin/product/index.js:2
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: assets/js/admin/product/index.js:2
 msgid "Menu order"
-msgstr ""
+msgstr "Menüreihenfolge"
 
 #: assets/js/admin/product/index.js:2
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: assets/js/admin/product/index.js:2
 msgid "Price"
-msgstr ""
+msgstr "Preis"
 
 #: assets/js/admin/product/index.js:2
 msgid "Popularity"
-msgstr ""
+msgstr "Beliebtheit"
 
 #: assets/js/admin/product/index.js:2
 msgid "Rating"
-msgstr ""
+msgstr "Bewertung"
 
 #: assets/js/admin/product/index.js:2
 msgid "Ascending"
-msgstr ""
+msgstr "Aufsteigend"
 
 #: assets/js/admin/product/index.js:2
 msgid "Descending"
-msgstr ""
+msgstr "Absteigend"
 
 #: assets/js/admin/product/index.js:2
 msgid "Set the order of products in the pop-up"
-msgstr ""
+msgstr "Legen Sie die Reihenfolge der Produkte im Pop-up fest"
 
 #: assets/js/admin/product/index.js:2
 msgid "Quantity"
-msgstr ""
+msgstr "Menge"
 
 #: assets/js/admin/product/index.js:2
 msgid "Set the default product quantity"
-msgstr ""
+msgstr "Legen Sie die Standardproduktmenge fest"
 
 #: assets/js/admin/product/index.js:2
 msgid "Edit quantity by user"
-msgstr ""
+msgstr "Menge nach Benutzer bearbeiten"
 
 #: assets/js/admin/product/index.js:2
 msgid "Check this option to allow the user to change the bundle item quantity"
-msgstr ""
+msgstr "Aktivieren Sie diese Option, damit der Benutzer die Menge des Paketartikels ändern kann"
 
 #: assets/js/admin/product/index.js:2
 msgid "Min quantity"
-msgstr ""
+msgstr "Min menge"
 
 #: assets/js/admin/product/index.js:2
 msgid "Set the minimum quantity of this bundled product"
-msgstr ""
+msgstr "Legen Sie die Mindestmenge dieses gebündelten Produkts fest"
 
 #: assets/js/admin/product/index.js:2
 msgid "Max quantity"
-msgstr ""
+msgstr "Max Menge"
 
 #: assets/js/admin/product/index.js:2
 msgid "Set the maximum quantity of this bundled product"
-msgstr ""
+msgstr "Legen Sie die maximale Menge dieses gebündelten Produkts fest"
 
 #: assets/js/admin/product/index.js:2
 msgid "Discount"
-msgstr ""
+msgstr "Rabatt"
 
 #: assets/js/admin/product/index.js:2
 msgid "Percentage"
-msgstr ""
+msgstr "Prozentsatz"
 
 #: assets/js/admin/product/index.js:2
 msgid "Fixed price"
-msgstr ""
+msgstr "Festpreis"
 
 #: assets/js/admin/product/index.js:2
 msgid ""
-"Discount applied to the price of the bundled product. if the bundled product "
-"has a sale price the discount is applied on top of the sale price"
+"Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the "
+"sale price"
 msgstr ""
+"Rabatt auf den Preis des Bundle-Produkts angewendet. Wenn das Bundle-Produkt einen Verkaufspreis hat, wird der Rabatt auf den "
+"Verkaufspreis angewendet"
 
 #: assets/js/admin/product/index.js:2
 msgid "Default Image"
-msgstr ""
+msgstr "Standardbild"
 
 #: assets/js/admin/product/index.js:2
 msgid "No image chosen"
-msgstr ""
+msgstr "Kein Bild ausgewählt"
 
 #: assets/js/admin/product/index.js:2
 msgid "Upload Image"
-msgstr ""
+msgstr "Bild hochladen"
 
 #: assets/js/admin/product/index.js:2
 msgid "Set an image for empty item."
-msgstr ""
+msgstr "Bild für leeres Element festlegen."
 
 #: assets/js/admin/product/index.js:2
 msgid "Overwrite bundle item title"
-msgstr ""
+msgstr "Bundle artikel Titel überschreiben"
 
 #: assets/js/admin/product/index.js:2
 msgid "Short description"
-msgstr ""
+msgstr "Kurzbeschreibung"
 
 #: assets/js/admin/product/index.js:2
-msgid ""
-"Overwrite bundle item short description.(Show when the mouse hovers over it)"
-msgstr ""
+msgid "Overwrite bundle item short description.(Show when the mouse hovers over it)"
+msgstr "Kurzbeschreibung des Bündelartikels  überschreiben. (Anzeige, wenn die Maus darüber fährt)"
 
 #: assets/js/admin/product/index.js:2
 msgid "Product selection title"
-msgstr ""
+msgstr "Produktauswahl-Titel"
 
 #: assets/js/admin/product/index.js:2
 msgid "Change the title of the bundle empty item."
-msgstr ""
+msgstr "Den Titel des leeren Bundle-Artikel ändern."
 
 #: assets/js/admin/product/index.js:2
 msgid "Product list title"
-msgstr ""
+msgstr "Titel der Produktliste"
 
 #: assets/js/admin/product/index.js:2
 msgid "Change the product list product selection title."
-msgstr ""
+msgstr "Ändern Sie den Produktauswahltitel der Produktliste."
 
 #: assets/js/admin/product/index.js:2
 msgid "Modal header title"
-msgstr ""
+msgstr "Titel des Modal-Header"
 
 #: assets/js/admin/product/index.js:2
 msgid "Change the pop-up header title"
-msgstr ""
+msgstr "Titel des Pop-up-Header ändern"
 
 #: assets/js/admin/product/index.js:2
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplikat"
 
 #: assets/js/admin/product/index.js:2
 msgid "Duplicate: Pro version"
-msgstr ""
+msgstr "Duplikat: Pro-Version"
 
 #: assets/js/admin/product/index.js:2
 msgid "Trash"
-msgstr ""
+msgstr "Papierkorb"
 
 #: assets/js/admin/product/index.js:2
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: assets/js/admin/product/index.js:2
 msgid "Display"
-msgstr ""
+msgstr "Anzeige"
 
 #: assets/js/admin/product/index.js:2
 msgid "Individual theme"
-msgstr ""
+msgstr "Individuelles Thema"
 
 #: assets/js/admin/product/index.js:2
 msgid "GO PRO"
-msgstr ""
+msgstr "GEHE PRO"
 
 #: assets/js/admin/product/index.js:2
 msgid "Need help?"
-msgstr ""
+msgstr "Benötigen Hilfe?"
 
 #: assets/js/admin/product/index.js:2
-msgid ""
-"If checked, disable auto calculate price and use product price as bundle "
-"price."
-msgstr ""
+msgid "If checked, disable auto calculate price and use product price as bundle price."
+msgstr "Wenn aktiviert, deaktivieren Sie die automatische Preisberechnung und verwenden Sie den Produktpreis als Bundle-Preis."
 
 #: assets/js/admin/product/index.js:2
 msgid "Please enable fixed price first."
-msgstr ""
+msgstr "Bitte aktivieren Sie zuerst den Festpreis."
 
 #: assets/js/admin/product/index.js:2
 msgid "Click here to set price"
-msgstr ""
+msgstr "Klicken Sie hier, um den Preis festzulegen"
 
 #: assets/js/admin/product/index.js:2
 msgid "Include parent price"
-msgstr ""
+msgstr "Elternpreis einschließen"
 
 #: assets/js/admin/product/index.js:2
-msgid ""
-"Include the parent product price in the bundle total price. (parent price + "
-"selected items price)"
-msgstr ""
+msgid "Include the parent product price in the bundle total price. (parent price + selected items price)"
+msgstr "Den Preis des Hauptprodukts in den Gesamtpreis des Bundles einschließen. (Hauptpreis + ausgewählter Artikel Preis)"
 
 #: assets/js/admin/product/index.js:2
 msgid "Sync stock quantity"
-msgstr ""
+msgstr "Bestandsmenge synchronisieren"
 
 #: assets/js/admin/product/index.js:2
 msgid ""
-"Update the bundle stock quantity based on the stock quantity of child "
-"products. Note: This feature works only when each item has exactly one "
-"product, which is added to the default product field and is not optional."
+"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has "
+"exactly one product, which is added to the default product field and is not optional."
 msgstr ""
+"Aktualisieren Sie die Existenz des Bundles basierend auf der vorhandenen Menge der Unterprodukte. Hinweis: Diese Funktion funktioniert "
+"nur, wenn jedes Element genau ein Produkt enthält, das dem Standard-Produktfeld hinzugefügt wurde und nicht optional ist."
 
 #: assets/js/admin/product/index.js:2
 msgid "Hide products price"
-msgstr ""
+msgstr "Produktpreise ausblenden"
 
 #: assets/js/admin/product/index.js:2
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: assets/js/admin/product/index.js:2
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: assets/js/admin/product/index.js:2
 msgid "Only regular price"
-msgstr ""
+msgstr "Nur regulärer Preis"
 
 #: assets/js/admin/product/index.js:2
 msgid "Shipping fee"
-msgstr ""
+msgstr "Versandgebühr"
 
 #: assets/js/admin/product/index.js:2
 msgid "Apply to the whole bundle"
-msgstr ""
+msgstr "Auf das gesamte Paket anwenden"
+
+#: assets/js/admin/product/index.js:2
+msgid "Apply to the parent product"
+msgstr "Auf das übergeordnete Produkt anwenden"
 
 #: assets/js/admin/product/index.js:2
 msgid "Apply to each bundle item"
-msgstr ""
+msgstr "Auf jedes Bundle-Artikel anwenden"
 
 #: assets/js/admin/product/index.js:2
 msgid "Min items quantity"
-msgstr ""
+msgstr "Mindestmenge an Artikeln"
 
 #: assets/js/admin/product/index.js:2
 msgid "Set the minimum total quantity of bundled items."
-msgstr ""
+msgstr "Legen Sie die Mindestgesamtmenge der gebündelten Artikel fest."
 
 #: assets/js/admin/product/index.js:2
 msgid "Max items quantity"
-msgstr ""
+msgstr "Maximalmenge an Artikeln"
 
 #: assets/js/admin/product/index.js:2
 msgid "Set the maximum total quantity of bundled items."
-msgstr ""
+msgstr "Legen Sie die maximale Gesamtmenge der gebündelten Artikel fest."
 
 #: assets/js/admin/product/index.js:2
 msgid "Custom display price"
-msgstr ""
+msgstr "Benutzerdefinierter Anzeigepreis"
 
 #: assets/js/admin/product/index.js:2
 msgid "Product display price in frontend. E.g: From 10$ To 20$"
-msgstr ""
+msgstr "Produktanzeigepreis im Frontend. Zum Beispiel: Von 10 $ bis 20 $"
 
 #: assets/js/admin/product/index.js:2
-msgid ""
-"A title for the bundle product that will be shown on top of bundle items."
-msgstr ""
+msgid "A title for the bundle product that will be shown on top of bundle items."
+msgstr "Über den Bundle-Artikeln wird ein Titel für das Bundle-Produkt angezeigt."
 
 #: assets/js/admin/product/index.js:2
 msgid "Bundle description"
-msgstr ""
+msgstr "Paketbeschreibung"
 
 #: assets/js/admin/product/index.js:2
 msgid "Create a description for product bundle."
-msgstr ""
+msgstr "Erstellen Sie eine Beschreibung für das Produktpaket."
 
 #: assets/js/admin/product/index.js:2
 msgid "Add Item"
-msgstr ""
+msgstr "Artikel hinzufügen"
 
 #: assets/js/shared/index.js:2
 msgid "Change"
-msgstr ""
+msgstr "Ändern"
 
 #: assets/js/shared/index.js:2
 msgid "View"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "OUT OF STOCK"
-msgstr ""
+msgstr "Ansehen"
 
 #: assets/js/shared/index.js:2
 msgid "Bundle item image"
-msgstr ""
+msgstr "Bild des Bundle-Artikels"
+
+#: assets/js/shared/index.js:2
+msgid "OUT OF STOCK"
+msgstr "NICHT AUF LAGER"
 
 #: assets/js/shared/index.js:2
 msgid "More pictures"
-msgstr ""
+msgstr "Weitere Bilder"
+
+#: assets/js/shared/index.js:2
+msgid "Show Options"
+msgstr "Optionen anzeigen"
 
 #: assets/js/shared/index.js:2
 msgid "Args is required."
@@ -1302,36 +1397,48 @@ msgstr ""
 
 #: assets/js/shared/index.js:2
 msgid "Back"
-msgstr ""
+msgstr "Zurück"
 
 #: assets/js/shared/index.js:2
 msgid "Close"
-msgstr ""
+msgstr "Schließen"
 
 #: assets/js/shared/index.js:2
 msgid "Prev"
-msgstr ""
+msgstr "Zurück"
 
 #: assets/js/shared/index.js:2
 msgid "Next"
-msgstr ""
+msgstr "Weiter"
 
 #: assets/js/shared/index.js:2
 msgid "Add"
-msgstr ""
+msgstr "hier klicken"
 
 #: assets/js/shared/index.js:2
 msgid "Add%s"
-msgstr ""
+msgstr "Auswählen%s"
 
 #: assets/js/shared/index.js:2
 msgid "Edit product"
-msgstr ""
+msgstr "Produkt bearbeiten"
 
 #: assets/js/shared/index.js:2
 msgid "Save"
-msgstr ""
+msgstr "Du sparst"
+
+#: assets/js/shared/index.js:2
+msgid "Please select a purchasable variation for %s before adding bundle to the cart."
+msgstr "Bitte wählen Sie eine kaufbare Variante von %s, bevor Sie das Bundle in den Warenkorb legen."
 
 #: assets/js/shared/index.js:2
 msgid "Please select a product for all items."
-msgstr ""
+msgstr "Bitte wähle deine Produkte aus."
+
+#: assets/js/shared/index.js:2
+msgid "Please select a purchasable product for %s before adding bundle to the cart."
+msgstr "Bitte wählen Sie ein kaufbares Produkt für %s, bevor Sie das Bundle in den Warenkorb legen."
+
+#: assets/js/shared/index.js:2
+msgid "Empty bundle!"
+msgstr "Leeres Bundle!"

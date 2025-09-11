@@ -250,6 +250,12 @@
 			],
 			"Show or hide the “Show Options” button for variable products inside the popup.": [
 				"إظهار أو إخفاء زر «عرض الخيارات» للمنتجات المتغيرة داخل النافذة المنبثقة"
+			],
+			"Calculate bundle price in frontend": [
+				"احسب سعر الحزمة في الواجهة الأمامية"
+			],
+			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
+				"يمكن أن يعزز التوافق مع إضافة الخصومات، ولكنه قد يؤدي إلى مشاكل في الذاكرة إذا كانت الحزمة تحتوي على العديد من العناصر. يكون مفيدًا للحزم ذات الأسعار الديناميكية. قم بتمكينه فقط عند الضرورة."
 			]
 		}
 	}

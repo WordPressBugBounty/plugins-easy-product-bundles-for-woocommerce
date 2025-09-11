@@ -272,6 +272,12 @@
 			],
 			"Show or hide the “Show Options” button for variable products inside the popup.": [
 				"Показать или скрыть кнопку «Показать варианты» для переменных продуктов во всплывающем окне"
+			],
+			"Calculate bundle price in frontend": [
+				"Рассчитать цену пакета на фронтенде"
+			],
+			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
+				"Это может повысить совместимость с плагином скидок, но может привести к проблемам с памятью, если пакет содержит много товаров. Полезно для пакетов с динамическими ценами. Включайте только при необходимости."
 			]
 		}
 	}

@@ -198,7 +198,8 @@
 			"Selected": [ "Geselecteerd" ],
 			"Enable this field to make the optional item selected in the frontend.": [
 				"Schakel dit veld in om het optionele item in de frontend geselecteerd te maken."
-			]
+			],
+			"Apply to the parent product": [ "Toepassen op het hoofdproduct" ]
 		}
 	}
 }

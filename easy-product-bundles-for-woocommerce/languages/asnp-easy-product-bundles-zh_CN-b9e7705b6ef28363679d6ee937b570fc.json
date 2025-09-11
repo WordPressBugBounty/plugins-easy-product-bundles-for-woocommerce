@@ -227,6 +227,10 @@
 			],
 			"Show or hide the “Show Options” button for variable products inside the popup.": [
 				"在弹出窗口中显示或隐藏可变产品的“显示选项”按钮"
+			],
+			"Calculate bundle price in frontend": [ "在前端计算套餐价格" ],
+			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
+				"它可以增强与折扣插件的兼容性，但如果套餐包含许多项目，可能会导致内存问题。它对动态价格套餐非常有用。仅在必要时启用。"
 			]
 		}
 	}

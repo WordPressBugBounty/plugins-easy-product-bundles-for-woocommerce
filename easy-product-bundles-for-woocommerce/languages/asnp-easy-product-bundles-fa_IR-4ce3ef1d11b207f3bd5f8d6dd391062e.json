@@ -193,7 +193,8 @@
 			"Enable this field to make the optional item selected in the frontend.": [
 				"این فیلد را فعال کنید تا مورد اختیاری در فرانت  شده باشد."
 			],
-			"ID": [ "شناسه" ]
+			"ID": [ "شناسه" ],
+			"Apply to the parent product": [ "اعمال روی محصول والد" ]
 		}
 	}
 }

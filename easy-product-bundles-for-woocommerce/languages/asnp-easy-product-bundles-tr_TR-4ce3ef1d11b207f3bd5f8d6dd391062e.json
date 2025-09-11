@@ -196,7 +196,8 @@
 			"Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional.": [
 				"Paketin stok miktarını, çocuk ürünlerinin stok miktarına göre güncelleyin. Not: Bu özellik yalnızca her bir öğenin tam olarak bir ürüne sahip olduğu ve bu ürünün varsayılan ürün alanına eklenip isteğe bağlı olmadığı durumlarda çalışır."
 			],
-			"ID": [ "Kimlik" ]
+			"ID": [ "Kimlik" ],
+			"Apply to the parent product": [ "Ana ürüne uygula" ]
 		}
 	}
 }

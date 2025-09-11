@@ -244,6 +244,12 @@
 			],
 			"Show or hide the “Show Options” button for variable products inside the popup.": [
 				"ポップアップ内の可変商品用「オプションを表示」ボタンを表示または非表示にする"
+			],
+			"Calculate bundle price in frontend": [
+				"フロントエンドでパッケージ価格を計算する"
+			],
+			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
+				"割引プラグインとの互換性を高めることができますが、パッケージに多くのアイテムが含まれている場合はメモリの問題を引き起こす可能性があります。動的価格パッケージに便利です。必要な場合のみ有効にしてください。"
 			]
 		}
 	}

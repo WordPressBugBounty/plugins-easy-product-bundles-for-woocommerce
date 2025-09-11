@@ -38,7 +38,8 @@
 				"Proszę wybrać produkt możliwy do zakupu dla %s przed dodaniem pakietu do koszyka."
 			],
 			"Empty bundle!": [ "Pusty pakiet!" ],
-			"Show Options": [ "Pokaż opcje" ]
+			"Show Options": [ "Pokaż opcje" ],
+			"Please select a product!": [ "wybrać produkt!" ]
 		}
 	}
 }

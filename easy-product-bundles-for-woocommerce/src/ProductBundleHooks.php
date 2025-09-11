@@ -154,20 +154,27 @@ class ProductBundleHooks {
 			return apply_filters( 'asnp_wepb_get_price_html', wp_kses_post( $custom_price ), $price, $product );
 		}
 
-		$prices = $product->get_default_products_price_for( 'display' );
+		$calculate = 'true' === get_plugin()->settings->get_setting( 'calculate_bundle_price_in_frontend', 'false' );
+
+		if ( $calculate ) {
+			$prices = $product->calculate_default_products_price( $product, [ 'exchange_price' => true, 'return' => 'display' ] );
+		} else {
+			$prices = $product->get_default_products_price_for( 'display' );
+		}
+		
 		if ( empty( $prices ) || ! isset( $prices['min'] ) ) {
 			return $price;
 		}
 
-		if ( ! empty( $prices['min'] ) ) {
+		if ( ! $calculate && ! empty( $prices['min'] ) ) {
 			$prices['min'] = maybe_exchange_price( $prices['min'] );
 		}
 
-		if ( ! empty( $prices['regular'] ) ) {
+		if ( ! $calculate && ! empty( $prices['regular'] ) ) {
 			$prices['regular'] = maybe_exchange_price( $prices['regular'] );
 		}
 
-		if ( ! empty( $prices['total'] ) ) {
+		if ( ! $calculate && ! empty( $prices['total'] ) ) {
 			$prices['total'] = maybe_exchange_price( $prices['total'] );
 		}
 
@@ -1350,12 +1357,12 @@ class ProductBundleHooks {
 				$bundle = wc_get_product( (int) $values['asnp_wepb_parent_id'] );
 				if (
 					! $bundle ||
-					'per_item' !== $bundle->get_shipping_fee_calculation()
+					'per_bundle' === $bundle->get_shipping_fee_calculation()
 				) {
 					continue;
 				}
 			} elseif ( is_cart_item_bundle( $values ) ) {
-				if ( 'per_bundle' !== $values['data']->get_shipping_fee_calculation() ) {
+				if ( 'per_item' === $values['data']->get_shipping_fee_calculation() ) {
 					continue;
 				}
 			}
@@ -1381,12 +1388,12 @@ class ProductBundleHooks {
 					if (
 						$bundle &&
 						$bundle->is_type( Plugin::PRODUCT_TYPE ) &&
-						'per_item' !== $bundle->get_shipping_fee_calculation()
+						'per_bundle' === $bundle->get_shipping_fee_calculation()
 					) {
 						unset( $packages[ $key ]['contents'][ $item_key ] );
 					}
 				} elseif ( is_cart_item_bundle( $item_value ) ) {
-					if ( 'per_bundle' !== $item_value['data']->get_shipping_fee_calculation() ) {
+					if ( 'per_item' === $item_value['data']->get_shipping_fee_calculation() ) {
 						unset( $packages[ $key ]['contents'][ $item_key ] );
 					}
 				}

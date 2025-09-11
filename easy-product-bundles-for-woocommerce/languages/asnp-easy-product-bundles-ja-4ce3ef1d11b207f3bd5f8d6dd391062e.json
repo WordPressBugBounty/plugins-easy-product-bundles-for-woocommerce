@@ -186,7 +186,8 @@
 			"Selected": [ "選択された" ],
 			"Enable this field to make the optional item selected in the frontend.": [
 				"このフィールドを有効にして、フロントエンドでオプション項目を選択可能にします。"
-			]
+			],
+			"Apply to the parent product": [ "親製品に適用" ]
 		}
 	}
 }

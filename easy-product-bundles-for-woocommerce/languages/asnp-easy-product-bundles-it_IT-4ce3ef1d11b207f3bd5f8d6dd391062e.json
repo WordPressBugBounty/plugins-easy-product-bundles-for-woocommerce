@@ -201,7 +201,8 @@
 			"Selected": [ "Selezionato" ],
 			"Enable this field to make the optional item selected in the frontend.": [
 				"Abilita questo campo per selezionare l'articolo opzionale nel frontend."
-			]
+			],
+			"Apply to the parent product": [ "Applica al prodotto principale" ]
 		}
 	}
 }

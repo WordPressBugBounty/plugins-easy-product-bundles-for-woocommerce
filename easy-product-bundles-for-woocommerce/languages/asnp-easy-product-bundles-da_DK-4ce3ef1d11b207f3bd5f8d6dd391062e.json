@@ -190,7 +190,8 @@
 			"Create a description for product bundle.": [
 				"Opret en beskrivelse for produktbundtvare."
 			],
-			"Add Item": [ "Tilføj element" ]
+			"Add Item": [ "Tilføj element" ],
+			"Apply to the parent product": [ "Anvend på forældreproduktet" ]
 		}
 	}
 }

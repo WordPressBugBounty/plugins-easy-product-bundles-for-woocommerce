@@ -38,7 +38,8 @@
 				"Vælg et købsværdigt produkt for %s, før du tilføjer bundtet til kurven."
 			],
 			"Empty bundle!": [ "Tomt bundt!" ],
-			"Show Options": [ "Vis muligheder" ]
+			"Show Options": [ "Vis muligheder" ],
+			"Please select a product!": [ "Vælg venligst et produkt!" ]
 		}
 	}
 }

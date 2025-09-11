@@ -238,6 +238,12 @@
 			],
 			"Show or hide the “Show Options” button for variable products inside the popup.": [
 				"הצג או הסתר את כפתור 'הצג אפשרויות' עבור מוצרים משתנים בחלון הקופץ"
+			],
+			"Calculate bundle price in frontend": [
+				"חשב את מחיר החבילה בפרונטאנד"
+			],
+			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
+				"זה יכול לשפר את התאימות עם תוסף ההנחות, אך עלול לגרום לבעיות זיכרון אם החבילה מכילה פריטים רבים. זה שימושי עבור חבילות עם מחיר דינמי. הפעל רק במקרה הצורך."
 			]
 		}
 	}

@@ -201,7 +201,8 @@
 			"Selected": [ "Выбрано" ],
 			"Enable this field to make the optional item selected in the frontend.": [
 				"Включите это поле, чтобы выбрать опциональный элемент на фронтенде."
-			]
+			],
+			"Apply to the parent product": [ "Применить к основному продукту" ]
 		}
 	}
 }

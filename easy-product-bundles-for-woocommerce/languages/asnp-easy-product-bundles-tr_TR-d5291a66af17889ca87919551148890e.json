@@ -42,7 +42,8 @@
 				"%s için paketi sepete eklemeden önce satın alınabilir bir ürün seçin."
 			],
 			"Empty bundle!": [ "Boş paket!" ],
-			"Show Options": [ "Seçenekleri göster" ]
+			"Show Options": [ "Seçenekleri göster" ],
+			"Please select a product!": [ "Lütfen bir ürün seçiniz!" ]
 		}
 	}
 }

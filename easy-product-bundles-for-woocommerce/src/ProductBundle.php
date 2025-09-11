@@ -23,7 +23,7 @@ class ProductBundle extends \WC_Product {
 		'items' => array(),
 		'default_products' => '',
 		'hide_items_price' => 'no',
-		'shipping_fee_calculation' => 'per_bundle',
+		'shipping_fee_calculation' => 'bundle',
 		'custom_display_price' => '',
 		'bundle_title' => '',
 		'bundle_description' => '',
@@ -240,7 +240,7 @@ class ProductBundle extends \WC_Product {
 				'id'                   => $this->get_id(),
 				'is_fixed_price'       => $this->is_fixed_price(),
 				'regular_price'        => '' !== $this->get_regular_price( 'edit' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( $this->get_regular_price( 'edit' ) ) ] ) : '',
-				'sale_price'           => '' !== maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) && $this->is_on_sale( $context ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) ) ] ) : '',
+				'sale_price'           => '' !== maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) ) ] ) : '',
 				'display_price'        => $this->get_price_html(),
 				'include_parent_price' => $this->get_include_parent_price( $context ),
 			],
@@ -678,7 +678,7 @@ class ProductBundle extends \WC_Product {
 		return 'true' === $this->get_loop_add_to_cart() || ( '' === $this->get_loop_add_to_cart() && ! empty( $this->get_default_products() ) );
 	}
 
-	public static function calculate_default_products_price( $product ) {
+	public static function calculate_default_products_price( $product, $args = [] ) {
 		if ( $product->is_fixed_price() ) {
 			return [];
 		}
@@ -695,6 +695,8 @@ class ProductBundle extends \WC_Product {
 			return [];
 		}
 
+		// return type can be 'all', 'display', 'raw'.
+		$args              = array_merge( [ 'exchange_price' => false, 'return' => 'all' ], $args );
 		$optional_mode     = get_plugin()->settings->get_setting( 'optional_item_mode', 'check_box' );
 		$min_price         = null;
 		$min_price_display = null;
@@ -705,8 +707,8 @@ class ProductBundle extends \WC_Product {
 
 		if ( 'true' === $product->get_include_parent_price() ) {
 			if ( '' !== $product->get_price( 'edit' ) ) {
-				$total = $min_price = (float) $product->get_price( 'edit' );
-				$total_display = $min_price_display = wc_get_price_to_display( $product, [ 'price' => $product->get_price( 'edit' ) ] );
+				$total = $min_price = ( $args['exchange_price'] ? maybe_exchange_price( maybe_change_price( (float) $product->get_price( 'edit' ), $product ) ) : (float) $product->get_price( 'edit' ) );
+				$total_display = $min_price_display = wc_get_price_to_display( $product, [ 'price' => $total ] );
 			}
 
 			if ( '' !== $product->get_regular_price( 'edit' ) ) {
@@ -742,7 +744,7 @@ class ProductBundle extends \WC_Product {
 					'discount_type'  => ! empty( $items[ $i ]['discount_type'] ) ? $items[ $i ]['discount_type'] : '',
 					'discount'       => isset( $items[ $i ]['discount'] ) && '' !== $items[ $i ]['discount'] ? (float) $items[ $i ]['discount'] : null,
 					'is_fixed_price' => false,
-					'exchange_price' => false,
+					'exchange_price' => $args['exchange_price'],
 				]
 			);
 
@@ -760,6 +762,24 @@ class ProductBundle extends \WC_Product {
 
 		if ( null === $min_price ) {
 			return [];
+		}
+
+		if ( 'display' === $args['return'] ) {
+			return [
+				'min'     => $min_price_display,
+				'total'   => $total_display,
+				'regular' => $regular_display,
+				'from'    => $from,
+			];
+		}
+
+		if ( 'raw' === $args['return'] ) {
+			return [
+				'min'     => $min_price,
+				'total'   => $total,
+				'regular' => $regular,
+				'from'    => $from,
+			];
 		}
 
 		return [

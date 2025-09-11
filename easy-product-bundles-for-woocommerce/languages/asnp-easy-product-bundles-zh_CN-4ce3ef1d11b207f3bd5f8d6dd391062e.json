@@ -177,7 +177,8 @@
 			"Selected": [ "已选择" ],
 			"Enable this field to make the optional item selected in the frontend.": [
 				"启用此字段以在前端选择可选项目。"
-			]
+			],
+			"Apply to the parent product": [ "应用于父产品" ]
 		}
 	}
 }

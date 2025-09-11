@@ -182,7 +182,8 @@
 			"Enable this field to make the optional item selected in the frontend.": [
 				"הפעל שדה זה כדי לבחור את הפריט האופציונלי בחזית."
 			],
-			"ID": [ "מזהה" ]
+			"ID": [ "מזהה" ],
+			"Apply to the parent product": [ "החל על המוצר ההורי" ]
 		}
 	}
 }

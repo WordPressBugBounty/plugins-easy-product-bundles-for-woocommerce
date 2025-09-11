@@ -2,14 +2,14 @@
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 6.8.0\n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 6.9.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-09-03T23:38:12+00:00\n"
+"POT-Creation-Date: 2025-09-10T21:42:35+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: asnp-easy-product-bundles\n"
@@ -68,6 +68,7 @@ msgstr ""
 #: src/Admin/ProductBundle.php:182
 #: src/ProductBundle.php:290
 #: assets/js/admin/product/index.js:2
+#: assets/js/shared/index.js:2
 msgid "Please select a product!"
 msgstr ""
 
@@ -235,120 +236,120 @@ msgstr ""
 msgid "Product bundle"
 msgstr ""
 
-#: src/ProductBundleHooks.php:187
-#: src/ProductBundleHooks.php:190
-#: src/ProductBundleHooks.php:192
-#: src/ProductBundleHooks.php:195
+#: src/ProductBundleHooks.php:194
+#: src/ProductBundleHooks.php:197
+#: src/ProductBundleHooks.php:199
+#: src/ProductBundleHooks.php:202
 msgid "From"
 msgstr ""
 
-#: src/ProductBundleHooks.php:229
-#: src/ProductBundleHooks.php:242
+#: src/ProductBundleHooks.php:236
+#: src/ProductBundleHooks.php:249
 msgid "Please select a product for each of the required bundle items."
 msgstr ""
 
-#: src/ProductBundleHooks.php:233
+#: src/ProductBundleHooks.php:240
 msgid "Invalid product bundle."
 msgstr ""
 
-#: src/ProductBundleHooks.php:238
+#: src/ProductBundleHooks.php:245
 msgid "Bundle product is unavailable."
 msgstr ""
 
-#: src/ProductBundleHooks.php:261
+#: src/ProductBundleHooks.php:268
 msgid "Selected product for the bundle item %d is invalid."
 msgstr ""
 
-#: src/ProductBundleHooks.php:265
+#: src/ProductBundleHooks.php:272
 msgid "Please select a variation for the bundle item &quot;%s&quot;."
 msgstr ""
 
-#: src/ProductBundleHooks.php:269
+#: src/ProductBundleHooks.php:276
 msgid "This product is protected and cannot be purchased."
 msgstr ""
 
-#: src/ProductBundleHooks.php:273
+#: src/ProductBundleHooks.php:280
 msgid "Product &quot;%s&quot; is not purchasable."
 msgstr ""
 
-#: src/ProductBundleHooks.php:278
-#: src/ProductBundleHooks.php:359
-#: src/ProductBundleHooks.php:362
-#: src/ProductBundleHooks.php:365
-#: src/ProductBundleHooks.php:368
+#: src/ProductBundleHooks.php:285
+#: src/ProductBundleHooks.php:366
+#: src/ProductBundleHooks.php:369
+#: src/ProductBundleHooks.php:372
+#: src/ProductBundleHooks.php:375
 msgid "Please select a valid quantity for the bundle item &quot;%s&quot;."
 msgstr ""
 
 #. translators: 1: product name 2: quantity in stock
-#: src/ProductBundleHooks.php:290
-#: src/ProductBundleHooks.php:392
-#: src/ProductBundleHooks.php:521
+#: src/ProductBundleHooks.php:297
+#: src/ProductBundleHooks.php:399
+#: src/ProductBundleHooks.php:528
 msgid "You cannot add that amount of &quot;%1$s&quot; to the cart because there is not enough stock (%2$s remaining)."
 msgstr ""
 
-#: src/ProductBundleHooks.php:315
-#: src/ProductBundleHooks.php:354
-#: src/ProductBundleHooks.php:417
+#: src/ProductBundleHooks.php:322
+#: src/ProductBundleHooks.php:361
+#: src/ProductBundleHooks.php:424
 msgid "View cart"
 msgstr ""
 
 #. translators: 1: quantity in stock 2: current quantity
-#: src/ProductBundleHooks.php:317
-#: src/ProductBundleHooks.php:419
+#: src/ProductBundleHooks.php:324
+#: src/ProductBundleHooks.php:426
 msgid "You cannot add that amount of &quot;%1$s&quot; to the cart &mdash; we have %2$s in stock and you already have %3$s in your cart."
 msgstr ""
 
 #. translators: %s: product name
-#: src/ProductBundleHooks.php:344
+#: src/ProductBundleHooks.php:351
 msgid "You cannot add another \"%s\" to your cart."
 msgstr ""
 
 #. translators: %s: product name
-#: src/ProductBundleHooks.php:375
+#: src/ProductBundleHooks.php:382
 msgid "You cannot add &quot;%s&quot; to the bundle item because the product is out of stock."
 msgstr ""
 
-#: src/ProductBundleHooks.php:437
+#: src/ProductBundleHooks.php:444
 msgid "You cannot add &quot;%s&quot; to the bundle item because it is an invalid product."
 msgstr ""
 
 #. Translators: %s Product title.
-#: src/ProductBundleHooks.php:493
+#: src/ProductBundleHooks.php:500
 msgid "You can only have 1 %s in your cart."
 msgstr ""
 
-#: src/ProductBundleHooks.php:501
+#: src/ProductBundleHooks.php:508
 msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be at least %2$d."
 msgstr ""
 
-#: src/ProductBundleHooks.php:505
+#: src/ProductBundleHooks.php:512
 msgid "Cart update failed. The quantity of &quot;%1$s&quot; cannot be higher than %2$d."
 msgstr ""
 
-#: src/ProductBundleHooks.php:509
-#: src/ProductBundleHooks.php:513
+#: src/ProductBundleHooks.php:516
+#: src/ProductBundleHooks.php:520
 msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1139
+#: src/ProductBundleHooks.php:1146
 msgid "(Bundled in %s)"
 msgstr ""
 
-#: src/ProductBundleHooks.php:1215
-#: src/ProductBundleHooks.php:1227
+#: src/ProductBundleHooks.php:1222
+#: src/ProductBundleHooks.php:1234
 msgid "Invalid bundle product."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1220
-#: src/ProductBundleHooks.php:1225
+#: src/ProductBundleHooks.php:1227
+#: src/ProductBundleHooks.php:1232
 msgid "Bundle product has not default items to add it to the order."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1284
+#: src/ProductBundleHooks.php:1291
 msgid "Can not add bundle product to the order."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1294
+#: src/ProductBundleHooks.php:1301
 msgid "Can not add bundle item to the order."
 msgstr ""
 
@@ -410,6 +411,94 @@ msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "CSS Selector"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Bundle title color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Empty item title color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Empty item title hover color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Product title color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Product crossed out price color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Product sale price color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Modal header color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Quantity field buttons hover color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Alert message color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Alert message background color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Optional badge color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Optional badge title color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Quick view icon color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Plus icon color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Quick view button color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Quick view button text color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Popup Variable “Show Options” Button Text Color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Images icon color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Total price - sale price color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Total price - crossed out price color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Total price - saved amount color"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Total price - saved amount background color"
 msgstr ""
 
 #: assets/js/admin/admin/index.js:2
@@ -598,6 +687,14 @@ msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show or hide the “Show Options” button for variable products inside the popup."
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Calculate bundle price in frontend"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary."
 msgstr ""
 
 #: assets/js/admin/admin/index.js:2
@@ -1255,6 +1352,10 @@ msgstr ""
 
 #: assets/js/admin/product/index.js:2
 msgid "Apply to the whole bundle"
+msgstr ""
+
+#: assets/js/admin/product/index.js:2
+msgid "Apply to the parent product"
 msgstr ""
 
 #: assets/js/admin/product/index.js:2

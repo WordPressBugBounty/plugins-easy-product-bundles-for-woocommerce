@@ -270,6 +270,12 @@
 			],
 			"Show or hide the “Show Options” button for variable products inside the popup.": [
 				"Pokaż lub ukryj przycisk „Pokaż opcje” dla produktów zmiennych w popup"
+			],
+			"Calculate bundle price in frontend": [
+				"Oblicz cenę pakietu we frontendzie"
+			],
+			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
+				"Może zwiększyć kompatybilność z wtyczką rabatową, ale może prowadzić do problemów z pamięcią, jeśli pakiet zawiera wiele elementów. Przydatne w przypadku pakietów o dynamicznych cenach. Włącz tylko, jeśli to konieczne."
 			]
 		}
 	}
