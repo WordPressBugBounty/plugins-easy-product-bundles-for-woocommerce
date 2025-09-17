@@ -178,7 +178,12 @@
 			"Enable this field to make the optional item selected in the frontend.": [
 				"启用此字段以在前端选择可选项目。"
 			],
-			"Apply to the parent product": [ "应用于父产品" ]
+			"Apply to the parent product": [ "应用于父产品" ],
+			"Configure bundle": [ "配置套餐" ],
+			"Bundle button label (shop page)": [ "套餐按钮标签（商店页面）" ],
+			"Change the button label shown for bundle products in the shop page.": [
+				"更改商店页面中显示的套餐产品按钮标签。"
+			]
 		}
 	}
 }

@@ -212,6 +212,8 @@ msgid "Item index is required."
 msgstr "L'index de l'élément est requis."
 
 #: src/ProductBundle.php:672
+#: src/ProductBundle.php:177
+#: src/ProductBundle.php:685
 msgid "Configure bundle"
 msgstr "Configurer le pack"
 
@@ -1431,3 +1433,13 @@ msgstr "Veuillez sélectionner un produit achetable pour %s avant d'ajouter le l
 #: assets/js/shared/index.js:2
 msgid "Empty bundle!"
 msgstr "Lot vide !"
+
+#: assets/js/admin/product/index.js:19676
+#: assets/js/admin/product/index.js:4069
+msgid "Bundle button label (shop page)"
+msgstr "Étiquette du bouton du pack (page boutique)"
+
+#: assets/js/admin/product/index.js:19692
+#: assets/js/admin/product/index.js:4085
+msgid "Change the button label shown for bundle products in the shop page."
+msgstr "Modifier l'étiquette du bouton affichée pour les produits pack sur la page boutique."

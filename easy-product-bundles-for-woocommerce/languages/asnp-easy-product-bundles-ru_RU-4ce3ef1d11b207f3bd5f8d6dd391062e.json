@@ -202,7 +202,14 @@
 			"Enable this field to make the optional item selected in the frontend.": [
 				"Включите это поле, чтобы выбрать опциональный элемент на фронтенде."
 			],
-			"Apply to the parent product": [ "Применить к основному продукту" ]
+			"Apply to the parent product": [ "Применить к основному продукту" ],
+			"Configure bundle": [ "Настроить комплект" ],
+			"Bundle button label (shop page)": [
+				"Подпись кнопки комплекта (страница магазина)"
+			],
+			"Change the button label shown for bundle products in the shop page.": [
+				"Измените подпись кнопки, отображаемую для комплектных товаров на странице магазина."
+			]
 		}
 	}
 }

@@ -191,7 +191,14 @@
 				"Opret en beskrivelse for produktbundtvare."
 			],
 			"Add Item": [ "Tilføj element" ],
-			"Apply to the parent product": [ "Anvend på forældreproduktet" ]
+			"Apply to the parent product": [ "Anvend på forældreproduktet" ],
+			"Configure bundle": [ "Konfigurer pakke" ],
+			"Bundle button label (shop page)": [
+				"Knapetiket for pakke (butiksside)"
+			],
+			"Change the button label shown for bundle products in the shop page.": [
+				"Ændr knapetiketten, der vises for pakkeprodukter på butikssiden."
+			]
 		}
 	}
 }

@@ -183,7 +183,14 @@
 				"הפעל שדה זה כדי לבחור את הפריט האופציונלי בחזית."
 			],
 			"ID": [ "מזהה" ],
-			"Apply to the parent product": [ "החל על המוצר ההורי" ]
+			"Apply to the parent product": [ "החל על המוצר ההורי" ],
+			"Configure bundle": [ "הגדר חבילה" ],
+			"Bundle button label (shop page)": [
+				"תווית כפתור החבילה (דף החנות)"
+			],
+			"Change the button label shown for bundle products in the shop page.": [
+				"שנה את תווית הכפתור המוצגת עבור מוצרי חבילה בדף החנות."
+			]
 		}
 	}
 }

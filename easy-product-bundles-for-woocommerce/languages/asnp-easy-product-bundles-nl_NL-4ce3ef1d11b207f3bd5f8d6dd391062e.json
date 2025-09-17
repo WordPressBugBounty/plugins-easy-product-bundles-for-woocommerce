@@ -199,7 +199,14 @@
 			"Enable this field to make the optional item selected in the frontend.": [
 				"Schakel dit veld in om het optionele item in de frontend geselecteerd te maken."
 			],
-			"Apply to the parent product": [ "Toepassen op het hoofdproduct" ]
+			"Apply to the parent product": [ "Toepassen op het hoofdproduct" ],
+			"Configure bundle": [ "Bundel configureren" ],
+			"Bundle button label (shop page)": [
+				"Bundel-knoplabel (winkelpagina)"
+			],
+			"Change the button label shown for bundle products in the shop page.": [
+				"Wijzig het knoplabel dat wordt weergegeven voor bundelproducten op de winkelpagina."
+			]
 		}
 	}
 }

@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 6.9.0
+Stable tag: 6.10.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -213,12 +213,16 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.10.0 =
+* New: You can now change the label of the product bundle button on the shop page.
+* Fix: Fixed an issue with showing product details when clicking on a product in the pop-up.
+Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
+
 = 6.9.0 =
 * New: Added "Apply to the whole bundle" option to the shipping fee calculation types.
 * New: Introduced the ability to calculate bundle prices on the frontend for dynamic bundles.
 * Fix: Now display alert message when all items are optional and not selected.
 * Fix: Fixed variations dropdown menu Css issue in some themes.
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 6.8.0 =
 * New: Added an option in plugin settings to show or hide the “Show Options” button for variable products in the popup.

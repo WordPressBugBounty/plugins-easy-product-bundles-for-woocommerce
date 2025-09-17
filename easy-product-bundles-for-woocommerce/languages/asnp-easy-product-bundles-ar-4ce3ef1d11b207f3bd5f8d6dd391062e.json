@@ -189,7 +189,13 @@
 				"قم بتمكين هذا الحقل لجعل العنصر الاختياري محددًا في الواجهة الأمامية."
 			],
 			"ID": [ "المعرف" ],
-			"Apply to the parent product": [ "اعتمد على المنتج الرئيسي" ]
+			"Configure bundle": [ "تكوين الحزمة" ],
+			"Bundle button label (shop page)": [
+				"تسمية زر الحزمة (صفحة المتجر)"
+			],
+			"Change the button label shown for bundle products in the shop page.": [
+				"غيّر تسمية الزر المعروضة لمنتجات الحزمة في صفحة المتجر."
+			]
 		}
 	}
 }

@@ -147,6 +147,7 @@ class Assets
 			'hide_items_price'         => $product->get_hide_items_price(),
 			'sync_stock_quantity'      => $product->get_sync_stock_quantity(),
 			'bundles'                  => ! empty( $items ) ? $items : [],
+			'bundle_button_label'      => $product->get_bundle_button_label(),
 		];
 	}
 

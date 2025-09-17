@@ -187,7 +187,14 @@
 			"Enable this field to make the optional item selected in the frontend.": [
 				"このフィールドを有効にして、フロントエンドでオプション項目を選択可能にします。"
 			],
-			"Apply to the parent product": [ "親製品に適用" ]
+			"Apply to the parent product": [ "親製品に適用" ],
+			"Configure bundle": [ "バンドルを設定する" ],
+			"Bundle button label (shop page)": [
+				"バンドルボタンのラベル（ショップページ）"
+			],
+			"Change the button label shown for bundle products in the shop page.": [
+				"ショップページで表示されるバンドル商品のボタンラベルを変更します。"
+			]
 		}
 	}
 }

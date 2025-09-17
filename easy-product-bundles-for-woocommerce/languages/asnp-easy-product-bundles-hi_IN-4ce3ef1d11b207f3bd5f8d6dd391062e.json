@@ -189,7 +189,12 @@
 			"Enable this field to make the optional item selected in the frontend.": [
 				"इस फ़ील्ड को सक्षम करें ताकि वैकल्पिक आइटम को फ्रंटेंड में चयनित किया जा सके।"
 			],
-			"Apply to the parent product": [ "मुख्य उत्पाद पर लागू करें" ]
+			"Apply to the parent product": [ "मुख्य उत्पाद पर लागू करें" ],
+			"Configure bundle": [ "बंडल कॉन्फ़िगर करें" ],
+			"Bundle button label (shop page)": [ "बंडल बटन लेबल (शॉप पेज)" ],
+			"Change the button label shown for bundle products in the shop page.": [
+				"शॉप पेज पर बंडल उत्पादों के लिए दिखाए जाने वाले बटन लेबल को बदलें।"
+			]
 		}
 	}
 }

@@ -194,7 +194,14 @@
 				"این فیلد را فعال کنید تا مورد اختیاری در فرانت  شده باشد."
 			],
 			"ID": [ "شناسه" ],
-			"Apply to the parent product": [ "اعمال روی محصول والد" ]
+			"Apply to the parent product": [ "اعمال روی محصول والد" ],
+			"Configure bundle": [ "پیکربندی بسته" ],
+			"Bundle button label (shop page)": [
+				"برچسب دکمه بسته (صفحه فروشگاه)"
+			],
+			"Change the button label shown for bundle products in the shop page.": [
+				"برچسب دکمه نمایش داده‌شده برای محصولات بسته در صفحه فروشگاه را تغییر دهید."
+			]
 		}
 	}
 }

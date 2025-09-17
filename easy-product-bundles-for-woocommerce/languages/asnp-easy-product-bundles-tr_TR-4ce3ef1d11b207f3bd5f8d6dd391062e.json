@@ -197,7 +197,14 @@
 				"Paketin stok miktarını, çocuk ürünlerinin stok miktarına göre güncelleyin. Not: Bu özellik yalnızca her bir öğenin tam olarak bir ürüne sahip olduğu ve bu ürünün varsayılan ürün alanına eklenip isteğe bağlı olmadığı durumlarda çalışır."
 			],
 			"ID": [ "Kimlik" ],
-			"Apply to the parent product": [ "Ana ürüne uygula" ]
+			"Apply to the parent product": [ "Ana ürüne uygula" ],
+			"Configure bundle": [ "Paketi yapılandır" ],
+			"Bundle button label (shop page)": [
+				"Paket düğme etiketi (mağaza sayfası)"
+			],
+			"Change the button label shown for bundle products in the shop page.": [
+				"Mağaza sayfasında paket ürünleri için gösterilen düğme etiketini değiştir."
+			]
 		}
 	}
 }

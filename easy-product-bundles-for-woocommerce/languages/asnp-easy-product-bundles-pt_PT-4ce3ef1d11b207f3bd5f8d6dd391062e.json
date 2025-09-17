@@ -194,7 +194,14 @@
 			"Enable this field to make the optional item selected in the frontend.": [
 				"Ative este campo para selecionar o item opcional no frontend."
 			],
-			"Apply to the parent product": [ "Aplicar ao produto principal" ]
+			"Apply to the parent product": [ "Aplicar ao produto principal" ],
+			"Configure bundle": [ "Configurar pacote" ],
+			"Bundle button label (shop page)": [
+				"Etiqueta do botão do pacote (página da loja)"
+			],
+			"Change the button label shown for bundle products in the shop page.": [
+				"Altere a etiqueta do botão exibida para produtos em pacote na página da loja."
+			]
 		}
 	}
 }

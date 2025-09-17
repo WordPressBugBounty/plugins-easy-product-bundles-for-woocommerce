@@ -33,6 +33,7 @@ class ProductBundle extends \WC_Product {
 		'default_products_price' => [],
 		'sync_stock_quantity' => 'false',
 		'loop_add_to_cart' => '',
+		'bundle_button_label' => 'Configure bundle',
 	);
 
 	protected $is_cart_item = false;
@@ -171,12 +172,17 @@ class ProductBundle extends \WC_Product {
 		return $this->get_prop( 'bundle_description', $context );
 	}
 
+	public function get_bundle_button_label( $context = 'view' ) {
+		$label = $this->get_prop( 'bundle_button_label', $context );
+		return ! empty( $label ) ? __( $label, 'asnp-easy-product-bundles' ) : __( 'Configure bundle', 'asnp-easy-product-bundles' );
+	}
+
 	/**
 	 * Get hide items price.
      *
  	 * @return string
  	 */
- 	public function get_hide_items_price( $context = 'view' ) {
+	public function get_hide_items_price( $context = 'view' ) {
 		return $this->get_prop( 'hide_items_price', $context );
 	}
 
@@ -254,6 +260,7 @@ class ProductBundle extends \WC_Product {
 			'max_items_quantity' => $this->get_max_items_quantity(),
 			'bundles'            => array(),
 			'sync_stock_quantity'=> $this->get_sync_stock_quantity( $context ),
+			'bundle_button_label'=> $this->get_bundle_button_label( $context )
 		);
 
 		$items = $this->get_items();
@@ -584,6 +591,12 @@ class ProductBundle extends \WC_Product {
 		$this->set_prop( 'bundle_description', $bundle_description );
 	}
 
+	public function set_bundle_button_label( $bundle_button_label ) {
+		$this->set_prop( 'bundle_button_label', $bundle_button_label );
+	}
+
+
+
 	public function set_hide_items_price( $hide_items_price ) {
 		$this->set_prop( 'hide_items_price', $hide_items_price );
 	}
@@ -669,7 +682,7 @@ class ProductBundle extends \WC_Product {
 	 */
 	public function add_to_cart_text() {
 		$condition = 'true' === $this->get_loop_add_to_cart() || ( '' === $this->get_loop_add_to_cart() && ! empty( $this->get_default_products() ) );
-		$text = $condition && $this->is_purchasable() && $this->is_in_stock() ? __( 'Add to cart', 'woocommerce' ) : __( 'Configure bundle', 'asnp-easy-product-bundles' );
+		$text = $condition && $this->is_purchasable() && $this->is_in_stock() ? __( 'Add to cart', 'woocommerce' ) : ( $this->get_bundle_button_label() ?: __( 'Configure bundle', 'asnp-easy-product-bundles' ) ) ;
 
 		return apply_filters( 'woocommerce_product_add_to_cart_text', $text, $this );
 	}
