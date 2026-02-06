@@ -70,6 +70,7 @@ class ProductSelector implements ProductSelectorInterface {
 			'page'     => ! empty( $args['page'] ) && 0 < absint( $args['page'] ) ? absint( $args['page'] ) : 1,
 			'orderby'  => $args['orderby'],
 			'order'    => $args['order'],
+			'search'   => ! empty( $args['search'] ) ? sanitize_text_field( $args['search'] ) : '',
 		] );
 	}
 

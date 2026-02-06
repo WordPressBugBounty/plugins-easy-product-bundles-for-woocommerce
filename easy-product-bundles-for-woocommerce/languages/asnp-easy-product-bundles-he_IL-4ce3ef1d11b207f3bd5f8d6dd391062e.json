@@ -190,7 +190,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"שנה את תווית הכפתור המוצגת עבור מוצרי חבילה בדף החנות."
-			]
+			],
+			"None": [ "אין" ]
 		}
 	}
 }

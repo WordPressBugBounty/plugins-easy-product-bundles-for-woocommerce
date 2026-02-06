@@ -31,12 +31,12 @@
 			"Bundle": [ "Комплект" ],
 			"Item View": [ "Изглед на артикул" ],
 			"Show stock": [ "Покажи наличност" ],
-			"Show product Stock availability in modal.": [
-				"Показване на складовата наличност на продукта в modal."
+			"Show product Stock availability in popup.": [
+				"Показване на наличността на продукта в изскачащ прозорец."
 			],
 			"Show rating": [ "Покажи оценка" ],
-			"Show product rating in modal.": [
-				"Показване на продуктовата оценка в модален режим."
+			"Show product rating in popup.": [
+				"Показване на рейтинга на продукта в изскачащ прозорец."
 			],
 			"Show description(on hover)": [
 				"Показване на описанието (при преминаване на курсора)"
@@ -82,8 +82,8 @@
 			"Link to product": [ "Връзка към продукта" ],
 			"New tab": [ "Нов раздел" ],
 			"No link": [ "Няма връзка" ],
-			"Show the product change modal": [
-				"Покажи модал за промяна на продукта"
+			"Show the product change popup": [
+				"Покажи изскачащ прозорец за промяна на продукта"
 			],
 			"Coupon apply method": [ "Метод за прилагане на купон" ],
 			"Both of bundle and bundle items": [
@@ -102,7 +102,9 @@
 			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
 				"Как да броим продуктите в пакет в количката? Да броим и \"пакета и неговите артикули\", или \"само пакета\", или \"само артикулите в пакета\"."
 			],
-			"Change product modal": [ "Промени модала на продукта" ],
+			"Change product popup": [
+				"Изскачащ прозорец за промяна на продукта"
+			],
 			"Number of products per page": [ "Брой продукти на страница" ],
 			"Styles": [ "" ],
 			"Product title color": [ "Цвят на заглавието на продукта" ],
@@ -177,11 +179,11 @@
 			"Hide out of stock products.": [
 				"Скрийте продуктите, които са изчерпани."
 			],
-			"Show modal quick view": [
-				"Покажи бърз преглед в модален прозорец"
+			"Show popup quick view": [
+				"Покажи бърз преглед в изскачащ прозорец"
 			],
-			"Show product quick view icon in modal.": [
-				"Покажи иконата за бърз преглед на продукта в модален прозорец"
+			"Show product quick view icon in popup.": [
+				"Покажи иконата за бърз преглед на продукта в изскачащ прозорец"
 			],
 			"Show selected product quick view": [
 				"Покажи бързия преглед на избрания продукт"
@@ -240,6 +242,12 @@
 			"Optional item mode": [ "Режим на опционален елемент" ],
 			"Checkbox": [ "Квадратче за отметка" ],
 			"Delete button": [ "Бутон за изтриване" ],
+			"Show search field in popup": [
+				"Показване на полето за търсене в изскачащия прозорец"
+			],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"Тази опция ви позволява да покажете или скриете полето за търсене на продукти в изскачащия прозорец."
+			],
 			"Total price - sale price color": [
 				"Цвят на общата цена - цвят на продажната цена"
 			],
@@ -286,6 +294,13 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"Може да подобри съвместимостта с плъгина за отстъпки, но може да доведе до проблеми с паметта, ако пакетът съдържа много артикули. Полезно е за пакети с динамична цена. Активирайте го само ако е необходимо."
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"Задайте колко продукта се показват на страница в изскачащия прозорец."
+			],
+			"Show Discount Badge": [ "Показване на значката за отстъпка" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"Показване или скриване на значката за отстъпка в секцията за общата цена на пакета."
 			]
 		}
 	}

@@ -194,7 +194,8 @@
 			"Bundle button label (shop page)": [ "बंडल बटन लेबल (शॉप पेज)" ],
 			"Change the button label shown for bundle products in the shop page.": [
 				"शॉप पेज पर बंडल उत्पादों के लिए दिखाए जाने वाले बटन लेबल को बदलें।"
-			]
+			],
+			"None": [ "कोई नहीं" ]
 		}
 	}
 }

@@ -206,7 +206,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"Wijzig het knoplabel dat wordt weergegeven voor bundelproducten op de winkelpagina."
-			]
+			],
+			"None": [ "Geen" ]
 		}
 	}
 }

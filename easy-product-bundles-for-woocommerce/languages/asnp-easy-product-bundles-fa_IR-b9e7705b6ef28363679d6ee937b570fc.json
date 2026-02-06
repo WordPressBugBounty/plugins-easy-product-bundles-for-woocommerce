@@ -35,11 +35,11 @@
 			"Bundle": [ "بسته‌بندی" ],
 			"Item View": [ "نمای آیتم" ],
 			"Show stock": [ "نمایش موجودی" ],
-			"Show product Stock availability in modal.": [
-				"نمایش وضعیت موجودی محصول در پاپ آپ ."
+			"Show product Stock availability in popup.": [
+				"نمایش موجودی محصول در پنجرهٔ پاپ‌آپ."
 			],
 			"Show rating": [ "نمایش امتیاز" ],
-			"Show product rating in modal.": [
+			"Show product rating in popup.": [
 				"نمایش امتیاز محصول در پاپ آپ."
 			],
 			"Show description(on hover)": [ "نمایش توضیحات" ],
@@ -84,7 +84,9 @@
 			"Link to product": [ "لینک به محصول" ],
 			"New tab": [ "تب جدید" ],
 			"No link": [ "بدون لینک" ],
-			"Show the product change modal": [ "نمایش پاپ آپ تغییر محصول" ],
+			"Show the product change popup": [
+				"نمایش پنجرهٔ پاپ‌آپ تغییر محصول"
+			],
 			"Coupon apply method": [ "روش اعمال کد تخفیف" ],
 			"Both of bundle and bundle items": [
 				"هر دو مورد، بسته‌بندی و اقلام بسته‌بندی"
@@ -102,7 +104,7 @@
 			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
 				"نحوه شمارش محصولات بسته‌بندی در سبد خرید چگونه است؟ شمارش هر دوی \"بسته‌بندی و اقلام آن\"، فقط \"بسته‌بندی\" یا فقط \"اقلام بسته‌بندی\" "
 			],
-			"Change product modal": [ "پاپ آپ تغییر محصول" ],
+			"Change product popup": [ "پنجرهٔ پاپ‌آپ تغییر محصول" ],
 			"Number of products per page": [ "تعداد محصولات در هر صفحه" ],
 			"Styles": [ "استایل‌ها" ],
 			"Product title color": [ "رنگ نام محصول" ],
@@ -165,8 +167,8 @@
 			],
 			"Hide out of stock": [ "مخفی کردن ناموجودی " ],
 			"Hide out of stock products.": [ "محصولات ناموجود را پنهان کنید." ],
-			"Show modal quick view": [ "نمایش دید سریع پاپ آپ " ],
-			"Show product quick view icon in modal.": [
+			"Show popup quick view": [ "نمایش دید سریع پاپ آپ " ],
+			"Show product quick view icon in popup.": [
 				"نمایش آیکون دید سریع محصول در پاپ آپ"
 			],
 			"Show selected product quick view": [
@@ -214,6 +216,12 @@
 			"Optional item mode": [ "حالت آیتم اختیاری" ],
 			"Checkbox": [ "فیلد انتخاب شونده" ],
 			"Delete button": [ "دکمه حذف" ],
+			"Show search field in popup": [
+				"نمایش فیلد جستجو در پنجرهٔ پاپ‌آپ"
+			],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"این گزینه به شما اجازه می‌دهد فیلد جستجوی محصول را در پنجرهٔ پاپ‌آپ نمایش دهید یا مخفی کنید."
+			],
 			"Total price - sale price color": [ "قیمت کل - رنگ قیمت فروش" ],
 			"Total price - crossed out price color": [
 				"قیمت کل - رنگ قیمت خط خورده"
@@ -256,6 +264,13 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"می‌تواند سازگاری با افزونه تخفیف را افزایش دهد، اما اگر بسته شامل آیتم‌های زیادی باشد ممکن است باعث مشکلات حافظه شود. برای بسته‌های با قیمت پویا مفید است. تنها در صورت نیاز فعال کنید."
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"تعداد محصولاتی که در هر صفحه پنجره بازشو نمایش داده می‌شوند را مشخص کنید."
+			],
+			"Show Discount Badge": [ "نمایش نشان تخفیف" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"نمایش یا مخفی کردن نشان تخفیف در بخش قیمت کل بسته."
 			]
 		}
 	}

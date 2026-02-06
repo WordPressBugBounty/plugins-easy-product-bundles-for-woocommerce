@@ -38,6 +38,7 @@ function get_products( array $args = [] ) {
 		'date_query'         => [],
 		'post_title'         => '',
 		'post_id'            => '',
+		'search'			 => '',
 	] );
 
 	/**
@@ -53,6 +54,11 @@ function get_products( array $args = [] ) {
 	// Do not load unnecessary post data if the user only wants IDs.
 	if ( 'ids' === $args['return'] ) {
 		$wp_query_args['fields'] = 'ids';
+	}
+
+	// Search by product title.
+	if ( ! empty( $args['search'] ) ) {
+		$wp_query_args['s'] = sanitize_text_field( $args['search'] );
 	}
 
 	// Handle product types.

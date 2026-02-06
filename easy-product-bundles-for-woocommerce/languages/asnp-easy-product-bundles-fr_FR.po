@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Easy Product Bundles for WooCommerce 6.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "POT-Creation-Date: 2025-09-09T20:02:22+00:00\n"
-"PO-Revision-Date: 2025-09-10 18:47+0330\n"
+"PO-Revision-Date: 2026-01-03 19:58+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -61,12 +61,9 @@ msgstr ""
 msgid "Product Bundles"
 msgstr ""
 
-#: src/Admin/ProductBundle.php:182
-#: src/ProductBundle.php:290
-#: assets/js/admin/product/index.js:2
-#: assets/js/shared/index.js:2
-#: assets/js/admin/product/index.js:3336
-#: assets/js/admin/product/index.js:3441
+#: src/Admin/ProductBundle.php:182 src/ProductBundle.php:290
+#: assets/js/admin/product/index.js:2 assets/js/shared/index.js:2
+#: assets/js/admin/product/index.js:3336 assets/js/admin/product/index.js:3441
 #: assets/js/shared/index.js:4550
 msgid "Please select a product!"
 msgstr "Veuillez sélectionner un produit!"
@@ -211,8 +208,7 @@ msgstr "Le plugin Easy Product Bundles nécessite que <a href=\"%1$s\">WordPress
 msgid "Item index is required."
 msgstr "L'index de l'élément est requis."
 
-#: src/ProductBundle.php:672
-#: src/ProductBundle.php:177
+#: src/ProductBundle.php:672 src/ProductBundle.php:177
 #: src/ProductBundle.php:685
 msgid "Configure bundle"
 msgstr "Configurer le pack"
@@ -367,7 +363,7 @@ msgstr "Après l'extrait du produit"
 msgid "After product meta"
 msgstr "Après les méta du produit"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "None"
 msgstr "Aucun"
 
@@ -489,35 +485,35 @@ msgstr "Image du produit object-fit"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Cover"
-msgstr "Cover"
+msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Contain"
-msgstr "Contain"
+msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Fill"
-msgstr "Fill"
+msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Inherit"
-msgstr "Inherit"
+msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Initial"
-msgstr "Initial"
+msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Revert"
-msgstr "Revert"
+msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Scale-down"
-msgstr "Scale-down"
+msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Unset"
-msgstr "Unset"
+msgstr ""
 
 #: assets/js/admin/admin/index.js:2
 msgid "Bundle"
@@ -532,16 +528,16 @@ msgid "Show stock"
 msgstr "Afficher le stock"
 
 #: assets/js/admin/admin/index.js:2
-msgid "Show product Stock availability in modal."
-msgstr "Afficher la disponibilité des stocks du produit dans la modale."
+msgid "Show product Stock availability in popup."
+msgstr "Afficher la disponibilité du produit dans le pop-up."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show rating"
 msgstr "Afficher les évaluations"
 
 #: assets/js/admin/admin/index.js:2
-msgid "Show product rating in modal."
-msgstr "Afficher l'évaluation du produit dans la modale."
+msgid "Show product rating in popup."
+msgstr "Afficher l'évaluation du produit dans une fenêtre contextuelle."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show description(on hover)"
@@ -608,12 +604,12 @@ msgid "Show the saved money when calculating the total price."
 msgstr "Afficher l'argent économisé lors du calcul du prix total."
 
 #: assets/js/admin/admin/index.js:2
-msgid "Show modal quick view"
-msgstr "Afficher la vue rapide modale"
+msgid "Show popup quick view"
+msgstr "Afficher la vue rapide en popup"
 
 #: assets/js/admin/admin/index.js:2
-msgid "Show product quick view icon in modal."
-msgstr "Afficher l'icône de vue rapide du produit dans la modale."
+msgid "Show product quick view icon in popup."
+msgstr "Afficher l'icône de vue rapide du produit dans une fenêtre contextuelle."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show selected product quick view"
@@ -629,7 +625,7 @@ msgstr "Champ de quantité sur l'article"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show quantity field on item."
-msgstr "Afficher le champ de quantité sur l'article"
+msgstr "Afficher le champ de quantité sur l'article."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show plus icon"
@@ -637,7 +633,7 @@ msgstr "Afficher l'icône plus"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show plus icon between items."
-msgstr "Afficher l'icône plus entre les éléments"
+msgstr "Afficher l'icône plus entre les éléments."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Disable popup"
@@ -661,7 +657,7 @@ msgstr "Bouton «Afficher les options» dans la fenêtre popup pour produits var
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show or hide the \"Show Options\" button for variable products inside the popup."
-msgstr "Afficher ou masquer le bouton «Afficher les options» pour les produits variables dans la fenêtre popup"
+msgstr "Afficher ou masquer le bouton «Afficher les options» pour les produits variables dans la fenêtre popup."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Calculate bundle price in frontend"
@@ -753,7 +749,7 @@ msgstr "Sous-total du produit"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Set how to show the product price in item."
-msgstr "Définir comment afficher le prix du produit dans l'article"
+msgstr "Définir comment afficher le prix du produit dans l'article."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Product list price"
@@ -776,8 +772,8 @@ msgid "No link"
 msgstr "Pas de lien"
 
 #: assets/js/admin/admin/index.js:2
-msgid "Show the product change modal"
-msgstr "Afficher la fenêtre modale de modification du produit"
+msgid "Show the product change popup"
+msgstr "Afficher le pop-up de modification du produit"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Click on product in pop-up"
@@ -836,8 +832,8 @@ msgid "Add to cart button selector"
 msgstr "Sélecteur du bouton Ajouter au panier"
 
 #: assets/js/admin/admin/index.js:2
-msgid "Change product modal"
-msgstr "Changer de produit modal"
+msgid "Change product popup"
+msgstr "Pop-up pour changer le produit"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Number of products per page"
@@ -1000,7 +996,7 @@ msgstr "Optionnel"
 
 #: assets/js/admin/product/index.js:2
 msgid "Check this option to make the bundle item optional to choose by the user"
-msgstr "Cochez cette option pour rendre l'article groupé facultatif pour que l'utilisateur puisse le choisir ou non."
+msgstr "Cochez cette option pour rendre l'article groupé facultatif pour que l'utilisateur puisse le choisir ou non"
 
 #: assets/js/admin/product/index.js:2
 msgid "Selected"
@@ -1040,7 +1036,7 @@ msgstr "Catégories"
 
 #: assets/js/admin/product/index.js:2
 msgid "Select the category product that you want to be displayed in this bundle item"
-msgstr "Sélectionnez la catégorie de produit que vous souhaitez afficher dans cet article groupé."
+msgstr "Sélectionnez la catégorie de produit que vous souhaitez afficher dans cet article groupé"
 
 #: assets/js/admin/product/index.js:2
 msgid "Exclude categories"
@@ -1048,7 +1044,7 @@ msgstr "Exclure des catégories"
 
 #: assets/js/admin/product/index.js:2
 msgid "Select the category product that you do not want to be displayed in this bundle item"
-msgstr "Sélectionnez la catégorie de produit que vous ne voulez pas afficher dans cet article groupé."
+msgstr "Sélectionnez la catégorie de produit que vous ne voulez pas afficher dans cet article groupé"
 
 #: assets/js/admin/product/index.js:2
 msgid "Tags"
@@ -1056,7 +1052,7 @@ msgstr "Tags"
 
 #: assets/js/admin/product/index.js:2
 msgid "Select the product with tags to display in this bundle item"
-msgstr "Sélectionnez les produits avec des tags à afficher dans cet article groupé."
+msgstr "Sélectionnez les produits avec des tags à afficher dans cet article groupé"
 
 #: assets/js/admin/product/index.js:2
 msgid "Exclude tags"
@@ -1064,7 +1060,7 @@ msgstr "Exclure des tags"
 
 #: assets/js/admin/product/index.js:2
 msgid "Select the product with tags that you do not want to be displayed in the bundle item"
-msgstr "Sélectionnez les produits avec des tags que vous ne voulez pas afficher dans l'article groupé."
+msgstr "Sélectionnez les produits avec des tags que vous ne voulez pas afficher dans l'article groupé"
 
 #: assets/js/admin/product/index.js:2
 msgid "Categories and Tags relation"
@@ -1434,12 +1430,50 @@ msgstr "Veuillez sélectionner un produit achetable pour %s avant d'ajouter le l
 msgid "Empty bundle!"
 msgstr "Lot vide !"
 
-#: assets/js/admin/product/index.js:19676
-#: assets/js/admin/product/index.js:4069
+#: assets/js/admin/product/index.js:2
 msgid "Bundle button label (shop page)"
 msgstr "Étiquette du bouton du pack (page boutique)"
 
-#: assets/js/admin/product/index.js:19692
-#: assets/js/admin/product/index.js:4085
+#: assets/js/admin/product/index.js:2
 msgid "Change the button label shown for bundle products in the shop page."
 msgstr "Modifier l'étiquette du bouton affichée pour les produits pack sur la page boutique."
+
+#: assets/js/shared/index.js:2
+msgid "Search..."
+msgstr "Rechercher..."
+
+#: assets/js/shared/index.js:2
+msgid "No products found"
+msgstr "Aucun produit trouvé"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Set how many products are displayed per page in the popup."
+msgstr "Définissez le nombre de produits affichés par page dans le popup."
+
+#: assets/js/admin/product/index.js:2
+msgid "Show search field in popup"
+msgstr "Afficher le champ de recherche dans la fenêtre contextuelle"
+
+#: assets/js/admin/product/index.js:2
+msgid "This option allows you to show or hide the product search field in the popup window."
+msgstr "Cette option vous permet d’afficher ou de masquer le champ de recherche de produit dans la fenêtre contextuelle."
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show Discount Badge"
+msgstr "Afficher le badge de réduction"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show or hide the discount badge in the bundle total price section."
+msgstr "Afficher ou masquer le badge de réduction dans la section du prix total du pack."
+
+#: assets/js/shared/index.js:2
+msgid "Total:"
+msgstr ""
+
+#: assets/js/shared/index.js:2
+msgid "% OFF"
+msgstr "% DE RÉDUCTION"
+
+#: assets/js/shared/index.js:2
+msgid "Buy all for:"
+msgstr "Tout acheter pour :"

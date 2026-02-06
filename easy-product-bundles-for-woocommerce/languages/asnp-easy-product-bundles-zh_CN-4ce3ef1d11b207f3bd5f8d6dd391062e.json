@@ -183,7 +183,8 @@
 			"Bundle button label (shop page)": [ "套餐按钮标签（商店页面）" ],
 			"Change the button label shown for bundle products in the shop page.": [
 				"更改商店页面中显示的套餐产品按钮标签。"
-			]
+			],
+			"None": [ "无" ]
 		}
 	}
 }

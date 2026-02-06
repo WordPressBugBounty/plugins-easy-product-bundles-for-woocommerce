@@ -31,11 +31,11 @@
 			"Bundle": [ "ארגז" ],
 			"Item View": [ "תצוגת פריט" ],
 			"Show stock": [ "הצג מלאי" ],
-			"Show product Stock availability in modal.": [
-				"הצג את זמינות המלאי של המוצר בחלון המודל"
+			"Show product Stock availability in popup.": [
+				"הצג את זמינות המלאי של המוצר בחלון קופץ."
 			],
 			"Show rating": [ "הצג דירוג" ],
-			"Show product rating in modal.": [
+			"Show product rating in popup.": [
 				"הצג את דירוג המוצר בחלון המודל"
 			],
 			"Show description(on hover)": [ "הצג תיאור (בעטיפת העכבר)" ],
@@ -80,8 +80,8 @@
 			"Link to product": [ "קישור למוצר" ],
 			"New tab": [ "כרטיסיה חדשה" ],
 			"No link": [ "אין קישור" ],
-			"Show the product change modal": [
-				"הצג את החלון המודל של שינוי המוצר"
+			"Show the product change popup": [
+				"הצג את חלון הקופץ לשינוי המוצר"
 			],
 			"Coupon apply method": [ "שיטת החלת קופון" ],
 			"Both of bundle and bundle items": [ "גם של צרור וגם צרור פריטים" ],
@@ -96,7 +96,7 @@
 			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
 				"איך סופרים מוצרי צרור בעגלה? ספור את שני ה\"חבילה והפריטים שלו\" או \"רק חבילה\" או \"רק צרור פריטים\"."
 			],
-			"Change product modal": [ "שינוי חלון המוצר" ],
+			"Change product popup": [ "חלון קופץ לשינוי המוצר" ],
 			"Number of products per page": [ "מספר המוצרים לעמוד" ],
 			"Styles": [ "" ],
 			"Product title color": [ "צבע כותרת המוצר" ],
@@ -154,10 +154,9 @@
 				"הוסף את שם ההורה לשם הפריט בעגלה ובהזמנה"
 			],
 			"Hide out of stock": [ "הסתר שאזל המלאי" ],
-			"Hide out of stock products.": [ "הסתר מוצרים שאזל המלאי." ],
-			"Show modal quick view": [ "הצג תצוגה מהירה מודלית" ],
-			"Show product quick view icon in modal.": [
-				"הצג סמל תצוגה מהירה של מוצר במודל"
+			"Show popup quick view": [ "הצג תצוגה מהירה בחלון קופץ" ],
+			"Show product quick view icon in popup.": [
+				"הצג את סמל התצוגה המהירה של המוצר בחלון קופץ"
 			],
 			"Show selected product quick view": [
 				"הצג תצוגה מהירה של המוצר הנבחר"
@@ -202,6 +201,10 @@
 			"Optional item mode": [ "מצב פריט אופציונלי" ],
 			"Delete button": [ "כפתור מחיקה" ],
 			"Checkbox": [ "תיבת סימון" ],
+			"Show search field in popup": [ "הצג שדה חיפוש בחלון קופץ" ],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"אפשרות זו מאפשרת לך להציג או להסתיר את שדה החיפוש של המוצר בחלון הקופץ."
+			],
 			"Total price - sale price color": [ "מחיר כולל - צבע מחיר מכירה" ],
 			"Total price - crossed out price color": [
 				"מחיר כולל - צבע מחיר מנותק"
@@ -244,6 +247,13 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"זה יכול לשפר את התאימות עם תוסף ההנחות, אך עלול לגרום לבעיות זיכרון אם החבילה מכילה פריטים רבים. זה שימושי עבור חבילות עם מחיר דינמי. הפעל רק במקרה הצורך."
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"הגדר כמה מוצרים מוצגים בכל עמוד בחלונית הקופצת."
+			],
+			"Show Discount Badge": [ "הצג תווית הנחה" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"הצג או הסתר את תווית ההנחה בחלק של מחיר הסל הכולל."
 			]
 		}
 	}

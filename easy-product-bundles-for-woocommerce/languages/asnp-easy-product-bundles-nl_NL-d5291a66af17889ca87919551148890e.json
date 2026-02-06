@@ -39,7 +39,12 @@
 			],
 			"Empty bundle!": [ "Leeg bundelpakket!" ],
 			"Show Options": [ "Opties tonen" ],
-			"Please select a product!": [ "Kies alstublieft een product!" ]
+			"Please select a product!": [ "Kies alstublieft een product!" ],
+			"Search...": [ "Zoeken..." ],
+			"No products found": [ "Geen producten gevonden" ],
+			"Buy all for:": [ "Alles kopen voor:" ],
+			"Total:": [ "Totaal:" ],
+			"% OFF": [ "% OFF" ]
 		}
 	}
 }

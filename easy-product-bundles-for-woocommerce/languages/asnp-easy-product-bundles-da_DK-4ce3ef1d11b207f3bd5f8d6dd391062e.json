@@ -198,7 +198,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"Ændr knapetiketten, der vises for pakkeprodukter på butikssiden."
-			]
+			],
+			"None": [ "Ingen" ]
 		}
 	}
 }

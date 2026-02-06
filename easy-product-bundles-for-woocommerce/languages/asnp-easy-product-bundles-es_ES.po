@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Easy Product Bundles for WooCommerce 6.9.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "POT-Creation-Date: 2025-09-10T21:42:35+00:00\n"
-"PO-Revision-Date: 2025-09-15 15:22+0330\n"
+"PO-Revision-Date: 2026-01-03 19:58+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -206,8 +206,7 @@ msgstr "El plugin Easy Product Bundles requiere que <a href=\"%1$s\">WordPress</
 msgid "Item index is required."
 msgstr "Se requiere el índice del artículo."
 
-#: src/ProductBundle.php:672
-#: src/ProductBundle.php:177
+#: src/ProductBundle.php:672 src/ProductBundle.php:177
 #: src/ProductBundle.php:685
 msgid "Configure bundle"
 msgstr "Configurar paquete"
@@ -362,7 +361,7 @@ msgstr "Después del extracto del producto"
 msgid "After product meta"
 msgstr "Después de los metadatos del producto"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
 msgid "None"
 msgstr "Ninguno"
 
@@ -527,16 +526,16 @@ msgid "Show stock"
 msgstr "Mostrar existencias"
 
 #: assets/js/admin/admin/index.js:2
-msgid "Show product Stock availability in modal."
-msgstr "Mostrar disponibilidad de stock del producto en el modal."
+msgid "Show product Stock availability in popup."
+msgstr "Mostrar disponibilidad de stock del producto en el pop-up."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show rating"
 msgstr "Mostrar valoración"
 
 #: assets/js/admin/admin/index.js:2
-msgid "Show product rating in modal."
-msgstr "Mostrar la valoración del producto en el modal."
+msgid "Show product rating in popup."
+msgstr "Mostrar la valoración del producto en una ventana emergente."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show description(on hover)"
@@ -603,12 +602,12 @@ msgid "Show the saved money when calculating the total price."
 msgstr "Mostrar el dinero ahorrado al calcular el precio total."
 
 #: assets/js/admin/admin/index.js:2
-msgid "Show modal quick view"
-msgstr "Mostrar vista rápida en modal"
+msgid "Show popup quick view"
+msgstr "Mostrar vista rápida en ventana emergente"
 
 #: assets/js/admin/admin/index.js:2
-msgid "Show product quick view icon in modal."
-msgstr "Mostrar el icono de vista rápida del producto en el modal."
+msgid "Show product quick view icon in popup."
+msgstr "Mostrar el icono de vista rápida del producto en la ventana emergente."
 
 #: assets/js/admin/admin/index.js:2
 msgid "Show selected product quick view"
@@ -771,8 +770,8 @@ msgid "No link"
 msgstr "No hay enlace"
 
 #: assets/js/admin/admin/index.js:2
-msgid "Show the product change modal"
-msgstr "Mostrar el modal de cambio de producto"
+msgid "Show the product change popup"
+msgstr "Mostrar el pop-up de cambio de producto"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Click on product in pop-up"
@@ -831,8 +830,8 @@ msgid "Add to cart button selector"
 msgstr "Selector del botón Añadir al carrito"
 
 #: assets/js/admin/admin/index.js:2
-msgid "Change product modal"
-msgstr "Cambiar modal de producto"
+msgid "Change product popup"
+msgstr "Pop-up para cambiar producto"
 
 #: assets/js/admin/admin/index.js:2
 msgid "Number of products per page"
@@ -995,7 +994,7 @@ msgstr "Opcional"
 
 #: assets/js/admin/product/index.js:2
 msgid "Check this option to make the bundle item optional to choose by the user"
-msgstr "Marca esta opción para hacer que el artículo del paquete sea opcional y pueda ser elegido por el usuario."
+msgstr "Marca esta opción para hacer que el artículo del paquete sea opcional y pueda ser elegido por el usuario"
 
 #: assets/js/admin/product/index.js:2
 msgid "Selected"
@@ -1051,7 +1050,7 @@ msgstr "Etiquetas"
 
 #: assets/js/admin/product/index.js:2
 msgid "Select the product with tags to display in this bundle item"
-msgstr "Selecciona el producto con etiquetas para mostrar en este artículo del paquete."
+msgstr "Selecciona el producto con etiquetas para mostrar en este artículo del paquete"
 
 #: assets/js/admin/product/index.js:2
 msgid "Exclude tags"
@@ -1135,7 +1134,7 @@ msgstr "Editar cantidad por el usuario"
 
 #: assets/js/admin/product/index.js:2
 msgid "Check this option to allow the user to change the bundle item quantity"
-msgstr "Marca esta opción para permitir que el usuario cambie la cantidad del artículo del paquete."
+msgstr "Marca esta opción para permitir que el usuario cambie la cantidad del artículo del paquete"
 
 #: assets/js/admin/product/index.js:2
 msgid "Min quantity"
@@ -1143,7 +1142,7 @@ msgstr "Cantidad mín"
 
 #: assets/js/admin/product/index.js:2
 msgid "Set the minimum quantity of this bundled product"
-msgstr "Establecer la cantidad mínima de este producto del paquete."
+msgstr "Establecer la cantidad mínima de este producto del paquete"
 
 #: assets/js/admin/product/index.js:2
 msgid "Max quantity"
@@ -1151,7 +1150,7 @@ msgstr "Cantidad máx"
 
 #: assets/js/admin/product/index.js:2
 msgid "Set the maximum quantity of this bundled product"
-msgstr "Establecer la cantidad máxima de este producto del paquete."
+msgstr "Establecer la cantidad máxima de este producto del paquete"
 
 #: assets/js/admin/product/index.js:2
 msgid "Discount"
@@ -1243,7 +1242,7 @@ msgstr "Mostrar"
 
 #: assets/js/admin/product/index.js:2
 msgid "Individual theme"
-msgstr "tema individual"
+msgstr "Tema individual"
 
 #: assets/js/admin/product/index.js:2
 msgid "GO PRO"
@@ -1263,7 +1262,7 @@ msgstr "Por favor, habilita el precio fijo primero."
 
 #: assets/js/admin/product/index.js:2
 msgid "Click here to set price"
-msgstr "Haz clic aquí para establecer el precio."
+msgstr "Haz clic aquí para establecer el precio"
 
 #: assets/js/admin/product/index.js:2
 msgid "Include parent price"
@@ -1299,7 +1298,7 @@ msgstr "Solo precio regular"
 
 #: assets/js/admin/product/index.js:2
 msgid "Shipping fee"
-msgstr "Tarifa de envío."
+msgstr "Tarifa de envío"
 
 #: assets/js/admin/product/index.js:2
 msgid "Apply to the whole bundle"
@@ -1335,7 +1334,7 @@ msgstr "Precio de visualización personalizado"
 
 #: assets/js/admin/product/index.js:2
 msgid "Product display price in frontend. E.g: From 10$ To 20$"
-msgstr "Precio de visualización del producto en la interfaz. Por ejemplo: De 10$ a 20$."
+msgstr "Precio de visualización del producto en la interfaz. Por ejemplo: De 10$ a 20$"
 
 #: assets/js/admin/product/index.js:2
 msgid "A title for the bundle product that will be shown on top of bundle items."
@@ -1429,12 +1428,50 @@ msgstr "Por favor, seleccione un producto disponible para %s antes de agregar el
 msgid "Empty bundle!"
 msgstr "¡Paquete vacío!"
 
-#: assets/js/admin/product/index.js:19676
-#: assets/js/admin/product/index.js:4069
+#: assets/js/admin/product/index.js:2
 msgid "Bundle button label (shop page)"
 msgstr "Etiqueta del botón del paquete (página de la tienda)"
 
-#: assets/js/admin/product/index.js:19692
-#: assets/js/admin/product/index.js:4085
+#: assets/js/admin/product/index.js:2
 msgid "Change the button label shown for bundle products in the shop page."
 msgstr "Cambiar la etiqueta del botón para los productos de paquete en la página de la tienda."
+
+#: assets/js/shared/index.js:2
+msgid "Search..."
+msgstr "Buscar..."
+
+#: assets/js/shared/index.js:2
+msgid "No products found"
+msgstr "No se encontraron productos"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Set how many products are displayed per page in the popup."
+msgstr "Establece cuántos productos se muestran por página en el popup."
+
+#: assets/js/admin/product/index.js:2
+msgid "Show search field in popup"
+msgstr "Mostrar campo de búsqueda en la ventana emergente"
+
+#: assets/js/admin/product/index.js:2
+msgid "This option allows you to show or hide the product search field in the popup window."
+msgstr "Esta opción te permite mostrar u ocultar el campo de búsqueda de productos en la ventana emergente."
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show Discount Badge"
+msgstr "Mostrar distintivo de descuento"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show or hide the discount badge in the bundle total price section."
+msgstr "Mostrar u ocultar el distintivo de descuento en la sección del precio total del paquete."
+
+#: assets/js/shared/index.js:2
+msgid "Total:"
+msgstr ""
+
+#: assets/js/shared/index.js:2
+msgid "% OFF"
+msgstr "% DE DESCUENTO"
+
+#: assets/js/shared/index.js:2
+msgid "Buy all for:"
+msgstr "Comprar todo por:"

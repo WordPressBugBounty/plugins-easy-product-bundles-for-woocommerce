@@ -43,7 +43,12 @@
 			],
 			"Empty bundle!": [ "Празен комплект!" ],
 			"Show Options": [ "Показване на опциите" ],
-			"Please select a product!": [ "Моля, изберете продукт!" ]
+			"Please select a product!": [ "Моля, изберете продукт!" ],
+			"Search...": [ "Търсене..." ],
+			"No products found": [ "Не са намерени продукти" ],
+			"Buy all for:": [ "Купи всички за:" ],
+			"Total:": [ "Общо:" ],
+			"% OFF": [ "% OFF" ]
 		}
 	}
 }

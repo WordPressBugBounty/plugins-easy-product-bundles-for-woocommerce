@@ -43,7 +43,12 @@
 			],
 			"Empty bundle!": [ "Boş paket!" ],
 			"Show Options": [ "Seçenekleri göster" ],
-			"Please select a product!": [ "Lütfen bir ürün seçiniz!" ]
+			"Please select a product!": [ "Lütfen bir ürün seçiniz!" ],
+			"Search...": [ "Ara..." ],
+			"No products found": [ "Ürün bulunamadı" ],
+			"Buy all for:": [ "Hepsini satın al:" ],
+			"Total:": [ "Toplam:" ],
+			"% OFF": [ "% İNDİRİM" ]
 		}
 	}
 }

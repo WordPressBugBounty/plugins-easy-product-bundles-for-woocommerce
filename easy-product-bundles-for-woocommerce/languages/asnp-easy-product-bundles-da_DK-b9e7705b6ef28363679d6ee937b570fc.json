@@ -43,12 +43,12 @@
 			"Bundle": [ "Bundt" ],
 			"Item View": [ "Elementvisning" ],
 			"Show stock": [ "Vis lager" ],
-			"Show product Stock availability in modal.": [
-				"Vis produktlager tilgængelighed i modal."
+			"Show product Stock availability in popup.": [
+				"Vis produktets lagerstatus i pop-up."
 			],
 			"Show rating": [ "Vis vurdering" ],
-			"Show product rating in modal.": [
-				"Vis produktvurdering i modal."
+			"Show product rating in popup.": [
+				"Vis produktvurdering i pop op-vindue."
 			],
 			"Show description(on hover)": [ "Vis beskrivelse (ved hover)" ],
 			"Show product description when mouse hover over it.": [
@@ -76,9 +76,9 @@
 			"Show the saved money when calculating the total price.": [
 				"Vis de sparede penge, når den samlede pris beregnes."
 			],
-			"Show modal quick view": [ "Vis modal hurtigvisning" ],
-			"Show product quick view icon in modal.": [
-				"Vis produkt hurtigvisningsikon i modal."
+			"Show popup quick view": [ "Vis hurtigvisning i pop op-vindue" ],
+			"Show product quick view icon in popup.": [
+				"Vis produktets hurtigvisningsikon i pop op-vindue"
 			],
 			"Show selected product quick view": [
 				"Vis hurtigvisning af valgt produkt"
@@ -130,7 +130,7 @@
 			"Link to product": [ "Link til produkt" ],
 			"New tab": [ "Ny fane" ],
 			"No link": [ "Intet link" ],
-			"Show the product change modal": [ "Vis produktændringsmodal" ],
+			"Show the product change popup": [ "Vis produktændrings pop-up" ],
 			"Click on product in pop-up": [ "Klik på produkt i popup" ],
 			"Product selection": [ "Produktvalg" ],
 			"Show product details": [ "Vis produktdetaljer" ],
@@ -153,7 +153,7 @@
 			],
 			"Product price selector": [ "Produktprisvælger" ],
 			"Add to cart button selector": [ "Vælg tilføj til kurv-knap" ],
-			"Change product modal": [ "Skift produktmodal" ],
+			"Change product popup": [ "Pop-up til ændring af produkt" ],
 			"Number of products per page": [ "Antal produkter pr. side" ],
 			"Styles": [ "Stilarter" ],
 			"Save Changes": [ "Gem ændringer" ],
@@ -233,6 +233,17 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"Det kan forbedre kompatibiliteten med rabat-pluginet, men kan føre til hukommelsesproblemer, hvis bundlen indeholder mange varer. Det er nyttigt til dynamiske prisbundter. Aktiver det kun, hvis det er nødvendigt."
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"Angiv, hvor mange produkter der vises pr. side i popup'en."
+			],
+			"Show search field in popup": [ "Vis søgefelt i popup-vinduet" ],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"Denne indstilling giver dig mulighed for at vise eller skjule søgefeltet for produkter i popup-vinduet."
+			],
+			"Show Discount Badge": [ "Vis rabatmærkat" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"Vis eller skjul rabatmærket i sektionen for pakkens samlede pris."
 			]
 		}
 	}

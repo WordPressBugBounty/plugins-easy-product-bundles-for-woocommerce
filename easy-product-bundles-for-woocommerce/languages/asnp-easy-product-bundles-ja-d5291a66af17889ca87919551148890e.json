@@ -39,7 +39,12 @@
 			],
 			"Empty bundle!": [ "空のバンドルです！" ],
 			"Show Options": [ "オプションを表示" ],
-			"Please select a product!": [ "製品を選択してください！" ]
+			"Please select a product!": [ "製品を選択してください！" ],
+			"Search...": [ "検索..." ],
+			"No products found": [ "商品が見つかりません" ],
+			"Buy all for:": [ "まとめて購入:" ],
+			"Total:": [ "合計：" ],
+			"% OFF": [ "% OFF" ]
 		}
 	}
 }

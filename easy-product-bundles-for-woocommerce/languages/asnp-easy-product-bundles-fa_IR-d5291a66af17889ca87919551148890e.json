@@ -39,7 +39,12 @@
 			],
 			"Empty bundle!": [ "بسته خالی!" ],
 			"Show Options": [ "نمایش گزینه‌ها" ],
-			"Please select a product!": [ "لطفا یک محصول را انتخاب کنید!" ]
+			"Please select a product!": [ "لطفا یک محصول را انتخاب کنید!" ],
+			"Search...": [ "جستجو..." ],
+			"No products found": [ "هیچ محصولی یافت نشد" ],
+			"Buy all for:": [ "همه را به قیمت:" ],
+			"Total:": [ "جمع کل:" ],
+			"% OFF": [ "٪ تخفیف" ]
 		}
 	}
 }

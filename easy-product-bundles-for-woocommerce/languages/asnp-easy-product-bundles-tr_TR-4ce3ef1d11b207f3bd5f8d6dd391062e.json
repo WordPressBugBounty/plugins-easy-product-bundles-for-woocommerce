@@ -204,7 +204,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"Mağaza sayfasında paket ürünleri için gösterilen düğme etiketini değiştir."
-			]
+			],
+			"None": [ "Hiçbiri" ]
 		}
 	}
 }

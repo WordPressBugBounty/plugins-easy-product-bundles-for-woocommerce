@@ -32,11 +32,11 @@
 			"Bundle": [ "捆绑" ],
 			"Item View": [ "项目视图" ],
 			"Show stock": [ "显示库存" ],
-			"Show product Stock availability in modal.": [
-				"在弹窗中显示产品库存情况。"
+			"Show product Stock availability in popup.": [
+				"在弹出窗口中显示产品库存情况。"
 			],
 			"Show rating": [ "显示评分" ],
-			"Show product rating in modal.": [ "在弹窗中显示产品评分。" ],
+			"Show product rating in popup.": [ "在弹窗中显示产品评分。" ],
 			"Show description(on hover)": [ "悬停时显示描述" ],
 			"Show product description when mouse hover over it.": [
 				"鼠标悬停时显示产品描述。"
@@ -65,8 +65,8 @@
 			"Show the saved money when calculating the total price.": [
 				"计算总价时显示节省的金额。"
 			],
-			"Show modal quick view": [ "显示弹窗快速查看" ],
-			"Show product quick view icon in modal.": [
+			"Show popup quick view": [ "显示弹窗快速查看" ],
+			"Show product quick view icon in popup.": [
 				"在弹窗中显示产品快速查看图标。"
 			],
 			"Show selected product quick view": [ "显示所选产品快速查看" ],
@@ -106,7 +106,7 @@
 			"Link to product": [ "链接到产品" ],
 			"New tab": [ "新标签" ],
 			"No link": [ "无链接" ],
-			"Show the product change modal": [ "显示产品更改弹窗" ],
+			"Show the product change popup": [ "显示产品更改弹窗" ],
 			"Click on product in pop-up": [ "在弹窗中点击产品" ],
 			"Product selection": [ "产品选择" ],
 			"Show product details": [ "显示产品详情" ],
@@ -124,7 +124,7 @@
 				"如何在购物车中计数捆绑产品？计数“捆绑及其项目”或“仅捆绑”或“仅捆绑项目”。"
 			],
 			"Product price selector": [ "产品价格选择器" ],
-			"Change product modal": [ "更改产品弹窗" ],
+			"Change product popup": [ "产品更改弹出窗口" ],
 			"Number of products per page": [ "每页产品数量" ],
 			"Styles": [ "样式" ],
 			"Product title color": [ "产品标题颜色" ],
@@ -195,6 +195,10 @@
 			"Optional item mode": [ "可选项目模式" ],
 			"Checkbox": [ "选择框" ],
 			"Delete button": [ "删除按钮" ],
+			"Show search field in popup": [ "在弹出窗口中显示搜索字段" ],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"此选项允许您在弹出窗口中显示或隐藏产品搜索字段。"
+			],
 			"Total price - sale price color": [ "总价 - 销售价格颜色" ],
 			"Total price - crossed out price color": [ "总价 - 划线价格颜色" ],
 			"Total price - saved amount color": [ "总价 - 节省金额颜色" ],
@@ -231,6 +235,13 @@
 			"Calculate bundle price in frontend": [ "在前端计算套餐价格" ],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"它可以增强与折扣插件的兼容性，但如果套餐包含许多项目，可能会导致内存问题。它对动态价格套餐非常有用。仅在必要时启用。"
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"设置弹窗中每页显示的产品数量。"
+			],
+			"Show Discount Badge": [ "显示折扣标识" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"在套餐总价部分显示或隐藏折扣标识。"
 			]
 		}
 	}

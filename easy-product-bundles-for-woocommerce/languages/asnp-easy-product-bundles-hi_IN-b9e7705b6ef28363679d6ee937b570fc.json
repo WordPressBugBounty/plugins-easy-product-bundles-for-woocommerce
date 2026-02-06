@@ -43,12 +43,12 @@
 			"Bundle": [ "बंडल" ],
 			"Item View": [ "आइटम दृश्य" ],
 			"Show stock": [ "स्टॉक दिखाएं" ],
-			"Show product Stock availability in modal.": [
-				"मोडल में उत्पाद स्टॉक की उपलब्धता दिखाएं।"
+			"Show product Stock availability in popup.": [
+				"पॉप-अप में उत्पाद स्टॉक की उपलब्धता दिखाएं।"
 			],
 			"Show rating": [ "रेटिंग दिखाएं" ],
-			"Show product rating in modal.": [
-				"मोडल में उत्पाद रेटिंग दिखाएं।"
+			"Show product rating in popup.": [
+				"पॉप-अप में उत्पाद रेटिंग दिखाएं।"
 			],
 			"Show description(on hover)": [ "विवरण दिखाएं (होवर पर)" ],
 			"Show product description when mouse hover over it.": [
@@ -78,9 +78,9 @@
 			"Show the saved money when calculating the total price.": [
 				"कुल मूल्य की गणना करते समय बचाई गई राशि दिखाएं।"
 			],
-			"Show modal quick view": [ "मोडल क्विक व्यू दिखाएं" ],
-			"Show product quick view icon in modal.": [
-				"मोडल में उत्पाद क्विक व्यू आइकन दिखाएं।"
+			"Show popup quick view": [ "पॉप-अप क्विक व्यू दिखाएं" ],
+			"Show product quick view icon in popup.": [
+				"पॉप-अप में उत्पाद क्विक व्यू आइकन दिखाएं।"
 			],
 			"Show selected product quick view": [
 				"चयनित उत्पाद का क्विक व्यू दिखाएं"
@@ -125,7 +125,9 @@
 			"Link to product": [ "उत्पाद से लिंक" ],
 			"New tab": [ "नया टैब" ],
 			"No link": [ "कोई लिंक नहीं" ],
-			"Show the product change modal": [ "उत्पाद परिवर्तन मोडल दिखाएं" ],
+			"Show the product change popup": [
+				"उत्पाद परिवर्तन पॉप-अप दिखाएं।"
+			],
 			"Click on product in pop-up": [ "पॉप-अप में उत्पाद पर क्लिक करें" ],
 			"Product selection": [ "उत्पाद चयन" ],
 			"Show product details": [ "उत्पाद विवरण दिखाएं" ],
@@ -146,7 +148,7 @@
 			],
 			"Product price selector": [ "उत्पाद मूल्य चयनकर्ता" ],
 			"Add to cart button selector": [ "कार्ट में जोड़ें बटन चयनकर्ता" ],
-			"Change product modal": [ "उत्पाद परिवर्तन मोडल" ],
+			"Change product popup": [ "उत्पाद परिवर्तन पॉप-अप" ],
 			"Number of products per page": [ "प्रति पृष्ठ उत्पादों की संख्या" ],
 			"Styles": [ "शैलियां" ],
 			"Save Changes": [ "परिवर्तन सहेजें" ],
@@ -218,6 +220,12 @@
 			"Optional item mode": [ "वैकल्पिक आइटम मोड" ],
 			"Checkbox": [ "चेकबॉक्स" ],
 			"Delete button": [ "हटाने का बटन" ],
+			"Show search field in popup": [
+				"पॉपअप विंडो में खोज फ़ील्ड दिखाएं"
+			],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"यह विकल्प आपको पॉपअप विंडो में उत्पाद खोज फ़ील्ड दिखाने या छिपाने की अनुमति देता है।"
+			],
 			"Total price - sale price color": [
 				"कुल मूल्य - बिक्री मूल्य का रंग"
 			],
@@ -254,6 +262,13 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"यह डिस्काउंट प्लगइन के साथ संगतता को बढ़ा सकता है, लेकिन यदि पैकेज में बहुत सारी वस्तुएं हैं तो यह मेमोरी समस्याएँ पैदा कर सकता है। यह डायनेमिक प्राइस पैकेजों के लिए उपयोगी है। केवल आवश्यकता होने पर ही सक्षम करें।"
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"पॉपअप में प्रति पेज कितने उत्पाद दिखाए जाएं, निर्धारित करें।"
+			],
+			"Show Discount Badge": [ "डिस्काउंट बैज दिखाएँ" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"बंडल कुल मूल्य सेक्शन में डिस्काउंट बैज दिखाएँ या छिपाएँ।"
 			]
 		}
 	}

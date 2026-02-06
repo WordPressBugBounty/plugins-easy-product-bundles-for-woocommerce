@@ -3,9 +3,9 @@ Contributors: asanaplugins
 Donate link: https://www.asanaplugins.com/
 Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce, composite product, wpc product bundles for woocommerce, yith woocommerce product bundles, woocommerce product bundles free, wpc product bundles, yith product bundles, custom product boxes woocommerce, woocommerce bundle plugin, woocommerce composite products, woocommerce, wordpress, ecommerce
 Requires at least: 5.0
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 6.10.0
+Stable tag: 6.15.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,7 +81,7 @@ https://youtu.be/fVYBUz7Zqfk
 
 - **Show Description** Displays each of the bundle item's description on hover.
 
-- **Link to Products** Choose how to link to the product bundle items when clicking on the title ( New Tab | No Link | Show the product change modal to select from available items)
+- **Link to Products** Choose how to link to the product bundle items when clicking on the title ( New Tab | No Link | Show the product change popup to select from available items)
 
 - **Coupon Apply Method** Control how coupons should be applied on the bundle product (Both bundle and bundle items | Only bundle | Only bundle items | None)
 
@@ -175,6 +175,7 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 * <strong>[Discount Rules and Dynamic Pricing for WooCommerce](https://wordpress.org/plugins/easy-woocommerce-discounts/)</strong>
 * <strong>[Badge and Product Labels](https://wordpress.org/plugins/easy-sale-badges-for-woocommerce/)</strong>
+* <strong>[Upsells, Related Products and Product Recommendations](https://wordpress.org/plugins/easy-upsells-for-woocommerce/)
 * <strong>[ChatGPT AI Content Writing and WhatsApp](https://wordpress.org/plugins/live-chat-button/)</strong>
 
 == 💡 Our Other Pro Plugins ==
@@ -185,6 +186,7 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 * <strong>[Shipping Discount](https://www.asanaplugins.com/product/shipping-discount-woocommerce/?utm_source=wp-org&utm_campaign=easy-product-bundles-free&utm_medium=link)</strong>
 * <strong>[URL Coupons](https://www.asanaplugins.com/product/url-coupons-for-woocommerce/?utm_source=wp-org&utm_campaign=easy-product-bundles-free&utm_medium=link)</strong>
 * <strong>[Badge and Product Labels Pro](https://www.asanaplugins.com/product/woocommerce-sale-badges-and-product-labels/)</strong>
+* <strong>[Upsells, Related Products and Product Recommendations Pro](https://www.asanaplugins.com/product/woocommerce-upsells-related-products/)
 * <strong>[ChatGPT AI Content Writing and WhatsApp Chat Pro for WordPress](https://www.asanaplugins.com/product/whatsapp-chat-wordpress/?utm_source=wp-org&utm_campaign=easy-product-bundles-free&utm_medium=link)</strong>
 
 == Installation ==
@@ -213,10 +215,56 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.15.1 =
+* New: Updated the Quick View icon.
+* New: When selecting a product from the popup in optional items, the checkbox is now automatically checked.
+
+= 6.15.0 =
+* New: Added a new design for the bundle total price section.
+* Ensured compatibility with WooCommerce version 10.4.3
+
+= 6.14.0 =
+* New: Added compatibility with WooCommerce Stripe Payment Gateway By WooCommerce.
+* New: Now opens popup when clicking on unselected optional item.
+* New: When popup is disabled, clicking on optional item selects or unselects item.
+* Fix: Fixed issue where out-of-stock product price was added to total price.
+* Fix: Disabled Add to Cart button for optional item with default out-of-stock product.
+* Fix: Fixed show out of stock message.
+* Ensured compatibility with WooCommerce version 10.4.2
+
+= 6.13.1 =
+* Fix: Fixed a fatal error bug, caused in the recent update.
+
+= 6.13.0 =
+* New: Introduced a None option for discount types.
+* Ensured compatibility with WordPress version 6.9
+* Ensured compatibility with WooCommerce version 10.3.6
+
+= 6.12.3 =
+* Fix: Resolved an issue that occurred when creating bundles with a large number of items.
+* Update: Improved the CSS for alert messages.
+
+= 6.12.2 =
+* Fix: Minor fix.
+
+= 6.12.1 =
+* Fix: Corrected incorrect sale/regular price display on the frontend when Fixed Price bundles were enabled.
+* Fix: Resolved an issue with getDecimalSeparator formatting
+* Ensured compatibility with WooCommerce version 10.3.5
+
+= 6.12.0 =
+* New : Added a search field to the modal to allow search products.
+* Fix : Fixed product price CSS selector default value issue.
+* Ensured compatibility with WooCommerce version 10.3.4
+
+= 6.11.0 =
+* New: Added compatibility with woo Payments plugin.
+* Fix: Fixed reported issues.
+* Ensured compatibility with WooCommerce version 10.2.2
+
 = 6.10.0 =
 * New: You can now change the label of the product bundle button on the shop page.
 * Fix: Fixed an issue with showing product details when clicking on a product in the pop-up.
-Note: Help us spread the word by leaving a 5-star review. ❤️😍 Feel free to share your ideas in your review, as we always value your feedback. 🌹
 
 = 6.9.0 =
 * New: Added "Apply to the whole bundle" option to the shipping fee calculation types.

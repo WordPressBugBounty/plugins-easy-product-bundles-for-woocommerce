@@ -4,6 +4,8 @@ namespace AsanaPlugins\WooCommerce\ProductBundles\Compatibilities;
 
 defined( 'ABSPATH' ) || exit;
 
+use AsanaPlugins\WooCommerce\ProductBundles;
+
 class Compatibility {
 
 	public static function init() {
@@ -26,6 +28,23 @@ class Compatibility {
 
 		if ( class_exists( '\WooCommerce_Square_Loader' ) ) {
 			Square::init();
+		}
+
+		// WooCommerce Payments compatibility.
+		if ( defined( 'WCPAY_PLUGIN_FILE' ) && \WC_Payments_Features::is_customer_multi_currency_enabled() ) {
+			WooPayments::init();
+		}
+
+		// Stripe compatibility.
+		if ( defined( 'WC_STRIPE_VERSION' ) ) {
+			add_filter( 'wc_stripe_payment_request_supported_types', function ( $types ) {
+				if ( ProductBundles\is_product_page() ) {
+					return $types;
+				}
+
+				$types[] = 'easy_product_bundle';
+				return $types;
+			}, 1000 );
 		}
 
 		SideCart::init();

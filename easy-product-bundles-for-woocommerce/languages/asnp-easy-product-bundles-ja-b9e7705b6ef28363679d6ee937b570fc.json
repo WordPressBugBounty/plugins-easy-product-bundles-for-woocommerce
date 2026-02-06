@@ -32,11 +32,13 @@
 			"Bundle": [ "バンドル" ],
 			"Item View": [ "アイテムビュー" ],
 			"Show stock": [ "在庫を表示" ],
-			"Show product Stock availability in modal.": [
-				"モーダルで製品の在庫状況を表示。"
+			"Show product Stock availability in popup.": [
+				"ポップアップで製品の在庫状況を表示。"
 			],
 			"Show rating": [ "評価を表示" ],
-			"Show product rating in modal.": [ "モーダルで製品の評価を表示。" ],
+			"Show product rating in popup.": [
+				"ポップアップで製品の評価を表示。"
+			],
 			"Show description(on hover)": [ "説明を表示（ホバー時）" ],
 			"Show product description when mouse hover over it.": [
 				"マウスがホバーすると製品の説明を表示。"
@@ -64,9 +66,9 @@
 			"Show the saved money when calculating the total price.": [
 				"合計価格を計算する際に節約した金額を表示。"
 			],
-			"Show modal quick view": [ "モーダルのクイックビューを表示" ],
-			"Show product quick view icon in modal.": [
-				"モーダルで製品のクイックビューアイコンを表示。"
+			"Show popup quick view": [ "ポップアップでクイックビューを表示" ],
+			"Show product quick view icon in popup.": [
+				"ポップアップで製品のクイックビューアイコンを表示。"
 			],
 			"Show selected product quick view": [
 				"選択した製品のクイックビューを表示"
@@ -113,7 +115,7 @@
 			"Link to product": [ "製品へのリンク" ],
 			"New tab": [ "新しいタブ" ],
 			"No link": [ "リンクなし" ],
-			"Show the product change modal": [ "製品変更モーダルを表示" ],
+			"Show the product change popup": [ "製品変更ポップアップを表示" ],
 			"Click on product in pop-up": [ "ポップアップ内の製品をクリック" ],
 			"Product selection": [ "製品選択" ],
 			"Show product details": [ "製品の詳細を表示" ],
@@ -135,7 +137,7 @@
 				"カート内のバンドル製品をどのようにカウントしますか？「バンドルとそのアイテムの両方」または「バンドルのみ」または「バンドルアイテムのみ」をカウントします。"
 			],
 			"Product price selector": [ "製品価格セレクター" ],
-			"Change product modal": [ "製品変更モーダル" ],
+			"Change product popup": [ "製品変更ポップアップ" ],
 			"Number of products per page": [ "1ページあたりの製品数" ],
 			"Styles": [ "スタイル" ],
 			"Product title color": [ "製品タイトルの色" ],
@@ -210,6 +212,12 @@
 			"Optional item mode": [ "オプションアイテムモード" ],
 			"Checkbox": [ "チェックボックス" ],
 			"Delete button": [ "削除ボタン" ],
+			"Show search field in popup": [
+				"ポップアップウィンドウに検索フィールドを表示"
+			],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"このオプションを使用すると、ポップアップウィンドウで製品検索フィールドを表示または非表示にできます。"
+			],
 			"Total price - sale price color": [ "総価格 - 販売価格の色" ],
 			"Total price - crossed out price color": [
 				"総価格 - 取り消し線の付いた価格の色"
@@ -250,6 +258,13 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"割引プラグインとの互換性を高めることができますが、パッケージに多くのアイテムが含まれている場合はメモリの問題を引き起こす可能性があります。動的価格パッケージに便利です。必要な場合のみ有効にしてください。"
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"ポップアップで1ページに表示する商品の数を設定してください。"
+			],
+			"Show Discount Badge": [ "割引バッジを表示" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"バンドル合計価格セクションの割引バッジを表示または非表示にします。"
 			]
 		}
 	}

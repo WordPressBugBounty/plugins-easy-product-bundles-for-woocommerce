@@ -39,7 +39,12 @@
 			],
 			"Empty bundle!": [ "Pusty pakiet!" ],
 			"Show Options": [ "Pokaż opcje" ],
-			"Please select a product!": [ "wybrać produkt!" ]
+			"Please select a product!": [ "wybrać produkt!" ],
+			"Search...": [ "Szukaj..." ],
+			"No products found": [ "Nie znaleziono produktów" ],
+			"Buy all for:": [ "Kup wszystko za:" ],
+			"Total:": [ "Łącznie:" ],
+			"% OFF": [ "% OFF" ]
 		}
 	}
 }

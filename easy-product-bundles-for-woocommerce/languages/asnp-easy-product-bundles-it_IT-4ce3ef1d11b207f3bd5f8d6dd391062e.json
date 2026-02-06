@@ -209,7 +209,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"Modifica l'etichetta del pulsante mostrata per i prodotti pacchetto nella pagina del negozio."
-			]
+			],
+			"None": [ "Nessuno" ]
 		}
 	}
 }

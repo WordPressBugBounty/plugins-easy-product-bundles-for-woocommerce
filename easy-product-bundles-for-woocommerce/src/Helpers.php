@@ -45,7 +45,7 @@ function get_product_image_src( $product, $size = 'woocommerce_single', $placeho
 	$src = '';
 	if ( $product->get_image_id() ) {
 		$image = wp_get_attachment_image_src( $product->get_image_id(), $size );
-		$src   = ! empty( $image ) && ! empty( $image[0] ) ? $image[0] : '';
+		$src = ! empty( $image ) && ! empty( $image[0] ) ? $image[0] : '';
 	} elseif ( $product->get_parent_id() ) {
 		$parent_product = wc_get_product( $product->get_parent_id() );
 		if ( $parent_product ) {
@@ -55,7 +55,7 @@ function get_product_image_src( $product, $size = 'woocommerce_single', $placeho
 
 	if ( empty( $src ) && $placeholder ) {
 		$image = wc_placeholder_img_src( $size );
-		$src   = ! empty( $image ) && ! empty( $image[0] ) ? $image[0] : '';
+		$src = ! empty( $image ) && ! empty( $image[0] ) ? $image[0] : '';
 	}
 
 	return apply_filters( 'asnp_wepb_get_product_image_src', $src, $product, $size, $placeholder );
@@ -73,6 +73,7 @@ function prepare_variable_prices( $product, $item ) {
 
 	if (
 		! empty( $item['discount_type'] ) &&
+		'none' !== $item['discount_type'] &&
 		isset( $item['discount'] ) &&
 		'' !== $item['discount'] &&
 		0 <= (float) $item['discount']
@@ -170,9 +171,10 @@ function prepare_product_prices( $product, $item ) {
 	}
 
 	$regular_price = '' !== $product->get_regular_price() ? wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ) : '';
-	$sale_price    = '' !== $product->get_sale_price() && $product->is_on_sale() ? $product->get_sale_price() : '';
+	$sale_price = '' !== $product->get_sale_price() && $product->is_on_sale() ? $product->get_sale_price() : '';
 	if (
 		! empty( $item['discount_type'] ) &&
+		'none' !== $item['discount_type'] &&
 		isset( $item['discount'] ) &&
 		'' !== $item['discount'] &&
 		0 <= (float) $item['discount']
@@ -195,7 +197,7 @@ function prepare_product_prices( $product, $item ) {
 		'asnp_wepb_prepare_product_prices',
 		[
 			'regular_price' => $regular_price,
-			'sale_price'    => $sale_price,
+			'sale_price' => $sale_price,
 			'display_price' => $display_price,
 		],
 		$product,
@@ -210,13 +212,13 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 	}
 
 	$data = array(
-		'id'          => $product->get_id(),
-		'image'       => get_product_image_src( $product ),
+		'id' => $product->get_id(),
+		'image' => get_product_image_src( $product ),
 		'is_variable' => $product->is_type( 'variable' ) ? 'true' : 'false',
 		'is_in_stock' => $product->is_in_stock() ? 'true' : 'false',
-		'link'        => $product->get_permalink(),
-		'max_qty'     => 0 < $product->get_max_purchase_quantity() ? $product->get_max_purchase_quantity() : '',
-		'min_qty'     => $product->get_min_purchase_quantity(),
+		'link' => $product->get_permalink(),
+		'max_qty' => 0 < $product->get_max_purchase_quantity() ? $product->get_max_purchase_quantity() : '',
+		'min_qty' => $product->get_min_purchase_quantity(),
 	);
 
 	if ( $product->is_type( 'variation' ) ) {
@@ -266,24 +268,24 @@ function prepare_variation_data( $variation, $variable = null, $item = [] ) {
 	}
 
 	$variation = is_numeric( $variation ) ? wc_get_product( $variation ) : $variation;
-	$variable  = is_null( $variable ) ? $variation->get_parent_id() : $variable;
-	$variable  = is_numeric( $variable ) ? wc_get_product( $variable ) : $variable;
+	$variable = is_null( $variable ) ? $variation->get_parent_id() : $variable;
+	$variable = is_numeric( $variable ) ? wc_get_product( $variable ) : $variable;
 	if ( $variable->get_id() !== $variation->get_parent_id() ) {
 		return array();
 	}
 
-	$products             = [];
+	$products = [];
 	$variation_attributes = $variation->get_variation_attributes( false );
-	$any_attributes       = get_any_value_attributes( $variation_attributes );
-	$extra_data           = [ 'attributes' => [] ];
+	$any_attributes = get_any_value_attributes( $variation_attributes );
+	$extra_data = [ 'attributes' => [] ];
 	if ( empty( $any_attributes ) ) {
 		if ( ! empty( $variation_attributes ) ) {
 			foreach ( $variation_attributes as $key => $attribute ) {
 				$attribute_data = get_attribute_data(
 					[
 						'attribute' => $key,
-						'value'     => $attribute,
-						'by'        => 'slug'
+						'value' => $attribute,
+						'by' => 'slug'
 					]
 				);
 				if ( ! empty( $attribute_data ) ) {
@@ -300,7 +302,7 @@ function prepare_variation_data( $variation, $variable = null, $item = [] ) {
 				isset( $attributes[ $any_attributes[ $i ] ] ) &&
 				! empty( $attributes[ $any_attributes[ $i ] ]['is_variation'] )
 			) {
-				$any_values[]         = $attributes[ $any_attributes[ $i ] ]['options'];
+				$any_values[] = $attributes[ $any_attributes[ $i ] ]['options'];
 				$any_attributes[ $i ] = $attributes[ $any_attributes[ $i ] ]['name'];
 			}
 		}
@@ -320,8 +322,8 @@ function prepare_variation_data( $variation, $variable = null, $item = [] ) {
 				$attribute_data = get_attribute_data(
 					[
 						'attribute' => $key,
-						'value'     => $attribute,
-						'by'        => 'slug'
+						'value' => $attribute,
+						'by' => 'slug'
 					]
 				);
 				if ( ! empty( $attribute_data ) ) {
@@ -334,8 +336,8 @@ function prepare_variation_data( $variation, $variable = null, $item = [] ) {
 					$attribute_data = get_attribute_data(
 						[
 							'attribute' => $any_attributes[ $j ],
-							'value'     => $any_values[ $i ][ $j ],
-							'by'        => 'id'
+							'value' => $any_values[ $i ][ $j ],
+							'by' => 'id'
 						]
 					);
 					if ( ! empty( $attribute_data ) ) {
@@ -346,8 +348,8 @@ function prepare_variation_data( $variation, $variable = null, $item = [] ) {
 				$attribute_data = get_attribute_data(
 					[
 						'attribute' => $any_attributes[0],
-						'value'     => $any_values[ $i ],
-						'by'        => 'id'
+						'value' => $any_values[ $i ],
+						'by' => 'id'
 					]
 				);
 				if ( ! empty( $attribute_data ) ) {
@@ -366,19 +368,19 @@ function get_variation_attribute_options( array $args = array() ) {
 	$args = wp_parse_args(
 		apply_filters( 'asnp_wepb_get_variation_attribute_options_args', $args ),
 		array(
-			'options'   => false,
+			'options' => false,
 			'attribute' => false,
-			'product'   => false,
+			'product' => false,
 		)
 	);
 
-	$options   = $args['options'];
-	$product   = $args['product'];
+	$options = $args['options'];
+	$product = $args['product'];
 	$attribute = $args['attribute'];
 
 	if ( empty( $options ) && ! empty( $product ) && ! empty( $attribute ) ) {
 		$attributes = $product->get_variation_attributes();
-		$options    = $attributes[ $attribute ];
+		$options = $attributes[ $attribute ];
 	}
 
 	$select_options = [];
@@ -397,7 +399,7 @@ function get_variation_attribute_options( array $args = array() ) {
 			foreach ( $terms as $term ) {
 				if ( in_array( $term->slug, $options, true ) ) {
 					$select_options[] = [
-						'name'  => sanitize_text_field( apply_filters( 'woocommerce_variation_option_name', $term->name, $term, $attribute, $product ) ),
+						'name' => sanitize_text_field( apply_filters( 'woocommerce_variation_option_name', $term->name, $term, $attribute, $product ) ),
 						'value' => esc_attr( $term->slug ),
 					];
 				}
@@ -406,7 +408,7 @@ function get_variation_attribute_options( array $args = array() ) {
 			foreach ( $options as $option ) {
 				// This handles < 2.4.0 bw compatibility where text attributes were not sanitized.
 				$select_options[] = [
-					'name'  => sanitize_text_field( apply_filters( 'woocommerce_variation_option_name', $option, null, $attribute, $product ) ),
+					'name' => sanitize_text_field( apply_filters( 'woocommerce_variation_option_name', $option, null, $attribute, $product ) ),
 					'value' => esc_attr( $option ),
 				];
 			}
@@ -450,8 +452,8 @@ function get_product_types_for_bundle( $excludes = [] ) {
 		return $defaults;
 	}
 
-	$defaults = ['variation'];
-	$types    = array_merge( array_keys( wc_get_product_types() ) );
+	$defaults = [ 'variation' ];
+	$types = array_merge( array_keys( wc_get_product_types() ) );
 	if ( empty( $types ) ) {
 		if ( ! empty( $excludes ) ) {
 			return apply_filters( 'asnp_wepb_get_product_types_for_bundle', array_diff( $defaults, $excludes ), $excludes );
@@ -522,8 +524,8 @@ function get_attribute_data( array $args ) {
 		$term = get_term_by( $args['by'], $args['value'], $args['attribute'] );
 		if ( ! is_wp_error( $term ) && is_object( $term ) && $term->term_id ) {
 			return [
-				'name'  => $args['attribute'],
-				'id'    => $args['attribute'],
+				'name' => $args['attribute'],
+				'id' => $args['attribute'],
 				'label' => $term->name,
 				'value' => $term->slug,
 			];
@@ -532,36 +534,36 @@ function get_attribute_data( array $args ) {
 	}
 
 	return [
-		'name'  => $args['attribute'],
-		'id'    => $args['attribute'],
+		'name' => $args['attribute'],
+		'id' => $args['attribute'],
 		'label' => $args['value'],
 		'value' => $args['value'],
 	];
 }
 
 function combinations( $arrays, $i = 0 ) {
-    if ( ! isset( $arrays[$i] ) ) {
-        return array();
-    }
-    if ( $i == count( $arrays ) - 1 ) {
-        return $arrays[$i];
-    }
+	if ( ! isset( $arrays[ $i ] ) ) {
+		return array();
+	}
+	if ( $i == count( $arrays ) - 1 ) {
+		return $arrays[ $i ];
+	}
 
-    // get combinations from subsequent arrays
-    $tmp = combinations( $arrays, $i + 1 );
+	// get combinations from subsequent arrays
+	$tmp = combinations( $arrays, $i + 1 );
 
-    $result = array();
+	$result = array();
 
-    // concat each array from tmp with each element from $arrays[$i]
-    foreach ( $arrays[ $i ] as $v ) {
-        foreach ( $tmp as $t ) {
-            $result[] = is_array( $t ) ?
-                array_merge( array( $v ), $t ) :
-                array( $v, $t );
-        }
-    }
+	// concat each array from tmp with each element from $arrays[$i]
+	foreach ( $arrays[ $i ] as $v ) {
+		foreach ( $tmp as $t ) {
+			$result[] = is_array( $t ) ?
+				array_merge( array( $v ), $t ) :
+				array( $v, $t );
+		}
+	}
 
-    return $result;
+	return $result;
 }
 
 function get_product_ids_from_bundle_items( $items ) {
@@ -571,14 +573,14 @@ function get_product_ids_from_bundle_items( $items ) {
 
 	if ( is_json( $items ) ) {
 		$items = json_decode( $items, true );
-		return array_map( function( $item ) {
+		return array_map( function ( $item ) {
 			return isset( $item['id'] ) ? $item['id'] : 0;
 		}, $items );
 	}
 
 	$items = is_string( $items ) ? explode( ',', $items ) : $items;
 
-	return array_map( function( $item ) {
+	return array_map( function ( $item ) {
 		$item = explode( ':', $item );
 		if ( 1 < count( $item ) && is_numeric( $item[0] ) ) {
 			return 0 == $item[0] ? 0 : maybe_get_exact_product_id( absint( $item[0] ) );
@@ -594,14 +596,14 @@ function get_quantities_from_bundle_items( $items ) {
 
 	if ( is_json( $items ) ) {
 		$items = json_decode( $items, true );
-		return array_map( function( $item ) {
+		return array_map( function ( $item ) {
 			return isset( $item['qty'] ) ? absint( $item['qty'] ) : 0;
 		}, $items );
 	}
 
 	$items = is_string( $items ) ? explode( ',', $items ) : $items;
 
-	return array_map( function( $item ) {
+	return array_map( function ( $item ) {
 		$item = explode( ':', $item );
 		if ( 1 < count( $item ) && is_numeric( $item[1] ) ) {
 			return absint( $item[1] );
@@ -617,7 +619,7 @@ function get_attributes_from_bundle_items( $items ) {
 
 	if ( is_json( $items ) ) {
 		$items = json_decode( $items, true );
-		return array_map( function( $item ) {
+		return array_map( function ( $item ) {
 			$attributes = [];
 			if ( ! empty( $item['attributes'] ) ) {
 				foreach ( $item['attributes'] as $key => $value ) {
@@ -641,7 +643,7 @@ function get_attributes_of_bundle_item( $item ) {
 	$item = is_string( $item ) ? explode( ':', $item ) : $item;
 	if ( 2 < count( $item ) ) {
 		$attributes = [];
-		array_map( function( $value ) use ( &$attributes ) {
+		array_map( function ( $value ) use ( &$attributes ) {
 			$value = explode( '=', $value );
 			if ( 1 < count( $value ) ) {
 				$attributes[ 'attribute_' . sanitize_title( $value[0] ) ] = $value[1];
@@ -667,6 +669,7 @@ function get_bundle_item_price( $product, array $args ) {
 	if (
 		( ! isset( $args['is_fixed_price'] ) || ! $args['is_fixed_price'] ) &&
 		! empty( $args['discount_type'] ) &&
+		'none' !== $args['discount_type'] &&
 		isset( $args['discount'] ) &&
 		'' !== $args['discount'] &&
 		0 <= (float) $args['discount']
@@ -758,17 +761,17 @@ function add_simple_bundle_items( $product ) {
 		return;
 	}
 
-	$model = get_plugin()->container()->get( SimpleBundleItemsModel::class );
+	$model = get_plugin()->container()->get( SimpleBundleItemsModel::class);
 	$items = $model->get_bundle( $product->get_id() );
 	if ( empty( $items ) ) {
-		$quantities       = get_quantities_from_bundle_items( $default_products );
+		$quantities = get_quantities_from_bundle_items( $default_products );
 		$default_products = get_product_ids_from_bundle_items( $default_products );
 		if ( count( $default_products ) === count( $quantities ) ) {
 			for ( $i = 0; $i < count( $default_products ); $i++ ) {
 				$model->add( [
-					'bundle_id'  => $product->get_id(),
+					'bundle_id' => $product->get_id(),
 					'product_id' => (int) $default_products[ $i ],
-					'quantity'   => (int) $quantities[ $i ],
+					'quantity' => (int) $quantities[ $i ],
 				] );
 			}
 		}
@@ -784,10 +787,10 @@ function register_polyfills() {
 	global $wp_version;
 
 	$handles = array(
-		'react'        => array( '17.0.2', array() ),
-		'react-dom'    => array( '17.0.2', array( 'react' ) ),
-		'wp-i18n'      => array( '6.0', array() ),
-		'wp-hooks'     => array( '6.0', array() ),
+		'react' => array( '17.0.2', array() ),
+		'react-dom' => array( '17.0.2', array( 'react' ) ),
+		'wp-i18n' => array( '6.0', array() ),
+		'wp-hooks' => array( '6.0', array() ),
 		'wp-api-fetch' => array( '6.0', array() ),
 	);
 	foreach ( $handles as $handle => $value ) {
@@ -811,7 +814,7 @@ function register_polyfills() {
 
 function added_product_bundle_type() {
 	$ids = Products\get_products( [
-		'type'   => Plugin::PRODUCT_TYPE,
+		'type' => Plugin::PRODUCT_TYPE,
 		'return' => 'ids',
 	] );
 
@@ -873,19 +876,19 @@ function maybe_show_review() {
 
 function is_json( $string ) {
 	// Check if the string is empty or not a string
-    if ( ! is_string( $string ) || empty( trim( $string ) ) ) {
-        return false;
-    }
+	if ( ! is_string( $string ) || empty( trim( $string ) ) ) {
+		return false;
+	}
 
-    // Check if string starts with either { or [
-    if ( ! in_array( $string[0], [ '{', '[' ] ) ) {
-        return false;
-    }
+	// Check if string starts with either { or [
+	if ( ! in_array( $string[0], [ '{', '[' ] ) ) {
+		return false;
+	}
 
-    // Attempt to decode
-    json_decode( $string );
+	// Attempt to decode
+	json_decode( $string );
 
-    return ( json_last_error() === JSON_ERROR_NONE );
+	return ( json_last_error() === JSON_ERROR_NONE );
 }
 
 function maybe_convert_items_to_json( $items ) {
@@ -893,30 +896,29 @@ function maybe_convert_items_to_json( $items ) {
 		return $items;
 	}
 
-	$items = sanitize_text_field( wp_unslash( $items ) );
 	if ( is_json( $items ) ) {
 		return $items;
 	}
 
 	$items = explode( ',', $items );
-	$items = array_map( function( $item ) {
+	$items = array_map( function ( $item ) {
 		$item = explode( ':', $item );
 		if ( 3 === count( $item ) ) {
 			$attributes = explode( '&', $item[2] );
-			$attributes = array_reduce( $attributes, function( $carry, $attribute ) {
+			$attributes = array_reduce( $attributes, function ( $carry, $attribute ) {
 				$attribute = explode( '=', $attribute );
 				$carry[ $attribute[0] ] = $attribute[1];
 				return $carry;
 			}, [] );
 
 			return [
-				'id'         => absint( $item[0] ),
-				'qty'        => ! empty( $item[1] ) ? absint( $item[1] ) : 0,
+				'id' => absint( $item[0] ),
+				'qty' => ! empty( $item[1] ) ? absint( $item[1] ) : 0,
 				'attributes' => $attributes,
 			];
 		}
 		return [
-			'id'  => absint( $item[0] ),
+			'id' => absint( $item[0] ),
 			'qty' => ! empty( $item[1] ) ? absint( $item[1] ) : 0,
 		];
 	}, $items );

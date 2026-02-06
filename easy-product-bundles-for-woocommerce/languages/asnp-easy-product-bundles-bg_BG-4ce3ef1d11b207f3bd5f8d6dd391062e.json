@@ -210,7 +210,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"Променете етикета на бутона, показан за пакетни продукти в страницата на магазина."
-			]
+			],
+			"None": [ "Няма" ]
 		}
 	}
 }

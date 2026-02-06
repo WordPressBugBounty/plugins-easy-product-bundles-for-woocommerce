@@ -31,11 +31,11 @@
 			"Bundle": [ "حزمة" ],
 			"Item View": [ "عرض العنصر" ],
 			"Show stock": [ "إظهار المخزون" ],
-			"Show product Stock availability in modal.": [
-				"إظهار توافر المخزون في نافذة منبثقة."
+			"Show product Stock availability in popup.": [
+				"عرض توافر المنتج في نافذة منبثقة."
 			],
 			"Show rating": [ "إظهار التقييم" ],
-			"Show product rating in modal.": [
+			"Show product rating in popup.": [
 				"إظهار تقييم المنتج في نافذة منبثقة."
 			],
 			"Show description(on hover)": [
@@ -83,7 +83,7 @@
 			"Link to product": [ "الارتباط بالمنتج" ],
 			"New tab": [ "علامة تبويب جديدة" ],
 			"No link": [ "لا يوجد ارتباط" ],
-			"Show the product change modal": [ "إظهار نافذة تغيير المنتج" ],
+			"Show the product change popup": [ "عرض نافذة تغيير المنتج" ],
 			"Coupon apply method": [ "طريقة تطبيق القسيمة" ],
 			"Both of bundle and bundle items": [
 				"على الحزمة بأكملها وعلى عناصر الحزمة"
@@ -101,7 +101,7 @@
 			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
 				"كيفية عد المنتجات المجمعة في السلة؟ هل تحتسب كل من \"الحزمة وعناصرها\" أم \"الحزمة فقط\" أم \"عناصر الحزمة فقط\"."
 			],
-			"Change product modal": [ "نافذة تغيير المنتج" ],
+			"Change product popup": [ "النافذة المنبثقة لتغيير المنتج" ],
 			"Number of products per page": [ "عدد المنتجات في الصفحة" ],
 			"Styles": [ "" ],
 			"Product title color": [ "لون عنوان المنتج" ],
@@ -164,8 +164,8 @@
 			"Hide out of stock products.": [
 				"إخفاء المنتجات غير المتوفرة في المخزون"
 			],
-			"Show modal quick view": [ "إظهار العرض السريع في المنبثقة" ],
-			"Show product quick view icon in modal.": [
+			"Show popup quick view": [ "إظهار العرض السريع في نافذة منبثقة" ],
+			"Show product quick view icon in popup.": [
 				"إظهار أيقونة العرض السريع للمنتج في النافذة المنبثقة"
 			],
 			"Show selected product quick view": [
@@ -212,6 +212,13 @@
 			],
 			"Optional item mode": [ "وضع العنصر الاختياري" ],
 			"Checkbox": [ "حقل اختيار" ],
+			"Delete button": [ "زر الحذف" ],
+			"Show search field in popup": [
+				"إظهار حقل البحث في النافذة المنبثقة"
+			],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"يتيح لك هذا الخيار إظهار أو إخفاء حقل البحث عن المنتج في النافذة المنبثقة."
+			],
 			"Total price - sale price color": [
 				"لون السعر الإجمالي - لون سعر البيع"
 			],
@@ -256,6 +263,13 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"يمكن أن يعزز التوافق مع إضافة الخصومات، ولكنه قد يؤدي إلى مشاكل في الذاكرة إذا كانت الحزمة تحتوي على العديد من العناصر. يكون مفيدًا للحزم ذات الأسعار الديناميكية. قم بتمكينه فقط عند الضرورة."
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"حدد عدد المنتجات المعروضة في كل صفحة من النافذة المنبثقة."
+			],
+			"Show Discount Badge": [ "عرض شارة الخصم" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"عرض أو إخفاء شارة الخصم في قسم السعر الإجمالي للحزمة."
 			]
 		}
 	}

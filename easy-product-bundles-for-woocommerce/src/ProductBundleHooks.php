@@ -60,7 +60,7 @@ class ProductBundleHooks {
 		// Order hooks.
 		add_filter( 'woocommerce_get_item_count', array( $this, 'get_item_count' ), 10, 3 );
 		add_filter( 'woocommerce_order_item_class', array( $this, 'cart_item_class' ), 10, 2 );
-		add_filter( 'woocommerce_order_formatted_line_subtotal', array( $this, 'formatted_line_subtotal' ), 10, 2 );
+		add_filter( 'woocommerce_order_formatted_line_subtotal', array( $this, 'formatted_line_subtotal' ), 10, 3 );
 
 		// Admin order hooks.
 		add_action( 'woocommerce_ajax_add_order_item_meta', array( $this, 'ajax_add_order_item_meta' ), 10, 3 );
@@ -224,7 +224,7 @@ class ProductBundleHooks {
 		}
 
 		try {
-			$req_items = ! empty( $_REQUEST['asnp_wepb_items'] ) ? maybe_convert_items_to_json( $_REQUEST['asnp_wepb_items'] ) : '';
+			$req_items = ! empty( $_REQUEST['asnp_wepb_items'] ) ? maybe_convert_items_to_json( wp_unslash( $_REQUEST['asnp_wepb_items'] ) ) : '';
 			if ( empty( $req_items ) && ! empty( $cart_item_data[ static::CART_ITEM_ITEMS ] ) ) {
 				$req_items = maybe_convert_items_to_json( $cart_item_data[ static::CART_ITEM_ITEMS ] );
 			}
@@ -542,14 +542,14 @@ class ProductBundleHooks {
 		}
 
 		$items     = $product->get_items();
-		$req_items = ! empty( $_REQUEST['asnp_wepb_items'] ) ? maybe_convert_items_to_json( $_REQUEST['asnp_wepb_items'] ) : '';
+		$req_items = ! empty( $_REQUEST['asnp_wepb_items'] ) ? maybe_convert_items_to_json( wp_unslash( $_REQUEST['asnp_wepb_items'] ) ) : '';
 		$ids       = ! empty( $req_items ) ? get_product_ids_from_bundle_items( $req_items ) : get_product_ids_from_bundle_items( $product->get_default_products() );
 		if ( empty( $ids ) || count( $ids ) !== count( $items ) ) {
 			return $cart_item_data;
 		}
 
 		if ( ! empty( $_REQUEST['asnp_wepb_items'] ) ) {
-			$cart_item_data[ self::CART_ITEM_ITEMS ] = maybe_convert_items_to_json( $_REQUEST['asnp_wepb_items'] );
+			$cart_item_data[ self::CART_ITEM_ITEMS ] = $req_items;
 		} else {
 			$cart_item_data[ self::CART_ITEM_ITEMS ] = maybe_convert_items_to_json( $product->get_default_products() );
 		}
@@ -1166,7 +1166,7 @@ class ProductBundleHooks {
 		] );
 	}
 
-	public function formatted_line_subtotal( $subtotal, $order_item ) {
+	public function formatted_line_subtotal( $subtotal, $order_item, $order ) {
 		if ( isset( $order_item['_asnp_wepb_parent_id'] ) ) {
 			if (
 				isset( $order_item['_asnp_wepb_parent_is_fixed_price'] ) &&
@@ -1203,7 +1203,7 @@ class ProductBundleHooks {
 			return $subtotal;
 		}
 
-		return wc_price( maybe_exchange_price( $order_item['_asnp_wepb_price'] ) * $order_item['quantity'] );
+		return wc_price( maybe_exchange_price( $order_item['_asnp_wepb_price'] ) * $order_item['quantity'], [ 'currency' => $order->get_currency() ] );
 	}
 
 	public function ajax_add_order_item_meta( $item_id, $item, $order) {

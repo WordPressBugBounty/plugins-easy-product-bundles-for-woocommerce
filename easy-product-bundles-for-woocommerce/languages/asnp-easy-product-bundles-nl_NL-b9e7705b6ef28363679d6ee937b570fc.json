@@ -40,12 +40,12 @@
 			"Bundle": [ "Bundel" ],
 			"Item View": [ "Itemweergave" ],
 			"Show stock": [ "Toon voorraad" ],
-			"Show product Stock availability in modal.": [
-				"Toon beschikbaarheid van de productvoorraad in de modal."
+			"Show product Stock availability in popup.": [
+				"Toon beschikbaarheid van de productvoorraad in het pop-upvenster."
 			],
 			"Show rating": [ "Toon beoordeling" ],
-			"Show product rating in modal.": [
-				"Toon productbeoordeling in de modal."
+			"Show product rating in popup.": [
+				"Toon productbeoordeling in een pop-up."
 			],
 			"Show description(on hover)": [ "Toon beschrijving (bij zweven)" ],
 			"Show product description when mouse hover over it.": [
@@ -76,9 +76,9 @@
 			"Show the saved money when calculating the total price.": [
 				"Toon het bespaarde bedrag bij het berekenen van de totale prijs."
 			],
-			"Show modal quick view": [ "Toon snelle weergave in modal" ],
-			"Show product quick view icon in modal.": [
-				"Toon snelle weergave-icoon in modal."
+			"Show popup quick view": [ "Toon snelle weergave in pop-up" ],
+			"Show product quick view icon in popup.": [
+				"Toon snelle weergave-icoon in pop-up"
 			],
 			"Show selected product quick view": [
 				"Toon snelle weergave van geselecteerd product"
@@ -123,7 +123,9 @@
 			"Link to product": [ "Link naar product" ],
 			"New tab": [ "Nieuw tabblad" ],
 			"No link": [ "Geen link" ],
-			"Show the product change modal": [ "Toon productwijzigingsmodal" ],
+			"Show the product change popup": [
+				"Toon productwijzigings pop-up"
+			],
 			"Click on product in pop-up": [ "Klik op product in pop-up" ],
 			"Product selection": [ "Productselectie" ],
 			"Show product details": [ "Toon productdetails" ],
@@ -148,7 +150,7 @@
 			"Add to cart button selector": [
 				"Toevoegen aan winkelwagen-knopkiezer"
 			],
-			"Change product modal": [ "Wijzig productmodal" ],
+			"Change product popup": [ "Pop-up voor product wijzigen" ],
 			"Number of products per page": [ "Aantal producten per pagina" ],
 			"Styles": [ "Styles" ],
 			"Product title color": [ "Producttitelkleur" ],
@@ -228,6 +230,10 @@
 			"Optional item mode": [ "Optionele itemmodus" ],
 			"Checkbox": [ "Selectievakje" ],
 			"Delete button": [ "Verwijderknop" ],
+			"Show search field in popup": [ "Toon zoekveld in pop-upvenster" ],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"Met deze optie kun je het zoekveld voor producten in het pop-upvenster weergeven of verbergen."
+			],
 			"Total price - sale price color": [
 				"Totale prijs - kleur van verkoopprijs"
 			],
@@ -274,6 +280,13 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"Het kan de compatibiliteit met de kortingsplugin verbeteren, maar kan leiden tot geheugenproblemen als het pakket veel items bevat. Het is handig voor pakketten met dynamische prijzen. Schakel dit alleen in indien nodig."
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"Stel in hoeveel producten per pagina in de popup worden weergegeven."
+			],
+			"Show Discount Badge": [ "Toon kortingsbadge" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"Toon of verberg het kortingsbadge in de sectie van de totale bundelprijs."
 			]
 		}
 	}

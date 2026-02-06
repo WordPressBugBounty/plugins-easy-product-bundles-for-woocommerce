@@ -72,13 +72,16 @@ class FilterProducts extends BaseController {
 			return new \WP_Error( 'asnp_easy_product_bundles_index_required', __( 'Index is required.', 'asnp-easy-product-bundles' ), array( 'status' => 400 ) );
 		}
 
+		$search = ! empty( $request['search'] ) ? sanitize_text_field( urldecode( wp_unslash( $request['search'] ) ) ) : '';
+
 		$page = ! empty( $request['page'] ) ? absint( $request['page'] ) : 1;
 
 		try {
 			$data = $product->get_item_products( array(
-				'index' => $index,
-				'page'  => $page,
-				'limit' => ProductBundles\get_plugin()->settings->get_setting( 'modal_products_limit', 12 ),
+				'index'  => $index,
+				'page'   => $page,
+				'limit'  => ProductBundles\get_plugin()->settings->get_setting( 'modal_products_limit', 12 ),
+				'search' => $search,
 			) );
 		} catch ( \Exception $e ) {
 			return new \WP_Error( 'asnp_easy_product_bundles_filter_failed', $e->getMessage(), array( 'status' => 500 ) );

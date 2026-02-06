@@ -33,12 +33,12 @@
 			"Bundle": [ "Zestaw" ],
 			"Item View": [ "Widok przedmiotu" ],
 			"Show stock": [ "Pokaż stan magazynowy" ],
-			"Show product Stock availability in modal.": [
-				"Pokaż dostępność produktu na magazynie w okienku modalnym."
+			"Show product Stock availability in popup.": [
+				"Pokaż dostępność produktu na magazynie w wyskakującym oknie."
 			],
 			"Show rating": [ "Pokaż ocenę" ],
-			"Show product rating in modal.": [
-				"Pokaż ocenę produktu w okienku modalnym."
+			"Show product rating in popup.": [
+				"Pokaż ocenę produktu w wyskakującym okienku."
 			],
 			"Show description(on hover)": [ "Pokaż opis (po najechaniu)" ],
 			"Show product description when mouse hover over it.": [
@@ -82,8 +82,8 @@
 			"Link to product": [ "Link do produktu" ],
 			"New tab": [ "Nowa karta" ],
 			"No link": [ "Brak linku" ],
-			"Show the product change modal": [
-				"Pokaż okno modalne zmiany produktu"
+			"Show the product change popup": [
+				"Pokaż wyskakujące okno zmiany produktu"
 			],
 			"Coupon apply method": [ "Metoda zastosowania kuponu" ],
 			"Both of bundle and bundle items": [
@@ -102,7 +102,7 @@
 			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
 				"Jak zliczać produkty zestawu w koszyku? Zliczać 'zestaw i jego elementy', 'tylko zestaw' lub 'tylko elementy zestawu'."
 			],
-			"Change product modal": [ "Okno modalne zmiany produktu" ],
+			"Change product popup": [ "Wyskakujące okno zmiany produktu" ],
 			"Number of products per page": [ "Liczba produktów na stronie" ],
 			"Styles": [ "" ],
 			"Product title color": [ "Kolor tytułu produktu" ],
@@ -169,9 +169,9 @@
 			],
 			"Hide out of stock": [ "Ukryj brak w magazynie" ],
 			"Hide out of stock products.": [ "Ukryj wyprzedane produkty" ],
-			"Show modal quick view": [ "Pokaż szybki podgląd modalny" ],
-			"Show product quick view icon in modal.": [
-				"Pokaż ikonę szybkiego podglądu produktu w oknie modalnym."
+			"Show popup quick view": [ "Pokaż szybki podgląd w popup" ],
+			"Show product quick view icon in popup.": [
+				"Pokaż ikonę szybkiego podglądu produktu w popup"
 			],
 			"Show selected product quick view": [
 				"Pokaż szybki podgląd wybranego produktu"
@@ -230,6 +230,12 @@
 			"Optional item mode": [ "Tryb elementu opcjonalnego" ],
 			"Checkbox": [ "Pole wyboru" ],
 			"Delete button": [ "Przycisk usuń" ],
+			"Show search field in popup": [
+				"Pokaż pole wyszukiwania w oknie pop-up"
+			],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"Ta opcja pozwala na pokazanie lub ukrycie pola wyszukiwania produktów w oknie pop-up."
+			],
 			"Total price - sale price color": [
 				"Cena całkowita - kolor ceny sprzedaży"
 			],
@@ -276,6 +282,13 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"Może zwiększyć kompatybilność z wtyczką rabatową, ale może prowadzić do problemów z pamięcią, jeśli pakiet zawiera wiele elementów. Przydatne w przypadku pakietów o dynamicznych cenach. Włącz tylko, jeśli to konieczne."
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"Ustaw, ile produktów jest wyświetlanych na stronie w wyskakującym okienku."
+			],
+			"Show Discount Badge": [ "Pokaż odznakę rabatu" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"Pokaż lub ukryj odznakę rabatu w sekcji łącznej ceny pakietu."
 			]
 		}
 	}

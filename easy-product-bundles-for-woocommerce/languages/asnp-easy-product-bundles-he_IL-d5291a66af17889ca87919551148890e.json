@@ -39,7 +39,12 @@
 			],
 			"Empty bundle!": [ "חבילה ריקה!" ],
 			"Show Options": [ "הצג אפשרויות" ],
-			"Please select a product!": [ "אנא בחר מוצר!" ]
+			"Please select a product!": [ "אנא בחר מוצר!" ],
+			"Search...": [ "חיפוש..." ],
+			"No products found": [ "לא נמצאו מוצרים" ],
+			"Buy all for:": [ "קנה הכל עבור:" ],
+			"Total:": [ "סך הכל:" ],
+			"% OFF": [ "% OFF" ]
 		}
 	}
 }

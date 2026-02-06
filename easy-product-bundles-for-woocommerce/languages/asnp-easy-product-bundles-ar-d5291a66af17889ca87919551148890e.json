@@ -39,7 +39,12 @@
 			],
 			"Empty bundle!": [ "حزمة فارغة!" ],
 			"Show Options": [ "عرض الخيارات" ],
-			"Please select a product!": [ "يرجى اختيار منتج!" ]
+			"Please select a product!": [ "يرجى اختيار منتج!" ],
+			"Search...": [ "بحث..." ],
+			"No products found": [ "لم يتم العثور على منتجات" ],
+			"Buy all for:": [ "اشتري الكل مقابل:" ],
+			"Total:": [ "المجموع:" ],
+			"% OFF": [ "٪ خصم" ]
 		}
 	}
 }

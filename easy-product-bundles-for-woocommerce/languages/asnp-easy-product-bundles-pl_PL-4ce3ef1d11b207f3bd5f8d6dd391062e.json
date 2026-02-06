@@ -201,7 +201,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"Zmień etykietę przycisku wyświetlaną dla produktów pakietowych na stronie sklepu."
-			]
+			],
+			"None": [ "Żaden" ]
 		}
 	}
 }

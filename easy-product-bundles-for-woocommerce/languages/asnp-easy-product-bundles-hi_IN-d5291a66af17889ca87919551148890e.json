@@ -38,7 +38,12 @@
 			],
 			"Empty bundle!": [ "खाली बंडल!" ],
 			"Show Options": [ "विकल्प दिखाएँ" ],
-			"Please select a product!": [ "कृपया एक उत्पाद चुनें!" ]
+			"Please select a product!": [ "कृपया एक उत्पाद चुनें!" ],
+			"Search...": [ "खोजें..." ],
+			"No products found": [ "कोई उत्पाद नहीं मिला" ],
+			"Buy all for:": [ "सब खरीदें:" ],
+			"Total:": [ "कुल:" ],
+			"% OFF": [ "% OFF" ]
 		}
 	}
 }

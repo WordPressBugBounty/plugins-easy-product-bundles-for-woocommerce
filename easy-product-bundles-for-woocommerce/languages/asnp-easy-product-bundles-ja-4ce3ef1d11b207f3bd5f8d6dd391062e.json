@@ -194,7 +194,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"ショップページで表示されるバンドル商品のボタンラベルを変更します。"
-			]
+			],
+			"None": [ "なし" ]
 		}
 	}
 }

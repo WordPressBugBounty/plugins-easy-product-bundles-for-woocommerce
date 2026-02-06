@@ -29,9 +29,9 @@ class ProductBundle {
 	 */
 	public function product_data_tabs( $tabs ) {
 		$tabs[ Plugin::PRODUCT_TYPE ] = array(
-			'label'    => __( 'Product Bundles', 'asnp-easy-product-bundles' ),
-			'target'   => 'asnp_product_bundles_panel',
-			'class'    => array( 'show_if_' . Plugin::PRODUCT_TYPE ),
+			'label' => __( 'Product Bundles', 'asnp-easy-product-bundles' ),
+			'target' => 'asnp_product_bundles_panel',
+			'class' => array( 'show_if_' . Plugin::PRODUCT_TYPE ),
 			'priority' => 49,
 		);
 		return $tabs;
@@ -93,24 +93,24 @@ class ProductBundle {
 		$default_products = ! empty( $config['products'] ) ? $config['products'] : [];
 		$errors = $product->set_props(
 			[
-				'individual_theme'         => isset( $_POST['asnp_wepb_individual_theme'] ) && 'true' === $_POST['asnp_wepb_individual_theme'] ? 'true' : 'false',
-				'theme'                    => isset( $_POST['asnp_wepb_theme'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_theme'] ) ) : '',
-				'theme_size'               => isset( $_POST['asnp_wepb_theme_size'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_theme_size'] ) ) : '',
-				'fixed_price'              => isset( $_POST['asnp_wepb_fixed_price'] ) && 'true' === $_POST['asnp_wepb_fixed_price'] ? 'true' : 'false',
-				'include_parent_price'     => isset( $_POST['asnp_wepb_include_parent_price'] ) && 'true' === $_POST['asnp_wepb_include_parent_price'] ? 'true' : 'false',
-				'sync_stock_quantity'      => isset( $_POST['asnp_wepb_sync_stock_quantity'] ) && 'true' === $_POST['asnp_wepb_sync_stock_quantity'] ? 'true' : 'false',
+				'individual_theme' => isset( $_POST['asnp_wepb_individual_theme'] ) && 'true' === $_POST['asnp_wepb_individual_theme'] ? 'true' : 'false',
+				'theme' => isset( $_POST['asnp_wepb_theme'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_theme'] ) ) : '',
+				'theme_size' => isset( $_POST['asnp_wepb_theme_size'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_theme_size'] ) ) : '',
+				'fixed_price' => isset( $_POST['asnp_wepb_fixed_price'] ) && 'true' === $_POST['asnp_wepb_fixed_price'] ? 'true' : 'false',
+				'include_parent_price' => isset( $_POST['asnp_wepb_include_parent_price'] ) && 'true' === $_POST['asnp_wepb_include_parent_price'] ? 'true' : 'false',
+				'sync_stock_quantity' => isset( $_POST['asnp_wepb_sync_stock_quantity'] ) && 'true' === $_POST['asnp_wepb_sync_stock_quantity'] ? 'true' : 'false',
 				// 'edit_in_cart'             => isset( $_POST['asnp_wepb_edit_in_cart'] ) && 'true' === $_POST['asnp_wepb_edit_in_cart'] ? 'true' : 'false',
 				'shipping_fee_calculation' => isset( $_POST['asnp_wepb_shipping_fee_calculation'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_shipping_fee_calculation'] ) ) : '',
-				'min_items_quantity'       => isset( $_POST['asnp_wepb_min_items_quantity'] ) && 0 < absint( $_POST['asnp_wepb_min_items_quantity'] ) ? absint( $_POST['asnp_wepb_min_items_quantity'] ) : '',
-				'max_items_quantity'       => isset( $_POST['asnp_wepb_max_items_quantity'] ) && 0 < absint( $_POST['asnp_wepb_max_items_quantity'] ) ? absint( $_POST['asnp_wepb_max_items_quantity'] ) : '',
-				'custom_display_price'     => ! empty( $_POST['asnp_wepb_custom_display_price'] ) ? wp_kses_post( $_POST['asnp_wepb_custom_display_price'] ) : '',
-				'bundle_title'             => ! empty( $_POST['asnp_wepb_bundle_title'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_title'] ) ) : '',
-				'bundle_description'       => ! empty( $_POST['asnp_wepb_bundle_description'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_description'] ) ) : '',
-				'hide_items_price'         => isset( $_POST['asnp_wepb_hide_items_price'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_hide_items_price'] ) ) : 'no',
-				'items'                    => $items,
-				'default_products'         => ! empty( $default_products ) ? json_encode( $default_products ) : '',
-				'loop_add_to_cart'         => ! empty( $config['loop_add_to_cart'] ) ? 'true' : 'false',
-				'bundle_button_label'      => ! empty( $_POST['asnp_wepb_bundle_button_label'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_button_label'] ) ) : '',
+				'min_items_quantity' => isset( $_POST['asnp_wepb_min_items_quantity'] ) && 0 < absint( $_POST['asnp_wepb_min_items_quantity'] ) ? absint( $_POST['asnp_wepb_min_items_quantity'] ) : '',
+				'max_items_quantity' => isset( $_POST['asnp_wepb_max_items_quantity'] ) && 0 < absint( $_POST['asnp_wepb_max_items_quantity'] ) ? absint( $_POST['asnp_wepb_max_items_quantity'] ) : '',
+				'custom_display_price' => ! empty( $_POST['asnp_wepb_custom_display_price'] ) ? wp_kses_post( $_POST['asnp_wepb_custom_display_price'] ) : '',
+				'bundle_title' => ! empty( $_POST['asnp_wepb_bundle_title'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_title'] ) ) : '',
+				'bundle_description' => ! empty( $_POST['asnp_wepb_bundle_description'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_description'] ) ) : '',
+				'hide_items_price' => isset( $_POST['asnp_wepb_hide_items_price'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_hide_items_price'] ) ) : 'no',
+				'items' => $items,
+				'default_products' => ! empty( $default_products ) ? json_encode( $default_products ) : '',
+				'loop_add_to_cart' => ! empty( $config['loop_add_to_cart'] ) ? 'true' : 'false',
+				'bundle_button_label' => ! empty( $_POST['asnp_wepb_bundle_button_label'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_button_label'] ) ) : '',
 			]
 		);
 
@@ -118,14 +118,14 @@ class ProductBundle {
 			\WC_Admin_Meta_Boxes::add_error( $errors->get_error_message() );
 		}
 
-		$model = ProductBundles\get_plugin()->container()->get( SimpleBundleItemsModel::class );
+		$model = ProductBundles\get_plugin()->container()->get( SimpleBundleItemsModel::class);
 		$model->delete_bundle( $product->get_id() );
 		if ( ! empty( $default_products ) ) {
 			foreach ( $default_products as $default ) {
 				$model->add( [
-					'bundle_id'  => $product->get_id(),
+					'bundle_id' => $product->get_id(),
 					'product_id' => (int) $default['id'],
-					'quantity'   => (int) $default['qty']
+					'quantity' => (int) $default['qty']
 				] );
 			}
 		}
@@ -140,6 +140,22 @@ class ProductBundle {
 	}
 
 	protected function get_items() {
+		// JSON preferred
+		if ( ! empty( $_POST['asnp_wepb_bundle_items'] ) ) {
+			$items = json_decode( wp_unslash( $_POST['asnp_wepb_bundle_items'] ), true );
+			if ( is_array( $items ) ) {
+				$processed_items = [];
+				foreach ( $items as $item ) {
+					$bundle_item = $this->get_item( $item );
+					if ( $bundle_item ) {
+						$processed_items[] = $bundle_item;
+					}
+				}
+				return $processed_items;
+			}
+		}
+
+		// Fallback to individual fields if JSON is not available or invalid
 		if ( empty( $_POST['asnp_wepb_bundle'] ) ) {
 			return [];
 		}
@@ -160,7 +176,7 @@ class ProductBundle {
 		}
 
 		$bundle_item = [];
-		$defaults    = [
+		$defaults = [
 			'optional' => 'false',
 			'selected' => 'false',
 			'products' => [],
@@ -171,7 +187,7 @@ class ProductBundle {
 			'excluded_tags' => [],
 			'query_relation' => 'OR',
 			'edit_quantity' => 'false',
-			'discount_type' => 'percentage',
+			'discount_type' => 'none',
 			'discount' => '',
 			'product' => '',
 			'min_quantity' => 1,
@@ -195,16 +211,29 @@ class ProductBundle {
 				case 'excluded_categories':
 				case 'tags':
 				case 'excluded_tags':
+					$normalized = [];
 					if ( ! empty( $value ) ) {
-						$bundle_item[ $key ] = array_filter( array_map( 'absint', $value ) );
-					} elseif ( isset( $defaults[ $key ] ) ) {
-						$bundle_item[ $key ] = $defaults[ $key ];
+						foreach ( $value as $v ) {
+							if ( is_array( $v ) && isset( $v['value'] ) ) {
+								$normalized[] = absint( $v['value'] );
+							} elseif ( is_scalar( $v ) ) {
+								$normalized[] = absint( $v );
+							}
+						}
 					}
+
+					$normalized = array_unique( array_filter( $normalized ) );
+					$bundle_item[ $key ] = ! empty( $normalized ) ? $normalized : [];
 					break;
 
 				case 'product':
 					if ( ! empty( $value ) ) {
-						$product = wc_get_product( absint( $value ) );
+						if ( is_array( $value ) && isset( $value['value'] ) ) {
+							$product = wc_get_product( absint( $value['value'] ) );
+						} else {
+							$product = wc_get_product( absint( $value ) );
+						}
+
 						$bundle_item[ $key ] = $product ? $product->get_id() : $defaults[ $key ];
 
 						// if ( ! $product ) {
@@ -309,7 +338,7 @@ class ProductBundle {
 				$loop_add_to_cart = false;
 			} elseif ( $loop_add_to_cart && $product->is_type( 'variation' ) ) {
 				$variation_attributes = $product->get_variation_attributes( false );
-				$any_attributes       = ProductBundles\get_any_value_attributes( $variation_attributes );
+				$any_attributes = ProductBundles\get_any_value_attributes( $variation_attributes );
 				if ( ! empty( $any_attributes ) ) {
 					$loop_add_to_cart = false;
 				}
@@ -323,13 +352,13 @@ class ProductBundle {
 			}
 
 			$products[] = [
-				'id'  => $product->get_id(),
+				'id' => $product->get_id(),
 				'qty' => absint( $item['quantity'] ),
 			];
 		}
 
 		return [
-			'products'         => $products,
+			'products' => $products,
 			'loop_add_to_cart' => $loop_add_to_cart,
 		];
 	}

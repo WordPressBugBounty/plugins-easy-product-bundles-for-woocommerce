@@ -39,7 +39,12 @@
 			],
 			"Empty bundle!": [ "空捆绑包！" ],
 			"Show Options": [ "显示选项" ],
-			"Please select a product!": [ "请选择产品！" ]
+			"Please select a product!": [ "请选择产品！" ],
+			"Search...": [ "搜索..." ],
+			"No products found": [ "未找到产品" ],
+			"Buy all for:": [ "全部购买，价格：" ],
+			"Total:": [ "总计：" ],
+			"% OFF": [ "% 折扣" ]
 		}
 	}
 }

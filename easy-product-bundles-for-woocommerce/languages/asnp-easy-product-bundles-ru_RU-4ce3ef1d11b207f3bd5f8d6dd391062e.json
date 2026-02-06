@@ -209,7 +209,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"Измените подпись кнопки, отображаемую для комплектных товаров на странице магазина."
-			]
+			],
+			"None": [ "Никакой" ]
 		}
 	}
 }

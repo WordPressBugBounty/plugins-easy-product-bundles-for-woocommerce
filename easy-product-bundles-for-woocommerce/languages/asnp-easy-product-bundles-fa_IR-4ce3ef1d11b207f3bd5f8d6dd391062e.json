@@ -201,7 +201,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"برچسب دکمه نمایش داده‌شده برای محصولات بسته در صفحه فروشگاه را تغییر دهید."
-			]
+			],
+			"None": [ "هیچکدام" ]
 		}
 	}
 }

@@ -179,36 +179,36 @@ class ProductBundle extends \WC_Product {
 
 	/**
 	 * Get hide items price.
-     *
- 	 * @return string
- 	 */
+	 *
+	 * @return string
+	 */
 	public function get_hide_items_price( $context = 'view' ) {
 		return $this->get_prop( 'hide_items_price', $context );
 	}
 
 	/**
 	 * Get items is in stock.
-     *
- 	 * @return string
- 	 */
+	 *
+	 * @return string
+	 */
 	public function get_items_is_in_stock( $context = 'view' ) {
 		return $this->get_prop( 'items_is_in_stock', $context );
 	}
 
 	/**
 	 * Get default products price.
-     *
- 	 * @return array
- 	 */
+	 *
+	 * @return array
+	 */
 	public function get_default_products_price( $context = 'view' ) {
 		return $this->get_prop( 'default_products_price', $context );
 	}
 
 	/**
 	 * Get default products price for display or view.
-     *
- 	 * @return array
- 	 */
+	 *
+	 * @return array
+	 */
 	public function get_default_products_price_for( $type = 'view' ) {
 		$prices = $this->get_default_products_price();
 		if ( empty( $prices ) ) {
@@ -242,25 +242,25 @@ class ProductBundle extends \WC_Product {
 
 	public function get_initial_data( $context = 'view' ) {
 		$data = array(
-			'product'            => [
-				'id'                   => $this->get_id(),
-				'is_fixed_price'       => $this->is_fixed_price(),
-				'regular_price'        => '' !== $this->get_regular_price( 'edit' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( $this->get_regular_price( 'edit' ) ) ] ) : '',
-				'sale_price'           => '' !== maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) ) ] ) : '',
-				'display_price'        => $this->get_price_html(),
+			'product' => [
+				'id' => $this->get_id(),
+				'is_fixed_price' => $this->is_fixed_price(),
+				'regular_price' => '' !== $this->get_regular_price( 'edit' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( $this->get_regular_price( 'edit' ) ) ] ) : '',
+				'sale_price' => '' !== maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) ) ] ) : '',
+				'display_price' => $this->get_price_html(),
 				'include_parent_price' => $this->get_include_parent_price( $context ),
 			],
-			'individual_theme'   => $this->get_individual_theme( $context ),
-			'theme'              => $this->get_theme( $context ),
-			'theme_size'         => $this->get_theme_size( $context ),
-			'bundle_title'       => $this->get_bundle_title( $context ),
+			'individual_theme' => $this->get_individual_theme( $context ),
+			'theme' => $this->get_theme( $context ),
+			'theme_size' => $this->get_theme_size( $context ),
+			'bundle_title' => $this->get_bundle_title( $context ),
 			'bundle_description' => $this->get_bundle_description( $context ),
-			'hide_items_price'   => $this->get_hide_items_price( $context ),
+			'hide_items_price' => $this->get_hide_items_price( $context ),
 			'min_items_quantity' => $this->get_min_items_quantity(),
 			'max_items_quantity' => $this->get_max_items_quantity(),
-			'bundles'            => array(),
-			'sync_stock_quantity'=> $this->get_sync_stock_quantity( $context ),
-			'bundle_button_label'=> $this->get_bundle_button_label( $context )
+			'bundles' => array(),
+			'sync_stock_quantity' => $this->get_sync_stock_quantity( $context ),
+			'bundle_button_label' => $this->get_bundle_button_label( $context )
 		);
 
 		$items = $this->get_items();
@@ -284,31 +284,31 @@ class ProductBundle extends \WC_Product {
 		}
 
 		$data = array(
-			'product'              => ! empty( $item['product'] ) ? absint( $item['product'] ) : null,
-			'can_change_product'   => 'false',
-			'edit_quantity'        => isset( $item['edit_quantity'] ) && 'true' === $item['edit_quantity'] ? 'true' : 'false',
-			'quantity'             => ! empty( $item['quantity'] ) ? absint( $item['quantity'] ) : 1,
-			'min_quantity'         => ! empty( $item['min_quantity'] ) ? absint( $item['min_quantity'] ) : 1,
-			'max_quantity'         => ! empty( $item['max_quantity'] ) ? absint( $item['max_quantity'] ) : '',
-			'optional'             => isset( $item['optional'] ) && 'true' === $item['optional'] ? 'true' : 'false',
-			'selected'             => isset( $item['selected'] ) && 'false' === $item['selected'] ? 'false' : 'true',
-			'title'                => ! empty( $item['title'] ) ? sanitize_text_field( __( $item['title'], 'asnp-easy-product-bundles' ) ) : '',
-			'description'          => ! empty( $item['description'] ) ? wp_kses_post( $item['description'] ) : '',
+			'product' => ! empty( $item['product'] ) ? absint( $item['product'] ) : null,
+			'can_change_product' => 'false',
+			'edit_quantity' => isset( $item['edit_quantity'] ) && 'true' === $item['edit_quantity'] ? 'true' : 'false',
+			'quantity' => ! empty( $item['quantity'] ) ? absint( $item['quantity'] ) : 1,
+			'min_quantity' => ! empty( $item['min_quantity'] ) ? absint( $item['min_quantity'] ) : 1,
+			'max_quantity' => ! empty( $item['max_quantity'] ) ? absint( $item['max_quantity'] ) : '',
+			'optional' => isset( $item['optional'] ) && 'true' === $item['optional'] ? 'true' : 'false',
+			'selected' => isset( $item['selected'] ) && 'false' === $item['selected'] ? 'false' : 'true',
+			'title' => ! empty( $item['title'] ) ? sanitize_text_field( __( $item['title'], 'asnp-easy-product-bundles' ) ) : '',
+			'description' => ! empty( $item['description'] ) ? wp_kses_post( $item['description'] ) : '',
 			'select_product_title' => ! empty( $item['select_product_title'] ) ? sanitize_text_field( __( $item['select_product_title'], 'asnp-easy-product-bundles' ) ) : __( 'Please select a product!', 'asnp-easy-product-bundles' ),
-			'product_list_title'   => ! empty( $item['product_list_title'] ) ? sanitize_text_field( __( $item['product_list_title'], 'asnp-easy-product-bundles' ) ) : __( 'Please select your product!', 'asnp-easy-product-bundles' ),
-			'modal_header_title'   => ! empty( $item['modal_header_title'] ) ? sanitize_text_field( __( $item['modal_header_title'], 'asnp-easy-product-bundles' ) ) : __( 'Please select your product', 'asnp-easy-product-bundles' ),
-			'image_url'            => ! empty( $item['image_url'] ) ? esc_url( $item['image_url'] ) : '',
+			'product_list_title' => ! empty( $item['product_list_title'] ) ? sanitize_text_field( __( $item['product_list_title'], 'asnp-easy-product-bundles' ) ) : __( 'Please select your product!', 'asnp-easy-product-bundles' ),
+			'modal_header_title' => ! empty( $item['modal_header_title'] ) ? sanitize_text_field( __( $item['modal_header_title'], 'asnp-easy-product-bundles' ) ) : __( 'Please select your product', 'asnp-easy-product-bundles' ),
+			'image_url' => ! empty( $item['image_url'] ) ? esc_url( $item['image_url'] ) : '',
 		);
 
 		$args = [
-			'return'            => 'ids',
+			'return' => 'ids',
 			'hide_out_of_stock' => 'true' === get_plugin()->settings->get_setting( 'hide_out_of_stock', 'false' ),
 		];
 
 		// TODO: Use valid values for type and limit.
 		// TODO: Add sort and ordering support.
-		$product_selector = get_plugin()->container()->get( ProductSelectorInterface::class );
-		$query            = $product_selector->select_products( $item, $args );
+		$product_selector = get_plugin()->container()->get( ProductSelectorInterface::class);
+		$query = $product_selector->select_products( $item, $args );
 		if ( empty( $query->products ) ) {
 			return $data;
 		}
@@ -317,22 +317,22 @@ class ProductBundle extends \WC_Product {
 			$data['product'] = (int) $query->products[0];
 		}
 
-		if ( 
-			1 < $query->total || 
-			( 1 == $query->total && 'true' === $data['optional'] && 'check_box' !== get_plugin()->settings->get_setting( 'optional_item_mode', 'check_box' ) ) 
+		if (
+			1 < $query->total ||
+			( 1 == $query->total && 'true' === $data['optional'] && 'check_box' !== get_plugin()->settings->get_setting( 'optional_item_mode', 'check_box' ) )
 		) {
 			$data['can_change_product'] = 'true';
 		}
 
 		if ( ! empty( $data['product'] ) ) {
 			$product = wc_get_product( $data['product'] );
-			if ( 
+			if (
 				$product && $product->is_purchasable() &&
 				( ! $product->is_type( 'variable' ) || is_pro_active() )
 			) {
 				$data['product'] = prepare_product_data( $product, $item );
 			} else {
-				$data['product']            = null;
+				$data['product'] = null;
 				$data['can_change_product'] = 'true';
 			}
 
@@ -366,12 +366,12 @@ class ProductBundle extends \WC_Product {
 
 		$data = array(
 			'products' => array(),
-			'pages'    => 0,
-			'total'    => 0,
+			'pages' => 0,
+			'total' => 0,
 		);
 
 		$items = $this->get_items();
-		if ( empty( $items ) || empty( $items[ (int) $args['index'] ] )) {
+		if ( empty( $items ) || empty( $items[ (int) $args['index'] ] ) ) {
 			return $data;
 		}
 
@@ -381,7 +381,7 @@ class ProductBundle extends \WC_Product {
 
 		// TODO: Use valid values for type and limit.
 		// TODO: Add sort and ordering support.
-		$product_selector = get_plugin()->container()->get( ProductSelectorInterface::class );
+		$product_selector = get_plugin()->container()->get( ProductSelectorInterface::class);
 		$query = $product_selector->select_products( $item, $args );
 		$data['pages'] = $query->pages;
 		$data['total'] = $query->total;
@@ -397,7 +397,7 @@ class ProductBundle extends \WC_Product {
 			$extra_data = [];
 			if ( $product->is_type( 'variation' ) ) {
 				$variation_attributes = $product->get_variation_attributes( false );
-				$any_attributes       = get_any_value_attributes( $variation_attributes );
+				$any_attributes = get_any_value_attributes( $variation_attributes );
 				if ( ! empty( $any_attributes ) ) {
 					$extra_data['is_parent'] = 'true';
 				}
@@ -431,7 +431,7 @@ class ProductBundle extends \WC_Product {
 			return parent::get_price( $context );
 		}
 
-		return $prices['total'];
+		return 'view' === $context ? apply_filters( 'woocommerce_product_get_price', $prices['total'], $this ) : $prices['total'];
 	}
 
 	/**
@@ -455,7 +455,7 @@ class ProductBundle extends \WC_Product {
 			return parent::get_regular_price( $context );
 		}
 
-		return $prices['regular'];
+		return 'view' === $context ? apply_filters( 'woocommerce_product_get_regular_price', $prices['regular'], $this ) : $prices['regular'];
 	}
 
 	/**
@@ -479,7 +479,7 @@ class ProductBundle extends \WC_Product {
 			return parent::get_sale_price( $context );
 		}
 
-		return $prices['total'];
+		return 'view' === $context ? apply_filters( 'woocommerce_product_get_sale_price', $prices['total'], $this ) : $prices['total'];
 	}
 
 	public function get_is_cart_item() {
@@ -595,8 +595,6 @@ class ProductBundle extends \WC_Product {
 		$this->set_prop( 'bundle_button_label', $bundle_button_label );
 	}
 
-
-
 	public function set_hide_items_price( $hide_items_price ) {
 		$this->set_prop( 'hide_items_price', $hide_items_price );
 	}
@@ -638,8 +636,8 @@ class ProductBundle extends \WC_Product {
 	 */
 	public function has_price() {
 		$regular_price = $this->get_regular_price( 'edit' );
-		$sale_price    = $this->get_sale_price( 'edit' );
-		return ( '' !== $regular_price && 0 <= (float) $regular_price) ||
+		$sale_price = $this->get_sale_price( 'edit' );
+		return ( '' !== $regular_price && 0 <= (float) $regular_price ) ||
 			( '' !== $sale_price && 0 <= (float) $sale_price );
 	}
 
@@ -682,7 +680,7 @@ class ProductBundle extends \WC_Product {
 	 */
 	public function add_to_cart_text() {
 		$condition = 'true' === $this->get_loop_add_to_cart() || ( '' === $this->get_loop_add_to_cart() && ! empty( $this->get_default_products() ) );
-		$text = $condition && $this->is_purchasable() && $this->is_in_stock() ? __( 'Add to cart', 'woocommerce' ) : ( $this->get_bundle_button_label() ?: __( 'Configure bundle', 'asnp-easy-product-bundles' ) ) ;
+		$text = $condition && $this->is_purchasable() && $this->is_in_stock() ? __( 'Add to cart', 'woocommerce' ) : ( $this->get_bundle_button_label() ?: __( 'Configure bundle', 'asnp-easy-product-bundles' ) );
 
 		return apply_filters( 'woocommerce_product_add_to_cart_text', $text, $this );
 	}
@@ -701,22 +699,22 @@ class ProductBundle extends \WC_Product {
 			return [];
 		}
 
-		$quantities       = get_quantities_from_bundle_items( $default_products );
+		$quantities = get_quantities_from_bundle_items( $default_products );
 		$default_products = get_product_ids_from_bundle_items( $default_products );
-		$items            = $product->get_items();
+		$items = $product->get_items();
 		if ( empty( $items ) || count( $items ) !== count( $default_products ) ) {
 			return [];
 		}
 
 		// return type can be 'all', 'display', 'raw'.
-		$args              = array_merge( [ 'exchange_price' => false, 'return' => 'all' ], $args );
-		$optional_mode     = get_plugin()->settings->get_setting( 'optional_item_mode', 'check_box' );
-		$min_price         = null;
+		$args = array_merge( [ 'exchange_price' => false, 'return' => 'all' ], $args );
+		$optional_mode = get_plugin()->settings->get_setting( 'optional_item_mode', 'check_box' );
+		$min_price = null;
 		$min_price_display = null;
-		$total             = 0;
-		$total_display     = 0;
-		$regular           = 0;
-		$regular_display   = 0;
+		$total = 0;
+		$total_display = 0;
+		$regular = 0;
+		$regular_display = 0;
 
 		if ( 'true' === $product->get_include_parent_price() ) {
 			if ( '' !== $product->get_price( 'edit' ) ) {
@@ -736,7 +734,7 @@ class ProductBundle extends \WC_Product {
 				continue;
 			}
 
-			$optional     = isset( $items[ $i ]['optional'] ) && 'true' === $items[ $i ]['optional'];
+			$optional = isset( $items[ $i ]['optional'] ) && 'true' === $items[ $i ]['optional'];
 			$not_selected = isset( $items[ $i ]['selected'] ) && 'false' === $items[ $i ]['selected'];
 
 			// Ignore optional items.
@@ -754,8 +752,8 @@ class ProductBundle extends \WC_Product {
 			$product_price = get_bundle_item_price(
 				$item_product,
 				[
-					'discount_type'  => ! empty( $items[ $i ]['discount_type'] ) ? $items[ $i ]['discount_type'] : '',
-					'discount'       => isset( $items[ $i ]['discount'] ) && '' !== $items[ $i ]['discount'] ? (float) $items[ $i ]['discount'] : null,
+					'discount_type' => ! empty( $items[ $i ]['discount_type'] ) ? $items[ $i ]['discount_type'] : '',
+					'discount' => isset( $items[ $i ]['discount'] ) && '' !== $items[ $i ]['discount'] ? (float) $items[ $i ]['discount'] : null,
 					'is_fixed_price' => false,
 					'exchange_price' => $args['exchange_price'],
 				]
@@ -779,34 +777,34 @@ class ProductBundle extends \WC_Product {
 
 		if ( 'display' === $args['return'] ) {
 			return [
-				'min'     => $min_price_display,
-				'total'   => $total_display,
+				'min' => $min_price_display,
+				'total' => $total_display,
 				'regular' => $regular_display,
-				'from'    => $from,
+				'from' => $from,
 			];
 		}
 
 		if ( 'raw' === $args['return'] ) {
 			return [
-				'min'     => $min_price,
-				'total'   => $total,
+				'min' => $min_price,
+				'total' => $total,
 				'regular' => $regular,
-				'from'    => $from,
+				'from' => $from,
 			];
 		}
 
 		return [
 			'display' => [
-				'min'     => $min_price_display,
-				'total'   => $total_display,
+				'min' => $min_price_display,
+				'total' => $total_display,
 				'regular' => $regular_display,
-				'from'    => $from,
+				'from' => $from,
 			],
-			'raw'     => [
-				'min'     => $min_price,
-				'total'   => $total,
+			'raw' => [
+				'min' => $min_price,
+				'total' => $total,
 				'regular' => $regular,
-				'from'    => $from,
+				'from' => $from,
 			],
 		];
 	}
@@ -974,7 +972,7 @@ class ProductBundle extends \WC_Product {
 			}
 
 			$quantity = ! empty( $item['quantity'] ) && 0 < (int) $item['quantity'] ? absint( $item['quantity'] ) : 1;
-			$stock    = floor( $default_product->get_stock_quantity() / $quantity );
+			$stock = floor( $default_product->get_stock_quantity() / $quantity );
 
 			if ( null === $min_stock || $stock < $min_stock ) {
 				$min_stock = $stock;

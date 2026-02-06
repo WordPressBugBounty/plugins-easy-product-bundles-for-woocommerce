@@ -31,12 +31,12 @@
 			"Bundle": [ "Пакет" ],
 			"Item View": [ "Просмотр элемента" ],
 			"Show stock": [ "Показать наличие" ],
-			"Show product Stock availability in modal.": [
-				"Показать наличие товара в модальном окне."
+			"Show product Stock availability in popup.": [
+				"Показать наличие товара во всплывающем окне."
 			],
 			"Show rating": [ "Показать рейтинг" ],
-			"Show product rating in modal.": [
-				"Показывать рейтинг товара в модальном окне."
+			"Show product rating in popup.": [
+				"Показывать рейтинг товара во всплывающем окне."
 			],
 			"Show description(on hover)": [
 				"Показывать описание (при наведении)"
@@ -82,8 +82,8 @@
 			"Link to product": [ "Ссылка на товар" ],
 			"New tab": [ "Новая вкладка" ],
 			"No link": [ "Без ссылки" ],
-			"Show the product change modal": [
-				"Показать модальное окно изменения продукта"
+			"Show the product change popup": [
+				"Показать всплывающее окно изменения продукта"
 			],
 			"Coupon apply method": [ "Метод применения купона" ],
 			"Both of bundle and bundle items": [
@@ -102,7 +102,9 @@
 			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
 				"Как считать товары в связке в корзине? Считать как \"связку и ее товары\", \"только связку\" или \"только товары в связке\"."
 			],
-			"Change product modal": [ "Изменить модальное окно продукта" ],
+			"Change product popup": [
+				"Всплывающее окно для изменения продукта"
+			],
 			"Number of products per page": [ "Количество товаров на странице" ],
 			"Styles": [ "Стили" ],
 			"Product title color": [ "Цвет названия продукта" ],
@@ -171,9 +173,11 @@
 			"Hide out of stock products.": [
 				"Скрыть товары, которых нет в наличии."
 			],
-			"Show modal quick view": [ "Показать модальный быстрый просмотр" ],
-			"Show product quick view icon in modal.": [
-				"Показать иконку быстрого просмотра товара в модальном окне."
+			"Show popup quick view": [
+				"Показать быстрый просмотр во всплывающем окне"
+			],
+			"Show product quick view icon in popup.": [
+				"Показать иконку быстрого просмотра товара во всплывающем окне"
 			],
 			"Show selected product quick view": [
 				"Показать быстрый просмотр выбранного товара"
@@ -232,6 +236,12 @@
 			"Optional item mode": [ "Режим необязательного элемента" ],
 			"Checkbox": [ "Поле выбора" ],
 			"Delete button": [ "Кнопка удаления" ],
+			"Show search field in popup": [
+				"Показать поле поиска во всплывающем окне"
+			],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"Этот параметр позволяет показывать или скрывать поле поиска товаров во всплывающем окне."
+			],
 			"Total price - sale price color": [
 				"Общая цена - цвет цены со скидкой"
 			],
@@ -278,6 +288,13 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"Это может повысить совместимость с плагином скидок, но может привести к проблемам с памятью, если пакет содержит много товаров. Полезно для пакетов с динамическими ценами. Включайте только при необходимости."
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"Установите, сколько продуктов отображается на странице во всплывающем окне."
+			],
+			"Show Discount Badge": [ "Показать значок скидки" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"Показать или скрыть значок скидки в разделе общей цены пакета."
 			]
 		}
 	}

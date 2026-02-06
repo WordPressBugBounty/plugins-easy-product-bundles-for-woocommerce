@@ -39,7 +39,12 @@
 			],
 			"Empty bundle!": [ "Tomt bundt!" ],
 			"Show Options": [ "Vis muligheder" ],
-			"Please select a product!": [ "Vælg venligst et produkt!" ]
+			"Please select a product!": [ "Vælg venligst et produkt!" ],
+			"Search...": [ "Søg..." ],
+			"No products found": [ "Ingen produkter fundet" ],
+			"Buy all for:": [ "Køb alle for:" ],
+			"Total:": [ "" ],
+			"% OFF": [ "" ]
 		}
 	}
 }

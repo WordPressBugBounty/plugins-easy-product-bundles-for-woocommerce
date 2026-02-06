@@ -195,7 +195,8 @@
 			],
 			"Change the button label shown for bundle products in the shop page.": [
 				"غيّر تسمية الزر المعروضة لمنتجات الحزمة في صفحة المتجر."
-			]
+			],
+			"None": [ "لا شيء" ]
 		}
 	}
 }

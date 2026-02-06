@@ -31,12 +31,12 @@
 			"Bundle": [ "Paket" ],
 			"Item View": [ "Ürün Görünümü" ],
 			"Show stock": [ "Stok göster" ],
-			"Show product Stock availability in modal.": [
-				"Ürün Stok durumunu modalde gösterin."
+			"Show product Stock availability in popup.": [
+				"Ürün stok durumunu açılır pencerede gösterin."
 			],
 			"Show rating": [ "Derecelendirmeyi göster" ],
-			"Show product rating in modal.": [
-				"Ürün derecelendirmesini modalde göster."
+			"Show product rating in popup.": [
+				"Ürün derecelendirmesini açılır pencerede göster."
 			],
 			"Show description(on hover)": [
 				"Açıklamayı göster (üzerine gelindiğinde)"
@@ -90,8 +90,8 @@
 			"Link to product": [ "Ürün bağlantısı" ],
 			"New tab": [ "Yeni sekme" ],
 			"No link": [ "Bağlantı yok" ],
-			"Show the product change modal": [
-				"Ürün değiştirme modalini göster"
+			"Show the product change popup": [
+				"Ürün değiştirme açılır pencereyi göster"
 			],
 			"Coupon apply method": [ "Kupon uygulama yöntemi" ],
 			"Both of bundle and bundle items": [
@@ -110,7 +110,7 @@
 			"How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\".": [
 				"Sepetteki paket ürünler nasıl sayılır? \"Paket ve öğelerinin\" her ikisini de veya \"yalnızca paket\" veya \"yalnızca paket öğelerini\" sayın."
 			],
-			"Change product modal": [ "Ürün modalini değiştir" ],
+			"Change product popup": [ "Ürün için açılır pencereyi değiştir" ],
 			"Number of products per page": [ "Sayfa başına ürün sayısı" ],
 			"Styles": [ "Sitil" ],
 			"Product title color": [ "Ürün başlığı rengi" ],
@@ -177,9 +177,9 @@
 				"Ayarları kaydederken bir hata oluştu."
 			],
 			"Enable Updates": [ "Güncellemeleri Etkinleştir" ],
-			"Show modal quick view": [ "Modal hızlı görünümü göster" ],
-			"Show product quick view icon in modal.": [
-				"Modal içinde ürün hızlı görünüm simgesini göster."
+			"Show popup quick view": [ "Popup hızlı görünümü göster" ],
+			"Show product quick view icon in popup.": [
+				"Popup içinde ürün hızlı görünüm simgesini göster"
 			],
 			"Show selected product quick view": [
 				"Seçilen ürün hızlı görünümü göster"
@@ -232,6 +232,12 @@
 			"Optional item mode": [ "Opsiyonel öğe modu" ],
 			"Checkbox": [ "Seçim alanı" ],
 			"Delete button": [ "Silme düğmesi" ],
+			"Show search field in popup": [
+				"Açılır pencerede arama alanını göster"
+			],
+			"This option allows you to show or hide the product search field in the popup window.": [
+				"Bu seçenek, ürün arama alanını açılır pencerede göstermenize veya gizlemenize olanak tanır."
+			],
 			"Total price - sale price color": [
 				"Toplam fiyat - indirimli fiyat rengi"
 			],
@@ -278,6 +284,13 @@
 			],
 			"It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary.": [
 				"İndirim eklentisiyle uyumluluğu artırabilir, ancak paket çok fazla ürün içeriyorsa bellek sorunlarına yol açabilir. Dinamik fiyatlı paketler için kullanışlıdır. Yalnızca gerekli olduğunda etkinleştirin."
+			],
+			"Set how many products are displayed per page in the popup.": [
+				"Popup'ta sayfa başına kaç ürün görüntüleneceğini ayarlayın."
+			],
+			"Show Discount Badge": [ "İndirim Rozetini Göster" ],
+			"Show or hide the discount badge in the bundle total price section.": [
+				"Paket toplam fiyat bölümünde indirim rozetini göster veya gizle."
 			]
 		}
 	}
