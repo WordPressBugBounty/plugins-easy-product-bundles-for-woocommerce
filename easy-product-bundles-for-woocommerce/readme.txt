@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 6.15.1
+Stable tag: 6.16.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -214,6 +214,11 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 11. Product quick view
 
 == Changelog ==
+
+= 6.16.0 =
+* New: Added compatibility with “WooCommerce Subscriptions”, by Woo.
+* New: Added support for searching categories and tags by slug.
+* Improved: Ensured compatibility with WooCommerce 10.5.1.
 
 = 6.15.1 =
 * New: Updated the Quick View icon.

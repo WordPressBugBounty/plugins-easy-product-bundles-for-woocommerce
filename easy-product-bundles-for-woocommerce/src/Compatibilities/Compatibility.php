@@ -30,6 +30,10 @@ class Compatibility {
 			Square::init();
 		}
 
+		if ( class_exists( '\WC_Subscriptions' ) || class_exists( '\WCS_ATT' ) ) {
+			Subscriptions::init();
+		}
+
 		// WooCommerce Payments compatibility.
 		if ( defined( 'WCPAY_PLUGIN_FILE' ) && \WC_Payments_Features::is_customer_multi_currency_enabled() ) {
 			WooPayments::init();

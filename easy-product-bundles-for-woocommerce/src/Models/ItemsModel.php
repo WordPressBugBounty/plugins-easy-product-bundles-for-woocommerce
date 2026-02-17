@@ -11,7 +11,7 @@ class ItemsModel {
 	public static function search_products( array $args = array() ) {
 		$args = array_merge(
 			[
-				'type'  => [],
+				'type' => [],
 				'field' => 'products',
 			],
 			$args
@@ -33,12 +33,12 @@ class ItemsModel {
 
 	public static function get_products( array $args = array() ) {
 		$args = wp_parse_args( $args, array(
-			'status'   => array( 'private', 'publish' ),
-			'type'     => ProductBundles\get_product_types_for_bundle(),
-			'limit'    => -1,
-			'orderby'  => array(
+			'status' => array( 'private', 'publish' ),
+			'type' => ProductBundles\get_product_types_for_bundle(),
+			'limit' => -1,
+			'orderby' => array(
 				'menu_order' => 'ASC',
-				'ID'         => 'DESC',
+				'ID' => 'DESC',
 			),
 			'paginate' => false,
 		) );
@@ -47,12 +47,14 @@ class ItemsModel {
 		return ! empty( $products ) ? self::prepare_product_items( $products, $args['type'] ) : array();
 	}
 
-	protected static function prepare_product_items( array $products, $allowed_types = array( 'simple', 'variation', 'variable' ), $field = 'products' ) {
+	protected static function prepare_product_items( array $products, $allowed_types = null, $field = 'products' ) {
 		if ( empty( $products ) ) {
 			return array();
 		}
 
-		$pro_active      = ProductBundles\get_plugin()->is_pro_active();
+		$allowed_types = null === $allowed_types ? ProductBundles\get_product_types_for_bundle() : $allowed_types;
+
+		$pro_active = ProductBundles\get_plugin()->is_pro_active();
 		$products_select = array();
 		foreach ( $products as $product ) {
 			if ( is_numeric( $product ) ) {
@@ -88,8 +90,8 @@ class ItemsModel {
 			}
 
 			$products_select[] = (object) array(
-				'value'      => $product->get_id(),
-				'label'      => $text,
+				'value' => $product->get_id(),
+				'label' => $text,
 				'isDisabled' => $disabled,
 			);
 		}
