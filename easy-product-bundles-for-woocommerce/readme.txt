@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 6.16.0
+Stable tag: 6.17.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -214,6 +214,17 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 11. Product quick view
 
 == Changelog ==
+
+= 6.17.0 =
+* New: Added compatibility with WP Rocket caching plugin.
+* New: Added compatibility with Perfmatters caching plugin.
+* New: Added compatibility with Autoptimize plugin by Optimizing Matters.
+* New: Added compatibility with LiteSpeed Cache plugin by LiteSpeed Technologies.
+* New: Added compatibility with WP-Optimize plugin by David Anderson / Team Updraft.
+* New: Added compatibility with SG Optimizer (Speed Optimizer) plugin by SiteGround.
+* Fix: Fixed showing tooltip when popup is disabled and product doesn't have a description.
+* Fix: Fixed an issue where custom attributes of variation products were not displayed in the select dropdown.
+* Improved: Ensured compatibility with WooCommerce 10.7.0
 
 = 6.16.0 =
 * New: Added compatibility with “WooCommerce Subscriptions”, by Woo.

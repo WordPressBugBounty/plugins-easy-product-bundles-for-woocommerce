@@ -4,8 +4,7 @@ namespace AsanaPlugins\WooCommerce\ProductBundles\Admin;
 
 defined( 'ABSPATH' ) || exit;
 
-class Menu
-{
+class Menu {
 
 	protected $menus = array();
 
@@ -27,7 +26,7 @@ class Menu
 		$this->menus['product_bundles'] = add_menu_page(
 			__( 'Product Bundles', 'asnp-easy-product-bundles' ),
 			__( 'Product Bundles', 'asnp-easy-product-bundles' ),
-			apply_filters( 'asnp_wepb_product_bundles_menu_capability', 'manage_options' ),
+			apply_filters( 'asnp_wepb_product_bundles_menu_capability', 'manage_woocommerce' ),
 			'asnp-product-bundles',
 			array( $this, 'create_menu' ),
 			ASNP_WEPB_PLUGIN_URL . 'assets/images/menu-icon.png',

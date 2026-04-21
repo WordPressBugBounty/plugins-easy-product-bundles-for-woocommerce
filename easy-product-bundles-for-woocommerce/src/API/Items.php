@@ -12,30 +12,30 @@ class Items extends BaseController {
 	protected $rest_base = 'items';
 
 	public function register_routes() {
-        register_rest_route(
-            $this->namespace,
-            '/' . $this->rest_base,
-            array(
+		register_rest_route(
+			$this->namespace,
+			'/' . $this->rest_base,
+			array(
 				array(
-					'methods'             => \WP_REST_Server::READABLE,
-					'callback'            => array( $this, 'search_items' ),
+					'methods' => \WP_REST_Server::READABLE,
+					'callback' => array( $this, 'search_items' ),
 					'permission_callback' => array( $this, 'get_items_permissions_check' ),
-					'args'                => $this->get_collection_params(),
+					'args' => $this->get_collection_params(),
 				),
-                array(
-                    'methods'             => \WP_REST_Server::CREATABLE,
-                    'callback'            => array( $this, 'get_items' ),
-                    'permission_callback' => array( $this, 'create_item_permissions_check' ),
-                ),
-            )
+				array(
+					'methods' => \WP_REST_Server::CREATABLE,
+					'callback' => array( $this, 'get_items' ),
+					'permission_callback' => array( $this, 'create_item_permissions_check' ),
+				),
+			)
 		);
 	}
 
 	/**
 	 * Search items.
 	 *
-	 * @param WP_REST_Request $request Full details about the request.
-	 * @return WP_Error|WP_REST_Response
+	 * @param \WP_REST_Request $request Full details about the request.
+	 * @return \WP_Error|\WP_REST_Response
 	 */
 	public function search_items( $request ) {
 		if ( empty( $request['search'] ) ) {
@@ -63,7 +63,7 @@ class Items extends BaseController {
 			}
 
 			return new \WP_REST_Response( [ 'items' => $items ] );
-		} catch ( \Exception $e ) {
+		} catch (\Exception $e) {
 			return new \WP_Error( 'asnp_easy_product_bundles_error_in_searching_items', $e->getMessage(), array( 'status' => 400 ) );
 		}
 	}
@@ -71,8 +71,8 @@ class Items extends BaseController {
 	/**
 	 * Get items.
 	 *
-	 * @param WP_REST_Request $request Full details about the request.
-	 * @return WP_Error|WP_REST_Response
+	 * @param \WP_REST_Request $request Full details about the request.
+	 * @return \WP_Error|\WP_REST_Response
 	 */
 	public function get_items( $request ) {
 		if ( empty( $request['items'] ) ) {
@@ -101,9 +101,37 @@ class Items extends BaseController {
 			}
 
 			return new \WP_REST_Response( [ 'items' => $items ] );
-		} catch ( \Exception $e ) {
+		} catch (\Exception $e) {
 			return new \WP_Error( 'asnp_easy_product_bundles_error_in_getting_items', $e->getMessage(), array( 'status' => 400 ) );
 		}
+	}
+
+	/**
+	 * Check if a given request has access to read items.
+	 *
+	 * @param  \WP_REST_Request $request Full details about the request.
+	 * @return \WP_Error|boolean
+	 */
+	public function get_items_permissions_check( $request ) {
+		if ( ! current_user_can( 'edit_products' ) ) {
+			return new \WP_Error( 'asnp_easy_product_bundles_rest_cannot_view', __( 'Sorry, you cannot list resources.', 'asnp-easy-product-bundles' ), array( 'status' => rest_authorization_required_code() ) );
+		}
+
+		return true;
+	}
+
+	/**
+	 * Check if a given request has access to create an item.
+	 *
+	 * @param  \WP_REST_Request $request Full details about the request.
+	 * @return \WP_Error|boolean
+	 */
+	public function create_item_permissions_check( $request ) {
+		if ( ! current_user_can( 'edit_products' ) ) {
+			return new \WP_Error( 'asnp_easy_product_bundles_rest_cannot_create', __( 'Sorry, you cannot create an item.', 'asnp-easy-product-bundles' ), array( 'status' => rest_authorization_required_code() ) );
+		}
+
+		return true;
 	}
 
 }

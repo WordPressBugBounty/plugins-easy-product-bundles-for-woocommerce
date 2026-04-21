@@ -52,6 +52,7 @@ class Compatibility {
 		}
 
 		SideCart::init();
+		Cache::init();
 	}
 
 }
