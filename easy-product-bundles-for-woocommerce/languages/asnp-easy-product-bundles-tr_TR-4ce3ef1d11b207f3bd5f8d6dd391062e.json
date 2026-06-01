@@ -205,7 +205,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"Mağaza sayfasında paket ürünleri için gösterilen düğme etiketini değiştir."
 			],
-			"None": [ "Hiçbiri" ]
+			"None": [ "Hiçbiri" ],
+			"Item %d": [ "Öğe %d" ],
+			"Total discount": [ "Toplam indirim" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"Yüzde veya tutara göre paket toplam fiyatı için toplam indirim belirleyin."
+			]
 		}
 	}
 }

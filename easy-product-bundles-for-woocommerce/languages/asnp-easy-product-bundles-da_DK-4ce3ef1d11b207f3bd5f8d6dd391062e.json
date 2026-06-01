@@ -199,7 +199,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"Ændr knapetiketten, der vises for pakkeprodukter på butikssiden."
 			],
-			"None": [ "Ingen" ]
+			"None": [ "Ingen" ],
+			"Item %d": [ "Element %d" ],
+			"Total discount": [ "Samlet rabat" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"Angiv en samlet rabat for pakkens samlede pris baseret på procent eller beløb."
+			]
 		}
 	}
 }

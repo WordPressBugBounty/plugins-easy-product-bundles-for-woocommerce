@@ -34,6 +34,8 @@ class ProductBundle extends \WC_Product {
 		'sync_stock_quantity' => 'false',
 		'loop_add_to_cart' => '',
 		'bundle_button_label' => 'Configure bundle',
+		'total_discount_type' => '',
+		'total_discount' => '',
 	);
 
 	protected $is_cart_item = false;
@@ -240,15 +242,47 @@ class ProductBundle extends \WC_Product {
 		return $this->get_prop( 'loop_add_to_cart', $context );
 	}
 
+	/**
+	 * Get total_discount_type.
+	 *
+	 * @return string ''|'percentage'|'price'
+	 */
+	public function get_total_discount_type( $context = 'view' ) {
+		return $this->get_prop( 'total_discount_type', $context );
+	}
+
+	/**
+	 * Get total discount.
+	 *
+	 * @return float
+	 */
+	public function get_total_discount( $context = 'view' ) {
+		return $this->get_prop( 'total_discount', $context );
+	}
+
 	public function get_initial_data( $context = 'view' ) {
+		$regular_price = '' !== $this->get_regular_price( 'edit' ) ? $this->get_regular_price( 'edit' ) : '';
+		$sale_price = '' !== $this->get_sale_price( 'edit' ) ? $this->get_sale_price( 'edit' ) : '';
+		$include_parent_price = $this->get_include_parent_price( $context );
+		$total_discount_type = $this->get_total_discount_type( $context );
+		$total_discount = $this->get_total_discount( $context );
+
+		if ( 'true' === $include_parent_price && 'percentage' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
+			$price = '' !== $sale_price ? $sale_price : $regular_price;
+			if ( '' !== $price && 0 < (float) $price ) {
+				$price -= DiscountCalculator::calculate( $price, (float) $total_discount, 'percentage' );
+				$sale_price = 0 < $price ? $price : 0;
+			}
+		}
+
 		$data = array(
 			'product' => [
 				'id' => $this->get_id(),
 				'is_fixed_price' => $this->is_fixed_price(),
-				'regular_price' => '' !== $this->get_regular_price( 'edit' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( $this->get_regular_price( 'edit' ) ) ] ) : '',
-				'sale_price' => '' !== maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( maybe_change_price( $this->get_sale_price( 'edit' ), $this, 'sale_price' ) ) ] ) : '',
+				'regular_price' => '' !== $regular_price ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( $regular_price ) ] ) : '',
+				'sale_price' => '' !== maybe_change_price( $sale_price, $this, 'sale_price' ) ? wc_get_price_to_display( $this, [ 'price' => maybe_exchange_price( maybe_change_price( $sale_price, $this, 'sale_price' ) ) ] ) : '',
 				'display_price' => $this->get_price_html(),
-				'include_parent_price' => $this->get_include_parent_price( $context ),
+				'include_parent_price' => $include_parent_price,
 			],
 			'individual_theme' => $this->get_individual_theme( $context ),
 			'theme' => $this->get_theme( $context ),
@@ -260,7 +294,9 @@ class ProductBundle extends \WC_Product {
 			'max_items_quantity' => $this->get_max_items_quantity(),
 			'bundles' => array(),
 			'sync_stock_quantity' => $this->get_sync_stock_quantity( $context ),
-			'bundle_button_label' => $this->get_bundle_button_label( $context )
+			'bundle_button_label' => $this->get_bundle_button_label( $context ),
+			'total_discount_type' => $total_discount_type,
+			'total_discount' => $total_discount,
 		);
 
 		$items = $this->get_items();
@@ -330,30 +366,18 @@ class ProductBundle extends \WC_Product {
 				$product && $product->is_purchasable() &&
 				( ! $product->is_type( 'variable' ) || is_pro_active() )
 			) {
-				$data['product'] = prepare_product_data( $product, $item );
+				$data['product'] = prepare_product_data(
+					$product,
+					$item,
+					[
+						'total_discount_type' => $this->get_total_discount_type(),
+						'total_discount' => $this->get_total_discount()
+					]
+				);
 			} else {
 				$data['product'] = null;
 				$data['can_change_product'] = 'true';
 			}
-
-			// if ( $product && ! $product->is_type( 'variable' ) && $product->is_purchasable() ) {
-			// 	if ( $product->is_type( 'variation' ) ) {
-			// 		// Do not set variation to the default product when it has any value attributes.
-			// 		$variation_attributes = $product->get_variation_attributes( false );
-			// 		$any_attributes       = get_any_value_attributes( $variation_attributes );
-			// 		if ( empty( $any_attributes ) ) {
-			// 			$data['product'] = prepare_product_data( $product, $item );
-			// 		} else {
-			// 			$data['product']            = null;
-			// 			$data['can_change_product'] = 'true';
-			// 		}
-			// 	} else {
-			// 		$data['product'] = prepare_product_data( $product, $item );
-			// 	}
-			// } else {
-			// 	$data['product']            = null;
-			// 	$data['can_change_product'] = 'true';
-			// }
 		}
 
 		return $data;
@@ -389,12 +413,17 @@ class ProductBundle extends \WC_Product {
 			return $data;
 		}
 
+		$total_discount_type = $this->get_total_discount_type();
+		$total_discount = $this->get_total_discount();
 		foreach ( $query->products as $product ) {
 			if ( ! $product->is_purchasable() ) {
 				continue;
 			}
 
-			$extra_data = [];
+			$extra_data = [
+				'total_discount_type' => $total_discount_type,
+				'total_discount' => $total_discount
+			];
 			if ( $product->is_type( 'variation' ) ) {
 				$variation_attributes = $product->get_variation_attributes( false );
 				$any_attributes = get_any_value_attributes( $variation_attributes );
@@ -428,6 +457,15 @@ class ProductBundle extends \WC_Product {
 		$prices = $this->get_default_products_price_for( $context );
 
 		if ( empty( $prices ) || ! isset( $prices['total'] ) ) {
+			if ( 'true' === $this->get_include_parent_price( $context ) ) {
+				$total_discount = $this->get_total_discount();
+				$total_discount_type = $this->get_total_discount_type();
+				$parent_price = parent::get_price( 'edit' );
+				if ( in_array( $total_discount_type, [ 'percentage', 'price' ] ) && '' !== $total_discount && 0 < (float) $total_discount ) {
+					$parent_price -= DiscountCalculator::calculate( $parent_price, (float) $total_discount, $total_discount_type );
+				}
+				return 'view' === $context ? apply_filters( 'woocommerce_product_get_price', $parent_price, $this ) : $parent_price;
+			}
 			return parent::get_price( $context );
 		}
 
@@ -621,6 +659,24 @@ class ProductBundle extends \WC_Product {
 	}
 
 	/**
+	 * Set total_discount_type.
+	 *
+	 * @param string $total_discount_type ''|'percentage'|'price'
+	 */
+	public function set_total_discount_type( $total_discount_type ) {
+		$this->set_prop( 'total_discount_type', $total_discount_type );
+	}
+
+	/**
+	 * Set total_discount.
+	 *
+	 * @param float 
+	 */
+	public function set_total_discount( $total_discount ) {
+		$this->set_prop( 'total_discount', $total_discount );
+	}
+
+	/**
 	 * Returns false if the product cannot be bought.
 	 *
 	 * @return bool
@@ -715,10 +771,16 @@ class ProductBundle extends \WC_Product {
 		$total_display = 0;
 		$regular = 0;
 		$regular_display = 0;
+		$total_discount = $product->get_total_discount();
+		$total_discount_type = $product->get_total_discount_type();
 
 		if ( 'true' === $product->get_include_parent_price() ) {
-			if ( '' !== $product->get_price( 'edit' ) ) {
-				$total = $min_price = ( $args['exchange_price'] ? maybe_exchange_price( maybe_change_price( (float) $product->get_price( 'edit' ), $product ) ) : (float) $product->get_price( 'edit' ) );
+			$parent_price = $product->get_price( 'edit' );
+			if ( '' !== $parent_price ) {
+				if ( 'percentage' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
+					$parent_price -= DiscountCalculator::calculate( $parent_price, (float) $total_discount, 'percentage' );
+				}
+				$total = $min_price = ( $args['exchange_price'] ? maybe_exchange_price( maybe_change_price( (float) $parent_price, $product ) ) : (float) $parent_price );
 				$total_display = $min_price_display = wc_get_price_to_display( $product, [ 'price' => $total ] );
 			}
 
@@ -756,6 +818,8 @@ class ProductBundle extends \WC_Product {
 					'discount' => isset( $items[ $i ]['discount'] ) && '' !== $items[ $i ]['discount'] ? (float) $items[ $i ]['discount'] : null,
 					'is_fixed_price' => false,
 					'exchange_price' => $args['exchange_price'],
+					'total_discount_type' => $product->get_total_discount_type(),
+					'total_discount' => $product->get_total_discount(),
 				]
 			);
 
@@ -773,6 +837,22 @@ class ProductBundle extends \WC_Product {
 
 		if ( null === $min_price ) {
 			return [];
+		}
+
+		if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
+			$discount = $args['exchange_price'] ? maybe_exchange_price( (float) $total_discount ) : (float) $total_discount;
+			$total -= $discount;
+			if ( null !== $min_price ) {
+				$min_price -= $discount;
+			}
+
+			if ( 'all' === $args['return'] || 'display' === $args['return'] ) {
+				$discount_display = wc_get_price_to_display( $product, [ 'price' => $discount ] );
+				$total_display -= $discount_display;
+				if ( null !== $min_price_display ) {
+					$min_price_display -= $discount_display;
+				}
+			}
 		}
 
 		if ( 'display' === $args['return'] ) {

@@ -3,9 +3,9 @@ Contributors: asanaplugins
 Donate link: https://www.asanaplugins.com/
 Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce, composite product, wpc product bundles for woocommerce, yith woocommerce product bundles, woocommerce product bundles free, wpc product bundles, yith product bundles, custom product boxes woocommerce, woocommerce bundle plugin, woocommerce composite products, woocommerce, wordpress, ecommerce
 Requires at least: 5.0
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 6.17.0
+Stable tag: 6.18.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -214,6 +214,11 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 11. Product quick view
 
 == Changelog ==
+
+= 6.18.0 =
+* New: Added an option to apply a total discount to the bundle.
+* Improved: Ensured compatibility with WordPress version 7.0
+* Improved: Ensured compatibility with WooCommerce 10.8.1.
 
 = 6.17.0 =
 * New: Added compatibility with WP Rocket caching plugin.

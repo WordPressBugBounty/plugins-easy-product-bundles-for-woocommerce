@@ -209,6 +209,8 @@ class ExtendStoreApi {
 
 		$price         = 0;
 		$regular_price = 0;
+		$total_discount = $cart_item['data']->get_total_discount();
+		$total_discount_type = $cart_item['data']->get_total_discount_type();
 		$show_regular = true;
 		if ( ProductBundles\is_pro_active() ) {
 			if (
@@ -220,10 +222,19 @@ class ExtendStoreApi {
 		}
 
 		if ( 'true' === $cart_item['data']->get_include_parent_price() ) {
-			if ( '' !== $cart_item['data']->get_price( 'edit' ) ) {
-				$price = Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] ) :
-					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] );
+			$parent_price = $cart_item['data']->get_price( 'edit' );
+			if ( '' !== $parent_price ) {
+				if ( 0 > $parent_price ) {
+					$parent_price = ProductBundles\maybe_exchange_price( (float) $parent_price * -1 );
+					$price -= Cart\display_prices_including_tax() ?
+						wc_get_price_including_tax( $cart_item['data'], [ 'price' => $parent_price ] ) :
+						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $parent_price ] );
+				} else {
+					$parent_price = ProductBundles\maybe_exchange_price( (float) $parent_price );
+					$price = Cart\display_prices_including_tax() ?
+						wc_get_price_including_tax( $cart_item['data'], [ 'price' => $parent_price ] ) :
+						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $parent_price ] );
+				}
 			}
 
 			if ( $show_regular && '' !== $cart_item['data']->get_regular_price( 'edit' ) ) {
@@ -231,6 +242,11 @@ class ExtendStoreApi {
 					wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] ) :
 					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] );
 			}
+		} elseif ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
+			$discount = ProductBundles\maybe_exchange_price( (float) $total_discount );
+			$price -= Cart\display_prices_including_tax() ?
+				wc_get_price_including_tax( $cart_item['data'], [ 'price' => $discount ] ) :
+				wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $discount ] );
 		}
 
 		foreach ( $cart_item[ self::CART_ITEM_ITEMS_KEY ] as $item_key ) {
@@ -319,15 +335,30 @@ class ExtendStoreApi {
 		$totals   = is_array( $totals ) ? (object) $totals : $totals;
 		$decimals = isset( $totals->currency_minor_unit ) ? $totals->currency_minor_unit : wc_get_price_decimals();
 
+		$total_discount = $cart_item['data']->get_total_discount();
+		$total_discount_type = $cart_item['data']->get_total_discount_type();
 		$cart_contents = WC()->cart->get_cart();
 
 		$price = 0;
 		if ( 'true' === $cart_item['data']->get_include_parent_price() ) {
 			if ( '' !== $cart_item['data']->get_price( 'edit' ) ) {
-				$price = Cart\display_prices_including_tax() ?
-					wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] ) :
-					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_price( 'edit' ) ) ] );
+				$parent_price = $cart_item['data']->get_price( 'edit' );
+				if ( '' !== $parent_price ) {
+					if ( 0 > $parent_price ) {
+						$price -= Cart\display_prices_including_tax() ?
+							wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $parent_price * -1 ) ] ) :
+							wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $parent_price * -1 ) ] );
+					} else {
+						$price = Cart\display_prices_including_tax() ?
+							wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $parent_price ) ] ) :
+							wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $parent_price ) ] );
+					}
+				}
 			}
+		} elseif ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
+			$price -= Cart\display_prices_including_tax() ?
+				wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $total_discount ) ] ) :
+				wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $total_discount ) ] );
 		}
 
 		foreach ( $cart_item[ self::CART_ITEM_ITEMS_KEY ] as $item_key ) {

@@ -195,7 +195,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"शॉप पेज पर बंडल उत्पादों के लिए दिखाए जाने वाले बटन लेबल को बदलें।"
 			],
-			"None": [ "कोई नहीं" ]
+			"None": [ "कोई नहीं" ],
+			"Item %d": [ "आइटम %d" ],
+			"Total discount": [ "कुल छूट" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"प्रतिशत या राशि के आधार पर बंडल की कुल कीमत के लिए कुल छूट सेट करें।"
+			]
 		}
 	}
 }

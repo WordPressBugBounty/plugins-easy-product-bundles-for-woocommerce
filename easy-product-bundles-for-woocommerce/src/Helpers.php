@@ -61,7 +61,7 @@ function get_product_image_src( $product, $size = 'woocommerce_single', $placeho
 	return apply_filters( 'asnp_wepb_get_product_image_src', $src, $product, $size, $placeholder );
 }
 
-function prepare_variable_prices( $product, $item ) {
+function prepare_variable_prices( $product, $item, $extra_data = [] ) {
 	$product = is_numeric( $product ) ? wc_get_product( $product ) : $product;
 	if ( ! $product ) {
 		return [];
@@ -71,13 +71,7 @@ function prepare_variable_prices( $product, $item ) {
 		throw new \Exception( __( 'Invalid product type.', 'asnp-easy-product-bundles' ) );
 	}
 
-	if (
-		! empty( $item['discount_type'] ) &&
-		'none' !== $item['discount_type'] &&
-		isset( $item['discount'] ) &&
-		'' !== $item['discount'] &&
-		0 <= (float) $item['discount']
-	) {
+	if ( has_valid_discount( $item ) || has_valid_discount( $extra_data, 'total_discount_type', 'total_discount', 'percentage' ) ) {
 		$min_price = $product->get_variation_price( 'min' );
 		$max_price = $product->get_variation_price( 'max' );
 		if (
@@ -97,8 +91,23 @@ function prepare_variable_prices( $product, $item ) {
 			);
 		}
 
-		$min_price -= DiscountCalculator::calculate( $min_price, $item['discount'], $item['discount_type'] );
-		$max_price -= DiscountCalculator::calculate( $max_price, $item['discount'], $item['discount_type'] );
+		$has_item_discount = has_valid_discount( $item );
+		$has_total_discount = has_valid_discount( $extra_data, 'total_discount_type', 'total_discount', 'percentage' );
+
+		if ( $has_item_discount && $has_total_discount && 'percentage' === $item['discount_type'] ) {
+			$discount = (float) $item['discount'] + (float) $extra_data['total_discount'];
+			$min_price -= DiscountCalculator::calculate( $min_price, $discount, 'percentage' );
+			$max_price -= DiscountCalculator::calculate( $max_price, $discount, 'percentage' );
+		} else {
+			if ( $has_item_discount ) {
+				$min_price -= DiscountCalculator::calculate( $min_price, $item['discount'], $item['discount_type'] );
+				$max_price -= DiscountCalculator::calculate( $max_price, $item['discount'], $item['discount_type'] );
+			}
+			if ( $has_total_discount ) {
+				$min_price -= DiscountCalculator::calculate( $min_price, $extra_data['total_discount'], 'percentage' );
+				$max_price -= DiscountCalculator::calculate( $max_price, $extra_data['total_discount'], 'percentage' );
+			}
+		}
 
 		$min_price = wc_get_price_to_display( $product, [ 'price' => $min_price ] );
 		$max_price = wc_get_price_to_display( $product, [ 'price' => $max_price ] );
@@ -160,26 +169,20 @@ function prepare_variable_prices( $product, $item ) {
 	);
 }
 
-function prepare_product_prices( $product, $item ) {
+function prepare_product_prices( $product, $item, $extra_data = [] ) {
 	$product = is_numeric( $product ) ? wc_get_product( $product ) : $product;
 	if ( ! $product ) {
 		return [];
 	}
 
 	if ( $product->is_type( 'variable' ) ) {
-		return prepare_variable_prices( $product, $item );
+		return prepare_variable_prices( $product, $item, $extra_data );
 	}
 
 	$regular_price = '' !== $product->get_regular_price() ? wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ) : '';
 	$sale_price = '' !== $product->get_sale_price() && $product->is_on_sale() ? $product->get_sale_price() : '';
-	if (
-		! empty( $item['discount_type'] ) &&
-		'none' !== $item['discount_type'] &&
-		isset( $item['discount'] ) &&
-		'' !== $item['discount'] &&
-		0 <= (float) $item['discount']
-	) {
-		$sale_price = get_bundle_item_price( $product, $item );
+	if ( has_valid_discount( $item ) || has_valid_discount( $extra_data, 'total_discount_type', 'total_discount', 'percentage' ) ) {
+		$sale_price = get_bundle_item_price( $product, array_merge( $item, $extra_data ) );
 	}
 
 	if ( '' !== $sale_price ) {
@@ -253,7 +256,7 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 	}
 
 	// Add product prices.
-	$data = array_merge( $data, prepare_product_prices( $product, $item ) );
+	$data = array_merge( $data, prepare_product_prices( $product, $item, $extra_data ) );
 
 	if ( ! empty( $extra_data ) ) {
 		$data = array_merge( $data, $extra_data );
@@ -262,7 +265,7 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 	return apply_filters( 'asnp_wepb_prepare_product_data', $data, $product, $item, $extra_data );
 }
 
-function prepare_variation_data( $variation, $variable = null, $item = [] ) {
+function prepare_variation_data( $variation, $variable = null, $item = [], $extra_data = [] ) {
 	if ( ! $variation ) {
 		return array();
 	}
@@ -277,7 +280,7 @@ function prepare_variation_data( $variation, $variable = null, $item = [] ) {
 	$products = [];
 	$variation_attributes = $variation->get_variation_attributes( false );
 	$any_attributes = get_any_value_attributes( $variation_attributes );
-	$extra_data = [ 'attributes' => [] ];
+	$extra_data = array_merge( $extra_data, [ 'attributes' => [] ] );
 	if ( empty( $any_attributes ) ) {
 		if ( ! empty( $variation_attributes ) ) {
 			foreach ( $variation_attributes as $key => $attribute ) {
@@ -666,14 +669,7 @@ function get_bundle_item_price( $product, array $args ) {
 
 	$args = array_merge( [ 'exchange_price' => true ], $args );
 
-	if (
-		( ! isset( $args['is_fixed_price'] ) || ! $args['is_fixed_price'] ) &&
-		! empty( $args['discount_type'] ) &&
-		'none' !== $args['discount_type'] &&
-		isset( $args['discount'] ) &&
-		'' !== $args['discount'] &&
-		0 <= (float) $args['discount']
-	) {
+	if ( ! isset( $args['is_fixed_price'] ) || ! $args['is_fixed_price'] ) {
 		$price = $product->get_price( 'edit' );
 		if (
 			$product->is_on_sale( 'edit' ) &&
@@ -682,7 +678,18 @@ function get_bundle_item_price( $product, array $args ) {
 			$price = $product->get_regular_price( 'edit' );
 		}
 
-		$price = $price - DiscountCalculator::calculate( $price, $args['discount'], $args['discount_type'] );
+		$item_discount = has_valid_discount( $args );
+		$total_discount = has_valid_discount( $args, 'total_discount_type', 'total_discount', 'percentage' );
+		if ( $item_discount && $total_discount && 'percentage' === $args['discount_type'] ) {
+			$price -= DiscountCalculator::calculate( $price, (float) $args['discount'] + (float) $args['total_discount'], 'percentage' );
+		} else {
+			if ( $item_discount ) {
+				$price -= DiscountCalculator::calculate( $price, $args['discount'], $args['discount_type'] );
+			}
+			if ( $total_discount ) {
+				$price -= DiscountCalculator::calculate( $price, $args['total_discount'], 'percentage' );
+			}
+		}
 
 		return $args['exchange_price'] ? maybe_exchange_price( $price ) : $price;
 	}
@@ -926,4 +933,13 @@ function maybe_convert_items_to_json( $items ) {
 	$items = wp_json_encode( $items );
 
 	return false !== $items ? $items : '';
+}
+
+function has_valid_discount( $item, $type_key = 'discount_type', $amount_key = 'discount', $discount_type = 'all' ) {
+	return ! empty( $item[ $type_key ] ) &&
+		'none' !== $item[ $type_key ] &&
+		( 'all' === $discount_type || $item[ $type_key ] === $discount_type ) &&
+		isset( $item[ $amount_key ] ) &&
+		'' !== $item[ $amount_key ] &&
+		0 <= (float) $item[ $amount_key ];
 }

@@ -2,14 +2,14 @@
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 6.17.0\n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 6.18.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-04-19T21:32:24+00:00\n"
+"POT-Creation-Date: 2026-05-31T20:27:39+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: asnp-easy-product-bundles\n"
@@ -67,21 +67,21 @@ msgstr ""
 msgid "Product Bundles"
 msgstr ""
 
-#: src/Admin/ProductBundle.php:200
-#: src/ProductBundle.php:297
+#: src/Admin/ProductBundle.php:204
+#: src/ProductBundle.php:333
 #: assets/js/admin/product/index.js:2
 #: assets/js/shared/index.js:2
 msgid "Please select a product!"
 msgstr ""
 
-#: src/Admin/ProductBundle.php:201
-#: src/ProductBundle.php:298
+#: src/Admin/ProductBundle.php:205
+#: src/ProductBundle.php:334
 #: assets/js/admin/product/index.js:2
 msgid "Please select your product!"
 msgstr ""
 
-#: src/Admin/ProductBundle.php:202
-#: src/ProductBundle.php:299
+#: src/Admin/ProductBundle.php:206
+#: src/ProductBundle.php:335
 #: assets/js/admin/product/index.js:2
 msgid "Please select your product"
 msgstr ""
@@ -154,25 +154,25 @@ msgstr ""
 msgid "Parent product is invalid."
 msgstr ""
 
-#: src/API/FilterProducts.php:136
+#: src/API/FilterProducts.php:141
 msgid "Parent product is not a valid type."
 msgstr ""
 
-#: src/API/FilterProducts.php:147
+#: src/API/FilterProducts.php:152
 msgid "Variable is required."
 msgstr ""
 
-#: src/API/FilterProducts.php:184
-#: src/API/FilterProducts.php:223
+#: src/API/FilterProducts.php:189
+#: src/API/FilterProducts.php:228
 #, php-format
 msgid "Filter by %s"
 msgstr ""
 
-#: src/API/FilterProducts.php:201
+#: src/API/FilterProducts.php:206
 msgid "Variation is required."
 msgstr ""
 
-#: src/API/FilterProducts.php:249
+#: src/API/FilterProducts.php:254
 msgid "Filter variable product variations or all products."
 msgstr ""
 
@@ -230,13 +230,13 @@ msgstr ""
 msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s or greater to be installed and active."
 msgstr ""
 
-#: src/ProductBundle.php:177
-#: src/ProductBundle.php:683
+#: src/ProductBundle.php:179
+#: src/ProductBundle.php:739
 #: assets/js/admin/product/index.js:2
 msgid "Configure bundle"
 msgstr ""
 
-#: src/ProductBundle.php:364
+#: src/ProductBundle.php:388
 #: assets/js/shared/index.js:2
 msgid "Item index is required."
 msgstr ""
@@ -353,26 +353,26 @@ msgstr ""
 msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1146
+#: src/ProductBundleHooks.php:1218
 #, php-format
 msgid "(Bundled in %s)"
 msgstr ""
 
-#: src/ProductBundleHooks.php:1222
-#: src/ProductBundleHooks.php:1234
+#: src/ProductBundleHooks.php:1294
+#: src/ProductBundleHooks.php:1306
 msgid "Invalid bundle product."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1227
-#: src/ProductBundleHooks.php:1232
+#: src/ProductBundleHooks.php:1299
+#: src/ProductBundleHooks.php:1304
 msgid "Bundle product has not default items to add it to the order."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1291
+#: src/ProductBundleHooks.php:1374
 msgid "Can not add bundle product to the order."
 msgstr ""
 
-#: src/ProductBundleHooks.php:1301
+#: src/ProductBundleHooks.php:1384
 msgid "Can not add bundle item to the order."
 msgstr ""
 
@@ -1317,6 +1317,11 @@ msgid "Change the pop-up header title"
 msgstr ""
 
 #: assets/js/admin/product/index.js:2
+#, js-format
+msgid "Item %d"
+msgstr ""
+
+#: assets/js/admin/product/index.js:2
 msgid "Duplicate"
 msgstr ""
 
@@ -1450,6 +1455,14 @@ msgstr ""
 
 #: assets/js/admin/product/index.js:2
 msgid "Change the button label shown for bundle products in the shop page."
+msgstr ""
+
+#: assets/js/admin/product/index.js:2
+msgid "Total discount"
+msgstr ""
+
+#: assets/js/admin/product/index.js:2
+msgid "Set a total discount for the bundle total price based on percentage or price."
 msgstr ""
 
 #: assets/js/admin/product/index.js:2

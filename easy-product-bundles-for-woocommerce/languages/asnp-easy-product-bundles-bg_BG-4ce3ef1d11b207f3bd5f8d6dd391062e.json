@@ -211,7 +211,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"Променете етикета на бутона, показан за пакетни продукти в страницата на магазина."
 			],
-			"None": [ "Няма" ]
+			"None": [ "Няма" ],
+			"Item %d": [ "Елемент %d" ],
+			"Total discount": [ "Обща отстъпка" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"Задайте обща отстъпка за общата цена на пакета въз основа на процент или сума."
+			]
 		}
 	}
 }

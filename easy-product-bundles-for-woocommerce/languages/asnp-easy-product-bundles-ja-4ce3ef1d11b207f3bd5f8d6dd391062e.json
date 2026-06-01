@@ -195,7 +195,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"ショップページで表示されるバンドル商品のボタンラベルを変更します。"
 			],
-			"None": [ "なし" ]
+			"None": [ "なし" ],
+			"Item %d": [ "アイテム %d" ],
+			"Total discount": [ "合計割引" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"パーセンテージまたは金額に基づいて、バンドルの合計価格に対する合計割引を設定します。"
+			]
 		}
 	}
 }

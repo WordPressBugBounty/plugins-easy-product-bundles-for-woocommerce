@@ -75,7 +75,9 @@ class ProductBundle {
 			'default_products',
 			'hide_items_price',
 			'sync_stock_quantity',
-			'bundle_button_label'
+			'bundle_button_label',
+			'total_discount_type',
+			'total_discount',
 		);
 		foreach ( $fields as $field ) {
 			delete_post_meta( $post_id, '_' . $field );
@@ -111,6 +113,8 @@ class ProductBundle {
 				'default_products' => ! empty( $default_products ) ? json_encode( $default_products ) : '',
 				'loop_add_to_cart' => ! empty( $config['loop_add_to_cart'] ) ? 'true' : 'false',
 				'bundle_button_label' => ! empty( $_POST['asnp_wepb_bundle_button_label'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_button_label'] ) ) : '',
+				'total_discount_type' => isset( $_POST['asnp_wepb_total_discount_type'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_total_discount_type'] ) ) : '',
+				'total_discount' => isset( $_POST['asnp_wepb_total_discount'] ) && '' !== $_POST['asnp_wepb_total_discount'] ? wc_format_decimal( wp_unslash( $_POST['asnp_wepb_total_discount'] ) ) : '',
 			]
 		);
 

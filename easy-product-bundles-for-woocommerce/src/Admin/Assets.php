@@ -147,6 +147,8 @@ class Assets {
 			'sync_stock_quantity' => $product->get_sync_stock_quantity(),
 			'bundles' => ! empty( $items ) ? $items : [],
 			'bundle_button_label' => $product->get_bundle_button_label(),
+			'total_discount_type' => $product->get_total_discount_type(),
+			'total_discount' => $product->get_total_discount(),
 		];
 	}
 

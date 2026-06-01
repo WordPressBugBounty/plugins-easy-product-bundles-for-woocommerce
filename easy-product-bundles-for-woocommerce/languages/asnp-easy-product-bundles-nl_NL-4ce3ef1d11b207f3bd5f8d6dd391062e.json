@@ -207,7 +207,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"Wijzig het knoplabel dat wordt weergegeven voor bundelproducten op de winkelpagina."
 			],
-			"None": [ "Geen" ]
+			"None": [ "Geen" ],
+			"Item %d": [ "Item %d" ],
+			"Total discount": [ "Totale korting" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"Stel een totale korting in voor de totale bundelprijs op basis van percentage of bedrag."
+			]
 		}
 	}
 }

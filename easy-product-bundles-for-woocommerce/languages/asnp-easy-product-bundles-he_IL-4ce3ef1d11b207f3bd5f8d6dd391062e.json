@@ -191,7 +191,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"שנה את תווית הכפתור המוצגת עבור מוצרי חבילה בדף החנות."
 			],
-			"None": [ "אין" ]
+			"None": [ "אין" ],
+			"Item %d": [ "פריט %d" ],
+			"Total discount": [ "הנחה כוללת" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"הגדר הנחה כוללת למחיר הכולל של החבילה על בסיס אחוז או סכום."
+			]
 		}
 	}
 }

@@ -202,7 +202,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"Altere a etiqueta do botão exibida para produtos em pacote na página da loja."
 			],
-			"None": [ "Nenhum" ]
+			"None": [ "Nenhum" ],
+			"Item %d": [ "Item %d" ],
+			"Total discount": [ "Desconto total" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"Defina um desconto total para o preço total do pacote com base em porcentagem ou valor."
+			]
 		}
 	}
 }

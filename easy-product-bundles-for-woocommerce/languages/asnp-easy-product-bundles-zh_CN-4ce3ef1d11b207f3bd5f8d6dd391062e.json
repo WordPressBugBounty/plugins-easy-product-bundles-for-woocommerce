@@ -184,7 +184,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"更改商店页面中显示的套餐产品按钮标签。"
 			],
-			"None": [ "无" ]
+			"None": [ "无" ],
+			"Item %d": [ "项目 %d" ],
+			"Total discount": [ "总折扣" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"根据百分比或金额为捆绑包的总价设置总折扣。"
+			]
 		}
 	}
 }

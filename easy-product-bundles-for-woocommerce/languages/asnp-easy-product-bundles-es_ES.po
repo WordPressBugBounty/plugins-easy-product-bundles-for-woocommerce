@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Easy Product Bundles for WooCommerce 6.9.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "POT-Creation-Date: 2025-09-10T21:42:35+00:00\n"
-"PO-Revision-Date: 2026-01-03 19:58+0330\n"
+"PO-Revision-Date: 2026-02-16 14:37+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -1475,3 +1475,15 @@ msgstr "% DE DESCUENTO"
 #: assets/js/shared/index.js:2
 msgid "Buy all for:"
 msgstr "Comprar todo por:"
+
+#: assets/js/admin/product/index.js:2
+msgid "Item %d"
+msgstr "Elemento %d"
+
+#: assets/js/admin/product/index.js:2
+msgid "Total discount"
+msgstr "Descuento total"
+
+#: assets/js/admin/product/index.js:2
+msgid "Set a total discount for the bundle total price based on percentage or price."
+msgstr "Establezca un descuento total para el precio total del paquete según el porcentaje o el importe."

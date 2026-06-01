@@ -196,7 +196,13 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"غيّر تسمية الزر المعروضة لمنتجات الحزمة في صفحة المتجر."
 			],
-			"None": [ "لا شيء" ]
+			"None": [ "لا شيء" ],
+			"Item %d": [ "العنصر %d" ],
+			"Apply to the parent product": [ "تطبيق على المنتج الرئيسي" ],
+			"Total discount": [ "الخصم الإجمالي" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"تعيين خصم إجمالي لسعر الحزمة بناءً على النسبة المئوية أو المبلغ."
+			]
 		}
 	}
 }

@@ -202,7 +202,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"برچسب دکمه نمایش داده‌شده برای محصولات بسته در صفحه فروشگاه را تغییر دهید."
 			],
-			"None": [ "هیچکدام" ]
+			"None": [ "هیچکدام" ],
+			"Item %d": [ "آیتم %d" ],
+			"Total discount": [ "تخفیف کل" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"یک تخفیف کلی برای قیمت نهایی باندل بر اساس درصد یا مبلغ تنظیم کنید."
+			]
 		}
 	}
 }

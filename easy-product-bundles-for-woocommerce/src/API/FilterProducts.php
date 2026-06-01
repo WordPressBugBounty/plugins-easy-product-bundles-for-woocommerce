@@ -12,17 +12,17 @@ class FilterProducts extends BaseController {
 	protected $rest_base = 'filter-products';
 
 	public function register_routes() {
-        register_rest_route(
-            $this->namespace,
-            '/' . $this->rest_base,
-            array(
+		register_rest_route(
+			$this->namespace,
+			'/' . $this->rest_base,
+			array(
 				array(
-					'methods'             => \WP_REST_Server::READABLE,
-					'callback'            => array( $this, 'filter' ),
+					'methods' => \WP_REST_Server::READABLE,
+					'callback' => array( $this, 'filter' ),
 					'permission_callback' => '__return_true',
-					'args'                => $this->get_collection_params(),
+					'args' => $this->get_collection_params(),
 				),
-            )
+			)
 		);
 	}
 
@@ -78,12 +78,12 @@ class FilterProducts extends BaseController {
 
 		try {
 			$data = $product->get_item_products( array(
-				'index'  => $index,
-				'page'   => $page,
-				'limit'  => ProductBundles\get_plugin()->settings->get_setting( 'modal_products_limit', 12 ),
+				'index' => $index,
+				'page' => $page,
+				'limit' => ProductBundles\get_plugin()->settings->get_setting( 'modal_products_limit', 12 ),
 				'search' => $search,
 			) );
-		} catch ( \Exception $e ) {
+		} catch (\Exception $e) {
 			return new \WP_Error( 'asnp_easy_product_bundles_filter_failed', $e->getMessage(), array( 'status' => 500 ) );
 		}
 
@@ -107,7 +107,7 @@ class FilterProducts extends BaseController {
 		}
 
 		$items = $product->get_items();
-		if ( empty( $items ) || empty( $items[ (int) $index ] )) {
+		if ( empty( $items ) || empty( $items[ (int) $index ] ) ) {
 			return new \WP_Error( 'asnp_easy_product_bundles_product_invalid', __( 'Product is invalid.', 'asnp-easy-product-bundles' ), array( 'status' => 400 ) );
 		}
 		$item = $items[ (int) $index ];
@@ -122,27 +122,32 @@ class FilterProducts extends BaseController {
 			return new \WP_Error( 'asnp_easy_product_bundles_parent_invalid', __( 'Parent product is invalid.', 'asnp-easy-product-bundles' ), array( 'status' => 400 ) );
 		}
 
+		$extra_data = [
+			'total_discount_type' => $product->get_total_discount_type(),
+			'total_discount' => $product->get_total_discount(),
+		];
+
 		try {
 			switch ( $parent->get_type() ) {
 				case 'variable':
-					$data = $this->get_variations( $parent, $item );
+					$data = $this->get_variations( $parent, $item, $extra_data );
 					break;
 
 				case 'variation':
-					$data = $this->get_variation_childs( $parent, $item );
+					$data = $this->get_variation_childs( $parent, $item, $extra_data );
 					break;
 
 				default:
 					throw new \Exception( __( 'Parent product is not a valid type.', 'asnp-easy-product-bundles' ) );
 			}
-		} catch ( \Exception $e ) {
+		} catch (\Exception $e) {
 			return new \WP_Error( 'asnp_easy_product_bundles_childs_error', $e->getMessage(), array( 'status' => 400 ) );
 		}
 
 		return new \WP_REST_Response( $data );
 	}
 
-	protected function get_variations( $variable, $item ) {
+	protected function get_variations( $variable, $item, $extra_data = [] ) {
 		if ( ! $variable ) {
 			throw new \Exception( __( 'Variable is required.', 'asnp-easy-product-bundles' ) );
 		}
@@ -171,7 +176,7 @@ class FilterProducts extends BaseController {
 				continue;
 			}
 
-			$data['products'] = array_merge( $data['products'], ProductBundles\prepare_variation_data( $variation, $variable, $item ) );
+			$data['products'] = array_merge( $data['products'], ProductBundles\prepare_variation_data( $variation, $variable, $item, $extra_data ) );
 		}
 
 		if ( empty( $data['products'] ) ) {
@@ -181,13 +186,13 @@ class FilterProducts extends BaseController {
 		$attributes = $variable->get_variation_attributes();
 		foreach ( $attributes as $attribute_name => $options ) {
 			$data['attribute_options'][] = [
-				'name'    => apply_filters( 'asnp_wepb_variation_attribute_options_attribute_name', sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), wc_attribute_label( $attribute_name, $variable ) ), $attribute_name ),
-				'id'      => esc_attr( sanitize_title( $attribute_name ) ),
+				'name' => apply_filters( 'asnp_wepb_variation_attribute_options_attribute_name', sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), wc_attribute_label( $attribute_name, $variable ) ), $attribute_name ),
+				'id' => esc_attr( sanitize_title( $attribute_name ) ),
 				'options' => ProductBundles\get_variation_attribute_options(
 					[
-						'options'   => $options,
+						'options' => $options,
 						'attribute' => $attribute_name,
-						'product'   => $variable,
+						'product' => $variable,
 					]
 				),
 			];
@@ -196,7 +201,7 @@ class FilterProducts extends BaseController {
 		return $data;
 	}
 
-	protected function get_variation_childs( $variation, $item ) {
+	protected function get_variation_childs( $variation, $item, $extra_data = [] ) {
 		if ( ! $variation ) {
 			throw new \Exception( __( 'Variation is required.', 'asnp-easy-product-bundles' ) );
 		}
@@ -204,7 +209,7 @@ class FilterProducts extends BaseController {
 		$variable = wc_get_product( $variation->get_parent_id() );
 
 		$data = [
-			'products'          => ProductBundles\prepare_variation_data( $variation, $variable, $item ),
+			'products' => ProductBundles\prepare_variation_data( $variation, $variable, $item, $extra_data ),
 			'attribute_options' => [],
 		];
 
@@ -213,20 +218,20 @@ class FilterProducts extends BaseController {
 		}
 
 		$variation_attributes = $variation->get_variation_attributes( false );
-		$attributes           = $variable->get_variation_attributes();
+		$attributes = $variable->get_variation_attributes();
 		foreach ( $attributes as $attribute_name => $options ) {
 			if ( ! empty( $variation_attributes[ sanitize_title( $attribute_name ) ] ) ) {
 				continue;
 			}
 
 			$data['attribute_options'][] = [
-				'name'    => apply_filters( 'asnp_wepb_variation_attribute_options_attribute_name', sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), wc_attribute_label( $attribute_name, $variable ) ), $attribute_name ),
-				'id'      => esc_attr( sanitize_title( $attribute_name ) ),
+				'name' => apply_filters( 'asnp_wepb_variation_attribute_options_attribute_name', sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), wc_attribute_label( $attribute_name, $variable ) ), $attribute_name ),
+				'id' => esc_attr( sanitize_title( $attribute_name ) ),
 				'options' => ProductBundles\get_variation_attribute_options(
 					[
-						'options'   => $options,
+						'options' => $options,
 						'attribute' => $attribute_name,
-						'product'   => $variable,
+						'product' => $variable,
 					]
 				),
 			];
@@ -246,8 +251,8 @@ class FilterProducts extends BaseController {
 		$params = parent::get_collection_params();
 
 		$params['filter'] = array(
-			'description'       => __( 'Filter variable product variations or all products.', 'asnp-easy-product-bundles' ),
-			'type'              => 'string',
+			'description' => __( 'Filter variable product variations or all products.', 'asnp-easy-product-bundles' ),
+			'type' => 'string',
 			'sanitize_callback' => 'sanitize_key',
 			'validate_callback' => 'rest_validate_request_arg',
 		);

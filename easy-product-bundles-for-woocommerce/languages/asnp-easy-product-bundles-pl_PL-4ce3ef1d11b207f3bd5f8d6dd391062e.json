@@ -202,7 +202,12 @@
 			"Change the button label shown for bundle products in the shop page.": [
 				"Zmień etykietę przycisku wyświetlaną dla produktów pakietowych na stronie sklepu."
 			],
-			"None": [ "Żaden" ]
+			"None": [ "Żaden" ],
+			"Item %d": [ "Element %d" ],
+			"Total discount": [ "Łączny rabat" ],
+			"Set a total discount for the bundle total price based on percentage or price.": [
+				"Ustaw łączny rabat dla całkowitej ceny zestawu na podstawie procentu lub kwoty."
+			]
 		}
 	}
 }
