@@ -319,12 +319,26 @@ class ProductBundle extends \WC_Product {
 			return array();
 		}
 
+		$is_optional = isset( $item['optional'] ) && 'true' === $item['optional'];
+
+		$qty_val = ( isset( $item['quantity'] ) && '' !== trim( $item['quantity'] ) ) ? absint( $item['quantity'] ) : 1;
+		$min_val = ( isset( $item['min_quantity'] ) && '' !== trim( $item['min_quantity'] ) ) ? absint( $item['min_quantity'] ) : 1;
+
+		if ( ! $is_optional ) {
+			if ( $qty_val < 1 ) {
+				$qty_val = 1;
+			}
+			if ( $min_val < 1 ) {
+				$min_val = 1;
+			}
+		}
+
 		$data = array(
 			'product' => ! empty( $item['product'] ) ? absint( $item['product'] ) : null,
 			'can_change_product' => 'false',
 			'edit_quantity' => isset( $item['edit_quantity'] ) && 'true' === $item['edit_quantity'] ? 'true' : 'false',
-			'quantity' => ! empty( $item['quantity'] ) ? absint( $item['quantity'] ) : 1,
-			'min_quantity' => ! empty( $item['min_quantity'] ) ? absint( $item['min_quantity'] ) : 1,
+			'quantity' => $qty_val,
+			'min_quantity' => $min_val,
 			'max_quantity' => ! empty( $item['max_quantity'] ) ? absint( $item['max_quantity'] ) : '',
 			'optional' => isset( $item['optional'] ) && 'true' === $item['optional'] ? 'true' : 'false',
 			'selected' => isset( $item['selected'] ) && 'false' === $item['selected'] ? 'false' : 'true',
@@ -798,9 +812,10 @@ class ProductBundle extends \WC_Product {
 
 			$optional = isset( $items[ $i ]['optional'] ) && 'true' === $items[ $i ]['optional'];
 			$not_selected = isset( $items[ $i ]['selected'] ) && 'false' === $items[ $i ]['selected'];
+			$quantity = isset( $quantities[ $i ] ) && 0 <= (int) $quantities[ $i ] ? (int) $quantities[ $i ] : 1;
 
 			// Ignore optional items.
-			if ( $optional && $not_selected && 'check_box' === $optional_mode ) {
+			if ( $optional && ( 0 >= $quantity || ( $not_selected && 'check_box' === $optional_mode ) ) ) {
 				continue;
 			}
 
@@ -825,7 +840,6 @@ class ProductBundle extends \WC_Product {
 
 			$product_price_display = wc_get_price_to_display( $item_product, [ 'price' => $product_price ] );
 
-			$quantity = isset( $quantities[ $i ] ) && 0 < (int) $quantities[ $i ] ? (int) $quantities[ $i ] : 1;
 			$min_price = null === $min_price ? $product_price * $quantity : min( $min_price, $product_price * $quantity );
 			$min_price_display = null === $min_price_display ? $product_price_display * $quantity : min( $min_price_display, $product_price_display * $quantity );
 			$total += (float) $product_price * $quantity;

@@ -14,9 +14,9 @@ class SimpleBundleItemsModel extends BaseModel {
 	public function __construct() {
 		global $wpdb;
 
-		$this->table_name  = $wpdb->prefix . 'asnp_wepb_simple_bundle_items';
+		$this->table_name = $wpdb->prefix . 'asnp_wepb_simple_bundle_items';
 		$this->primary_key = 'id';
-		$this->version     = '1.0';
+		$this->version = '1.0';
 	}
 
 	/**
@@ -28,10 +28,10 @@ class SimpleBundleItemsModel extends BaseModel {
 	 */
 	public function get_columns() {
 		return array(
-			'id'         => '%d',
-			'bundle_id'  => '%d',
+			'id' => '%d',
+			'bundle_id' => '%d',
 			'product_id' => '%d',
-			'quantity'   => '%d',
+			'quantity' => '%d',
 		);
 	}
 
@@ -47,10 +47,10 @@ class SimpleBundleItemsModel extends BaseModel {
 	}
 
 	public function add( array $args ) {
-		$args['bundle_id']  = ! empty( $args['bundle_id'] ) ? absint( $args['bundle_id'] ) : 0;
+		$args['bundle_id'] = ! empty( $args['bundle_id'] ) ? absint( $args['bundle_id'] ) : 0;
 		$args['product_id'] = ! empty( $args['product_id'] ) ? absint( $args['product_id'] ) : 0;
-		$args['quantity']   = ! empty( $args['quantity'] ) ? absint( $args['quantity'] ) : 1;
-		if ( 0 >= $args['bundle_id']   || 0 >= $args['product_id'] ) {
+		$args['quantity'] = ( isset( $args['quantity'] ) && '' !== trim( $args['quantity'] ) ) ? absint( $args['quantity'] ) : 1;
+		if ( 0 >= $args['bundle_id'] || 0 >= $args['product_id'] ) {
 			return false;
 		}
 
@@ -60,7 +60,7 @@ class SimpleBundleItemsModel extends BaseModel {
 	}
 
 	public function get_item( $bundle_id, $product_id, $output = OBJECT ) {
-		$bundle_id  = absint( $bundle_id );
+		$bundle_id = absint( $bundle_id );
 		$product_id = absint( $product_id );
 		if ( 0 >= $bundle_id || 0 >= $product_id ) {
 			return false;
@@ -94,7 +94,7 @@ class SimpleBundleItemsModel extends BaseModel {
 	}
 
 	public function get_bundle( $bundle_id ) {
-		$bundle_id  = absint( $bundle_id );
+		$bundle_id = absint( $bundle_id );
 		if ( 0 >= $bundle_id ) {
 			return false;
 		}

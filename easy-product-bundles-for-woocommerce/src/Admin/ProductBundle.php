@@ -283,11 +283,20 @@ class ProductBundle {
 				case 'quantity':
 				case 'min_quantity':
 				case 'max_quantity':
-					if ( ! empty( $value ) ) {
-						$bundle_item[ $key ] = absint( $value );
-					} elseif ( isset( $defaults[ $key ] ) ) {
-						$bundle_item[ $key ] = $defaults[ $key ];
+					if ( ! isset( $value ) || '' === trim( $value ) ) {
+						$bundle_item[ $key ] = isset( $defaults[ $key ] ) ? $defaults[ $key ] : '';
+						break;
 					}
+
+					$numeric_value = absint( $value );
+
+					if ( 'max_quantity' === $key ) {
+						$bundle_item[ $key ] = $numeric_value > 0 ? $numeric_value : '';
+						break;
+					}
+
+					$is_optional = isset( $item['optional'] ) && 'true' === $item['optional'];
+					$bundle_item[ $key ] = ( ! $is_optional && $numeric_value < 1 ) ? 1 : $numeric_value;
 					break;
 
 				case 'description':
@@ -327,8 +336,12 @@ class ProductBundle {
 
 		$products = [];
 		$loop_add_to_cart = true;
+
 		foreach ( $items as $item ) {
-			if ( empty( $item['quantity'] ) || 0 >= absint( $item['quantity'] ) ) {
+			$quantity = isset( $item['quantity'] ) ? absint( $item['quantity'] ) : 0;
+			$is_optional = isset( $item['optional'] ) && 'true' === $item['optional'];
+
+			if ( ! $is_optional && 0 >= $quantity ) {
 				return [];
 			}
 
@@ -350,14 +363,14 @@ class ProductBundle {
 
 			// Disable loop add to cart for not selected optional item.
 			if ( $loop_add_to_cart && isset( $item['optional'] ) && 'true' === $item['optional'] ) {
-				if ( ! isset( $item['selected'] ) || 'true' !== $item['selected'] ) {
+				if ( 0 >= $quantity || ! isset( $item['selected'] ) || 'true' !== $item['selected'] ) {
 					$loop_add_to_cart = false;
 				}
 			}
 
 			$products[] = [
 				'id' => $product->get_id(),
-				'qty' => absint( $item['quantity'] ),
+				'qty' => $quantity,
 			];
 		}
 
