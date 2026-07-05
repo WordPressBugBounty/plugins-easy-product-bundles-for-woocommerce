@@ -49,7 +49,7 @@ class SimpleBundleItemsModel extends BaseModel {
 	public function add( array $args ) {
 		$args['bundle_id'] = ! empty( $args['bundle_id'] ) ? absint( $args['bundle_id'] ) : 0;
 		$args['product_id'] = ! empty( $args['product_id'] ) ? absint( $args['product_id'] ) : 0;
-		$args['quantity'] = ( isset( $args['quantity'] ) && '' !== trim( $args['quantity'] ) ) ? absint( $args['quantity'] ) : 1;
+		$args['quantity'] = ( isset( $args['quantity'] ) && '' !== trim( $args['quantity'] ) ) ? wc_stock_amount( $args['quantity'] ) : 1;
 		if ( 0 >= $args['bundle_id'] || 0 >= $args['product_id'] ) {
 			return false;
 		}

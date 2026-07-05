@@ -202,7 +202,9 @@
 			"Total discount": [ "الخصم الإجمالي" ],
 			"Set a total discount for the bundle total price based on percentage or price.": [
 				"تعيين خصم إجمالي لسعر الحزمة بناءً على النسبة المئوية أو المبلغ."
-			]
+			],
+			"To set the quantity to 0,": [ "لتعيين الكمية إلى 0،" ],
+			"make this item optional.": [ "اجعل هذا العنصر اختيارياً." ]
 		}
 	}
 }

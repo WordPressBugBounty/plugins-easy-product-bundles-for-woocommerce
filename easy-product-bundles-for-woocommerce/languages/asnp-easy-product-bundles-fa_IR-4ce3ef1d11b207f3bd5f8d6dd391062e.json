@@ -207,7 +207,9 @@
 			"Total discount": [ "تخفیف کل" ],
 			"Set a total discount for the bundle total price based on percentage or price.": [
 				"یک تخفیف کلی برای قیمت نهایی باندل بر اساس درصد یا مبلغ تنظیم کنید."
-			]
+			],
+			"To set the quantity to 0,": [ "برای تنظیم تعداد روی 0،" ],
+			"make this item optional.": [ "این آیتم را اختیاری کنید." ]
 		}
 	}
 }

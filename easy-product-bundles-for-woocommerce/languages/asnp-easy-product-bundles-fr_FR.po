@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Easy Product Bundles for WooCommerce 6.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "POT-Creation-Date: 2025-09-09T20:02:22+00:00\n"
-"PO-Revision-Date: 2026-02-16 14:38+0330\n"
+"PO-Revision-Date: 2026-06-30 17:19+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -1489,3 +1489,11 @@ msgstr "Remise totale"
 #: assets/js/admin/product/index.js:2
 msgid "Set a total discount for the bundle total price based on percentage or price."
 msgstr "Définissez une remise totale pour le prix total du lot en fonction d’un pourcentage ou d’un montant."
+
+#: assets/js/admin/product/index.js:2
+msgid "To set the quantity to 0,"
+msgstr "Pour définir la quantité sur 0,"
+
+#: assets/js/admin/product/index.js:2
+msgid "make this item optional."
+msgstr "rendez cet article facultatif."

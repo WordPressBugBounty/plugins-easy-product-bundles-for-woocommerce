@@ -600,7 +600,7 @@ function get_quantities_from_bundle_items( $items ) {
 	if ( is_json( $items ) ) {
 		$items = json_decode( $items, true );
 		return array_map( function ( $item ) {
-			return isset( $item['qty'] ) ? absint( $item['qty'] ) : 0;
+			return isset( $item['qty'] ) ? wc_stock_amount( $item['qty'] ) : 0;
 		}, $items );
 	}
 
@@ -609,7 +609,7 @@ function get_quantities_from_bundle_items( $items ) {
 	return array_map( function ( $item ) {
 		$item = explode( ':', $item );
 		if ( 1 < count( $item ) && is_numeric( $item[1] ) ) {
-			return absint( $item[1] );
+			return wc_stock_amount( $item[1] );
 		}
 		return 0;
 	}, $items );
@@ -778,7 +778,7 @@ function add_simple_bundle_items( $product ) {
 				$model->add( [
 					'bundle_id' => $product->get_id(),
 					'product_id' => (int) $default_products[ $i ],
-					'quantity' => (int) $quantities[ $i ],
+					'quantity' => wc_stock_amount( $quantities[ $i ] ),
 				] );
 			}
 		}
@@ -920,13 +920,13 @@ function maybe_convert_items_to_json( $items ) {
 
 			return [
 				'id' => absint( $item[0] ),
-				'qty' => ! empty( $item[1] ) ? absint( $item[1] ) : 0,
+				'qty' => ! empty( $item[1] ) ? wc_stock_amount( $item[1] ) : 0,
 				'attributes' => $attributes,
 			];
 		}
 		return [
 			'id' => absint( $item[0] ),
-			'qty' => ! empty( $item[1] ) ? absint( $item[1] ) : 0,
+			'qty' => ! empty( $item[1] ) ? wc_stock_amount( $item[1] ) : 0,
 		];
 	}, $items );
 

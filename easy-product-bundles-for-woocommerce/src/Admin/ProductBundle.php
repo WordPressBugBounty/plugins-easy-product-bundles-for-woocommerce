@@ -103,8 +103,8 @@ class ProductBundle {
 				'sync_stock_quantity' => isset( $_POST['asnp_wepb_sync_stock_quantity'] ) && 'true' === $_POST['asnp_wepb_sync_stock_quantity'] ? 'true' : 'false',
 				// 'edit_in_cart'             => isset( $_POST['asnp_wepb_edit_in_cart'] ) && 'true' === $_POST['asnp_wepb_edit_in_cart'] ? 'true' : 'false',
 				'shipping_fee_calculation' => isset( $_POST['asnp_wepb_shipping_fee_calculation'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_shipping_fee_calculation'] ) ) : '',
-				'min_items_quantity' => isset( $_POST['asnp_wepb_min_items_quantity'] ) && 0 < absint( $_POST['asnp_wepb_min_items_quantity'] ) ? absint( $_POST['asnp_wepb_min_items_quantity'] ) : '',
-				'max_items_quantity' => isset( $_POST['asnp_wepb_max_items_quantity'] ) && 0 < absint( $_POST['asnp_wepb_max_items_quantity'] ) ? absint( $_POST['asnp_wepb_max_items_quantity'] ) : '',
+				'min_items_quantity' => isset( $_POST['asnp_wepb_min_items_quantity'] ) && 0 < floatval( $_POST['asnp_wepb_min_items_quantity'] ) ? wc_stock_amount( $_POST['asnp_wepb_min_items_quantity'] ) : '',
+				'max_items_quantity' => isset( $_POST['asnp_wepb_max_items_quantity'] ) && 0 < floatval( $_POST['asnp_wepb_max_items_quantity'] ) ? wc_stock_amount( $_POST['asnp_wepb_max_items_quantity'] ) : '',
 				'custom_display_price' => ! empty( $_POST['asnp_wepb_custom_display_price'] ) ? wp_kses_post( $_POST['asnp_wepb_custom_display_price'] ) : '',
 				'bundle_title' => ! empty( $_POST['asnp_wepb_bundle_title'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_title'] ) ) : '',
 				'bundle_description' => ! empty( $_POST['asnp_wepb_bundle_description'] ) ? wc_clean( wp_unslash( $_POST['asnp_wepb_bundle_description'] ) ) : '',
@@ -129,7 +129,7 @@ class ProductBundle {
 				$model->add( [
 					'bundle_id' => $product->get_id(),
 					'product_id' => (int) $default['id'],
-					'quantity' => (int) $default['qty']
+					'quantity' => wc_stock_amount( $default['qty'] ),
 				] );
 			}
 		}
@@ -288,7 +288,7 @@ class ProductBundle {
 						break;
 					}
 
-					$numeric_value = absint( $value );
+					$numeric_value = wc_stock_amount( $value );
 
 					if ( 'max_quantity' === $key ) {
 						$bundle_item[ $key ] = $numeric_value > 0 ? $numeric_value : '';
@@ -338,7 +338,7 @@ class ProductBundle {
 		$loop_add_to_cart = true;
 
 		foreach ( $items as $item ) {
-			$quantity = isset( $item['quantity'] ) ? absint( $item['quantity'] ) : 0;
+			$quantity = isset( $item['quantity'] ) ? wc_stock_amount( $item['quantity'] ) : 0;
 			$is_optional = isset( $item['optional'] ) && 'true' === $item['optional'];
 
 			if ( ! $is_optional && 0 >= $quantity ) {

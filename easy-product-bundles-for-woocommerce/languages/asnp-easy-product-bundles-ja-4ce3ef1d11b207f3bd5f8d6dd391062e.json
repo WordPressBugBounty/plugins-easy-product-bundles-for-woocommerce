@@ -200,7 +200,9 @@
 			"Total discount": [ "合計割引" ],
 			"Set a total discount for the bundle total price based on percentage or price.": [
 				"パーセンテージまたは金額に基づいて、バンドルの合計価格に対する合計割引を設定します。"
-			]
+			],
+			"To set the quantity to 0,": [ "数量を0に設定するには、" ],
+			"make this item optional.": [ "この商品を任意にしてください。" ]
 		}
 	}
 }

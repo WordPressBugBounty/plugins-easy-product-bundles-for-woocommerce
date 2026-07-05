@@ -204,6 +204,10 @@
 			"Total discount": [ "Samlet rabat" ],
 			"Set a total discount for the bundle total price based on percentage or price.": [
 				"Angiv en samlet rabat for pakkens samlede pris baseret på procent eller beløb."
+			],
+			"To set the quantity to 0,": [ "For at sætte antallet til 0," ],
+			"make this item optional.": [
+				"skal du gøre dette element valgfrit."
 			]
 		}
 	}

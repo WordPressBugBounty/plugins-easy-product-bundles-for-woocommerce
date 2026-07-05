@@ -280,8 +280,8 @@ class ProductBundleHooks {
 					throw new \Exception( sprintf( __( 'Product &quot;%s&quot; is not purchasable.', 'asnp-easy-product-bundles' ), $item_product->get_name() ) );
 				}
 
-				$item_quantity = isset( $quantities[ $i ] ) ? absint( $quantities[ $i ] ) : ( ! empty( $item['quantity'] ) ? (int) $item['quantity'] : 0 );
-				if ( empty( $item_quantity ) ) {
+				$item_quantity = isset( $quantities[ $i ] ) ? wc_stock_amount( $quantities[ $i ] ) : ( ! empty( $item['quantity'] ) ? wc_stock_amount( $item['quantity'] ) : 0 );
+				if ( 0 >= $item_quantity ) {
 					throw new \Exception( sprintf( __( 'Please select a valid quantity for the bundle item &quot;%s&quot;.', 'asnp-easy-product-bundles' ), $item_product->get_name() ) );
 				}
 
@@ -362,16 +362,15 @@ class ProductBundleHooks {
 					}
 				} else {
 					if ( ! empty( $item['edit_quantity'] ) && 'true' === $item['edit_quantity'] ) {
-						if ( ! empty( $item['min_quantity'] ) && $item_quantity < (int) $item['min_quantity'] ) {
+						// Check min quantity - only if min is set and > 0
+						if ( isset( $item['min_quantity'] ) && '' !== $item['min_quantity'] && $item_quantity < wc_stock_amount( $item['min_quantity'] ) ) {
 							throw new \Exception( sprintf( __( 'Please select a valid quantity for the bundle item &quot;%s&quot;.', 'asnp-easy-product-bundles' ), $item_product->get_name() ) );
 						}
-						if ( ! empty( $item['max_quantity'] ) && $item_quantity > (int) $item['max_quantity'] ) {
+						// Check max quantity - only if max is set and not empty
+						if ( isset( $item['max_quantity'] ) && '' !== $item['max_quantity'] && $item_quantity > wc_stock_amount( $item['max_quantity'] ) ) {
 							throw new \Exception( sprintf( __( 'Please select a valid quantity for the bundle item &quot;%s&quot;.', 'asnp-easy-product-bundles' ), $item_product->get_name() ) );
 						}
-						if ( empty( $item['min_quantity'] ) && empty( $item['max_quantity'] ) && $item_quantity !== $item['quantity'] ) {
-							throw new \Exception( sprintf( __( 'Please select a valid quantity for the bundle item &quot;%s&quot;.', 'asnp-easy-product-bundles' ), $item_product->get_name() ) );
-						}
-					} elseif ( $item_quantity !== (int) $item['quantity'] ) {
+					} elseif ( $item_quantity !== wc_stock_amount( $item['quantity'] ) ) {
 						throw new \Exception( sprintf( __( 'Please select a valid quantity for the bundle item &quot;%s&quot;.', 'asnp-easy-product-bundles' ), $item_product->get_name() ) );
 					}
 				}
@@ -501,8 +500,8 @@ class ProductBundleHooks {
 				return false;
 			} else {
 				if ( ! empty( $product_items[ $i ]['edit_quantity'] ) && 'true' === $product_items[ $i ]['edit_quantity'] ) {
-					$min_quantity = ! empty( $product_items[ $i ]['min_quantity'] ) ? (int) $product_items[ $i ]['min_quantity'] * $quantity : '';
-					$max_quantity = ! empty( $product_items[ $i ]['max_quantity'] ) ? (int) $product_items[ $i ]['max_quantity'] * $quantity : '';
+					$min_quantity = ! empty( $product_items[ $i ]['min_quantity'] ) ? wc_stock_amount( $product_items[ $i ]['min_quantity'] ) * $quantity : '';
+					$max_quantity = ! empty( $product_items[ $i ]['max_quantity'] ) ? wc_stock_amount( $product_items[ $i ]['max_quantity'] ) * $quantity : '';
 
 					if ( $min_quantity && $item_quantity < $min_quantity ) {
 						wc_add_notice( sprintf( __( 'Cart update failed. The quantity of &quot;%1$s&quot; must be at least %2$d.', 'asnp-easy-product-bundles' ), $item['data']->get_name(), $min_quantity ), 'error' );
@@ -512,12 +511,8 @@ class ProductBundleHooks {
 						wc_add_notice( sprintf( __( 'Cart update failed. The quantity of &quot;%1$s&quot; cannot be higher than %2$d.', 'asnp-easy-product-bundles' ), $item['data']->get_name(), $max_quantity ), 'error' );
 						return false;
 					}
-					if ( ! $min_quantity && ! $max_quantity && $item_quantity !== (int) $product_items[ $i ]['quantity'] * $quantity ) {
-						wc_add_notice( sprintf( __( 'Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d.', 'asnp-easy-product-bundles' ), $item['data']->get_name(), (int) $product_items[ $i ]['quantity'] * $quantity ), 'error' );
-						return false;
-					}
-				} elseif ( $item_quantity !== (int) $product_items[ $i ]['quantity'] * $quantity ) {
-					wc_add_notice( sprintf( __( 'Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d.', 'asnp-easy-product-bundles' ), $item['data']->get_name(), (int) $product_items[ $i ]['quantity'] * $quantity ), 'error' );
+				} elseif ( $item_quantity !== wc_stock_amount( $product_items[ $i ]['quantity'] ) * $quantity ) {
+					wc_add_notice( sprintf( __( 'Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d.', 'asnp-easy-product-bundles' ), $item['data']->get_name(), wc_stock_amount( $product_items[ $i ]['quantity'] ) * $quantity ), 'error' );
 					return false;
 				}
 			}
@@ -615,7 +610,7 @@ class ProductBundleHooks {
 				'product_id' => $product_id,
 				'quantity' => $quantity,
 				'item_id' => (int) $ids[ $i ],
-				'item_quantity' => (int) $quantities[ $i ],
+				'item_quantity' => wc_stock_amount( $quantities[ $i ] ),
 				'variations' => isset( $attributes[ $i ] ) ? $attributes[ $i ] : [],
 				'is_fixed_price' => $is_fixed_price,
 				'hide_price' => $hide_price,
@@ -1354,7 +1349,7 @@ class ProductBundleHooks {
 					$item_product->set_price( 0 );
 				}
 
-				$order_items[] = [ $item_product, absint( $items[ $i ]['quantity'] ) * $quantity ];
+				$order_items[] = [ $item_product, wc_stock_amount( $items[ $i ]['quantity'] ) * $quantity ];
 			}
 
 			if ( ! $is_fixed_price ) {

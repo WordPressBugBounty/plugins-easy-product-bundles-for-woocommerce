@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 6.19.0
+Stable tag: 6.19.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -215,9 +215,10 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
-= 6.19.0 =
-* New: Added support for setting the quantity of optional items to 0.
-* Fix: Fixed an issue in displaying item price. 
+= 6.19.1 =
+* Feature: Added a shortcut link next to the Quantity input to quickly enable the "Optional" setting (PRO feature).
+* Fix: Fixed min/max quantity issue with 0 quantity.
+* Improved: Ensured compatibility with WooCommerce 10.9.3
 
 = 6.18.0 =
 * New: Added an option to apply a total discount to the bundle.

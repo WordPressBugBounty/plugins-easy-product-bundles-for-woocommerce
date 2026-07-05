@@ -212,7 +212,11 @@
 			"Total discount": [ "Totale korting" ],
 			"Set a total discount for the bundle total price based on percentage or price.": [
 				"Stel een totale korting in voor de totale bundelprijs op basis van percentage of bedrag."
-			]
+			],
+			"To set the quantity to 0,": [
+				"Om de hoeveelheid op 0 in te stellen,"
+			],
+			"make this item optional.": [ "maakt u dit item optioneel." ]
 		}
 	}
 }

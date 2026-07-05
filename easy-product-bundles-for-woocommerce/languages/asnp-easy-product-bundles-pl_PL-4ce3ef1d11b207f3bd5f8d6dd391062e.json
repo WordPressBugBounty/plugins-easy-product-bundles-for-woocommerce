@@ -207,7 +207,9 @@
 			"Total discount": [ "Łączny rabat" ],
 			"Set a total discount for the bundle total price based on percentage or price.": [
 				"Ustaw łączny rabat dla całkowitej ceny zestawu na podstawie procentu lub kwoty."
-			]
+			],
+			"To set the quantity to 0,": [ "Aby ustawić ilość na 0," ],
+			"make this item optional.": [ "ustaw ten element jako opcjonalny." ]
 		}
 	}
 }

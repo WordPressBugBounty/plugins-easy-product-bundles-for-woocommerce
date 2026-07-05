@@ -215,6 +215,12 @@
 			"Total discount": [ "Общая скидка" ],
 			"Set a total discount for the bundle total price based on percentage or price.": [
 				"Установите общую скидку для общей цены комплекта на основе процента или суммы."
+			],
+			"To set the quantity to 0,": [
+				"Чтобы установить количество на 0,"
+			],
+			"make this item optional.": [
+				"сделайте этот товар необязательным."
 			]
 		}
 	}

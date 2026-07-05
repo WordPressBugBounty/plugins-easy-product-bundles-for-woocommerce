@@ -196,7 +196,9 @@
 			"Total discount": [ "הנחה כוללת" ],
 			"Set a total discount for the bundle total price based on percentage or price.": [
 				"הגדר הנחה כוללת למחיר הכולל של החבילה על בסיס אחוז או סכום."
-			]
+			],
+			"To set the quantity to 0,": [ "כדי להגדיר את הכמות ל-0," ],
+			"make this item optional.": [ "הפוך פריט זה לאופציונלי." ]
 		}
 	}
 }

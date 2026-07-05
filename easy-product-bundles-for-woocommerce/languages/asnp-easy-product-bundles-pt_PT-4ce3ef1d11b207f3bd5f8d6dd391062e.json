@@ -207,7 +207,11 @@
 			"Total discount": [ "Desconto total" ],
 			"Set a total discount for the bundle total price based on percentage or price.": [
 				"Defina um desconto total para o preço total do pacote com base em porcentagem ou valor."
-			]
+			],
+			"To set the quantity to 0,": [
+				"Para definir a quantidade como 0,"
+			],
+			"make this item optional.": [ "torne este item opcional." ]
 		}
 	}
 }

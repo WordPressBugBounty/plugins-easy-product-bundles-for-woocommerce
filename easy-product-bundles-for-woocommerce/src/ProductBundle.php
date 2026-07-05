@@ -321,8 +321,8 @@ class ProductBundle extends \WC_Product {
 
 		$is_optional = isset( $item['optional'] ) && 'true' === $item['optional'];
 
-		$qty_val = ( isset( $item['quantity'] ) && '' !== trim( $item['quantity'] ) ) ? absint( $item['quantity'] ) : 1;
-		$min_val = ( isset( $item['min_quantity'] ) && '' !== trim( $item['min_quantity'] ) ) ? absint( $item['min_quantity'] ) : 1;
+		$qty_val = ( isset( $item['quantity'] ) && '' !== trim( $item['quantity'] ) ) ? wc_stock_amount( $item['quantity'] ) : 1;
+		$min_val = ( isset( $item['min_quantity'] ) && '' !== trim( $item['min_quantity'] ) ) ? wc_stock_amount( $item['min_quantity'] ) : 1;
 
 		if ( ! $is_optional ) {
 			if ( $qty_val < 1 ) {
@@ -339,7 +339,7 @@ class ProductBundle extends \WC_Product {
 			'edit_quantity' => isset( $item['edit_quantity'] ) && 'true' === $item['edit_quantity'] ? 'true' : 'false',
 			'quantity' => $qty_val,
 			'min_quantity' => $min_val,
-			'max_quantity' => ! empty( $item['max_quantity'] ) ? absint( $item['max_quantity'] ) : '',
+			'max_quantity' => ! empty( $item['max_quantity'] ) ? wc_stock_amount( $item['max_quantity'] ) : '',
 			'optional' => isset( $item['optional'] ) && 'true' === $item['optional'] ? 'true' : 'false',
 			'selected' => isset( $item['selected'] ) && 'false' === $item['selected'] ? 'false' : 'true',
 			'title' => ! empty( $item['title'] ) ? sanitize_text_field( __( $item['title'], 'asnp-easy-product-bundles' ) ) : '',
@@ -812,7 +812,7 @@ class ProductBundle extends \WC_Product {
 
 			$optional = isset( $items[ $i ]['optional'] ) && 'true' === $items[ $i ]['optional'];
 			$not_selected = isset( $items[ $i ]['selected'] ) && 'false' === $items[ $i ]['selected'];
-			$quantity = isset( $quantities[ $i ] ) && 0 <= (int) $quantities[ $i ] ? (int) $quantities[ $i ] : 1;
+			$quantity = isset( $quantities[ $i ] ) && 0 <= (float) $quantities[ $i ] ? wc_stock_amount( $quantities[ $i ] ) : 1;
 
 			// Ignore optional items.
 			if ( $optional && ( 0 >= $quantity || ( $not_selected && 'check_box' === $optional_mode ) ) ) {
@@ -942,7 +942,7 @@ class ProductBundle extends \WC_Product {
 				$default_product = wc_get_product( (int) $item['products'][0] );
 			}
 
-			$quantity = ! empty( $item['quantity'] ) && 0 < (int) $item['quantity'] ? absint( $item['quantity'] ) : 1;
+			$quantity = ! empty( $item['quantity'] ) && 0 < (float) $item['quantity'] ? wc_stock_amount( $item['quantity'] ) : 1;
 			if (
 				$default_product &&
 				( ! $default_product->is_in_stock() || ! $default_product->has_enough_stock( $quantity ) ) &&
@@ -1065,7 +1065,7 @@ class ProductBundle extends \WC_Product {
 				continue;
 			}
 
-			$quantity = ! empty( $item['quantity'] ) && 0 < (int) $item['quantity'] ? absint( $item['quantity'] ) : 1;
+			$quantity = ! empty( $item['quantity'] ) && 0 < (float) $item['quantity'] ? wc_stock_amount( $item['quantity'] ) : 1;
 			$stock = floor( $default_product->get_stock_quantity() / $quantity );
 
 			if ( null === $min_stock || $stock < $min_stock ) {
