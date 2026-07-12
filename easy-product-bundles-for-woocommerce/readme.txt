@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 6.19.1
+Stable tag: 6.19.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -214,6 +214,10 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 11. Product quick view
 
 == Changelog ==
+
+= 6.19.2 =
+* Fix: Fixed popup scrolling issues when opening the Info or Images section
+* Improved: Ensured compatibility with WooCommerce 10.9.4
 
 = 6.19.1 =
 * Feature: Added a shortcut link next to the Quantity input to quickly enable the "Optional" setting (PRO feature).
