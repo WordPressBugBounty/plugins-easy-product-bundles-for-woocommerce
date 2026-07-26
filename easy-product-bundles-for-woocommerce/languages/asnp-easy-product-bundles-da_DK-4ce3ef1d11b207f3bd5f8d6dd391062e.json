@@ -208,7 +208,9 @@
 			"To set the quantity to 0,": [ "For at sætte antallet til 0," ],
 			"make this item optional.": [
 				"skal du gøre dette element valgfrit."
-			]
+			],
+			"Article": [ "Artikel" ],
+			"Quick Tutorial": [ "Hurtig vejledning" ]
 		}
 	}
 }

@@ -44,7 +44,10 @@
 			"No products found": [ "Ingen produkter fundet" ],
 			"Buy all for:": [ "Køb alle for:" ],
 			"Total:": [ "" ],
-			"% OFF": [ "" ]
+			"% OFF": [ "" ],
+			"Product quantity": [ "Produktantal" ],
+			"Decrease quantity": [ "Reducer antal" ],
+			"Increase quantity": [ "Øg antal" ]
 		}
 	}
 }

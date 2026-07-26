@@ -48,7 +48,10 @@
 			"No products found": [ "Ürün bulunamadı" ],
 			"Buy all for:": [ "Hepsini satın al:" ],
 			"Total:": [ "Toplam:" ],
-			"% OFF": [ "% İNDİRİM" ]
+			"% OFF": [ "% İNDİRİM" ],
+			"Product quantity": [ "Ürün miktarı" ],
+			"Decrease quantity": [ "Miktarı azalt" ],
+			"Increase quantity": [ "Miktarı artır" ]
 		}
 	}
 }

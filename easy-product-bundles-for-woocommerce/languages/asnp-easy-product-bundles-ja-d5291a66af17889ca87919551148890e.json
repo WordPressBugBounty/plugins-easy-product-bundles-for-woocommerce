@@ -44,7 +44,10 @@
 			"No products found": [ "商品が見つかりません" ],
 			"Buy all for:": [ "まとめて購入:" ],
 			"Total:": [ "合計：" ],
-			"% OFF": [ "% OFF" ]
+			"% OFF": [ "% OFF" ],
+			"Product quantity": [ "商品の数量" ],
+			"Decrease quantity": [ "数量を減らす" ],
+			"Increase quantity": [ "数量を増やす" ]
 		}
 	}
 }

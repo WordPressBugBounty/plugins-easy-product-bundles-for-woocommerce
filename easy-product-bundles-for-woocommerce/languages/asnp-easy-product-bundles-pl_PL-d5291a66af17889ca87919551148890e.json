@@ -44,7 +44,10 @@
 			"No products found": [ "Nie znaleziono produktów" ],
 			"Buy all for:": [ "Kup wszystko za:" ],
 			"Total:": [ "Łącznie:" ],
-			"% OFF": [ "% OFF" ]
+			"% OFF": [ "% OFF" ],
+			"Product quantity": [ "Ilość produktu" ],
+			"Decrease quantity": [ "Zmniejsz ilość" ],
+			"Increase quantity": [ "Zwiększ ilość" ]
 		}
 	}
 }

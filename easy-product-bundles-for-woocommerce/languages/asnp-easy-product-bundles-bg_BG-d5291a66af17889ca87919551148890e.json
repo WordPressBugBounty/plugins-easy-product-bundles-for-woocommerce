@@ -48,7 +48,10 @@
 			"No products found": [ "Не са намерени продукти" ],
 			"Buy all for:": [ "Купи всички за:" ],
 			"Total:": [ "Общо:" ],
-			"% OFF": [ "% OFF" ]
+			"% OFF": [ "% OFF" ],
+			"Product quantity": [ "Количество на продукта" ],
+			"Decrease quantity": [ "Намаляване на количеството" ],
+			"Increase quantity": [ "Увеличаване на количеството" ]
 		}
 	}
 }

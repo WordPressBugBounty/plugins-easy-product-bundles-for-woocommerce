@@ -216,7 +216,9 @@
 			"To set the quantity to 0,": [
 				"Om de hoeveelheid op 0 in te stellen,"
 			],
-			"make this item optional.": [ "maakt u dit item optioneel." ]
+			"make this item optional.": [ "maakt u dit item optioneel." ],
+			"Article": [ "Artikel" ],
+			"Quick Tutorial": [ "Snelle handleiding" ]
 		}
 	}
 }

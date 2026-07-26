@@ -44,7 +44,10 @@
 			"No products found": [ "Geen producten gevonden" ],
 			"Buy all for:": [ "Alles kopen voor:" ],
 			"Total:": [ "Totaal:" ],
-			"% OFF": [ "% OFF" ]
+			"% OFF": [ "% OFF" ],
+			"Product quantity": [ "Productaantal" ],
+			"Decrease quantity": [ "Aantal verlagen" ],
+			"Increase quantity": [ "Aantal verhogen" ]
 		}
 	}
 }

@@ -43,7 +43,10 @@
 			"No products found": [ "कोई उत्पाद नहीं मिला" ],
 			"Buy all for:": [ "सब खरीदें:" ],
 			"Total:": [ "कुल:" ],
-			"% OFF": [ "% OFF" ]
+			"% OFF": [ "% OFF" ],
+			"Product quantity": [ "उत्पाद की मात्रा" ],
+			"Decrease quantity": [ "मात्रा घटाएँ" ],
+			"Increase quantity": [ "मात्रा बढ़ाएँ" ]
 		}
 	}
 }

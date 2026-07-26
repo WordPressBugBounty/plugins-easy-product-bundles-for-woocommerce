@@ -44,7 +44,10 @@
 			"No products found": [ "هیچ محصولی یافت نشد" ],
 			"Buy all for:": [ "همه را به قیمت:" ],
 			"Total:": [ "جمع کل:" ],
-			"% OFF": [ "٪ تخفیف" ]
+			"% OFF": [ "٪ تخفیف" ],
+			"Product quantity": [ "تعداد محصول" ],
+			"Decrease quantity": [ "کاهش تعداد" ],
+			"Increase quantity": [ "افزایش تعداد" ]
 		}
 	}
 }

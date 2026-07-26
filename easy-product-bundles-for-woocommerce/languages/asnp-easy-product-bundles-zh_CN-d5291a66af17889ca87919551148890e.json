@@ -44,7 +44,10 @@
 			"No products found": [ "未找到产品" ],
 			"Buy all for:": [ "全部购买，价格：" ],
 			"Total:": [ "总计：" ],
-			"% OFF": [ "% 折扣" ]
+			"% OFF": [ "% 折扣" ],
+			"Product quantity": [ "产品数量" ],
+			"Decrease quantity": [ "减少数量" ],
+			"Increase quantity": [ "增加数量" ]
 		}
 	}
 }

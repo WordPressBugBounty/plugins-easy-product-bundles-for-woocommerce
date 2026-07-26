@@ -217,7 +217,11 @@
 				"Imposta uno sconto totale per il prezzo complessivo del bundle in base a percentuale o importo."
 			],
 			"To set the quantity to 0,": [ "Per impostare la quantità a 0," ],
-			"make this item optional.": [ "rendi questo articolo facoltativo." ]
+			"make this item optional.": [
+				"rendi questo articolo facoltativo."
+			],
+			"Article": [ "Articolo" ],
+			"Quick Tutorial": [ "Tutorial rapido" ]
 		}
 	}
 }

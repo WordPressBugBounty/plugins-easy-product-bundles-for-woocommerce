@@ -44,7 +44,10 @@
 			"No products found": [ "לא נמצאו מוצרים" ],
 			"Buy all for:": [ "קנה הכל עבור:" ],
 			"Total:": [ "סך הכל:" ],
-			"% OFF": [ "% OFF" ]
+			"% OFF": [ "% OFF" ],
+			"Product quantity": [ "כמות המוצר" ],
+			"Decrease quantity": [ "הקטנת הכמות" ],
+			"Increase quantity": [ "הגדלת הכמות" ]
 		}
 	}
 }

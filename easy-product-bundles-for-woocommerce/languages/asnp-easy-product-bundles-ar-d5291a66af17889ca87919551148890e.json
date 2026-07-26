@@ -44,7 +44,10 @@
 			"No products found": [ "لم يتم العثور على منتجات" ],
 			"Buy all for:": [ "اشتري الكل مقابل:" ],
 			"Total:": [ "المجموع:" ],
-			"% OFF": [ "٪ خصم" ]
+			"% OFF": [ "٪ خصم" ],
+			"Product quantity": [ "كمية المنتج" ],
+			"Decrease quantity": [ "تقليل الكمية" ],
+			"Increase quantity": [ "زيادة الكمية" ]
 		}
 	}
 }

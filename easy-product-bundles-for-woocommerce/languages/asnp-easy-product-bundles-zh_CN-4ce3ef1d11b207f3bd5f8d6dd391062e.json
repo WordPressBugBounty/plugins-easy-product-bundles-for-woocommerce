@@ -191,7 +191,9 @@
 				"根据百分比或金额为捆绑包的总价设置总折扣。"
 			],
 			"To set the quantity to 0,": [ "要将数量设置为 0，" ],
-			"make this item optional.": [ "请将此商品设为可选。" ]
+			"make this item optional.": [ "请将此商品设为可选。" ],
+			"Article": [ "文章" ],
+			"Quick Tutorial": [ "快速教程" ]
 		}
 	}
 }

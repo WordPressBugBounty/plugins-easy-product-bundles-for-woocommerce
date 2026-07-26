@@ -209,7 +209,11 @@
 				"Ustaw łączny rabat dla całkowitej ceny zestawu na podstawie procentu lub kwoty."
 			],
 			"To set the quantity to 0,": [ "Aby ustawić ilość na 0," ],
-			"make this item optional.": [ "ustaw ten element jako opcjonalny." ]
+			"make this item optional.": [
+				"ustaw ten element jako opcjonalny."
+			],
+			"Article": [ "Artykuł" ],
+			"Quick Tutorial": [ "Szybki poradnik" ]
 		}
 	}
 }

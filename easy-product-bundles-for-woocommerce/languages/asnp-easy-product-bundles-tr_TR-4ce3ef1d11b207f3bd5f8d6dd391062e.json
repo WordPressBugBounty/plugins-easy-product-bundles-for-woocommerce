@@ -212,7 +212,9 @@
 				"Yüzde veya tutara göre paket toplam fiyatı için toplam indirim belirleyin."
 			],
 			"To set the quantity to 0,": [ "Miktarı 0 olarak ayarlamak için," ],
-			"make this item optional.": [ "bu öğeyi isteğe bağlı yapın." ]
+			"make this item optional.": [ "bu öğeyi isteğe bağlı yapın." ],
+			"Article": [ "Makale" ],
+			"Quick Tutorial": [ "Hızlı Eğitim" ]
 		}
 	}
 }

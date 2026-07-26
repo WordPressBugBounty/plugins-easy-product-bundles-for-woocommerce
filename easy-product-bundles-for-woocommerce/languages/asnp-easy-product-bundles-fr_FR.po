@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Easy Product Bundles for WooCommerce 6.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "POT-Creation-Date: 2025-09-09T20:02:22+00:00\n"
-"PO-Revision-Date: 2026-06-30 17:19+0330\n"
+"PO-Revision-Date: 2026-07-25 14:55+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -1497,3 +1497,23 @@ msgstr "Pour définir la quantité sur 0,"
 #: assets/js/admin/product/index.js:2
 msgid "make this item optional."
 msgstr "rendez cet article facultatif."
+
+#: assets/js/admin/product/index.js:2
+msgid "Quick Tutorial"
+msgstr "Tutoriel rapide"
+
+#: assets/js/admin/product/index.js:2 assets/js/admin/product/index.js:3759
+msgid "Article"
+msgstr "Article"
+
+#: assets/js/shared/index.js:2
+msgid "Product quantity"
+msgstr "Quantité du produit"
+
+#: assets/js/shared/index.js:2
+msgid "Decrease quantity"
+msgstr "Diminuer la quantité"
+
+#: assets/js/shared/index.js:2
+msgid "Increase quantity"
+msgstr "Augmenter la quantité"
