@@ -1523,3 +1523,11 @@ msgstr "Menge verringern"
 #: assets/js/shared/index.js:2
 msgid "Increase quantity"
 msgstr "Menge erhöhen"
+
+#: assets/js/admin/product/index.js:2
+msgid "Use regular prices only"
+msgstr "Brug kun almindelige priser"
+
+#: assets/js/admin/product/index.js:2
+msgid "Check this option to ignore sale prices and use only regular prices for item products and bundle pricing"
+msgstr "Markér denne indstilling for at ignorere tilbudspriser og kun bruge almindelige priser til produkter og pakkens pris."

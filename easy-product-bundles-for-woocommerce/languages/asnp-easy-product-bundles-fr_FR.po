@@ -1517,3 +1517,11 @@ msgstr "Diminuer la quantité"
 #: assets/js/shared/index.js:2
 msgid "Increase quantity"
 msgstr "Augmenter la quantité"
+
+#: assets/js/admin/product/index.js:2
+msgid "Use regular prices only"
+msgstr "Utiliser uniquement les prix réguliers" 
+
+#: assets/js/admin/product/index.js:2
+msgid "Check this option to ignore sale prices and use only regular prices for item products and bundle pricing"
+msgstr "Cochez cette option pour ignorer les prix promotionnels et utiliser uniquement les prix réguliers pour les produits et le prix du lot."

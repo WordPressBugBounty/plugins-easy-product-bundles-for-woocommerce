@@ -205,6 +205,7 @@ class ProductBundle {
 			'product_list_title' => __( 'Please select your product!', 'asnp-easy-product-bundles' ),
 			'modal_header_title' => __( 'Please select your product', 'asnp-easy-product-bundles' ),
 			'image_url' => '',
+			'use_regular_price' => 'false'
 		];
 
 		foreach ( $item as $key => $value ) {
@@ -258,6 +259,7 @@ class ProductBundle {
 				case 'optional':
 				case 'selected':
 				case 'edit_quantity':
+				case 'use_regular_price':
 					$bundle_item[ $key ] = 'true' === $value ? 'true' : 'false';
 					break;
 

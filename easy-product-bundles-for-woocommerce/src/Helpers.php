@@ -62,150 +62,197 @@ function get_product_image_src( $product, $size = 'woocommerce_single', $placeho
 }
 
 function prepare_variable_prices( $product, $item, $extra_data = [] ) {
-	$product = is_numeric( $product ) ? wc_get_product( $product ) : $product;
-	if ( ! $product ) {
-		return [];
-	}
+    // Ensure we have a valid WC_Product object instance
+    $product = is_numeric( $product ) ? wc_get_product( $product ) : $product;
+    if ( ! $product ) {
+        return [];
+    }
 
-	if ( ! $product->is_type( 'variable' ) ) {
-		throw new \Exception( __( 'Invalid product type.', 'asnp-easy-product-bundles' ) );
-	}
+    // Verify if the product type is indeed variable
+    if ( ! $product->is_type( 'variable' ) ) {
+        throw new \Exception( __( 'Invalid product type.', 'asnp-easy-product-bundles' ) );
+    }
 
-	if ( has_valid_discount( $item ) || has_valid_discount( $extra_data, 'total_discount_type', 'total_discount', 'percentage' ) ) {
-		$min_price = $product->get_variation_price( 'min' );
-		$max_price = $product->get_variation_price( 'max' );
-		if (
-			$product->is_on_sale( 'edit' ) &&
-			'regular_price' === get_plugin()->settings->get_setting( 'product_base_price', 'sale_price' )
-		) {
-			$min_price = $product->get_variation_regular_price( 'min' );
-			$max_price = $product->get_variation_regular_price( 'max' );
-		}
+    // Check if either the bundle item or global bundle settings have a valid discount active
+    if ( has_valid_discount( $item ) || has_valid_discount( $extra_data, 'total_discount_type', 'total_discount', 'percentage' ) ) {
+        
+        // 1. Force using Regular Prices as the base if 'use_regular_price' option is enabled
+        if ( isset( $item['use_regular_price'] ) && 'true' === $item['use_regular_price'] ) {
+            $min_price = $product->get_variation_regular_price( 'min' );
+            $max_price = $product->get_variation_regular_price( 'max' );
+        } else {
+            // Default logic: Fetch min/max prices (which respects native WooCommerce sales)
+            $min_price = $product->get_variation_price( 'min' );
+            $max_price = $product->get_variation_price( 'max' );
+        }
 
-		if ( '' === $min_price && '' === $max_price ) {
-			return apply_filters(
-				'asnp_wepb_prepare_variable_prices',
-				[ 'display_price' => $product->get_price_html() ],
-				$product,
-				$item
-			);
-		}
+        // Fallback check if prices couldn't be loaded properly
+        if ( '' === $min_price && '' === $max_price ) {
+            return apply_filters(
+                'asnp_wepb_prepare_variable_prices',
+                [ 'display_price' => $product->get_price_html() ],
+                $product,
+                $item
+            );
+        }
 
-		$has_item_discount = has_valid_discount( $item );
-		$has_total_discount = has_valid_discount( $extra_data, 'total_discount_type', 'total_discount', 'percentage' );
+        $has_item_discount = has_valid_discount( $item );
+        $has_total_discount = has_valid_discount( $extra_data, 'total_discount_type', 'total_discount', 'percentage' );
 
-		if ( $has_item_discount && $has_total_discount && 'percentage' === $item['discount_type'] ) {
-			$discount = (float) $item['discount'] + (float) $extra_data['total_discount'];
-			$min_price -= DiscountCalculator::calculate( $min_price, $discount, 'percentage' );
-			$max_price -= DiscountCalculator::calculate( $max_price, $discount, 'percentage' );
-		} else {
-			if ( $has_item_discount ) {
-				$min_price -= DiscountCalculator::calculate( $min_price, $item['discount'], $item['discount_type'] );
-				$max_price -= DiscountCalculator::calculate( $max_price, $item['discount'], $item['discount_type'] );
-			}
-			if ( $has_total_discount ) {
-				$min_price -= DiscountCalculator::calculate( $min_price, $extra_data['total_discount'], 'percentage' );
-				$max_price -= DiscountCalculator::calculate( $max_price, $extra_data['total_discount'], 'percentage' );
-			}
-		}
+        // 2. Process and apply the percentage/fixed bundle discounts onto the selected base prices
+        if ( $has_item_discount && $has_total_discount && 'percentage' === $item['discount_type'] ) {
+            $discount = (float) $item['discount'] + (float) $extra_data['total_discount'];
+            $min_price -= DiscountCalculator::calculate( $min_price, $discount, 'percentage' );
+            $max_price -= DiscountCalculator::calculate( $max_price, $discount, 'percentage' );
+        } else {
+            if ( $has_item_discount ) {
+                $min_price -= DiscountCalculator::calculate( $min_price, $item['discount'], $item['discount_type'] );
+                $max_price -= DiscountCalculator::calculate( $max_price, $item['discount'], $item['discount_type'] );
+            }
+            if ( $has_total_discount ) {
+                $min_price -= DiscountCalculator::calculate( $min_price, $extra_data['total_discount'], 'percentage' );
+                $max_price -= DiscountCalculator::calculate( $max_price, $extra_data['total_discount'], 'percentage' );
+            }
+        }
 
-		$min_price = wc_get_price_to_display( $product, [ 'price' => $min_price ] );
-		$max_price = wc_get_price_to_display( $product, [ 'price' => $max_price ] );
+        // Format prices according to WooCommerce display currency setup
+        $min_price = wc_get_price_to_display( $product, [ 'price' => $min_price ] );
+        $max_price = wc_get_price_to_display( $product, [ 'price' => $max_price ] );
 
-		$min_reg_price = $product->get_variation_regular_price( 'min', true );
-		$max_reg_price = $product->get_variation_regular_price( 'max', true );
+        // Fetch pristine min/max regular prices for strike-through layouts
+        $min_reg_price = $product->get_variation_regular_price( 'min', true );
+        $max_reg_price = $product->get_variation_regular_price( 'max', true );
 
-		if ( $min_price == $min_reg_price && $max_price == $max_reg_price ) {
-			return apply_filters(
-				'asnp_wepb_prepare_variable_prices',
-				[
-					'display_price' => wc_format_price_range( $min_price, $max_price ) . $product->get_price_suffix(),
-				],
-				$product,
-				$item
-			);
-		}
+        // If calculated final price matches original regular price, render without strikeout layouts
+        if ( $min_price == $min_reg_price && $max_price == $max_reg_price ) {
+            return apply_filters(
+                'asnp_wepb_prepare_variable_prices',
+                [
+                    'display_price' => wc_format_price_range( $min_price, $max_price ) . $product->get_price_suffix(),
+                ],
+                $product,
+                $item
+            );
+        }
 
-		if ( $min_reg_price !== $max_reg_price ) {
-			$main_price = wc_format_price_range( $min_reg_price, $max_reg_price );
-		} else {
-			$main_price = wc_price( $min_reg_price );
-		}
+        // Build the original price string (range or single price)
+        if ( $min_reg_price !== $max_reg_price ) {
+            $main_price = wc_format_price_range( $min_reg_price, $max_reg_price );
+        } else {
+            $main_price = wc_price( $min_reg_price );
+        }
 
-		if ( $min_price !== $max_price ) {
-			$display_price = wc_format_price_range( $min_price, $max_price );
-		} else {
-			$display_price = wc_price( $min_price );
-		}
+        // Build the new discounted price string (range or single price)
+        if ( $min_price !== $max_price ) {
+            $display_price = wc_format_price_range( $min_price, $max_price );
+        } else {
+            $display_price = wc_price( $min_price );
+        }
 
-		if ( (float) $min_reg_price > (float) $min_price || (float) $max_reg_price > (float) $max_price ) {
-			return apply_filters(
-				'asnp_wepb_prepare_variable_prices',
-				[
-					'display_price' => '<del aria-hidden="true">' . $main_price . '</del> <ins>' . $display_price . '</ins>' . $product->get_price_suffix(),
-				],
-				$product,
-				$item
-			);
-		}
+        // 3. Render strikeout layout if any variation's price dropped below its regular price threshold
+        if ( (float) $min_reg_price > (float) $min_price || (float) $max_reg_price > (float) $max_price ) {
+            return apply_filters(
+                'asnp_wepb_prepare_variable_prices',
+                [
+                    'display_price' => '<del aria-hidden="true">' . $main_price . '</del> <ins>' . $display_price . '</ins>' . $product->get_price_suffix(),
+                ],
+                $product,
+                $item
+            );
+        }
 
-		return apply_filters(
-			'asnp_wepb_prepare_variable_prices',
-			[
-				'display_price' => $display_price . $product->get_price_suffix(),
-			],
-			$product,
-			$item
-		);
-	}
+        return apply_filters(
+            'asnp_wepb_prepare_variable_prices',
+            [
+                'display_price' => $display_price . $product->get_price_suffix(),
+            ],
+            $product,
+            $item
+        );
+    }
 
-	return apply_filters(
-		'asnp_wepb_prepare_variable_prices',
-		[
-			'display_price' => $product->get_price_html(),
-		],
-		$product,
-		$item
-	);
+    // 4. Default Fallback layout when NO bundle discounts are active
+    if ( isset( $item['use_regular_price'] ) && 'true' === $item['use_regular_price'] ) {
+        // Force rendering the clean Regular Price Range only, hiding native WooCommerce sales
+        $min_reg_price = $product->get_variation_regular_price( 'min', true );
+        $max_reg_price = $product->get_variation_regular_price( 'max', true );
+        
+        if ( $min_reg_price !== $max_reg_price ) {
+            $clean_display_price = wc_format_price_range( $min_reg_price, $max_reg_price );
+        } else {
+            $clean_display_price = wc_price( $min_reg_price );
+        }
+        
+        return apply_filters(
+            'asnp_wepb_prepare_variable_prices',
+            [
+                'display_price' => $clean_display_price . $product->get_price_suffix(),
+            ],
+            $product,
+            $item
+        );
+    }
+
+    // Standard plugin fallback logic if the option is disabled
+    return apply_filters(
+        'asnp_wepb_prepare_variable_prices',
+        [
+            'display_price' => $product->get_price_html(),
+        ],
+        $product,
+        $item
+    );
 }
 
 function prepare_product_prices( $product, $item, $extra_data = [] ) {
-	$product = is_numeric( $product ) ? wc_get_product( $product ) : $product;
-	if ( ! $product ) {
-		return [];
-	}
+    // Ensure we have a valid WC_Product object instance
+    $product = is_numeric( $product ) ? wc_get_product( $product ) : $product;
+    if ( ! $product ) {
+        return [];
+    }
 
-	if ( $product->is_type( 'variable' ) ) {
-		return prepare_variable_prices( $product, $item, $extra_data );
-	}
+    // Handle variable products separately using the dedicated function
+    if ( $product->is_type( 'variable' ) ) {
+        return prepare_variable_prices( $product, $item, $extra_data );
+    }
 
-	$regular_price = '' !== $product->get_regular_price() ? wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ) : '';
-	$sale_price = '' !== $product->get_sale_price() && $product->is_on_sale() ? $product->get_sale_price() : '';
-	if ( has_valid_discount( $item ) || has_valid_discount( $extra_data, 'total_discount_type', 'total_discount', 'percentage' ) ) {
+    // Retrieve the display-formatted regular price of the product
+    $regular_price = '' !== $product->get_regular_price() ? wc_get_price_to_display( $product, [ 'price' => $product->get_regular_price() ] ) : '';
+    
+	$use_regular_price = isset( $item['use_regular_price'] ) && 'true' === $item['use_regular_price'];
+	$has_bundle_discount = has_valid_discount( $item ) || has_valid_discount( $extra_data, 'total_discount_type', 'total_discount', 'percentage' );
+	$sale_price = ! $use_regular_price && '' !== $product->get_sale_price() && $product->is_on_sale() ? $product->get_sale_price() : '';
+	if ( $has_bundle_discount ) {
 		$sale_price = get_bundle_item_price( $product, array_merge( $item, $extra_data ) );
 	}
 
-	if ( '' !== $sale_price ) {
-		$sale_price = wc_get_price_to_display( $product, [ 'price' => $sale_price ] );
-		if ( '' !== $regular_price ) {
-			$display_price = wc_format_sale_price( $regular_price, $sale_price ) . $product->get_price_suffix();
-		} else {
-			$display_price = wc_price( $sale_price ) . $product->get_price_suffix();
-		}
-	} else {
+    // Format the price output HTML string for frontend display rendering
+    if ( '' !== $sale_price ) {
+        $sale_price = wc_get_price_to_display( $product, [ 'price' => $sale_price ] );
+        
+        // Render the crossed-out regular price with the newly calculated bundle price next to it
+        if ( '' !== $regular_price ) {
+            $display_price = wc_format_sale_price( $regular_price, $sale_price ) . $product->get_price_suffix();
+        } else {
+            $display_price = wc_price( $sale_price ) . $product->get_price_suffix();
+        }
+    } elseif ( $use_regular_price && '' !== $regular_price ) {
+		$display_price = wc_price( $regular_price ) . $product->get_price_suffix();
+    } else {
 		$display_price = $product->get_price_html();
 	}
 
-	return apply_filters(
-		'asnp_wepb_prepare_product_prices',
-		[
-			'regular_price' => $regular_price,
-			'sale_price' => $sale_price,
-			'display_price' => $display_price,
-		],
-		$product,
-		$item
-	);
+    // Pass the prepared array through standard plugin filters
+    return apply_filters(
+        'asnp_wepb_prepare_product_prices',
+        [
+            'regular_price' => $regular_price,
+            'sale_price'    => $sale_price,
+            'display_price' => $display_price,
+        ],
+        $product,
+        $item
+    );
 }
 
 function prepare_product_data( $product, $item = [], $extra_data = [] ) {
@@ -669,13 +716,13 @@ function get_bundle_item_price( $product, array $args ) {
 
 	$args = array_merge( [ 'exchange_price' => true ], $args );
 
+	$use_regular_price = isset( $args['use_regular_price'] ) && 'true' === $args['use_regular_price'];
+
 	if ( ! isset( $args['is_fixed_price'] ) || ! $args['is_fixed_price'] ) {
-		$price = $product->get_price( 'edit' );
-		if (
-			$product->is_on_sale( 'edit' ) &&
-			'regular_price' === get_plugin()->settings->get_setting( 'product_base_price', 'sale_price' )
-		) {
+		if ( $use_regular_price && '' !== $product->get_regular_price( 'edit' ) ) {
 			$price = $product->get_regular_price( 'edit' );
+		} else {
+			$price = $product->get_price( 'edit' );
 		}
 
 		$item_discount = has_valid_discount( $args );
@@ -692,6 +739,10 @@ function get_bundle_item_price( $product, array $args ) {
 		}
 
 		return $args['exchange_price'] ? maybe_exchange_price( $price ) : $price;
+	}
+
+	if ( $use_regular_price && '' !== $product->get_regular_price( 'edit' ) ) {
+		return $args['exchange_price'] ? $product->get_regular_price() : $product->get_regular_price( 'edit' );
 	}
 
 	return $args['exchange_price'] ? $product->get_price() : $product->get_price( 'edit' );

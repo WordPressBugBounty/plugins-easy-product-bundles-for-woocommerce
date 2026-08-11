@@ -213,7 +213,11 @@
 				"ustaw ten element jako opcjonalny."
 			],
 			"Article": [ "Artykuł" ],
-			"Quick Tutorial": [ "Szybki poradnik" ]
+			"Quick Tutorial": [ "Szybki poradnik" ],
+			"Use regular prices only": [ "Używaj tylko cen regularnych" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"Zaznacz tę opcję, aby ignorować ceny promocyjne i używać wyłącznie cen regularnych dla produktów oraz ceny zestawu."
+			]
 		}
 	}
 }

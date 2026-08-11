@@ -222,7 +222,11 @@
 				"направете този артикул незадължителен."
 			],
 			"Article": [ "Статия" ],
-			"Quick Tutorial": [ "Кратко ръководство" ]
+			"Quick Tutorial": [ "Кратко ръководство" ],
+			"Use regular prices only": [ "Използвай само редовните цени" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"Отметнете тази опция, за да игнорирате промоционалните цени и да използвате само редовните цени за продуктите и цените на комплектите."
+			]
 		}
 	}
 }

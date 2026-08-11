@@ -223,7 +223,11 @@
 				"сделайте этот товар необязательным."
 			],
 			"Article": [ "Статья" ],
-			"Quick Tutorial": [ "Краткое руководство" ]
+			"Quick Tutorial": [ "Краткое руководство" ],
+			"Use regular prices only": [ "Использовать только обычные цены" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"Включите эту опцию, чтобы игнорировать цены со скидкой и использовать только обычные цены для товаров и стоимости комплекта."
+			]
 		}
 	}
 }

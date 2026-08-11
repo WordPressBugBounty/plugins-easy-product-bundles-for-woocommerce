@@ -155,7 +155,6 @@ class ProductBundleHooks {
 		}
 
 		$calculate = 'true' === get_plugin()->settings->get_setting( 'calculate_bundle_price_in_frontend', 'false' );
-
 		if ( $calculate ) {
 			$prices = $product->calculate_default_products_price( $product, [ 'exchange_price' => true, 'return' => 'display' ] );
 		} else {
@@ -667,6 +666,7 @@ class ProductBundleHooks {
 				[
 					'discount_type' => ! empty( $args['item']['discount_type'] ) ? $args['item']['discount_type'] : '',
 					'discount' => isset( $args['item']['discount'] ) && '' !== $args['item']['discount'] ? (float) $args['item']['discount'] : null,
+					'use_regular_price' => isset( $args['item']['use_regular_price'] ) && 'true' === $args['item']['use_regular_price'] ? 'true' : 'false',
 					'exchange_price' => false,
 					'total_discount_type' => ! empty( $args['total_discount_type'] ) ? $args['total_discount_type'] : '',
 					'total_discount' => isset( $args['total_discount'] ) && '' !== $args['total_discount'] ? (float) $args['total_discount'] : '',
@@ -1331,6 +1331,7 @@ class ProductBundleHooks {
 						[
 							'discount_type' => ! empty( $items[ $i ]['discount_type'] ) ? $items[ $i ]['discount_type'] : '',
 							'discount' => isset( $items[ $i ]['discount'] ) && '' !== $items[ $i ]['discount'] ? (float) $items[ $i ]['discount'] : null,
+							'use_regular_price' => isset( $items[ $i ]['use_regular_price'] ) && 'true' === $items[ $i ]['use_regular_price'] ? 'true' : 'false',
 							'is_fixed_price' => $is_fixed_price,
 							'total_discount_type' => $product->get_total_discount_type(),
 							'total_discount' => $product->get_total_discount(),

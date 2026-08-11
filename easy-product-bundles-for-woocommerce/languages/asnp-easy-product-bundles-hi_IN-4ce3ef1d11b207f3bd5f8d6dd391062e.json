@@ -204,7 +204,11 @@
 			"To set the quantity to 0,": [ "मात्रा को 0 पर सेट करने के लिए," ],
 			"make this item optional.": [ "इस आइटम को वैकल्पिक बनाएं।" ],
 			"Article": [ "लेख" ],
-			"Quick Tutorial": [ "त्वरित ट्यूटोरियल" ]
+			"Quick Tutorial": [ "त्वरित ट्यूटोरियल" ],
+			"Use regular prices only": [ "केवल नियमित कीमतों का उपयोग करें" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"सेल कीमतों को अनदेखा करने और उत्पादों तथा बंडल मूल्य निर्धारण के लिए केवल नियमित कीमतों का उपयोग करने हेतु इस विकल्प को चुनें।"
+			]
 		}
 	}
 }

@@ -348,6 +348,7 @@ class ProductBundle extends \WC_Product {
 			'product_list_title' => ! empty( $item['product_list_title'] ) ? sanitize_text_field( __( $item['product_list_title'], 'asnp-easy-product-bundles' ) ) : __( 'Please select your product!', 'asnp-easy-product-bundles' ),
 			'modal_header_title' => ! empty( $item['modal_header_title'] ) ? sanitize_text_field( __( $item['modal_header_title'], 'asnp-easy-product-bundles' ) ) : __( 'Please select your product', 'asnp-easy-product-bundles' ),
 			'image_url' => ! empty( $item['image_url'] ) ? esc_url( $item['image_url'] ) : '',
+			'use_regular_price' => isset( $item['use_regular_price'] ) && 'true' === $item['use_regular_price'] ? 'true' : 'false',
 		);
 
 		$args = [
@@ -831,6 +832,7 @@ class ProductBundle extends \WC_Product {
 				[
 					'discount_type' => ! empty( $items[ $i ]['discount_type'] ) ? $items[ $i ]['discount_type'] : '',
 					'discount' => isset( $items[ $i ]['discount'] ) && '' !== $items[ $i ]['discount'] ? (float) $items[ $i ]['discount'] : null,
+					'use_regular_price' => isset( $items[ $i ]['use_regular_price'] ) && 'true' === $items[ $i ]['use_regular_price'] ? 'true' : 'false',
 					'is_fixed_price' => false,
 					'exchange_price' => $args['exchange_price'],
 					'total_discount_type' => $product->get_total_discount_type(),

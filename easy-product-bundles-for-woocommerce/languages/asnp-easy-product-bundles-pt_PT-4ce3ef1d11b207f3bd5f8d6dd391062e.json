@@ -213,7 +213,11 @@
 			],
 			"make this item optional.": [ "torne este item opcional." ],
 			"Article": [ "Artigo" ],
-			"Quick Tutorial": [ "Tutorial rápido" ]
+			"Quick Tutorial": [ "Tutorial rápido" ],
+			"Use regular prices only": [ "Usar apenas preços regulares" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"Marque esta opção para ignorar os preços promocionais e usar apenas os preços regulares para os produtos e o preço do pacote."
+			]
 		}
 	}
 }

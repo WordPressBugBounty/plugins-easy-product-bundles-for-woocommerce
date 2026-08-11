@@ -221,7 +221,11 @@
 				"rendi questo articolo facoltativo."
 			],
 			"Article": [ "Articolo" ],
-			"Quick Tutorial": [ "Tutorial rapido" ]
+			"Quick Tutorial": [ "Tutorial rapido" ],
+			"Use regular prices only": [ "Usa solo i prezzi regolari" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"Seleziona questa opzione per ignorare i prezzi in saldo e utilizzare solo i prezzi regolari per i prodotti e il prezzo del bundle."
+			]
 		}
 	}
 }

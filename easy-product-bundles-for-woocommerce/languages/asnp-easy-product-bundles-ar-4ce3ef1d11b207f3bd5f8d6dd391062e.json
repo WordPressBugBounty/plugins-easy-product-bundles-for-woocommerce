@@ -206,7 +206,11 @@
 			"To set the quantity to 0,": [ "لتعيين الكمية إلى 0،" ],
 			"make this item optional.": [ "اجعل هذا العنصر اختيارياً." ],
 			"Article": [ "مقالة" ],
-			"Quick Tutorial": [ "دليل سريع" ]
+			"Quick Tutorial": [ "دليل سريع" ],
+			"Use regular prices only": [ "استخدام الأسعار العادية فقط" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"حدد هذا الخيار لتجاهل أسعار التخفيضات واستخدام الأسعار العادية فقط لأسعار المنتجات الفردية والحزم."
+			]
 		}
 	}
 }

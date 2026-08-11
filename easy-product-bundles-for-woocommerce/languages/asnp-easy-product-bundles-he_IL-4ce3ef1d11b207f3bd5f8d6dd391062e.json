@@ -200,7 +200,11 @@
 			"To set the quantity to 0,": [ "כדי להגדיר את הכמות ל-0," ],
 			"make this item optional.": [ "הפוך פריט זה לאופציונלי." ],
 			"Article": [ "מאמר" ],
-			"Quick Tutorial": [ "מדריך מהיר" ]
+			"Quick Tutorial": [ "מדריך מהיר" ],
+			"Use regular prices only": [ "השתמש רק במחירים הרגילים" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"סמן אפשרות זו כדי להתעלם ממחירי מבצע ולהשתמש רק במחירים הרגילים עבור המוצרים ותמחור החבילה."
+			]
 		}
 	}
 }

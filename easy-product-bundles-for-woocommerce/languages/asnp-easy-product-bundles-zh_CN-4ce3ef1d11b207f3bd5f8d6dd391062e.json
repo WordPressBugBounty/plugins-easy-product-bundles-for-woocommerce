@@ -193,7 +193,11 @@
 			"To set the quantity to 0,": [ "要将数量设置为 0，" ],
 			"make this item optional.": [ "请将此商品设为可选。" ],
 			"Article": [ "文章" ],
-			"Quick Tutorial": [ "快速教程" ]
+			"Quick Tutorial": [ "快速教程" ],
+			"Use regular prices only": [ "仅使用原价" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"启用此选项可忽略促销价格，仅使用商品原价和组合商品价格。"
+			]
 		}
 	}
 }

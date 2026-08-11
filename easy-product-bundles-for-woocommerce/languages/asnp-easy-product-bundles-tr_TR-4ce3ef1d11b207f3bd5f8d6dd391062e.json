@@ -214,7 +214,11 @@
 			"To set the quantity to 0,": [ "Miktarı 0 olarak ayarlamak için," ],
 			"make this item optional.": [ "bu öğeyi isteğe bağlı yapın." ],
 			"Article": [ "Makale" ],
-			"Quick Tutorial": [ "Hızlı Eğitim" ]
+			"Quick Tutorial": [ "Hızlı Eğitim" ],
+			"Use regular prices only": [ "Yalnızca normal fiyatları kullan" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"İndirimli fiyatları yok saymak ve ürünler ile paket fiyatlandırmasında yalnızca normal fiyatları kullanmak için bu seçeneği işaretleyin."
+			]
 		}
 	}
 }

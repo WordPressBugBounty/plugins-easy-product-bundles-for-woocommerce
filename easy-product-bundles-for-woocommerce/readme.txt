@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 6.19.3
+Stable tag: 6.20.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -216,12 +216,16 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.20.0 =
+* New: Added the Use regular prices only option for bundle items.
+* Improved: Ensured compatibility with WooCommerce 11.0.0
+Have questions, suggestions, or feedback? We'd love to hear from you.❤️ If you enjoy the plugin, please consider leaving a ★★★★★ review.🙏
+
 = 6.19.3 =
 * New: Automatically disables the increase and decrease quantity buttons when the allowed quantity limit is reached.
 * New: Added Quick Tutorial and Article shortcuts to the plugin dashboard.
 * Fix: Fixed an issue where product price colors were not applied correctly in the Quick View popup.
 * Fix: Improved CSS compatibility with various themes.
-* Have questions, suggestions, or feedback? We'd love to hear from you.❤️ If you enjoy the plugin, please consider leaving a ★★★★★ review.🙏
 
 = 6.19.2 =
 * Fix: Fixed popup scrolling issues when opening the Info or Images section

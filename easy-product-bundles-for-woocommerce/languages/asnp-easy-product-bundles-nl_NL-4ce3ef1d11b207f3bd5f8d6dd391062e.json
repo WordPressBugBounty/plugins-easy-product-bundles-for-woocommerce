@@ -218,7 +218,11 @@
 			],
 			"make this item optional.": [ "maakt u dit item optioneel." ],
 			"Article": [ "Artikel" ],
-			"Quick Tutorial": [ "Snelle handleiding" ]
+			"Quick Tutorial": [ "Snelle handleiding" ],
+			"Use regular prices only": [ "Gebruik alleen reguliere prijzen" ],
+			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
+				"Schakel deze optie in om aanbiedingsprijzen te negeren en alleen reguliere prijzen te gebruiken voor producten en bundelprijzen."
+			]
 		}
 	}
 }
