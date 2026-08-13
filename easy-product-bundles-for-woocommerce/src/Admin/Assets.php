@@ -22,7 +22,9 @@ class Assets {
 
 			wp_enqueue_style(
 				'asnp-easy-product-bundles-product',
-				$this->get_url( 'admin/product/style', 'css' )
+				$this->get_url( 'admin/product/style', 'css' ),
+				[],
+				ASNP_WEPB_VERSION
 			);
 			wp_enqueue_script(
 				'asnp-easy-product-bundles-product',
@@ -57,7 +59,9 @@ class Assets {
 
 			wp_enqueue_style(
 				'asnp-easy-product-bundles-admin',
-				$this->get_url( 'admin/admin/style', 'css' )
+				$this->get_url( 'admin/admin/style', 'css' ),
+				[],
+				ASNP_WEPB_VERSION
 			);
 			wp_enqueue_script(
 				'asnp-easy-product-bundles-admin',
@@ -160,7 +164,9 @@ class Assets {
 		ProductBundles\register_polyfills();
 		wp_enqueue_style(
 			'asnp-easy-product-bundles-review',
-			$this->get_url( 'admin/review/style', 'css' )
+			$this->get_url( 'admin/review/style', 'css' ),
+			[],
+			ASNP_WEPB_VERSION
 		);
 		wp_enqueue_script(
 			'asnp-easy-product-bundles-review',
