@@ -3,9 +3,9 @@ Contributors: asanaplugins
 Donate link: https://www.asanaplugins.com/
 Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce, composite product, wpc product bundles for woocommerce, yith woocommerce product bundles, woocommerce product bundles free, wpc product bundles, yith product bundles, custom product boxes woocommerce, woocommerce bundle plugin, woocommerce composite products, woocommerce, wordpress, ecommerce
 Requires at least: 5.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 6.20.1
+Stable tag: 6.20.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ As a result, **Increase sales** by creating **Product Bundles**, **Composite Pro
 
 Also, you can **increase average order value** by offering **Frequently Bought Together** Products in a bundle product.
 
->[Try the Demo](https://pricing-and-discounts.asanaplugins.com/demo/product/product-bundles-mix-and-match/) | [BACK-END DEMO](https://pricing-and-discounts.asanaplugins.com/?asnp_demo_plugin=easy-product-bundles) | [Ask Questions](https://www.asanaplugins.com/support/) | **[PRO WITH UP TO 75% DISCOUNT](https://www.asanaplugins.com/product/woocommerce-product-bundles/?utm_source=wp-org&utm_campaign=easy-product-bundles-free&utm_medium=link)**
+>[Try the Demo](https://pricing-and-discounts.asanaplugins.com/demo/product/product-bundles-mix-and-match/) | [BACK-END DEMO](https://pricing-and-discounts.asanaplugins.com/?plugin=easy-product-bundles-for-woocommerce) | [Ask Questions](https://www.asanaplugins.com/support/) | **[PRO WITH UP TO 75% DISCOUNT](https://www.asanaplugins.com/product/woocommerce-product-bundles/?utm_source=wp-org&utm_campaign=easy-product-bundles-free&utm_medium=link)**
 
 https://youtu.be/iDYf9CKjWoE
 
@@ -216,10 +216,17 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.20.2 =
+* Fix: Fixed an issue with getting product variation attributes.
+* Fix: Fixed an issue with formatting variation attributes.
+* Fix: Fixed special chars issue in attribute labels & filters name.
+* Fix: Fixed Grid theme sizing issues across different screen sizes.
+* Improved: Ensured compatibility with WordPress version 7.1
+Have questions, suggestions, or feedback? We'd love to hear from you.❤️ If you enjoy the plugin, please consider leaving a ★★★★★ review.🙏
+
 = 6.20.1 =
 * Improvement: Added version parameters to plugin stylesheets to force cache refresh and ensure the latest styles are always loaded.
 * Improved: Ensured compatibility with WooCommerce 11.0.1
-Have questions, suggestions, or feedback? We'd love to hear from you.❤️ If you enjoy the plugin, please consider leaving a ★★★★★ review.🙏
 
 = 6.20.0 =
 * New: Added the Use regular prices only option for bundle items.

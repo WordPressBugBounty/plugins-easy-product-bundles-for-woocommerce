@@ -185,14 +185,21 @@ class FilterProducts extends BaseController {
 
 		$attributes = $variable->get_variation_attributes();
 		foreach ( $attributes as $attribute_name => $options ) {
+			$label       = ProductBundles\get_clean_attribute_label( $attribute_name, $variable );
+			$filter_name = apply_filters(
+				'asnp_wepb_variation_attribute_options_attribute_name',
+				sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), $label ),
+				$attribute_name
+			);
+
 			$data['attribute_options'][] = [
-				'name' => apply_filters( 'asnp_wepb_variation_attribute_options_attribute_name', sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), wc_attribute_label( $attribute_name, $variable ) ), $attribute_name ),
-				'id' => esc_attr( sanitize_title( $attribute_name ) ),
+				'name'    => wp_specialchars_decode( $filter_name ),
+				'id'      => esc_attr( sanitize_title( $attribute_name ) ),
 				'options' => ProductBundles\get_variation_attribute_options(
 					[
-						'options' => $options,
+						'options'   => $options,
 						'attribute' => $attribute_name,
-						'product' => $variable,
+						'product'   => $variable,
 					]
 				),
 			];
@@ -209,7 +216,7 @@ class FilterProducts extends BaseController {
 		$variable = wc_get_product( $variation->get_parent_id() );
 
 		$data = [
-			'products' => ProductBundles\prepare_variation_data( $variation, $variable, $item, $extra_data ),
+			'products'          => ProductBundles\prepare_variation_data( $variation, $variable, $item, $extra_data ),
 			'attribute_options' => [],
 		];
 
@@ -218,20 +225,35 @@ class FilterProducts extends BaseController {
 		}
 
 		$variation_attributes = $variation->get_variation_attributes( false );
-		$attributes = $variable->get_variation_attributes();
+		$attributes           = $variable->get_variation_attributes();
 		foreach ( $attributes as $attribute_name => $options ) {
-			if ( ! empty( $variation_attributes[ sanitize_title( $attribute_name ) ] ) ) {
+			$slug     = wc_attribute_taxonomy_slug( $attribute_name );
+			$tax_name = wc_attribute_taxonomy_name( $slug );
+			if (
+				! empty( $variation_attributes[ sanitize_title( $attribute_name ) ] ) ||
+				! empty( $variation_attributes[ $tax_name ] ) ||
+				! empty( $variation_attributes[ $slug ] ) ||
+				! empty( $variation_attributes[ $attribute_name ] ) ||
+				! empty( $variation_attributes[ urldecode( $attribute_name ) ] )
+			) {
 				continue;
 			}
 
+			$label       = ProductBundles\get_clean_attribute_label( $attribute_name, $variable );
+			$filter_name = apply_filters(
+				'asnp_wepb_variation_attribute_options_attribute_name',
+				sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), $label ),
+				$attribute_name
+			);
+
 			$data['attribute_options'][] = [
-				'name' => apply_filters( 'asnp_wepb_variation_attribute_options_attribute_name', sprintf( __( 'Filter by %s', 'asnp-easy-product-bundles' ), wc_attribute_label( $attribute_name, $variable ) ), $attribute_name ),
-				'id' => esc_attr( sanitize_title( $attribute_name ) ),
+				'name'    => wp_specialchars_decode( $filter_name ),
+				'id'      => esc_attr( sanitize_title( $attribute_name ) ),
 				'options' => ProductBundles\get_variation_attribute_options(
 					[
-						'options' => $options,
+						'options'   => $options,
 						'attribute' => $attribute_name,
-						'product' => $variable,
+						'product'   => $variable,
 					]
 				),
 			];

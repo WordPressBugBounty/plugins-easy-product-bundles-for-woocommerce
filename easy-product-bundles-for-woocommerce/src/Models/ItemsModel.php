@@ -8,7 +8,7 @@ use AsanaPlugins\WooCommerce\ProductBundles;
 
 class ItemsModel {
 
-	public static function search_products( array $args = array() ) {
+	public static function search_products( array $args = [] ) {
 		$args = array_merge(
 			[
 				'type' => [],
@@ -28,34 +28,34 @@ class ItemsModel {
 			$products = $data_store->search_products( wc_clean( wp_unslash( $args['search'] ) ), '', true, true );
 		}
 
-		return ! empty( $products ) ? self::prepare_product_items( $products, $args['type'], $args['field'] ) : array();
+		return ! empty( $products ) ? self::prepare_product_items( $products, $args['type'], $args['field'] ) : [];
 	}
 
-	public static function get_products( array $args = array() ) {
-		$args = wp_parse_args( $args, array(
-			'status' => array( 'private', 'publish' ),
+	public static function get_products( array $args = [] ) {
+		$args = wp_parse_args( $args, [
+			'status' => [ 'private', 'publish' ],
 			'type' => ProductBundles\get_product_types_for_bundle(),
 			'limit' => -1,
-			'orderby' => array(
+			'orderby' => [
 				'menu_order' => 'ASC',
 				'ID' => 'DESC',
-			),
+			],
 			'paginate' => false,
-		) );
+		] );
 
 		$products = wc_get_products( $args );
-		return ! empty( $products ) ? self::prepare_product_items( $products, $args['type'] ) : array();
+		return ! empty( $products ) ? self::prepare_product_items( $products, $args['type'] ) : [];
 	}
 
 	protected static function prepare_product_items( array $products, $allowed_types = null, $field = 'products' ) {
 		if ( empty( $products ) ) {
-			return array();
+			return [];
 		}
 
 		$allowed_types = null === $allowed_types ? ProductBundles\get_product_types_for_bundle() : $allowed_types;
 
 		$pro_active = ProductBundles\get_plugin()->is_pro_active();
-		$products_select = array();
+		$products_select = [];
 		foreach ( $products as $product ) {
 			if ( is_numeric( $product ) ) {
 				$product = wc_get_product( $product );
@@ -77,8 +77,14 @@ class ItemsModel {
 
 			$disabled = false;
 			if ( $product->is_type( 'variation' ) ) {
-				$formatted_variation_list = wc_get_formatted_variation( $product, true );
-				$text = sprintf( '%2$s (%1$s)', $identifier, $product->get_title() ) . ' ' . $formatted_variation_list;
+				$formatted_variation_list = ProductBundles\get_formatted_variation_attributes( $product );
+				if ( empty( $formatted_variation_list ) ) {
+					$formatted_variation_list = wc_get_formatted_variation( $product, true );
+					if ( ! empty( $formatted_variation_list ) ) {
+						$formatted_variation_list = preg_replace( '/(^|,\s*)pa_/', '$1', $formatted_variation_list );
+					}
+				}
+				$text = sprintf( '%2$s (%1$s)', $identifier, $product->get_title() ) . ( ! empty( $formatted_variation_list ) ? ' ' . $formatted_variation_list : '' );
 				$disabled = ! $pro_active;
 				$text .= $disabled ? ' - ' . __( 'PRO Version', 'asnp-easy-product-bundles' ) : '';
 			} else {
@@ -89,11 +95,11 @@ class ItemsModel {
 				$text .= $disabled ? ' - ' . __( 'PRO Version', 'asnp-easy-product-bundles' ) : '';
 			}
 
-			$products_select[] = (object) array(
+			$products_select[] = (object) [
 				'value' => $product->get_id(),
 				'label' => $text,
 				'isDisabled' => $disabled,
-			);
+			];
 		}
 
 		return $products_select;

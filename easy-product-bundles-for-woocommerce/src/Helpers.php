@@ -277,12 +277,12 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 			$formatted_variation = [];
 			foreach ( $extra_data['attributes'] as $attribute ) {
 				if ( ! empty( $attribute['name'] ) && ! empty( $attribute['label'] ) ) {
-					$formatted_variation[] = wc_attribute_label( $attribute['name'], $product ) . ': ' . rawurldecode( $attribute['label'] );
+					$formatted_variation[] = get_clean_attribute_label( $attribute['name'], $product ) . ': ' . "\xE2\x80\x8E" . wp_specialchars_decode( rawurldecode( $attribute['label'] ) );
 				}
 			}
 			$formatted_variation = implode( ', ', $formatted_variation );
 		} else {
-			$formatted_variation = wc_get_formatted_variation( $product, true );
+			$formatted_variation = get_formatted_variation_attributes( $product );
 		}
 
 		if ( ! empty( $formatted_variation ) ) {
@@ -291,6 +291,8 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 	} else {
 		$data['name'] = $product->get_title();
 	}
+
+	$data['name'] = wp_specialchars_decode( $data['name'] );
 
 	$data['description'] = Products\get_description( $product );
 
@@ -312,16 +314,75 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 	return apply_filters( 'asnp_wepb_prepare_product_data', $data, $product, $item, $extra_data );
 }
 
+function get_clean_attribute_label( $name, $product = null ) {
+	static $cache = [];
+	$product_id   = $product && is_object( $product ) ? $product->get_id() : 0;
+	$cache_key    = $name . '_' . $product_id;
+
+	if ( isset( $cache[ $cache_key ] ) ) {
+		return $cache[ $cache_key ];
+	}
+
+	$label = wc_attribute_label( $name, $product );
+	if ( 0 === strpos( $label, 'pa_' ) ) {
+		$label = substr( $label, 3 );
+	}
+
+	$clean_label = wp_specialchars_decode( $label );
+
+	$cache[ $cache_key ] = $clean_label;
+	return $clean_label;
+}
+
+function get_formatted_variation_attributes( $variation ) {
+	if ( ! $variation ) {
+		return '';
+	}
+
+	$variation = is_numeric( $variation ) ? wc_get_product( $variation ) : $variation;
+	if ( ! $variation || ! $variation->is_type( 'variation' ) ) {
+		return '';
+	}
+
+	$variation_attributes = $variation->get_variation_attributes( false );
+	if ( empty( $variation_attributes ) ) {
+		return '';
+	}
+
+	$formatted = [];
+	foreach ( $variation_attributes as $key => $value ) {
+		if ( '' === $value || null === $value ) {
+			continue;
+		}
+
+		$attr_data = get_attribute_data(
+			[
+				'attribute' => $key,
+				'value'     => $value,
+				'by'        => 'slug',
+			]
+		);
+
+		if ( empty( $attr_data ) ) {
+			continue;
+		}
+
+		$formatted[] = get_clean_attribute_label( $attr_data['name'], $variation ) . ': ' . "\xE2\x80\x8E" . wp_specialchars_decode( rawurldecode( ! empty( $attr_data['label'] ) ? $attr_data['label'] : $value ) );
+	}
+
+	return implode( ', ', $formatted );
+}
+
 function prepare_variation_data( $variation, $variable = null, $item = [], $extra_data = [] ) {
 	if ( ! $variation ) {
-		return array();
+		return [];
 	}
 
 	$variation = is_numeric( $variation ) ? wc_get_product( $variation ) : $variation;
 	$variable = is_null( $variable ) ? $variation->get_parent_id() : $variable;
 	$variable = is_numeric( $variable ) ? wc_get_product( $variable ) : $variable;
 	if ( $variable->get_id() !== $variation->get_parent_id() ) {
-		return array();
+		return [];
 	}
 
 	$products = [];
@@ -334,8 +395,8 @@ function prepare_variation_data( $variation, $variable = null, $item = [], $extr
 				$attribute_data = get_attribute_data(
 					[
 						'attribute' => $key,
-						'value' => $attribute,
-						'by' => 'slug'
+						'value'     => $attribute,
+						'by'        => 'slug',
 					]
 				);
 				if ( ! empty( $attribute_data ) ) {
@@ -348,12 +409,46 @@ function prepare_variation_data( $variation, $variable = null, $item = [], $extr
 		$attributes = $variable->get_attributes();
 		$any_values = [];
 		for ( $i = 0; $i < count( $any_attributes ); $i++ ) {
-			if (
-				isset( $attributes[ $any_attributes[ $i ] ] ) &&
-				! empty( $attributes[ $any_attributes[ $i ] ]['is_variation'] )
-			) {
-				$any_values[] = $attributes[ $any_attributes[ $i ] ]['options'];
-				$any_attributes[ $i ] = $attributes[ $any_attributes[ $i ] ]['name'];
+			$attr_key = $any_attributes[ $i ];
+			$attr_obj = null;
+
+			$slug     = wc_attribute_taxonomy_slug( $attr_key );
+			$tax_name = wc_attribute_taxonomy_name( $slug );
+
+			if ( isset( $attributes[ $attr_key ] ) ) {
+				$attr_obj = $attributes[ $attr_key ];
+			} elseif ( isset( $attributes[ $tax_name ] ) ) {
+				$attr_obj = $attributes[ $tax_name ];
+			} elseif ( isset( $attributes[ $slug ] ) ) {
+				$attr_obj = $attributes[ $slug ];
+			} elseif ( isset( $attributes[ urldecode( $attr_key ) ] ) ) {
+				$attr_obj = $attributes[ urldecode( $attr_key ) ];
+			} elseif ( isset( $attributes[ sanitize_title( $attr_key ) ] ) ) {
+				$attr_obj = $attributes[ sanitize_title( $attr_key ) ];
+			} else {
+				foreach ( $attributes as $k => $attr ) {
+					if (
+						$k === $attr_key ||
+						$k === $tax_name ||
+						$k === $slug ||
+						urldecode( $k ) === urldecode( $attr_key ) ||
+						sanitize_title( $k ) === sanitize_title( $attr_key )
+					) {
+						$attr_obj = $attr;
+						break;
+					}
+				}
+			}
+
+			if ( $attr_obj ) {
+				$is_variation = is_object( $attr_obj ) ? $attr_obj->get_variation() : ! empty( $attr_obj['is_variation'] );
+				$options = is_object( $attr_obj ) ? $attr_obj->get_options() : ( isset( $attr_obj['options'] ) ? $attr_obj['options'] : [] );
+				$name = is_object( $attr_obj ) ? $attr_obj->get_name() : ( isset( $attr_obj['name'] ) ? $attr_obj['name'] : $attr_key );
+
+				if ( $is_variation ) {
+					$any_values[] = $options;
+					$any_attributes[ $i ] = $name;
+				}
 			}
 		}
 
@@ -361,9 +456,8 @@ function prepare_variation_data( $variation, $variable = null, $item = [], $extr
 			combinations( $any_values ) :
 			( 1 === count( $any_values ) ? $any_values[0] : [] );
 
-		for ( $i = 0; $i < count( $any_values ); $i++ ) {
-			$extra_data['attributes'] = [];
-
+		if ( ! empty( $any_values ) ) {
+			$defined_attributes = [];
 			foreach ( $variation_attributes as $key => $attribute ) {
 				if ( empty( $attribute ) ) {
 					continue;
@@ -372,84 +466,120 @@ function prepare_variation_data( $variation, $variable = null, $item = [], $extr
 				$attribute_data = get_attribute_data(
 					[
 						'attribute' => $key,
-						'value' => $attribute,
-						'by' => 'slug'
+						'value'     => $attribute,
+						'by'        => 'slug',
 					]
 				);
 				if ( ! empty( $attribute_data ) ) {
-					$extra_data['attributes'][] = $attribute_data;
+					$defined_attributes[] = $attribute_data;
 				}
 			}
 
-			if ( is_array( $any_values[ $i ] ) ) {
-				for ( $j = 0; $j < count( $any_values[ $i ] ); $j++ ) {
+			for ( $i = 0; $i < count( $any_values ); $i++ ) {
+				$extra_data['attributes'] = $defined_attributes;
+				if ( is_array( $any_values[ $i ] ) ) {
+					for ( $j = 0; $j < count( $any_values[ $i ] ); $j++ ) {
+						$attribute_data = get_attribute_data(
+							[
+								'attribute' => $any_attributes[ $j ],
+								'value'     => $any_values[ $i ][ $j ],
+								'by'        => 'id',
+							]
+						);
+						if ( ! empty( $attribute_data ) ) {
+							$extra_data['attributes'][] = $attribute_data;
+						}
+					}
+				} else {
 					$attribute_data = get_attribute_data(
 						[
-							'attribute' => $any_attributes[ $j ],
-							'value' => $any_values[ $i ][ $j ],
-							'by' => 'id'
+							'attribute' => $any_attributes[0],
+							'value'     => $any_values[ $i ],
+							'by'        => 'id',
 						]
 					);
 					if ( ! empty( $attribute_data ) ) {
 						$extra_data['attributes'][] = $attribute_data;
 					}
 				}
-			} else {
-				$attribute_data = get_attribute_data(
-					[
-						'attribute' => $any_attributes[0],
-						'value' => $any_values[ $i ],
-						'by' => 'id'
-					]
-				);
-				if ( ! empty( $attribute_data ) ) {
-					$extra_data['attributes'][] = $attribute_data;
-				}
-			}
 
-			$products[] = prepare_product_data( $variation, $item, $extra_data );
+				$products[] = prepare_product_data( $variation, $item, $extra_data );
+			}
 		}
 	}
 
 	return $products;
 }
 
-function get_variation_attribute_options( array $args = array() ) {
+function get_variation_attribute_options( array $args = [] ) {
 	$args = wp_parse_args(
 		apply_filters( 'asnp_wepb_get_variation_attribute_options_args', $args ),
-		array(
-			'options' => false,
+		[
+			'options'   => false,
 			'attribute' => false,
-			'product' => false,
-		)
+			'product'   => false,
+		]
 	);
 
-	$options = $args['options'];
-	$product = $args['product'];
+	$options   = $args['options'];
+	$product   = $args['product'];
 	$attribute = $args['attribute'];
 
 	if ( empty( $options ) && ! empty( $product ) && ! empty( $attribute ) ) {
 		$attributes = $product->get_variation_attributes();
-		$options = $attributes[ $attribute ];
+		$slug       = wc_attribute_taxonomy_slug( $attribute );
+		$tax_name   = wc_attribute_taxonomy_name( $slug );
+
+		if ( isset( $attributes[ $attribute ] ) ) {
+			$options = $attributes[ $attribute ];
+		} elseif ( isset( $attributes[ $tax_name ] ) ) {
+			$options = $attributes[ $tax_name ];
+		} elseif ( isset( $attributes[ $slug ] ) ) {
+			$options = $attributes[ $slug ];
+		} elseif ( isset( $attributes[ urldecode( $attribute ) ] ) ) {
+			$options = $attributes[ urldecode( $attribute ) ];
+		} elseif ( isset( $attributes[ sanitize_title( $attribute ) ] ) ) {
+			$options = $attributes[ sanitize_title( $attribute ) ];
+		}
+	}
+
+	static $options_cache = [];
+	$product_id = $product && is_object( $product ) ? $product->get_id() : 0;
+	$cache_key  = md5( $product_id . '_' . $attribute . '_' . ( is_array( $options ) ? implode( ',', $options ) : (string) $options ) );
+
+	if ( isset( $options_cache[ $cache_key ] ) ) {
+		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		return apply_filters( 'asnp_wepb_get_variation_attribute_options', $options_cache[ $cache_key ], $args );
 	}
 
 	$select_options = [];
 
 	if ( ! empty( $options ) ) {
-		if ( $product && taxonomy_exists( $attribute ) ) {
+		$taxonomy = wc_attribute_taxonomy_name( wc_attribute_taxonomy_slug( $attribute ) );
+		if ( ! taxonomy_exists( $taxonomy ) ) {
+			$taxonomy = taxonomy_exists( $attribute ) ? $attribute : '';
+		}
+
+		if ( $product && ! empty( $taxonomy ) ) {
 			// Get terms if this is a taxonomy - ordered. We need the names too.
 			$terms = wc_get_product_terms(
 				$product->get_id(),
-				$attribute,
-				array(
+				$taxonomy,
+				[
 					'fields' => 'all',
-				)
+				]
 			);
 
 			foreach ( $terms as $term ) {
-				if ( in_array( $term->slug, $options, true ) ) {
+				if (
+					in_array( $term->slug, $options, true ) ||
+					in_array( urldecode( $term->slug ), $options, true ) ||
+					in_array( (string) $term->term_id, $options, true ) ||
+					in_array( (int) $term->term_id, $options, true )
+				) {
+					$name             = sanitize_text_field( apply_filters( 'woocommerce_variation_option_name', $term->name, $term, $taxonomy, $product ) );
 					$select_options[] = [
-						'name' => sanitize_text_field( apply_filters( 'woocommerce_variation_option_name', $term->name, $term, $attribute, $product ) ),
+						'name'  => wp_specialchars_decode( $name ),
 						'value' => esc_attr( $term->slug ),
 					];
 				}
@@ -457,13 +587,16 @@ function get_variation_attribute_options( array $args = array() ) {
 		} else {
 			foreach ( $options as $option ) {
 				// This handles < 2.4.0 bw compatibility where text attributes were not sanitized.
+				$name             = sanitize_text_field( apply_filters( 'woocommerce_variation_option_name', urldecode( $option ), null, $attribute, $product ) );
 				$select_options[] = [
-					'name' => sanitize_text_field( apply_filters( 'woocommerce_variation_option_name', $option, null, $attribute, $product ) ),
+					'name'  => wp_specialchars_decode( $name ),
 					'value' => esc_attr( $option ),
 				];
 			}
 		}
 	}
+
+	$options_cache[ $cache_key ] = $select_options;
 
 	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	return apply_filters( 'asnp_wepb_get_variation_attribute_options', $select_options, $args );
@@ -570,25 +703,53 @@ function get_attribute_data( array $args ) {
 
 	$args = wp_parse_args( $args, [ 'by' => 'slug' ] );
 
-	if ( taxonomy_exists( $args['attribute'] ) ) {
-		$term = get_term_by( $args['by'], $args['value'], $args['attribute'] );
-		if ( ! is_wp_error( $term ) && is_object( $term ) && $term->term_id ) {
-			return [
-				'name' => $args['attribute'],
-				'id' => $args['attribute'],
-				'label' => $term->name,
-				'value' => $term->slug,
-			];
-		}
-		return [];
+	$attribute = $args['attribute'];
+	$value     = $args['value'];
+	$by        = $args['by'];
+
+	static $cache = [];
+	$cache_key    = $attribute . '_' . $value . '_' . $by;
+	if ( isset( $cache[ $cache_key ] ) ) {
+		return $cache[ $cache_key ];
 	}
 
-	return [
-		'name' => $args['attribute'],
-		'id' => $args['attribute'],
-		'label' => $args['value'],
-		'value' => $args['value'],
-	];
+	$taxonomy = wc_attribute_taxonomy_name( wc_attribute_taxonomy_slug( $attribute ) );
+	if ( ! taxonomy_exists( $taxonomy ) ) {
+		$taxonomy = taxonomy_exists( $attribute ) ? $attribute : '';
+	}
+
+	if ( ! empty( $taxonomy ) ) {
+		$term = 'id' === $by ? get_term( absint( $value ), $taxonomy ) : get_term_by( 'slug', $value, $taxonomy );
+		if ( ( ! $term || is_wp_error( $term ) ) && 'slug' === $by && false !== strpos( $value, '%' ) ) {
+			$term = get_term_by( 'slug', urldecode( $value ), $taxonomy );
+		}
+
+		if ( ! is_wp_error( $term ) && is_object( $term ) && ! empty( $term->term_id ) ) {
+			$data = [
+				'name'  => $taxonomy,
+				'id'    => sanitize_title( $attribute ),
+				'label' => wp_specialchars_decode( $term->name ),
+				'value' => $term->slug,
+			];
+		} else {
+			$data = [
+				'name'  => $taxonomy,
+				'id'    => sanitize_title( $attribute ),
+				'label' => wp_specialchars_decode( urldecode( $value ) ),
+				'value' => $value,
+			];
+		}
+	} else {
+		$data = [
+			'name'  => urldecode( $attribute ),
+			'id'    => sanitize_title( $attribute ),
+			'label' => wp_specialchars_decode( urldecode( $value ) ),
+			'value' => $value,
+		];
+	}
+
+	$cache[ $cache_key ] = $data;
+	return $data;
 }
 
 function combinations( $arrays, $i = 0 ) {
