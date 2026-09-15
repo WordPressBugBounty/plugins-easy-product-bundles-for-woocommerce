@@ -1525,3 +1525,20 @@ msgstr "Utiliser uniquement les prix réguliers"
 #: assets/js/admin/product/index.js:2
 msgid "Check this option to ignore sale prices and use only regular prices for item products and bundle pricing"
 msgstr "Cochez cette option pour ignorer les prix promotionnels et utiliser uniquement les prix réguliers pour les produits et le prix du lot."
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show description inside item"
+msgstr "Afficher la description dans l’élément"
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show the short description inside the bundle item card. Disable this to hide it in the item box."
+msgstr "Afficher la description courte dans la carte de l’élément du lot. Désactivez cette option pour la masquer dans la boîte de l’élément."
+
+#: assets/js/admin/admin/index.js:2
+msgid "5-Star Review"
+msgstr "Avis 5 étoiles"
+
+#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/product/index.js:3865
+msgid "UP TO 75% OFF"
+msgstr "JUSQU’À 75 % DE RÉDUCTION"

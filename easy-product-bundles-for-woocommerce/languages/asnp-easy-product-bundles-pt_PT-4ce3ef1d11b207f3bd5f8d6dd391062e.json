@@ -217,7 +217,9 @@
 			"Use regular prices only": [ "Usar apenas preços regulares" ],
 			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
 				"Marque esta opção para ignorar os preços promocionais e usar apenas os preços regulares para os produtos e o preço do pacote."
-			]
+			],
+			"5-Star Review": [ "Avaliação de 5 estrelas" ],
+			"UP TO 75% OFF": [ "ATÉ 75% DE DESCONTO" ]
 		}
 	}
 }

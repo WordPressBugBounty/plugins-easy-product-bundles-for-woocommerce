@@ -197,7 +197,9 @@
 			"Use regular prices only": [ "仅使用原价" ],
 			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
 				"启用此选项可忽略促销价格，仅使用商品原价和组合商品价格。"
-			]
+			],
+			"5-Star Review": [ "五星评价" ],
+			"UP TO 75% OFF": [ "最高可享75%折扣" ]
 		}
 	}
 }

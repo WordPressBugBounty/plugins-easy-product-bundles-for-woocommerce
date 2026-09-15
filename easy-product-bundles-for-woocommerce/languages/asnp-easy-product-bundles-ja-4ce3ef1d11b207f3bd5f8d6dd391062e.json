@@ -208,7 +208,9 @@
 			"Use regular prices only": [ "通常価格のみを使用" ],
 			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
 				"このオプションを有効にすると、セール価格を無視し、商品およびバンドル価格には通常価格のみを使用します。"
-			]
+			],
+			"5-Star Review": [ "5つ星レビュー" ],
+			"UP TO 75% OFF": [ "最大75%オフ" ]
 		}
 	}
 }

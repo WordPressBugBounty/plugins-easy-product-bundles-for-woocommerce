@@ -222,7 +222,9 @@
 			"Use regular prices only": [ "Gebruik alleen reguliere prijzen" ],
 			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
 				"Schakel deze optie in om aanbiedingsprijzen te negeren en alleen reguliere prijzen te gebruiken voor producten en bundelprijzen."
-			]
+			],
+			"5-Star Review": [ "5-sterrenbeoordeling" ],
+			"UP TO 75% OFF": [ "TOT 75% KORTING" ]
 		}
 	}
 }

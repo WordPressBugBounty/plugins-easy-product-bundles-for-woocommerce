@@ -218,7 +218,9 @@
 			"Use regular prices only": [ "Yalnızca normal fiyatları kullan" ],
 			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
 				"İndirimli fiyatları yok saymak ve ürünler ile paket fiyatlandırmasında yalnızca normal fiyatları kullanmak için bu seçeneği işaretleyin."
-			]
+			],
+			"5-Star Review": [ "5 Yıldızlı Değerlendirme" ],
+			"UP TO 75% OFF": [ "%75'E VARAN İNDİRİM" ]
 		}
 	}
 }

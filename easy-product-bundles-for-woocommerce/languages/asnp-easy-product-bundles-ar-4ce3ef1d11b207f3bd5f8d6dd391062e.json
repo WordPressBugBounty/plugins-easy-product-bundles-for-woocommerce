@@ -210,7 +210,9 @@
 			"Use regular prices only": [ "استخدام الأسعار العادية فقط" ],
 			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
 				"حدد هذا الخيار لتجاهل أسعار التخفيضات واستخدام الأسعار العادية فقط لأسعار المنتجات الفردية والحزم."
-			]
+			],
+			"5-Star Review": [ "تقييم 5 نجوم" ],
+			"UP TO 75% OFF": [ "خصم يصل إلى 75%" ]
 		}
 	}
 }

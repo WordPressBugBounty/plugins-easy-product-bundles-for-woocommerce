@@ -71,6 +71,7 @@ class Assets {
 				'size' => $settings->get_setting( 'size', 'medium' ),
 				'product_link' => $settings->get_setting( 'product_link', 'new_tab' ),
 				'show_description' => $settings->get_setting( 'show_description', 'true' ),
+				'show_description_inside_item' => $settings->get_setting( 'show_description_inside_item', 'false' ),
 				'show_products_list' => is_pro_active() ? $settings->get_setting( 'show_products_list', 'true' ) : 'true',
 				'show_total_price' => is_pro_active() ? $settings->get_setting( 'show_total_price', 'true' ) : 'true',
 				'show_saved_price' => $settings->get_setting( 'show_saved_price', 'true' ),

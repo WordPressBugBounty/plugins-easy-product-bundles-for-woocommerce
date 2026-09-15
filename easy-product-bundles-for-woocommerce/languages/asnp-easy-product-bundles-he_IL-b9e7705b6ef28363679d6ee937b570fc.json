@@ -254,6 +254,10 @@
 			"Show Discount Badge": [ "הצג תווית הנחה" ],
 			"Show or hide the discount badge in the bundle total price section.": [
 				"הצג או הסתר את תווית ההנחה בחלק של מחיר הסל הכולל."
+			],
+			"Show description inside item": [ "הצגת התיאור בתוך הפריט" ],
+			"Show the short description inside the bundle item card. Disable this to hide it in the item box.": [
+				"הצגת התיאור הקצר בתוך כרטיס פריט החבילה. השבת אפשרות זו כדי להסתיר אותו בתיבת הפריט."
 			]
 		}
 	}

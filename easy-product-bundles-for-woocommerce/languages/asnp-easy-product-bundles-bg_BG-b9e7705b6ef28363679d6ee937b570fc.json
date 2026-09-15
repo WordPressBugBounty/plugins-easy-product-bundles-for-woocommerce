@@ -301,6 +301,12 @@
 			"Show Discount Badge": [ "Показване на значката за отстъпка" ],
 			"Show or hide the discount badge in the bundle total price section.": [
 				"Показване или скриване на значката за отстъпка в секцията за общата цена на пакета."
+			],
+			"Show description inside item": [
+				"Показване на описанието в елемента"
+			],
+			"Show the short description inside the bundle item card. Disable this to hide it in the item box.": [
+				"Показва краткото описание в картата на елемента от пакета. Деактивирайте тази опция, за да го скриете в полето на елемента."
 			]
 		}
 	}

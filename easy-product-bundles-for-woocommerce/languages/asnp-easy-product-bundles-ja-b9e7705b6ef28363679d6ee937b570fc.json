@@ -265,6 +265,10 @@
 			"Show Discount Badge": [ "割引バッジを表示" ],
 			"Show or hide the discount badge in the bundle total price section.": [
 				"バンドル合計価格セクションの割引バッジを表示または非表示にします。"
+			],
+			"Show description inside item": [ "アイテム内に説明を表示" ],
+			"Show the short description inside the bundle item card. Disable this to hide it in the item box.": [
+				"バンドルアイテムカード内に短い説明を表示します。アイテムボックスで非表示にするには、このオプションを無効にしてください。"
 			]
 		}
 	}

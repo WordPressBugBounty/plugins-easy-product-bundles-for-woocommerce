@@ -293,6 +293,12 @@
 			"Show Discount Badge": [ "Mostrar distintivo de desconto" ],
 			"Show or hide the discount badge in the bundle total price section.": [
 				"Mostrar ou ocultar o distintivo de desconto na seção do preço total do pacote."
+			],
+			"Show description inside item": [
+				"Mostrar descrição dentro do item"
+			],
+			"Show the short description inside the bundle item card. Disable this to hide it in the item box.": [
+				"Mostrar a descrição curta dentro do cartão do item do pacote. Desative esta opção para ocultá-la na caixa do item."
 			]
 		}
 	}

@@ -215,7 +215,9 @@
 			"Use regular prices only": [ "فقط از قیمت‌های عادی استفاده کنید" ],
 			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
 				"این گزینه را فعال کنید تا قیمت‌های تخفیف‌ خورده نادیده گرفته شوند و فقط از قیمت‌های عادی برای محصولات و قیمت بسته استفاده شود."
-			]
+			],
+			"5-Star Review": [ "امتیاز ۵ ستاره" ],
+			"UP TO 75% OFF": [ "تا ۷۵٪ تخفیف" ]
 		}
 	}
 }

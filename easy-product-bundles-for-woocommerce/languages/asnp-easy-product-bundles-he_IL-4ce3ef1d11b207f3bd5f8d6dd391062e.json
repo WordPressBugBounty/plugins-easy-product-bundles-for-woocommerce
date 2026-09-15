@@ -204,7 +204,9 @@
 			"Use regular prices only": [ "השתמש רק במחירים הרגילים" ],
 			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
 				"סמן אפשרות זו כדי להתעלם ממחירי מבצע ולהשתמש רק במחירים הרגילים עבור המוצרים ותמחור החבילה."
-			]
+			],
+			"5-Star Review": [ "ביקורת של 5 כוכבים" ],
+			"UP TO 75% OFF": [ "עד 75% הנחה" ]
 		}
 	}
 }

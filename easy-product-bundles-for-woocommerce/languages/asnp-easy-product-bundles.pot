@@ -2,14 +2,14 @@
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 6.20.2\n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 6.21.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-01T20:12:13+00:00\n"
+"POT-Creation-Date: 2026-09-14T20:40:32+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: asnp-easy-product-bundles\n"
@@ -52,7 +52,6 @@ msgid "Settings"
 msgstr ""
 
 #: src/Admin/Admin.php:70
-#: assets/js/admin/admin/index.js:2
 msgid "Go Pro"
 msgstr ""
 
@@ -584,6 +583,14 @@ msgid "Show product description when mouse hover over it."
 msgstr ""
 
 #: assets/js/admin/admin/index.js:2
+msgid "Show description inside item"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+msgid "Show the short description inside the bundle item card. Disable this to hide it in the item box."
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
 msgid "Prepend parent name"
 msgstr ""
 
@@ -1064,6 +1071,15 @@ msgstr ""
 msgid "Get Support"
 msgstr ""
 
+#: assets/js/admin/admin/index.js:2
+msgid "5-Star Review"
+msgstr ""
+
+#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/product/index.js:2
+msgid "UP TO 75% OFF"
+msgstr ""
+
 #: assets/js/admin/product/index.js:2
 msgid "Items are required."
 msgstr ""
@@ -1154,14 +1170,6 @@ msgid "Select the product with tags that you do not want to be displayed in the 
 msgstr ""
 
 #: assets/js/admin/product/index.js:2
-msgid "Use regular prices only"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Check this option to ignore sale prices and use only regular prices for item products and bundle pricing"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
 msgid "Categories and Tags relation"
 msgstr ""
 
@@ -1176,6 +1184,14 @@ msgstr ""
 #: assets/js/admin/product/index.js:2
 #, js-format
 msgid "Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags."
+msgstr ""
+
+#: assets/js/admin/product/index.js:2
+msgid "Use regular prices only"
+msgstr ""
+
+#: assets/js/admin/product/index.js:2
+msgid "Check this option to ignore sale prices and use only regular prices for item products and bundle pricing"
 msgstr ""
 
 #: assets/js/admin/product/index.js:2
@@ -1364,11 +1380,11 @@ msgid "Quick Tutorial"
 msgstr ""
 
 #: assets/js/admin/product/index.js:2
-msgid "GO PRO"
+msgid "Need help?"
 msgstr ""
 
 #: assets/js/admin/product/index.js:2
-msgid "Need help?"
+msgid "GO PRO"
 msgstr ""
 
 #: assets/js/admin/product/index.js:2
@@ -1492,11 +1508,11 @@ msgid "Add Item"
 msgstr ""
 
 #: assets/js/shared/index.js:2
-msgid "Change"
+msgid "View"
 msgstr ""
 
 #: assets/js/shared/index.js:2
-msgid "View"
+msgid "Change"
 msgstr ""
 
 #: assets/js/shared/index.js:2

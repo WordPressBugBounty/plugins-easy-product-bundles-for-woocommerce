@@ -287,6 +287,12 @@
 			"Show Discount Badge": [ "Toon kortingsbadge" ],
 			"Show or hide the discount badge in the bundle total price section.": [
 				"Toon of verberg het kortingsbadge in de sectie van de totale bundelprijs."
+			],
+			"Show description inside item": [
+				"Beschrijving in item weergeven"
+			],
+			"Show the short description inside the bundle item card. Disable this to hide it in the item box.": [
+				"Toon de korte beschrijving in de kaart van het bundelitem. Schakel dit uit om deze in het itemvak te verbergen."
 			]
 		}
 	}

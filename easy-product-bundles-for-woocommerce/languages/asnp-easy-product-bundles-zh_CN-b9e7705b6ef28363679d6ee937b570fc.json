@@ -242,6 +242,10 @@
 			"Show Discount Badge": [ "显示折扣标识" ],
 			"Show or hide the discount badge in the bundle total price section.": [
 				"在套餐总价部分显示或隐藏折扣标识。"
+			],
+			"Show description inside item": [ "在项目内显示描述" ],
+			"Show the short description inside the bundle item card. Disable this to hide it in the item box.": [
+				"在捆绑项目卡片中显示简短描述。禁用此选项可在项目框中隐藏描述。"
 			]
 		}
 	}

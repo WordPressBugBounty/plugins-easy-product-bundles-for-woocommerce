@@ -227,7 +227,9 @@
 			"Use regular prices only": [ "Использовать только обычные цены" ],
 			"Check this option to ignore sale prices and use only regular prices for item products and bundle pricing": [
 				"Включите эту опцию, чтобы игнорировать цены со скидкой и использовать только обычные цены для товаров и стоимости комплекта."
-			]
+			],
+			"5-Star Review": [ "Отзыв на 5 звёзд" ],
+			"UP TO 75% OFF": [ "СКИДКА ДО 75%" ]
 		}
 	}
 }
