@@ -60,18 +60,33 @@ class ProductSelector implements ProductSelectorInterface {
 			'paginate' => true,
 		] );
 
-		return Products\get_products( [
-			'return'   => ! empty( $args['return'] ) ? $args['return'] : 'objects',
-			'status'   => $args['status'],
-			'type'     => $args['type'],
-			'include'  => $args['products'],
-			'limit'    => ! empty( $args['limit'] ) && 0 < absint( $args['limit'] ) ? absint( $args['limit'] ) : 12,
-			'paginate' => $args['paginate'],
-			'page'     => ! empty( $args['page'] ) && 0 < absint( $args['page'] ) ? absint( $args['page'] ) : 1,
-			'orderby'  => $args['orderby'],
-			'order'    => $args['order'],
-			'search'   => ! empty( $args['search'] ) ? sanitize_text_field( $args['search'] ) : '',
+		$paginate = isset( $args['paginate'] ) ? (bool) $args['paginate'] : true;
+		if ( ! empty( $args['is_check_only'] ) ) {
+			$paginate = false;
+		}
+
+		$result = Products\get_products( [
+			'return'    => ! empty( $args['return'] ) ? $args['return'] : 'objects',
+			'status'    => $args['status'],
+			'type'      => $args['type'],
+			'include'   => $args['products'],
+			'limit'     => ! empty( $args['limit'] ) && 0 < absint( $args['limit'] ) ? absint( $args['limit'] ) : 12,
+			'paginate'  => $paginate,
+			'page'      => ! empty( $args['page'] ) && 0 < absint( $args['page'] ) ? absint( $args['page'] ) : 1,
+			'orderby'   => $args['orderby'],
+			'order'     => $args['order'],
+			'search'    => ! empty( $args['search'] ) ? sanitize_text_field( $args['search'] ) : '',
 		] );
+
+		if ( ! $paginate && is_array( $result ) ) {
+			return (object) [
+				'products' => $result,
+				'total'    => count( $result ),
+				'pages'    => 1,
+			];
+		}
+
+		return $result;
 	}
 
 }

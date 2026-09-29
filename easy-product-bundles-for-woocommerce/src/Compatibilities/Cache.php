@@ -137,7 +137,7 @@ class Cache {
 			'asnp-easy-product-bundles-product-bundle',
 			'asnp-easy-product-bundles-pro-utils',
 			'asnp-easy-product-bundles-pro-product-bundle',
-			'wepb-checkout-integration',
+			'asnp-wepb-checkout-integration',
 		];
 
 		return array_unique( array_merge( $exclusions, $plugin_js_exclusions ) );
@@ -154,7 +154,7 @@ class Cache {
 			'asnp-easy-product-bundles-shared',
 			'asnp-easy-product-bundles-product-bundle',
 			'asnp-easy-product-bundles-pro-product-bundle',
-			'wepb-checkout-integration',
+			'asnp-wepb-checkout-integration',
 		];
 
 		return array_unique( array_merge( $exclusions, $plugin_css_exclusions ) );

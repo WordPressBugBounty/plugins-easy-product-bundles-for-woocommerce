@@ -311,7 +311,7 @@ class ProductBundle extends \WC_Product {
 			}
 		}
 
-		return $data;
+		return apply_filters( 'asnp_wepb_get_initial_data', $data, $this, $context );
 	}
 
 	public function get_item_default_data( $item ) {
@@ -351,26 +351,32 @@ class ProductBundle extends \WC_Product {
 			'use_regular_price' => isset( $item['use_regular_price'] ) && 'true' === $item['use_regular_price'] ? 'true' : 'false',
 		);
 
+		$hide_out_of_stock = 'true' === get_plugin()->settings->get_setting( 'hide_out_of_stock', 'false' ) || 'yes' === get_option( 'woocommerce_hide_out_of_stock_items' );
+
 		$args = [
-			'return' => 'ids',
-			'hide_out_of_stock' => 'true' === get_plugin()->settings->get_setting( 'hide_out_of_stock', 'false' ),
+			'return'            => 'ids',
+			'limit'             => 2,
+			'is_check_only'     => true,
+			'hide_out_of_stock' => $hide_out_of_stock,
 		];
 
-		// TODO: Use valid values for type and limit.
-		// TODO: Add sort and ordering support.
-		$product_selector = get_plugin()->container()->get( ProductSelectorInterface::class);
-		$query = $product_selector->select_products( $item, $args );
+		$product_selector = get_plugin()->container()->get( ProductSelectorInterface::class );
+		$query            = $product_selector->select_products( $item, $args );
 		if ( empty( $query->products ) ) {
+			$data['product']            = null;
+			$data['can_change_product'] = 'false';
 			return $data;
 		}
 
-		if ( 1 === $query->total && empty( $data['product'] ) && 'false' === $data['optional'] ) {
+		$total_found = isset( $query->total ) ? (int) $query->total : count( $query->products );
+
+		if ( 1 === $total_found && empty( $data['product'] ) && 'false' === $data['optional'] ) {
 			$data['product'] = (int) $query->products[0];
 		}
 
 		if (
-			1 < $query->total ||
-			( 1 == $query->total && 'true' === $data['optional'] && 'check_box' !== get_plugin()->settings->get_setting( 'optional_item_mode', 'check_box' ) )
+			1 < $total_found ||
+			( 1 === $total_found && 'true' === $data['optional'] && 'check_box' !== get_plugin()->settings->get_setting( 'optional_item_mode', 'check_box' ) )
 		) {
 			$data['can_change_product'] = 'true';
 		}
@@ -379,6 +385,7 @@ class ProductBundle extends \WC_Product {
 			$product = wc_get_product( $data['product'] );
 			if (
 				$product && $product->is_purchasable() &&
+				( ! $hide_out_of_stock || $product->is_in_stock() ) &&
 				( ! $product->is_type( 'variable' ) || is_pro_active() )
 			) {
 				$data['product'] = prepare_product_data(
@@ -386,11 +393,11 @@ class ProductBundle extends \WC_Product {
 					$item,
 					[
 						'total_discount_type' => $this->get_total_discount_type(),
-						'total_discount' => $this->get_total_discount()
+						'total_discount'      => $this->get_total_discount(),
 					]
 				);
 			} else {
-				$data['product'] = null;
+				$data['product']            = null;
 				$data['can_change_product'] = 'true';
 			}
 		}

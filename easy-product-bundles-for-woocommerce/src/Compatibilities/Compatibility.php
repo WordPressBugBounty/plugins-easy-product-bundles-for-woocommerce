@@ -39,6 +39,11 @@ class Compatibility {
 			WooPayments::init();
 		}
 
+		// WooCommerce PayPal Payments compatibility.
+		if ( defined( 'PPCP_PAYPAL_BN_CODE' ) ) {
+			PayPal::init();
+		}
+
 		// Stripe compatibility.
 		if ( defined( 'WC_STRIPE_VERSION' ) ) {
 			add_filter( 'wc_stripe_payment_request_supported_types', function ( $types ) {
@@ -52,7 +57,7 @@ class Compatibility {
 		}
 
 		SideCart::init();
-		Cache::init();
+		// Cache::init();
 	}
 
 }

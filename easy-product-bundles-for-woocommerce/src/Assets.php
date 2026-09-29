@@ -37,9 +37,14 @@ class Assets {
 		wp_enqueue_style(
 			'asnp-easy-product-bundles-shared',
 			$this->get_url( 'shared/style', 'css' ),
-			[ 'dashicons' ],
+			[],
 			ASNP_WEPB_VERSION
 		);
+
+		$script_args = function_exists( 'wp_enqueue_script_module' ) || version_compare( get_bloginfo( 'version' ), '6.3', '>=' )
+			? [ 'in_footer' => true, 'strategy' => 'defer' ]
+			: true;
+
 		wp_register_script(
 			'asnp-easy-product-bundles-shared',
 			$this->get_url( 'shared/index', 'js' ),
@@ -50,7 +55,7 @@ class Assets {
 				'wp-api-fetch',
 			],
 			ASNP_WEPB_VERSION,
-			true
+			$script_args
 		);
 
 		$settings = get_plugin()->settings;
@@ -112,9 +117,14 @@ class Assets {
 		wp_enqueue_style(
 			'asnp-easy-product-bundles-product-bundle',
 			$this->get_url( 'product/style', 'css' ),
-			[ 'dashicons' ],
+			[ 'asnp-easy-product-bundles-shared' ],
 			ASNP_WEPB_VERSION
 		);
+
+		$script_args = function_exists( 'wp_enqueue_script_module' ) || version_compare( get_bloginfo( 'version' ), '6.3', '>=' )
+			? [ 'in_footer' => true, 'strategy' => 'defer' ]
+			: true;
+
 		wp_enqueue_script(
 			'asnp-easy-product-bundles-product-bundle',
 			$this->get_url( 'product/index', 'js' ),
@@ -122,7 +132,7 @@ class Assets {
 				'asnp-easy-product-bundles-shared',
 			],
 			ASNP_WEPB_VERSION,
-			true
+			$script_args
 		);
 
 		if ( function_exists( 'wp_set_script_translations' ) ) {

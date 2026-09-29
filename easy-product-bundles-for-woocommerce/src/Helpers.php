@@ -36,7 +36,7 @@ function wc_products_array_filter_readable( $product ) {
 	return $product && is_a( $product, 'WC_Product' ) && current_user_can( 'read_product', $product->get_id() );
 }
 
-function get_product_image_src( $product, $size = 'woocommerce_single', $placeholder = true ) {
+function get_product_image_src( $product, $size = 'woocommerce_thumbnail', $placeholder = true ) {
 	$product = is_numeric( $product ) ? wc_get_product( $product ) : $product;
 	if ( ! $product ) {
 		return '';
@@ -263,7 +263,7 @@ function prepare_product_data( $product, $item = [], $extra_data = [] ) {
 
 	$data = array(
 		'id' => $product->get_id(),
-		'image' => get_product_image_src( $product ),
+		'image' => get_product_image_src( $product, apply_filters( 'asnp_wepb_product_thumbnail_size', 'woocommerce_thumbnail', $product ) ),
 		'is_variable' => $product->is_type( 'variable' ) ? 'true' : 'false',
 		'is_in_stock' => $product->is_in_stock() ? 'true' : 'false',
 		'link' => $product->get_permalink(),

@@ -14,33 +14,53 @@ class CheckoutIntegration implements IntegrationInterface {
 	 * @return string
 	 */
 	public function get_name() {
-		return 'wepb-checkout-integration';
+		return 'asnp-wepb-checkout-integration';
 	}
 
 	/**
 	 * When called invokes any initialization/setup for the integration.
 	 */
 	public function initialize() {
-		wp_enqueue_style(
-			'wepb-checkout-integration',
-			$this->get_url( 'checkout-integration/style', 'css' ),
-			[],
-			ASNP_WEPB_VERSION
-		);
+		static $registered = false;
+		if ( $registered ) {
+			return;
+		}
+		$registered = true;
+
+		$script_args = function_exists( 'wp_enqueue_script_module' ) || version_compare( get_bloginfo( 'version' ), '6.3', '>=' )
+			? [ 'in_footer' => true, 'strategy' => 'defer' ]
+			: true;
 
 		wp_register_script(
-			'wepb-checkout-integration',
+			'asnp-wepb-checkout-integration',
 			$this->get_url( 'checkout-integration/index', 'js' ),
 			[ 'wc-blocks-checkout' ],
 			ASNP_WEPB_VERSION,
-			true
+			$script_args
 		);
 
 		wp_set_script_translations(
-			'wepb-checkout-integration',
+			'asnp-wepb-checkout-integration',
 			'asnp-easy-product-bundles',
 			ASNP_WEPB_ABSPATH . 'languages'
 		);
+
+		add_action( 'woocommerce_blocks_enqueue_cart_block_scripts_after', [ $this, 'enqueue_block_styles' ] );
+		add_action( 'woocommerce_blocks_enqueue_checkout_block_scripts_after', [ $this, 'enqueue_block_styles' ] );
+	}
+
+	/**
+	 * Enqueue styles when cart or checkout block is rendered.
+	 */
+	public function enqueue_block_styles() {
+		if ( ! is_admin() ) {
+			wp_enqueue_style(
+				'asnp-wepb-checkout-integration',
+				$this->get_url( 'checkout-integration/style', 'css' ),
+				[],
+				ASNP_WEPB_VERSION
+			);
+		}
 	}
 
 	/**
@@ -49,7 +69,7 @@ class CheckoutIntegration implements IntegrationInterface {
 	 * @return string[]
 	 */
 	public function get_script_handles() {
-		return [ 'wepb-checkout-integration' ];
+		return [ 'asnp-wepb-checkout-integration' ];
 	}
 
 	/**
