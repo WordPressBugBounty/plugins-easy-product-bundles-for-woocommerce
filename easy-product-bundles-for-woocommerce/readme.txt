@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 6.22.0
+Stable tag: 6.22.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -216,6 +216,12 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.22.1 =
+* Fix: Fixed issues with deferred script caching.
+* Improved: Removed i18n and Fetch API dependencies from scripts.
+* Fix: Fixed issues with translated languages.
+Have questions, suggestions, or feedback? We'd love to hear from you.❤️ If you enjoy the plugin, please consider leaving a ★★★★★ review.🙏
+
 = 6.22.0 =
 * Improved: Added PayPal compatibility for bundle products.
 * Improved: Improved page load performance.
@@ -224,7 +230,6 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 * Fix: Fixed Quick View issues with the WP Rocket – Cache Plugin for WordPress.
 * Fix: Changed the bundle title from `<h1>` to `<span>`. Thanks to **[@lukiooo](https://wordpress.org/support/users/lukiooo/)** for the suggestion.
 * Improved: Ensured compatibility with WooCommerce 11.1.2
-Have questions, suggestions, or feedback? We'd love to hear from you.❤️ If you enjoy the plugin, please consider leaving a ★★★★★ review.🙏
 
 = 6.21.0 =
 * New: Added an option to display the short description inside bundle items.

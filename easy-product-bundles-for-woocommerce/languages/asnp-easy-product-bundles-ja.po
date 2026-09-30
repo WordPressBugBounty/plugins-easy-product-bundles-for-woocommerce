@@ -1,44 +1,39 @@
-# Copyright (C) 2025 Product Bundles Team
+# Copyright (C) 2026 Product Bundles Team
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 6.4.3\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-"
-"bundles-for-woocommerce\n"
-"Language-Team: \n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 6.22.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
+"POT-Creation-Date: 2026-09-30T12:02:13+00:00\n"
+"PO-Revision-Date: 2026-09-30 15:55+0330\n"
+"Last-Translator: \n"
+"Language-Team: ja\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-07-02T20:57:37+00:00\n"
-"PO-Revision-Date: 2025-07-22 17:33+0330\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 3.7\n"
 "X-Domain: asnp-easy-product-bundles\n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"Language: ja\n"
 
 #. Plugin Name of the plugin
 #: easy-product-bundles.php
 msgid "Easy Product Bundles for WooCommerce"
-msgstr ""
+msgstr "Easy Product Bundles for WooCommerce"
 
 #. Plugin URI of the plugin
 #: easy-product-bundles.php
-msgid ""
-"https://www.asanaplugins.com/product/woocommerce-product-bundles/?"
-"utm_source=easy-product-bundles-woocommerce-plugin&utm_campaign=easy-product-"
-"bundles-woocommerce&utm_medium=link"
+msgid "https://www.asanaplugins.com/product/woocommerce-product-bundles/?utm_source=easy-product-bundles-woocommerce-plugin&utm_campaign=easy-product-bundles-woocommerce&utm_medium=link"
 msgstr ""
 
 #. Description of the plugin
 #: easy-product-bundles.php
 msgid "Create product bundles in WooCommerce easily"
-msgstr ""
+msgstr "WooCommerceで商品バンドルを簡単に作成"
 
 #. Author of the plugin
 #: easy-product-bundles.php
 msgid "Product Bundles Team"
-msgstr ""
+msgstr "Product Bundles チーム"
 
 #. Author URI of the plugin
 #: easy-product-bundles.php
@@ -46,1288 +41,1696 @@ msgid "https://www.asanaplugins.com/"
 msgstr ""
 
 #. translators: 1: composer command. 2: plugin directory
-#: easy-product-bundles.php:43 easy-product-bundles.php:61
-msgid ""
-"Your installation of the Easy Product Bundles plugin is incomplete. Please "
-"run %1$s within the %2$s directory."
-msgstr ""
+#: easy-product-bundles.php:44
+#: easy-product-bundles.php:62
+#, php-format
+msgid "Your installation of the Easy Product Bundles plugin is incomplete. Please run %1$s within the %2$s directory."
+msgstr "Easy Product Bundles プラグインのインストールが不完全です。%2$s ディレクトリ内で %1$s を実行してください。"
 
-#: src/Admin/Admin.php:67 assets/js/admin/admin/index.js:2
+#: src/Admin/Admin.php:67
+#: assets/js/admin/admin/index.js:3449
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
-#: src/Admin/Admin.php:70 assets/js/admin/admin/index.js:2
+#: src/Admin/Admin.php:70
 msgid "Go Pro"
-msgstr ""
+msgstr "プロ版に移行"
 
 #: src/Admin/Admin.php:87
+#, php-format
 msgid "Bundle (%d)"
-msgstr ""
+msgstr "バンドル (%d)"
 
-#: src/Admin/Menu.php:28 src/Admin/Menu.php:29 src/Admin/ProductBundle.php:32
+#: src/Admin/Menu.php:27
+#: src/Admin/Menu.php:28
+#: src/Admin/ProductBundle.php:32
 msgid "Product Bundles"
-msgstr ""
+msgstr "商品バンドル"
 
-#: src/Admin/ProductBundle.php:180 src/ProductBundle.php:280
-#: assets/js/admin/product/index.js:2
+#: src/Admin/ProductBundle.php:204
+#: src/Assets.php:121
+#: src/ProductBundle.php:347
+#: assets/js/admin/product/index.js:3625
+#: assets/js/admin/product/index.js:3734
+#: assets/js/shared/index.js:5324
 msgid "Please select a product!"
-msgstr ""
+msgstr "製品を選択してください！"
 
-#: src/Admin/ProductBundle.php:181 src/ProductBundle.php:281
-#: assets/js/admin/product/index.js:2
+#: src/Admin/ProductBundle.php:205
+#: src/ProductBundle.php:348
+#: assets/js/admin/product/index.js:3629
+#: assets/js/admin/product/index.js:3738
 msgid "Please select your product!"
-msgstr ""
+msgstr "お客様の製品を選択してください！"
 
-#: src/Admin/ProductBundle.php:182 src/ProductBundle.php:282
-#: assets/js/admin/product/index.js:2
+#: src/Admin/ProductBundle.php:206
+#: src/ProductBundle.php:349
+#: assets/js/admin/product/index.js:3633
+#: assets/js/admin/product/index.js:3742
 msgid "Please select your product"
-msgstr ""
+msgstr "お客様の製品を選択してください"
 
 #: src/API/BaseController.php:31
+#: src/API/Items.php:117
 msgid "Sorry, you cannot list resources."
-msgstr ""
+msgstr "申し訳ありませんが、リソースを一覧表示できません。"
 
 #: src/API/BaseController.php:47
 msgid "Sorry, you cannot view this resource."
-msgstr ""
+msgstr "申し訳ありませんが、このリソースを表示できません。"
 
 #: src/API/BaseController.php:61
+#: src/API/Items.php:131
 msgid "Sorry, you cannot create an item."
-msgstr ""
+msgstr "申し訳ありませんが、アイテムを作成できません。"
 
 #: src/API/BaseController.php:75
 msgid "Sorry, you cannot update the item."
-msgstr ""
+msgstr "申し訳ありませんが、アイテムを更新できません。"
 
 #: src/API/BaseController.php:89
 msgid "Sorry, you are not allowed to delete this resource."
-msgstr ""
+msgstr "申し訳ありませんが、このリソースを削除する権限がありません。"
 
 #: src/API/BaseController.php:103
 msgid "Sorry, you are not allowed to duplicate this resource."
-msgstr ""
+msgstr "申し訳ありませんが、このリソースを複製する権限がありません。"
 
 #: src/API/BaseController.php:117
 msgid "Sorry, you are not allowed to reorder items."
-msgstr ""
+msgstr "申し訳ありませんが、アイテムの順序を変更する権限がありません。"
 
 #: src/API/ExtendStoreApi.php:105
 msgid "Bundle data"
-msgstr ""
+msgstr "バンドルデータ"
 
 #: src/API/FilterProducts.php:37
 msgid "Filter is required."
-msgstr ""
+msgstr "フィルターは必須です。"
 
 #: src/API/FilterProducts.php:56
 msgid "Filter is invalid."
-msgstr ""
+msgstr "フィルターが無効です。"
 
-#: src/API/FilterProducts.php:62 src/API/FilterProducts.php:98
-#: assets/js/shared/index.js:2
+#: src/API/FilterProducts.php:62
+#: src/API/FilterProducts.php:101
+#: src/Assets.php:132
+#: assets/js/shared/index.js:2551
+#: assets/js/shared/index.js:2600
 msgid "Product ID is required."
-msgstr ""
+msgstr "商品IDは必須です。"
 
-#: src/API/FilterProducts.php:67 src/API/FilterProducts.php:103
-#: src/API/FilterProducts.php:108
+#: src/API/FilterProducts.php:67
+#: src/API/FilterProducts.php:106
+#: src/API/FilterProducts.php:111
 msgid "Product is invalid."
-msgstr ""
+msgstr "商品は無効です。"
 
-#: src/API/FilterProducts.php:72 src/API/FilterProducts.php:93
+#: src/API/FilterProducts.php:72
+#: src/API/FilterProducts.php:96
 msgid "Index is required."
-msgstr ""
+msgstr "インデックスは必須です。"
 
-#: src/API/FilterProducts.php:114 assets/js/shared/index.js:2
+#: src/API/FilterProducts.php:117
+#: src/Assets.php:133
+#: assets/js/shared/index.js:2604
 msgid "Parent product ID is required."
-msgstr ""
+msgstr "親商品IDは必須です。"
 
-#: src/API/FilterProducts.php:119
+#: src/API/FilterProducts.php:122
 msgid "Parent product is invalid."
-msgstr ""
+msgstr "親商品が無効です。"
 
-#: src/API/FilterProducts.php:133
+#: src/API/FilterProducts.php:141
 msgid "Parent product is not a valid type."
-msgstr ""
+msgstr "親商品のタイプが無効です。"
 
-#: src/API/FilterProducts.php:144
+#: src/API/FilterProducts.php:152
 msgid "Variable is required."
-msgstr ""
+msgstr "バリエーション設定は必須です。"
 
-#: src/API/FilterProducts.php:181 src/API/FilterProducts.php:220
+#: src/API/FilterProducts.php:191
+#: src/API/FilterProducts.php:245
+#, php-format
 msgid "Filter by %s"
-msgstr ""
+msgstr "%s でフィルター"
 
-#: src/API/FilterProducts.php:198
+#: src/API/FilterProducts.php:213
 msgid "Variation is required."
-msgstr ""
+msgstr "バリエーションは必須です。"
 
-#: src/API/FilterProducts.php:246
+#: src/API/FilterProducts.php:276
 msgid "Filter variable product variations or all products."
-msgstr ""
+msgstr "バリエーション商品のバリエーションまたはすべての商品をフィルター。"
 
-#: src/API/Items.php:42 src/API/Items.php:51
+#: src/API/Items.php:42
+#: src/API/Items.php:51
 msgid "Search term is required."
-msgstr ""
+msgstr "検索用語は必須です。"
 
-#: src/API/Items.php:46 src/API/Items.php:89 assets/js/admin/product/index.js:2
+#: src/API/Items.php:46
+#: src/API/Items.php:83
+#: assets/js/admin/product/index.js:2242
+#: assets/js/admin/product/index.js:2278
 msgid "Type is required."
-msgstr ""
+msgstr "タイプは必須です。"
 
-#: src/API/Items.php:85
+#: src/API/Items.php:79
 msgid "Items is required."
-msgstr ""
+msgstr "アイテムは必須です。"
 
-#: src/API/Review.php:30 assets/js/admin/admin/index.js:2
-#: assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
+#: src/API/Review.php:30
+#: assets/js/admin/admin/index.js:5077
+#: assets/js/admin/product/index.js:2315
+#: assets/js/admin/review/index.js:122
 msgid "Action is required."
-msgstr ""
+msgstr "アクションは必須です。"
 
 #: src/API/Review.php:43
 msgid "Action not found."
-msgstr ""
+msgstr "アクションが見つかりません。"
 
-#: src/API/Settings.php:52 src/API/Settings.php:72
+#: src/API/Settings.php:52
+#: src/API/Settings.php:72
 msgid "Settings data is required."
-msgstr ""
+msgstr "設定データは必須です。"
 
-#: src/Helpers.php:71
+#: src/Assets.php:110
+#: assets/js/shared/index.js:2717
+#: assets/js/shared/index.js:3836
+msgid "OUT OF STOCK"
+msgstr "在庫切れ"
+
+#: src/Assets.php:111
+#: assets/js/shared/index.js:5120
+msgid "Total:"
+msgstr "合計:"
+
+#: src/Assets.php:112
+#: assets/js/shared/index.js:5165
+msgid "Save"
+msgstr "節約する"
+
+#: src/Assets.php:113
+#: assets/js/shared/index.js:5150
+msgid "Buy all for:"
+msgstr "まとめて購入:"
+
+#: src/Assets.php:114
+#: assets/js/shared/index.js:5145
+msgid "% OFF"
+msgstr "% OFF"
+
+#: src/Assets.php:115
+#: assets/js/shared/index.js:5280
+#, php-format,js-format
+msgid "%s is out of stock."
+msgstr "%s は在庫切れです。"
+
+#: src/Assets.php:116
+#: assets/js/shared/index.js:3635
+msgid "Add"
+msgstr "追加"
+
+#: src/Assets.php:117
+#: assets/js/shared/index.js:3676
+#: assets/js/shared/index.js:4817
+#, php-format,js-format
+msgid "Add%s"
+msgstr "%sを追加"
+
+#: src/Assets.php:118
+#: assets/js/shared/index.js:3805
+#: assets/js/shared/index.js:3867
+#: assets/js/shared/index.js:5709
+#: assets/js/shared/index.js:5721
+msgid "View"
+msgstr "表示"
+
+#: src/Assets.php:119
+#: assets/js/shared/index.js:3863
+#: assets/js/shared/index.js:5720
+msgid "Change"
+msgstr "変更"
+
+#: src/Assets.php:120
+#: assets/js/shared/index.js:5202
+msgid "Empty bundle!"
+msgstr "空のバンドルです！"
+
+#: src/Assets.php:122
+#: assets/js/shared/index.js:5230
+#: assets/js/shared/index.js:5330
+msgid "Please select a product for all items."
+msgstr "すべてのアイテムの製品を選択してください。"
+
+#: src/Assets.php:123
+#: assets/js/shared/index.js:5260
+#, php-format,js-format
+msgid "Please select a purchasable product for %s before adding bundle to the cart."
+msgstr "バンドルをカートに追加する前に、%s の購入可能な商品を選択してください。"
+
+#: src/Assets.php:124
+#: assets/js/shared/index.js:5221
+#: assets/js/shared/index.js:5244
+#: assets/js/shared/index.js:5298
+#, php-format,js-format
+msgid "Please select a purchasable variation for %s before adding bundle to the cart."
+msgstr "バンドルをカートに追加する前に、%s の購入可能なバリエーションを選択してください。"
+
+#: src/Assets.php:125
+msgid "Product information"
+msgstr "商品情報"
+
+#: src/Assets.php:126
+#: assets/js/shared/index.js:5013
+msgid "Product quantity"
+msgstr "商品の数量"
+
+#: src/Assets.php:127
+#: assets/js/shared/index.js:4871
+msgid "Bundle item image"
+msgstr "バンドルアイテムの画像"
+
+#: src/Assets.php:128
+#: assets/js/shared/index.js:2843
+msgid "Search..."
+msgstr "検索..."
+
+#: src/Assets.php:129
+#: assets/js/shared/index.js:3446
+msgid "No products found"
+msgstr "商品が見つかりません"
+
+#: src/Assets.php:130
+#: assets/js/shared/index.js:2543
+#: assets/js/shared/index.js:2592
+msgid "Args is required."
+msgstr "引数は必須です。"
+
+#: src/Assets.php:131
+#: src/ProductBundle.php:410
+#: assets/js/shared/index.js:2547
+#: assets/js/shared/index.js:2596
+msgid "Item index is required."
+msgstr "アイテムインデックスは必須です。"
+
+#: src/Assets.php:134
+#: assets/js/admin/product/index.js:2261
+#: assets/js/shared/index.js:2579
+#: assets/js/shared/index.js:2624
+msgid "There was an error on getting items."
+msgstr "アイテムの取得中にエラーが発生しました。"
+
+#: src/Assets.php:135
+msgid "Select options"
+msgstr "オプションを選択"
+
+#: src/Assets.php:136
+msgid "Clear selection"
+msgstr "選択をクリア"
+
+#: src/Assets.php:137
+#: assets/js/admin/product/index.js:2493
+msgid "Optional"
+msgstr "オプション"
+
+#: src/Assets.php:138
+msgid "Delete"
+msgstr "削除"
+
+#: src/Assets.php:139
+#: assets/js/shared/index.js:3300
+msgid "Back"
+msgstr "戻る"
+
+#: src/Assets.php:140
+#: assets/js/shared/index.js:3324
+msgid "Close"
+msgstr "閉じる"
+
+#: src/Assets.php:141
+#: assets/js/shared/index.js:5026
+msgid "Decrease quantity"
+msgstr "数量を減らす"
+
+#: src/Assets.php:142
+#: assets/js/shared/index.js:5049
+msgid "Increase quantity"
+msgstr "数量を増やす"
+
+#: src/Assets.php:143
+#: assets/js/shared/index.js:4779
+msgid "Edit product"
+msgstr "製品を編集"
+
+#: src/Assets.php:144
+#: assets/js/shared/index.js:2735
+msgid "More pictures"
+msgstr "さらに画像を見る"
+
+#: src/Assets.php:145
+#: assets/js/shared/index.js:3594
+msgid "Next"
+msgstr "次"
+
+#: src/Assets.php:146
+#: assets/js/shared/index.js:3590
+msgid "Prev"
+msgstr "前"
+
+#: src/Assets.php:147
+#: assets/js/shared/index.js:2804
+msgid "Show Options"
+msgstr "オプションを表示"
+
+#: src/Helpers.php:73
 msgid "Invalid product type."
-msgstr ""
+msgstr "無効な商品タイプです。"
 
-#: src/Models/ItemsModel.php:74 src/Models/ItemsModel.php:78
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
+#: src/Models/ItemsModel.php:89
+#: src/Models/ItemsModel.php:95
+#: assets/js/admin/admin/index.js:3278
+#: assets/js/admin/product/index.js:2524
+#: assets/js/admin/product/index.js:2567
+#: assets/js/admin/product/index.js:2641
+#: assets/js/admin/product/index.js:2678
+#: assets/js/admin/product/index.js:2715
+#: assets/js/admin/product/index.js:2748
+#: assets/js/admin/product/index.js:2785
+#: assets/js/admin/product/index.js:2882
+#: assets/js/admin/product/index.js:3007
+#: assets/js/admin/product/index.js:3494
+#: assets/js/admin/product/index.js:3667
+#: assets/js/admin/product/index.js:4013
+#: assets/js/admin/product/index.js:4063
+#: assets/js/admin/product/index.js:4233
+#: assets/js/admin/product/index.js:4304
+#: assets/js/admin/product/index.js:4342
+#: assets/js/admin/product/index.js:4512
 msgid "PRO Version"
-msgstr ""
+msgstr "プロバージョン"
 
 #. translators: 1: URL of WooCommerce plugin, 2: The minimum WooCommerce version number
 #: src/Plugin.php:220
-msgid ""
-"The Easy Product Bundles plugin requires <a href=\"%1$s\">WooCommerce</a> "
-"%2$s or greater to be installed and active."
-msgstr ""
+#, php-format
+msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WooCommerce</a> %2$s or greater to be installed and active."
+msgstr "Easy Product Bundles プラグインを使用するには、<a href=\"%1$s\">WooCommerce</a> %2$s 以上がインストールされ、有効化されている必要があります。"
 
 #. translators: 1: URL of WordPress.org, 2: The minimum WordPress version number
 #: src/Plugin.php:229
-msgid ""
-"The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s "
-"or greater to be installed and active."
-msgstr ""
+#, php-format
+msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s or greater to be installed and active."
+msgstr "Easy Product Bundles プラグインを使用するには、<a href=\"%1$s\">WordPress</a> %2$s 以上がインストールされ、有効化されている必要があります。"
 
-#: src/ProductBundle.php:334 assets/js/shared/index.js:2
-msgid "Item index is required."
-msgstr ""
+#: src/ProductBundle.php:179
+#: src/ProductBundle.php:761
+#: assets/js/admin/product/index.js:3637
+msgid "Configure bundle"
+msgstr "バンドルを設定する"
 
-#: src/ProductBundleHooks.php:94
+#: src/ProductBundleHooks.php:96
 msgid "Product bundle"
-msgstr ""
+msgstr "商品バンドル"
 
-#: src/ProductBundleHooks.php:185 src/ProductBundleHooks.php:188
-#: src/ProductBundleHooks.php:190
+#: src/ProductBundleHooks.php:193
+#: src/ProductBundleHooks.php:196
+#: src/ProductBundleHooks.php:198
+#: src/ProductBundleHooks.php:201
 msgid "From"
-msgstr ""
-
-#: src/ProductBundleHooks.php:226 src/ProductBundleHooks.php:239
-msgid "Please select a product for each of the required bundle items."
-msgstr ""
-
-#: src/ProductBundleHooks.php:230
-msgid "Invalid product bundle."
-msgstr ""
+msgstr "から"
 
 #: src/ProductBundleHooks.php:235
+#: src/ProductBundleHooks.php:248
+msgid "Please select a product for each of the required bundle items."
+msgstr "必須のバンドルアイテムごとに商品を選択してください。"
+
+#: src/ProductBundleHooks.php:239
+msgid "Invalid product bundle."
+msgstr "無効な商品バンドルです。"
+
+#: src/ProductBundleHooks.php:244
 msgid "Bundle product is unavailable."
-msgstr ""
-
-#: src/ProductBundleHooks.php:259
-msgid "Selected product for the bundle item %d is invalid."
-msgstr ""
-
-#: src/ProductBundleHooks.php:263
-msgid "This product is protected and cannot be purchased."
-msgstr ""
+msgstr "バンドル商品は利用できません。"
 
 #: src/ProductBundleHooks.php:267
+#, php-format
+msgid "Selected product for the bundle item %d is invalid."
+msgstr "バンドルアイテム %d に選択された商品は無効です。"
+
+#: src/ProductBundleHooks.php:271
+#, php-format
+msgid "Please select a variation for the bundle item &quot;%s&quot;."
+msgstr "バンドルアイテム &quot;%s&quot; のバリエーションを選択してください。"
+
+#: src/ProductBundleHooks.php:275
+msgid "This product is protected and cannot be purchased."
+msgstr "この商品は保護されており、購入できません。"
+
+#: src/ProductBundleHooks.php:279
+#, php-format
 msgid "Product &quot;%s&quot; is not purchasable."
-msgstr ""
+msgstr "商品 &quot;%s&quot; は購入できません。"
 
-#: src/ProductBundleHooks.php:272 src/ProductBundleHooks.php:299
-#: src/ProductBundleHooks.php:302 src/ProductBundleHooks.php:305
-#: src/ProductBundleHooks.php:308
-msgid "Please select a valid quantity for the bundle item &quot;%s&quot;."
-msgstr ""
-
-#. translators: %s: product name
 #: src/ProductBundleHooks.php:284
-msgid "You cannot add another \"%s\" to your cart."
-msgstr ""
-
-#: src/ProductBundleHooks.php:294 src/ProductBundleHooks.php:357
-msgid "View cart"
-msgstr ""
-
-#. translators: %s: product name
-#: src/ProductBundleHooks.php:315
-msgid ""
-"You cannot add &quot;%s&quot; to the bundle item because the product is out "
-"of stock."
-msgstr "「%s」をバンドル商品に追加できません。商品は在庫切れです。"
+#: src/ProductBundleHooks.php:366
+#: src/ProductBundleHooks.php:370
+#: src/ProductBundleHooks.php:373
+#, php-format
+msgid "Please select a valid quantity for the bundle item &quot;%s&quot;."
+msgstr "バンドルアイテム &quot;%s&quot; に有効な数量を選択してください。"
 
 #. translators: 1: product name 2: quantity in stock
-#: src/ProductBundleHooks.php:332 src/ProductBundleHooks.php:461
-msgid ""
-"You cannot add that amount of &quot;%1$s&quot; to the cart because there is "
-"not enough stock (%2$s remaining)."
-msgstr ""
-"「%1$s」をこれだけの数量カートに追加できません。在庫が不足しています（残り "
-"%2$s）。"
+#: src/ProductBundleHooks.php:296
+#: src/ProductBundleHooks.php:397
+#: src/ProductBundleHooks.php:522
+#, php-format
+msgid "You cannot add that amount of &quot;%1$s&quot; to the cart because there is not enough stock (%2$s remaining)."
+msgstr "在庫が不足しているため（残り %2$s 個）、その数量の &quot;%1$s&quot; をカートに追加できません。"
+
+#: src/ProductBundleHooks.php:321
+#: src/ProductBundleHooks.php:360
+#: src/ProductBundleHooks.php:422
+msgid "View cart"
+msgstr "カートを見る"
 
 #. translators: 1: quantity in stock 2: current quantity
-#: src/ProductBundleHooks.php:359
-msgid ""
-"You cannot add that amount of &quot;%1$s&quot; to the cart &mdash; we have "
-"%2$s in stock and you already have %3$s in your cart."
-msgstr ""
-"「%1$s」をこれだけの数量カートに追加できません — 在庫は%2$sあり、すでにカート"
-"に%3$s入っています。"
+#: src/ProductBundleHooks.php:323
+#: src/ProductBundleHooks.php:424
+#, php-format
+msgid "You cannot add that amount of &quot;%1$s&quot; to the cart &mdash; we have %2$s in stock and you already have %3$s in your cart."
+msgstr "その数量の &quot;%1$s&quot; をカートに追加できません &mdash; 在庫は %2$s 個で、すでにカートに %3$s 個あります。"
 
-#: src/ProductBundleHooks.php:377
-msgid ""
-"You cannot add &quot;%s&quot; to the bundle item because it is an invalid "
-"product."
-msgstr "「%s」をバンドル商品に追加できません。不正な商品です。"
+#. translators: %s: product name
+#: src/ProductBundleHooks.php:350
+#, php-format
+msgid "You cannot add another \"%s\" to your cart."
+msgstr "カートにこれ以上 \"%s\" を追加することはできません。"
+
+#. translators: %s: product name
+#: src/ProductBundleHooks.php:380
+#, php-format
+msgid "You cannot add &quot;%s&quot; to the bundle item because the product is out of stock."
+msgstr "商品が在庫切れのため、バンドルアイテムに &quot;%s&quot; を追加できません。"
+
+#: src/ProductBundleHooks.php:442
+#, php-format
+msgid "You cannot add &quot;%s&quot; to the bundle item because it is an invalid product."
+msgstr "無効な商品のため、バンドルアイテムに &quot;%s&quot; を追加できません。"
 
 #. Translators: %s Product title.
-#: src/ProductBundleHooks.php:433
+#: src/ProductBundleHooks.php:498
+#, php-format
 msgid "You can only have 1 %s in your cart."
-msgstr "カートに入れられる「%s」は1つだけです。"
+msgstr "カートに入れられる %s は1個のみです。"
 
-#: src/ProductBundleHooks.php:441
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; must be at least %2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:506
+#, php-format
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be at least %2$d."
+msgstr "カートの更新に失敗しました。&quot;%1$s&quot; の数量は少なくとも %2$d 個である必要があります。"
 
-#: src/ProductBundleHooks.php:445
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; cannot be higher than "
-"%2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:510
+#, php-format
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; cannot be higher than %2$d."
+msgstr "カートの更新に失敗しました。&quot;%1$s&quot; の数量は %2$d 個を超えることはできません。"
 
-#: src/ProductBundleHooks.php:449 src/ProductBundleHooks.php:453
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:514
+#, php-format
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
+msgstr "カートの更新に失敗しました。&quot;%1$s&quot; の数量は %2$d 個である必要があります。"
 
-#: src/ProductBundleHooks.php:1079
+#: src/ProductBundleHooks.php:1213
+#, php-format
 msgid "(Bundled in %s)"
-msgstr ""
+msgstr "(%s にバンドル)"
 
-#: src/ProductBundleHooks.php:1155 src/ProductBundleHooks.php:1167
+#: src/ProductBundleHooks.php:1289
+#: src/ProductBundleHooks.php:1301
 msgid "Invalid bundle product."
-msgstr ""
+msgstr "無効なバンドル商品です。"
 
-#: src/ProductBundleHooks.php:1160 src/ProductBundleHooks.php:1165
+#: src/ProductBundleHooks.php:1294
+#: src/ProductBundleHooks.php:1299
 msgid "Bundle product has not default items to add it to the order."
-msgstr ""
+msgstr "バンドル商品に注文に追加するデフォルトアイテムがありません。"
 
-#: src/ProductBundleHooks.php:1224
+#: src/ProductBundleHooks.php:1370
 msgid "Can not add bundle product to the order."
-msgstr ""
+msgstr "注文にバンドル商品を追加できません。"
 
-#: src/ProductBundleHooks.php:1234
+#: src/ProductBundleHooks.php:1380
 msgid "Can not add bundle item to the order."
-msgstr ""
+msgstr "注文にバンドルアイテムを追加できません。"
 
 #: src/ProductSelector.php:14
 msgid "Product selector item is empty."
-msgstr ""
+msgstr "商品セレクターアイテムが空です。"
 
 #: src/ProductSelector.php:43
 msgid "Query args is required."
-msgstr ""
+msgstr "クエリ引数は必須です。"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2521
 msgid "Bundle position"
-msgstr ""
+msgstr "バンドルの位置"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2534
 msgid "Before Add to Cart button"
-msgstr ""
+msgstr "カートに追加ボタンの前"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2540
 msgid "After Add to Cart button"
-msgstr ""
+msgstr "カートに追加ボタンの後"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2546
 msgid "Before Add to Cart form"
-msgstr ""
+msgstr "カートに追加フォームの前"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2552
 msgid "After Add to Cart form"
-msgstr ""
+msgstr "カートに追加フォームの後"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2558
 msgid "Before product excerpt"
-msgstr ""
+msgstr "製品の抜粋の前"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2564
 msgid "After product excerpt"
-msgstr ""
+msgstr "製品の抜粋の後"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2570
 msgid "After product meta"
-msgstr ""
+msgstr "製品メタの後"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2576
+#: assets/js/admin/admin/index.js:3214
+#: assets/js/admin/product/index.js:3123
+#: assets/js/admin/product/index.js:4469
 msgid "None"
-msgstr ""
+msgstr "なし"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2579
 msgid "Before CSS selector"
-msgstr ""
+msgstr "CSSセレクターの前"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2585
 msgid "After CSS selector"
-msgstr ""
+msgstr "CSSセレクターの後"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2593
 msgid "product bundle position in product page."
-msgstr ""
+msgstr "製品ページ内のバンドルの位置。"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2613
 msgid "CSS Selector"
-msgstr ""
+msgstr "CSSセレクター"
 
-#: assets/js/admin/admin/index.js:2
-msgid "(Pro)"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Back default color"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product image object-fit"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Cover"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Contain"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Fill"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Inherit"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Initial"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Revert"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Scale-down"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Unset"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Bundle"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Item View"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show stock"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product Stock availability in modal."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show rating"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product rating in modal."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show description(on hover)"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product description when mouse hover over it."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Prepend parent name"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Prepend the parent name to the item name in the cart and order."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Hide out of stock"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Hide out of stock products."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show price in cart"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product bundle items price visibility in cart and checkout."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show products list"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show products list below products bundle."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show total price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show the total price of the selected items below the products list."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show saved money"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show the saved money when calculating the total price."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show modal quick view"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product quick view icon in modal."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show selected product quick view"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product quick view icon in the selected product."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Quantity field on item"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show quantity field on item."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show plus icon"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show plus icon between items."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Disable popup"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Disable popup for items that have only one product."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Theme"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Grid 1"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Grid 2"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "List 1"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "List 2"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Size"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Small"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Medium"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Large"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Optional item mode"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Checkbox"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Delete button"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product bundle price on shop page"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Total price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "From total price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "From min price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Set how to show the product bundle price on the shop page."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Item price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product subtotal"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Set how to show the product price in item."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product list price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Set how to show the product price in product list."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Link to product"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "New tab"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "No link"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show the product change modal"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Click on product in pop-up"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product selection"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product details"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Coupon apply method"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Both of bundle and bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "On bundle"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "On bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "None of bundle and bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid ""
-"Product based coupons apply method. Can apply on \"bundle\", \"bundle items"
-"\", \"both\" or \"none\"."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Cart contents count"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid ""
-"How to count bundle products in the cart? Count both of \"bundle and its "
-"items\" or \"only bundle\" or \"only bundle items\"."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product price selector"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Add to cart button selector"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Change product modal"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Number of products per page"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Styles"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Save Changes"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2638
 msgid "License Key"
-msgstr ""
+msgstr "ライセンスキー"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2643
 msgid "Enter Your License Key"
-msgstr ""
+msgstr "ライセンスキーを入力"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2656
 msgid "Notice"
-msgstr ""
+msgstr "注意"
 
-#: assets/js/admin/admin/index.js:2
-msgid ""
-"Each website using this plugin needs a legal license (1 license = 1 website)."
-msgstr ""
+#: assets/js/admin/admin/index.js:2660
+msgid "Each website using this plugin needs a legal license (1 license = 1 website)."
+msgstr "このプラグインを使用する各ウェブサイトには、法的なライセンスが必要です（1ライセンス＝1ウェブサイト）。"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2666
 msgid "You can find more information on"
-msgstr ""
+msgstr "詳細情報はこちら"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2674
 msgid "software license agreement"
-msgstr ""
+msgstr "ソフトウェアライセンス契約"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2680
 msgid "If you need to buy a new license of this plugin"
-msgstr ""
+msgstr "このプラグインの新しいライセンスを購入する必要がある場合"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2688
 msgid "click here."
-msgstr ""
+msgstr "ここをクリック。"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2696
 msgid "Where can I find my license key?"
-msgstr ""
+msgstr "ライセンスキーはどこにありますか？"
 
-#: assets/js/admin/admin/index.js:2
-msgid "There was an error on getting settings."
-msgstr ""
+#: assets/js/admin/admin/index.js:2709
+#: assets/js/admin/admin/index.js:4995
+msgid "Save Changes"
+msgstr "変更を保存"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Data is required."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "There was an error on saving settings."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "There was an error on applying review."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid ""
-"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and "
-"give it a %2$s to help us spread the word and boost our motivation?%4$s "
-"%5$sShare your feature requests%6$s with the review, We always check them "
-"and try our best."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "OK, you deserve it!"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "I already did"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
+#: assets/js/admin/admin/index.js:2841
+#: assets/js/admin/admin/index.js:5255
+#: assets/js/admin/admin/index.js:5291
+#: assets/js/admin/product/index.js:4674
+#: assets/js/admin/product/index.js:4710
+#: assets/js/admin/review/index.js:248
+#: assets/js/admin/review/index.js:284
 msgid "Maybe Later"
-msgstr ""
+msgstr "後で"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "I need help"
-msgstr ""
+#: assets/js/admin/admin/index.js:2926
+msgid "Bundle title color"
+msgstr "バンドルタイトルの色"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "Never show again"
-msgstr ""
+#: assets/js/admin/admin/index.js:2932
+msgid "Empty item title color"
+msgstr "空のアイテムのタイトルの色"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Apps you might like"
-msgstr ""
+#: assets/js/admin/admin/index.js:2938
+msgid "Empty item title hover color"
+msgstr "空のアイテムのタイトルのホバー色"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Active Installations"
-msgstr ""
+#: assets/js/admin/admin/index.js:2947
+msgid "Product title color"
+msgstr "製品タイトルの色"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Free Version"
-msgstr ""
+#: assets/js/admin/admin/index.js:2953
+msgid "Product crossed out price color"
+msgstr "製品の取り消し線価格の色"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Buy Pro"
-msgstr ""
+#: assets/js/admin/admin/index.js:2962
+msgid "Product sale price color"
+msgstr "製品のセール価格の色"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2971
+msgid "Modal header color"
+msgstr "モーダルヘッダーの色"
+
+#: assets/js/admin/admin/index.js:2977
+msgid "Quantity field buttons hover color"
+msgstr "数量フィールドボタンのホバー時の色"
+
+#: assets/js/admin/admin/index.js:2986
+msgid "Alert message color"
+msgstr "アラートメッセージの色"
+
+#: assets/js/admin/admin/index.js:2992
+msgid "Alert message background color"
+msgstr "アラートメッセージの背景色"
+
+#: assets/js/admin/admin/index.js:3001
+msgid "Optional badge color"
+msgstr "オプションバッジの色"
+
+#: assets/js/admin/admin/index.js:3008
+msgid "Optional badge title color"
+msgstr "オプションバッジのタイトルの色"
+
+#: assets/js/admin/admin/index.js:3018
+msgid "Quick view icon color"
+msgstr "クイックビューアイコンの色"
+
+#: assets/js/admin/admin/index.js:3025
+msgid "Plus icon color"
+msgstr "プラスアイコンの色"
+
+#: assets/js/admin/admin/index.js:3032
+msgid "Quick view button color"
+msgstr "クイックビューボタンの色"
+
+#: assets/js/admin/admin/index.js:3039
+msgid "Quick view button text color"
+msgstr "クイックビューボタンのテキストの色"
+
+#: assets/js/admin/admin/index.js:3049
+msgid "Popup Variable “Show Options” Button Text Color"
+msgstr "ポップアップ内の可変商品用「オプションを表示」ボタンのテキスト色"
+
+#: assets/js/admin/admin/index.js:3058
+msgid "Images icon color"
+msgstr "画像アイコンの色"
+
+#: assets/js/admin/admin/index.js:3065
+msgid "Total price - sale price color"
+msgstr "総価格 - 販売価格の色"
+
+#: assets/js/admin/admin/index.js:3074
+msgid "Total price - crossed out price color"
+msgstr "総価格 - 取り消し線の付いた価格の色"
+
+#: assets/js/admin/admin/index.js:3083
+msgid "Total price - saved amount color"
+msgstr "総価格 - 節約額の色"
+
+#: assets/js/admin/admin/index.js:3092
+msgid "Total price - saved amount background color"
+msgstr "総価格 - 節約額の背景色"
+
+#: assets/js/admin/admin/index.js:3118
+#: assets/js/admin/admin/index.js:3915
+#: assets/js/admin/admin/index.js:3954
+#: assets/js/admin/admin/index.js:3993
+#: assets/js/admin/admin/index.js:4032
+#: assets/js/admin/admin/index.js:4133
+#: assets/js/admin/admin/index.js:4675
+#: assets/js/admin/admin/index.js:4796
+#: assets/js/admin/admin/index.js:4837
+#: assets/js/admin/admin/index.js:4877
+msgid "(Pro)"
+msgstr "(Pro)"
+
+#: assets/js/admin/admin/index.js:3160
+msgid "Back default color"
+msgstr "デフォルトの色に戻す"
+
+#: assets/js/admin/admin/index.js:3181
+msgid "Product image object-fit"
+msgstr "製品画像のobject-fit"
+
+#: assets/js/admin/admin/index.js:3199
+msgid "Cover"
+msgstr "Cover (全体を覆う)"
+
+#: assets/js/admin/admin/index.js:3202
+msgid "Contain"
+msgstr "Contain (全体を収める)"
+
+#: assets/js/admin/admin/index.js:3205
+msgid "Fill"
+msgstr "Fill (引き伸ばす)"
+
+#: assets/js/admin/admin/index.js:3208
+msgid "Inherit"
+msgstr "Inherit (継承)"
+
+#: assets/js/admin/admin/index.js:3211
+msgid "Initial"
+msgstr "Initial (初期値)"
+
+#: assets/js/admin/admin/index.js:3217
+msgid "Revert"
+msgstr "Revert (復帰)"
+
+#: assets/js/admin/admin/index.js:3220
+msgid "Scale-down"
+msgstr "Scale-down (縮小)"
+
+#: assets/js/admin/admin/index.js:3223
+msgid "Unset"
+msgstr "Unset (未設定)"
+
+#: assets/js/admin/admin/index.js:3411
 msgid "Saved Successfully."
-msgstr ""
+msgstr "正常に保存されました。"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3419
 msgid "There was an error on saving the settings."
-msgstr ""
+msgstr "設定の保存中にエラーが発生しました。"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3464
 msgid "Apps"
-msgstr ""
+msgstr "アプリ"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3481
 msgid "Enable Updates"
-msgstr ""
+msgstr "更新を有効にする"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3496
 msgid "Articles"
-msgstr ""
+msgstr "記事"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3510
 msgid "Video Tutorials"
-msgstr ""
+msgstr "動画チュートリアル"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3524
 msgid "Get Support"
-msgstr ""
+msgstr "サポートを受ける"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/admin/index.js:3538
+msgid "5-Star Review"
+msgstr "5つ星レビュー"
+
+#: assets/js/admin/admin/index.js:3553
+#: assets/js/admin/admin/index.js:3751
+msgid "Buy Pro"
+msgstr "Pro版を購入"
+
+#: assets/js/admin/admin/index.js:3558
+#: assets/js/admin/product/index.js:3928
+msgid "UP TO 75% OFF"
+msgstr "最大75%オフ"
+
+#: assets/js/admin/admin/index.js:3693
+msgid "Apps you might like"
+msgstr "おすすめのアプリ"
+
+#: assets/js/admin/admin/index.js:3724
+msgid "Active Installations"
+msgstr "アクティブインストール数"
+
+#: assets/js/admin/admin/index.js:3739
+msgid "Free Version"
+msgstr "無料版"
+
+#: assets/js/admin/admin/index.js:3780
+#: assets/js/admin/admin/index.js:4605
+msgid "Bundle"
+msgstr "バンドル"
+
+#: assets/js/admin/admin/index.js:3784
+msgid "Item View"
+msgstr "アイテムビュー"
+
+#: assets/js/admin/admin/index.js:3789
+msgid "Show description(on hover)"
+msgstr "説明を表示（ホバー時）"
+
+#: assets/js/admin/admin/index.js:3795
+msgid "Show product description when mouse hover over it."
+msgstr "マウスがホバーすると製品の説明を表示。"
+
+#: assets/js/admin/admin/index.js:3819
+msgid "Show description inside item"
+msgstr "アイテム内に説明を表示"
+
+#: assets/js/admin/admin/index.js:3825
+msgid "Show the short description inside the bundle item card. Disable this to hide it in the item box."
+msgstr "バンドルアイテムカード内に短い説明を表示します。アイテムボックスで非表示にするには、このオプションを無効にしてください。"
+
+#: assets/js/admin/admin/index.js:3849
+msgid "Prepend parent name"
+msgstr "親の名前を前に追加"
+
+#: assets/js/admin/admin/index.js:3855
+msgid "Prepend the parent name to the item name in the cart and order."
+msgstr "カートと注文でアイテム名の前に親の名前を追加。"
+
+#: assets/js/admin/admin/index.js:3879
+msgid "Show “bundled” in suffix"
+msgstr "接尾辞に「バンドル済み」を表示"
+
+#: assets/js/admin/admin/index.js:3885
+msgid "Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section."
+msgstr "注文詳細セクションで、各バンドル商品名の後に「[親商品]に含まれる」というテキストを表示する。"
+
+#: assets/js/admin/admin/index.js:3909
+msgid "Hide out of stock"
+msgstr "在庫切れを非表示"
+
+#: assets/js/admin/admin/index.js:3920
+msgid "Hide out of stock products."
+msgstr "在庫切れ製品を非表示。"
+
+#: assets/js/admin/admin/index.js:3948
+msgid "Show price in cart"
+msgstr "カートに価格を表示"
+
+#: assets/js/admin/admin/index.js:3959
+msgid "Product bundle items price visibility in cart and checkout."
+msgstr "カートとチェックアウトでバンドルアイテムの価格表示。"
+
+#: assets/js/admin/admin/index.js:3987
+msgid "Show products list"
+msgstr "製品リストを表示"
+
+#: assets/js/admin/admin/index.js:3998
+msgid "Show products list below products bundle."
+msgstr "バンドル製品の下に製品リストを表示。"
+
+#: assets/js/admin/admin/index.js:4026
+msgid "Show total price"
+msgstr "合計価格を表示"
+
+#: assets/js/admin/admin/index.js:4037
+msgid "Show the total price of the selected items below the products list."
+msgstr "製品リストの下に選択したアイテムの合計価格を表示。"
+
+#: assets/js/admin/admin/index.js:4065
+msgid "Show saved money"
+msgstr "節約した金額を表示"
+
+#: assets/js/admin/admin/index.js:4071
+msgid "Show the saved money when calculating the total price."
+msgstr "合計価格を計算する際に節約した金額を表示。"
+
+#: assets/js/admin/admin/index.js:4096
+msgid "Show Discount Badge"
+msgstr "割引バッジを表示"
+
+#: assets/js/admin/admin/index.js:4102
+msgid "Show or hide the discount badge in the bundle total price section."
+msgstr "バンドル合計価格セクションの割引バッジを表示または非表示にします。"
+
+#: assets/js/admin/admin/index.js:4127
+msgid "Show selected product quick view"
+msgstr "選択した製品のクイックビューを表示"
+
+#: assets/js/admin/admin/index.js:4138
+msgid "Show product quick view icon in the selected product."
+msgstr "選択した製品にクイックビューアイコンを表示。"
+
+#: assets/js/admin/admin/index.js:4167
+msgid "Quantity field on item"
+msgstr "アイテムの数量フィールド"
+
+#: assets/js/admin/admin/index.js:4173
+msgid "Show quantity field on item."
+msgstr "アイテムに数量フィールドを表示。"
+
+#: assets/js/admin/admin/index.js:4197
+msgid "Show plus icon"
+msgstr "プラスアイコンを表示"
+
+#: assets/js/admin/admin/index.js:4200
+msgid "Show plus icon between items."
+msgstr "アイテム間にプラスアイコンを表示。"
+
+#: assets/js/admin/admin/index.js:4225
+msgid "Calculate bundle price in frontend"
+msgstr "フロントエンドでパッケージ価格を計算する"
+
+#: assets/js/admin/admin/index.js:4231
+msgid "It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary."
+msgstr "割引プラグインとの互換性を高めることができますが、パッケージに多くのアイテムが含まれている場合はメモリの問題を引き起こす可能性があります。動的価格パッケージに便利です。必要な場合のみ有効にしてください。"
+
+#: assets/js/admin/admin/index.js:4259
+#: assets/js/admin/product/index.js:3963
+msgid "Theme"
+msgstr "テーマ"
+
+#: assets/js/admin/admin/index.js:4271
+#: assets/js/admin/product/index.js:3975
+msgid "Grid 1"
+msgstr "グリッド 1"
+
+#: assets/js/admin/admin/index.js:4278
+#: assets/js/admin/product/index.js:3982
+msgid "Grid 2"
+msgstr "グリッド 2"
+
+#: assets/js/admin/admin/index.js:4289
+#: assets/js/admin/product/index.js:3993
+msgid "List 1"
+msgstr "リスト 1"
+
+#: assets/js/admin/admin/index.js:4300
+#: assets/js/admin/product/index.js:4004
+msgid "List 2"
+msgstr "リスト 2"
+
+#: assets/js/admin/admin/index.js:4310
+#: assets/js/admin/product/index.js:4029
+msgid "Size"
+msgstr "サイズ"
+
+#: assets/js/admin/admin/index.js:4324
+#: assets/js/admin/product/index.js:4044
+msgid "Small"
+msgstr "小"
+
+#: assets/js/admin/admin/index.js:4329
+#: assets/js/admin/product/index.js:4049
+msgid "Medium"
+msgstr "中"
+
+#: assets/js/admin/admin/index.js:4336
+#: assets/js/admin/product/index.js:4056
+msgid "Large"
+msgstr "大"
+
+#: assets/js/admin/admin/index.js:4344
+msgid "Optional item mode"
+msgstr "オプションアイテムモード"
+
+#: assets/js/admin/admin/index.js:4362
+msgid "Checkbox"
+msgstr "チェックボックス"
+
+#: assets/js/admin/admin/index.js:4372
+msgid "Delete button"
+msgstr "削除ボタン"
+
+#: assets/js/admin/admin/index.js:4383
+msgid "Product bundle price on shop page"
+msgstr "ショップページでのバンドル価格"
+
+#: assets/js/admin/admin/index.js:4401
+msgid "Total price"
+msgstr "合計価格"
+
+#: assets/js/admin/admin/index.js:4407
+msgid "From total price"
+msgstr "合計価格から"
+
+#: assets/js/admin/admin/index.js:4413
+msgid "From min price"
+msgstr "最小価格から"
+
+#: assets/js/admin/admin/index.js:4421
+msgid "Set how to show the product bundle price on the shop page."
+msgstr "ショップページでバンドル価格を表示する方法を設定。"
+
+#: assets/js/admin/admin/index.js:4430
+msgid "Item price"
+msgstr "アイテム価格"
+
+#: assets/js/admin/admin/index.js:4442
+#: assets/js/admin/admin/index.js:4486
+msgid "Product price"
+msgstr "製品価格"
+
+#: assets/js/admin/admin/index.js:4448
+#: assets/js/admin/admin/index.js:4480
+msgid "Product subtotal"
+msgstr "製品小計"
+
+#: assets/js/admin/admin/index.js:4456
+msgid "Set how to show the product price in item."
+msgstr "アイテム内の製品価格の表示方法を設定。"
+
+#: assets/js/admin/admin/index.js:4465
+msgid "Product list price"
+msgstr "製品リスト価格"
+
+#: assets/js/admin/admin/index.js:4494
+msgid "Set how to show the product price in product list."
+msgstr "製品リスト内の製品価格の表示方法を設定。"
+
+#: assets/js/admin/admin/index.js:4502
+msgid "Link to product"
+msgstr "製品へのリンク"
+
+#: assets/js/admin/admin/index.js:4514
+msgid "New tab"
+msgstr "新しいタブ"
+
+#: assets/js/admin/admin/index.js:4517
+msgid "No link"
+msgstr "リンクなし"
+
+#: assets/js/admin/admin/index.js:4520
+msgid "Show the product change popup"
+msgstr "製品変更ポップアップを表示"
+
+#: assets/js/admin/admin/index.js:4531
+msgid "Coupon apply method"
+msgstr "クーポン適用方法"
+
+#: assets/js/admin/admin/index.js:4546
+#: assets/js/admin/admin/index.js:4599
+msgid "Both of bundle and bundle items"
+msgstr "バンドルとバンドルアイテムの両方"
+
+#: assets/js/admin/admin/index.js:4552
+msgid "On bundle"
+msgstr "バンドルに"
+
+#: assets/js/admin/admin/index.js:4558
+msgid "On bundle items"
+msgstr "バンドルアイテムに"
+
+#: assets/js/admin/admin/index.js:4564
+msgid "None of bundle and bundle items"
+msgstr "バンドルとバンドルアイテムのいずれでもない"
+
+#: assets/js/admin/admin/index.js:4572
+msgid "Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\"."
+msgstr "製品ベースのクーポン適用方法。「バンドル」、「バンドルアイテム」、「両方」、または「なし」に適用できます。"
+
+#: assets/js/admin/admin/index.js:4581
+msgid "Cart contents count"
+msgstr "カート内容のカウント"
+
+#: assets/js/admin/admin/index.js:4608
+msgid "Bundle items"
+msgstr "バンドルアイテム"
+
+#: assets/js/admin/admin/index.js:4616
+msgid "How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\"."
+msgstr "カート内のバンドル製品をどのようにカウントしますか？「バンドルとそのアイテムの両方」または「バンドルのみ」または「バンドルアイテムのみ」をカウントします。"
+
+#: assets/js/admin/admin/index.js:4629
+msgid "Product price selector"
+msgstr "製品価格セレクター"
+
+#: assets/js/admin/admin/index.js:4646
+msgid "Add to cart button selector"
+msgstr "カートに追加ボタンのセレクター"
+
+#: assets/js/admin/admin/index.js:4667
+msgid "Change product popup"
+msgstr "製品変更ポップアップ"
+
+#: assets/js/admin/admin/index.js:4672
+msgid "Disable popup"
+msgstr "ポップアップを無効にする"
+
+#: assets/js/admin/admin/index.js:4680
+msgid "Disable popup for items that have only one product."
+msgstr "1つの製品のみを持つアイテムのポップアップを無効にする"
+
+#: assets/js/admin/admin/index.js:4709
+msgid "Popup Variable ‘Show Options’ Button"
+msgstr "ポップアップ内の「オプションを表示」ボタン（可変商品用）"
+
+#: assets/js/admin/admin/index.js:4715
+msgid "Show or hide the “Show Options” button for variable products inside the popup."
+msgstr "ポップアップ内の可変商品用「オプションを表示」ボタンを表示または非表示にする"
+
+#: assets/js/admin/admin/index.js:4740
+msgid "Show stock"
+msgstr "在庫を表示"
+
+#: assets/js/admin/admin/index.js:4743
+msgid "Show product Stock availability in popup."
+msgstr "ポップアップで製品の在庫状況を表示。"
+
+#: assets/js/admin/admin/index.js:4765
+msgid "Show rating"
+msgstr "評価を表示"
+
+#: assets/js/admin/admin/index.js:4768
+msgid "Show product rating in popup."
+msgstr "ポップアップで製品の評価を表示。"
+
+#: assets/js/admin/admin/index.js:4790
+msgid "Show popup quick view"
+msgstr "ポップアップでクイックビューを表示"
+
+#: assets/js/admin/admin/index.js:4801
+msgid "Show product quick view icon in popup."
+msgstr "ポップアップで製品のクイックビューアイコンを表示。"
+
+#: assets/js/admin/admin/index.js:4830
+msgid "Show search field in popup"
+msgstr "ポップアップウィンドウに検索フィールドを表示"
+
+#: assets/js/admin/admin/index.js:4842
+msgid "This option allows you to show or hide the product search field in the popup window."
+msgstr "このオプションを使用すると、ポップアップウィンドウで製品検索フィールドを表示または非表示にできます。"
+
+#: assets/js/admin/admin/index.js:4871
+msgid "Show Variable Dropdown in Popup"
+msgstr "ポップアップで変動商品のドロップダウンを表示"
+
+#: assets/js/admin/admin/index.js:4882
+msgid "Enable this option to display the dropdown menu for variable products in the popup."
+msgstr "このオプションを有効にすると、ポップアップで変動商品のドロップダウンメニューが表示されます。"
+
+#: assets/js/admin/admin/index.js:4911
+msgid "Click on product in pop-up"
+msgstr "ポップアップ内の製品をクリック"
+
+#: assets/js/admin/admin/index.js:4926
+msgid "Product selection"
+msgstr "製品選択"
+
+#: assets/js/admin/admin/index.js:4936
+msgid "Show product details"
+msgstr "製品の詳細を表示"
+
+#: assets/js/admin/admin/index.js:4947
+msgid "Number of products per page"
+msgstr "1ページあたりの製品数"
+
+#: assets/js/admin/admin/index.js:4954
+msgid "Set how many products are displayed per page in the popup."
+msgstr "ポップアップで1ページに表示する商品の数を設定してください。"
+
+#: assets/js/admin/admin/index.js:4980
+msgid "Styles"
+msgstr "スタイル"
+
+#: assets/js/admin/admin/index.js:5092
+#: assets/js/admin/product/index.js:2330
+#: assets/js/admin/review/index.js:137
+msgid "There was an error on applying review."
+msgstr "レビューの適用中にエラーが発生しました。"
+
+#: assets/js/admin/admin/index.js:5116
+msgid "There was an error on getting settings."
+msgstr "設定の取得中にエラーが発生しました。"
+
+#: assets/js/admin/admin/index.js:5129
+#: assets/js/admin/product/index.js:2238
+#: assets/js/admin/product/index.js:2274
+msgid "Data is required."
+msgstr "データは必須です。"
+
+#: assets/js/admin/admin/index.js:5144
+msgid "There was an error on saving settings."
+msgstr "設定の保存中にエラーが発生しました。"
+
+#: assets/js/admin/admin/index.js:5196
+#: assets/js/admin/product/index.js:4615
+#: assets/js/admin/review/index.js:189
+#, js-format
+msgid "We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best."
+msgstr "%1$s をお楽しみいただけていますでしょうか？%3$s 私たちのモチベーション向上と普及のために、%2$s の評価をしていただけないでしょうか？%4$s %5$s機能のリクエストをレビューで共有してください%6$s。私たちは常に確認し、最善を尽くしています。"
+
+#: assets/js/admin/admin/index.js:5222
+#: assets/js/admin/product/index.js:4641
+#: assets/js/admin/review/index.js:215
+msgid "OK, you deserve it!"
+msgstr "わかりました、評価します！"
+
+#: assets/js/admin/admin/index.js:5237
+#: assets/js/admin/product/index.js:4656
+#: assets/js/admin/review/index.js:230
+msgid "I already did"
+msgstr "すでに評価しました"
+
+#: assets/js/admin/admin/index.js:5270
+#: assets/js/admin/product/index.js:4689
+#: assets/js/admin/review/index.js:263
+msgid "I need help"
+msgstr "助けが必要です"
+
+#: assets/js/admin/admin/index.js:5282
+#: assets/js/admin/product/index.js:4701
+#: assets/js/admin/review/index.js:275
+msgid "Never show again"
+msgstr "二度と表示しない"
+
+#: assets/js/admin/product/index.js:2246
 msgid "Items are required."
-msgstr ""
+msgstr "アイテムは必須です。"
 
-#: assets/js/admin/product/index.js:2 assets/js/shared/index.js:2
-msgid "There was an error on getting items."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2282
 msgid "Search value is required."
-msgstr ""
+msgstr "検索値は必須です。"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2299
 msgid "There was an error on searching items."
-msgstr ""
+msgstr "アイテムの検索中にエラーが発生しました。"
 
-#: assets/js/admin/product/index.js:2
-msgid "Optional"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Check this option to make the bundle item optional to choose by the user"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Selected"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Enable this field to make the optional item selected in the frontend."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Default product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set a default product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Products"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Add products or Variations"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Exclude products"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Select a product that you do not want to be displayed"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Categories"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Select the category product that you want to be displayed in this bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Exclude categories"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Select the category product that you do not want to be displayed in this "
-"bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Tags"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Select the product with tags to display in this bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Exclude tags"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Select the product with tags that you do not want to be displayed in the "
-"bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Categories and Tags relation"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Match at least one"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Match both"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Match at least one: Products should match at least one of categories or tags."
-"%sMatch both: Products should match both categories and tags."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Sort products"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "ID"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2353
+#: assets/js/admin/product/index.js:2914
+#: assets/js/admin/product/index.js:4383
 msgid "Title"
-msgstr ""
+msgstr "タイトル"
 
-#: assets/js/admin/product/index.js:2
-msgid "Menu order"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Date"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Price"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Popularity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Rating"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Ascending"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Descending"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the order of products in the pop-up"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the default product quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Edit quantity by user"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Check this option to allow the user to change the bundle item quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Min quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the minimum quantity of this bundled product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Max quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the maximum quantity of this bundled product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Discount"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Percentage"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Fixed price"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Discount applied to the price of the bundled product. if the bundled product "
-"has a sale price the discount is applied on top of the sale price"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Default Image"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "No image chosen"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Upload Image"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set an image for empty item."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2367
 msgid "Overwrite bundle item title"
-msgstr ""
+msgstr "バンドルアイテムのタイトルを上書き"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2375
 msgid "Short description"
-msgstr ""
+msgstr "短い説明"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Overwrite bundle item short description.(Show when the mouse hovers over it)"
-msgstr ""
+#: assets/js/admin/product/index.js:2389
+msgid "Overwrite bundle item short description.(Show when the mouse hovers over it)"
+msgstr "バンドルアイテムの短い説明を上書き。（マウスが上にホバーすると表示されます）"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2397
 msgid "Product selection title"
-msgstr ""
+msgstr "製品選択タイトル"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2417
 msgid "Change the title of the bundle empty item."
-msgstr ""
+msgstr "バンドル空アイテムのタイトルを変更"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2425
 msgid "Product list title"
-msgstr ""
+msgstr "製品リストタイトル"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2439
 msgid "Change the product list product selection title."
-msgstr ""
+msgstr "製品リストの製品選択タイトルを変更"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2447
 msgid "Modal header title"
-msgstr ""
+msgstr "モーダルヘッダータイトル"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2461
 msgid "Change the pop-up header title"
-msgstr ""
+msgstr "ポップアップヘッダータイトルを変更"
 
-#: assets/js/admin/product/index.js:2
-msgid "Duplicate"
-msgstr ""
+#: assets/js/admin/product/index.js:2517
+msgid "Check this option to make the bundle item optional to choose by the user"
+msgstr "このオプションを選択すると、ユーザーがバンドルアイテムを任意で選択できるようになります"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2543
+msgid "Selected"
+msgstr "選択された"
+
+#: assets/js/admin/product/index.js:2560
+msgid "Enable this field to make the optional item selected in the frontend."
+msgstr "このフィールドを有効にして、フロントエンドでオプション項目を選択可能にします。"
+
+#: assets/js/admin/product/index.js:2584
+msgid "Default product"
+msgstr "デフォルト製品"
+
+#: assets/js/admin/product/index.js:2596
+msgid "Set a default product"
+msgstr "デフォルト製品を設定"
+
+#: assets/js/admin/product/index.js:2603
+msgid "Products"
+msgstr "製品"
+
+#: assets/js/admin/product/index.js:2613
+msgid "Add products or Variations"
+msgstr "製品またはバリエーションを追加"
+
+#: assets/js/admin/product/index.js:2622
+msgid "Exclude products"
+msgstr "製品を除外"
+
+#: assets/js/admin/product/index.js:2634
+msgid "Select a product that you do not want to be displayed"
+msgstr "表示したくない製品を選択してください"
+
+#: assets/js/admin/product/index.js:2659
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: assets/js/admin/product/index.js:2671
+msgid "Select the category product that you want to be displayed in this bundle item"
+msgstr "このバンドルアイテムに表示したいカテゴリー製品を選択してください"
+
+#: assets/js/admin/product/index.js:2696
+msgid "Exclude categories"
+msgstr "カテゴリーを除外"
+
+#: assets/js/admin/product/index.js:2708
+msgid "Select the category product that you do not want to be displayed in this bundle item"
+msgstr "このバンドルアイテムに表示したくないカテゴリー製品を選択してください"
+
+#: assets/js/admin/product/index.js:2732
+msgid "Tags"
+msgstr "タグ"
+
+#: assets/js/admin/product/index.js:2741
+msgid "Select the product with tags to display in this bundle item"
+msgstr "このバンドルアイテムに表示するタグ付き製品を選択してください"
+
+#: assets/js/admin/product/index.js:2766
+msgid "Exclude tags"
+msgstr "タグを除外"
+
+#: assets/js/admin/product/index.js:2778
+msgid "Select the product with tags that you do not want to be displayed in the bundle item"
+msgstr "このバンドルアイテムに表示したくないタグ付き製品を選択してください"
+
+#: assets/js/admin/product/index.js:2803
+msgid "Categories and Tags relation"
+msgstr "カテゴリーとタグの関係"
+
+#: assets/js/admin/product/index.js:2822
+msgid "Match at least one"
+msgstr "少なくとも1つ一致"
+
+#: assets/js/admin/product/index.js:2833
+msgid "Match both"
+msgstr "両方一致"
+
+#: assets/js/admin/product/index.js:2843
+#, js-format
+msgid "Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags."
+msgstr "少なくとも1つ一致: 製品はカテゴリーまたはタグのうち少なくとも1つと一致する必要があります。%s両方一致: 製品はカテゴリーとタグの両方と一致する必要があります。"
+
+#: assets/js/admin/product/index.js:2854
+msgid "Use regular prices only"
+msgstr "通常価格のみを使用"
+
+#: assets/js/admin/product/index.js:2875
+msgid "Check this option to ignore sale prices and use only regular prices for item products and bundle pricing"
+msgstr "このオプションを有効にすると、セール価格を無視し、商品およびバンドル価格には通常価格のみを使用します。"
+
+#: assets/js/admin/product/index.js:2899
+msgid "Sort products"
+msgstr "製品を並べ替え"
+
+#: assets/js/admin/product/index.js:2911
+msgid "ID"
+msgstr "ID"
+
+#: assets/js/admin/product/index.js:2917
+msgid "Menu order"
+msgstr "メニュー順"
+
+#: assets/js/admin/product/index.js:2920
+msgid "Date"
+msgstr "日付"
+
+#: assets/js/admin/product/index.js:2923
+#: assets/js/admin/product/index.js:3129
+#: assets/js/admin/product/index.js:4487
+msgid "Price"
+msgstr "価格"
+
+#: assets/js/admin/product/index.js:2926
+msgid "Popularity"
+msgstr "人気"
+
+#: assets/js/admin/product/index.js:2929
+msgid "Rating"
+msgstr "評価"
+
+#: assets/js/admin/product/index.js:2941
+msgid "Ascending"
+msgstr "昇順"
+
+#: assets/js/admin/product/index.js:2944
+msgid "Descending"
+msgstr "降順"
+
+#: assets/js/admin/product/index.js:2950
+msgid "Set the order of products in the pop-up"
+msgstr "ポップアップ内の製品の順序を設定"
+
+#: assets/js/admin/product/index.js:2957
+msgid "Quantity"
+msgstr "数量"
+
+#: assets/js/admin/product/index.js:2969
+msgid "Set the default product quantity"
+msgstr "デフォルトの製品数量を設定"
+
+#: assets/js/admin/product/index.js:2976
+msgid "To set the quantity to 0,"
+msgstr "数量を0に設定するには、"
+
+#: assets/js/admin/product/index.js:3000
+msgid "make this item optional."
+msgstr "この商品を任意にしてください。"
+
+#: assets/js/admin/product/index.js:3026
+msgid "Edit quantity by user"
+msgstr "ユーザーによる数量編集"
+
+#: assets/js/admin/product/index.js:3046
+msgid "Check this option to allow the user to change the bundle item quantity"
+msgstr "このオプションを選択すると、ユーザーがバンドルアイテムの数量を変更できるようになります"
+
+#: assets/js/admin/product/index.js:3060
+msgid "Min quantity"
+msgstr "最小数量"
+
+#: assets/js/admin/product/index.js:3082
+msgid "Set the minimum quantity of this bundled product"
+msgstr "このバンドル製品の最小数量を設定"
+
+#: assets/js/admin/product/index.js:3090
+msgid "Max quantity"
+msgstr "最大数量"
+
+#: assets/js/admin/product/index.js:3103
+msgid "Set the maximum quantity of this bundled product"
+msgstr "このバンドル製品の最大数量を設定"
+
+#: assets/js/admin/product/index.js:3112
+msgid "Discount"
+msgstr "割引"
+
+#: assets/js/admin/product/index.js:3126
+#: assets/js/admin/product/index.js:4476
+msgid "Percentage"
+msgstr "パーセンテージ"
+
+#: assets/js/admin/product/index.js:3136
+#: assets/js/admin/product/index.js:4082
+msgid "Fixed price"
+msgstr "固定価格"
+
+#: assets/js/admin/product/index.js:3155
+msgid "Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price"
+msgstr "バンドル製品の価格に適用される割引。バンドル製品がセール価格の場合、その上に割引が適用されます"
+
+#: assets/js/admin/product/index.js:3244
+#, js-format
+msgid "Item %d"
+msgstr "アイテム %d"
+
+#: assets/js/admin/product/index.js:3281
 msgid "Duplicate: Pro version"
-msgstr ""
+msgstr "複製：プロバージョン"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3285
+msgid "Duplicate"
+msgstr "複製"
+
+#: assets/js/admin/product/index.js:3297
 msgid "Trash"
-msgstr ""
+msgstr "ゴミ箱"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3339
 msgid "General"
-msgstr ""
+msgstr "一般"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3358
 msgid "Display"
-msgstr ""
+msgstr "表示"
 
-#: assets/js/admin/product/index.js:2
-msgid "Individual theme"
-msgstr ""
+#: assets/js/admin/product/index.js:3425
+msgid "Default Image"
+msgstr "デフォルト画像"
 
-#: assets/js/admin/product/index.js:2
-msgid "GO PRO"
-msgstr ""
+#: assets/js/admin/product/index.js:3461
+msgid "No image chosen"
+msgstr "画像が選択されていません"
 
-#: assets/js/admin/product/index.js:2
-msgid "Need help?"
-msgstr ""
+#: assets/js/admin/product/index.js:3482
+msgid "Upload Image"
+msgstr "画像をアップロード"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"If checked, disable auto calculate price and use product price as bundle "
-"price."
-msgstr ""
+#: assets/js/admin/product/index.js:3487
+msgid "Set an image for empty item."
+msgstr "空のアイテムに画像を設定"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3839
 msgid "Please enable fixed price first."
-msgstr ""
+msgstr "まず固定価格を有効にしてください。"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3869
+msgid "Article"
+msgstr "記事"
+
+#: assets/js/admin/product/index.js:3887
+msgid "Quick Tutorial"
+msgstr "クイックチュートリアル"
+
+#: assets/js/admin/product/index.js:3906
+msgid "Need help?"
+msgstr "助けが必要ですか？"
+
+#: assets/js/admin/product/index.js:3926
+msgid "GO PRO"
+msgstr "プロ版に移行"
+
+#: assets/js/admin/product/index.js:3939
+msgid "Individual theme"
+msgstr "個別テーマ"
+
+#: assets/js/admin/product/index.js:4104
+msgid "If checked, disable auto calculate price and use product price as bundle price."
+msgstr "選択した場合、価格の自動計算を無効にし、製品価格をバンドル価格として使用します。"
+
+#: assets/js/admin/product/index.js:4109
 msgid "Click here to set price"
-msgstr ""
+msgstr "価格を設定するにはここをクリック"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4123
 msgid "Include parent price"
-msgstr ""
+msgstr "親製品の価格を含める"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Include the parent product price in the bundle total price. (parent price + "
-"selected items price)"
-msgstr ""
+#: assets/js/admin/product/index.js:4143
+msgid "Include the parent product price in the bundle total price. (parent price + selected items price)"
+msgstr "親製品の価格をバンドルの合計価格に含めます。（親価格 + 選択したアイテムの価格）"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4152
 msgid "Sync stock quantity"
-msgstr ""
+msgstr "在庫数量を同期する"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Update the bundle stock quantity based on the stock quantity of child "
-"products. Note: This feature works only when each item has exactly one "
-"product, which is added to the default product field and is not optional."
-msgstr ""
+#: assets/js/admin/product/index.js:4169
+msgid "Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional."
+msgstr "バンドルの在庫数量を子商品の在庫数量に基づいて更新します。注意：この機能は、各アイテムに正確に1つの製品があり、それがデフォルトの製品フィールドに追加され、オプションではない場合にのみ機能します。"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4196
 msgid "Hide products price"
-msgstr ""
+msgstr "製品価格を隠す"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4208
 msgid "No"
-msgstr ""
+msgstr "いいえ"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4215
 msgid "Yes"
-msgstr ""
+msgstr "はい"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4223
 msgid "Only regular price"
-msgstr ""
+msgstr "通常価格のみ"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4250
 msgid "Shipping fee"
-msgstr ""
+msgstr "送料"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4262
 msgid "Apply to the whole bundle"
-msgstr ""
+msgstr "バンドル全体に適用"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4268
+msgid "Apply to the parent product"
+msgstr "親製品に適用"
+
+#: assets/js/admin/product/index.js:4274
 msgid "Apply to each bundle item"
-msgstr ""
+msgstr "各バンドルアイテムに適用"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4283
 msgid "Min items quantity"
-msgstr ""
+msgstr "最小アイテム数量"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4297
 msgid "Set the minimum total quantity of bundled items."
-msgstr ""
+msgstr "バンドルアイテムの最小合計数量を設定。"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4321
 msgid "Max items quantity"
-msgstr ""
+msgstr "最大アイテム数量"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4335
 msgid "Set the maximum total quantity of bundled items."
-msgstr ""
+msgstr "バンドルアイテムの最大合計数量を設定。"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4359
 msgid "Custom display price"
-msgstr ""
+msgstr "カスタム表示価格"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4375
 msgid "Product display price in frontend. E.g: From 10$ To 20$"
-msgstr ""
+msgstr "フロントエンドでの製品表示価格。例：10ドルから20ドル"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"A title for the bundle product that will be shown on top of bundle items."
-msgstr ""
+#: assets/js/admin/product/index.js:4395
+msgid "A title for the bundle product that will be shown on top of bundle items."
+msgstr "バンドルアイテムの上に表示されるバンドル製品のタイトル。"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4404
 msgid "Bundle description"
-msgstr ""
+msgstr "バンドルの説明"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4417
 msgid "Create a description for product bundle."
-msgstr ""
+msgstr "製品バンドルの説明を作成します。"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4426
+msgid "Bundle button label (shop page)"
+msgstr "バンドルボタンのラベル（ショップページ）"
+
+#: assets/js/admin/product/index.js:4442
+msgid "Change the button label shown for bundle products in the shop page."
+msgstr "ショップページで表示されるバンドル商品のボタンラベルを変更します。"
+
+#: assets/js/admin/product/index.js:4456
+msgid "Total discount"
+msgstr "合計割引"
+
+#: assets/js/admin/product/index.js:4505
+msgid "Set a total discount for the bundle total price based on percentage or price."
+msgstr "パーセンテージまたは金額に基づいて、バンドルの合計価格に対する合計割引を設定します。"
+
+#: assets/js/admin/product/index.js:4566
 msgid "Add Item"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Change"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "View"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "OUT OF STOCK"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Bundle item image"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "More pictures"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Args is required."
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Back"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Close"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Prev"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Next"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Add"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Add%s"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Edit product"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Save"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Please select a product for all items."
-msgstr ""
+msgstr "アイテムを追加"

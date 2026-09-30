@@ -1,45 +1,39 @@
-# Copyright (C) 2025 Product Bundles Team
+# Copyright (C) 2026 Product Bundles Team
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 6.4.3\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-"
-"bundles-for-woocommerce\n"
-"Language-Team: \n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 6.22.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
+"POT-Creation-Date: 2026-09-30T12:02:13+00:00\n"
+"PO-Revision-Date: 2026-09-30 15:55+0330\n"
+"Last-Translator: \n"
+"Language-Team: Hebrew\n"
+"Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-07-02T20:57:37+00:00\n"
-"PO-Revision-Date: 2025-07-22 17:20+0330\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 3.7\n"
 "X-Domain: asnp-easy-product-bundles\n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
-"2 : 3);\n"
-"Language: he\n"
 
 #. Plugin Name of the plugin
 #: easy-product-bundles.php
 msgid "Easy Product Bundles for WooCommerce"
-msgstr ""
+msgstr "חבילות מוצרים קלות עבור WooCommerce"
 
 #. Plugin URI of the plugin
 #: easy-product-bundles.php
-msgid ""
-"https://www.asanaplugins.com/product/woocommerce-product-bundles/?"
-"utm_source=easy-product-bundles-woocommerce-plugin&utm_campaign=easy-product-"
-"bundles-woocommerce&utm_medium=link"
+msgid "https://www.asanaplugins.com/product/woocommerce-product-bundles/?utm_source=easy-product-bundles-woocommerce-plugin&utm_campaign=easy-product-bundles-woocommerce&utm_medium=link"
 msgstr ""
 
 #. Description of the plugin
 #: easy-product-bundles.php
 msgid "Create product bundles in WooCommerce easily"
-msgstr ""
+msgstr "צור חבילות מוצרים ב-WooCommerce בקלות"
 
 #. Author of the plugin
 #: easy-product-bundles.php
 msgid "Product Bundles Team"
-msgstr ""
+msgstr "צוות Product Bundles"
 
 #. Author URI of the plugin
 #: easy-product-bundles.php
@@ -47,1288 +41,1696 @@ msgid "https://www.asanaplugins.com/"
 msgstr ""
 
 #. translators: 1: composer command. 2: plugin directory
-#: easy-product-bundles.php:43 easy-product-bundles.php:61
-msgid ""
-"Your installation of the Easy Product Bundles plugin is incomplete. Please "
-"run %1$s within the %2$s directory."
-msgstr ""
+#: easy-product-bundles.php:44
+#: easy-product-bundles.php:62
+#, php-format
+msgid "Your installation of the Easy Product Bundles plugin is incomplete. Please run %1$s within the %2$s directory."
+msgstr "ההתקנה של תוסף Easy Product Bundles אינה שלמה. אנא הפעל את %1$s בתוך ספריית %2$s."
 
-#: src/Admin/Admin.php:67 assets/js/admin/admin/index.js:2
+#: src/Admin/Admin.php:67
+#: assets/js/admin/admin/index.js:3449
 msgid "Settings"
-msgstr ""
+msgstr "הגדרות"
 
-#: src/Admin/Admin.php:70 assets/js/admin/admin/index.js:2
+#: src/Admin/Admin.php:70
 msgid "Go Pro"
-msgstr ""
+msgstr "ללכת PRO"
 
 #: src/Admin/Admin.php:87
+#, php-format
 msgid "Bundle (%d)"
-msgstr ""
+msgstr "חבילה (%d)"
 
-#: src/Admin/Menu.php:28 src/Admin/Menu.php:29 src/Admin/ProductBundle.php:32
+#: src/Admin/Menu.php:27
+#: src/Admin/Menu.php:28
+#: src/Admin/ProductBundle.php:32
 msgid "Product Bundles"
-msgstr ""
+msgstr "חבילות מוצרים"
 
-#: src/Admin/ProductBundle.php:180 src/ProductBundle.php:280
-#: assets/js/admin/product/index.js:2
+#: src/Admin/ProductBundle.php:204
+#: src/Assets.php:121
+#: src/ProductBundle.php:347
+#: assets/js/admin/product/index.js:3625
+#: assets/js/admin/product/index.js:3734
+#: assets/js/shared/index.js:5324
 msgid "Please select a product!"
-msgstr ""
+msgstr "אנא בחר מוצר!"
 
-#: src/Admin/ProductBundle.php:181 src/ProductBundle.php:281
-#: assets/js/admin/product/index.js:2
+#: src/Admin/ProductBundle.php:205
+#: src/ProductBundle.php:348
+#: assets/js/admin/product/index.js:3629
+#: assets/js/admin/product/index.js:3738
 msgid "Please select your product!"
-msgstr ""
+msgstr "אנא בחר את המוצר שלך!"
 
-#: src/Admin/ProductBundle.php:182 src/ProductBundle.php:282
-#: assets/js/admin/product/index.js:2
+#: src/Admin/ProductBundle.php:206
+#: src/ProductBundle.php:349
+#: assets/js/admin/product/index.js:3633
+#: assets/js/admin/product/index.js:3742
 msgid "Please select your product"
-msgstr ""
+msgstr "בחר את המוצר שלך"
 
 #: src/API/BaseController.php:31
+#: src/API/Items.php:117
 msgid "Sorry, you cannot list resources."
-msgstr ""
+msgstr "מצטערים, אינך יכול לרשום משאבים."
 
 #: src/API/BaseController.php:47
 msgid "Sorry, you cannot view this resource."
-msgstr ""
+msgstr "מצטערים, אינך יכול לצפות במשאב זה."
 
 #: src/API/BaseController.php:61
+#: src/API/Items.php:131
 msgid "Sorry, you cannot create an item."
-msgstr ""
+msgstr "מצטערים, אינך יכול ליצור פריט."
 
 #: src/API/BaseController.php:75
 msgid "Sorry, you cannot update the item."
-msgstr ""
+msgstr "מצטערים, אינך יכול לעדכן את הפריט."
 
 #: src/API/BaseController.php:89
 msgid "Sorry, you are not allowed to delete this resource."
-msgstr ""
+msgstr "מצטערים, אינך מורשה למחוק משאב זה."
 
 #: src/API/BaseController.php:103
 msgid "Sorry, you are not allowed to duplicate this resource."
-msgstr ""
+msgstr "מצטערים, אינך מורשה לשכפל משאב זה."
 
 #: src/API/BaseController.php:117
 msgid "Sorry, you are not allowed to reorder items."
-msgstr ""
+msgstr "מצטערים, אינך מורשה לסדר מחדש פריטים."
 
 #: src/API/ExtendStoreApi.php:105
 msgid "Bundle data"
-msgstr ""
+msgstr "נתוני חבילה"
 
 #: src/API/FilterProducts.php:37
 msgid "Filter is required."
-msgstr ""
+msgstr "מסנן נדרש."
 
 #: src/API/FilterProducts.php:56
 msgid "Filter is invalid."
-msgstr ""
+msgstr "המסנן אינו חוקי."
 
-#: src/API/FilterProducts.php:62 src/API/FilterProducts.php:98
-#: assets/js/shared/index.js:2
+#: src/API/FilterProducts.php:62
+#: src/API/FilterProducts.php:101
+#: src/Assets.php:132
+#: assets/js/shared/index.js:2551
+#: assets/js/shared/index.js:2600
 msgid "Product ID is required."
-msgstr ""
+msgstr "מזהה מוצר נדרש."
 
-#: src/API/FilterProducts.php:67 src/API/FilterProducts.php:103
-#: src/API/FilterProducts.php:108
+#: src/API/FilterProducts.php:67
+#: src/API/FilterProducts.php:106
+#: src/API/FilterProducts.php:111
 msgid "Product is invalid."
-msgstr ""
+msgstr "המוצר אינו חוקי."
 
-#: src/API/FilterProducts.php:72 src/API/FilterProducts.php:93
+#: src/API/FilterProducts.php:72
+#: src/API/FilterProducts.php:96
 msgid "Index is required."
-msgstr ""
+msgstr "אינדקס נדרש."
 
-#: src/API/FilterProducts.php:114 assets/js/shared/index.js:2
+#: src/API/FilterProducts.php:117
+#: src/Assets.php:133
+#: assets/js/shared/index.js:2604
 msgid "Parent product ID is required."
-msgstr ""
+msgstr "מזהה מוצר אב נדרש."
 
-#: src/API/FilterProducts.php:119
+#: src/API/FilterProducts.php:122
 msgid "Parent product is invalid."
-msgstr ""
+msgstr "מוצר האב אינו חוקי."
 
-#: src/API/FilterProducts.php:133
+#: src/API/FilterProducts.php:141
 msgid "Parent product is not a valid type."
-msgstr ""
+msgstr "מוצר האב אינו מסוג חוקי."
 
-#: src/API/FilterProducts.php:144
+#: src/API/FilterProducts.php:152
 msgid "Variable is required."
-msgstr ""
+msgstr "משתנה נדרש."
 
-#: src/API/FilterProducts.php:181 src/API/FilterProducts.php:220
+#: src/API/FilterProducts.php:191
+#: src/API/FilterProducts.php:245
+#, php-format
 msgid "Filter by %s"
-msgstr ""
+msgstr "סנן לפי %s"
 
-#: src/API/FilterProducts.php:198
+#: src/API/FilterProducts.php:213
 msgid "Variation is required."
-msgstr ""
+msgstr "וריאציה נדרשת."
 
-#: src/API/FilterProducts.php:246
+#: src/API/FilterProducts.php:276
 msgid "Filter variable product variations or all products."
-msgstr ""
+msgstr "סנן וריאציות של מוצר משתנה או את כל המוצרים."
 
-#: src/API/Items.php:42 src/API/Items.php:51
+#: src/API/Items.php:42
+#: src/API/Items.php:51
 msgid "Search term is required."
-msgstr ""
+msgstr "מונח החיפוש נדרש."
 
-#: src/API/Items.php:46 src/API/Items.php:89 assets/js/admin/product/index.js:2
+#: src/API/Items.php:46
+#: src/API/Items.php:83
+#: assets/js/admin/product/index.js:2242
+#: assets/js/admin/product/index.js:2278
 msgid "Type is required."
-msgstr ""
+msgstr "סוג נדרש."
 
-#: src/API/Items.php:85
+#: src/API/Items.php:79
 msgid "Items is required."
-msgstr ""
+msgstr "פריטים נדרשים."
 
-#: src/API/Review.php:30 assets/js/admin/admin/index.js:2
-#: assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
+#: src/API/Review.php:30
+#: assets/js/admin/admin/index.js:5077
+#: assets/js/admin/product/index.js:2315
+#: assets/js/admin/review/index.js:122
 msgid "Action is required."
-msgstr ""
+msgstr "פעולה נדרשת."
 
 #: src/API/Review.php:43
 msgid "Action not found."
-msgstr ""
+msgstr "הפעולה לא נמצאה."
 
-#: src/API/Settings.php:52 src/API/Settings.php:72
+#: src/API/Settings.php:52
+#: src/API/Settings.php:72
 msgid "Settings data is required."
-msgstr ""
+msgstr "נתוני הגדרות נדרשים."
 
-#: src/Helpers.php:71
+#: src/Assets.php:110
+#: assets/js/shared/index.js:2717
+#: assets/js/shared/index.js:3836
+msgid "OUT OF STOCK"
+msgstr "אזל מהמלאי"
+
+#: src/Assets.php:111
+#: assets/js/shared/index.js:5120
+msgid "Total:"
+msgstr "סך הכל:"
+
+#: src/Assets.php:112
+#: assets/js/shared/index.js:5165
+msgid "Save"
+msgstr "חסוך"
+
+#: src/Assets.php:113
+#: assets/js/shared/index.js:5150
+msgid "Buy all for:"
+msgstr "קנה הכל עבור:"
+
+#: src/Assets.php:114
+#: assets/js/shared/index.js:5145
+msgid "% OFF"
+msgstr "% OFF"
+
+#: src/Assets.php:115
+#: assets/js/shared/index.js:5280
+#, php-format,js-format
+msgid "%s is out of stock."
+msgstr "%s אזל מהמלאי."
+
+#: src/Assets.php:116
+#: assets/js/shared/index.js:3635
+msgid "Add"
+msgstr "הוסף"
+
+#: src/Assets.php:117
+#: assets/js/shared/index.js:3676
+#: assets/js/shared/index.js:4817
+#, php-format,js-format
+msgid "Add%s"
+msgstr "הוסף%s"
+
+#: src/Assets.php:118
+#: assets/js/shared/index.js:3805
+#: assets/js/shared/index.js:3867
+#: assets/js/shared/index.js:5709
+#: assets/js/shared/index.js:5721
+msgid "View"
+msgstr "הצג"
+
+#: src/Assets.php:119
+#: assets/js/shared/index.js:3863
+#: assets/js/shared/index.js:5720
+msgid "Change"
+msgstr "שינוי"
+
+#: src/Assets.php:120
+#: assets/js/shared/index.js:5202
+msgid "Empty bundle!"
+msgstr "חבילה ריקה!"
+
+#: src/Assets.php:122
+#: assets/js/shared/index.js:5230
+#: assets/js/shared/index.js:5330
+msgid "Please select a product for all items."
+msgstr "אנא בחר מוצר עבור כל הפריטים."
+
+#: src/Assets.php:123
+#: assets/js/shared/index.js:5260
+#, php-format,js-format
+msgid "Please select a purchasable product for %s before adding bundle to the cart."
+msgstr "אנא בחר מוצר שניתן לרכוש עבור %s לפני הוספת החבילה לעגלה."
+
+#: src/Assets.php:124
+#: assets/js/shared/index.js:5221
+#: assets/js/shared/index.js:5244
+#: assets/js/shared/index.js:5298
+#, php-format,js-format
+msgid "Please select a purchasable variation for %s before adding bundle to the cart."
+msgstr "בבקשה בחר וריאציה שניתנת לרכישה עבור %s לפני הוספת החבילה לעגלת הקניות."
+
+#: src/Assets.php:125
+msgid "Product information"
+msgstr "מידע על המוצר"
+
+#: src/Assets.php:126
+#: assets/js/shared/index.js:5013
+msgid "Product quantity"
+msgstr "כמות המוצר"
+
+#: src/Assets.php:127
+#: assets/js/shared/index.js:4871
+msgid "Bundle item image"
+msgstr "תמונת פריט חבילה"
+
+#: src/Assets.php:128
+#: assets/js/shared/index.js:2843
+msgid "Search..."
+msgstr "חיפוש..."
+
+#: src/Assets.php:129
+#: assets/js/shared/index.js:3446
+msgid "No products found"
+msgstr "לא נמצאו מוצרים"
+
+#: src/Assets.php:130
+#: assets/js/shared/index.js:2543
+#: assets/js/shared/index.js:2592
+msgid "Args is required."
+msgstr "ארגומנטים נדרשים."
+
+#: src/Assets.php:131
+#: src/ProductBundle.php:410
+#: assets/js/shared/index.js:2547
+#: assets/js/shared/index.js:2596
+msgid "Item index is required."
+msgstr "אינדקס פריט נדרש."
+
+#: src/Assets.php:134
+#: assets/js/admin/product/index.js:2261
+#: assets/js/shared/index.js:2579
+#: assets/js/shared/index.js:2624
+msgid "There was an error on getting items."
+msgstr "אירעה שגיאה בקבלת הפריטים."
+
+#: src/Assets.php:135
+msgid "Select options"
+msgstr "בחירת אפשרויות"
+
+#: src/Assets.php:136
+msgid "Clear selection"
+msgstr "נקה בחירה"
+
+#: src/Assets.php:137
+#: assets/js/admin/product/index.js:2493
+msgid "Optional"
+msgstr "אופציונלי"
+
+#: src/Assets.php:138
+msgid "Delete"
+msgstr "מחק"
+
+#: src/Assets.php:139
+#: assets/js/shared/index.js:3300
+msgid "Back"
+msgstr "חזור"
+
+#: src/Assets.php:140
+#: assets/js/shared/index.js:3324
+msgid "Close"
+msgstr "סגור"
+
+#: src/Assets.php:141
+#: assets/js/shared/index.js:5026
+msgid "Decrease quantity"
+msgstr "הקטנת הכמות"
+
+#: src/Assets.php:142
+#: assets/js/shared/index.js:5049
+msgid "Increase quantity"
+msgstr "הגדלת הכמות"
+
+#: src/Assets.php:143
+#: assets/js/shared/index.js:4779
+msgid "Edit product"
+msgstr "ערוך מוצר"
+
+#: src/Assets.php:144
+#: assets/js/shared/index.js:2735
+msgid "More pictures"
+msgstr "עוד תמונות"
+
+#: src/Assets.php:145
+#: assets/js/shared/index.js:3594
+msgid "Next"
+msgstr "הבא"
+
+#: src/Assets.php:146
+#: assets/js/shared/index.js:3590
+msgid "Prev"
+msgstr "הקודם"
+
+#: src/Assets.php:147
+#: assets/js/shared/index.js:2804
+msgid "Show Options"
+msgstr "הצג אפשרויות"
+
+#: src/Helpers.php:73
 msgid "Invalid product type."
-msgstr ""
+msgstr "סוג מוצר לא חוקי."
 
-#: src/Models/ItemsModel.php:74 src/Models/ItemsModel.php:78
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
+#: src/Models/ItemsModel.php:89
+#: src/Models/ItemsModel.php:95
+#: assets/js/admin/admin/index.js:3278
+#: assets/js/admin/product/index.js:2524
+#: assets/js/admin/product/index.js:2567
+#: assets/js/admin/product/index.js:2641
+#: assets/js/admin/product/index.js:2678
+#: assets/js/admin/product/index.js:2715
+#: assets/js/admin/product/index.js:2748
+#: assets/js/admin/product/index.js:2785
+#: assets/js/admin/product/index.js:2882
+#: assets/js/admin/product/index.js:3007
+#: assets/js/admin/product/index.js:3494
+#: assets/js/admin/product/index.js:3667
+#: assets/js/admin/product/index.js:4013
+#: assets/js/admin/product/index.js:4063
+#: assets/js/admin/product/index.js:4233
+#: assets/js/admin/product/index.js:4304
+#: assets/js/admin/product/index.js:4342
+#: assets/js/admin/product/index.js:4512
 msgid "PRO Version"
-msgstr ""
+msgstr "גרסה PRO"
 
 #. translators: 1: URL of WooCommerce plugin, 2: The minimum WooCommerce version number
 #: src/Plugin.php:220
-msgid ""
-"The Easy Product Bundles plugin requires <a href=\"%1$s\">WooCommerce</a> "
-"%2$s or greater to be installed and active."
-msgstr ""
+#, php-format
+msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WooCommerce</a> %2$s or greater to be installed and active."
+msgstr "תוסף Easy Product Bundles דורש ש-<a href=\"%1$s\">WooCommerce</a> גרסה %2$s ומעלה יהיה מותקן ופעיל."
 
 #. translators: 1: URL of WordPress.org, 2: The minimum WordPress version number
 #: src/Plugin.php:229
-msgid ""
-"The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s "
-"or greater to be installed and active."
-msgstr ""
+#, php-format
+msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s or greater to be installed and active."
+msgstr "תוסף Easy Product Bundles דורש ש-<a href=\"%1$s\">WordPress</a> גרסה %2$s ומעלה יהיה מותקן ופעיל."
 
-#: src/ProductBundle.php:334 assets/js/shared/index.js:2
-msgid "Item index is required."
-msgstr ""
+#: src/ProductBundle.php:179
+#: src/ProductBundle.php:761
+#: assets/js/admin/product/index.js:3637
+msgid "Configure bundle"
+msgstr "הגדר חבילה"
 
-#: src/ProductBundleHooks.php:94
+#: src/ProductBundleHooks.php:96
 msgid "Product bundle"
-msgstr ""
+msgstr "חבילת מוצרים"
 
-#: src/ProductBundleHooks.php:185 src/ProductBundleHooks.php:188
-#: src/ProductBundleHooks.php:190
+#: src/ProductBundleHooks.php:193
+#: src/ProductBundleHooks.php:196
+#: src/ProductBundleHooks.php:198
+#: src/ProductBundleHooks.php:201
 msgid "From"
-msgstr ""
-
-#: src/ProductBundleHooks.php:226 src/ProductBundleHooks.php:239
-msgid "Please select a product for each of the required bundle items."
-msgstr ""
-
-#: src/ProductBundleHooks.php:230
-msgid "Invalid product bundle."
-msgstr ""
+msgstr "מ-"
 
 #: src/ProductBundleHooks.php:235
+#: src/ProductBundleHooks.php:248
+msgid "Please select a product for each of the required bundle items."
+msgstr "אנא בחר מוצר עבור כל אחד מפריטי החבילה הנדרשים."
+
+#: src/ProductBundleHooks.php:239
+msgid "Invalid product bundle."
+msgstr "חבילת מוצרים לא חוקית."
+
+#: src/ProductBundleHooks.php:244
 msgid "Bundle product is unavailable."
-msgstr ""
-
-#: src/ProductBundleHooks.php:259
-msgid "Selected product for the bundle item %d is invalid."
-msgstr ""
-
-#: src/ProductBundleHooks.php:263
-msgid "This product is protected and cannot be purchased."
-msgstr ""
+msgstr "מוצר החבילה אינו זמין."
 
 #: src/ProductBundleHooks.php:267
+#, php-format
+msgid "Selected product for the bundle item %d is invalid."
+msgstr "המוצר שנבחר עבור פריט החבילה %d אינו חוקי."
+
+#: src/ProductBundleHooks.php:271
+#, php-format
+msgid "Please select a variation for the bundle item &quot;%s&quot;."
+msgstr "אנא בחר וריאציה עבור פריט החבילה &quot;%s&quot;."
+
+#: src/ProductBundleHooks.php:275
+msgid "This product is protected and cannot be purchased."
+msgstr "מוצר זה מוגן ולא ניתן לרכישה."
+
+#: src/ProductBundleHooks.php:279
+#, php-format
 msgid "Product &quot;%s&quot; is not purchasable."
-msgstr ""
+msgstr "המוצר &quot;%s&quot; אינו ניתן לרכישה."
 
-#: src/ProductBundleHooks.php:272 src/ProductBundleHooks.php:299
-#: src/ProductBundleHooks.php:302 src/ProductBundleHooks.php:305
-#: src/ProductBundleHooks.php:308
-msgid "Please select a valid quantity for the bundle item &quot;%s&quot;."
-msgstr ""
-
-#. translators: %s: product name
 #: src/ProductBundleHooks.php:284
-msgid "You cannot add another \"%s\" to your cart."
-msgstr ""
-
-#: src/ProductBundleHooks.php:294 src/ProductBundleHooks.php:357
-msgid "View cart"
-msgstr ""
-
-#. translators: %s: product name
-#: src/ProductBundleHooks.php:315
-msgid ""
-"You cannot add &quot;%s&quot; to the bundle item because the product is out "
-"of stock."
-msgstr "אין באפשרותך להוסיף את \"%s\" לפריט החבילה כי המוצר אזל מהמלאי."
+#: src/ProductBundleHooks.php:366
+#: src/ProductBundleHooks.php:370
+#: src/ProductBundleHooks.php:373
+#, php-format
+msgid "Please select a valid quantity for the bundle item &quot;%s&quot;."
+msgstr "אנא בחר כמות חוקית עבור פריט החבילה &quot;%s&quot;."
 
 #. translators: 1: product name 2: quantity in stock
-#: src/ProductBundleHooks.php:332 src/ProductBundleHooks.php:461
-msgid ""
-"You cannot add that amount of &quot;%1$s&quot; to the cart because there is "
-"not enough stock (%2$s remaining)."
-msgstr ""
-"אין באפשרותך להוסיף את הכמות הזו של \"%1$s\" לעגלה כי אין מספיק מלאי (נותרו "
-"%2$s)."
+#: src/ProductBundleHooks.php:296
+#: src/ProductBundleHooks.php:397
+#: src/ProductBundleHooks.php:522
+#, php-format
+msgid "You cannot add that amount of &quot;%1$s&quot; to the cart because there is not enough stock (%2$s remaining)."
+msgstr "אינך יכול להוסיף כמות זו של &quot;%1$s&quot; לעגלה מכיוון שאין מספיק מלאי (נותרו %2$s)."
+
+#: src/ProductBundleHooks.php:321
+#: src/ProductBundleHooks.php:360
+#: src/ProductBundleHooks.php:422
+msgid "View cart"
+msgstr "צפה בעגלה"
 
 #. translators: 1: quantity in stock 2: current quantity
-#: src/ProductBundleHooks.php:359
-msgid ""
-"You cannot add that amount of &quot;%1$s&quot; to the cart &mdash; we have "
-"%2$s in stock and you already have %3$s in your cart."
-msgstr ""
-"אין באפשרותך להוסיף את הכמות הזו של \"%1$s\" לעגלה — יש לנו %2$s במלאי וכבר "
-"יש לך %3$s בעגלה שלך."
+#: src/ProductBundleHooks.php:323
+#: src/ProductBundleHooks.php:424
+#, php-format
+msgid "You cannot add that amount of &quot;%1$s&quot; to the cart &mdash; we have %2$s in stock and you already have %3$s in your cart."
+msgstr "אינך יכול להוסיף כמות זו של &quot;%1$s&quot; לעגלה &mdash; יש לנו %2$s במלאי וכבר יש לך %3$s בעגלה שלך."
 
-#: src/ProductBundleHooks.php:377
-msgid ""
-"You cannot add &quot;%s&quot; to the bundle item because it is an invalid "
-"product."
-msgstr "אין באפשרותך להוסיף את \"%s\" לפריט החבילה כי זהו מוצר לא תקין."
+#. translators: %s: product name
+#: src/ProductBundleHooks.php:350
+#, php-format
+msgid "You cannot add another \"%s\" to your cart."
+msgstr "אינך יכול להוסיף \"%s\" נוסף לעגלת הקניות שלך."
+
+#. translators: %s: product name
+#: src/ProductBundleHooks.php:380
+#, php-format
+msgid "You cannot add &quot;%s&quot; to the bundle item because the product is out of stock."
+msgstr "אינך יכול להוסיף את &quot;%s&quot; לפריט החבילה מכיוון שהמוצר אזל מהמלאי."
+
+#: src/ProductBundleHooks.php:442
+#, php-format
+msgid "You cannot add &quot;%s&quot; to the bundle item because it is an invalid product."
+msgstr "אינך יכול להוסיף את &quot;%s&quot; לפריט החבילה מכיוון שמדובר במוצר לא חוקי."
 
 #. Translators: %s Product title.
-#: src/ProductBundleHooks.php:433
+#: src/ProductBundleHooks.php:498
+#, php-format
 msgid "You can only have 1 %s in your cart."
-msgstr "אתה יכול להחזיק רק 1 %s בעגלה שלך."
+msgstr "ניתן לקבל רק 1 %s בעגלת הקניות שלך."
 
-#: src/ProductBundleHooks.php:441
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; must be at least %2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:506
+#, php-format
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be at least %2$d."
+msgstr "עדכון העגלה נכשל. הכמות של &quot;%1$s&quot; חייבת להיות לפחות %2$d."
 
-#: src/ProductBundleHooks.php:445
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; cannot be higher than "
-"%2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:510
+#, php-format
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; cannot be higher than %2$d."
+msgstr "עדכון העגלה נכשל. הכמות של &quot;%1$s&quot; אינה יכולה להיות גבוהה מ-%2$d."
 
-#: src/ProductBundleHooks.php:449 src/ProductBundleHooks.php:453
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:514
+#, php-format
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
+msgstr "עדכון העגלה נכשל. הכמות של &quot;%1$s&quot; חייבת להיות שווה ל-%2$d."
 
-#: src/ProductBundleHooks.php:1079
+#: src/ProductBundleHooks.php:1213
+#, php-format
 msgid "(Bundled in %s)"
-msgstr ""
+msgstr "(נכלל בחבילה %s)"
 
-#: src/ProductBundleHooks.php:1155 src/ProductBundleHooks.php:1167
+#: src/ProductBundleHooks.php:1289
+#: src/ProductBundleHooks.php:1301
 msgid "Invalid bundle product."
-msgstr ""
+msgstr "מוצר חבילה לא חוקי."
 
-#: src/ProductBundleHooks.php:1160 src/ProductBundleHooks.php:1165
+#: src/ProductBundleHooks.php:1294
+#: src/ProductBundleHooks.php:1299
 msgid "Bundle product has not default items to add it to the order."
-msgstr ""
+msgstr "למוצר החבילה אין פריטי ברירת מחדל להוספה להזמנה."
 
-#: src/ProductBundleHooks.php:1224
+#: src/ProductBundleHooks.php:1370
 msgid "Can not add bundle product to the order."
-msgstr ""
+msgstr "לא ניתן להוסיף את מוצר החבילה להזמנה."
 
-#: src/ProductBundleHooks.php:1234
+#: src/ProductBundleHooks.php:1380
 msgid "Can not add bundle item to the order."
-msgstr ""
+msgstr "לא ניתן להוסיף את פריט החבילה להזמנה."
 
 #: src/ProductSelector.php:14
 msgid "Product selector item is empty."
-msgstr ""
+msgstr "פריט בורר המוצרים ריק."
 
 #: src/ProductSelector.php:43
 msgid "Query args is required."
-msgstr ""
+msgstr "ארגומנטים של שאילתה נדרשים."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2521
 msgid "Bundle position"
-msgstr ""
+msgstr "עמדת צרור"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2534
 msgid "Before Add to Cart button"
-msgstr ""
+msgstr "לפני הכפתור 'הוסף לעגלה'"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2540
 msgid "After Add to Cart button"
-msgstr ""
+msgstr "אחרי הכפתור 'הוסף לעגלה'"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2546
 msgid "Before Add to Cart form"
-msgstr ""
+msgstr "לפני טופס 'הוסף לעגלה'"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2552
 msgid "After Add to Cart form"
-msgstr ""
+msgstr "אחרי טופס 'הוסף לעגלה'"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2558
 msgid "Before product excerpt"
-msgstr ""
+msgstr "לפני תקציר המוצר"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2564
 msgid "After product excerpt"
-msgstr ""
+msgstr "אחרי תקציר המוצר"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2570
 msgid "After product meta"
-msgstr ""
+msgstr "אחרי המטה-מוצר"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2576
+#: assets/js/admin/admin/index.js:3214
+#: assets/js/admin/product/index.js:3123
+#: assets/js/admin/product/index.js:4469
 msgid "None"
-msgstr ""
+msgstr "אין"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2579
 msgid "Before CSS selector"
-msgstr ""
+msgstr "לפני בורר CSS"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2585
 msgid "After CSS selector"
-msgstr ""
+msgstr "אחרי בורר CSS"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2593
 msgid "product bundle position in product page."
-msgstr ""
+msgstr "מיקום חבילת המוצר בדף המוצר."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2613
 msgid "CSS Selector"
-msgstr ""
+msgstr "בורר CSS"
 
-#: assets/js/admin/admin/index.js:2
-msgid "(Pro)"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Back default color"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product image object-fit"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Cover"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Contain"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Fill"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Inherit"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Initial"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Revert"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Scale-down"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Unset"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Bundle"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Item View"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show stock"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product Stock availability in modal."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show rating"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product rating in modal."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show description(on hover)"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product description when mouse hover over it."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Prepend parent name"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Prepend the parent name to the item name in the cart and order."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Hide out of stock"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Hide out of stock products."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show price in cart"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product bundle items price visibility in cart and checkout."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show products list"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show products list below products bundle."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show total price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show the total price of the selected items below the products list."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show saved money"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show the saved money when calculating the total price."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show modal quick view"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product quick view icon in modal."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show selected product quick view"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product quick view icon in the selected product."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Quantity field on item"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show quantity field on item."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show plus icon"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show plus icon between items."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Disable popup"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Disable popup for items that have only one product."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Theme"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Grid 1"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Grid 2"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "List 1"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "List 2"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Size"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Small"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Medium"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Large"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Optional item mode"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Checkbox"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Delete button"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product bundle price on shop page"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Total price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "From total price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "From min price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Set how to show the product bundle price on the shop page."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Item price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product subtotal"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Set how to show the product price in item."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product list price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Set how to show the product price in product list."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Link to product"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "New tab"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "No link"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show the product change modal"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Click on product in pop-up"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product selection"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product details"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Coupon apply method"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Both of bundle and bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "On bundle"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "On bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "None of bundle and bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid ""
-"Product based coupons apply method. Can apply on \"bundle\", \"bundle items"
-"\", \"both\" or \"none\"."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Cart contents count"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid ""
-"How to count bundle products in the cart? Count both of \"bundle and its "
-"items\" or \"only bundle\" or \"only bundle items\"."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product price selector"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Add to cart button selector"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Change product modal"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Number of products per page"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Styles"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Save Changes"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2638
 msgid "License Key"
-msgstr ""
+msgstr "מפתח הרישיון"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2643
 msgid "Enter Your License Key"
-msgstr ""
+msgstr "הזן את מפתח הרישיון שלך"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2656
 msgid "Notice"
-msgstr ""
+msgstr "הודעה"
 
-#: assets/js/admin/admin/index.js:2
-msgid ""
-"Each website using this plugin needs a legal license (1 license = 1 website)."
-msgstr ""
+#: assets/js/admin/admin/index.js:2660
+msgid "Each website using this plugin needs a legal license (1 license = 1 website)."
+msgstr "כל אתר המשתמש בתוסף זה דורש רישיון חוקי (רישיון אחד = אתר אחד)."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2666
 msgid "You can find more information on"
-msgstr ""
+msgstr "ניתן למצוא מידע נוסף ב"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2674
 msgid "software license agreement"
-msgstr ""
+msgstr "הסכם רישיון תוכנה"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2680
 msgid "If you need to buy a new license of this plugin"
-msgstr ""
+msgstr "אם אתה צריך לרכוש רישיון חדש לתוסף זה"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2688
 msgid "click here."
-msgstr ""
+msgstr "לחץ כאן."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2696
 msgid "Where can I find my license key?"
-msgstr ""
+msgstr "איפה אני יכול למצוא את מפתח הרישיון שלי?"
 
-#: assets/js/admin/admin/index.js:2
-msgid "There was an error on getting settings."
-msgstr ""
+#: assets/js/admin/admin/index.js:2709
+#: assets/js/admin/admin/index.js:4995
+msgid "Save Changes"
+msgstr "שמור שינויים"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Data is required."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "There was an error on saving settings."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "There was an error on applying review."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid ""
-"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and "
-"give it a %2$s to help us spread the word and boost our motivation?%4$s "
-"%5$sShare your feature requests%6$s with the review, We always check them "
-"and try our best."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "OK, you deserve it!"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "I already did"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
+#: assets/js/admin/admin/index.js:2841
+#: assets/js/admin/admin/index.js:5255
+#: assets/js/admin/admin/index.js:5291
+#: assets/js/admin/product/index.js:4674
+#: assets/js/admin/product/index.js:4710
+#: assets/js/admin/review/index.js:248
+#: assets/js/admin/review/index.js:284
 msgid "Maybe Later"
-msgstr ""
+msgstr "אולי מאוחר יותר"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "I need help"
-msgstr ""
+#: assets/js/admin/admin/index.js:2926
+msgid "Bundle title color"
+msgstr "צבע כותרת החבילה"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "Never show again"
-msgstr ""
+#: assets/js/admin/admin/index.js:2932
+msgid "Empty item title color"
+msgstr "צבע כותרת פריט ריק"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Apps you might like"
-msgstr ""
+#: assets/js/admin/admin/index.js:2938
+msgid "Empty item title hover color"
+msgstr "צבע כותרת פריט ריק במעבר עכבר"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Active Installations"
-msgstr ""
+#: assets/js/admin/admin/index.js:2947
+msgid "Product title color"
+msgstr "צבע כותרת המוצר"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Free Version"
-msgstr ""
+#: assets/js/admin/admin/index.js:2953
+msgid "Product crossed out price color"
+msgstr "צבע מחיר מוצר עם קו חוצה"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Buy Pro"
-msgstr ""
+#: assets/js/admin/admin/index.js:2962
+msgid "Product sale price color"
+msgstr "צבע מחיר המכירה של המוצר"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2971
+msgid "Modal header color"
+msgstr "צבע כותרת החלון המודל"
+
+#: assets/js/admin/admin/index.js:2977
+msgid "Quantity field buttons hover color"
+msgstr "צבע ריחוף של כפתורי שדה הכמות"
+
+#: assets/js/admin/admin/index.js:2986
+msgid "Alert message color"
+msgstr "צבע הודעת התראה"
+
+#: assets/js/admin/admin/index.js:2992
+msgid "Alert message background color"
+msgstr "צבע רקע הודעת התראה"
+
+#: assets/js/admin/admin/index.js:3001
+msgid "Optional badge color"
+msgstr "צבע תָג האופציונלית"
+
+#: assets/js/admin/admin/index.js:3008
+msgid "Optional badge title color"
+msgstr "צבע כותרת לתג אופציונלי"
+
+#: assets/js/admin/admin/index.js:3018
+msgid "Quick view icon color"
+msgstr "צבע סמל תצוגה מהירה"
+
+#: assets/js/admin/admin/index.js:3025
+msgid "Plus icon color"
+msgstr "צבע סמל פלוס"
+
+#: assets/js/admin/admin/index.js:3032
+msgid "Quick view button color"
+msgstr "צבע לחצן תצוגה מהירה"
+
+#: assets/js/admin/admin/index.js:3039
+msgid "Quick view button text color"
+msgstr "צבע טקסט לחצן תצוגה מהירה"
+
+#: assets/js/admin/admin/index.js:3049
+msgid "Popup Variable “Show Options” Button Text Color"
+msgstr "צבע טקסט הכפתור 'הצג אפשרויות' בחלון הקופץ עבור מוצרים משתנים"
+
+#: assets/js/admin/admin/index.js:3058
+msgid "Images icon color"
+msgstr "צבע סמל התמונות"
+
+#: assets/js/admin/admin/index.js:3065
+msgid "Total price - sale price color"
+msgstr "מחיר כולל - צבע מחיר מכירה"
+
+#: assets/js/admin/admin/index.js:3074
+msgid "Total price - crossed out price color"
+msgstr "מחיר כולל - צבע מחיר מנותק"
+
+#: assets/js/admin/admin/index.js:3083
+msgid "Total price - saved amount color"
+msgstr "מחיר כולל - צבע הסכום החסוך"
+
+#: assets/js/admin/admin/index.js:3092
+msgid "Total price - saved amount background color"
+msgstr "מחיר כולל - צבע רקע של הסכום החסוך"
+
+#: assets/js/admin/admin/index.js:3118
+#: assets/js/admin/admin/index.js:3915
+#: assets/js/admin/admin/index.js:3954
+#: assets/js/admin/admin/index.js:3993
+#: assets/js/admin/admin/index.js:4032
+#: assets/js/admin/admin/index.js:4133
+#: assets/js/admin/admin/index.js:4675
+#: assets/js/admin/admin/index.js:4796
+#: assets/js/admin/admin/index.js:4837
+#: assets/js/admin/admin/index.js:4877
+msgid "(Pro)"
+msgstr "(Pro)"
+
+#: assets/js/admin/admin/index.js:3160
+msgid "Back default color"
+msgstr "חזרה לצבע ברירת המחדל"
+
+#: assets/js/admin/admin/index.js:3181
+msgid "Product image object-fit"
+msgstr "תמונת מוצר object-fit Css"
+
+#: assets/js/admin/admin/index.js:3199
+msgid "Cover"
+msgstr "כיסוי (Cover)"
+
+#: assets/js/admin/admin/index.js:3202
+msgid "Contain"
+msgstr "הכלה (Contain)"
+
+#: assets/js/admin/admin/index.js:3205
+msgid "Fill"
+msgstr "מילוי (Fill)"
+
+#: assets/js/admin/admin/index.js:3208
+msgid "Inherit"
+msgstr "ירושה (Inherit)"
+
+#: assets/js/admin/admin/index.js:3211
+msgid "Initial"
+msgstr "ראשוני (Initial)"
+
+#: assets/js/admin/admin/index.js:3217
+msgid "Revert"
+msgstr "החזרה (Revert)"
+
+#: assets/js/admin/admin/index.js:3220
+msgid "Scale-down"
+msgstr "הקטנה יחסית (Scale-down)"
+
+#: assets/js/admin/admin/index.js:3223
+msgid "Unset"
+msgstr "לא מוגדר (Unset)"
+
+#: assets/js/admin/admin/index.js:3411
 msgid "Saved Successfully."
-msgstr ""
+msgstr "נשמר בהצלחה."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3419
 msgid "There was an error on saving the settings."
-msgstr ""
+msgstr "אירעה שגיאה בעת שמירת ההגדרות."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3464
 msgid "Apps"
-msgstr ""
+msgstr "אפליקציות"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3481
 msgid "Enable Updates"
-msgstr ""
+msgstr "הפעל עדכונים"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3496
 msgid "Articles"
-msgstr ""
+msgstr "מאמרים"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3510
 msgid "Video Tutorials"
-msgstr ""
+msgstr "מדריכי וידאו"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3524
 msgid "Get Support"
-msgstr ""
+msgstr "קבל תמיכה"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/admin/index.js:3538
+msgid "5-Star Review"
+msgstr "ביקורת של 5 כוכבים"
+
+#: assets/js/admin/admin/index.js:3553
+#: assets/js/admin/admin/index.js:3751
+msgid "Buy Pro"
+msgstr "קנה גרסת Pro"
+
+#: assets/js/admin/admin/index.js:3558
+#: assets/js/admin/product/index.js:3928
+msgid "UP TO 75% OFF"
+msgstr "עד 75% הנחה"
+
+#: assets/js/admin/admin/index.js:3693
+msgid "Apps you might like"
+msgstr "אפליקציות שאולי תאהב"
+
+#: assets/js/admin/admin/index.js:3724
+msgid "Active Installations"
+msgstr "התקנות פעילות"
+
+#: assets/js/admin/admin/index.js:3739
+msgid "Free Version"
+msgstr "גרסה חינמית"
+
+#: assets/js/admin/admin/index.js:3780
+#: assets/js/admin/admin/index.js:4605
+msgid "Bundle"
+msgstr "ארגז"
+
+#: assets/js/admin/admin/index.js:3784
+msgid "Item View"
+msgstr "תצוגת פריט"
+
+#: assets/js/admin/admin/index.js:3789
+msgid "Show description(on hover)"
+msgstr "הצג תיאור (בעטיפת העכבר)"
+
+#: assets/js/admin/admin/index.js:3795
+msgid "Show product description when mouse hover over it."
+msgstr "הצג את תיאור המוצר כשהעכבר עובר מעליו"
+
+#: assets/js/admin/admin/index.js:3819
+msgid "Show description inside item"
+msgstr "הצגת התיאור בתוך הפריט"
+
+#: assets/js/admin/admin/index.js:3825
+msgid "Show the short description inside the bundle item card. Disable this to hide it in the item box."
+msgstr "הצגת התיאור הקצר בתוך כרטיס פריט החבילה. השבת אפשרות זו כדי להסתיר אותו בתיבת הפריט."
+
+#: assets/js/admin/admin/index.js:3849
+msgid "Prepend parent name"
+msgstr "הוסף את שם ההורה"
+
+#: assets/js/admin/admin/index.js:3855
+msgid "Prepend the parent name to the item name in the cart and order."
+msgstr "הוסף את שם ההורה לשם הפריט בעגלה ובהזמנה"
+
+#: assets/js/admin/admin/index.js:3879
+msgid "Show “bundled” in suffix"
+msgstr "הצג 'כלול בחבילה' בסיומת"
+
+#: assets/js/admin/admin/index.js:3885
+msgid "Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section."
+msgstr "הצג את הטקסט 'כלול ב-[המוצר הראשי]' לאחר שם כל פריט כלול בחבילה בסעיף פרטי ההזמנה."
+
+#: assets/js/admin/admin/index.js:3909
+msgid "Hide out of stock"
+msgstr "הסתר שאזל המלאי"
+
+#: assets/js/admin/admin/index.js:3920
+msgid "Hide out of stock products."
+msgstr "הסתר מוצרים שאזלו מהמלאי."
+
+#: assets/js/admin/admin/index.js:3948
+msgid "Show price in cart"
+msgstr "הצג מחיר בעגלה"
+
+#: assets/js/admin/admin/index.js:3959
+msgid "Product bundle items price visibility in cart and checkout."
+msgstr "נראות מחירי פריטי הארגז בעגלה ובתשלום."
+
+#: assets/js/admin/admin/index.js:3987
+msgid "Show products list"
+msgstr "הצג רשימת מוצרים"
+
+#: assets/js/admin/admin/index.js:3998
+msgid "Show products list below products bundle."
+msgstr "הצג רשימת מוצרים מתחת לארגז המוצרים."
+
+#: assets/js/admin/admin/index.js:4026
+msgid "Show total price"
+msgstr "הצג את המחיר הכולל"
+
+#: assets/js/admin/admin/index.js:4037
+msgid "Show the total price of the selected items below the products list."
+msgstr "הצג את המחיר הכולל של הפריטים שנבחרו מתחת לרשימת המוצרים."
+
+#: assets/js/admin/admin/index.js:4065
+msgid "Show saved money"
+msgstr "הצגת הכסף שנשמר"
+
+#: assets/js/admin/admin/index.js:4071
+msgid "Show the saved money when calculating the total price."
+msgstr "הצגת הכסף שנשמר בעת חישוב המחיר הכולל."
+
+#: assets/js/admin/admin/index.js:4096
+msgid "Show Discount Badge"
+msgstr "הצג תווית הנחה"
+
+#: assets/js/admin/admin/index.js:4102
+msgid "Show or hide the discount badge in the bundle total price section."
+msgstr "הצג או הסתר את תווית ההנחה בחלק של מחיר הסל הכולל."
+
+#: assets/js/admin/admin/index.js:4127
+msgid "Show selected product quick view"
+msgstr "הצג תצוגה מהירה של המוצר הנבחר"
+
+#: assets/js/admin/admin/index.js:4138
+msgid "Show product quick view icon in the selected product."
+msgstr "הצג סמל תצוגה מהירה של המוצר הנבחר"
+
+#: assets/js/admin/admin/index.js:4167
+msgid "Quantity field on item"
+msgstr "שדה כמות על הפריט"
+
+#: assets/js/admin/admin/index.js:4173
+msgid "Show quantity field on item."
+msgstr "הצג שדה כמות על הפריט"
+
+#: assets/js/admin/admin/index.js:4197
+msgid "Show plus icon"
+msgstr "הצג סמל פלוס"
+
+#: assets/js/admin/admin/index.js:4200
+msgid "Show plus icon between items."
+msgstr "הצג סמל פלוס בין הפריטים"
+
+#: assets/js/admin/admin/index.js:4225
+msgid "Calculate bundle price in frontend"
+msgstr "חשב את מחיר החבילה בפרונטאנד"
+
+#: assets/js/admin/admin/index.js:4231
+msgid "It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary."
+msgstr "זה יכול לשפר את התאימות עם תוסף ההנחות, אך עלול לגרום לבעיות זיכרון אם החבילה מכילה פריטים רבים. זה שימושי עבור חבילות עם מחיר דינמי. הפעל רק במקרה הצורך."
+
+#: assets/js/admin/admin/index.js:4259
+#: assets/js/admin/product/index.js:3963
+msgid "Theme"
+msgstr "ערכת נושא"
+
+#: assets/js/admin/admin/index.js:4271
+#: assets/js/admin/product/index.js:3975
+msgid "Grid 1"
+msgstr "רשת 1"
+
+#: assets/js/admin/admin/index.js:4278
+#: assets/js/admin/product/index.js:3982
+msgid "Grid 2"
+msgstr "רשת 2"
+
+#: assets/js/admin/admin/index.js:4289
+#: assets/js/admin/product/index.js:3993
+msgid "List 1"
+msgstr "רשימה 1"
+
+#: assets/js/admin/admin/index.js:4300
+#: assets/js/admin/product/index.js:4004
+msgid "List 2"
+msgstr "רשימה 2"
+
+#: assets/js/admin/admin/index.js:4310
+#: assets/js/admin/product/index.js:4029
+msgid "Size"
+msgstr "גודל"
+
+#: assets/js/admin/admin/index.js:4324
+#: assets/js/admin/product/index.js:4044
+msgid "Small"
+msgstr "קטן"
+
+#: assets/js/admin/admin/index.js:4329
+#: assets/js/admin/product/index.js:4049
+msgid "Medium"
+msgstr "בינוני"
+
+#: assets/js/admin/admin/index.js:4336
+#: assets/js/admin/product/index.js:4056
+msgid "Large"
+msgstr "גדול"
+
+#: assets/js/admin/admin/index.js:4344
+msgid "Optional item mode"
+msgstr "מצב פריט אופציונלי"
+
+#: assets/js/admin/admin/index.js:4362
+msgid "Checkbox"
+msgstr "תיבת סימון"
+
+#: assets/js/admin/admin/index.js:4372
+msgid "Delete button"
+msgstr "כפתור מחיקה"
+
+#: assets/js/admin/admin/index.js:4383
+msgid "Product bundle price on shop page"
+msgstr "מחיר חבילת מוצרים בדף החנות"
+
+#: assets/js/admin/admin/index.js:4401
+msgid "Total price"
+msgstr "מחיר כולל"
+
+#: assets/js/admin/admin/index.js:4407
+msgid "From total price"
+msgstr "ממחיר כולל"
+
+#: assets/js/admin/admin/index.js:4413
+msgid "From min price"
+msgstr "ממחיר מינימלי"
+
+#: assets/js/admin/admin/index.js:4421
+msgid "Set how to show the product bundle price on the shop page."
+msgstr "קבע כיצד להציג את מחיר הארגז בעמוד החנות."
+
+#: assets/js/admin/admin/index.js:4430
+msgid "Item price"
+msgstr "מחיר הפריט"
+
+#: assets/js/admin/admin/index.js:4442
+#: assets/js/admin/admin/index.js:4486
+msgid "Product price"
+msgstr "מחיר המוצר"
+
+#: assets/js/admin/admin/index.js:4448
+#: assets/js/admin/admin/index.js:4480
+msgid "Product subtotal"
+msgstr "סכום ביניים של המוצר"
+
+#: assets/js/admin/admin/index.js:4456
+msgid "Set how to show the product price in item."
+msgstr "הגדר איך להציג את מחיר המוצר בפריט"
+
+#: assets/js/admin/admin/index.js:4465
+msgid "Product list price"
+msgstr "מחיר ברשימת המוצרים"
+
+#: assets/js/admin/admin/index.js:4494
+msgid "Set how to show the product price in product list."
+msgstr "הגדר כיצד להציג את מחיר המוצר ברשימת המוצרים."
+
+#: assets/js/admin/admin/index.js:4502
+msgid "Link to product"
+msgstr "קישור למוצר"
+
+#: assets/js/admin/admin/index.js:4514
+msgid "New tab"
+msgstr "כרטיסיה חדשה"
+
+#: assets/js/admin/admin/index.js:4517
+msgid "No link"
+msgstr "אין קישור"
+
+#: assets/js/admin/admin/index.js:4520
+msgid "Show the product change popup"
+msgstr "הצג את חלון הקופץ לשינוי המוצר"
+
+#: assets/js/admin/admin/index.js:4531
+msgid "Coupon apply method"
+msgstr "שיטת החלת קופון"
+
+#: assets/js/admin/admin/index.js:4546
+#: assets/js/admin/admin/index.js:4599
+msgid "Both of bundle and bundle items"
+msgstr "גם של צרור וגם צרור פריטים"
+
+#: assets/js/admin/admin/index.js:4552
+msgid "On bundle"
+msgstr "על צרור"
+
+#: assets/js/admin/admin/index.js:4558
+msgid "On bundle items"
+msgstr "על פריטי צרור"
+
+#: assets/js/admin/admin/index.js:4564
+msgid "None of bundle and bundle items"
+msgstr "אף אחד מפריטי צרור וצרור"
+
+#: assets/js/admin/admin/index.js:4572
+msgid "Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\"."
+msgstr "שיטת החלת קופונים מבוססי מוצר. יכול להחיל על \"חבילה\", \"חבילה פריטים\", \"שניהם\" או \"אף אחד\"."
+
+#: assets/js/admin/admin/index.js:4581
+msgid "Cart contents count"
+msgstr "ספירת תוכן העגלה"
+
+#: assets/js/admin/admin/index.js:4608
+msgid "Bundle items"
+msgstr "פריטי ארגז"
+
+#: assets/js/admin/admin/index.js:4616
+msgid "How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\"."
+msgstr "איך סופרים מוצרי צרור בעגלה? ספור את שני ה\"חבילה והפריטים שלו\" או \"רק חבילה\" או \"רק צרור פריטים\"."
+
+#: assets/js/admin/admin/index.js:4629
+msgid "Product price selector"
+msgstr "בחר מחיר מוצר"
+
+#: assets/js/admin/admin/index.js:4646
+msgid "Add to cart button selector"
+msgstr "בוחר כפתור הוסף לסל"
+
+#: assets/js/admin/admin/index.js:4667
+msgid "Change product popup"
+msgstr "חלון קופץ לשינוי המוצר"
+
+#: assets/js/admin/admin/index.js:4672
+msgid "Disable popup"
+msgstr "כבוי פופאפ"
+
+#: assets/js/admin/admin/index.js:4680
+msgid "Disable popup for items that have only one product."
+msgstr "כבוי פופאפ עבור פריטים שיש להם רק מוצר אחד."
+
+#: assets/js/admin/admin/index.js:4709
+msgid "Popup Variable ‘Show Options’ Button"
+msgstr "כפתור 'הצג אפשרויות' בחלון הקופץ עבור מוצרים משתנים"
+
+#: assets/js/admin/admin/index.js:4715
+msgid "Show or hide the “Show Options” button for variable products inside the popup."
+msgstr "הצג או הסתר את כפתור 'הצג אפשרויות' עבור מוצרים משתנים בחלון הקופץ"
+
+#: assets/js/admin/admin/index.js:4740
+msgid "Show stock"
+msgstr "הצג מלאי"
+
+#: assets/js/admin/admin/index.js:4743
+msgid "Show product Stock availability in popup."
+msgstr "הצג את זמינות המלאי של המוצר בחלון קופץ."
+
+#: assets/js/admin/admin/index.js:4765
+msgid "Show rating"
+msgstr "הצג דירוג"
+
+#: assets/js/admin/admin/index.js:4768
+msgid "Show product rating in popup."
+msgstr "הצג את דירוג המוצר בחלון המודל"
+
+#: assets/js/admin/admin/index.js:4790
+msgid "Show popup quick view"
+msgstr "הצג תצוגה מהירה בחלון קופץ"
+
+#: assets/js/admin/admin/index.js:4801
+msgid "Show product quick view icon in popup."
+msgstr "הצג את סמל התצוגה המהירה של המוצר בחלון קופץ"
+
+#: assets/js/admin/admin/index.js:4830
+msgid "Show search field in popup"
+msgstr "הצג שדה חיפוש בחלון קופץ"
+
+#: assets/js/admin/admin/index.js:4842
+msgid "This option allows you to show or hide the product search field in the popup window."
+msgstr "אפשרות זו מאפשרת לך להציג או להסתיר את שדה החיפוש של המוצר בחלון הקופץ."
+
+#: assets/js/admin/admin/index.js:4871
+msgid "Show Variable Dropdown in Popup"
+msgstr "תפריט נפתח של מוצרים משתנים בחלון הקופץ"
+
+#: assets/js/admin/admin/index.js:4882
+msgid "Enable this option to display the dropdown menu for variable products in the popup."
+msgstr "הפעל אפשרות זו כדי להציג את התפריט הנפתח של המוצרים המשתנים בחלון הקופץ."
+
+#: assets/js/admin/admin/index.js:4911
+msgid "Click on product in pop-up"
+msgstr "לחץ על המוצר בחלון קופץ"
+
+#: assets/js/admin/admin/index.js:4926
+msgid "Product selection"
+msgstr "בחירת מוצר"
+
+#: assets/js/admin/admin/index.js:4936
+msgid "Show product details"
+msgstr "הצג פרטי המוצר"
+
+#: assets/js/admin/admin/index.js:4947
+msgid "Number of products per page"
+msgstr "מספר המוצרים לעמוד"
+
+#: assets/js/admin/admin/index.js:4954
+msgid "Set how many products are displayed per page in the popup."
+msgstr "הגדר כמה מוצרים מוצגים בכל עמוד בחלונית הקופצת."
+
+#: assets/js/admin/admin/index.js:4980
+msgid "Styles"
+msgstr "סגנונות"
+
+#: assets/js/admin/admin/index.js:5092
+#: assets/js/admin/product/index.js:2330
+#: assets/js/admin/review/index.js:137
+msgid "There was an error on applying review."
+msgstr "אירעה שגיאה בהחלת הביקורת."
+
+#: assets/js/admin/admin/index.js:5116
+msgid "There was an error on getting settings."
+msgstr "אירעה שגיאה בקבלת ההגדרות."
+
+#: assets/js/admin/admin/index.js:5129
+#: assets/js/admin/product/index.js:2238
+#: assets/js/admin/product/index.js:2274
+msgid "Data is required."
+msgstr "נתונים נדרשים."
+
+#: assets/js/admin/admin/index.js:5144
+msgid "There was an error on saving settings."
+msgstr "אירעה שגיאה בעת שמירת ההגדרות."
+
+#: assets/js/admin/admin/index.js:5196
+#: assets/js/admin/product/index.js:4615
+#: assets/js/admin/review/index.js:189
+#, js-format
+msgid "We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best."
+msgstr "אנו מקווים שאתה נהנה מ-%1$s! %3$s האם תוכל לעשות לנו טובה גדולה ולדרג אותנו ב-%2$s כדי לעזור לנו להפיץ את הבשורה ולהגביר את המוטיבציה שלנו?%4$s %5$sשתף את בקשות התכונות שלך%6$s עם הביקורת, אנו תמיד בודקים אותן ועושים כמיטב יכולתנו."
+
+#: assets/js/admin/admin/index.js:5222
+#: assets/js/admin/product/index.js:4641
+#: assets/js/admin/review/index.js:215
+msgid "OK, you deserve it!"
+msgstr "בסדר, מגיע לכם!"
+
+#: assets/js/admin/admin/index.js:5237
+#: assets/js/admin/product/index.js:4656
+#: assets/js/admin/review/index.js:230
+msgid "I already did"
+msgstr "כבר עשיתי זאת"
+
+#: assets/js/admin/admin/index.js:5270
+#: assets/js/admin/product/index.js:4689
+#: assets/js/admin/review/index.js:263
+msgid "I need help"
+msgstr "אני צריך עזרה"
+
+#: assets/js/admin/admin/index.js:5282
+#: assets/js/admin/product/index.js:4701
+#: assets/js/admin/review/index.js:275
+msgid "Never show again"
+msgstr "אל תציג שוב"
+
+#: assets/js/admin/product/index.js:2246
 msgid "Items are required."
-msgstr ""
+msgstr "פריטים נדרשים."
 
-#: assets/js/admin/product/index.js:2 assets/js/shared/index.js:2
-msgid "There was an error on getting items."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2282
 msgid "Search value is required."
-msgstr ""
+msgstr "ערך חיפוש נדרש."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2299
 msgid "There was an error on searching items."
-msgstr ""
+msgstr "אירעה שגיאה בחיפוש פריטים."
 
-#: assets/js/admin/product/index.js:2
-msgid "Optional"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Check this option to make the bundle item optional to choose by the user"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Selected"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Enable this field to make the optional item selected in the frontend."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Default product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set a default product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Products"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Add products or Variations"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Exclude products"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Select a product that you do not want to be displayed"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Categories"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Select the category product that you want to be displayed in this bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Exclude categories"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Select the category product that you do not want to be displayed in this "
-"bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Tags"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Select the product with tags to display in this bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Exclude tags"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Select the product with tags that you do not want to be displayed in the "
-"bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Categories and Tags relation"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Match at least one"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Match both"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Match at least one: Products should match at least one of categories or tags."
-"%sMatch both: Products should match both categories and tags."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Sort products"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "ID"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2353
+#: assets/js/admin/product/index.js:2914
+#: assets/js/admin/product/index.js:4383
 msgid "Title"
-msgstr ""
+msgstr "כותרת"
 
-#: assets/js/admin/product/index.js:2
-msgid "Menu order"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Date"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Price"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Popularity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Rating"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Ascending"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Descending"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the order of products in the pop-up"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the default product quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Edit quantity by user"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Check this option to allow the user to change the bundle item quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Min quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the minimum quantity of this bundled product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Max quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the maximum quantity of this bundled product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Discount"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Percentage"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Fixed price"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Discount applied to the price of the bundled product. if the bundled product "
-"has a sale price the discount is applied on top of the sale price"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Default Image"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "No image chosen"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Upload Image"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set an image for empty item."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2367
 msgid "Overwrite bundle item title"
-msgstr ""
+msgstr "החלף את כותרת הפריט של החבילה"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2375
 msgid "Short description"
-msgstr ""
+msgstr "תיאור קצר"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Overwrite bundle item short description.(Show when the mouse hovers over it)"
-msgstr ""
+#: assets/js/admin/product/index.js:2389
+msgid "Overwrite bundle item short description.(Show when the mouse hovers over it)"
+msgstr "החלף תיאור קצר של פריט חבילה. (הצג כאשר העכבר מרחף מעליו)"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2397
 msgid "Product selection title"
-msgstr ""
+msgstr "כותרת בחירת מוצר"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2417
 msgid "Change the title of the bundle empty item."
-msgstr ""
+msgstr "שנה את כותרת פריט החבילה הריק."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2425
 msgid "Product list title"
-msgstr ""
+msgstr "כותרת רשימת המוצרים"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2439
 msgid "Change the product list product selection title."
-msgstr ""
+msgstr "שנה את כותרת בחירת המוצר ברשימה"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2447
 msgid "Modal header title"
-msgstr ""
+msgstr "כותרת חלון מודל"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2461
 msgid "Change the pop-up header title"
-msgstr ""
+msgstr "שנה את כותרת החלון הקופץ"
 
-#: assets/js/admin/product/index.js:2
-msgid "Duplicate"
-msgstr ""
+#: assets/js/admin/product/index.js:2517
+msgid "Check this option to make the bundle item optional to choose by the user"
+msgstr "סמן את האפשרות הזו כדי להפוך את הפריט בארגז לאופציונלי לבחירה על ידי המשתמש"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2543
+msgid "Selected"
+msgstr "נבחר"
+
+#: assets/js/admin/product/index.js:2560
+msgid "Enable this field to make the optional item selected in the frontend."
+msgstr "הפעל שדה זה כדי לבחור את הפריט האופציונלי בחזית."
+
+#: assets/js/admin/product/index.js:2584
+msgid "Default product"
+msgstr "מוצר ברירת מחדל"
+
+#: assets/js/admin/product/index.js:2596
+msgid "Set a default product"
+msgstr "הגדר מוצר ברירת מחדל"
+
+#: assets/js/admin/product/index.js:2603
+msgid "Products"
+msgstr "מוצרים"
+
+#: assets/js/admin/product/index.js:2613
+msgid "Add products or Variations"
+msgstr "הוסף מוצרים או וריאציות"
+
+#: assets/js/admin/product/index.js:2622
+msgid "Exclude products"
+msgstr "אל תכלול מוצרים"
+
+#: assets/js/admin/product/index.js:2634
+msgid "Select a product that you do not want to be displayed"
+msgstr "בחר מוצר שאתה לא רוצה שיוצג"
+
+#: assets/js/admin/product/index.js:2659
+msgid "Categories"
+msgstr "קטגוריות"
+
+#: assets/js/admin/product/index.js:2671
+msgid "Select the category product that you want to be displayed in this bundle item"
+msgstr "בחר את קטגוריית המוצר שאתה רוצה שיתצג בפריט זה בארגז"
+
+#: assets/js/admin/product/index.js:2696
+msgid "Exclude categories"
+msgstr "אל תכלול קטגוריות"
+
+#: assets/js/admin/product/index.js:2708
+msgid "Select the category product that you do not want to be displayed in this bundle item"
+msgstr "בחר את קטגוריית המוצר שאתה לא רוצה שתתצג בפריט זה בארגז"
+
+#: assets/js/admin/product/index.js:2732
+msgid "Tags"
+msgstr "תגים"
+
+#: assets/js/admin/product/index.js:2741
+msgid "Select the product with tags to display in this bundle item"
+msgstr "בחר את המוצר עם התגים שברצונך להציג בפריט הארגז הזה"
+
+#: assets/js/admin/product/index.js:2766
+msgid "Exclude tags"
+msgstr "אל תכלול תגים"
+
+#: assets/js/admin/product/index.js:2778
+msgid "Select the product with tags that you do not want to be displayed in the bundle item"
+msgstr "בחר את המוצר עם התגים שלא ברצונך שיתצג בפריט הארגז"
+
+#: assets/js/admin/product/index.js:2803
+msgid "Categories and Tags relation"
+msgstr "קשר בין קטגוריות ותגים"
+
+#: assets/js/admin/product/index.js:2822
+msgid "Match at least one"
+msgstr "התאם לפחות אחד"
+
+#: assets/js/admin/product/index.js:2833
+msgid "Match both"
+msgstr "התאם את שנייהם"
+
+#: assets/js/admin/product/index.js:2843
+#, js-format
+msgid "Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags."
+msgstr "התאם לפחות אחד: מוצרים צריכים להתאים לפחות לקטגוריה אחת או לתגים.%sהתאם את שנייהם: מוצרים צריכים להתאים לשני הקטגוריות והתגים."
+
+#: assets/js/admin/product/index.js:2854
+msgid "Use regular prices only"
+msgstr "השתמש רק במחירים הרגילים"
+
+#: assets/js/admin/product/index.js:2875
+msgid "Check this option to ignore sale prices and use only regular prices for item products and bundle pricing"
+msgstr "סמן אפשרות זו כדי להתעלם ממחירי מבצע ולהשתמש רק במחירים הרגילים עבור המוצרים ותמחור החבילה."
+
+#: assets/js/admin/product/index.js:2899
+msgid "Sort products"
+msgstr "מיין מוצרים"
+
+#: assets/js/admin/product/index.js:2911
+msgid "ID"
+msgstr "מזהה"
+
+#: assets/js/admin/product/index.js:2917
+msgid "Menu order"
+msgstr "סדר בתפריט"
+
+#: assets/js/admin/product/index.js:2920
+msgid "Date"
+msgstr "תאריך"
+
+#: assets/js/admin/product/index.js:2923
+#: assets/js/admin/product/index.js:3129
+#: assets/js/admin/product/index.js:4487
+msgid "Price"
+msgstr "מחיר"
+
+#: assets/js/admin/product/index.js:2926
+msgid "Popularity"
+msgstr "פופולריות"
+
+#: assets/js/admin/product/index.js:2929
+msgid "Rating"
+msgstr "דירוג"
+
+#: assets/js/admin/product/index.js:2941
+msgid "Ascending"
+msgstr "סדר עולה"
+
+#: assets/js/admin/product/index.js:2944
+msgid "Descending"
+msgstr "סדר יורד"
+
+#: assets/js/admin/product/index.js:2950
+msgid "Set the order of products in the pop-up"
+msgstr "הגדר את סדר המוצרים בחלון המוקפץ"
+
+#: assets/js/admin/product/index.js:2957
+msgid "Quantity"
+msgstr "כַּמוּת"
+
+#: assets/js/admin/product/index.js:2969
+msgid "Set the default product quantity"
+msgstr "הגדר את כמות המוצר ברירת המחדל"
+
+#: assets/js/admin/product/index.js:2976
+msgid "To set the quantity to 0,"
+msgstr "כדי להגדיר את הכמות ל-0,"
+
+#: assets/js/admin/product/index.js:3000
+msgid "make this item optional."
+msgstr "הפוך פריט זה לאופציונלי."
+
+#: assets/js/admin/product/index.js:3026
+msgid "Edit quantity by user"
+msgstr "ערוך כמות לפי משתמש"
+
+#: assets/js/admin/product/index.js:3046
+msgid "Check this option to allow the user to change the bundle item quantity"
+msgstr "סמן את האפשרות הזו כדי לאפשר למשתמש לשנות את כמות הפריט בארגז"
+
+#: assets/js/admin/product/index.js:3060
+msgid "Min quantity"
+msgstr "כמות מינ"
+
+#: assets/js/admin/product/index.js:3082
+msgid "Set the minimum quantity of this bundled product"
+msgstr "הגדר את הכמות המינימלית של מוצר זה בארגז"
+
+#: assets/js/admin/product/index.js:3090
+msgid "Max quantity"
+msgstr "כמות מַקְסִ"
+
+#: assets/js/admin/product/index.js:3103
+msgid "Set the maximum quantity of this bundled product"
+msgstr "הגדר את הכמות המרבית של מוצר זה בארגז"
+
+#: assets/js/admin/product/index.js:3112
+msgid "Discount"
+msgstr "הנחה"
+
+#: assets/js/admin/product/index.js:3126
+#: assets/js/admin/product/index.js:4476
+msgid "Percentage"
+msgstr "אחוז"
+
+#: assets/js/admin/product/index.js:3136
+#: assets/js/admin/product/index.js:4082
+msgid "Fixed price"
+msgstr "מחיר קבוע"
+
+#: assets/js/admin/product/index.js:3155
+msgid "Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price"
+msgstr "ההנחה מוחלת על מחיר המוצר בארגז. אם למוצר בארגז יש מחיר מבצע, ההנחה מוחלת מעל למחיר המבצע"
+
+#: assets/js/admin/product/index.js:3244
+#, js-format
+msgid "Item %d"
+msgstr "פריט %d"
+
+#: assets/js/admin/product/index.js:3281
 msgid "Duplicate: Pro version"
-msgstr ""
+msgstr "שכפול: גרסה Pro"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3285
+msgid "Duplicate"
+msgstr "שכפול"
+
+#: assets/js/admin/product/index.js:3297
 msgid "Trash"
-msgstr ""
+msgstr "אשפה"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3339
 msgid "General"
-msgstr ""
+msgstr "כללי"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3358
 msgid "Display"
-msgstr ""
+msgstr "תצוגה"
 
-#: assets/js/admin/product/index.js:2
-msgid "Individual theme"
-msgstr ""
+#: assets/js/admin/product/index.js:3425
+msgid "Default Image"
+msgstr "תמונה ברירת מחדל"
 
-#: assets/js/admin/product/index.js:2
-msgid "GO PRO"
-msgstr ""
+#: assets/js/admin/product/index.js:3461
+msgid "No image chosen"
+msgstr "לא נבחרה תמונה"
 
-#: assets/js/admin/product/index.js:2
-msgid "Need help?"
-msgstr ""
+#: assets/js/admin/product/index.js:3482
+msgid "Upload Image"
+msgstr "העלה תמונה"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"If checked, disable auto calculate price and use product price as bundle "
-"price."
-msgstr ""
+#: assets/js/admin/product/index.js:3487
+msgid "Set an image for empty item."
+msgstr "הגדר תמונה לפריט ריק."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3839
 msgid "Please enable fixed price first."
-msgstr ""
+msgstr "נא להפעיל מחיר קבוע תחילה"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3869
+msgid "Article"
+msgstr "מאמר"
+
+#: assets/js/admin/product/index.js:3887
+msgid "Quick Tutorial"
+msgstr "מדריך מהיר"
+
+#: assets/js/admin/product/index.js:3906
+msgid "Need help?"
+msgstr "צריך עזרה?"
+
+#: assets/js/admin/product/index.js:3926
+msgid "GO PRO"
+msgstr "ללכת PRO"
+
+#: assets/js/admin/product/index.js:3939
+msgid "Individual theme"
+msgstr "ערכת נושא אישית"
+
+#: assets/js/admin/product/index.js:4104
+msgid "If checked, disable auto calculate price and use product price as bundle price."
+msgstr "אם מסומן, השבת את החישוב האוטומטי של המחיר והשתמש במחיר המוצר כמחיר החבילה"
+
+#: assets/js/admin/product/index.js:4109
 msgid "Click here to set price"
-msgstr ""
+msgstr "לחץ כאן כדי להגדיר מחיר"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4123
 msgid "Include parent price"
-msgstr ""
+msgstr "כלול את מחיר ההורה"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Include the parent product price in the bundle total price. (parent price + "
-"selected items price)"
-msgstr ""
+#: assets/js/admin/product/index.js:4143
+msgid "Include the parent product price in the bundle total price. (parent price + selected items price)"
+msgstr "כלול את מחיר המוצר ההורה במחיר הכולל של החבילה. (מחיר ההורה + מחיר הפריטים הנבחרים)"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4152
 msgid "Sync stock quantity"
-msgstr ""
+msgstr "סנכרן את כמות המלאי"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Update the bundle stock quantity based on the stock quantity of child "
-"products. Note: This feature works only when each item has exactly one "
-"product, which is added to the default product field and is not optional."
-msgstr ""
+#: assets/js/admin/product/index.js:4169
+msgid "Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional."
+msgstr "עדכן את כמות המלאי של החבילה על פי כמות המלאי של מוצרים ילדיים. שים לב: תכונה זו פועלת רק כאשר לכל פריט יש בדיוק מוצר אחד, שנוסף לשדה המוצר ברירת המחדל ואינו אופציונלי."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4196
 msgid "Hide products price"
-msgstr ""
+msgstr "הסתרת מחיר המוצרים"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4208
 msgid "No"
-msgstr ""
+msgstr "לא"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4215
 msgid "Yes"
-msgstr ""
+msgstr "כן"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4223
 msgid "Only regular price"
-msgstr ""
+msgstr "רק מחיר רגיל"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4250
 msgid "Shipping fee"
-msgstr ""
+msgstr "דמי משלוח"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4262
 msgid "Apply to the whole bundle"
-msgstr ""
+msgstr "החל על כל הארגז"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4268
+msgid "Apply to the parent product"
+msgstr "החל על המוצר ההורי"
+
+#: assets/js/admin/product/index.js:4274
 msgid "Apply to each bundle item"
-msgstr ""
+msgstr "החל על כל פריט בארגז"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4283
 msgid "Min items quantity"
-msgstr ""
+msgstr "כמות מינימלית של פריטים"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4297
 msgid "Set the minimum total quantity of bundled items."
-msgstr ""
+msgstr "הגדר את כמות הפריטים המינימלית הכוללת של פריטים מצורפים."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4321
 msgid "Max items quantity"
-msgstr ""
+msgstr "כמות מרבית של פריטים"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4335
 msgid "Set the maximum total quantity of bundled items."
-msgstr ""
+msgstr "הגדר את הכמות המרבית הכוללת של פריטים מצורפים."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4359
 msgid "Custom display price"
-msgstr ""
+msgstr "מחיר תצוגה מותאם אישית"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4375
 msgid "Product display price in frontend. E.g: From 10$ To 20$"
-msgstr ""
+msgstr "מחיר התצוגה של המוצר בחזית. לדוגמה: מ-10$ ל-20$"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"A title for the bundle product that will be shown on top of bundle items."
-msgstr ""
+#: assets/js/admin/product/index.js:4395
+msgid "A title for the bundle product that will be shown on top of bundle items."
+msgstr "כותרת למוצר הארגז שתוצג מעל פריטי הארגז"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4404
 msgid "Bundle description"
-msgstr ""
+msgstr "תיאור החבילה"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4417
 msgid "Create a description for product bundle."
-msgstr ""
+msgstr "צור תיאור עבור חבילת מוצרים."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4426
+msgid "Bundle button label (shop page)"
+msgstr "תווית כפתור החבילה (דף החנות)"
+
+#: assets/js/admin/product/index.js:4442
+msgid "Change the button label shown for bundle products in the shop page."
+msgstr "שנה את תווית הכפתור המוצגת עבור מוצרי חבילה בדף החנות."
+
+#: assets/js/admin/product/index.js:4456
+msgid "Total discount"
+msgstr "הנחה כוללת"
+
+#: assets/js/admin/product/index.js:4505
+msgid "Set a total discount for the bundle total price based on percentage or price."
+msgstr "הגדר הנחה כוללת למחיר הכולל של החבילה על בסיס אחוז או סכום."
+
+#: assets/js/admin/product/index.js:4566
 msgid "Add Item"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Change"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "View"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "OUT OF STOCK"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Bundle item image"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "More pictures"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Args is required."
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Back"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Close"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Prev"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Next"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Add"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Add%s"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Edit product"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Save"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Please select a product for all items."
-msgstr ""
+msgstr "הוסף פריט"

@@ -1,44 +1,39 @@
-# Copyright (C) 2025 Product Bundles Team
+# Copyright (C) 2026 Product Bundles Team
 # This file is distributed under the http://www.gnu.org/licenses/gpl-2.0.html.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Product Bundles for WooCommerce 6.4.3\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-"
-"bundles-for-woocommerce\n"
-"Language-Team: \n"
+"Project-Id-Version: Easy Product Bundles for WooCommerce 6.22.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-product-bundles-for-woocommerce\n"
+"POT-Creation-Date: 2026-09-30T12:02:13+00:00\n"
+"PO-Revision-Date: 2026-09-30 15:55+0330\n"
+"Last-Translator: \n"
+"Language-Team: tr_TR\n"
+"Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-07-02T20:57:37+00:00\n"
-"PO-Revision-Date: 2025-07-22 17:47+0330\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 3.7\n"
 "X-Domain: asnp-easy-product-bundles\n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: tr_TR\n"
 
 #. Plugin Name of the plugin
 #: easy-product-bundles.php
 msgid "Easy Product Bundles for WooCommerce"
-msgstr ""
+msgstr "WooCommerce için Easy Product Bundles"
 
 #. Plugin URI of the plugin
 #: easy-product-bundles.php
-msgid ""
-"https://www.asanaplugins.com/product/woocommerce-product-bundles/?"
-"utm_source=easy-product-bundles-woocommerce-plugin&utm_campaign=easy-product-"
-"bundles-woocommerce&utm_medium=link"
+msgid "https://www.asanaplugins.com/product/woocommerce-product-bundles/?utm_source=easy-product-bundles-woocommerce-plugin&utm_campaign=easy-product-bundles-woocommerce&utm_medium=link"
 msgstr ""
 
 #. Description of the plugin
 #: easy-product-bundles.php
 msgid "Create product bundles in WooCommerce easily"
-msgstr ""
+msgstr "WooCommerce'de kolayca ürün paketleri oluşturun"
 
 #. Author of the plugin
 #: easy-product-bundles.php
 msgid "Product Bundles Team"
-msgstr ""
+msgstr "Product Bundles Ekibi"
 
 #. Author URI of the plugin
 #: easy-product-bundles.php
@@ -46,1287 +41,1696 @@ msgid "https://www.asanaplugins.com/"
 msgstr ""
 
 #. translators: 1: composer command. 2: plugin directory
-#: easy-product-bundles.php:43 easy-product-bundles.php:61
-msgid ""
-"Your installation of the Easy Product Bundles plugin is incomplete. Please "
-"run %1$s within the %2$s directory."
-msgstr ""
+#: easy-product-bundles.php:44
+#: easy-product-bundles.php:62
+#, php-format
+msgid "Your installation of the Easy Product Bundles plugin is incomplete. Please run %1$s within the %2$s directory."
+msgstr "Easy Product Bundles eklentisi kurulumunuz tamamlanmadı. Lütfen %2$s dizininde %1$s komutunu çalıştırın."
 
-#: src/Admin/Admin.php:67 assets/js/admin/admin/index.js:2
+#: src/Admin/Admin.php:67
+#: assets/js/admin/admin/index.js:3449
 msgid "Settings"
-msgstr ""
+msgstr "Ayarlar"
 
-#: src/Admin/Admin.php:70 assets/js/admin/admin/index.js:2
+#: src/Admin/Admin.php:70
 msgid "Go Pro"
-msgstr ""
+msgstr "Pro'ya Git"
 
 #: src/Admin/Admin.php:87
+#, php-format
 msgid "Bundle (%d)"
-msgstr ""
+msgstr "Paket (%d)"
 
-#: src/Admin/Menu.php:28 src/Admin/Menu.php:29 src/Admin/ProductBundle.php:32
+#: src/Admin/Menu.php:27
+#: src/Admin/Menu.php:28
+#: src/Admin/ProductBundle.php:32
 msgid "Product Bundles"
-msgstr ""
+msgstr "Ürün Paketleri"
 
-#: src/Admin/ProductBundle.php:180 src/ProductBundle.php:280
-#: assets/js/admin/product/index.js:2
+#: src/Admin/ProductBundle.php:204
+#: src/Assets.php:121
+#: src/ProductBundle.php:347
+#: assets/js/admin/product/index.js:3625
+#: assets/js/admin/product/index.js:3734
+#: assets/js/shared/index.js:5324
 msgid "Please select a product!"
-msgstr ""
+msgstr "Lütfen bir ürün seçiniz!"
 
-#: src/Admin/ProductBundle.php:181 src/ProductBundle.php:281
-#: assets/js/admin/product/index.js:2
+#: src/Admin/ProductBundle.php:205
+#: src/ProductBundle.php:348
+#: assets/js/admin/product/index.js:3629
+#: assets/js/admin/product/index.js:3738
 msgid "Please select your product!"
-msgstr ""
+msgstr "Lütfen ürün seçin!"
 
-#: src/Admin/ProductBundle.php:182 src/ProductBundle.php:282
-#: assets/js/admin/product/index.js:2
+#: src/Admin/ProductBundle.php:206
+#: src/ProductBundle.php:349
+#: assets/js/admin/product/index.js:3633
+#: assets/js/admin/product/index.js:3742
 msgid "Please select your product"
-msgstr ""
+msgstr "Lütfen Ürün Seçiniz"
 
 #: src/API/BaseController.php:31
+#: src/API/Items.php:117
 msgid "Sorry, you cannot list resources."
-msgstr ""
+msgstr "Üzgünüz, kaynakları listeleyemezsiniz."
 
 #: src/API/BaseController.php:47
 msgid "Sorry, you cannot view this resource."
-msgstr ""
+msgstr "Üzgünüz, bu kaynağı görüntüleyemezsiniz."
 
 #: src/API/BaseController.php:61
+#: src/API/Items.php:131
 msgid "Sorry, you cannot create an item."
-msgstr ""
+msgstr "Üzgünüz, bir öge oluşturamazsınız."
 
 #: src/API/BaseController.php:75
 msgid "Sorry, you cannot update the item."
-msgstr ""
+msgstr "Üzgünüz, ögeyi güncelleyemezsiniz."
 
 #: src/API/BaseController.php:89
 msgid "Sorry, you are not allowed to delete this resource."
-msgstr ""
+msgstr "Üzgünüz, bu kaynağı silme izniniz yok."
 
 #: src/API/BaseController.php:103
 msgid "Sorry, you are not allowed to duplicate this resource."
-msgstr ""
+msgstr "Üzgünüz, bu kaynağı çoğaltma izniniz yok."
 
 #: src/API/BaseController.php:117
 msgid "Sorry, you are not allowed to reorder items."
-msgstr ""
+msgstr "Üzgünüz, ögeleri yeniden sıralama izniniz yok."
 
 #: src/API/ExtendStoreApi.php:105
 msgid "Bundle data"
-msgstr ""
+msgstr "Paket verileri"
 
 #: src/API/FilterProducts.php:37
 msgid "Filter is required."
-msgstr ""
+msgstr "Filtre gereklidir."
 
 #: src/API/FilterProducts.php:56
 msgid "Filter is invalid."
-msgstr ""
+msgstr "Filtre geçersizdir."
 
-#: src/API/FilterProducts.php:62 src/API/FilterProducts.php:98
-#: assets/js/shared/index.js:2
+#: src/API/FilterProducts.php:62
+#: src/API/FilterProducts.php:101
+#: src/Assets.php:132
+#: assets/js/shared/index.js:2551
+#: assets/js/shared/index.js:2600
 msgid "Product ID is required."
-msgstr ""
+msgstr "Ürün kimliği gereklidir."
 
-#: src/API/FilterProducts.php:67 src/API/FilterProducts.php:103
-#: src/API/FilterProducts.php:108
+#: src/API/FilterProducts.php:67
+#: src/API/FilterProducts.php:106
+#: src/API/FilterProducts.php:111
 msgid "Product is invalid."
-msgstr ""
+msgstr "Ürün geçersizdir."
 
-#: src/API/FilterProducts.php:72 src/API/FilterProducts.php:93
+#: src/API/FilterProducts.php:72
+#: src/API/FilterProducts.php:96
 msgid "Index is required."
-msgstr ""
+msgstr "Dizin gereklidir."
 
-#: src/API/FilterProducts.php:114 assets/js/shared/index.js:2
+#: src/API/FilterProducts.php:117
+#: src/Assets.php:133
+#: assets/js/shared/index.js:2604
 msgid "Parent product ID is required."
-msgstr ""
+msgstr "Ana ürün kimliği gereklidir."
 
-#: src/API/FilterProducts.php:119
+#: src/API/FilterProducts.php:122
 msgid "Parent product is invalid."
-msgstr ""
+msgstr "Ana ürün geçersizdir."
 
-#: src/API/FilterProducts.php:133
+#: src/API/FilterProducts.php:141
 msgid "Parent product is not a valid type."
-msgstr ""
+msgstr "Ana ürün geçerli bir türde değil."
 
-#: src/API/FilterProducts.php:144
+#: src/API/FilterProducts.php:152
 msgid "Variable is required."
-msgstr ""
+msgstr "Değişken gereklidir."
 
-#: src/API/FilterProducts.php:181 src/API/FilterProducts.php:220
+#: src/API/FilterProducts.php:191
+#: src/API/FilterProducts.php:245
+#, php-format
 msgid "Filter by %s"
-msgstr ""
+msgstr "%s ile filtrele"
 
-#: src/API/FilterProducts.php:198
+#: src/API/FilterProducts.php:213
 msgid "Variation is required."
-msgstr ""
+msgstr "Varyasyon gereklidir."
 
-#: src/API/FilterProducts.php:246
+#: src/API/FilterProducts.php:276
 msgid "Filter variable product variations or all products."
-msgstr ""
+msgstr "Varyasyonlu ürün varyasyonlarını veya tüm ürünleri filtreleyin."
 
-#: src/API/Items.php:42 src/API/Items.php:51
+#: src/API/Items.php:42
+#: src/API/Items.php:51
 msgid "Search term is required."
-msgstr ""
+msgstr "Arama terimi gereklidir."
 
-#: src/API/Items.php:46 src/API/Items.php:89 assets/js/admin/product/index.js:2
+#: src/API/Items.php:46
+#: src/API/Items.php:83
+#: assets/js/admin/product/index.js:2242
+#: assets/js/admin/product/index.js:2278
 msgid "Type is required."
-msgstr ""
+msgstr "Tip gerekli"
 
-#: src/API/Items.php:85
+#: src/API/Items.php:79
 msgid "Items is required."
-msgstr ""
+msgstr "Ögeler gereklidir."
 
-#: src/API/Review.php:30 assets/js/admin/admin/index.js:2
-#: assets/js/admin/product/index.js:2 assets/js/admin/review/index.js:2
+#: src/API/Review.php:30
+#: assets/js/admin/admin/index.js:5077
+#: assets/js/admin/product/index.js:2315
+#: assets/js/admin/review/index.js:122
 msgid "Action is required."
-msgstr ""
+msgstr "İşlem gerekli"
 
 #: src/API/Review.php:43
 msgid "Action not found."
-msgstr ""
+msgstr "İşlem bulunamadı."
 
-#: src/API/Settings.php:52 src/API/Settings.php:72
+#: src/API/Settings.php:52
+#: src/API/Settings.php:72
 msgid "Settings data is required."
-msgstr ""
+msgstr "Ayar verileri gereklidir."
 
-#: src/Helpers.php:71
+#: src/Assets.php:110
+#: assets/js/shared/index.js:2717
+#: assets/js/shared/index.js:3836
+msgid "OUT OF STOCK"
+msgstr "Stokta yok"
+
+#: src/Assets.php:111
+#: assets/js/shared/index.js:5120
+msgid "Total:"
+msgstr "Toplam:"
+
+#: src/Assets.php:112
+#: assets/js/shared/index.js:5165
+msgid "Save"
+msgstr "İndirim"
+
+#: src/Assets.php:113
+#: assets/js/shared/index.js:5150
+msgid "Buy all for:"
+msgstr "Hepsini satın al:"
+
+#: src/Assets.php:114
+#: assets/js/shared/index.js:5145
+msgid "% OFF"
+msgstr "% İNDİRİM"
+
+#: src/Assets.php:115
+#: assets/js/shared/index.js:5280
+#, php-format,js-format
+msgid "%s is out of stock."
+msgstr "%s stokta yok."
+
+#: src/Assets.php:116
+#: assets/js/shared/index.js:3635
+msgid "Add"
+msgstr "Ekle"
+
+#: src/Assets.php:117
+#: assets/js/shared/index.js:3676
+#: assets/js/shared/index.js:4817
+#, php-format,js-format
+msgid "Add%s"
+msgstr "Ekle%s"
+
+#: src/Assets.php:118
+#: assets/js/shared/index.js:3805
+#: assets/js/shared/index.js:3867
+#: assets/js/shared/index.js:5709
+#: assets/js/shared/index.js:5721
+msgid "View"
+msgstr "Göster"
+
+#: src/Assets.php:119
+#: assets/js/shared/index.js:3863
+#: assets/js/shared/index.js:5720
+msgid "Change"
+msgstr "Değiştir"
+
+#: src/Assets.php:120
+#: assets/js/shared/index.js:5202
+msgid "Empty bundle!"
+msgstr "Boş paket!"
+
+#: src/Assets.php:122
+#: assets/js/shared/index.js:5230
+#: assets/js/shared/index.js:5330
+msgid "Please select a product for all items."
+msgstr "Lütfen set için ürün seçimi yapın."
+
+#: src/Assets.php:123
+#: assets/js/shared/index.js:5260
+#, php-format,js-format
+msgid "Please select a purchasable product for %s before adding bundle to the cart."
+msgstr "%s için paketi sepete eklemeden önce satın alınabilir bir ürün seçin."
+
+#: src/Assets.php:124
+#: assets/js/shared/index.js:5221
+#: assets/js/shared/index.js:5244
+#: assets/js/shared/index.js:5298
+#, php-format,js-format
+msgid "Please select a purchasable variation for %s before adding bundle to the cart."
+msgstr "Lütfen paketi sepete eklemeden önce %s için satın alınabilir bir varyasyon seçin."
+
+#: src/Assets.php:125
+msgid "Product information"
+msgstr "Ürün bilgisi"
+
+#: src/Assets.php:126
+#: assets/js/shared/index.js:5013
+msgid "Product quantity"
+msgstr "Ürün miktarı"
+
+#: src/Assets.php:127
+#: assets/js/shared/index.js:4871
+msgid "Bundle item image"
+msgstr "Paket ürün resmi"
+
+#: src/Assets.php:128
+#: assets/js/shared/index.js:2843
+msgid "Search..."
+msgstr "Ara..."
+
+#: src/Assets.php:129
+#: assets/js/shared/index.js:3446
+msgid "No products found"
+msgstr "Ürün bulunamadı"
+
+#: src/Assets.php:130
+#: assets/js/shared/index.js:2543
+#: assets/js/shared/index.js:2592
+msgid "Args is required."
+msgstr "Args gereklidir."
+
+#: src/Assets.php:131
+#: src/ProductBundle.php:410
+#: assets/js/shared/index.js:2547
+#: assets/js/shared/index.js:2596
+msgid "Item index is required."
+msgstr "Ürün dizini gereklidir."
+
+#: src/Assets.php:134
+#: assets/js/admin/product/index.js:2261
+#: assets/js/shared/index.js:2579
+#: assets/js/shared/index.js:2624
+msgid "There was an error on getting items."
+msgstr "Ürünleri alırken bir hata oluştu."
+
+#: src/Assets.php:135
+msgid "Select options"
+msgstr "Seçenekleri belirleyin"
+
+#: src/Assets.php:136
+msgid "Clear selection"
+msgstr "Seçimi temizle"
+
+#: src/Assets.php:137
+#: assets/js/admin/product/index.js:2493
+msgid "Optional"
+msgstr "Opsiyonel"
+
+#: src/Assets.php:138
+msgid "Delete"
+msgstr "Sil"
+
+#: src/Assets.php:139
+#: assets/js/shared/index.js:3300
+msgid "Back"
+msgstr "Geri"
+
+#: src/Assets.php:140
+#: assets/js/shared/index.js:3324
+msgid "Close"
+msgstr "Kapat"
+
+#: src/Assets.php:141
+#: assets/js/shared/index.js:5026
+msgid "Decrease quantity"
+msgstr "Miktarı azalt"
+
+#: src/Assets.php:142
+#: assets/js/shared/index.js:5049
+msgid "Increase quantity"
+msgstr "Miktarı artır"
+
+#: src/Assets.php:143
+#: assets/js/shared/index.js:4779
+msgid "Edit product"
+msgstr "Ürünleri düzenle"
+
+#: src/Assets.php:144
+#: assets/js/shared/index.js:2735
+msgid "More pictures"
+msgstr "Daha fazla resim"
+
+#: src/Assets.php:145
+#: assets/js/shared/index.js:3594
+msgid "Next"
+msgstr "Sonraki"
+
+#: src/Assets.php:146
+#: assets/js/shared/index.js:3590
+msgid "Prev"
+msgstr "Önceki"
+
+#: src/Assets.php:147
+#: assets/js/shared/index.js:2804
+msgid "Show Options"
+msgstr "Seçenekleri göster"
+
+#: src/Helpers.php:73
 msgid "Invalid product type."
-msgstr ""
+msgstr "Geçersiz ürün türü."
 
-#: src/Models/ItemsModel.php:74 src/Models/ItemsModel.php:78
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
+#: src/Models/ItemsModel.php:89
+#: src/Models/ItemsModel.php:95
+#: assets/js/admin/admin/index.js:3278
+#: assets/js/admin/product/index.js:2524
+#: assets/js/admin/product/index.js:2567
+#: assets/js/admin/product/index.js:2641
+#: assets/js/admin/product/index.js:2678
+#: assets/js/admin/product/index.js:2715
+#: assets/js/admin/product/index.js:2748
+#: assets/js/admin/product/index.js:2785
+#: assets/js/admin/product/index.js:2882
+#: assets/js/admin/product/index.js:3007
+#: assets/js/admin/product/index.js:3494
+#: assets/js/admin/product/index.js:3667
+#: assets/js/admin/product/index.js:4013
+#: assets/js/admin/product/index.js:4063
+#: assets/js/admin/product/index.js:4233
+#: assets/js/admin/product/index.js:4304
+#: assets/js/admin/product/index.js:4342
+#: assets/js/admin/product/index.js:4512
 msgid "PRO Version"
-msgstr ""
+msgstr "PRO Version"
 
 #. translators: 1: URL of WooCommerce plugin, 2: The minimum WooCommerce version number
 #: src/Plugin.php:220
-msgid ""
-"The Easy Product Bundles plugin requires <a href=\"%1$s\">WooCommerce</a> "
-"%2$s or greater to be installed and active."
-msgstr ""
+#, php-format
+msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WooCommerce</a> %2$s or greater to be installed and active."
+msgstr "Easy Product Bundles eklentisi, <a href=\"%1$s\">WooCommerce</a> %2$s veya üzerinin kurulu ve etkin olmasını gerektirir."
 
 #. translators: 1: URL of WordPress.org, 2: The minimum WordPress version number
 #: src/Plugin.php:229
-msgid ""
-"The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s "
-"or greater to be installed and active."
-msgstr ""
+#, php-format
+msgid "The Easy Product Bundles plugin requires <a href=\"%1$s\">WordPress</a> %2$s or greater to be installed and active."
+msgstr "Easy Product Bundles eklentisi, <a href=\"%1$s\">WordPress</a> %2$s veya üzerinin kurulu ve etkin olmasını gerektirir."
 
-#: src/ProductBundle.php:334 assets/js/shared/index.js:2
-msgid "Item index is required."
-msgstr ""
+#: src/ProductBundle.php:179
+#: src/ProductBundle.php:761
+#: assets/js/admin/product/index.js:3637
+msgid "Configure bundle"
+msgstr "Paketi yapılandır"
 
-#: src/ProductBundleHooks.php:94
+#: src/ProductBundleHooks.php:96
 msgid "Product bundle"
-msgstr ""
+msgstr "Ürün paketi"
 
-#: src/ProductBundleHooks.php:185 src/ProductBundleHooks.php:188
-#: src/ProductBundleHooks.php:190
+#: src/ProductBundleHooks.php:193
+#: src/ProductBundleHooks.php:196
+#: src/ProductBundleHooks.php:198
+#: src/ProductBundleHooks.php:201
 msgid "From"
-msgstr ""
-
-#: src/ProductBundleHooks.php:226 src/ProductBundleHooks.php:239
-msgid "Please select a product for each of the required bundle items."
-msgstr ""
-
-#: src/ProductBundleHooks.php:230
-msgid "Invalid product bundle."
-msgstr ""
+msgstr "Başlangıç"
 
 #: src/ProductBundleHooks.php:235
+#: src/ProductBundleHooks.php:248
+msgid "Please select a product for each of the required bundle items."
+msgstr "Lütfen gerekli paket ögelerinin her biri için bir ürün seçin."
+
+#: src/ProductBundleHooks.php:239
+msgid "Invalid product bundle."
+msgstr "Geçersiz ürün paketi."
+
+#: src/ProductBundleHooks.php:244
 msgid "Bundle product is unavailable."
-msgstr ""
-
-#: src/ProductBundleHooks.php:259
-msgid "Selected product for the bundle item %d is invalid."
-msgstr ""
-
-#: src/ProductBundleHooks.php:263
-msgid "This product is protected and cannot be purchased."
-msgstr ""
+msgstr "Paket ürünü mevcut değil."
 
 #: src/ProductBundleHooks.php:267
+#, php-format
+msgid "Selected product for the bundle item %d is invalid."
+msgstr "Paket ögesi %d için seçilen ürün geçersiz."
+
+#: src/ProductBundleHooks.php:271
+#, php-format
+msgid "Please select a variation for the bundle item &quot;%s&quot;."
+msgstr "Lütfen &quot;%s&quot; paket ögesi için bir varyasyon seçin."
+
+#: src/ProductBundleHooks.php:275
+msgid "This product is protected and cannot be purchased."
+msgstr "Bu ürün korumalıdır ve satın alınamaz."
+
+#: src/ProductBundleHooks.php:279
+#, php-format
 msgid "Product &quot;%s&quot; is not purchasable."
-msgstr ""
+msgstr "&quot;%s&quot; ürünü satın alınamaz."
 
-#: src/ProductBundleHooks.php:272 src/ProductBundleHooks.php:299
-#: src/ProductBundleHooks.php:302 src/ProductBundleHooks.php:305
-#: src/ProductBundleHooks.php:308
-msgid "Please select a valid quantity for the bundle item &quot;%s&quot;."
-msgstr ""
-
-#. translators: %s: product name
 #: src/ProductBundleHooks.php:284
-msgid "You cannot add another \"%s\" to your cart."
-msgstr ""
-
-#: src/ProductBundleHooks.php:294 src/ProductBundleHooks.php:357
-msgid "View cart"
-msgstr ""
-
-#. translators: %s: product name
-#: src/ProductBundleHooks.php:315
-msgid ""
-"You cannot add &quot;%s&quot; to the bundle item because the product is out "
-"of stock."
-msgstr "\"%s\" ürününü paket öğesine ekleyemezsiniz çünkü ürün stokta yok."
+#: src/ProductBundleHooks.php:366
+#: src/ProductBundleHooks.php:370
+#: src/ProductBundleHooks.php:373
+#, php-format
+msgid "Please select a valid quantity for the bundle item &quot;%s&quot;."
+msgstr "Lütfen &quot;%s&quot; paket ögesi için geçerli bir miktar seçin."
 
 #. translators: 1: product name 2: quantity in stock
-#: src/ProductBundleHooks.php:332 src/ProductBundleHooks.php:461
-msgid ""
-"You cannot add that amount of &quot;%1$s&quot; to the cart because there is "
-"not enough stock (%2$s remaining)."
-msgstr ""
-"Sepete bu kadar \"%1$s\" ekleyemezsiniz çünkü yeterli stok yok (kalan %2$s)."
+#: src/ProductBundleHooks.php:296
+#: src/ProductBundleHooks.php:397
+#: src/ProductBundleHooks.php:522
+#, php-format
+msgid "You cannot add that amount of &quot;%1$s&quot; to the cart because there is not enough stock (%2$s remaining)."
+msgstr "Yeterli stok olmadığı için (%2$s kaldı) sepete o miktarda &quot;%1$s&quot; ekleyemezsiniz."
+
+#: src/ProductBundleHooks.php:321
+#: src/ProductBundleHooks.php:360
+#: src/ProductBundleHooks.php:422
+msgid "View cart"
+msgstr "Sepeti görüntüle"
 
 #. translators: 1: quantity in stock 2: current quantity
-#: src/ProductBundleHooks.php:359
-msgid ""
-"You cannot add that amount of &quot;%1$s&quot; to the cart &mdash; we have "
-"%2$s in stock and you already have %3$s in your cart."
-msgstr ""
-"Sepete bu kadar \"%1$s\" ekleyemezsiniz — stokta %2$s var ve sizin "
-"sepetinizde zaten %3$s bulunuyor."
+#: src/ProductBundleHooks.php:323
+#: src/ProductBundleHooks.php:424
+#, php-format
+msgid "You cannot add that amount of &quot;%1$s&quot; to the cart &mdash; we have %2$s in stock and you already have %3$s in your cart."
+msgstr "Sepete o miktarda &quot;%1$s&quot; ekleyemezsiniz &mdash; stokta %2$s var ve sepetinizde zaten %3$s var."
 
-#: src/ProductBundleHooks.php:377
-msgid ""
-"You cannot add &quot;%s&quot; to the bundle item because it is an invalid "
-"product."
-msgstr "\"%s\" ürününü paket öğesine ekleyemezsiniz çünkü ürün geçersizdir."
+#. translators: %s: product name
+#: src/ProductBundleHooks.php:350
+#, php-format
+msgid "You cannot add another \"%s\" to your cart."
+msgstr "Sepetinize başka bir \"%s\" ekleyemezsiniz."
+
+#. translators: %s: product name
+#: src/ProductBundleHooks.php:380
+#, php-format
+msgid "You cannot add &quot;%s&quot; to the bundle item because the product is out of stock."
+msgstr "Ürün stokta olmadığı için paket ögesine &quot;%s&quot; ekleyemezsiniz."
+
+#: src/ProductBundleHooks.php:442
+#, php-format
+msgid "You cannot add &quot;%s&quot; to the bundle item because it is an invalid product."
+msgstr "Geçersiz bir ürün olduğu için paket ögesine &quot;%s&quot; ekleyemezsiniz."
 
 #. Translators: %s Product title.
-#: src/ProductBundleHooks.php:433
+#: src/ProductBundleHooks.php:498
+#, php-format
 msgid "You can only have 1 %s in your cart."
-msgstr "Sepetinizde yalnızca 1 adet %s olabilir."
+msgstr "Sepetinizde yalnızca 1 adet %s bulunabilir."
 
-#: src/ProductBundleHooks.php:441
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; must be at least %2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:506
+#, php-format
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be at least %2$d."
+msgstr "Sepet güncellemesi başarısız oldu. &quot;%1$s&quot; miktarı en az %2$d olmalıdır."
 
-#: src/ProductBundleHooks.php:445
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; cannot be higher than "
-"%2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:510
+#, php-format
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; cannot be higher than %2$d."
+msgstr "Sepet güncellemesi başarısız oldu. &quot;%1$s&quot; miktarı %2$d miktarından yüksek olamaz."
 
-#: src/ProductBundleHooks.php:449 src/ProductBundleHooks.php:453
-msgid ""
-"Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
-msgstr ""
+#: src/ProductBundleHooks.php:514
+#, php-format
+msgid "Cart update failed. The quantity of &quot;%1$s&quot; must be equal to %2$d."
+msgstr "Sepet güncellemesi başarısız oldu. &quot;%1$s&quot; miktarı %2$d miktarına eşit olmalıdır."
 
-#: src/ProductBundleHooks.php:1079
+#: src/ProductBundleHooks.php:1213
+#, php-format
 msgid "(Bundled in %s)"
-msgstr ""
+msgstr "(%s içinde paketlendi)"
 
-#: src/ProductBundleHooks.php:1155 src/ProductBundleHooks.php:1167
+#: src/ProductBundleHooks.php:1289
+#: src/ProductBundleHooks.php:1301
 msgid "Invalid bundle product."
-msgstr ""
+msgstr "Geçersiz paket ürünü."
 
-#: src/ProductBundleHooks.php:1160 src/ProductBundleHooks.php:1165
+#: src/ProductBundleHooks.php:1294
+#: src/ProductBundleHooks.php:1299
 msgid "Bundle product has not default items to add it to the order."
-msgstr ""
+msgstr "Paket ürününün siparişe eklenecek varsayılan ögeleri yok."
 
-#: src/ProductBundleHooks.php:1224
+#: src/ProductBundleHooks.php:1370
 msgid "Can not add bundle product to the order."
-msgstr ""
+msgstr "Paket ürünü siparişe eklenemiyor."
 
-#: src/ProductBundleHooks.php:1234
+#: src/ProductBundleHooks.php:1380
 msgid "Can not add bundle item to the order."
-msgstr ""
+msgstr "Paket ögesi siparişe eklenemiyor."
 
 #: src/ProductSelector.php:14
 msgid "Product selector item is empty."
-msgstr ""
+msgstr "Ürün seçici ögesi boş."
 
 #: src/ProductSelector.php:43
 msgid "Query args is required."
-msgstr ""
+msgstr "Sorgu argümanları gereklidir."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2521
 msgid "Bundle position"
-msgstr ""
+msgstr "Paket konumu"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2534
 msgid "Before Add to Cart button"
-msgstr ""
+msgstr "Sepete Ekle düğmesinden önce"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2540
 msgid "After Add to Cart button"
-msgstr ""
+msgstr "Sepete Ekle düğmesinden sonra"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2546
 msgid "Before Add to Cart form"
-msgstr ""
+msgstr "Sepete Ekle formundan önce"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2552
 msgid "After Add to Cart form"
-msgstr ""
+msgstr "Sepete Ekle formundan sonra"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2558
 msgid "Before product excerpt"
-msgstr ""
+msgstr "Ürün alıntısından önce"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2564
 msgid "After product excerpt"
-msgstr ""
+msgstr "Ürün alıntısından sonra"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2570
 msgid "After product meta"
-msgstr ""
+msgstr "Ürün metasından sonra"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2576
+#: assets/js/admin/admin/index.js:3214
+#: assets/js/admin/product/index.js:3123
+#: assets/js/admin/product/index.js:4469
 msgid "None"
-msgstr ""
+msgstr "Hiçbiri"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2579
 msgid "Before CSS selector"
-msgstr ""
+msgstr "CSS seçicisinden önce"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2585
 msgid "After CSS selector"
-msgstr ""
+msgstr "CSS seçicisinden sonra"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2593
 msgid "product bundle position in product page."
-msgstr ""
+msgstr "ürün sayfasındaki ürün paketi konumu."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2613
 msgid "CSS Selector"
-msgstr ""
+msgstr "CSS Seçici"
 
-#: assets/js/admin/admin/index.js:2
-msgid "(Pro)"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Back default color"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product image object-fit"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Cover"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Contain"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Fill"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Inherit"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Initial"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Revert"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Scale-down"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Unset"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Bundle"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Item View"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show stock"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product Stock availability in modal."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show rating"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product rating in modal."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show description(on hover)"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product description when mouse hover over it."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Prepend parent name"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Prepend the parent name to the item name in the cart and order."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Hide out of stock"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Hide out of stock products."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show price in cart"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product bundle items price visibility in cart and checkout."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show products list"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show products list below products bundle."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show total price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show the total price of the selected items below the products list."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show saved money"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show the saved money when calculating the total price."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show modal quick view"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product quick view icon in modal."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show selected product quick view"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product quick view icon in the selected product."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Quantity field on item"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show quantity field on item."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show plus icon"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show plus icon between items."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Disable popup"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Disable popup for items that have only one product."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Theme"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Grid 1"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Grid 2"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "List 1"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "List 2"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Size"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Small"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Medium"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Large"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Optional item mode"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Checkbox"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Delete button"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product bundle price on shop page"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Total price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "From total price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "From min price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Set how to show the product bundle price on the shop page."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Item price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product subtotal"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Set how to show the product price in item."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product list price"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Set how to show the product price in product list."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Link to product"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "New tab"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "No link"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show the product change modal"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Click on product in pop-up"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product selection"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Show product details"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Coupon apply method"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Both of bundle and bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "On bundle"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "On bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "None of bundle and bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid ""
-"Product based coupons apply method. Can apply on \"bundle\", \"bundle items"
-"\", \"both\" or \"none\"."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Cart contents count"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Bundle items"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid ""
-"How to count bundle products in the cart? Count both of \"bundle and its "
-"items\" or \"only bundle\" or \"only bundle items\"."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Product price selector"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Add to cart button selector"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Change product modal"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Number of products per page"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Styles"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "Save Changes"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2638
 msgid "License Key"
-msgstr ""
+msgstr "Lisans Anahtarı"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2643
 msgid "Enter Your License Key"
-msgstr ""
+msgstr "Lisans Anahtarınızı Girin"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2656
 msgid "Notice"
-msgstr ""
+msgstr "Uyarı"
 
-#: assets/js/admin/admin/index.js:2
-msgid ""
-"Each website using this plugin needs a legal license (1 license = 1 website)."
-msgstr ""
+#: assets/js/admin/admin/index.js:2660
+msgid "Each website using this plugin needs a legal license (1 license = 1 website)."
+msgstr "Bu eklentiyi kullanan her web sitesinin yasal bir lisansa ihtiyacı vardır (1 lisans = 1 web sitesi)."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2666
 msgid "You can find more information on"
-msgstr ""
+msgstr "Daha fazla bilgiyi şurada bulabilirsiniz"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2674
 msgid "software license agreement"
-msgstr ""
+msgstr "yazilim li̇sans sözleşmesi̇"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2680
 msgid "If you need to buy a new license of this plugin"
-msgstr ""
+msgstr "Bu eklentinin yeni bir lisansını satın almanız gerekiyorsa"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2688
 msgid "click here."
-msgstr ""
+msgstr "buraya tıklayın."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2696
 msgid "Where can I find my license key?"
-msgstr ""
+msgstr "Lisans anahtarımı nerede bulabilirim?"
 
-#: assets/js/admin/admin/index.js:2
-msgid "There was an error on getting settings."
-msgstr ""
+#: assets/js/admin/admin/index.js:2709
+#: assets/js/admin/admin/index.js:4995
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-msgid "Data is required."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2
-msgid "There was an error on saving settings."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "There was an error on applying review."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid ""
-"We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and "
-"give it a %2$s to help us spread the word and boost our motivation?%4$s "
-"%5$sShare your feature requests%6$s with the review, We always check them "
-"and try our best."
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "OK, you deserve it!"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "I already did"
-msgstr ""
-
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
+#: assets/js/admin/admin/index.js:2841
+#: assets/js/admin/admin/index.js:5255
+#: assets/js/admin/admin/index.js:5291
+#: assets/js/admin/product/index.js:4674
+#: assets/js/admin/product/index.js:4710
+#: assets/js/admin/review/index.js:248
+#: assets/js/admin/review/index.js:284
 msgid "Maybe Later"
-msgstr ""
+msgstr "Belki sonra"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "I need help"
-msgstr ""
+#: assets/js/admin/admin/index.js:2926
+msgid "Bundle title color"
+msgstr "Paket başlık rengi"
 
-#: assets/js/admin/admin/index.js:2 assets/js/admin/product/index.js:2
-#: assets/js/admin/review/index.js:2
-msgid "Never show again"
-msgstr ""
+#: assets/js/admin/admin/index.js:2932
+msgid "Empty item title color"
+msgstr "Boş öğe başlık rengi"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Apps you might like"
-msgstr ""
+#: assets/js/admin/admin/index.js:2938
+msgid "Empty item title hover color"
+msgstr "Boş öğe başlık üzerine gelinceki rengi"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Active Installations"
-msgstr ""
+#: assets/js/admin/admin/index.js:2947
+msgid "Product title color"
+msgstr "Ürün başlığı rengi"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Free Version"
-msgstr ""
+#: assets/js/admin/admin/index.js:2953
+msgid "Product crossed out price color"
+msgstr "Ürün çarpı işaretli fiyat rengi"
 
-#: assets/js/admin/admin/index.js:2
-msgid "Buy Pro"
-msgstr ""
+#: assets/js/admin/admin/index.js:2962
+msgid "Product sale price color"
+msgstr "Ürün satış fiyatı renk"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:2971
+msgid "Modal header color"
+msgstr "Modal başlık rengi"
+
+#: assets/js/admin/admin/index.js:2977
+msgid "Quantity field buttons hover color"
+msgstr "Miktar alanı düğmelerinin üzerine gelindiğinde renk"
+
+#: assets/js/admin/admin/index.js:2986
+msgid "Alert message color"
+msgstr "Uyarı mesajı rengi"
+
+#: assets/js/admin/admin/index.js:2992
+msgid "Alert message background color"
+msgstr "Uyarı mesajı arka plan rengi"
+
+#: assets/js/admin/admin/index.js:3001
+msgid "Optional badge color"
+msgstr "İsteğe bağlı rozet rengi"
+
+#: assets/js/admin/admin/index.js:3008
+msgid "Optional badge title color"
+msgstr "İsteğe bağlı rozet başlık rengi"
+
+#: assets/js/admin/admin/index.js:3018
+msgid "Quick view icon color"
+msgstr "Hızlı görünüm simgesi rengi"
+
+#: assets/js/admin/admin/index.js:3025
+msgid "Plus icon color"
+msgstr "Artı ikon rengi"
+
+#: assets/js/admin/admin/index.js:3032
+msgid "Quick view button color"
+msgstr "Hızlı görünüm düğme rengi"
+
+#: assets/js/admin/admin/index.js:3039
+msgid "Quick view button text color"
+msgstr "Hızlı görünüm düğme metin rengi"
+
+#: assets/js/admin/admin/index.js:3049
+msgid "Popup Variable “Show Options” Button Text Color"
+msgstr "Popup'taki değişken ürünler için 'Seçenekleri Göster' düğmesinin metin rengi"
+
+#: assets/js/admin/admin/index.js:3058
+msgid "Images icon color"
+msgstr "Görüntü simgesi rengi"
+
+#: assets/js/admin/admin/index.js:3065
+msgid "Total price - sale price color"
+msgstr "Toplam fiyat - indirimli fiyat rengi"
+
+#: assets/js/admin/admin/index.js:3074
+msgid "Total price - crossed out price color"
+msgstr "Toplam fiyat - çarpı işaretiyle fiyat rengi"
+
+#: assets/js/admin/admin/index.js:3083
+msgid "Total price - saved amount color"
+msgstr "Toplam fiyat - biriktirilen miktar rengi"
+
+#: assets/js/admin/admin/index.js:3092
+msgid "Total price - saved amount background color"
+msgstr "Toplam fiyat - biriktirilen miktarın arka plan rengi"
+
+#: assets/js/admin/admin/index.js:3118
+#: assets/js/admin/admin/index.js:3915
+#: assets/js/admin/admin/index.js:3954
+#: assets/js/admin/admin/index.js:3993
+#: assets/js/admin/admin/index.js:4032
+#: assets/js/admin/admin/index.js:4133
+#: assets/js/admin/admin/index.js:4675
+#: assets/js/admin/admin/index.js:4796
+#: assets/js/admin/admin/index.js:4837
+#: assets/js/admin/admin/index.js:4877
+msgid "(Pro)"
+msgstr "(Pro)"
+
+#: assets/js/admin/admin/index.js:3160
+msgid "Back default color"
+msgstr "Arka varsayılan renk"
+
+#: assets/js/admin/admin/index.js:3181
+msgid "Product image object-fit"
+msgstr "Ürün görüntüsü object-fit CSS"
+
+#: assets/js/admin/admin/index.js:3199
+msgid "Cover"
+msgstr "Cover"
+
+#: assets/js/admin/admin/index.js:3202
+msgid "Contain"
+msgstr "Contain"
+
+#: assets/js/admin/admin/index.js:3205
+msgid "Fill"
+msgstr "Fill"
+
+#: assets/js/admin/admin/index.js:3208
+msgid "Inherit"
+msgstr "Inherit"
+
+#: assets/js/admin/admin/index.js:3211
+msgid "Initial"
+msgstr "Initial"
+
+#: assets/js/admin/admin/index.js:3217
+msgid "Revert"
+msgstr "Revert"
+
+#: assets/js/admin/admin/index.js:3220
+msgid "Scale-down"
+msgstr "Scale-down"
+
+#: assets/js/admin/admin/index.js:3223
+msgid "Unset"
+msgstr "Unset"
+
+#: assets/js/admin/admin/index.js:3411
 msgid "Saved Successfully."
-msgstr ""
+msgstr "Başarıyla kaydedildi."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3419
 msgid "There was an error on saving the settings."
-msgstr ""
+msgstr "Ayarlar kaydedilirken bir hata oluştu."
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3464
 msgid "Apps"
-msgstr ""
+msgstr "Uygulamalar"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3481
 msgid "Enable Updates"
-msgstr ""
+msgstr "Güncellemeleri Etkinleştir"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3496
 msgid "Articles"
-msgstr ""
+msgstr "Makaleler"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3510
 msgid "Video Tutorials"
-msgstr ""
+msgstr "Video eğitimleri"
 
-#: assets/js/admin/admin/index.js:2
+#: assets/js/admin/admin/index.js:3524
 msgid "Get Support"
-msgstr ""
+msgstr "Destek al"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/admin/index.js:3538
+msgid "5-Star Review"
+msgstr "5 Yıldızlı Değerlendirme"
+
+#: assets/js/admin/admin/index.js:3553
+#: assets/js/admin/admin/index.js:3751
+msgid "Buy Pro"
+msgstr "Pro sürümü satın al"
+
+#: assets/js/admin/admin/index.js:3558
+#: assets/js/admin/product/index.js:3928
+msgid "UP TO 75% OFF"
+msgstr "%75'E VARAN İNDİRİM"
+
+#: assets/js/admin/admin/index.js:3693
+msgid "Apps you might like"
+msgstr "Beğenebileceğiniz uygulamalar"
+
+#: assets/js/admin/admin/index.js:3724
+msgid "Active Installations"
+msgstr "Aktif kurulumlar"
+
+#: assets/js/admin/admin/index.js:3739
+msgid "Free Version"
+msgstr "Ücretsiz sürüm"
+
+#: assets/js/admin/admin/index.js:3780
+#: assets/js/admin/admin/index.js:4605
+msgid "Bundle"
+msgstr "Paket"
+
+#: assets/js/admin/admin/index.js:3784
+msgid "Item View"
+msgstr "Ürün Görünümü"
+
+#: assets/js/admin/admin/index.js:3789
+msgid "Show description(on hover)"
+msgstr "Açıklamayı göster (üzerine gelindiğinde)"
+
+#: assets/js/admin/admin/index.js:3795
+msgid "Show product description when mouse hover over it."
+msgstr "Fareyle üzerine gelindiğinde ürün açıklamasını gösterin."
+
+#: assets/js/admin/admin/index.js:3819
+msgid "Show description inside item"
+msgstr "Öğe içinde açıklamayı göster"
+
+#: assets/js/admin/admin/index.js:3825
+msgid "Show the short description inside the bundle item card. Disable this to hide it in the item box."
+msgstr "Paketteki öğe kartında kısa açıklamayı gösterir. Öğe kutusunda gizlemek için bu seçeneği devre dışı bırakın."
+
+#: assets/js/admin/admin/index.js:3849
+msgid "Prepend parent name"
+msgstr "Ebeveyn adını ön ekle"
+
+#: assets/js/admin/admin/index.js:3855
+msgid "Prepend the parent name to the item name in the cart and order."
+msgstr "Sepet ve siparişteki ürün adının önüne üst adı ekleyin."
+
+#: assets/js/admin/admin/index.js:3879
+msgid "Show “bundled” in suffix"
+msgstr "Sondaki 'paketlenmiş' ifadesini göster"
+
+#: assets/js/admin/admin/index.js:3885
+msgid "Show the “Bundled in [Parent Product]” text after each bundled item’s name in the order details section."
+msgstr "Sipariş detayları bölümünde, her paketlenmiş ürünün adından sonra “[Ana Ürün] içinde paketlenmiş” metnini göster."
+
+#: assets/js/admin/admin/index.js:3909
+msgid "Hide out of stock"
+msgstr "Stokta yok gizle"
+
+#: assets/js/admin/admin/index.js:3920
+msgid "Hide out of stock products."
+msgstr "Stokta olmayan ürünleri gizleyin."
+
+#: assets/js/admin/admin/index.js:3948
+msgid "Show price in cart"
+msgstr "Fiyatı sepette göster"
+
+#: assets/js/admin/admin/index.js:3959
+msgid "Product bundle items price visibility in cart and checkout."
+msgstr "Ürün paketi öğeleri fiyatının sepette ve ödeme sayfasında görünürlüğü."
+
+#: assets/js/admin/admin/index.js:3987
+msgid "Show products list"
+msgstr "Ürün listesini göster"
+
+#: assets/js/admin/admin/index.js:3998
+msgid "Show products list below products bundle."
+msgstr "Ürün listesini ürün paketinin altında göster."
+
+#: assets/js/admin/admin/index.js:4026
+msgid "Show total price"
+msgstr "Toplam fiyatı göster"
+
+#: assets/js/admin/admin/index.js:4037
+msgid "Show the total price of the selected items below the products list."
+msgstr "Seçilen ürünlerin toplam fiyatını ürün listesinin altında gösterin."
+
+#: assets/js/admin/admin/index.js:4065
+msgid "Show saved money"
+msgstr "Kaydedilen parayı göster"
+
+#: assets/js/admin/admin/index.js:4071
+msgid "Show the saved money when calculating the total price."
+msgstr "Toplam fiyatı hesaplarken kaydedilen parayı göster."
+
+#: assets/js/admin/admin/index.js:4096
+msgid "Show Discount Badge"
+msgstr "İndirim Rozetini Göster"
+
+#: assets/js/admin/admin/index.js:4102
+msgid "Show or hide the discount badge in the bundle total price section."
+msgstr "Paket toplam fiyat bölümünde indirim rozetini göster veya gizle."
+
+#: assets/js/admin/admin/index.js:4127
+msgid "Show selected product quick view"
+msgstr "Seçilen ürün hızlı görünümü göster"
+
+#: assets/js/admin/admin/index.js:4138
+msgid "Show product quick view icon in the selected product."
+msgstr "Seçilen üründe ürün hızlı görünüm simgesini göster."
+
+#: assets/js/admin/admin/index.js:4167
+msgid "Quantity field on item"
+msgstr "Ürün üzerinde miktar alanı"
+
+#: assets/js/admin/admin/index.js:4173
+msgid "Show quantity field on item."
+msgstr "Ürün üzerinde miktar alanını göster"
+
+#: assets/js/admin/admin/index.js:4197
+msgid "Show plus icon"
+msgstr "Artı ikonu göster"
+
+#: assets/js/admin/admin/index.js:4200
+msgid "Show plus icon between items."
+msgstr "Öğeler arasında artı ikonu göster"
+
+#: assets/js/admin/admin/index.js:4225
+msgid "Calculate bundle price in frontend"
+msgstr "Önyüzde paket fiyatını hesapla"
+
+#: assets/js/admin/admin/index.js:4231
+msgid "It can enhance compatibility with discount plugin, but may lead to memory issues if the bundle contains many items. It is useful for dynamic price bundles. Only enable it if necessary."
+msgstr "İndirim eklentisiyle uyumluluğu artırabilir, ancak paket çok fazla ürün içeriyorsa bellek sorunlarına yol açabilir. Dinamik fiyatlı paketler için kullanışlıdır. Yalnızca gerekli olduğunda etkinleştirin."
+
+#: assets/js/admin/admin/index.js:4259
+#: assets/js/admin/product/index.js:3963
+msgid "Theme"
+msgstr "Tema"
+
+#: assets/js/admin/admin/index.js:4271
+#: assets/js/admin/product/index.js:3975
+msgid "Grid 1"
+msgstr "Izgara 1"
+
+#: assets/js/admin/admin/index.js:4278
+#: assets/js/admin/product/index.js:3982
+msgid "Grid 2"
+msgstr "Izgara 2"
+
+#: assets/js/admin/admin/index.js:4289
+#: assets/js/admin/product/index.js:3993
+msgid "List 1"
+msgstr "Liste 1"
+
+#: assets/js/admin/admin/index.js:4300
+#: assets/js/admin/product/index.js:4004
+msgid "List 2"
+msgstr "Liste 2"
+
+#: assets/js/admin/admin/index.js:4310
+#: assets/js/admin/product/index.js:4029
+msgid "Size"
+msgstr "Boyut"
+
+#: assets/js/admin/admin/index.js:4324
+#: assets/js/admin/product/index.js:4044
+msgid "Small"
+msgstr "S"
+
+#: assets/js/admin/admin/index.js:4329
+#: assets/js/admin/product/index.js:4049
+msgid "Medium"
+msgstr "M"
+
+#: assets/js/admin/admin/index.js:4336
+#: assets/js/admin/product/index.js:4056
+msgid "Large"
+msgstr "L"
+
+#: assets/js/admin/admin/index.js:4344
+msgid "Optional item mode"
+msgstr "Opsiyonel öğe modu"
+
+#: assets/js/admin/admin/index.js:4362
+msgid "Checkbox"
+msgstr "Seçim alanı"
+
+#: assets/js/admin/admin/index.js:4372
+msgid "Delete button"
+msgstr "Silme düğmesi"
+
+#: assets/js/admin/admin/index.js:4383
+msgid "Product bundle price on shop page"
+msgstr "Mağaza sayfasında ürün paketi fiyatı"
+
+#: assets/js/admin/admin/index.js:4401
+msgid "Total price"
+msgstr "Toplam fiyat"
+
+#: assets/js/admin/admin/index.js:4407
+msgid "From total price"
+msgstr "Toplam fiyattan"
+
+#: assets/js/admin/admin/index.js:4413
+msgid "From min price"
+msgstr "Minimum fiyattan"
+
+#: assets/js/admin/admin/index.js:4421
+msgid "Set how to show the product bundle price on the shop page."
+msgstr "Mağaza sayfasında ürün paketi fiyatının nasıl gösterileceğini ayarlayın."
+
+#: assets/js/admin/admin/index.js:4430
+msgid "Item price"
+msgstr "Ürün fiyatı"
+
+#: assets/js/admin/admin/index.js:4442
+#: assets/js/admin/admin/index.js:4486
+msgid "Product price"
+msgstr "Ürün fiyatı"
+
+#: assets/js/admin/admin/index.js:4448
+#: assets/js/admin/admin/index.js:4480
+msgid "Product subtotal"
+msgstr "Ürün alt toplamı"
+
+#: assets/js/admin/admin/index.js:4456
+msgid "Set how to show the product price in item."
+msgstr "Ürün fiyatını ürün üzerinde nasıl gösterileceğini ayarla"
+
+#: assets/js/admin/admin/index.js:4465
+msgid "Product list price"
+msgstr "Ürün listesi fiyatı"
+
+#: assets/js/admin/admin/index.js:4494
+msgid "Set how to show the product price in product list."
+msgstr "Ürün fiyatının ürün listesinde nasıl gösterileceğini ayarlayın."
+
+#: assets/js/admin/admin/index.js:4502
+msgid "Link to product"
+msgstr "Ürün bağlantısı"
+
+#: assets/js/admin/admin/index.js:4514
+msgid "New tab"
+msgstr "Yeni sekme"
+
+#: assets/js/admin/admin/index.js:4517
+msgid "No link"
+msgstr "Bağlantı yok"
+
+#: assets/js/admin/admin/index.js:4520
+msgid "Show the product change popup"
+msgstr "Ürün değiştirme açılır pencereyi göster"
+
+#: assets/js/admin/admin/index.js:4531
+msgid "Coupon apply method"
+msgstr "Kupon uygulama yöntemi"
+
+#: assets/js/admin/admin/index.js:4546
+#: assets/js/admin/admin/index.js:4599
+msgid "Both of bundle and bundle items"
+msgstr "Hem paket hem de paket öğeleri"
+
+#: assets/js/admin/admin/index.js:4552
+msgid "On bundle"
+msgstr "Paket üzerinde"
+
+#: assets/js/admin/admin/index.js:4558
+msgid "On bundle items"
+msgstr "Paket ürünlerde"
+
+#: assets/js/admin/admin/index.js:4564
+msgid "None of bundle and bundle items"
+msgstr "Paket ve paket öğelerinin hiçbiri"
+
+#: assets/js/admin/admin/index.js:4572
+msgid "Product based coupons apply method. Can apply on \"bundle\", \"bundle items\", \"both\" or \"none\"."
+msgstr "Ürün bazlı kupon uygulama yöntemi. \"Paket\", \"paket ürünler\", \"her ikisi\" veya \"hiçbiri\" için uygulanabilir."
+
+#: assets/js/admin/admin/index.js:4581
+msgid "Cart contents count"
+msgstr "Sepet içeriği sayısı"
+
+#: assets/js/admin/admin/index.js:4608
+msgid "Bundle items"
+msgstr "Paket öğeleri"
+
+#: assets/js/admin/admin/index.js:4616
+msgid "How to count bundle products in the cart? Count both of \"bundle and its items\" or \"only bundle\" or \"only bundle items\"."
+msgstr "Sepetteki paket ürünler nasıl sayılır? \"Paket ve öğelerinin\" her ikisini de veya \"yalnızca paket\" veya \"yalnızca paket öğelerini\" sayın."
+
+#: assets/js/admin/admin/index.js:4629
+msgid "Product price selector"
+msgstr "Ürün fiyat seçici"
+
+#: assets/js/admin/admin/index.js:4646
+msgid "Add to cart button selector"
+msgstr "Sepete Ekle butonu seçici"
+
+#: assets/js/admin/admin/index.js:4667
+msgid "Change product popup"
+msgstr "Ürün için açılır pencereyi değiştir"
+
+#: assets/js/admin/admin/index.js:4672
+msgid "Disable popup"
+msgstr "Pop-up'ı devre dışı bırak"
+
+#: assets/js/admin/admin/index.js:4680
+msgid "Disable popup for items that have only one product."
+msgstr "Sadece bir ürünü olan öğeler için pop-up'ı devre dışı bırak"
+
+#: assets/js/admin/admin/index.js:4709
+msgid "Popup Variable ‘Show Options’ Button"
+msgstr "Popup'taki 'Seçenekleri Göster' düğmesi (değişken ürünler için)"
+
+#: assets/js/admin/admin/index.js:4715
+msgid "Show or hide the “Show Options” button for variable products inside the popup."
+msgstr "Popup içindeki değişken ürünler için 'Seçenekleri Göster' düğmesini göster veya gizle"
+
+#: assets/js/admin/admin/index.js:4740
+msgid "Show stock"
+msgstr "Stok göster"
+
+#: assets/js/admin/admin/index.js:4743
+msgid "Show product Stock availability in popup."
+msgstr "Ürün stok durumunu açılır pencerede gösterin."
+
+#: assets/js/admin/admin/index.js:4765
+msgid "Show rating"
+msgstr "Derecelendirmeyi göster"
+
+#: assets/js/admin/admin/index.js:4768
+msgid "Show product rating in popup."
+msgstr "Ürün derecelendirmesini açılır pencerede göster."
+
+#: assets/js/admin/admin/index.js:4790
+msgid "Show popup quick view"
+msgstr "Popup hızlı görünümü göster"
+
+#: assets/js/admin/admin/index.js:4801
+msgid "Show product quick view icon in popup."
+msgstr "Popup içinde ürün hızlı görünüm simgesini göster"
+
+#: assets/js/admin/admin/index.js:4830
+msgid "Show search field in popup"
+msgstr "Açılır pencerede arama alanını göster"
+
+#: assets/js/admin/admin/index.js:4842
+msgid "This option allows you to show or hide the product search field in the popup window."
+msgstr "Bu seçenek, ürün arama alanını açılır pencerede göstermenize veya gizlemenize olanak tanır."
+
+#: assets/js/admin/admin/index.js:4871
+msgid "Show Variable Dropdown in Popup"
+msgstr "Popup'ta değişken ürünler açılır menüsünü göster"
+
+#: assets/js/admin/admin/index.js:4882
+msgid "Enable this option to display the dropdown menu for variable products in the popup."
+msgstr "Bu seçeneği etkinleştirerek popup'ta değişken ürünler açılır menüsünü görüntüleyin."
+
+#: assets/js/admin/admin/index.js:4911
+msgid "Click on product in pop-up"
+msgstr "Açılır pencerede ürüne tıklayın"
+
+#: assets/js/admin/admin/index.js:4926
+msgid "Product selection"
+msgstr "Ürün seçimi"
+
+#: assets/js/admin/admin/index.js:4936
+msgid "Show product details"
+msgstr "Ürün detaylarını göster"
+
+#: assets/js/admin/admin/index.js:4947
+msgid "Number of products per page"
+msgstr "Sayfa başına ürün sayısı"
+
+#: assets/js/admin/admin/index.js:4954
+msgid "Set how many products are displayed per page in the popup."
+msgstr "Popup'ta sayfa başına kaç ürün görüntüleneceğini ayarlayın."
+
+#: assets/js/admin/admin/index.js:4980
+msgid "Styles"
+msgstr "Stiller"
+
+#: assets/js/admin/admin/index.js:5092
+#: assets/js/admin/product/index.js:2330
+#: assets/js/admin/review/index.js:137
+msgid "There was an error on applying review."
+msgstr "İnceleme başvurusunda bir hata oluştu."
+
+#: assets/js/admin/admin/index.js:5116
+msgid "There was an error on getting settings."
+msgstr "Ayarlar alınırken bir hata oluştu."
+
+#: assets/js/admin/admin/index.js:5129
+#: assets/js/admin/product/index.js:2238
+#: assets/js/admin/product/index.js:2274
+msgid "Data is required."
+msgstr "Veri gereklidir."
+
+#: assets/js/admin/admin/index.js:5144
+msgid "There was an error on saving settings."
+msgstr "Ayarlar kaydedilirken bir hata oluştu."
+
+#: assets/js/admin/admin/index.js:5196
+#: assets/js/admin/product/index.js:4615
+#: assets/js/admin/review/index.js:189
+#, js-format
+msgid "We hope you're enjoying %1$s! %3$s Could you please do us a BIG favor and give it a %2$s to help us spread the word and boost our motivation?%4$s %5$sShare your feature requests%6$s with the review, We always check them and try our best."
+msgstr "Umarız %1$s!'i beğeniyorsunuzdur! %3$s Lütfen bize BÜYÜK bir iyilik yapıp, kelimeyi yaymamıza ve motivasyonumuzu artırmamıza yardımcı olmak için %2$s verir misiniz?%4$s %5$sÖzellik isteklerinizi%6$s incelemeyle paylaşın, Onları her zaman kontrol ediyoruz ve elimizden gelenin en iyisini yapıyoruz."
+
+#: assets/js/admin/admin/index.js:5222
+#: assets/js/admin/product/index.js:4641
+#: assets/js/admin/review/index.js:215
+msgid "OK, you deserve it!"
+msgstr "Tamam, bunu hak ettin!"
+
+#: assets/js/admin/admin/index.js:5237
+#: assets/js/admin/product/index.js:4656
+#: assets/js/admin/review/index.js:230
+msgid "I already did"
+msgstr "Çoktan yaptım."
+
+#: assets/js/admin/admin/index.js:5270
+#: assets/js/admin/product/index.js:4689
+#: assets/js/admin/review/index.js:263
+msgid "I need help"
+msgstr "Yardıma ihtiyacım var"
+
+#: assets/js/admin/admin/index.js:5282
+#: assets/js/admin/product/index.js:4701
+#: assets/js/admin/review/index.js:275
+msgid "Never show again"
+msgstr "Tekrar gösterme"
+
+#: assets/js/admin/product/index.js:2246
 msgid "Items are required."
-msgstr ""
+msgstr "Ürünler gerekli"
 
-#: assets/js/admin/product/index.js:2 assets/js/shared/index.js:2
-msgid "There was an error on getting items."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2282
 msgid "Search value is required."
-msgstr ""
+msgstr "Arama değeri gereklidir."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2299
 msgid "There was an error on searching items."
-msgstr ""
+msgstr "Öğeleri ararken bir hata oluştu."
 
-#: assets/js/admin/product/index.js:2
-msgid "Optional"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Check this option to make the bundle item optional to choose by the user"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Selected"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Enable this field to make the optional item selected in the frontend."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Default product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set a default product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Products"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Add products or Variations"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Exclude products"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Select a product that you do not want to be displayed"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Categories"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Select the category product that you want to be displayed in this bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Exclude categories"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Select the category product that you do not want to be displayed in this "
-"bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Tags"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Select the product with tags to display in this bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Exclude tags"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Select the product with tags that you do not want to be displayed in the "
-"bundle item"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Categories and Tags relation"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Match at least one"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Match both"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Match at least one: Products should match at least one of categories or tags."
-"%sMatch both: Products should match both categories and tags."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Sort products"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "ID"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2353
+#: assets/js/admin/product/index.js:2914
+#: assets/js/admin/product/index.js:4383
 msgid "Title"
-msgstr ""
+msgstr "Başlık"
 
-#: assets/js/admin/product/index.js:2
-msgid "Menu order"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Date"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Price"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Popularity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Rating"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Ascending"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Descending"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the order of products in the pop-up"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the default product quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Edit quantity by user"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Check this option to allow the user to change the bundle item quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Min quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the minimum quantity of this bundled product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Max quantity"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set the maximum quantity of this bundled product"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Discount"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Percentage"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Fixed price"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Discount applied to the price of the bundled product. if the bundled product "
-"has a sale price the discount is applied on top of the sale price"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Default Image"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "No image chosen"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Upload Image"
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
-msgid "Set an image for empty item."
-msgstr ""
-
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2367
 msgid "Overwrite bundle item title"
-msgstr ""
+msgstr "Paket öğesi başlığının üzerine yaz"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2375
 msgid "Short description"
-msgstr ""
+msgstr "Kısa açıklama"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Overwrite bundle item short description.(Show when the mouse hovers over it)"
-msgstr ""
+#: assets/js/admin/product/index.js:2389
+msgid "Overwrite bundle item short description.(Show when the mouse hovers over it)"
+msgstr "Paket öğesi kısa açıklamasının üzerine yaz (Fare üzerine geldiğinde göster)"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2397
 msgid "Product selection title"
-msgstr ""
+msgstr "Ürün seçim başlığı"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2417
 msgid "Change the title of the bundle empty item."
-msgstr ""
+msgstr "Paket boş öğesinin başlığını değiştirin."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2425
 msgid "Product list title"
-msgstr ""
+msgstr "Ürün Listesi Başlığı"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2439
 msgid "Change the product list product selection title."
-msgstr ""
+msgstr "Ürün Listesi Ürün Seçimi Başlığını Değiştir"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2447
 msgid "Modal header title"
-msgstr ""
+msgstr "Modal Başlık Başlığı"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2461
 msgid "Change the pop-up header title"
-msgstr ""
+msgstr "Açılır Pencere Başlığı Başlığı Değiştir"
 
-#: assets/js/admin/product/index.js:2
-msgid "Duplicate"
-msgstr ""
+#: assets/js/admin/product/index.js:2517
+msgid "Check this option to make the bundle item optional to choose by the user"
+msgstr "Paket öğesinin kullanıcı tarafından seçilmesini isteğe bağlı hale getirmek için bu seçeneği işaretleyin"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:2543
+msgid "Selected"
+msgstr "Seçildi"
+
+#: assets/js/admin/product/index.js:2560
+msgid "Enable this field to make the optional item selected in the frontend."
+msgstr "İsteğe bağlı ögenin ön yüzde seçili olmasını sağlamak için bu alanı etkinleştirin."
+
+#: assets/js/admin/product/index.js:2584
+msgid "Default product"
+msgstr "Varsayılan ürün"
+
+#: assets/js/admin/product/index.js:2596
+msgid "Set a default product"
+msgstr "Varsayılan ürün ayarlama"
+
+#: assets/js/admin/product/index.js:2603
+msgid "Products"
+msgstr "Ürünler"
+
+#: assets/js/admin/product/index.js:2613
+msgid "Add products or Variations"
+msgstr "Ürün veya Varyasyon Ekleme"
+
+#: assets/js/admin/product/index.js:2622
+msgid "Exclude products"
+msgstr "Ürünleri hariç tut"
+
+#: assets/js/admin/product/index.js:2634
+msgid "Select a product that you do not want to be displayed"
+msgstr "Görüntülenmesini istemediğiniz bir ürün seçin"
+
+#: assets/js/admin/product/index.js:2659
+msgid "Categories"
+msgstr "Kategoriler"
+
+#: assets/js/admin/product/index.js:2671
+msgid "Select the category product that you want to be displayed in this bundle item"
+msgstr "Bu paket öğesinde görüntülenmesini istediğiniz kategori ürününü seçin"
+
+#: assets/js/admin/product/index.js:2696
+msgid "Exclude categories"
+msgstr "Kategorileri hariç tut"
+
+#: assets/js/admin/product/index.js:2708
+msgid "Select the category product that you do not want to be displayed in this bundle item"
+msgstr "Bu paket öğesinde görüntülenmesini istemediğiniz kategori ürününü seçin"
+
+#: assets/js/admin/product/index.js:2732
+msgid "Tags"
+msgstr "Etiketler"
+
+#: assets/js/admin/product/index.js:2741
+msgid "Select the product with tags to display in this bundle item"
+msgstr "Bu paket öğesinde görüntülenecek etiketli ürünü seçin"
+
+#: assets/js/admin/product/index.js:2766
+msgid "Exclude tags"
+msgstr "Etiketleri hariç tut"
+
+#: assets/js/admin/product/index.js:2778
+msgid "Select the product with tags that you do not want to be displayed in the bundle item"
+msgstr "Paket öğesinde görüntülenmesini istemediğiniz etiketlere sahip ürünü seçin"
+
+#: assets/js/admin/product/index.js:2803
+msgid "Categories and Tags relation"
+msgstr "Kategoriler ve Etiketler ilişkisi"
+
+#: assets/js/admin/product/index.js:2822
+msgid "Match at least one"
+msgstr "En az bir tanesini eşleştirin"
+
+#: assets/js/admin/product/index.js:2833
+msgid "Match both"
+msgstr "İkisini de eşleştirin"
+
+#: assets/js/admin/product/index.js:2843
+#, js-format
+msgid "Match at least one: Products should match at least one of categories or tags.%sMatch both: Products should match both categories and tags."
+msgstr "En az biriyle eşleştirin: Ürünler kategorilerden veya etiketlerden en az biriyle eşleşmelidir. %s Her ikisiyle de eşleşmelidir: Ürünler hem kategorilerle hem de etiketlerle eşleşmelidir."
+
+#: assets/js/admin/product/index.js:2854
+msgid "Use regular prices only"
+msgstr "Yalnızca normal fiyatları kullan"
+
+#: assets/js/admin/product/index.js:2875
+msgid "Check this option to ignore sale prices and use only regular prices for item products and bundle pricing"
+msgstr "İndirimli fiyatları yok saymak ve ürünler ile paket fiyatlandırmasında yalnızca normal fiyatları kullanmak için bu seçeneği işaretleyin."
+
+#: assets/js/admin/product/index.js:2899
+msgid "Sort products"
+msgstr "Ürünleri Sırala"
+
+#: assets/js/admin/product/index.js:2911
+msgid "ID"
+msgstr "Kimlik"
+
+#: assets/js/admin/product/index.js:2917
+msgid "Menu order"
+msgstr "Menü Sırası"
+
+#: assets/js/admin/product/index.js:2920
+msgid "Date"
+msgstr "Tarih"
+
+#: assets/js/admin/product/index.js:2923
+#: assets/js/admin/product/index.js:3129
+#: assets/js/admin/product/index.js:4487
+msgid "Price"
+msgstr "Fiyat"
+
+#: assets/js/admin/product/index.js:2926
+msgid "Popularity"
+msgstr "Popülerlik"
+
+#: assets/js/admin/product/index.js:2929
+msgid "Rating"
+msgstr "Değerlendirme"
+
+#: assets/js/admin/product/index.js:2941
+msgid "Ascending"
+msgstr "Artan Sıra"
+
+#: assets/js/admin/product/index.js:2944
+msgid "Descending"
+msgstr "Azalan Sıra"
+
+#: assets/js/admin/product/index.js:2950
+msgid "Set the order of products in the pop-up"
+msgstr "Ürünlerin açılır penceredeki sırasını ayarla"
+
+#: assets/js/admin/product/index.js:2957
+msgid "Quantity"
+msgstr "Adet"
+
+#: assets/js/admin/product/index.js:2969
+msgid "Set the default product quantity"
+msgstr "Varsayılan ürün miktarını ayarlama"
+
+#: assets/js/admin/product/index.js:2976
+msgid "To set the quantity to 0,"
+msgstr "Miktarı 0 olarak ayarlamak için,"
+
+#: assets/js/admin/product/index.js:3000
+msgid "make this item optional."
+msgstr "bu öğeyi isteğe bağlı yapın."
+
+#: assets/js/admin/product/index.js:3026
+msgid "Edit quantity by user"
+msgstr "Miktarı kullanıcıya göre düzenleme"
+
+#: assets/js/admin/product/index.js:3046
+msgid "Check this option to allow the user to change the bundle item quantity"
+msgstr "Kullanıcının paket öğesi miktarını değiştirmesine izin vermek için bu seçeneği işaretleyin"
+
+#: assets/js/admin/product/index.js:3060
+msgid "Min quantity"
+msgstr "Minumum miktar"
+
+#: assets/js/admin/product/index.js:3082
+msgid "Set the minimum quantity of this bundled product"
+msgstr "Bu paketlenmiş ürünün minimum miktarını ayarlayın"
+
+#: assets/js/admin/product/index.js:3090
+msgid "Max quantity"
+msgstr "Maksimum miktar"
+
+#: assets/js/admin/product/index.js:3103
+msgid "Set the maximum quantity of this bundled product"
+msgstr "Bu paketlenmiş ürünün maksimum miktarını ayarlayın"
+
+#: assets/js/admin/product/index.js:3112
+msgid "Discount"
+msgstr "İndirim"
+
+#: assets/js/admin/product/index.js:3126
+#: assets/js/admin/product/index.js:4476
+msgid "Percentage"
+msgstr "Yüzde"
+
+#: assets/js/admin/product/index.js:3136
+#: assets/js/admin/product/index.js:4082
+msgid "Fixed price"
+msgstr "Sabit fiyat"
+
+#: assets/js/admin/product/index.js:3155
+msgid "Discount applied to the price of the bundled product. if the bundled product has a sale price the discount is applied on top of the sale price"
+msgstr "Birlikte verilen ürünün fiyatına uygulanan indirim. birlikte verilen ürünün satış fiyatı varsa, indirim satış fiyatının üzerine uygulanır"
+
+#: assets/js/admin/product/index.js:3244
+#, js-format
+msgid "Item %d"
+msgstr "Öğe %d"
+
+#: assets/js/admin/product/index.js:3281
 msgid "Duplicate: Pro version"
-msgstr ""
+msgstr "Kopyala: Pro Sürümü"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3285
+msgid "Duplicate"
+msgstr "Kopyala"
+
+#: assets/js/admin/product/index.js:3297
 msgid "Trash"
-msgstr ""
+msgstr "Çöp"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3339
 msgid "General"
-msgstr ""
+msgstr "Genel"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3358
 msgid "Display"
-msgstr ""
+msgstr "Ekran"
 
-#: assets/js/admin/product/index.js:2
-msgid "Individual theme"
-msgstr ""
+#: assets/js/admin/product/index.js:3425
+msgid "Default Image"
+msgstr "Varsayılan Görüntü"
 
-#: assets/js/admin/product/index.js:2
-msgid "GO PRO"
-msgstr ""
+#: assets/js/admin/product/index.js:3461
+msgid "No image chosen"
+msgstr "Resim seçilmedi"
 
-#: assets/js/admin/product/index.js:2
-msgid "Need help?"
-msgstr ""
+#: assets/js/admin/product/index.js:3482
+msgid "Upload Image"
+msgstr "Resim Yükle"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"If checked, disable auto calculate price and use product price as bundle "
-"price."
-msgstr ""
+#: assets/js/admin/product/index.js:3487
+msgid "Set an image for empty item."
+msgstr "Boş öğe için bir resim ayarlayın"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3839
 msgid "Please enable fixed price first."
-msgstr ""
+msgstr "Lütfen önce sabit fiyatı etkinleştirin."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:3869
+msgid "Article"
+msgstr "Makale"
+
+#: assets/js/admin/product/index.js:3887
+msgid "Quick Tutorial"
+msgstr "Hızlı Eğitim"
+
+#: assets/js/admin/product/index.js:3906
+msgid "Need help?"
+msgstr "Yardım?"
+
+#: assets/js/admin/product/index.js:3926
+msgid "GO PRO"
+msgstr "Proya git'"
+
+#: assets/js/admin/product/index.js:3939
+msgid "Individual theme"
+msgstr "Bireysel tema"
+
+#: assets/js/admin/product/index.js:4104
+msgid "If checked, disable auto calculate price and use product price as bundle price."
+msgstr "İşaretliyse, otomatik fiyat hesaplamayı devre dışı bırakın ve ürün fiyatını paket fiyatı olarak kullanın."
+
+#: assets/js/admin/product/index.js:4109
 msgid "Click here to set price"
-msgstr ""
+msgstr "Fiyat belirlemek için buraya tıklayın"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4123
 msgid "Include parent price"
-msgstr ""
+msgstr "Ana ürün fiyatını dahil et"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Include the parent product price in the bundle total price. (parent price + "
-"selected items price)"
-msgstr ""
+#: assets/js/admin/product/index.js:4143
+msgid "Include the parent product price in the bundle total price. (parent price + selected items price)"
+msgstr "Ana ürün fiyatını paket toplam fiyatına dahil edin. (ana fiyat + seçilen ürün fiyatı)"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4152
 msgid "Sync stock quantity"
-msgstr ""
+msgstr "Stok miktarını senkronize et"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"Update the bundle stock quantity based on the stock quantity of child "
-"products. Note: This feature works only when each item has exactly one "
-"product, which is added to the default product field and is not optional."
-msgstr ""
+#: assets/js/admin/product/index.js:4169
+msgid "Update the bundle stock quantity based on the stock quantity of child products. Note: This feature works only when each item has exactly one product, which is added to the default product field and is not optional."
+msgstr "Paketin stok miktarını, çocuk ürünlerinin stok miktarına göre güncelleyin. Not: Bu özellik yalnızca her bir öğenin tam olarak bir ürüne sahip olduğu ve bu ürünün varsayılan ürün alanına eklenip isteğe bağlı olmadığı durumlarda çalışır."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4196
 msgid "Hide products price"
-msgstr ""
+msgstr "Ürünlerin fiyatını gizle"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4208
 msgid "No"
-msgstr ""
+msgstr "Hayır"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4215
 msgid "Yes"
-msgstr ""
+msgstr "Evet"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4223
 msgid "Only regular price"
-msgstr ""
+msgstr "Sadece normal fiyat"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4250
 msgid "Shipping fee"
-msgstr ""
+msgstr "Kargo ücreti"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4262
 msgid "Apply to the whole bundle"
-msgstr ""
+msgstr "Tüm pakete uygulayın"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4268
+msgid "Apply to the parent product"
+msgstr "Ana ürüne uygula"
+
+#: assets/js/admin/product/index.js:4274
 msgid "Apply to each bundle item"
-msgstr ""
+msgstr "Her bir paket öğesine uygulayın"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4283
 msgid "Min items quantity"
-msgstr ""
+msgstr "Minimum ürün miktarı"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4297
 msgid "Set the minimum total quantity of bundled items."
-msgstr ""
+msgstr "Paketlenmiş ürünlerin minimum toplam miktarını ayarla."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4321
 msgid "Max items quantity"
-msgstr ""
+msgstr "Maksimum ürün miktarı"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4335
 msgid "Set the maximum total quantity of bundled items."
-msgstr ""
+msgstr "Paketlenmiş ürünlerin maksimum toplam miktarını ayarla."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4359
 msgid "Custom display price"
-msgstr ""
+msgstr "Özel gösterilecek fiyatı"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4375
 msgid "Product display price in frontend. E.g: From 10$ To 20$"
-msgstr ""
+msgstr "Ön uçta ürün görüntüleme fiyatı. Örneğin 10$'dan 20$'a"
 
-#: assets/js/admin/product/index.js:2
-msgid ""
-"A title for the bundle product that will be shown on top of bundle items."
-msgstr ""
+#: assets/js/admin/product/index.js:4395
+msgid "A title for the bundle product that will be shown on top of bundle items."
+msgstr "Paket ürün için, paket öğelerinin üstünde gösterilecek bir başlık."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4404
 msgid "Bundle description"
-msgstr ""
+msgstr "Ürün paketi açıklaması"
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4417
 msgid "Create a description for product bundle."
-msgstr ""
+msgstr "Ürün paketi için bir açıklama oluşturun."
 
-#: assets/js/admin/product/index.js:2
+#: assets/js/admin/product/index.js:4426
+msgid "Bundle button label (shop page)"
+msgstr "Paket düğme etiketi (mağaza sayfası)"
+
+#: assets/js/admin/product/index.js:4442
+msgid "Change the button label shown for bundle products in the shop page."
+msgstr "Mağaza sayfasında paket ürünleri için gösterilen düğme etiketini değiştir."
+
+#: assets/js/admin/product/index.js:4456
+msgid "Total discount"
+msgstr "Toplam indirim"
+
+#: assets/js/admin/product/index.js:4505
+msgid "Set a total discount for the bundle total price based on percentage or price."
+msgstr "Yüzde veya tutara göre paket toplam fiyatı için toplam indirim belirleyin."
+
+#: assets/js/admin/product/index.js:4566
 msgid "Add Item"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Change"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "View"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "OUT OF STOCK"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Bundle item image"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "More pictures"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Args is required."
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Back"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Close"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Prev"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Next"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Add"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Add%s"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Edit product"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Save"
-msgstr ""
-
-#: assets/js/shared/index.js:2
-msgid "Please select a product for all items."
-msgstr ""
+msgstr "Öğe Ekle"

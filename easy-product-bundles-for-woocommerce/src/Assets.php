@@ -51,8 +51,6 @@ class Assets {
 			[
 				'react-dom',
 				'wp-hooks',
-				'wp-i18n',
-				'wp-api-fetch',
 			],
 			ASNP_WEPB_VERSION,
 			$script_args
@@ -63,6 +61,9 @@ class Assets {
 			'asnp-easy-product-bundles-shared',
 			'easyProductBundlesData',
 			apply_filters( 'asnp_wepb_localize_product_bundles_shared', array(
+				'rest_url' => esc_url_raw( rest_url( 'asnp-easy-product-bundles/v1/' ) ),
+				'rest_nonce' => wp_create_nonce( 'wp_rest' ),
+				'i18n' => $this->get_i18n_strings(),
 				'cssSelector' => $settings->get_setting( 'css_selector', 'form.cart' ),
 				'cssSelectorPosition' => 'before_css_selector' === $settings->get_setting( 'product_bundle_position', 'before_css_selector' ) ? 'before' : 'after',
 				'currency' => get_woocommerce_currency_symbol(),
@@ -100,10 +101,52 @@ class Assets {
 				'pro_active' => is_pro_active(),
 			) )
 		);
+	}
 
-		if ( function_exists( 'wp_set_script_translations' ) ) {
-			wp_set_script_translations( 'asnp-easy-product-bundles-shared', 'asnp-easy-product-bundles', ASNP_WEPB_ABSPATH . 'languages' );
-		}
+	public function get_i18n_strings() {
+		return apply_filters(
+			'asnp_wepb_frontend_i18n_strings',
+			[
+				'OUT OF STOCK' => __( 'OUT OF STOCK', 'asnp-easy-product-bundles' ),
+				'Total:' => __( 'Total:', 'asnp-easy-product-bundles' ),
+				'Save' => __( 'Save', 'asnp-easy-product-bundles' ),
+				'Buy all for:' => __( 'Buy all for:', 'asnp-easy-product-bundles' ),
+				'% OFF' => __( '% OFF', 'asnp-easy-product-bundles' ),
+				'%s is out of stock.' => __( '%s is out of stock.', 'asnp-easy-product-bundles' ),
+				'Add' => __( 'Add', 'asnp-easy-product-bundles' ),
+				'Add%s' => __( 'Add%s', 'asnp-easy-product-bundles' ),
+				'View' => __( 'View', 'asnp-easy-product-bundles' ),
+				'Change' => __( 'Change', 'asnp-easy-product-bundles' ),
+				'Empty bundle!' => __( 'Empty bundle!', 'asnp-easy-product-bundles' ),
+				'Please select a product!' => __( 'Please select a product!', 'asnp-easy-product-bundles' ),
+				'Please select a product for all items.' => __( 'Please select a product for all items.', 'asnp-easy-product-bundles' ),
+				'Please select a purchasable product for %s before adding bundle to the cart.'   => __( 'Please select a purchasable product for %s before adding bundle to the cart.', 'asnp-easy-product-bundles' ),
+				'Please select a purchasable variation for %s before adding bundle to the cart.' => __( 'Please select a purchasable variation for %s before adding bundle to the cart.', 'asnp-easy-product-bundles' ),
+				'Product information' => __( 'Product information', 'asnp-easy-product-bundles' ),
+				'Product quantity' => __( 'Product quantity', 'asnp-easy-product-bundles' ),
+				'Bundle item image' => __( 'Bundle item image', 'asnp-easy-product-bundles' ),
+				'Search...' => __( 'Search...', 'asnp-easy-product-bundles' ),
+				'No products found' => __( 'No products found', 'asnp-easy-product-bundles' ),
+				'Args is required.' => __( 'Args is required.', 'asnp-easy-product-bundles' ),
+				'Item index is required.' => __( 'Item index is required.', 'asnp-easy-product-bundles' ),
+				'Product ID is required.' => __( 'Product ID is required.', 'asnp-easy-product-bundles' ),
+				'Parent product ID is required.' => __( 'Parent product ID is required.', 'asnp-easy-product-bundles' ),
+				'There was an error on getting items.' => __( 'There was an error on getting items.', 'asnp-easy-product-bundles' ),
+				'Select options' => __( 'Select options', 'asnp-easy-product-bundles' ),
+				'Clear selection' => __( 'Clear selection', 'asnp-easy-product-bundles' ),
+				'Optional' => __( 'Optional', 'asnp-easy-product-bundles' ),
+				'Delete' => __( 'Delete', 'asnp-easy-product-bundles' ),
+				'Back' => __( 'Back', 'asnp-easy-product-bundles' ),
+				'Close' => __( 'Close', 'asnp-easy-product-bundles' ),
+				'Decrease quantity' => __( 'Decrease quantity', 'asnp-easy-product-bundles' ),
+				'Increase quantity' => __( 'Increase quantity', 'asnp-easy-product-bundles' ),
+				'Edit product' => __( 'Edit product', 'asnp-easy-product-bundles' ),
+				'More pictures' => __( 'More pictures', 'asnp-easy-product-bundles' ),
+				'Next' => __( 'Next', 'asnp-easy-product-bundles' ),
+				'Prev' => __( 'Prev', 'asnp-easy-product-bundles' ),
+				'Show Options' => __( 'Show Options', 'asnp-easy-product-bundles' ),
+			]
+		);
 	}
 
 	public function load_product_scripts( $product ) {
@@ -134,10 +177,6 @@ class Assets {
 			ASNP_WEPB_VERSION,
 			$script_args
 		);
-
-		if ( function_exists( 'wp_set_script_translations' ) ) {
-			wp_set_script_translations( 'asnp-easy-product-bundles-product-bundle', 'asnp-easy-product-bundles', ASNP_WEPB_ABSPATH . 'languages' );
-		}
 	}
 
 	public function custom_styles() {

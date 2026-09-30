@@ -39,11 +39,6 @@ class CheckoutIntegration implements IntegrationInterface {
 			$script_args
 		);
 
-		wp_set_script_translations(
-			'asnp-wepb-checkout-integration',
-			'asnp-easy-product-bundles',
-			ASNP_WEPB_ABSPATH . 'languages'
-		);
 
 		add_action( 'woocommerce_blocks_enqueue_cart_block_scripts_after', [ $this, 'enqueue_block_styles' ] );
 		add_action( 'woocommerce_blocks_enqueue_checkout_block_scripts_after', [ $this, 'enqueue_block_styles' ] );

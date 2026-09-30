@@ -33,7 +33,6 @@ class Assets {
 					'react-dom',
 					'wp-hooks',
 					'wp-i18n',
-					'wp-api-fetch',
 					'jquery-tiptip',
 				),
 				ASNP_WEPB_VERSION,
@@ -44,6 +43,8 @@ class Assets {
 				'asnp-easy-product-bundles-product',
 				'easyProductBundlesData',
 				array(
+					'rest_url' => esc_url_raw( rest_url( 'asnp-easy-product-bundles/v1/' ) ),
+					'rest_nonce' => wp_create_nonce( 'wp_rest' ),
 					'bundle' => $this->get_bundle(),
 					'pro_active' => ProductBundles\is_pro_active(),
 					'show_review' => ProductBundles\maybe_show_review(),
@@ -70,7 +71,6 @@ class Assets {
 					'react-dom',
 					'wp-hooks',
 					'wp-i18n',
-					'wp-api-fetch',
 				),
 				ASNP_WEPB_VERSION,
 				true
@@ -80,6 +80,8 @@ class Assets {
 				'asnp-easy-product-bundles-admin',
 				'easyProductBundlesData',
 				array(
+					'rest_url' => esc_url_raw( rest_url( 'asnp-easy-product-bundles/v1/' ) ),
+					'rest_nonce' => wp_create_nonce( 'wp_rest' ),
 					'pro_active' => ProductBundles\is_pro_active(),
 					'show_review' => ProductBundles\maybe_show_review(),
 					'plugin_url' => ASNP_WEPB_PLUGIN_URL,
@@ -174,10 +176,19 @@ class Assets {
 			array(
 				'react-dom',
 				'wp-i18n',
-				'wp-api-fetch',
 			),
 			ASNP_WEPB_VERSION,
 			true
+		);
+
+		wp_localize_script(
+			'asnp-easy-product-bundles-review',
+			'easyProductBundlesData',
+			array(
+				'rest_url' => esc_url_raw( rest_url( 'asnp-easy-product-bundles/v1/' ) ),
+				'rest_nonce' => wp_create_nonce( 'wp_rest' ),
+				'plugin_url' => ASNP_WEPB_PLUGIN_URL,
+			)
 		);
 
 		if ( function_exists( 'wp_set_script_translations' ) ) {
