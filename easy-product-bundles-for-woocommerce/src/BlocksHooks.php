@@ -16,6 +16,12 @@ class BlocksHooks {
 		ExtendStoreApi::init( $extend );
 
 		add_action(
+			'woocommerce_blocks_mini-cart_block_registration',
+			function( $registry ) {
+				$registry->register( new CheckoutIntegration() );
+			}
+		);
+		add_action(
 			'woocommerce_blocks_cart_block_registration',
 			function( $registry ) {
 				$registry->register( new CheckoutIntegration() );

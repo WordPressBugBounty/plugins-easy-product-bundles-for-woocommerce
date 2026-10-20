@@ -704,6 +704,7 @@ class ProductBundleHooks {
 			'asnp_wepb_reg_price',
 			'asnp_wepb_item_quantity',
 			'asnp_wepb_hide_price',
+			'asnp_wepb_apply_total_discount',
 		];
 
 		foreach ( $keys as $key ) {
@@ -713,6 +714,34 @@ class ProductBundleHooks {
 		}
 
 		return $cart_item;
+	}
+
+	/**
+	 * Check if the total discount should be applied on the bundle in cart.
+	 *
+	 * Uses internal memoization in $cart_item to ensure O(1) performance and avoid
+	 * redundant filter executions during total calculations and cart rendering.
+	 *
+	 * @since 6.23.0
+	 *
+	 * @param array $cart_item Cart item data.
+	 *
+	 * @return bool
+	 */
+	public function apply_total_discount_on_bundle_in_cart( $cart_item ) {
+		if ( isset( $cart_item['asnp_wepb_apply_total_discount'] ) ) {
+			return (bool) $cart_item['asnp_wepb_apply_total_discount'];
+		}
+
+		/**
+		 * Filters whether to apply the total discount on the bundle in cart.
+		 *
+		 * @since 6.23.0
+		 *
+		 * @param bool  $apply     Whether to apply the total discount. Default true.
+		 * @param array $cart_item Cart item data.
+		 */
+		return (bool) apply_filters( 'asnp_wepb_apply_total_discount_on_bundle_in_cart', true, $cart_item );
 	}
 
 	public function before_calculate_totals( $cart = null ) {
@@ -779,46 +808,50 @@ class ProductBundleHooks {
 				}
 			} // Bundle product.
 			elseif ( is_cart_item_bundle( $cart_item ) ) {
+				if ( ! empty( $cart_item['asnp_wepb_is_fixed_price'] ) ) {
+					continue;
+				}
+
+				$apply_total_discount = $this->apply_total_discount_on_bundle_in_cart( $cart_item );
+				$cart_item['asnp_wepb_apply_total_discount'] = $apply_total_discount;
+				WC()->cart->cart_contents[ $cart_item_key ]['asnp_wepb_apply_total_discount'] = $apply_total_discount;
+
 				$total_discount = $cart_item['data']->get_total_discount();
 				$total_discount_type = $cart_item['data']->get_total_discount_type();
 
 				if ( empty( $cart_item[ self::CART_ITEM_ITEMS_KEY ] ) ) {
-					if ( ! isset( $cart_item['asnp_wepb_is_fixed_price'] ) || ! $cart_item['asnp_wepb_is_fixed_price'] ) {
-						$bundle_product = wc_get_product( $cart_item['product_id'] );
-						$parent_price = (float) $bundle_product->get_price( 'edit' );
+					$bundle_product = wc_get_product( $cart_item['product_id'] );
+					$parent_price = $bundle_product ? (float) $bundle_product->get_price( 'edit' ) : 0;
 
-						if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
-							$cart_item['data']->set_price( $parent_price - (float) $total_discount );
-						} elseif ( 0 < $parent_price && 'percentage' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
-							$cart_item['data']->set_price( $parent_price - ( $parent_price * (float) $total_discount / 100 ) );
-						}
+					if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $apply_total_discount ) {
+						$cart_item['data']->set_price( $parent_price - (float) $total_discount );
+					} elseif ( 0 < $parent_price && 'percentage' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $apply_total_discount ) {
+						$cart_item['data']->set_price( $parent_price - ( $parent_price * (float) $total_discount / 100 ) );
 					}
 					continue;
 				}
 
-				if ( ! isset( $cart_item['asnp_wepb_is_fixed_price'] ) || ! $cart_item['asnp_wepb_is_fixed_price'] ) {
-					if ( 'true' !== $cart_item['data']->get_include_parent_price() ) {
-						if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
-							$cart_item['data']->set_price( (float) $total_discount * -1 );
-						} else {
-							$cart_item['data']->set_price( 0 );
-						}
+				if ( 'true' !== $cart_item['data']->get_include_parent_price() ) {
+					if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $apply_total_discount ) {
+						$cart_item['data']->set_price( (float) $total_discount * -1 );
 					} else {
-						$bundle_product = wc_get_product( $cart_item['product_id'] );
-						$parent_price = (float) $bundle_product->get_price( 'edit' );
-
-						if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
-							$cart_item['data']->set_price( $parent_price - (float) $total_discount );
-						} elseif ( 0 < $parent_price && 'percentage' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
-							$cart_item['data']->set_price( $parent_price - ( $parent_price * (float) $total_discount / 100 ) );
-						}
+						$cart_item['data']->set_price( 0 );
 					}
+				} else {
+					$bundle_product = wc_get_product( $cart_item['product_id'] );
+					$parent_price = $bundle_product ? (float) $bundle_product->get_price( 'edit' ) : 0;
 
-					// Calculate and save the bundle price.
-					$bundle_price = $this->calculate_bundle_price( $cart_item );
-					if ( isset( $bundle_price['price'] ) ) {
-						WC()->cart->cart_contents[ $cart_item_key ]['asnp_wepb_price'] = $bundle_price['price'];
+					if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $apply_total_discount ) {
+						$cart_item['data']->set_price( $parent_price - (float) $total_discount );
+					} elseif ( 0 < $parent_price && 'percentage' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $apply_total_discount ) {
+						$cart_item['data']->set_price( $parent_price - ( $parent_price * (float) $total_discount / 100 ) );
 					}
+				}
+
+				// Calculate and save the bundle price.
+				$bundle_price = $this->calculate_bundle_price( $cart_item );
+				if ( isset( $bundle_price['price'] ) ) {
+					WC()->cart->cart_contents[ $cart_item_key ]['asnp_wepb_price'] = $bundle_price['price'];
 				}
 			}
 		}
@@ -1003,7 +1036,7 @@ class ProductBundleHooks {
 					wc_get_price_including_tax( $cart_item['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) : (float) $cart_item['data']->get_regular_price( 'edit' ) ] ) :
 					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) : (float) $cart_item['data']->get_regular_price( 'edit' ) ] );
 			}
-		} elseif ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
+		} elseif ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $this->apply_total_discount_on_bundle_in_cart( $cart_item ) ) {
 			$discount = $exchange_price ? maybe_exchange_price( (float) $total_discount ) : (float) $total_discount;
 			$price -= Cart\display_prices_including_tax() ?
 				wc_get_price_including_tax( $cart_item['data'], [ 'price' => $discount ] ) :
@@ -1089,7 +1122,7 @@ class ProductBundleHooks {
 						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $parent_price ) ] );
 				}
 			}
-		} elseif ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
+		} elseif ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $this->apply_total_discount_on_bundle_in_cart( $cart_item ) ) {
 			$price -= Cart\display_prices_including_tax() ?
 				wc_get_price_including_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $total_discount ) ] ) :
 				wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $total_discount ) ] );

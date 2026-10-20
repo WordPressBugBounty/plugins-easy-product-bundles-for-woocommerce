@@ -385,7 +385,7 @@ class ProductBundle {
 	protected function get_item_default_product( $item ) {
 		if ( ! empty( $item['product'] ) ) {
 			$product = wc_get_product( absint( $item['product'] ) );
-			if ( ! $product || ! $product->is_purchasable() ) {
+			if ( ! $product ) {
 				return false;
 			}
 

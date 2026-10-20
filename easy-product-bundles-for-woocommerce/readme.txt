@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 6.22.1
+Stable tag: 6.22.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -216,11 +216,18 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.22.2 =
+* Improved: Added a filter hook to apply total discount in the cart.
+* Fix: Removed is_purchasable check for the default product field when saving bundle items. 
+* Fix: Fixed an issue that allowed bundle items to be removed from the mini cart.
+* Fix: Resolved an issue with the plus icon appearing inside bundle items.
+* Improved: Ensured compatibility with WooCommerce 11.2.1
+Have questions, suggestions, or feedback? We'd love to hear from you.❤️ If you enjoy the plugin, please consider leaving a ★★★★★ review.🙏
+
 = 6.22.1 =
 * Fix: Fixed issues with deferred script caching.
 * Improved: Removed i18n and Fetch API dependencies from scripts.
 * Fix: Fixed issues with translated languages.
-Have questions, suggestions, or feedback? We'd love to hear from you.❤️ If you enjoy the plugin, please consider leaving a ★★★★★ review.🙏
 
 = 6.22.0 =
 * Improved: Added PayPal compatibility for bundle products.

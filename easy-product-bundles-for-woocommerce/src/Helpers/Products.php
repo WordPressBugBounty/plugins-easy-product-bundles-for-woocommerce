@@ -45,11 +45,12 @@ function get_products( array $args = [] ) {
 	 * Generate WP_Query args.
 	 */
 	$wp_query_args = array(
-		'post_status'    => $args['status'],
-		'posts_per_page' => $args['limit'],
-		'meta_query'     => $args['meta_query'],
-		'tax_query'      => $args['tax_query'],
-		'date_query'     => $args['date_query'],
+		'asnp_wepb_query' => true,
+		'post_status'     => $args['status'],
+		'posts_per_page'  => $args['limit'],
+		'meta_query'      => $args['meta_query'],
+		'tax_query'       => $args['tax_query'],
+		'date_query'      => $args['date_query'],
 	);
 	// Do not load unnecessary post data if the user only wants IDs.
 	if ( 'ids' === $args['return'] ) {
