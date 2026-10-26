@@ -45,7 +45,7 @@ class Assets {
 			? [ 'in_footer' => true, 'strategy' => 'defer' ]
 			: true;
 
-		wp_register_script(
+		wp_enqueue_script(
 			'asnp-easy-product-bundles-shared',
 			$this->get_url( 'shared/index', 'js' ),
 			[
@@ -213,7 +213,7 @@ class Assets {
 			$custom_styles .= '}';
 		}
 		if ( ! empty( $styles['quantity_buttons_color'] ) && '#1abc9c' !== $styles['quantity_buttons_color'] ) {
-			$custom_styles .= '.asnp-product-quantity-field .asnp-product-quantity-button:hover {';
+			$custom_styles .= '.asnp-product-quantity-field .asnp-product-quantity-button:hover:not(:disabled){';
 			$custom_styles .= ' background-color: ' . esc_html( $styles['quantity_buttons_color'] ) . '!important;';
 			$custom_styles .= '}';
 		}
