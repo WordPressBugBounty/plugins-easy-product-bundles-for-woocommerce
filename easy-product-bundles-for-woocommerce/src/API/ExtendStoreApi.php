@@ -179,7 +179,7 @@ class ExtendStoreApi {
 			$prices->raw_prices['regular_price'] = static::prepare_money_response( $sale_price, $raw_decimals );
 
 			if ( 'true' === $cart_item['data']->get_include_parent_price() ) {
-				if ( '' !== $cart_item['data']->get_regular_price( 'edit' ) ) {
+				if ( '' !== $cart_item['data']->get_regular_price( 'edit' ) && 0 < (float) $cart_item['data']->get_regular_price( 'edit' ) ) {
 					$regular_price = Cart\display_prices_including_tax() ?
 						wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] ) :
 						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) ] );
@@ -224,13 +224,14 @@ class ExtendStoreApi {
 		if ( 'true' === $cart_item['data']->get_include_parent_price() ) {
 			$parent_price = $cart_item['data']->get_price( 'edit' );
 			if ( '' !== $parent_price ) {
+				$parent_price = (float) $parent_price;
 				if ( 0 > $parent_price ) {
-					$parent_price = ProductBundles\maybe_exchange_price( (float) $parent_price * -1 );
+					$parent_price = ProductBundles\maybe_exchange_price( $parent_price * -1 );
 					$price -= Cart\display_prices_including_tax() ?
 						wc_get_price_including_tax( $cart_item['data'], [ 'price' => $parent_price ] ) :
 						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $parent_price ] );
-				} else {
-					$parent_price = ProductBundles\maybe_exchange_price( (float) $parent_price );
+				} elseif ( 0 < $parent_price ) {
+					$parent_price = ProductBundles\maybe_exchange_price( $parent_price );
 					$price = Cart\display_prices_including_tax() ?
 						wc_get_price_including_tax( $cart_item['data'], [ 'price' => $parent_price ] ) :
 						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $parent_price ] );
@@ -344,14 +345,15 @@ class ExtendStoreApi {
 			if ( '' !== $cart_item['data']->get_price( 'edit' ) ) {
 				$parent_price = $cart_item['data']->get_price( 'edit' );
 				if ( '' !== $parent_price ) {
+					$parent_price = (float) $parent_price;
 					if ( 0 > $parent_price ) {
 						$price -= Cart\display_prices_including_tax() ?
-							wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $parent_price * -1 ) ] ) :
-							wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $parent_price * -1 ) ] );
-					} else {
+							wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( $parent_price * -1 ) ] ) :
+							wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( $parent_price * -1 ) ] );
+					} elseif ( 0 < $parent_price ) {
 						$price = Cart\display_prices_including_tax() ?
-							wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $parent_price ) ] ) :
-							wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( (float) $parent_price ) ] );
+							wc_get_price_including_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( $parent_price ) ] ) :
+							wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => ProductBundles\maybe_exchange_price( $parent_price ) ] );
 					}
 				}
 			}

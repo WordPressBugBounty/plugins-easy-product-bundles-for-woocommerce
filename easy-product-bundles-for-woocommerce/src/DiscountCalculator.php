@@ -8,6 +8,7 @@ class DiscountCalculator {
 
 	public static function calculate( $price, $discount, $discount_type = 'percentage' ) {
 		$value = 0;
+		$price = (float) $price;
 		switch ( $discount_type ) {
 			case 'percentage':
 				if (

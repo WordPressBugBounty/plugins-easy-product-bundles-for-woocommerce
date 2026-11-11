@@ -99,6 +99,9 @@ function prepare_variable_prices( $product, $item, $extra_data = [] ) {
         $has_item_discount = has_valid_discount( $item );
         $has_total_discount = has_valid_discount( $extra_data, 'total_discount_type', 'total_discount', 'percentage' );
 
+        $min_price = (float) $min_price;
+        $max_price = (float) $max_price;
+
         // 2. Process and apply the percentage/fixed bundle discounts onto the selected base prices
         if ( $has_item_discount && $has_total_discount && 'percentage' === $item['discount_type'] ) {
             $discount = (float) $item['discount'] + (float) $extra_data['total_discount'];
@@ -886,8 +889,10 @@ function get_bundle_item_price( $product, array $args ) {
 			$price = $product->get_price( 'edit' );
 		}
 
-		$item_discount = has_valid_discount( $args );
-		$total_discount = has_valid_discount( $args, 'total_discount_type', 'total_discount', 'percentage' );
+		if ( '' !== $price && 0 < (float) $price ) {
+			$price = (float) $price;
+			$item_discount = has_valid_discount( $args );
+			$total_discount = has_valid_discount( $args, 'total_discount_type', 'total_discount', 'percentage' );
 		if ( $item_discount && $total_discount && 'percentage' === $args['discount_type'] ) {
 			$price -= DiscountCalculator::calculate( $price, (float) $args['discount'] + (float) $args['total_discount'], 'percentage' );
 		} else {
@@ -897,6 +902,8 @@ function get_bundle_item_price( $product, array $args ) {
 			if ( $total_discount ) {
 				$price -= DiscountCalculator::calculate( $price, $args['total_discount'], 'percentage' );
 			}
+		}
+
 		}
 
 		return $args['exchange_price'] ? maybe_exchange_price( $price ) : $price;

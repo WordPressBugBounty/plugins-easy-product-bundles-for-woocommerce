@@ -5,7 +5,7 @@ Tags: woocommerce product bundle, woocommerce bundle, product bundle woocommerce
 Requires at least: 5.0
 Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 6.22.3
+Stable tag: 6.22.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -216,10 +216,15 @@ Revolutionize your online store with the ultimate <strong>[WooCommerce Mix and M
 
 == Changelog ==
 
+= 6.22.4 =
+* Fix: Ensured proper float casting for regular and parent product prices.
+* Fix: Replaced deprecated findDOMNode usage across components.
+* Improved: Ensured compatibility with WooCommerce 11.2.2
+Have questions, suggestions, or feedback? We'd love to hear from you.❤️ If you enjoy the plugin, please consider leaving a ★★★★★ review.🙏
+
 = 6.22.3 =
 * Improved: Compatibility with caching and optimization plugins.
 * Fix: Resolved Quantity buttons interaction issues.
-Have questions, suggestions, or feedback? We'd love to hear from you.❤️ If you enjoy the plugin, please consider leaving a ★★★★★ review.🙏
 
 = 6.22.2 =
 * Improved: Added a filter hook to apply total discount in the cart.
