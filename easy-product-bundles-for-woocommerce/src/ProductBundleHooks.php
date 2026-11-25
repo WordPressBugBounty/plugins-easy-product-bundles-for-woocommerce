@@ -11,6 +11,22 @@ class ProductBundleHooks {
 	const CART_ITEM_ITEMS = 'asnp_wepb_items';
 	const CART_ITEM_ITEMS_KEY = 'asnp_wepb_items_key';
 
+	/**
+	 * Flag to prevent recursion during bundle item removal.
+	 *
+	 * @since 6.22.5
+	 * @var bool
+	 */
+	private $is_removing = false;
+
+	/**
+	 * Flag to prevent recursion during bundle item restoration.
+	 *
+	 * @since 6.22.5
+	 * @var bool
+	 */
+	private $is_restoring = false;
+
 	public function init() {
 		// Product type hooks.
 		add_action( 'woocommerce_product_class', array( $this, 'bundle_product_class' ), 99, 2 );
@@ -83,6 +99,7 @@ class ProductBundleHooks {
 		// Order again hooks.
 		add_filter( 'woocommerce_order_again_cart_item_data', array( $this, 'order_again_cart_item_data' ), 10, 2 );
 		add_action( 'woocommerce_cart_loaded_from_session', array( $this, 'cart_loaded_from_session' ) );
+		add_action( 'woocommerce_check_cart_items', array( $this, 'check_cart_items' ) );
 	}
 
 	/**
@@ -704,7 +721,6 @@ class ProductBundleHooks {
 			'asnp_wepb_reg_price',
 			'asnp_wepb_item_quantity',
 			'asnp_wepb_hide_price',
-			'asnp_wepb_apply_total_discount',
 		];
 
 		foreach ( $keys as $key ) {
@@ -714,34 +730,6 @@ class ProductBundleHooks {
 		}
 
 		return $cart_item;
-	}
-
-	/**
-	 * Check if the total discount should be applied on the bundle in cart.
-	 *
-	 * Uses internal memoization in $cart_item to ensure O(1) performance and avoid
-	 * redundant filter executions during total calculations and cart rendering.
-	 *
-	 * @since 6.23.0
-	 *
-	 * @param array $cart_item Cart item data.
-	 *
-	 * @return bool
-	 */
-	public function apply_total_discount_on_bundle_in_cart( $cart_item ) {
-		if ( isset( $cart_item['asnp_wepb_apply_total_discount'] ) ) {
-			return (bool) $cart_item['asnp_wepb_apply_total_discount'];
-		}
-
-		/**
-		 * Filters whether to apply the total discount on the bundle in cart.
-		 *
-		 * @since 6.23.0
-		 *
-		 * @param bool  $apply     Whether to apply the total discount. Default true.
-		 * @param array $cart_item Cart item data.
-		 */
-		return (bool) apply_filters( 'asnp_wepb_apply_total_discount_on_bundle_in_cart', true, $cart_item );
 	}
 
 	public function before_calculate_totals( $cart = null ) {
@@ -812,38 +800,53 @@ class ProductBundleHooks {
 					continue;
 				}
 
-				$apply_total_discount = $this->apply_total_discount_on_bundle_in_cart( $cart_item );
-				$cart_item['asnp_wepb_apply_total_discount'] = $apply_total_discount;
-				WC()->cart->cart_contents[ $cart_item_key ]['asnp_wepb_apply_total_discount'] = $apply_total_discount;
-
-				$total_discount = $cart_item['data']->get_total_discount();
+				$total_discount      = $cart_item['data']->get_total_discount();
 				$total_discount_type = $cart_item['data']->get_total_discount_type();
 
 				if ( empty( $cart_item[ self::CART_ITEM_ITEMS_KEY ] ) ) {
 					$bundle_product = wc_get_product( $cart_item['product_id'] );
-					$parent_price = $bundle_product ? (float) $bundle_product->get_price( 'edit' ) : 0;
+					$parent_price   = $bundle_product ? (float) $bundle_product->get_price( 'edit' ) : 0;
 
-					if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $apply_total_discount ) {
-						$cart_item['data']->set_price( $parent_price - (float) $total_discount );
-					} elseif ( 0 < $parent_price && 'percentage' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $apply_total_discount ) {
-						$cart_item['data']->set_price( $parent_price - ( $parent_price * (float) $total_discount / 100 ) );
+					if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
+						$cart_item['data']->set_price( max( 0, $parent_price - (float) $total_discount ) );
+					} elseif ( 0 < $parent_price && 'percentage' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
+						$cart_item['data']->set_price( max( 0, $parent_price - ( $parent_price * (float) $total_discount / 100 ) ) );
+					} else {
+						$cart_item['data']->set_price( max( 0, $parent_price ) );
 					}
 					continue;
 				}
 
+				$has_all_children = true;
+				if ( is_array( $cart_item[ self::CART_ITEM_ITEMS_KEY ] ) ) {
+					foreach ( $cart_item[ self::CART_ITEM_ITEMS_KEY ] as $item_key ) {
+						if ( ! isset( $cart_contents[ $item_key ] ) ) {
+							$has_all_children = false;
+							break;
+						}
+					}
+				} else {
+					$has_all_children = false;
+				}
+
+				if ( ! $has_all_children ) {
+					$cart_item['data']->set_price( 0 );
+					continue;
+				}
+
 				if ( 'true' !== $cart_item['data']->get_include_parent_price() ) {
-					if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $apply_total_discount ) {
+					if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
 						$cart_item['data']->set_price( (float) $total_discount * -1 );
 					} else {
 						$cart_item['data']->set_price( 0 );
 					}
 				} else {
 					$bundle_product = wc_get_product( $cart_item['product_id'] );
-					$parent_price = $bundle_product ? (float) $bundle_product->get_price( 'edit' ) : 0;
+					$parent_price   = $bundle_product ? (float) $bundle_product->get_price( 'edit' ) : 0;
 
-					if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $apply_total_discount ) {
+					if ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
 						$cart_item['data']->set_price( $parent_price - (float) $total_discount );
-					} elseif ( 0 < $parent_price && 'percentage' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $apply_total_discount ) {
+					} elseif ( 0 < $parent_price && 'percentage' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
 						$cart_item['data']->set_price( $parent_price - ( $parent_price * (float) $total_discount / 100 ) );
 					}
 				}
@@ -852,6 +855,8 @@ class ProductBundleHooks {
 				$bundle_price = $this->calculate_bundle_price( $cart_item );
 				if ( isset( $bundle_price['price'] ) ) {
 					WC()->cart->cart_contents[ $cart_item_key ]['asnp_wepb_price'] = $bundle_price['price'];
+				} else {
+					$cart_item['data']->set_price( 0 );
 				}
 			}
 		}
@@ -1037,7 +1042,7 @@ class ProductBundleHooks {
 					wc_get_price_including_tax( $cart_item['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) : (float) $cart_item['data']->get_regular_price( 'edit' ) ] ) :
 					wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => $exchange_price ? maybe_exchange_price( (float) $cart_item['data']->get_regular_price( 'edit' ) ) : (float) $cart_item['data']->get_regular_price( 'edit' ) ] );
 			}
-		} elseif ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $this->apply_total_discount_on_bundle_in_cart( $cart_item ) ) {
+		} elseif ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
 			$discount = $exchange_price ? maybe_exchange_price( (float) $total_discount ) : (float) $total_discount;
 			$price -= Cart\display_prices_including_tax() ?
 				wc_get_price_including_tax( $cart_item['data'], [ 'price' => $discount ] ) :
@@ -1124,7 +1129,7 @@ class ProductBundleHooks {
 						wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( $parent_price ) ] );
 				}
 			}
-		} elseif ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount && $this->apply_total_discount_on_bundle_in_cart( $cart_item ) ) {
+		} elseif ( 'price' === $total_discount_type && '' !== $total_discount && 0 < (float) $total_discount ) {
 			$price -= Cart\display_prices_including_tax() ?
 				wc_get_price_including_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $total_discount ) ] ) :
 				wc_get_price_excluding_tax( $cart_item['data'], [ 'price' => maybe_exchange_price( (float) $total_discount ) ] );
@@ -1157,23 +1162,75 @@ class ProductBundleHooks {
 		return $subtotal;
 	}
 
+	/**
+	 * Cascade bundle item removal.
+	 *
+	 * @since 1.0.0
+	 * @version 6.22.5
+	 *
+	 * @param string   $cart_item_key Cart item key.
+	 * @param \WC_Cart $cart          Cart object.
+	 * @return void
+	 */
 	public function cart_item_removed( $cart_item_key, $cart ) {
-		if ( empty( $cart->removed_cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] ) ) {
+		if ( $this->is_removing ) {
 			return;
 		}
 
-		foreach ( $cart->removed_cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] as $item_key ) {
-			$cart->remove_cart_item( $item_key );
+		$already_removing  = $this->is_removing;
+		$this->is_removing = true;
+
+		try {
+			if ( ! empty( $cart->removed_cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] ) ) {
+				foreach ( $cart->removed_cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] as $item_key ) {
+					$cart->remove_cart_item( $item_key );
+				}
+			} elseif ( isset( $cart->removed_cart_contents[ $cart_item_key ]['asnp_wepb_parent_key'] ) ) {
+				$parent_key = $cart->removed_cart_contents[ $cart_item_key ]['asnp_wepb_parent_key'];
+				if ( ! empty( $parent_key ) && isset( $cart->cart_contents[ $parent_key ] ) ) {
+					$this->remove_bundle_from_cart( $parent_key, $cart );
+				}
+			}
+		} finally {
+			$this->is_removing = $already_removing;
 		}
 	}
 
+	/**
+	 * Cascade bundle item restoration.
+	 *
+	 * @since 1.0.0
+	 * @version 6.22.5
+	 *
+	 * @param string   $cart_item_key Cart item key.
+	 * @param \WC_Cart $cart          Cart object.
+	 * @return void
+	 */
 	public function cart_item_restored( $cart_item_key, $cart ) {
-		if ( empty( $cart->cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] ) ) {
+		if ( $this->is_restoring ) {
 			return;
 		}
 
-		foreach ( $cart->cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] as $item_key ) {
-			$cart->restore_cart_item( $item_key );
+		$already_restoring  = $this->is_restoring;
+		$this->is_restoring = true;
+
+		try {
+			if ( ! empty( $cart->cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] ) ) {
+				foreach ( $cart->cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] as $item_key ) {
+					$cart->restore_cart_item( $item_key );
+				}
+			} elseif ( isset( $cart->cart_contents[ $cart_item_key ]['asnp_wepb_parent_key'] ) ) {
+				$parent_key = $cart->cart_contents[ $cart_item_key ]['asnp_wepb_parent_key'];
+				if ( ! empty( $parent_key ) && ! isset( $cart->cart_contents[ $parent_key ] ) ) {
+					if ( isset( $cart->removed_cart_contents[ $parent_key ] ) ) {
+						$cart->restore_cart_item( $parent_key );
+					} else {
+						$cart->remove_cart_item( $cart_item_key );
+					}
+				}
+			}
+		} finally {
+			$this->is_restoring = $already_restoring;
 		}
 	}
 
@@ -1553,6 +1610,21 @@ class ProductBundleHooks {
 				$cart->remove_cart_item( $cart_item_key );
 			}
 
+			// Removes the bundle parent from the cart when any of its child items are not present.
+			if (
+				! isset( $cart_item['asnp_wepb_order_again'] ) &&
+				is_cart_item_bundle( $cart_item ) &&
+				! empty( $cart_item[ static::CART_ITEM_ITEMS_KEY ] ) &&
+				is_array( $cart_item[ static::CART_ITEM_ITEMS_KEY ] )
+			) {
+				foreach ( $cart_item[ static::CART_ITEM_ITEMS_KEY ] as $item_key ) {
+					if ( ! isset( $cart->cart_contents[ $item_key ] ) ) {
+						$this->remove_bundle_from_cart( $cart_item_key, $cart );
+						break;
+					}
+				}
+			}
+
 			// Remove bundle items when order again is set.
 			if ( isset( $cart_item['asnp_wepb_order_again'], $cart_item['asnp_wepb_parent_id'] ) ) {
 				$cart->remove_cart_item( $cart_item_key );
@@ -1573,6 +1645,67 @@ class ProductBundleHooks {
 					// It is required to save the items key in the parent cart item.
 					$cart->set_session();
 				}
+			}
+		}
+	}
+
+	/**
+	 * Validate cart items integrity for product bundles.
+	 *
+	 * @since 6.22.5
+	 * @return void
+	 */
+	public function check_cart_items() {
+		$cart = WC()->cart;
+		if ( ! $cart || $cart->is_empty() ) {
+			return;
+		}
+
+		$cart_contents   = $cart->get_cart();
+		$removed_bundles = [];
+
+		foreach ( $cart_contents as $cart_item_key => $cart_item ) {
+			if ( is_cart_item_bundle( $cart_item ) ) {
+				$items_keys = ! empty( $cart_item[ self::CART_ITEM_ITEMS_KEY ] ) && \is_array( $cart_item[ self::CART_ITEM_ITEMS_KEY ] )
+					? $cart_item[ self::CART_ITEM_ITEMS_KEY ]
+					: [];
+
+				$has_missing_child = false;
+				if ( empty( $items_keys ) ) {
+					$has_missing_child = true;
+				} else {
+					foreach ( $items_keys as $child_key ) {
+						if ( ! isset( $cart_contents[ $child_key ] ) ) {
+							$has_missing_child = true;
+							break;
+						}
+					}
+				}
+
+				if ( $has_missing_child ) {
+					$this->remove_bundle_from_cart( $cart_item_key, $cart );
+					if ( isset( $cart_item['data'] ) && \is_object( $cart_item['data'] ) ) {
+						$removed_bundles[ $cart_item_key ] = $cart_item['data']->get_name();
+					}
+				}
+			} elseif ( is_cart_item_bundle_item( $cart_item ) ) {
+				$parent_key = isset( $cart_item['asnp_wepb_parent_key'] ) ? $cart_item['asnp_wepb_parent_key'] : null;
+				if ( ! $parent_key || ! isset( $cart_contents[ $parent_key ] ) ) {
+					$cart->remove_cart_item( $cart_item_key );
+				}
+			}
+		}
+
+		if ( ! empty( $removed_bundles ) ) {
+			foreach ( $removed_bundles as $bundle_name ) {
+				wc_add_notice(
+					sprintf(
+						/* translators: %s: bundle product name */
+						__( 'The bundle &quot;%s&quot; has been removed from your cart because one or more bundled items were removed or are unavailable.', 'asnp-easy-product-bundles' ),
+						$bundle_name
+					),
+					'error'
+				);
 			}
 		}
 	}
@@ -1640,13 +1773,20 @@ class ProductBundleHooks {
 			return;
 		}
 
-		if ( ! empty( $cart->cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] ) ) {
-			foreach ( $cart->cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] as $item_key ) {
-				$cart->remove_cart_item( $item_key );
-			}
-		}
+		$already_removing  = $this->is_removing;
+		$this->is_removing = true;
 
-		$cart->remove_cart_item( $cart_item_key );
+		try {
+			if ( ! empty( $cart->cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] ) ) {
+				foreach ( $cart->cart_contents[ $cart_item_key ][ self::CART_ITEM_ITEMS_KEY ] as $item_key ) {
+					$cart->remove_cart_item( $item_key );
+				}
+			}
+
+			$cart->remove_cart_item( $cart_item_key );
+		} finally {
+			$this->is_removing = $already_removing;
+		}
 	}
 
 }

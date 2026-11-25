@@ -34,7 +34,7 @@ class CheckoutIntegration implements IntegrationInterface {
 		wp_register_script(
 			'asnp-wepb-checkout-integration',
 			$this->get_url( 'checkout-integration/index', 'js' ),
-			[ 'wc-blocks-checkout' ],
+			[ 'wc-blocks-checkout', 'wp-hooks' ],
 			ASNP_WEPB_VERSION,
 			$script_args
 		);
